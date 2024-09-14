@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1726346824300,
+  "lastUpdate": 1726346969251,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "sysbench/thread_lat": [
@@ -48903,6 +48903,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Number of created/deleted files on Asterinas",
             "value": "616",
+            "unit": "number",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Marsman1996",
+            "username": "Marsman1996",
+            "email": "lqliuyuwei@outlook.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "44629e4627dc7113fa78bd07bc6853afcd750d85",
+          "message": "Fix panic in FutexKey::load_val when no read access",
+          "timestamp": "2024-09-14T09:02:57Z",
+          "url": "https://github.com/asterinas/asterinas/commit/44629e4627dc7113fa78bd07bc6853afcd750d85"
+        },
+        "date": 1726346964446,
+        "tool": "customBiggerIsBetter",
+        "title": "[Ramfs] The cost of creating/deleting small files (10KB)",
+        "description": "lat_fs -s 10K",
+        "display": true,
+        "benches": [
+          {
+            "name": "Number of created/deleted files on Linux",
+            "value": "1543",
+            "unit": "number",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Number of created/deleted files on Asterinas",
+            "value": "684",
             "unit": "number",
             "extra": "aster_result"
           }
