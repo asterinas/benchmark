@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1726435299726,
+  "lastUpdate": 1726435436630,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "sysbench/thread_lat": [
@@ -53214,6 +53214,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average file locking latency on Asterinas",
             "value": "2.6962",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Marsman1996",
+            "username": "Marsman1996",
+            "email": "lqliuyuwei@outlook.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "44629e4627dc7113fa78bd07bc6853afcd750d85",
+          "message": "Fix panic in FutexKey::load_val when no read access",
+          "timestamp": "2024-09-14T09:02:57Z",
+          "url": "https://github.com/asterinas/asterinas/commit/44629e4627dc7113fa78bd07bc6853afcd750d85"
+        },
+        "date": 1726435431449,
+        "tool": "customSmallerIsBetter",
+        "title": "[VFS] The cost of record locking/unlocking via fcntl",
+        "description": "lat_fcntl",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average file locking latency on Linux",
+            "value": "1.7267",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average file locking latency on Asterinas",
+            "value": "2.5605",
             "unit": "µs",
             "extra": "aster_result"
           }
