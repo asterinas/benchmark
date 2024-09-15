@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1726434317159,
+  "lastUpdate": 1726434502111,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "sysbench/thread_lat": [
@@ -63388,6 +63388,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average TCP latency on Asterinas",
             "value": "15.2939",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Marsman1996",
+            "username": "Marsman1996",
+            "email": "lqliuyuwei@outlook.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "44629e4627dc7113fa78bd07bc6853afcd750d85",
+          "message": "Fix panic in FutexKey::load_val when no read access",
+          "timestamp": "2024-09-14T09:02:57Z",
+          "url": "https://github.com/asterinas/asterinas/commit/44629e4627dc7113fa78bd07bc6853afcd750d85"
+        },
+        "date": 1726434497014,
+        "tool": "customSmallerIsBetter",
+        "title": "[TCP sockets] The latency of write+read",
+        "description": "lat_tcp",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average TCP latency on Linux",
+            "value": "5.9965",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average TCP latency on Asterinas",
+            "value": "15.2572",
             "unit": "µs",
             "extra": "aster_result"
           }
