@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1726517111490,
+  "lastUpdate": 1726517255269,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "sysbench/thread_lat": [
@@ -58660,6 +58660,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average file copy bandwidth on Asterinas",
             "value": "2679.6041",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Shaowei Song",
+            "username": "lucassong-mh",
+            "email": "songshaowei.ssw@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "22b04ceae47cd7939acd162d48c8d970f40f211a",
+          "message": "Optimize the `DirEntry` of `RamInode`",
+          "timestamp": "2024-09-14T07:15:28Z",
+          "url": "https://github.com/asterinas/asterinas/commit/22b04ceae47cd7939acd162d48c8d970f40f211a"
+        },
+        "date": 1726517249354,
+        "tool": "customBiggerIsBetter",
+        "title": "[EXT2] The bandwidth of copying data between files",
+        "description": "lmdd",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average file copy bandwidth on Linux",
+            "value": "1758.0606",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average file copy bandwidth on Asterinas",
+            "value": "2630.7676",
             "unit": "MB/s",
             "extra": "aster_result"
           }
