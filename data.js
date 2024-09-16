@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1726519550057,
+  "lastUpdate": 1726519703849,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "sysbench/thread_lat": [
@@ -51801,6 +51801,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Number of created/deleted files on Asterinas",
             "value": "973",
+            "unit": "number",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Shaowei Song",
+            "username": "lucassong-mh",
+            "email": "songshaowei.ssw@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "22b04ceae47cd7939acd162d48c8d970f40f211a",
+          "message": "Optimize the `DirEntry` of `RamInode`",
+          "timestamp": "2024-09-14T07:15:28Z",
+          "url": "https://github.com/asterinas/asterinas/commit/22b04ceae47cd7939acd162d48c8d970f40f211a"
+        },
+        "date": 1726519701438,
+        "tool": "customBiggerIsBetter",
+        "title": "[Ramfs] The cost of creating/deleting small files (0KB)",
+        "description": "lat_fs -s 0k",
+        "display": true,
+        "benches": [
+          {
+            "name": "Number of created/deleted files on Linux",
+            "value": "3963",
+            "unit": "number",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Number of created/deleted files on Asterinas",
+            "value": "1145",
             "unit": "number",
             "extra": "aster_result"
           }
