@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1726524312425,
+  "lastUpdate": 1726524448558,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "sysbench/thread_lat": [
@@ -46072,6 +46072,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average select file latency on Asterinas",
             "value": "1.8650",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Shaowei Song",
+            "username": "lucassong-mh",
+            "email": "songshaowei.ssw@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "22b04ceae47cd7939acd162d48c8d970f40f211a",
+          "message": "Optimize the `DirEntry` of `RamInode`",
+          "timestamp": "2024-09-14T07:15:28Z",
+          "url": "https://github.com/asterinas/asterinas/commit/22b04ceae47cd7939acd162d48c8d970f40f211a"
+        },
+        "date": 1726524444747,
+        "tool": "customSmallerIsBetter",
+        "title": "[Network] The cost of select (file fds)",
+        "description": "lat_select",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average select file latency on Linux",
+            "value": "1.1251",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average select file latency on Asterinas",
+            "value": "1.8636",
             "unit": "µs",
             "extra": "aster_result"
           }
