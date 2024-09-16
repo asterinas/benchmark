@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1726523505307,
+  "lastUpdate": 1726523642674,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "sysbench/thread_lat": [
@@ -54139,6 +54139,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average file locking latency on Asterinas",
             "value": "2.5605",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Shaowei Song",
+            "username": "lucassong-mh",
+            "email": "songshaowei.ssw@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "22b04ceae47cd7939acd162d48c8d970f40f211a",
+          "message": "Optimize the `DirEntry` of `RamInode`",
+          "timestamp": "2024-09-14T07:15:28Z",
+          "url": "https://github.com/asterinas/asterinas/commit/22b04ceae47cd7939acd162d48c8d970f40f211a"
+        },
+        "date": 1726523639684,
+        "tool": "customSmallerIsBetter",
+        "title": "[VFS] The cost of record locking/unlocking via fcntl",
+        "description": "lat_fcntl",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average file locking latency on Linux",
+            "value": "2.2053",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average file locking latency on Asterinas",
+            "value": "2.6886",
             "unit": "µs",
             "extra": "aster_result"
           }
