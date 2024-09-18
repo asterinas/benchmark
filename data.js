@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1726691841626,
+  "lastUpdate": 1726691980718,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "sysbench/thread_lat": [
@@ -17705,6 +17705,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average exec latency on Asterinas",
             "value": "257.2000",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Marsman1996",
+            "username": "Marsman1996",
+            "email": "lqliuyuwei@outlook.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "52bde1721e84cb9edeff1bf92e957c7e7ebe8a89",
+          "message": "Bump version to 0.8.3",
+          "timestamp": "2024-09-18T12:02:30Z",
+          "url": "https://github.com/asterinas/asterinas/commit/52bde1721e84cb9edeff1bf92e957c7e7ebe8a89"
+        },
+        "date": 1726691975752,
+        "tool": "customSmallerIsBetter",
+        "title": "[Process] The cost of fork+exec+exit",
+        "description": "lat_proc exec",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average exec latency on Linux",
+            "value": "198.4643",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average exec latency on Asterinas",
+            "value": "257.4545",
             "unit": "µs",
             "extra": "aster_result"
           }
