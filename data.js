@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1726695619787,
+  "lastUpdate": 1726695799921,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "sysbench/thread_lat": [
@@ -33938,6 +33938,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average stat latency on Asterinas",
             "value": "0.6197",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Marsman1996",
+            "username": "Marsman1996",
+            "email": "lqliuyuwei@outlook.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "52bde1721e84cb9edeff1bf92e957c7e7ebe8a89",
+          "message": "Bump version to 0.8.3",
+          "timestamp": "2024-09-18T12:02:30Z",
+          "url": "https://github.com/asterinas/asterinas/commit/52bde1721e84cb9edeff1bf92e957c7e7ebe8a89"
+        },
+        "date": 1726695794726,
+        "tool": "customSmallerIsBetter",
+        "title": "[VFS] The cost of stat",
+        "description": "lat_syscall stat",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average stat latency on Linux",
+            "value": "0.3172",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average stat latency on Asterinas",
+            "value": "0.6315",
             "unit": "µs",
             "extra": "aster_result"
           }
