@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1726779246371,
+  "lastUpdate": 1726779394608,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "sysbench/thread_lat": [
@@ -49904,6 +49904,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average Signal handler install latency on Asterinas",
             "value": "0.1965",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Jianfeng Jiang",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "70505ff4f85fa1401fc87ffa204bc5d96a9ec8ae",
+          "message": "Support futex wait timeout",
+          "timestamp": "2024-08-01T03:17:49Z",
+          "url": "https://github.com/asterinas/asterinas/commit/70505ff4f85fa1401fc87ffa204bc5d96a9ec8ae"
+        },
+        "date": 1726779392404,
+        "tool": "customSmallerIsBetter",
+        "title": "[Signals] The cost of installing a signal handler",
+        "description": "lat_sig install",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average Signal handler install latency on Linux",
+            "value": "0.1439",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average Signal handler install latency on Asterinas",
+            "value": "0.1748",
             "unit": "µs",
             "extra": "aster_result"
           }
