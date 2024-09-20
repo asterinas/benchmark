@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1726862583397,
+  "lastUpdate": 1726862727845,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "sysbench/thread_lat": [
@@ -71569,6 +71569,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Number of created/deleted files on Asterinas",
             "value": "87",
+            "unit": "number",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "负雪",
+            "username": "grief8",
+            "email": "lifabing.lfb@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "d25346342c546ee4abe4bdfc958496dfc84905c8",
+          "message": "Set fail-fast to false to avoid cancelling normal steps",
+          "timestamp": "2024-09-20T05:15:12Z",
+          "url": "https://github.com/asterinas/asterinas/commit/d25346342c546ee4abe4bdfc958496dfc84905c8"
+        },
+        "date": 1726862724942,
+        "tool": "customBiggerIsBetter",
+        "title": "[Ext2] The cost of creating/deleting small files (0KB)",
+        "description": "lat_fs -s 0k /ext2",
+        "display": true,
+        "benches": [
+          {
+            "name": "Number of created/deleted files on Linux",
+            "value": "1573",
+            "unit": "number",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Number of created/deleted files on Asterinas",
+            "value": "93",
             "unit": "number",
             "extra": "aster_result"
           }
