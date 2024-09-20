@@ -61818,7 +61818,7 @@ window.BENCHMARK_DATA = {
         "tool": "customSmallerIsBetter",
         "title": "[Semaphores] The cost of semop",
         "description": "lat_sem",
-        "display": true,
+        "display": false,
         "benches": [
           {
             "name": "Average semaphore latency on Linux",
