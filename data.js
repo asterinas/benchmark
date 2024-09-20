@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1726800949816,
+  "lastUpdate": 1726801094496,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "sysbench/thread_lat": [
@@ -25363,6 +25363,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average memory read bandwidth on Asterinas",
             "value": "10788.99",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "YanWQ-monad",
+            "username": "YanWQ-monad",
+            "email": "YanWQmonad@gmail.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "2a6733579d292c706e3933258c0049e013e3d98f",
+          "message": "Refactor architecture-specific page fault handling",
+          "timestamp": "2024-07-23T02:09:02Z",
+          "url": "https://github.com/asterinas/asterinas/commit/2a6733579d292c706e3933258c0049e013e3d98f"
+        },
+        "date": 1726801090478,
+        "tool": "customBiggerIsBetter",
+        "title": "[Memory] The bandwidth of reading integers",
+        "description": "bw_mem frd",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average memory read bandwidth on Linux",
+            "value": "10855.09",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average memory read bandwidth on Asterinas",
+            "value": "11007.32",
             "unit": "MB/s",
             "extra": "aster_result"
           }
