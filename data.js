@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1726803303925,
+  "lastUpdate": 1726803435576,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "sysbench/thread_lat": [
@@ -67984,6 +67984,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average TCP connection latency on Asterinas",
             "value": "21.0266",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "YanWQ-monad",
+            "username": "YanWQ-monad",
+            "email": "YanWQmonad@gmail.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "2a6733579d292c706e3933258c0049e013e3d98f",
+          "message": "Refactor architecture-specific page fault handling",
+          "timestamp": "2024-07-23T02:09:02Z",
+          "url": "https://github.com/asterinas/asterinas/commit/2a6733579d292c706e3933258c0049e013e3d98f"
+        },
+        "date": 1726803430903,
+        "tool": "customSmallerIsBetter",
+        "title": "[TCP sockets] The latency of connect",
+        "description": "lat_connect",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average TCP connection latency on Linux",
+            "value": "15.5994",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average TCP connection latency on Asterinas",
+            "value": "22.8714",
             "unit": "µs",
             "extra": "aster_result"
           }
