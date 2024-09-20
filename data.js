@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1726802280289,
+  "lastUpdate": 1726802420237,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "sysbench/thread_lat": [
@@ -53892,6 +53892,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Number of created/deleted files on Linux",
             "value": "1538",
+            "unit": "number",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Number of created/deleted files on Asterinas",
+            "value": "833",
+            "unit": "number",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "YanWQ-monad",
+            "username": "YanWQ-monad",
+            "email": "YanWQmonad@gmail.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "2a6733579d292c706e3933258c0049e013e3d98f",
+          "message": "Refactor architecture-specific page fault handling",
+          "timestamp": "2024-07-23T02:09:02Z",
+          "url": "https://github.com/asterinas/asterinas/commit/2a6733579d292c706e3933258c0049e013e3d98f"
+        },
+        "date": 1726802417599,
+        "tool": "customBiggerIsBetter",
+        "title": "[Ramfs] The cost of creating/deleting small files (10KB)",
+        "description": "lat_fs -s 10K",
+        "display": true,
+        "benches": [
+          {
+            "name": "Number of created/deleted files on Linux",
+            "value": "1550",
             "unit": "number",
             "extra": "linux_result"
           },
