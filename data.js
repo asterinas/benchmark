@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1726864712550,
+  "lastUpdate": 1726864849286,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "sysbench/thread_lat": [
@@ -8580,6 +8580,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average syscall latency on Asterinas",
             "value": "0.0906",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "负雪",
+            "username": "grief8",
+            "email": "lifabing.lfb@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "d25346342c546ee4abe4bdfc958496dfc84905c8",
+          "message": "Set fail-fast to false to avoid cancelling normal steps",
+          "timestamp": "2024-09-20T05:15:12Z",
+          "url": "https://github.com/asterinas/asterinas/commit/d25346342c546ee4abe4bdfc958496dfc84905c8"
+        },
+        "date": 1726864844761,
+        "tool": "customSmallerIsBetter",
+        "title": "[Process] The cost of getppid",
+        "description": "lat_syscall null",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average syscall latency on Linux",
+            "value": "0.0976",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average syscall latency on Asterinas",
+            "value": "0.0920",
             "unit": "µs",
             "extra": "aster_result"
           }
