@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1726805275556,
+  "lastUpdate": 1726805408819,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "sysbench/thread_lat": [
@@ -49032,6 +49032,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average select file latency on Asterinas",
             "value": "1.8518",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "YanWQ-monad",
+            "username": "YanWQ-monad",
+            "email": "YanWQmonad@gmail.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "2a6733579d292c706e3933258c0049e013e3d98f",
+          "message": "Refactor architecture-specific page fault handling",
+          "timestamp": "2024-07-23T02:09:02Z",
+          "url": "https://github.com/asterinas/asterinas/commit/2a6733579d292c706e3933258c0049e013e3d98f"
+        },
+        "date": 1726805404685,
+        "tool": "customSmallerIsBetter",
+        "title": "[Network] The cost of select (file fds)",
+        "description": "lat_select",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average select file latency on Linux",
+            "value": "1.1427",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average select file latency on Asterinas",
+            "value": "1.8476",
             "unit": "µs",
             "extra": "aster_result"
           }
