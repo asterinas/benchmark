@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1726954845811,
+  "lastUpdate": 1726955106761,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "sysbench/thread_lat": [
@@ -5917,6 +5917,43 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/asterinas/asterinas/commit/d25346342c546ee4abe4bdfc958496dfc84905c8"
         },
         "date": 1726868684092,
+        "tool": "customSmallerIsBetter",
+        "title": "[CPU] CPU performance",
+        "description": "sysbench cpu",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average Execution Time per CPU on Linux",
+            "value": "3.83",
+            "unit": "ms",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average Execution Time per CPU on Asterinas",
+            "value": "3.85",
+            "unit": "ms",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Yuke Peng",
+            "username": "sdww0",
+            "email": "pykfirst@gmail.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "228cfe2262544be985f5189f1f48b5e9d9fd6cc6",
+          "message": "Preallocate some space when expanding size in ext2",
+          "timestamp": "2024-09-19T11:16:53Z",
+          "url": "https://github.com/asterinas/asterinas/commit/228cfe2262544be985f5189f1f48b5e9d9fd6cc6"
+        },
+        "date": 1726955102593,
         "tool": "customSmallerIsBetter",
         "title": "[CPU] CPU performance",
         "description": "sysbench cpu",
