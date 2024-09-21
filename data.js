@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1726953992377,
+  "lastUpdate": 1726954130370,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "sysbench/thread_lat": [
@@ -31307,6 +31307,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average open latency on Asterinas",
             "value": "0.9795",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Yuke Peng",
+            "username": "sdww0",
+            "email": "pykfirst@gmail.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "228cfe2262544be985f5189f1f48b5e9d9fd6cc6",
+          "message": "Preallocate some space when expanding size in ext2",
+          "timestamp": "2024-09-19T11:16:53Z",
+          "url": "https://github.com/asterinas/asterinas/commit/228cfe2262544be985f5189f1f48b5e9d9fd6cc6"
+        },
+        "date": 1726954124650,
+        "tool": "customSmallerIsBetter",
+        "title": "[VFS] The cost of open+close",
+        "description": "lat_syscall open",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average open latency on Linux",
+            "value": "0.6853",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average open latency on Asterinas",
+            "value": "0.9781",
             "unit": "µs",
             "extra": "aster_result"
           }
