@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1727035369848,
+  "lastUpdate": 1727035509482,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "sysbench/thread_lat": [
@@ -67947,6 +67947,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average file copy bandwidth on Asterinas",
             "value": "2845.8199",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Yuke Peng",
+            "username": "sdww0",
+            "email": "pykfirst@gmail.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "a997d9f0b06159020e2392ef197ad23b307d0cbd",
+          "message": "Enable some gVisor futex tests",
+          "timestamp": "2024-09-20T07:32:22Z",
+          "url": "https://github.com/asterinas/asterinas/commit/a997d9f0b06159020e2392ef197ad23b307d0cbd"
+        },
+        "date": 1727035506386,
+        "tool": "customBiggerIsBetter",
+        "title": "[EXT2] The bandwidth of copying data between files",
+        "description": "lmdd",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average file copy bandwidth on Linux",
+            "value": "1767.7055",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average file copy bandwidth on Asterinas",
+            "value": "2844.5709",
             "unit": "MB/s",
             "extra": "aster_result"
           }
