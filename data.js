@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1727036549752,
+  "lastUpdate": 1727036697356,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "sysbench/thread_lat": [
@@ -29408,6 +29408,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average memory write bandwidth on Asterinas",
             "value": "8601.63",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Yuke Peng",
+            "username": "sdww0",
+            "email": "pykfirst@gmail.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "a997d9f0b06159020e2392ef197ad23b307d0cbd",
+          "message": "Enable some gVisor futex tests",
+          "timestamp": "2024-09-20T07:32:22Z",
+          "url": "https://github.com/asterinas/asterinas/commit/a997d9f0b06159020e2392ef197ad23b307d0cbd"
+        },
+        "date": 1727036692066,
+        "tool": "customBiggerIsBetter",
+        "title": "[Memory] The bandwidth of writing integers",
+        "description": "bw_mem fwr",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average memory write bandwidth on Linux",
+            "value": "8776.99",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average memory write bandwidth on Asterinas",
+            "value": "8677.82",
             "unit": "MB/s",
             "extra": "aster_result"
           }
