@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1726982005019,
+  "lastUpdate": 1726982175894,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "sysbench/thread_lat": [
@@ -64789,6 +64789,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average semaphore latency on Asterinas",
             "value": "0.6418",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Yuke Peng",
+            "username": "sdww0",
+            "email": "pykfirst@gmail.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "a754accf6a1a373625cb12c55341cde6251438c8",
+          "message": "Copy the code from `slab_allocator` into OSTD and add license header",
+          "timestamp": "2024-09-21T12:05:13Z",
+          "url": "https://github.com/asterinas/asterinas/commit/a754accf6a1a373625cb12c55341cde6251438c8"
+        },
+        "date": 1726982169866,
+        "tool": "customSmallerIsBetter",
+        "title": "[Semaphores] The cost of semop",
+        "description": "lat_sem",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average semaphore latency on Linux",
+            "value": "0.4830",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average semaphore latency on Asterinas",
+            "value": "0.6740",
             "unit": "µs",
             "extra": "aster_result"
           }
