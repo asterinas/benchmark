@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1726983706678,
+  "lastUpdate": 1726983891180,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "sysbench/thread_lat": [
@@ -55144,6 +55144,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average unix bandwidth on Asterinas",
             "value": "12343.41",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Yuke Peng",
+            "username": "sdww0",
+            "email": "pykfirst@gmail.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "a754accf6a1a373625cb12c55341cde6251438c8",
+          "message": "Copy the code from `slab_allocator` into OSTD and add license header",
+          "timestamp": "2024-09-21T12:05:13Z",
+          "url": "https://github.com/asterinas/asterinas/commit/a754accf6a1a373625cb12c55341cde6251438c8"
+        },
+        "date": 1726983886487,
+        "tool": "customBiggerIsBetter",
+        "title": "[Unix sockets] The bandwidth",
+        "description": "bw_unix",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average unix bandwidth on Linux",
+            "value": "7588.73",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average unix bandwidth on Asterinas",
+            "value": "12371.13",
             "unit": "MB/s",
             "extra": "aster_result"
           }
