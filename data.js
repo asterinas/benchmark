@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1727122549072,
+  "lastUpdate": 1727122696380,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "sysbench/thread_lat": [
@@ -65166,6 +65166,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average mmap latency on Linux",
             "value": "25",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average mmap latency on Asterinas",
+            "value": "26",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "YanWQ-monad",
+            "username": "YanWQ-monad",
+            "email": "YanWQmonad@gmail.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "4d36dd541f3ea4ec6ac72681feb6d587f87bab6d",
+          "message": "Extract x86-specific exception handling in aster-nix",
+          "timestamp": "2024-07-19T07:42:53Z",
+          "url": "https://github.com/asterinas/asterinas/commit/4d36dd541f3ea4ec6ac72681feb6d587f87bab6d"
+        },
+        "date": 1727122690322,
+        "tool": "customSmallerIsBetter",
+        "title": "[Memory] The cost of mmap+unmap",
+        "description": "lat_mmap",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average mmap latency on Linux",
+            "value": "24",
             "unit": "µs",
             "extra": "linux_result"
           },
