@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1727122248503,
+  "lastUpdate": 1727122399729,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "sysbench/thread_lat": [
@@ -63707,6 +63707,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average mmap bandwidth on Asterinas",
             "value": "25417.62",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "YanWQ-monad",
+            "username": "YanWQ-monad",
+            "email": "YanWQmonad@gmail.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "4d36dd541f3ea4ec6ac72681feb6d587f87bab6d",
+          "message": "Extract x86-specific exception handling in aster-nix",
+          "timestamp": "2024-07-19T07:42:53Z",
+          "url": "https://github.com/asterinas/asterinas/commit/4d36dd541f3ea4ec6ac72681feb6d587f87bab6d"
+        },
+        "date": 1727122396167,
+        "tool": "customBiggerIsBetter",
+        "title": "[Memory] The bandwidth of mmap",
+        "description": "bw_mmap",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average mmap bandwidth on Linux",
+            "value": "21829.35",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average mmap bandwidth on Asterinas",
+            "value": "25855.85",
             "unit": "MB/s",
             "extra": "aster_result"
           }
