@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1727125766983,
+  "lastUpdate": 1727125955937,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "sysbench/thread_lat": [
@@ -77818,6 +77818,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average TCP latency on Asterinas",
             "value": "14.7863",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "YanWQ-monad",
+            "username": "YanWQ-monad",
+            "email": "YanWQmonad@gmail.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "4d36dd541f3ea4ec6ac72681feb6d587f87bab6d",
+          "message": "Extract x86-specific exception handling in aster-nix",
+          "timestamp": "2024-07-19T07:42:53Z",
+          "url": "https://github.com/asterinas/asterinas/commit/4d36dd541f3ea4ec6ac72681feb6d587f87bab6d"
+        },
+        "date": 1727125949733,
+        "tool": "customSmallerIsBetter",
+        "title": "[TCP sockets] The latency of write+read",
+        "description": "lat_tcp",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average TCP latency on Linux",
+            "value": "6.0173",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average TCP latency on Asterinas",
+            "value": "14.7587",
             "unit": "µs",
             "extra": "aster_result"
           }
