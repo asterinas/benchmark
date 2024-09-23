@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1727122399729,
+  "lastUpdate": 1727122549072,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "sysbench/thread_lat": [
@@ -24611,6 +24611,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average memory copy bandwidth on Asterinas",
             "value": "6566.75",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "YanWQ-monad",
+            "username": "YanWQ-monad",
+            "email": "YanWQmonad@gmail.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "4d36dd541f3ea4ec6ac72681feb6d587f87bab6d",
+          "message": "Extract x86-specific exception handling in aster-nix",
+          "timestamp": "2024-07-19T07:42:53Z",
+          "url": "https://github.com/asterinas/asterinas/commit/4d36dd541f3ea4ec6ac72681feb6d587f87bab6d"
+        },
+        "date": 1727122542670,
+        "tool": "customBiggerIsBetter",
+        "title": "[Memory] The bandwidth of copying integers",
+        "description": "bw_mem fcp",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average memory copy bandwidth on Linux",
+            "value": "6479.10",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average memory copy bandwidth on Asterinas",
+            "value": "6594.41",
             "unit": "MB/s",
             "extra": "aster_result"
           }
