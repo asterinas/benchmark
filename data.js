@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1727208825951,
+  "lastUpdate": 1727208978260,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "sysbench/thread_lat": [
@@ -64780,6 +64780,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average mmap bandwidth on Asterinas",
             "value": "25855.85",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "1aa8b0abc65e86b4956689d0ac8eb62f92b3ff7a",
+          "message": "Correct lock usages in UNIX sockets",
+          "timestamp": "2024-09-23T02:22:28Z",
+          "url": "https://github.com/asterinas/asterinas/commit/1aa8b0abc65e86b4956689d0ac8eb62f92b3ff7a"
+        },
+        "date": 1727208972015,
+        "tool": "customBiggerIsBetter",
+        "title": "[Memory] The bandwidth of mmap",
+        "description": "bw_mmap",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average mmap bandwidth on Linux",
+            "value": "29753.43",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average mmap bandwidth on Asterinas",
+            "value": "27613.98",
             "unit": "MB/s",
             "extra": "aster_result"
           }
