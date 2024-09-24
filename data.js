@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1727214000461,
+  "lastUpdate": 1727214138249,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "sysbench/thread_lat": [
@@ -63944,6 +63944,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average file locking latency on Asterinas",
             "value": "2.5500",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "1aa8b0abc65e86b4956689d0ac8eb62f92b3ff7a",
+          "message": "Correct lock usages in UNIX sockets",
+          "timestamp": "2024-09-23T02:22:28Z",
+          "url": "https://github.com/asterinas/asterinas/commit/1aa8b0abc65e86b4956689d0ac8eb62f92b3ff7a"
+        },
+        "date": 1727214132142,
+        "tool": "customSmallerIsBetter",
+        "title": "[VFS] The cost of record locking/unlocking via fcntl",
+        "description": "lat_fcntl",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average file locking latency on Linux",
+            "value": "1.7509",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average file locking latency on Asterinas",
+            "value": "2.4029",
             "unit": "µs",
             "extra": "aster_result"
           }
