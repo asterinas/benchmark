@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1727236241532,
+  "lastUpdate": 1727236380990,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "sysbench/thread_lat": [
@@ -67312,6 +67312,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average mmap latency on Linux",
             "value": "24",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average mmap latency on Asterinas",
+            "value": "26",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Shaowei Song",
+            "username": "lucassong-mh",
+            "email": "songshaowei.ssw@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "ae4ac384713e63232b74915593ebdef680049d31",
+          "message": "Optimize the cache and lock parts in `MountNode`",
+          "timestamp": "2024-09-25T02:51:08Z",
+          "url": "https://github.com/asterinas/asterinas/commit/ae4ac384713e63232b74915593ebdef680049d31"
+        },
+        "date": 1727236375230,
+        "tool": "customSmallerIsBetter",
+        "title": "[Memory] The cost of mmap+unmap",
+        "description": "lat_mmap",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average mmap latency on Linux",
+            "value": "23",
             "unit": "µs",
             "extra": "linux_result"
           },
