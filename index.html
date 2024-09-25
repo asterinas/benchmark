@@ -17,9 +17,9 @@
           font-weight: 400;
       }
       header {
-          margin-bottom: 8px;
-          display: flex;
-          flex-direction: column;
+            margin-bottom: 8px;
+            display: flex;
+            flex-direction: column;
       }
       main {
           width: 100%;
@@ -80,22 +80,12 @@
           flex-wrap: wrap;
           width: 100%;
       }
-      .benchmark-chart {
-          max-width: 90%;
-          width: auto; /* Make width adaptive */
-          min-width: 1000px; /* Set minimum width to 1000px */
-          background-color: #ffffff; /* White background for better chart display */
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Slight shadow */
-      }
       .benchmark-chart-overview {
           display: flex;
           flex-direction: column;
           max-width: 90%;
           width: auto; /* Make width adaptive */
           min-width: 1000px; /* Set minimum width to 1000px */
-          height: 80vh; /* Make height adaptive */
-          min-height: 1000px;
-          max-height: 1500px; /* Make height adaptive */
           background-color: #ffffff; /* White background for better chart display */
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Slight shadow */
       }
@@ -110,7 +100,7 @@
           margin-top: 0px; /* Added margin to create space between the title and the description */
           margin-bottom: 20px; /* Added margin to create space between the description and the figure below it */
       }
-  </style>
+    </style>
     <title>Benchmarks</title>
   </head>
 
@@ -135,78 +125,78 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-tick-configuration"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation"></script> <!-- Include annotation plugin -->
-    <script src="data.js"></script>
     <script id="main-script">
       'use strict';
       (function() {
         
-        function init() {
-          function collectBenchesPerTestCase(entries) {
-            const map = new Map();
-            for (const entry of entries) {
-              const {commit, date, tool, title, description, display, benches} = entry;
-              for (const bench of benches) {
-                const result = { commit, date, tool, title, description, display, bench };
-                const arr = map.get(bench.name);
-                if (arr === undefined) {
-                  map.set(bench.name, [result]);
-                } else {
-                  arr.push(result);
-                }
-              }
-            }
-            return map;
-          }
+        async function init() {
+          const dataPaths = [
+            'lmbench/data.js',
+            'sysbench/data.js'
+            // Add more paths as needed
+          ];
 
-          const data = window.BENCHMARK_DATA;
+          const allData = await Promise.all(dataPaths.map(path => fetch(path).then(res => res.text())));
 
-          // Render header
-          document.getElementById('last-update').textContent = new Date(data.lastUpdate).toString();
-          const repoLink = document.getElementById('repository-link');
-          repoLink.href = data.repoUrl;
-          repoLink.textContent = data.repoUrl;
-
-          // Render footer
-          document.getElementById('dl-button').onclick = () => {
-            const dataUrl = 'data:,' + JSON.stringify(data, null, 2);
-            const a = document.createElement('a');
-            a.href = dataUrl;
-            a.download = 'benchmark_data.json';
-            a.click();
+          // Parse and merge all data into a single object
+          const mergedData = {
+            lastUpdate: 0,
+            repoUrl: '',
+            normalizedDataSets: []
           };
 
-          const filter = (() => {
-            const pathname = window.location.pathname;
-            const pathSegments = pathname.split('/').filter(Boolean);
-            if (pathSegments.length < 2) {
-              return null; 
-            }
-            return pathSegments[pathSegments.length - 1];
-          })();
+          allData.forEach((data, index) => {
+            const scriptContent = data.replace('window.BENCHMARK_DATA = ', '');
+            const parsedData = JSON.parse(scriptContent);
+            mergedData.lastUpdate = Math.max(mergedData.lastUpdate, parsedData.lastUpdate);
+            mergedData.repoUrl = parsedData.repoUrl;
+            console.log(parsedData);
 
-          // Prepare data points for charts
-          let dataSets;
-          if (filter) {
-            dataSets = Object.keys(data.entries)
-              .filter(name => name.startsWith(filter))
-              .map(name => ({
-                name,
-                dataSet: collectBenchesPerTestCase(data.entries[name]),
-              }));
-          } else {
-            dataSets = Object.keys(data.entries)
-              .map(name => ({
-                name,
-                dataSet: collectBenchesPerTestCase(data.entries[name]),
-              }));
-          }
-          
-          dataSets.sort((a, b) => {
-            const titleA = a.dataSet.values().next().value[a.dataSet.values().next().value.length - 1].title || a.name;
-            const titleB = b.dataSet.values().next().value[b.dataSet.values().next().value.length - 1].title || b.name;
-            return titleA.localeCompare(titleB);
+            // Get the base name from the path
+            const baseName = dataPaths[index].split('/')[0];
+
+            const dateSets = Object.keys(parsedData.entries).map(name => ({
+              name,
+              dataSet: collectBenchesPerTestCase(parsedData.entries[name]),
+            }));
+
+            // Normalize the data
+            const normalizedData = getNormalizedData(dateSets);
+            mergedData.normalizedDataSets.push({ name: baseName, normalizedData });
           });
-          return dataSets;
+
+          // Render header
+          document.getElementById('last-update').textContent = new Date(mergedData.lastUpdate).toString();
+          const repoLink = document.getElementById('repository-link');
+          repoLink.href = mergedData.repoUrl;
+          repoLink.textContent = mergedData.repoUrl;
+
+          return mergedData.normalizedDataSets;
+        }
+
+        function collectBenchesPerTestCase(entries) {
+          const map = new Map();
+          // Ensure entries is an array
+          if (!Array.isArray(entries)) {
+            try {
+              entries = Array.from(entries);
+            } catch (e) {
+              throw new TypeError('entries is not iterable');
+            }
+          }
+          for (const entry of entries) {
+            const {commit, date, tool, title, description, display, benches} = entry;
+            for (const bench of benches) {
+              const result = { commit, date, tool, title, description, display, bench };
+              const arr = map.get(bench.name);
+              if (arr === undefined) {
+                map.set(bench.name, [result]);
+              } else {
+                arr.push(result);
+              }
+            }
+          }
+          return map;
         }
 
         // Get normalized data with display flag
@@ -253,113 +243,23 @@
           return normalizedDataSets;
         }
 
-        function renderAllChars(dataSets) {
+        function renderAllChars(normalizedDataSets) {
+          function setCanvasHeight(canvas, numberOfBars) {
+            const heightPerBar = 50; // 每个条形的高度
+            const padding = 10; // 顶部和底部填充
+            const maxHeight = 1200; // 最大高度限制
 
-          function generateColor(index) {
-            const colors = [
-              'rgb(255, 99, 132)',  // Red
-              'rgb(54, 162, 235)',   // Blue
-              'rgb(255, 206, 86)',   // Yellow
-              'rgb(75, 192, 192)',   // Teal
-              'rgb(153, 102, 255)',  // Purple
-              'rgb(255, 159, 64)',   // Orange
-              'rgb(199, 199, 199)',  // Gray
-              'rgb(144, 238, 144)',  // Light Green
-              'rgb(238, 130, 238)',  // Lavender
-              'rgb(255, 105, 180)'   // Pink
-            ];
-            return colors[index % colors.length];
+            // 计算总高度
+            const totalHeight = (heightPerBar * numberOfBars) + padding;
+
+            // 如果总高度超过最大高度限制，则使用最大高度
+            canvas.style.height = `${Math.min(totalHeight, maxHeight)}px`;
           }
 
-          function renderGraph(parent, benchSets) {
-            const canvas = document.createElement('canvas');
-            canvas.className = 'benchmark-chart';
-            parent.appendChild(canvas);
-          
-            const datasets = [];
-            let index = 0;
-            for (const [benchName, benches] of benchSets.entries()) {
-              const color = generateColor(index);
-              datasets.push({
-                label: benchName,
-                data: benches.map(d => d.bench.value),
-                fill: false,
-                borderColor: color,
-                backgroundColor: color + '60', // Add alpha for #rrggbbaa
-              });
-              index++;
-            }
-          
-            const data = {
-              // Assuming all datasets has the same commit sequence
-              labels: benchSets.values().next().value.map(d => d.commit.id.slice(0, 7)),
-              datasets: datasets,
-            };
-          
-            const options = {
-                    scales: {
-                        x:{
-                                title: {
-                                    display: true,
-                                    text: 'commit',
-                                },
-                            },
-                        y: {
-                                title: {
-                                    display: true,
-                                    // Assuming all datasets has the same unit, take the last one
-                                    text: benchSets.values().next().value.length > 0 ? benchSets.values().next().value[benchSets.values().next().value.length - 1].bench.unit : '',
-                                },
-                                ticks: {
-                                    beginAtZero: true,
-                                }
-                            },
-                    },
-                    tooltips: {
-                        callbacks: {
-                            afterTitle: items => {
-                                const {index} = items[0];
-                                const data = dataset[index];
-                                return '\n' + data.commit.message + '\n\n' + data.commit.timestamp + ' committed by @' + data.commit.committer.username + '\n';
-                            },
-                            label: item => {
-                                let label = item.value;
-                                const { range, unit } = dataset[item.index].bench;
-                                label += ' ' + unit;
-                                if (range) {
-                                    label += ' (' + range + ')';
-                                }
-                                return label;
-                            },
-                            afterLabel: item => {
-                                const { extra } = dataset[item.index].bench;
-                                return extra ? '\n' + extra : '';
-                            }
-                        }
-                    },
-                    onClick: (_mouseEvent, activeElems) => {
-                        if (activeElems.length === 0) {
-                            return;
-                        }
-                        const index = activeElems[0]._index;
-                        const url = dataset[index].commit.url;
-                        window.open(url, '_blank');
-                    },
-                    responsive: true, // Make chart responsive
-                    maintainAspectRatio: false // Do not maintain original aspect ratio
-                };
-
-                new Chart(canvas, {
-                    type: 'line',
-                    data: data,
-                    options: options,
-                });
-
-            }
-
-          function renderOverview(ctx, labels, asterinasValues) {
+          function renderOverview(ctx, labels, asterinasValues, title, description) {
                     const canvas = document.createElement('canvas');
                     canvas.className = 'benchmark-chart-overview';
+                    setCanvasHeight(canvas, labels.length);
                     ctx.appendChild(canvas);
                     new Chart(canvas, {
                         type: 'bar', // Use bar type
@@ -398,6 +298,8 @@
                                     }
                                 }
                             },
+                            barPercentage: 0.6, // 条形宽度（范围 0 到 1）
+                            categoryPercentage: 0.8, // 条形间距（范围 0 到 1）
                             plugins: {
                                 annotation: {
                                     annotations: [
@@ -424,64 +326,37 @@
           }
 
           const main = document.getElementById('main');
-          const graphsElem = document.createElement('div');
-          graphsElem.className = 'benchmark-graphs';
-          main.appendChild(graphsElem);
 
-          const setElem = document.createElement('div');
-          setElem.className = 'benchmark-set';
-          main.appendChild(setElem);
-
-          const normalizedDataSets = getNormalizedData(dataSets); 
-          const labels = Array.from(normalizedDataSets.keys());
-          const asterinasValues = Array.from(normalizedDataSets.values());
-          const title = "Normalized performance of Asterinas";
-          const description = "For bandwidth, use Asterinas / Linux; for latency, use Linux / Asterinas. The higher, the better."
-                
-          const nameElem = document.createElement('h1');
-          nameElem.className = 'benchmark-title';
-          nameElem.textContent = title;
-          setElem.appendChild(nameElem);
-
-          const descriptionElem = document.createElement('div');
-          descriptionElem.className = 'chart-description';
-          descriptionElem.textContent = description;
-          setElem.appendChild(descriptionElem);
-
-          const overviewElem = document.createElement('div');
-          overviewElem.className = 'benchmark-graphs';
-          setElem.appendChild(overviewElem);
-          
-          renderOverview(overviewElem, labels, asterinasValues);
-        
-          for (const {name, dataSet} of dataSets) {
-            // const display = dataSet.values().next().value.length > 0 ? dataSet.values().next().value[0].display : true;
-            // if (!display) {
-            //   continue;
-            // }
-
+          normalizedDataSets.forEach(dataSet => {
             const setElem = document.createElement('div');
             setElem.className = 'benchmark-set';
             main.appendChild(setElem);
 
+            const labels = Array.from(dataSet.normalizedData.keys());
+            const asterinasValues = Array.from(dataSet.normalizedData.values());
+            
+            const title = `<a href="${new URL(dataSet.name, window.location.href)}" target="_blank">${dataSet.name}</a>: Normalized performance of Asterinas`;
+            const description = "For bandwidth, use Asterinas / Linux; for latency, use Linux / Asterinas. The higher, the better."
+                  
             const nameElem = document.createElement('h1');
             nameElem.className = 'benchmark-title';
-            nameElem.textContent = dataSet.values().next().value.length > 0 ? dataSet.values().next().value[dataSet.values().next().value.length-1].title : '';
+            nameElem.insertAdjacentHTML('beforeend', title);
             setElem.appendChild(nameElem);
-            console.log(dataSet);
+
             const descriptionElem = document.createElement('div');
             descriptionElem.className = 'chart-description';
-            descriptionElem.textContent = dataSet.values().next().value.length > 0 ? dataSet.values().next().value[dataSet.values().next().value.length-1].description : '';
+            descriptionElem.textContent = description;
             setElem.appendChild(descriptionElem);
 
-            const graphsElem = document.createElement('div');
-            graphsElem.className = 'benchmark-graphs';
-            setElem.appendChild(graphsElem);
-            renderGraph(graphsElem, dataSet);
-          }
+            const overviewElem = document.createElement('div');
+            overviewElem.className = 'benchmark-graphs';
+            setElem.appendChild(overviewElem);
+            
+            renderOverview(overviewElem, labels, asterinasValues, title, description);
+          });
         }
         
-        renderAllChars(init()); // Start
+        init().then(renderAllChars); // Start
       })();
     </script>
   </body>
