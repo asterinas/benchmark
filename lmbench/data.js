@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1727382115094,
+  "lastUpdate": 1727382263259,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_read_bw": [
@@ -9746,6 +9746,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average page fault latency on Asterinas",
             "value": "0.0988",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Carlos López",
+            "username": "00xc",
+            "email": "carlos.lopezr4096@gmail.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "0a36760f7a42b7fe27735e29f971423f6ec4b1ca",
+          "message": "Respect user-defined exit signal in clone() and clone3()\n\nWhen calling clone() and clone3(), the user is allowed to specify a\nsignal to be sent to the parent process on exit. Respect this value by\nstoring it in the Process struct and sending the signal on exit.\n\nAdd a test as well to verify that the signal is properly delivered to\nthe parent.",
+          "timestamp": "2024-09-24T19:33:10Z",
+          "url": "https://github.com/asterinas/asterinas/commit/0a36760f7a42b7fe27735e29f971423f6ec4b1ca"
+        },
+        "date": 1727382260425,
+        "tool": "customSmallerIsBetter",
+        "title": "[Memory] The cost of page fault handling",
+        "description": "lat_pagefault",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average page fault latency on Linux",
+            "value": "0.1107",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average page fault latency on Asterinas",
+            "value": "0.1018",
             "unit": "µs",
             "extra": "aster_result"
           }
