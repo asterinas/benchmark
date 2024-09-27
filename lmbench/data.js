@@ -66276,7 +66276,7 @@ window.BENCHMARK_DATA = {
         "benches": [
           {
             "name": "Number of created/deleted files on Linux",
-            "value": "2.027651]",
+            "value": "4109",
             "unit": "number",
             "extra": "linux_result"
           },
@@ -68027,7 +68027,7 @@ window.BENCHMARK_DATA = {
         "benches": [
           {
             "name": "Number of created/deleted files on Linux",
-            "value": "1.982446]",
+            "value": "1612",
             "unit": "number",
             "extra": "linux_result"
           },
