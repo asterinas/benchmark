@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1727729444669,
+  "lastUpdate": 1727729604300,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_read_bw": [
@@ -72992,6 +72992,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Number of created/deleted files on Asterinas",
             "value": "1183",
+            "unit": "number",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "76d4b180d016d6bab10602e8b47100bc4bc0e6fd",
+          "message": "Increase the TCP socket buffer length",
+          "timestamp": "2024-09-30T08:03:46Z",
+          "url": "https://github.com/asterinas/asterinas/commit/76d4b180d016d6bab10602e8b47100bc4bc0e6fd"
+        },
+        "date": 1727729597138,
+        "tool": "customBiggerIsBetter",
+        "title": "[Ramfs] The cost of creating/deleting small files (10KB)",
+        "description": "lat_fs -s 10K",
+        "display": true,
+        "benches": [
+          {
+            "name": "Number of created/deleted files on Linux",
+            "value": "1548",
+            "unit": "number",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Number of created/deleted files on Asterinas",
+            "value": "1207",
             "unit": "number",
             "extra": "aster_result"
           }
