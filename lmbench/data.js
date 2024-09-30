@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1727680249896,
+  "lastUpdate": 1727680460407,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_read_bw": [
@@ -23095,6 +23095,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average Fork latency on Asterinas",
             "value": "56.3163",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "jiangjianfeng",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "f7932595125a0bba8230b5f8d3b110c687d6f3b2",
+          "message": "Avoiding busy loop in sending packet and optimize device caps",
+          "timestamp": "2024-09-25T11:15:58Z",
+          "url": "https://github.com/asterinas/asterinas/commit/f7932595125a0bba8230b5f8d3b110c687d6f3b2"
+        },
+        "date": 1727680386312,
+        "tool": "customSmallerIsBetter",
+        "title": "[Process] The cost of fork+exit",
+        "description": "lat_proc fork",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average Fork latency on Linux",
+            "value": "54.9231",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average Fork latency on Asterinas",
+            "value": "55.8367",
             "unit": "µs",
             "extra": "aster_result"
           }
