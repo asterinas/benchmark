@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1727729010504,
+  "lastUpdate": 1727729153253,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_read_bw": [
@@ -23428,6 +23428,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average Fork latency on Asterinas",
             "value": "55.8367",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "76d4b180d016d6bab10602e8b47100bc4bc0e6fd",
+          "message": "Increase the TCP socket buffer length",
+          "timestamp": "2024-09-30T08:03:46Z",
+          "url": "https://github.com/asterinas/asterinas/commit/76d4b180d016d6bab10602e8b47100bc4bc0e6fd"
+        },
+        "date": 1727729146535,
+        "tool": "customSmallerIsBetter",
+        "title": "[Process] The cost of fork+exit",
+        "description": "lat_proc fork",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average Fork latency on Linux",
+            "value": "52.7083",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average Fork latency on Asterinas",
+            "value": "55.3061",
             "unit": "µs",
             "extra": "aster_result"
           }
