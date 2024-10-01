@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1727815449982,
+  "lastUpdate": 1727815590586,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_read_bw": [
@@ -29218,6 +29218,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average shell latency on Asterinas",
             "value": "431.9167",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Thomas Dickson",
+            "username": "Hoverth",
+            "email": "modscrat+github@gmail.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "1632ce36d7cf29b38b6e06cc5dd3d9fb70247129",
+          "message": "doc: improve grammar, spelling, and fix some links\n\ndoc: resolve rebasing osdk docs\n\ndoc: improve grammar and spelling, fix links for the contributing section\n\nfix: resolve rebasing for run.rs\n\nfix: resolve rebasing for osdk, again",
+          "timestamp": "2024-09-30T22:08:25Z",
+          "url": "https://github.com/asterinas/asterinas/commit/1632ce36d7cf29b38b6e06cc5dd3d9fb70247129"
+        },
+        "date": 1727815583866,
+        "tool": "customSmallerIsBetter",
+        "title": "[Process] The cost of fork+exec+shell+exit",
+        "description": "lat_proc shell",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average shell latency on Linux",
+            "value": "318.9375",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average shell latency on Asterinas",
+            "value": "432.1667",
             "unit": "µs",
             "extra": "aster_result"
           }
