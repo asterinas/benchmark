@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1727905264834,
+  "lastUpdate": 1727905440950,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_read_bw": [
@@ -69173,6 +69173,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average file read bandwidth on Asterinas",
             "value": "10269.93",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Thomas Dickson",
+            "username": "Hoverth",
+            "email": "modscrat+github@gmail.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "1632ce36d7cf29b38b6e06cc5dd3d9fb70247129",
+          "message": "doc: improve grammar, spelling, and fix some links\n\ndoc: resolve rebasing osdk docs\n\ndoc: improve grammar and spelling, fix links for the contributing section\n\nfix: resolve rebasing for run.rs\n\nfix: resolve rebasing for osdk, again",
+          "timestamp": "2024-09-30T22:08:25Z",
+          "url": "https://github.com/asterinas/asterinas/commit/1632ce36d7cf29b38b6e06cc5dd3d9fb70247129"
+        },
+        "date": 1727905434111,
+        "tool": "customBiggerIsBetter",
+        "title": "[VFS] The bandwidth of file reads via page cache",
+        "description": "bw_file_rd",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average file read bandwidth on Linux",
+            "value": "9450.95",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average file read bandwidth on Asterinas",
+            "value": "10365.10",
             "unit": "MB/s",
             "extra": "aster_result"
           }
