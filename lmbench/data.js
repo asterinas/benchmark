@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1728074129774,
+  "lastUpdate": 1728074274717,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_read_bw": [
@@ -21405,6 +21405,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average context switch latency on Asterinas",
             "value": "1.19",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "96efd620072a0cbdccc95b58901894111f17bb3a",
+          "message": "Use `LocalIrqDisable` in `Subject`",
+          "timestamp": "2024-10-03T15:10:27Z",
+          "url": "https://github.com/asterinas/asterinas/commit/96efd620072a0cbdccc95b58901894111f17bb3a"
+        },
+        "date": 1728074270699,
+        "tool": "customSmallerIsBetter",
+        "title": "[Process] The cost of context switching",
+        "description": "lat_ctx 2",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average context switch latency on Linux",
+            "value": "1.07",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average context switch latency on Asterinas",
+            "value": "1.20",
             "unit": "µs",
             "extra": "aster_result"
           }
