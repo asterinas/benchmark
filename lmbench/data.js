@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1728076959977,
+  "lastUpdate": 1728077153378,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_read_bw": [
@@ -50461,6 +50461,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average unix bandwidth on Asterinas",
             "value": "12096.67",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "96efd620072a0cbdccc95b58901894111f17bb3a",
+          "message": "Use `LocalIrqDisable` in `Subject`",
+          "timestamp": "2024-10-03T15:10:27Z",
+          "url": "https://github.com/asterinas/asterinas/commit/96efd620072a0cbdccc95b58901894111f17bb3a"
+        },
+        "date": 1728077146548,
+        "tool": "customBiggerIsBetter",
+        "title": "[Unix sockets] The bandwidth",
+        "description": "bw_unix",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average unix bandwidth on Linux",
+            "value": "7562.27",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average unix bandwidth on Asterinas",
+            "value": "11980.85",
             "unit": "MB/s",
             "extra": "aster_result"
           }
