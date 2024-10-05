@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1728161235074,
+  "lastUpdate": 1728161393964,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_read_bw": [
@@ -78505,6 +78505,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Number of created/deleted files on Asterinas",
             "value": "1179",
+            "unit": "number",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "96efd620072a0cbdccc95b58901894111f17bb3a",
+          "message": "Use `LocalIrqDisable` in `Subject`",
+          "timestamp": "2024-10-03T15:10:27Z",
+          "url": "https://github.com/asterinas/asterinas/commit/96efd620072a0cbdccc95b58901894111f17bb3a"
+        },
+        "date": 1728161386868,
+        "tool": "customBiggerIsBetter",
+        "title": "[Ramfs] The cost of creating/deleting small files (10KB)",
+        "description": "lat_fs -s 10K",
+        "display": true,
+        "benches": [
+          {
+            "name": "Number of created/deleted files on Linux",
+            "value": "1676",
+            "unit": "number",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Number of created/deleted files on Asterinas",
+            "value": "1184",
             "unit": "number",
             "extra": "aster_result"
           }
