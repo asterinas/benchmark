@@ -93,9 +93,6 @@
           max-width: 90%;
           width: auto; /* Make width adaptive */
           min-width: 1000px; /* Set minimum width to 1000px */
-          height: 80vh; /* Make height adaptive */
-          min-height: 1000px;
-          max-height: 1500px; /* Make height adaptive */
           background-color: #ffffff; /* White background for better chart display */
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Slight shadow */
       }
@@ -110,7 +107,7 @@
           margin-top: 0px; /* Added margin to create space between the title and the description */
           margin-bottom: 20px; /* Added margin to create space between the description and the figure below it */
       }
-  </style>
+    </style>
     <title>Benchmarks</title>
   </head>
 
@@ -135,7 +132,7 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-tick-configuration"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation"></script> <!-- Include annotation plugin -->
-    <script src="data.js"></script>
+    <script src="./data.js"></script>
     <script id="main-script">
       'use strict';
       (function() {
@@ -183,25 +180,12 @@
             }
             return pathSegments[pathSegments.length - 1];
           })();
-
-          // Prepare data points for charts
-          let dataSets;
-          if (filter) {
-            dataSets = Object.keys(data.entries)
-              .filter(name => name.startsWith(filter))
+    
+          return Object.keys(data.entries)
               .map(name => ({
                 name,
                 dataSet: collectBenchesPerTestCase(data.entries[name]),
               }));
-          } else {
-            dataSets = Object.keys(data.entries)
-              .map(name => ({
-                name,
-                dataSet: collectBenchesPerTestCase(data.entries[name]),
-              }));
-          }
-          
-          return dataSets;
         }
 
         // Get normalized data with display flag
@@ -264,6 +248,18 @@
               'rgb(255, 105, 180)'   // Pink
             ];
             return colors[index % colors.length];
+          }
+
+          function setCanvasHeight(canvas, numberOfBars) {
+            const heightPerBar = 50; // 每个条形的高度
+            const padding = 10; // 顶部和底部填充
+            const maxHeight = 1200; // 最大高度限制
+
+            // 计算总高度
+            const totalHeight = (heightPerBar * numberOfBars) + padding;
+
+            // 如果总高度超过最大高度限制，则使用最大高度
+            canvas.style.height = `${Math.min(totalHeight, maxHeight)}px`;
           }
 
           function renderGraph(parent, benchSets) {
@@ -355,6 +351,7 @@
           function renderOverview(ctx, labels, asterinasValues) {
                     const canvas = document.createElement('canvas');
                     canvas.className = 'benchmark-chart-overview';
+                    setCanvasHeight(canvas, labels.length);
                     ctx.appendChild(canvas);
                     new Chart(canvas, {
                         type: 'bar', // Use bar type
@@ -393,6 +390,8 @@
                                     }
                                 }
                             },
+                            barPercentage: 0.6, // 条形宽度（范围 0 到 1）
+                            categoryPercentage: 0.8, // 条形间距（范围 0 到 1）
                             plugins: {
                                 annotation: {
                                     annotations: [
@@ -450,11 +449,6 @@
           renderOverview(overviewElem, labels, asterinasValues);
         
           for (const {name, dataSet} of dataSets) {
-            // const display = dataSet.values().next().value.length > 0 ? dataSet.values().next().value[0].display : true;
-            // if (!display) {
-            //   continue;
-            // }
-
             const setElem = document.createElement('div');
             setElem.className = 'benchmark-set';
             main.appendChild(setElem);
@@ -463,7 +457,7 @@
             nameElem.className = 'benchmark-title';
             nameElem.textContent = dataSet.values().next().value.length > 0 ? dataSet.values().next().value[dataSet.values().next().value.length-1].title : '';
             setElem.appendChild(nameElem);
-            console.log(dataSet);
+            
             const descriptionElem = document.createElement('div');
             descriptionElem.className = 'chart-description';
             descriptionElem.textContent = dataSet.values().next().value.length > 0 ? dataSet.values().next().value[dataSet.values().next().value.length-1].description : '';
