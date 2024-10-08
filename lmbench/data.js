@@ -83238,7 +83238,7 @@ window.BENCHMARK_DATA = {
         ]
       }
     ],
-    "tcp_loopback_bw": [
+    "tcp_loopback_bw_4k": [
       {
         "commit": {
           "author": {
