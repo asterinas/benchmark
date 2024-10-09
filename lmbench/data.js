@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1728441994453,
+  "lastUpdate": 1728442138819,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_read_bw": [
@@ -32030,6 +32030,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average shell latency on Asterinas",
             "value": "416.1538",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Fabing Li",
+            "username": "grief8",
+            "email": "lifabing.lfb@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "d930829866fca07788d1dbc95256552edd283a39",
+          "message": "Bump version to 0.9.1",
+          "timestamp": "2024-10-08T07:36:44Z",
+          "url": "https://github.com/asterinas/asterinas/commit/d930829866fca07788d1dbc95256552edd283a39"
+        },
+        "date": 1728442130782,
+        "tool": "customSmallerIsBetter",
+        "title": "[Process] The cost of fork+exec+shell+exit",
+        "description": "lat_proc shell",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average shell latency on Linux",
+            "value": "321.8125",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average shell latency on Asterinas",
+            "value": "417.2308",
             "unit": "µs",
             "extra": "aster_result"
           }
