@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1728511407959,
+  "lastUpdate": 1728511560992,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_read_bw": [
@@ -78888,6 +78888,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average select file latency on Asterinas",
             "value": "1.7550",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Fabing Li",
+            "username": "grief8",
+            "email": "lifabing.lfb@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "6e7b12c3c43c585d4092a8b978a3b673b04491c4",
+          "message": "Extract the status of guest VM from its log",
+          "timestamp": "2024-10-09T07:04:42Z",
+          "url": "https://github.com/asterinas/asterinas/commit/6e7b12c3c43c585d4092a8b978a3b673b04491c4"
+        },
+        "date": 1728511554455,
+        "tool": "customSmallerIsBetter",
+        "title": "[Network] The cost of select (file fds)",
+        "description": "lat_select",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average select file latency on Linux",
+            "value": "1.3203",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average select file latency on Asterinas",
+            "value": "1.7447",
             "unit": "µs",
             "extra": "aster_result"
           }
