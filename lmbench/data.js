@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1728940993548,
+  "lastUpdate": 1728941197166,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_read_bw": [
@@ -93309,6 +93309,45 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average TCP latency on Asterinas",
             "value": "8.8374",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      }
+    ],
+    "tcp_virtio_lat": [
+      {
+        "commit": {
+          "author": {
+            "name": "Hsy-Intel",
+            "username": "Hsy-Intel",
+            "email": "siyuan.hui@intel.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "2af9916de92f8ca1e694bb6ac5e33111bbcf51fd",
+          "message": "Upgrade the `acpi` crate to the latest version",
+          "timestamp": "2024-10-10T06:18:58Z",
+          "url": "https://github.com/asterinas/asterinas/commit/2af9916de92f8ca1e694bb6ac5e33111bbcf51fd"
+        },
+        "date": 1728941189273,
+        "tool": "customSmallerIsBetter",
+        "title": "[TCP sockets] The latency over virtio-net",
+        "description": "lat_tcp_virtio",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average TCP latency over virtio-net on Linux",
+            "value": "26.3048",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average TCP latency over virtio-net on Asterinas",
+            "value": "42.5374",
             "unit": "µs",
             "extra": "aster_result"
           }
