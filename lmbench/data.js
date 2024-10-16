@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1729115428301,
+  "lastUpdate": 1729115619173,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_read_bw": [
@@ -95827,6 +95827,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average TCP latency over virtio-net on Asterinas",
             "value": "42.4618",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Zhang Junyang",
+            "username": "junyang-zh",
+            "email": "junyang@stu.pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "6757b39c139bde43cd6ef32d37e87f3c39a49cbd",
+          "message": "Adjust the order publishing the bzImage crates",
+          "timestamp": "2024-10-16T03:40:59Z",
+          "url": "https://github.com/asterinas/asterinas/commit/6757b39c139bde43cd6ef32d37e87f3c39a49cbd"
+        },
+        "date": 1729115610725,
+        "tool": "customSmallerIsBetter",
+        "title": "[TCP sockets] The latency over virtio-net",
+        "description": "lat_tcp_virtio",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average TCP latency over virtio-net on Linux",
+            "value": "26.6524",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average TCP latency over virtio-net on Asterinas",
+            "value": "42.7659",
             "unit": "µs",
             "extra": "aster_result"
           }
