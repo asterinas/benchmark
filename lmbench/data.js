@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1729113090499,
+  "lastUpdate": 1729115087501,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_read_bw": [
@@ -100853,6 +100853,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average simple HTTP transaction bandwidth on Asterinas",
             "value": "3730.14",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Zhang Junyang",
+            "username": "junyang-zh",
+            "email": "junyang@stu.pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "6757b39c139bde43cd6ef32d37e87f3c39a49cbd",
+          "message": "Adjust the order publishing the bzImage crates",
+          "timestamp": "2024-10-16T03:40:59Z",
+          "url": "https://github.com/asterinas/asterinas/commit/6757b39c139bde43cd6ef32d37e87f3c39a49cbd"
+        },
+        "date": 1729115080265,
+        "tool": "customBiggerIsBetter",
+        "title": "[HTTP] The bandwidth",
+        "description": "bw_http",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average simple HTTP transaction bandwidth on Linux",
+            "value": "4007.94",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average simple HTTP transaction bandwidth on Asterinas",
+            "value": "3808.90",
             "unit": "MB/s",
             "extra": "aster_result"
           }
