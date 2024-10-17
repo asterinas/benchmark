@@ -258,73 +258,82 @@
             canvas.style.height = `${Math.min(totalHeight, maxHeight)}px`;
           }
 
-          function renderOverview(ctx, labels, asterinasValues, title, description) {
-                    const canvas = document.createElement('canvas');
-                    canvas.className = 'benchmark-chart-overview';
-                    setCanvasHeight(canvas, labels.length);
-                    ctx.appendChild(canvas);
-                    new Chart(canvas, {
-                        type: 'bar', // Use bar type
-                        data: {
-                            labels: labels,
-                            datasets: [
-                                {
-                                    label: 'Asterinas',
-                                    data: asterinasValues,
-                                    fill: false,
-                                    backgroundColor: 'rgba(54, 162, 235, 0.2)', // Swap colors
-                                    borderColor: 'rgba(54, 162, 235, 1)', // Swap colors
-                                    borderWidth: 1,
-                                }
-                            ]
-                        },
-                        options: {
-                            indexAxis: 'y', // Set indexAxis to 'y' to create horizontal bar chart
-                            scales: {
-                                x: {
-                                    reverse: true,
-                                    ticks: {
-                                        stepSize: 0.1,
-                                        major: {
-                                            enabled: true
-                                        },
-                                    }
-                                },
-                                y: {
-                                    position: 'right',
-                                    ticks: {
-                                        autoSkip: false, // Ensure every tick is displayed
-                                        font: {
-                                            size: 14 // Set font size
-                                        },
-                                    }
-                                }
-                            },
-                            barPercentage: 0.6, // 条形宽度（范围 0 到 1）
-                            categoryPercentage: 0.8, // 条形间距（范围 0 到 1）
-                            plugins: {
-                                annotation: {
-                                    annotations: [
-                                        {
-                                            type: 'line',
-                                            mode: 'horizontal',
-                                            scaleID: 'x',
-                                            value: 1,
-                                            borderColor: 'rgba(0, 0, 0, 0.5)',
-                                            borderWidth: 2,
-                                            label: {
-                                                content: 'Reference Line (x=1)',
-                                                enabled: true,
-                                                position: 'right'
-                                            }
-                                        }
-                                    ]
-                                }
-                            },
-                            responsive: true, // Make chart responsive
-                            maintainAspectRatio: false // Do not maintain original aspect ratio
-                        }
-                    });
+          function renderOverview(ctx, labels, asterinasValues) {
+              const canvas = document.createElement('canvas');
+              canvas.className = 'benchmark-chart-overview';
+              setCanvasHeight(canvas, labels.length);
+              ctx.appendChild(canvas);
+              new Chart(canvas, {
+                  type: 'bar', 
+                  data: {
+                      labels: labels,
+                      datasets: [
+                          {
+                              label: 'Asterinas',
+                              data: asterinasValues,
+                              fill: false,
+                              backgroundColor: 'rgba(54, 162, 235, 0.2)', 
+                              borderColor: 'rgba(54, 162, 235, 1)', 
+                              borderWidth: 1,
+                          }
+                      ]
+                  },
+                  options: {
+                      indexAxis: 'y', 
+                      scales: {
+                          x: {
+                              reverse: true,
+                              ticks: {
+                                  stepSize: 0.1,
+                                  major: {
+                                      enabled: true
+                                  },
+                              }
+                          },
+                          y: {
+                              position: 'right',
+                              ticks: {
+                                  autoSkip: false, 
+                                  font: function(context) {
+                                      if (context.tick.label === 'Geometric Mean') {
+                                          return {
+                                              weight: 'bold', 
+                                              size: 14 
+                                          };
+                                      }
+                                      return {
+                                          weight: 'normal', 
+                                          size: 14 
+                                      };
+                                  },
+                              }
+                          }
+                      },
+                      barPercentage: 0.6, 
+                      categoryPercentage: 0.8, 
+                      plugins: {
+                          annotation: {
+                              annotations: [
+                                  {
+                                      type: 'line',
+                                      mode: 'horizontal',
+                                      scaleID: 'x',
+                                      value: 1,
+                                      borderColor: 'rgba(0, 0, 0, 0.5)',
+                                      borderWidth: 2,
+                                      label: {
+                                          content: 'Reference Line (x=1)',
+                                          enabled: true,
+                                          position: 'right'
+                                      }
+                                  }
+                              ]
+                          }
+                      },
+                      responsive: true, 
+                      maintainAspectRatio: false 
+                  }
+              });
           }
 
           const main = document.getElementById('main');

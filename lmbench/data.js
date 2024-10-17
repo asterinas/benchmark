@@ -3475,7 +3475,7 @@ window.BENCHMARK_DATA = {
         "tool": "customBiggerIsBetter",
         "title": "[Memory] The bandwidth of reading integers",
         "description": "bw_mem frd",
-        "display": true,
+        "display": false,
         "benches": [
           {
             "name": "Average memory read bandwidth on Linux",
@@ -6965,7 +6965,7 @@ window.BENCHMARK_DATA = {
         "tool": "customBiggerIsBetter",
         "title": "[Memory] The bandwidth of writing integers",
         "description": "bw_mem fwr",
-        "display": true,
+        "display": false,
         "benches": [
           {
             "name": "Average memory write bandwidth on Linux",
@@ -10455,7 +10455,7 @@ window.BENCHMARK_DATA = {
         "tool": "customBiggerIsBetter",
         "title": "[Memory] The bandwidth of copying integers",
         "description": "bw_mem fcp",
-        "display": true,
+        "display": false,
         "benches": [
           {
             "name": "Average memory copy bandwidth on Linux",
@@ -94256,7 +94256,7 @@ window.BENCHMARK_DATA = {
         "tool": "customBiggerIsBetter",
         "title": "[TCP sockets] The bandwidth (localhost, 4KB message)",
         "description": "bw_tcp -l",
-        "display": true,
+        "display": false,
         "benches": [
           {
             "name": "Average TCP bandwidth on Linux",
