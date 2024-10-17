@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1729127491688,
+  "lastUpdate": 1729204022775,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "http_req10k_conc1_bw": [
@@ -220,6 +220,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average HTTP Bandwidth over virtio-net between Host Linux and Guest Asterinas",
             "value": "143.16",
+            "unit": "Kbytes/sec",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Fabing Li",
+            "username": "grief8",
+            "email": "lifabing.lfb@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "09204600c0ccaf77265ca904a32d9daa3bc2fb9f",
+          "message": "Change visibility of benchmarks",
+          "timestamp": "2024-10-17T06:58:54Z",
+          "url": "https://github.com/asterinas/asterinas/commit/09204600c0ccaf77265ca904a32d9daa3bc2fb9f"
+        },
+        "date": 1729204014853,
+        "tool": "customBiggerIsBetter",
+        "title": "Nginx HTTP request performance with 1 concurrency and 10000 requests in total",
+        "description": "ab -n 10000 -c 1 http://localhost:8080/index.html",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average HTTP Bandwidth over virtio-net between Host Linux and Guest Linux",
+            "value": "10651.39",
+            "unit": "Kbytes/sec",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average HTTP Bandwidth over virtio-net between Host Linux and Guest Asterinas",
+            "value": "143.32",
             "unit": "Kbytes/sec",
             "extra": "aster_result"
           }
