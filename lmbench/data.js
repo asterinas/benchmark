@@ -85202,7 +85202,7 @@ window.BENCHMARK_DATA = {
         },
         "date": 1729126978350,
         "tool": "customSmallerIsBetter",
-        "title": "[Network] The cost of select (file fds)",
+        "title": "[VFS] The cost of select (file fds)",
         "description": "lat_select",
         "display": true,
         "benches": [
