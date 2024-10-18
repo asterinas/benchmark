@@ -75873,7 +75873,7 @@ window.BENCHMARK_DATA = {
         "benches": [
           {
             "name": "Number of created/deleted files on Linux",
-            "value": "40097",
+            "value": "3824",
             "unit": "number",
             "extra": "linux_result"
           },
