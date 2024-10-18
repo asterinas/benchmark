@@ -251,15 +251,16 @@
           }
 
           function setCanvasHeight(canvas, numberOfBars) {
-            const heightPerBar = 20; // 每个条形的高度
-            const padding = 5; // 顶部和底部填充
-            const maxHeight = 1200; // 最大高度限制
+              const heightPerBar = 20; // 每个条形的高度
+              const padding = 5; // 顶部和底部填充
+              const maxHeight = 1200; // 最大高度限制
+              const minHeight = 100; // 最小高度限制
 
-            // 计算总高度
-            const totalHeight = (heightPerBar * numberOfBars) + padding;
+              // 计算总高度
+              const totalHeight = (heightPerBar * numberOfBars) + padding;
 
-            // 如果总高度超过最大高度限制，则使用最大高度
-            canvas.style.height = `${Math.min(totalHeight, maxHeight)}px`;
+              // 如果总高度超过最大高度限制，则使用最大高度；如果低于最小高度限制，则使用最小高度
+              canvas.style.height = `${Math.max(minHeight, Math.min(totalHeight, maxHeight))}px`;
           }
 
           function renderGraph(parent, benchSets) {
