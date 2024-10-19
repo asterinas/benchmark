@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1729288485054,
+  "lastUpdate": 1729368161186,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -110400,6 +110400,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Number of created/deleted files on Linux",
             "value": "831",
+            "unit": "number",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Number of created/deleted files on Asterinas",
+            "value": "120",
+            "unit": "number",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Chen Chengjun",
+            "username": "cchanging",
+            "email": "chenchengjun.ccj@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "2f511069eecf521661aa4d8ee3020863be75b543",
+          "message": "Move SoftIRQ implementations to softirq component",
+          "timestamp": "2024-10-17T09:41:24Z",
+          "url": "https://github.com/asterinas/asterinas/commit/2f511069eecf521661aa4d8ee3020863be75b543"
+        },
+        "date": 1729368158019,
+        "tool": "customBiggerIsBetter",
+        "title": "[Ext2] The cost of creating/deleting small files (10KB)",
+        "description": "lat_fs -s 10K /ext2",
+        "display": false,
+        "benches": [
+          {
+            "name": "Number of created/deleted files on Linux",
+            "value": "904",
             "unit": "number",
             "extra": "linux_result"
           },
