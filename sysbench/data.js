@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1729894856337,
+  "lastUpdate": 1729895327541,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "cpu_lat": [
@@ -8595,6 +8595,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average Execution Time per Thread on Asterinas",
             "value": "21.20",
+            "unit": "ms",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "ZephyrZhang",
+            "username": "ZephyrZhang3",
+            "email": "zephyrzhang3@qq.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "885e4315e3fbab6feb82bae03c30f9ba02c1b36e",
+          "message": "fix a comment typo at kernel/src/syscall/mod.rs",
+          "timestamp": "2024-10-25T05:20:41Z",
+          "url": "https://github.com/asterinas/asterinas/commit/885e4315e3fbab6feb82bae03c30f9ba02c1b36e"
+        },
+        "date": 1729895319724,
+        "tool": "customSmallerIsBetter",
+        "title": "[Threads] Threads performance",
+        "description": "sysbench threads",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average Execution Time per Thread on Linux",
+            "value": "13.27",
+            "unit": "ms",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average Execution Time per Thread on Asterinas",
+            "value": "20.11",
             "unit": "ms",
             "extra": "aster_result"
           }
