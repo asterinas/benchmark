@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1729894139485,
+  "lastUpdate": 1729894292715,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -80345,6 +80345,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average select file latency on Asterinas",
             "value": "1.8010",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "ZephyrZhang",
+            "username": "ZephyrZhang3",
+            "email": "zephyrzhang3@qq.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "885e4315e3fbab6feb82bae03c30f9ba02c1b36e",
+          "message": "fix a comment typo at kernel/src/syscall/mod.rs",
+          "timestamp": "2024-10-25T05:20:41Z",
+          "url": "https://github.com/asterinas/asterinas/commit/885e4315e3fbab6feb82bae03c30f9ba02c1b36e"
+        },
+        "date": 1729894281818,
+        "tool": "customSmallerIsBetter",
+        "title": "[VFS] The cost of select (file fds)",
+        "description": "lat_select",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average select file latency on Linux",
+            "value": "1.3211",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average select file latency on Asterinas",
+            "value": "1.7932",
             "unit": "µs",
             "extra": "aster_result"
           }
