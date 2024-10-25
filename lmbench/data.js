@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1729893518992,
+  "lastUpdate": 1729893666173,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -73643,6 +73643,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average fstat latency on Asterinas",
             "value": "0.2097",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "ZephyrZhang",
+            "username": "ZephyrZhang3",
+            "email": "zephyrzhang3@qq.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "885e4315e3fbab6feb82bae03c30f9ba02c1b36e",
+          "message": "fix a comment typo at kernel/src/syscall/mod.rs",
+          "timestamp": "2024-10-25T05:20:41Z",
+          "url": "https://github.com/asterinas/asterinas/commit/885e4315e3fbab6feb82bae03c30f9ba02c1b36e"
+        },
+        "date": 1729893657110,
+        "tool": "customSmallerIsBetter",
+        "title": "[VFS] The cost of fstat",
+        "description": "lat_syscall fstat",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average fstat latency on Linux",
+            "value": "0.2915",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average fstat latency on Asterinas",
+            "value": "0.2065",
             "unit": "µs",
             "extra": "aster_result"
           }
