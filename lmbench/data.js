@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1729976650223,
+  "lastUpdate": 1729976818924,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -116363,6 +116363,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average TCP bandwidth on Asterinas",
             "value": "1929.13",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Jianfeng Jiang",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "7c3e3738a1bd7b7cb324ff5a515b8eec1fb672c2",
+          "message": "Enable tap mode network and vhost",
+          "timestamp": "2024-10-22T02:02:19Z",
+          "url": "https://github.com/asterinas/asterinas/commit/7c3e3738a1bd7b7cb324ff5a515b8eec1fb672c2"
+        },
+        "date": 1729976809440,
+        "tool": "customBiggerIsBetter",
+        "title": "[TCP sockets] The bandwidth (localhost, 4KB message)",
+        "description": "bw_tcp -l",
+        "display": false,
+        "benches": [
+          {
+            "name": "Average TCP bandwidth on Linux",
+            "value": "4419.37",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average TCP bandwidth on Asterinas",
+            "value": "1881.48",
             "unit": "MB/s",
             "extra": "aster_result"
           }
