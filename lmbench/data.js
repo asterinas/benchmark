@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1730062944156,
+  "lastUpdate": 1730063104096,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -117732,6 +117732,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average TCP bandwidth on Asterinas",
             "value": "1881.48",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ikko Eltociear Ashimine",
+            "username": "eltociear",
+            "email": "eltociear@gmail.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "6a33f7a6d0e52701f4267390cc2eea30590a8e45",
+          "message": "docs: add Japanese README\n\nI created Japanese translated README.",
+          "timestamp": "2024-10-27T00:18:48Z",
+          "url": "https://github.com/asterinas/asterinas/commit/6a33f7a6d0e52701f4267390cc2eea30590a8e45"
+        },
+        "date": 1730063094840,
+        "tool": "customBiggerIsBetter",
+        "title": "[TCP sockets] The bandwidth (localhost, 4KB message)",
+        "description": "bw_tcp -l",
+        "display": false,
+        "benches": [
+          {
+            "name": "Average TCP bandwidth on Linux",
+            "value": "4415.88",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average TCP bandwidth on Asterinas",
+            "value": "2344.02",
             "unit": "MB/s",
             "extra": "aster_result"
           }
