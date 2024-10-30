@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1730318769224,
+  "lastUpdate": 1730318908761,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -92644,6 +92644,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average file copy bandwidth on Asterinas",
             "value": "2759.3343",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Shaowei Song",
+            "username": "lucassong-mh",
+            "email": "songshaowei.ssw@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "96a153dfc5fda6ac8652c1da149562037200939b",
+          "message": "Implement dummy `metadata()` for epoll and socket files",
+          "timestamp": "2024-10-30T03:42:01Z",
+          "url": "https://github.com/asterinas/asterinas/commit/96a153dfc5fda6ac8652c1da149562037200939b"
+        },
+        "date": 1730318904127,
+        "tool": "customBiggerIsBetter",
+        "title": "[EXT2] The bandwidth of copying data between files",
+        "description": "lmdd",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average file copy bandwidth on Linux",
+            "value": "2317.8118",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average file copy bandwidth on Asterinas",
+            "value": "2814.4858",
             "unit": "MB/s",
             "extra": "aster_result"
           }
