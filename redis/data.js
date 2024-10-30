@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1730326197922,
+  "lastUpdate": 1730326355015,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ping_inline_100k_conc20_rps": [
@@ -185,6 +185,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average RPS of PING_MBULK over virtio-net between Host Linux and Guest Asterinas",
             "value": "39016.78",
+            "unit": "request per second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Shaowei Song",
+            "username": "lucassong-mh",
+            "email": "songshaowei.ssw@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "96a153dfc5fda6ac8652c1da149562037200939b",
+          "message": "Implement dummy `metadata()` for epoll and socket files",
+          "timestamp": "2024-10-30T03:42:01Z",
+          "url": "https://github.com/asterinas/asterinas/commit/96a153dfc5fda6ac8652c1da149562037200939b"
+        },
+        "date": 1730326346188,
+        "tool": "customBiggerIsBetter",
+        "title": "Redis PING MBULK performance with 20 concurrency and 100000 requests in total",
+        "description": "redis-benchmark -n 100000 -c 20 -t ping_mbulk",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average RPS of PING_MBULK over virtio-net between Host Linux and Guest Linux",
+            "value": "130890.05",
+            "unit": "request per second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average RPS of PING_MBULK over virtio-net between Host Linux and Guest Asterinas",
+            "value": "38880.25",
             "unit": "request per second",
             "extra": "aster_result"
           }
