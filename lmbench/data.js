@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1730324081227,
+  "lastUpdate": 1730324230829,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -52548,6 +52548,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average unix latency on Asterinas",
             "value": "2.9925",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Shaowei Song",
+            "username": "lucassong-mh",
+            "email": "songshaowei.ssw@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "96a153dfc5fda6ac8652c1da149562037200939b",
+          "message": "Implement dummy `metadata()` for epoll and socket files",
+          "timestamp": "2024-10-30T03:42:01Z",
+          "url": "https://github.com/asterinas/asterinas/commit/96a153dfc5fda6ac8652c1da149562037200939b"
+        },
+        "date": 1730324221304,
+        "tool": "customSmallerIsBetter",
+        "title": "[Unix sockets] The latency of write+read",
+        "description": "lat_unix",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average unix latency on Linux",
+            "value": "3.5556",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average unix latency on Asterinas",
+            "value": "3.0147",
             "unit": "µs",
             "extra": "aster_result"
           }
