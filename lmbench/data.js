@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1730409763564,
+  "lastUpdate": 1730409964765,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -124061,6 +124061,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average TCP latency over virtio-net on Asterinas",
             "value": "40.1140",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "7e2e9cebf69ea193ec72cad05ac46c2555919c04",
+          "message": "Perform more noncontroversial cleanups",
+          "timestamp": "2024-10-21T14:44:40Z",
+          "url": "https://github.com/asterinas/asterinas/commit/7e2e9cebf69ea193ec72cad05ac46c2555919c04"
+        },
+        "date": 1730409955850,
+        "tool": "customSmallerIsBetter",
+        "title": "[TCP sockets] The latency over virtio-net",
+        "description": "lat_tcp_virtio",
+        "display": false,
+        "benches": [
+          {
+            "name": "Average TCP latency over virtio-net on Linux",
+            "value": "26.6562",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average TCP latency over virtio-net on Asterinas",
+            "value": "39.9201",
             "unit": "µs",
             "extra": "aster_result"
           }
