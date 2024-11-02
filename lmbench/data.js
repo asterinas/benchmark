@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1730581483802,
+  "lastUpdate": 1730581656626,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -126020,6 +126020,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average TCP bandwidth on Asterinas",
             "value": "2815.10",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Hsy-Intel",
+            "username": "Hsy-Intel",
+            "email": "siyuan.hui@intel.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "50773de35fc154877abc1e143fa03dd6e7e0e525",
+          "message": "Fix a TDX minor issue",
+          "timestamp": "2024-11-02T02:11:39Z",
+          "url": "https://github.com/asterinas/asterinas/commit/50773de35fc154877abc1e143fa03dd6e7e0e525"
+        },
+        "date": 1730581645390,
+        "tool": "customBiggerIsBetter",
+        "title": "[TCP sockets] The bandwidth (localhost, 4KB message)",
+        "description": "bw_tcp -l",
+        "display": false,
+        "benches": [
+          {
+            "name": "Average TCP bandwidth on Linux",
+            "value": "4429.80",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average TCP bandwidth on Asterinas",
+            "value": "1409.21",
             "unit": "MB/s",
             "extra": "aster_result"
           }
