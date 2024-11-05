@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1730840787837,
+  "lastUpdate": 1730840961003,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -130201,6 +130201,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average TCP bandwidth on Asterinas",
             "value": "2858.31",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Zhang Junyang",
+            "username": "junyang-zh",
+            "email": "junyang@stu.pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "a5b3a1d6dd39e86e07790d1febcebe1d25248094",
+          "message": "Unify the qemu arguments generation",
+          "timestamp": "2024-11-04T04:03:18Z",
+          "url": "https://github.com/asterinas/asterinas/commit/a5b3a1d6dd39e86e07790d1febcebe1d25248094"
+        },
+        "date": 1730840950610,
+        "tool": "customBiggerIsBetter",
+        "title": "[TCP sockets] The bandwidth (localhost, 4KB message)",
+        "description": "bw_tcp -l",
+        "display": false,
+        "benches": [
+          {
+            "name": "Average TCP bandwidth on Linux",
+            "value": "4418.28",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average TCP bandwidth on Asterinas",
+            "value": "2802.33",
             "unit": "MB/s",
             "extra": "aster_result"
           }
