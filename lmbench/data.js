@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1730984002855,
+  "lastUpdate": 1730984152899,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -80809,6 +80809,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average stat latency on Asterinas",
             "value": "0.3913",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Zhang Junyang",
+            "username": "junyang-zh",
+            "email": "junyang@stu.pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "25a918d132277eff7ea202cacc4bfa284de2dec5",
+          "message": "Print who and on which CPU the kernel panics",
+          "timestamp": "2024-11-07T03:11:06Z",
+          "url": "https://github.com/asterinas/asterinas/commit/25a918d132277eff7ea202cacc4bfa284de2dec5"
+        },
+        "date": 1730984147168,
+        "tool": "customSmallerIsBetter",
+        "title": "[VFS] The cost of stat",
+        "description": "lat_syscall stat",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average stat latency on Linux",
+            "value": "0.3215",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average stat latency on Asterinas",
+            "value": "0.3851",
             "unit": "µs",
             "extra": "aster_result"
           }
