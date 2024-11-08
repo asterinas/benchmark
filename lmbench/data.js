@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1731039289489,
+  "lastUpdate": 1731039465232,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -118181,6 +118181,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average UDP latency on Asterinas",
             "value": "4.6457",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Fabing Li",
+            "username": "grief8",
+            "email": "lifabing.lfb@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "3ad1ea4d66ea1b4f1c79f18c33dd3e83861f8491",
+          "message": "Fix the title of ext2 and ramfs benchmark",
+          "timestamp": "2024-11-08T03:08:42Z",
+          "url": "https://github.com/asterinas/asterinas/commit/3ad1ea4d66ea1b4f1c79f18c33dd3e83861f8491"
+        },
+        "date": 1731039456160,
+        "tool": "customSmallerIsBetter",
+        "title": "[UDP sockets] The latency of write+read",
+        "description": "lat_udp",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average UDP latency on Linux",
+            "value": "4.8103",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average UDP latency on Asterinas",
+            "value": "4.6598",
             "unit": "µs",
             "extra": "aster_result"
           }
