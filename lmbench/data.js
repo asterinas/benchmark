@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1731052246000,
+  "lastUpdate": 1731052397912,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -116470,6 +116470,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average simple HTTP transaction bandwidth on Asterinas",
             "value": "4345.59",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Fabing Li",
+            "username": "grief8",
+            "email": "lifabing.lfb@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "3ad1ea4d66ea1b4f1c79f18c33dd3e83861f8491",
+          "message": "Fix the title of ext2 and ramfs benchmark",
+          "timestamp": "2024-11-08T03:08:42Z",
+          "url": "https://github.com/asterinas/asterinas/commit/3ad1ea4d66ea1b4f1c79f18c33dd3e83861f8491"
+        },
+        "date": 1731052378613,
+        "tool": "customBiggerIsBetter",
+        "title": "[HTTP] The bandwidth",
+        "description": "bw_http",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average simple HTTP transaction bandwidth on Linux",
+            "value": "4114.09",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average simple HTTP transaction bandwidth on Asterinas",
+            "value": "4270.11",
             "unit": "MB/s",
             "extra": "aster_result"
           }
