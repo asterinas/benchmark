@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1731623713974,
+  "lastUpdate": 1731623855396,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ping_inline_100k_conc20_rps": [
@@ -1591,6 +1591,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average RPS of PING_MBULK over virtio-net between Host Linux and Guest Asterinas",
             "value": "61124.69",
+            "unit": "request per second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "e6c613f53841983765a7b3c56ea9958775c76199",
+          "message": "Rename `(Posix)ThreadExt` to `As(Posix)Thread`",
+          "timestamp": "2024-11-12T01:53:01Z",
+          "url": "https://github.com/asterinas/asterinas/commit/e6c613f53841983765a7b3c56ea9958775c76199"
+        },
+        "date": 1731623849453,
+        "tool": "customBiggerIsBetter",
+        "title": "Redis PING MBULK performance with 20 concurrency and 100000 requests in total",
+        "description": "redis-benchmark -n 100000 -c 20 -t ping_mbulk",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average RPS of PING_MBULK over virtio-net between Host Linux and Guest Linux",
+            "value": "130890.05",
+            "unit": "request per second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average RPS of PING_MBULK over virtio-net between Host Linux and Guest Asterinas",
+            "value": "61766.52",
             "unit": "request per second",
             "extra": "aster_result"
           }
