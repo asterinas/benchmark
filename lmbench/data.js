@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1731622612172,
+  "lastUpdate": 1731622756494,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -83939,6 +83939,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average write latency on Asterinas",
             "value": "0.1144",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "e6c613f53841983765a7b3c56ea9958775c76199",
+          "message": "Rename `(Posix)ThreadExt` to `As(Posix)Thread`",
+          "timestamp": "2024-11-12T01:53:01Z",
+          "url": "https://github.com/asterinas/asterinas/commit/e6c613f53841983765a7b3c56ea9958775c76199"
+        },
+        "date": 1731622750025,
+        "tool": "customSmallerIsBetter",
+        "title": "[VFS] The cost of write (/dev/null)",
+        "description": "lat_syscall write",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average write latency on Linux",
+            "value": "0.1045",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average write latency on Asterinas",
+            "value": "0.1140",
             "unit": "µs",
             "extra": "aster_result"
           }
