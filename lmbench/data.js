@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1731876961692,
+  "lastUpdate": 1731877106035,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -30414,6 +30414,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average exec latency on Asterinas",
             "value": "194.6071",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Cautreoxit",
+            "username": "Cautreoxit",
+            "email": "huk@stu.pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "885950c2a4a65486524ac53e40f6b6515d7ebd3a",
+          "message": "Add VirtioBlockFeature to cache virtio-blk's features",
+          "timestamp": "2024-11-14T13:10:55Z",
+          "url": "https://github.com/asterinas/asterinas/commit/885950c2a4a65486524ac53e40f6b6515d7ebd3a"
+        },
+        "date": 1731877100294,
+        "tool": "customSmallerIsBetter",
+        "title": "[Process] The cost of fork+exec+exit",
+        "description": "lat_proc exec",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average exec latency on Linux",
+            "value": "201.2800",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average exec latency on Asterinas",
+            "value": "193.4483",
             "unit": "µs",
             "extra": "aster_result"
           }
