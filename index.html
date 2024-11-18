@@ -249,71 +249,74 @@
 
         function renderAllChars(normalizedDataSets) {
           function setCanvasHeight(canvas, numberOfBars) {
-              const heightPerBar = 20; // 每个条形的高度
-              const padding = 5; // 顶部和底部填充
-              const maxHeight = 1200; // 最大高度限制
-              const minHeight = 150; // 最小高度限制
+              const heightPerBar = 25; // Height of each bar
+              const padding = 10; // Top and bottom padding
 
-              // 计算总高度
-              const totalHeight = (heightPerBar * numberOfBars) + padding;
+              // Calculate total height based on the number of bars
+              const totalHeight = heightPerBar * (numberOfBars + 1) + padding * 2;
 
-              // 如果总高度超过最大高度限制，则使用最大高度；如果低于最小高度限制，则使用最小高度
-              canvas.style.height = `${Math.max(minHeight, Math.min(totalHeight, maxHeight))}px`;
+              canvas.style.height = `${totalHeight}px`;
           }
 
           function renderOverview(ctx, labels, asterinasValues) {
               const canvas = document.createElement('canvas');
               canvas.className = 'benchmark-chart-overview';
+
+              // Set canvas width to 80% of the container
+              canvas.style.width = `90%`;
+
+              // Adjust height based on the number of bars
               setCanvasHeight(canvas, labels.length);
               ctx.appendChild(canvas);
+
+              const maxLabelWidth = 40; // Fixed length for each label
+              const formattedLabels = labels.map((label) => {
+                  const paddedLabel = label.padEnd(maxLabelWidth, ' ');
+                  return paddedLabel.length > maxLabelWidth
+                      ? paddedLabel.slice(0, maxLabelWidth)
+                      : paddedLabel;
+              });
+
               new Chart(canvas, {
                   type: 'bar', 
                   data: {
-                      labels: labels,
+                      labels: formattedLabels,
                       datasets: [
                           {
                               label: 'Asterinas',
                               data: asterinasValues,
-                              fill: false,
-                              backgroundColor: 'rgba(54, 162, 235, 0.2)', 
-                              borderColor: 'rgba(54, 162, 235, 1)', 
+                              backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                              borderColor: 'rgba(54, 162, 235, 1)',
                               borderWidth: 1,
-                          }
-                      ]
+                          },
+                      ],
                   },
                   options: {
-                      indexAxis: 'y', 
+                      indexAxis: 'y', // Horizontal bars
                       scales: {
                           x: {
-                              reverse: true,
+                              reverse: true, // Reverse x-axis direction
                               ticks: {
                                   stepSize: 0.1,
                                   major: {
-                                      enabled: true
+                                      enabled: true, // Highlight major ticks
                                   },
-                              }
+                              },
                           },
                           y: {
-                              position: 'right',
+                              position: 'right', // Position labels on the right
                               ticks: {
-                                  autoSkip: false, 
-                                  font: function(context) {
-                                      if (context.tick.label === 'Geometric Mean') {
-                                          return {
-                                              weight: 'bold', 
-                                              size: 14 
-                                          };
-                                      }
-                                      return {
-                                          weight: 'normal', 
-                                          size: 14 
-                                      };
-                                  },
-                              }
-                          }
+                                  padding: 10, // Ensure consistent spacing
+                                  autoSkip: false,
+                                  font: (context) => ({
+                                      weight: context.tick.label === 'Geometric Mean' ? 'bold' : 'normal',
+                                      size: 14,
+                                  }),
+                              },
+                          },
                       },
-                      barPercentage: 0.6, 
-                      categoryPercentage: 0.8, 
+                      barPercentage: 0.6, // Uniform bar width
+                      categoryPercentage: 0.8,
                       plugins: {
                           annotation: {
                               annotations: [
@@ -321,37 +324,41 @@
                                       type: 'line',
                                       mode: 'horizontal',
                                       scaleID: 'x',
-                                      value: 1,
+                                      value: 1, // Reference line at x=1
                                       borderColor: 'rgba(0, 0, 0, 0.5)',
                                       borderWidth: 2,
                                       label: {
                                           content: 'Reference Line (x=1)',
                                           enabled: true,
-                                          position: 'right'
-                                      }
-                                  }
-                              ]
-                          }
+                                          position: 'right',
+                                      },
+                                  },
+                              ],
+                          },
                       },
-                      responsive: true, 
-                      maintainAspectRatio: false 
-                  }
+                      responsive: false, // Fixed canvas size
+                      maintainAspectRatio: false,
+                  },
               });
           }
 
           const main = document.getElementById('main');
 
-          normalizedDataSets.forEach(dataSet => {
+          normalizedDataSets.forEach((dataSet) => {
             const setElem = document.createElement('div');
             setElem.className = 'benchmark-set';
             main.appendChild(setElem);
 
             const labels = Array.from(dataSet.normalizedData.keys());
             const asterinasValues = Array.from(dataSet.normalizedData.values());
-            
-            const title = `<a href="${new URL(dataSet.name, window.location.href)}" target="_blank">${dataSet.name}</a>: Normalized performance of Asterinas`;
-            const description = "For bandwidth, use Asterinas / Linux; for latency, use Linux / Asterinas. The higher, the better."
-                  
+
+            const title = `<a href="${new URL(
+                dataSet.name,
+                window.location.href
+            )}" target="_blank">${dataSet.name}</a>: Normalized performance of Asterinas`;
+            const description =
+                'For bandwidth, use Asterinas / Linux; for latency, use Linux / Asterinas. The higher, the better.';
+
             const nameElem = document.createElement('h1');
             nameElem.className = 'benchmark-title';
             nameElem.insertAdjacentHTML('beforeend', title);
