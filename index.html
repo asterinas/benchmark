@@ -269,13 +269,12 @@
               setCanvasHeight(canvas, labels.length);
               ctx.appendChild(canvas);
 
-              const maxLabelWidth = 40; // Fixed length for each label
-              const formattedLabels = labels.map((label) => {
-                  const paddedLabel = label.padEnd(maxLabelWidth, ' ');
-                  return paddedLabel.length > maxLabelWidth
-                      ? paddedLabel.slice(0, maxLabelWidth)
-                      : paddedLabel;
-              });
+              const maxLabelWidth = 60; // Fixed length for each label
+              const formattedLabels = labels.map((label) =>
+                  label.length > maxLabelWidth
+                      ? label.slice(0, maxLabelWidth)
+                      : label.padEnd(maxLabelWidth, ' ')
+              );
 
               new Chart(canvas, {
                   type: 'bar', 
@@ -309,8 +308,9 @@
                                   padding: 10, // Ensure consistent spacing
                                   autoSkip: false,
                                   font: (context) => ({
-                                      weight: context.tick.label === 'Geometric Mean' ? 'bold' : 'normal',
-                                      size: 14,
+                                      family: 'Consolas, monospace',
+                                      weight: context.tick.label === 'Geometric Mean'.padEnd(maxLabelWidth, ' ') ? 'bold' : 'normal',
+                                      size: 13,
                                   }),
                               },
                           },

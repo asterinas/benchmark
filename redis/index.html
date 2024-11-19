@@ -382,18 +382,11 @@
                               position: 'right',
                               ticks: {
                                   autoSkip: false, 
-                                  font: function(context) {
-                                      if (context.tick.label === 'Geometric Mean') {
-                                          return {
-                                              weight: 'bold', 
-                                              size: 14 
-                                          };
-                                      }
-                                      return {
-                                          weight: 'normal', 
-                                          size: 14 
-                                      };
-                                  },
+                                  font: (context) => ({
+                                      family: 'Consolas, monospace',
+                                      weight: context.tick.label === 'Geometric Mean' ? 'bold' : 'normal',
+                                      size: 14,
+                                  }),
                               }
                           }
                       },
