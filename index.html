@@ -269,7 +269,7 @@
               setCanvasHeight(canvas, labels.length);
               ctx.appendChild(canvas);
 
-              const maxLabelWidth = 60; // Fixed length for each label
+              const maxLabelWidth = 65; // Fixed length for each label
               const formattedLabels = labels.map((label) =>
                   label.length > maxLabelWidth
                       ? label.slice(0, maxLabelWidth)
@@ -310,7 +310,7 @@
                                   font: (context) => ({
                                       family: 'Consolas, monospace',
                                       weight: context.tick.label === 'Geometric Mean'.padEnd(maxLabelWidth, ' ') ? 'bold' : 'normal',
-                                      size: 13,
+                                      size: 12,
                                   }),
                               },
                           },
