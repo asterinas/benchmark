@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1732233264324,
+  "lastUpdate": 1732318774205,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "cpu_lat": [
@@ -5458,6 +5458,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average Execution Time per CPU on Asterinas",
             "value": "3.85",
+            "unit": "ms",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruize Tang",
+            "username": "tangruize",
+            "email": "1466040111@qq.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "5f35189a51ebc54298ea2cb0e4d53afe4e4e75eb",
+          "message": "Add compile flags to disable the red zone optimization",
+          "timestamp": "2024-11-21T11:14:52Z",
+          "url": "https://github.com/asterinas/asterinas/commit/5f35189a51ebc54298ea2cb0e4d53afe4e4e75eb"
+        },
+        "date": 1732318765070,
+        "tool": "customSmallerIsBetter",
+        "title": "[CPU] CPU performance",
+        "description": "sysbench cpu",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average Execution Time per CPU on Linux",
+            "value": "3.85",
+            "unit": "ms",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average Execution Time per CPU on Asterinas",
+            "value": "3.84",
             "unit": "ms",
             "extra": "aster_result"
           }
