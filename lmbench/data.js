@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1732575521552,
+  "lastUpdate": 1732575683424,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -82028,6 +82028,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average open latency on Asterinas",
             "value": "0.7377",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruize Tang",
+            "username": "tangruize",
+            "email": "1466040111@qq.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "9e5075dab7c42182b164a433daa8ea6c7ff38bbc",
+          "message": "Clear `DF` flag during trap handling to conform to x86-64 calling convention",
+          "timestamp": "2024-11-24T14:46:52Z",
+          "url": "https://github.com/asterinas/asterinas/commit/9e5075dab7c42182b164a433daa8ea6c7ff38bbc"
+        },
+        "date": 1732575677686,
+        "tool": "customSmallerIsBetter",
+        "title": "[VFS] The cost of open+close",
+        "description": "lat_syscall open",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average open latency on Linux",
+            "value": "0.6932",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average open latency on Asterinas",
+            "value": "0.7070",
             "unit": "µs",
             "extra": "aster_result"
           }
