@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1732574930157,
+  "lastUpdate": 1732575068484,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -76910,6 +76910,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average unix connect latency on Asterinas",
             "value": "3.8643",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruize Tang",
+            "username": "tangruize",
+            "email": "1466040111@qq.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "9e5075dab7c42182b164a433daa8ea6c7ff38bbc",
+          "message": "Clear `DF` flag during trap handling to conform to x86-64 calling convention",
+          "timestamp": "2024-11-24T14:46:52Z",
+          "url": "https://github.com/asterinas/asterinas/commit/9e5075dab7c42182b164a433daa8ea6c7ff38bbc"
+        },
+        "date": 1732575063214,
+        "tool": "customSmallerIsBetter",
+        "title": "[Unix sockets] The latency of connect",
+        "description": "lat_connect",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average unix connect latency on Linux",
+            "value": "6.9948",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average unix connect latency on Asterinas",
+            "value": "3.8483",
             "unit": "µs",
             "extra": "aster_result"
           }
