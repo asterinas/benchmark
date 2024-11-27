@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1732740693699,
+  "lastUpdate": 1732740837546,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -11900,6 +11900,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average mmap latency on Asterinas",
             "value": "18",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruize Tang",
+            "username": "tangruize",
+            "email": "1466040111@qq.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "5313689d6fa91596f4bc52bf6fb866bf6a7a706f",
+          "message": "Fix deadlock in FLUSH_OPS by disabling IRQ",
+          "timestamp": "2024-11-26T13:04:11Z",
+          "url": "https://github.com/asterinas/asterinas/commit/5313689d6fa91596f4bc52bf6fb866bf6a7a706f"
+        },
+        "date": 1732740832750,
+        "tool": "customSmallerIsBetter",
+        "title": "[Memory] The cost of mmap+unmap",
+        "description": "lat_mmap",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average mmap latency on Linux",
+            "value": "24",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average mmap latency on Asterinas",
+            "value": "17",
             "unit": "µs",
             "extra": "aster_result"
           }
