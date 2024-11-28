@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1732830880362,
+  "lastUpdate": 1732831029758,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -141219,6 +141219,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average select TCP latency on Asterinas",
             "value": "4.4405",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Qingsong Chen",
+            "username": "cqs21",
+            "email": "changxian.cqs@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "f762eb8913c992d932147f3e62ab47519fef8a91",
+          "message": "Remove the `lazy_static` dependency",
+          "timestamp": "2024-11-28T05:53:22Z",
+          "url": "https://github.com/asterinas/asterinas/commit/f762eb8913c992d932147f3e62ab47519fef8a91"
+        },
+        "date": 1732831015625,
+        "tool": "customSmallerIsBetter",
+        "title": "[Network] The cost of select (TCP fds)",
+        "description": "lat_select",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average select TCP latency on Linux",
+            "value": "2.7375",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average select TCP latency on Asterinas",
+            "value": "4.4156",
             "unit": "µs",
             "extra": "aster_result"
           }
