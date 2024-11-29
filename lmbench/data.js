@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1732917134230,
+  "lastUpdate": 1732917286490,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -144451,6 +144451,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average simple HTTP transaction bandwidth on Asterinas",
             "value": "4863.32",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Qingsong Chen",
+            "username": "cqs21",
+            "email": "changxian.cqs@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "5e35704e3896897550ac4ee383923d1e054f3dd1",
+          "message": "Support eagerly FPU state save/restore\n\nCo-authored-by: Shaowei Song <songshaowei.ssw@antgroup.com>",
+          "timestamp": "2024-11-28T11:36:09Z",
+          "url": "https://github.com/asterinas/asterinas/commit/5e35704e3896897550ac4ee383923d1e054f3dd1"
+        },
+        "date": 1732917277964,
+        "tool": "customBiggerIsBetter",
+        "title": "[HTTP] The bandwidth",
+        "description": "bw_http",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average simple HTTP transaction bandwidth on Linux",
+            "value": "3961.34",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average simple HTTP transaction bandwidth on Asterinas",
+            "value": "4794.19",
             "unit": "MB/s",
             "extra": "aster_result"
           }
