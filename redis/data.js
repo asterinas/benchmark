@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1732837222462,
+  "lastUpdate": 1732923389342,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ping_inline_100k_conc20_rps": [
@@ -3887,6 +3887,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average RPS of GET over virtio-net between Host Linux and Guest Asterinas",
             "value": "62539.09",
+            "unit": "request per second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Qingsong Chen",
+            "username": "cqs21",
+            "email": "changxian.cqs@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "5e35704e3896897550ac4ee383923d1e054f3dd1",
+          "message": "Support eagerly FPU state save/restore\n\nCo-authored-by: Shaowei Song <songshaowei.ssw@antgroup.com>",
+          "timestamp": "2024-11-28T11:36:09Z",
+          "url": "https://github.com/asterinas/asterinas/commit/5e35704e3896897550ac4ee383923d1e054f3dd1"
+        },
+        "date": 1732923377617,
+        "tool": "customBiggerIsBetter",
+        "title": "Redis GET performance with 20 concurrency and 100000 requests in total",
+        "description": "redis-benchmark -n 100000 -c 20 -t get",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average RPS of GET over virtio-net between Host Linux and Guest Linux",
+            "value": "104058.27",
+            "unit": "request per second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average RPS of GET over virtio-net between Host Linux and Guest Asterinas",
+            "value": "55218.11",
             "unit": "request per second",
             "extra": "aster_result"
           }
