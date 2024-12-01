@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1733089691980,
+  "lastUpdate": 1733089879009,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -139878,6 +139878,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average TCP connection latency on Asterinas",
             "value": "10.8758",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Marsman1996",
+            "username": "Marsman1996",
+            "email": "lqliuyuwei@outlook.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "6d3bb5a9d0b1d4d53e298402bc8fec57dc899f15",
+          "message": "Fix compile error caused by updated `Step::steps_between` in Rust",
+          "timestamp": "2024-11-30T10:58:18Z",
+          "url": "https://github.com/asterinas/asterinas/commit/6d3bb5a9d0b1d4d53e298402bc8fec57dc899f15"
+        },
+        "date": 1733089861140,
+        "tool": "customSmallerIsBetter",
+        "title": "[TCP sockets] The latency of connect",
+        "description": "lat_connect",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average TCP connection latency on Linux",
+            "value": "15.3966",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average TCP connection latency on Asterinas",
+            "value": "11.2737",
             "unit": "µs",
             "extra": "aster_result"
           }
