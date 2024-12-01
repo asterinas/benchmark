@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1733096294170,
+  "lastUpdate": 1733096462192,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ping_inline_100k_conc20_rps": [
@@ -5443,6 +5443,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average RPS of SET over virtio-net between Host Linux and Guest Asterinas",
             "value": "53908.36",
+            "unit": "request per second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Marsman1996",
+            "username": "Marsman1996",
+            "email": "lqliuyuwei@outlook.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "6d3bb5a9d0b1d4d53e298402bc8fec57dc899f15",
+          "message": "Fix compile error caused by updated `Step::steps_between` in Rust",
+          "timestamp": "2024-11-30T10:58:18Z",
+          "url": "https://github.com/asterinas/asterinas/commit/6d3bb5a9d0b1d4d53e298402bc8fec57dc899f15"
+        },
+        "date": 1733096448620,
+        "tool": "customBiggerIsBetter",
+        "title": "Redis SET performance with 20 concurrency and 100000 requests in total",
+        "description": "redis-benchmark -n 100000 -c 20 -t set",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average RPS of SET over virtio-net between Host Linux and Guest Linux",
+            "value": "124688.28",
+            "unit": "request per second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average RPS of SET over virtio-net between Host Linux and Guest Asterinas",
+            "value": "55524.71",
             "unit": "request per second",
             "extra": "aster_result"
           }
