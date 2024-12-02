@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1733172815503,
+  "lastUpdate": 1733172988090,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -8215,6 +8215,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average mmap bandwidth on Asterinas",
             "value": "27688.03",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "anbo225",
+            "username": "anbo225",
+            "email": "anbo225@qq.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "9608a57cb0496ec2da69de33bd40b3945afb17d6",
+          "message": "Make sys_setuid and sys_setgid behave consistently with Linux",
+          "timestamp": "2024-11-29T06:28:05Z",
+          "url": "https://github.com/asterinas/asterinas/commit/9608a57cb0496ec2da69de33bd40b3945afb17d6"
+        },
+        "date": 1733172968851,
+        "tool": "customBiggerIsBetter",
+        "title": "[Memory] The bandwidth of mmap",
+        "description": "bw_mmap",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average mmap bandwidth on Linux",
+            "value": "25935.79",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average mmap bandwidth on Asterinas",
+            "value": "28081.96",
             "unit": "MB/s",
             "extra": "aster_result"
           }
