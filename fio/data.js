@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1733171317929,
+  "lastUpdate": 1733171983029,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_seq_write_bw": [
@@ -775,6 +775,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average file write bandwidth on Asterinas",
             "value": "2535",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "anbo225",
+            "username": "anbo225",
+            "email": "anbo225@qq.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "9608a57cb0496ec2da69de33bd40b3945afb17d6",
+          "message": "Make sys_setuid and sys_setgid behave consistently with Linux",
+          "timestamp": "2024-11-29T06:28:05Z",
+          "url": "https://github.com/asterinas/asterinas/commit/9608a57cb0496ec2da69de33bd40b3945afb17d6"
+        },
+        "date": 1733171976021,
+        "tool": "customBiggerIsBetter",
+        "title": "[Ext2] The bandwidth of sequential writes",
+        "description": "fio -filename=/ext2/fio-test -size=1G -bs=1M -direct=1",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average file write bandwidth on Linux",
+            "value": "2470",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average file write bandwidth on Asterinas",
+            "value": "2951",
             "unit": "MB/s",
             "extra": "aster_result"
           }
