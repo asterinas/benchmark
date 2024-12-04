@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1733347093748,
+  "lastUpdate": 1733347290398,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -29497,6 +29497,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average Fork latency on Asterinas",
             "value": "55.7677",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Chen Chengjun",
+            "username": "cchanging",
+            "email": "chenchengjun.ccj@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "0cb2ea562e24f8bfcd894cfe9f7ad3ee5f27c1bd",
+          "message": "Inject the logger for Asterinas",
+          "timestamp": "2024-11-15T08:58:06Z",
+          "url": "https://github.com/asterinas/asterinas/commit/0cb2ea562e24f8bfcd894cfe9f7ad3ee5f27c1bd"
+        },
+        "date": 1733347271985,
+        "tool": "customSmallerIsBetter",
+        "title": "[Process] The cost of fork+exit",
+        "description": "lat_proc fork",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average Fork latency on Linux",
+            "value": "56.6105",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average Fork latency on Asterinas",
+            "value": "58.0938",
             "unit": "µs",
             "extra": "aster_result"
           }
