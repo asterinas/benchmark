@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1733279638884,
+  "lastUpdate": 1733279797669,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -185141,6 +185141,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Number of created/deleted files on Asterinas",
             "value": "129",
+            "unit": "number",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "徐启航",
+            "username": "js2xxx",
+            "email": "akucxy@163.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "878f3f37600ebacecd0e31c16ae04e8ba83eeec4",
+          "message": "Scheduling class support",
+          "timestamp": "2024-08-17T08:06:35Z",
+          "url": "https://github.com/asterinas/asterinas/commit/878f3f37600ebacecd0e31c16ae04e8ba83eeec4"
+        },
+        "date": 1733279780985,
+        "tool": "customBiggerIsBetter",
+        "title": "[Ext2] The throughput of creating/deleting small files (0KB)",
+        "description": "lat_fs -s 0k /ext2",
+        "display": false,
+        "benches": [
+          {
+            "name": "Number of created/deleted files on Linux",
+            "value": "2492",
+            "unit": "number",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Number of created/deleted files on Asterinas",
+            "value": "128",
             "unit": "number",
             "extra": "aster_result"
           }
