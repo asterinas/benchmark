@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1733518050617,
+  "lastUpdate": 1733518227512,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -173062,6 +173062,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average memory copy bandwidth on Asterinas",
             "value": "6414.92",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "36fc1d37573f6809980aee652f4209c64979b209",
+          "message": "Move FS things to `PosixThread`",
+          "timestamp": "2024-12-01T03:41:23Z",
+          "url": "https://github.com/asterinas/asterinas/commit/36fc1d37573f6809980aee652f4209c64979b209"
+        },
+        "date": 1733518211010,
+        "tool": "customBiggerIsBetter",
+        "title": "[Memory] The bandwidth of copying integers",
+        "description": "bw_mem fcp",
+        "display": false,
+        "benches": [
+          {
+            "name": "Average memory copy bandwidth on Linux",
+            "value": "6411.93",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average memory copy bandwidth on Asterinas",
+            "value": "6549.36",
             "unit": "MB/s",
             "extra": "aster_result"
           }
