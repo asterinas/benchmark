@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1733776724565,
+  "lastUpdate": 1733863213193,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "tcp_virtio_bw": [
@@ -2884,6 +2884,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average TCP Bandwidth over virtio-net between Host Linux and Guest Asterinas",
             "value": "2754",
+            "unit": "Mbits/sec",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Zejun Zhao",
+            "username": "jellllly420",
+            "email": "jelly.zhao.42@gmail.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "00e3688aa8945e09a48e85013ab73900490db7ad",
+          "message": "Bump version to 0.10.1",
+          "timestamp": "2024-12-07T05:53:33Z",
+          "url": "https://github.com/asterinas/asterinas/commit/00e3688aa8945e09a48e85013ab73900490db7ad"
+        },
+        "date": 1733863195583,
+        "tool": "customBiggerIsBetter",
+        "title": "[Network] iperf3 sender performance using TCP",
+        "description": "iperf3 -s -B 10.0.2.15",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average TCP Bandwidth over virtio-net between Host Linux and Guest Linux",
+            "value": "14748",
+            "unit": "Mbits/sec",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average TCP Bandwidth over virtio-net between Host Linux and Guest Asterinas",
+            "value": "3727",
             "unit": "Mbits/sec",
             "extra": "aster_result"
           }
