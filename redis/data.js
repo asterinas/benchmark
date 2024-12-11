@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1733960004535,
+  "lastUpdate": 1733960039428,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ping_inline_100k_conc20_rps": [
@@ -7034,6 +7034,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average RPS of SET over virtio-net between Host Linux and Guest Asterinas",
             "value": "61425.06",
+            "unit": "request per second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Fabing Li",
+            "username": "grief8",
+            "email": "lifabing.lfb@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "4316247d82d86e1230f23883c193c26133b12e6a",
+          "message": "Add ext2 benchmarks of sqlite",
+          "timestamp": "2024-12-11T09:56:49Z",
+          "url": "https://github.com/asterinas/asterinas/commit/4316247d82d86e1230f23883c193c26133b12e6a"
+        },
+        "date": 1733960015741,
+        "tool": "customBiggerIsBetter",
+        "title": "Redis SET performance with 20 concurrency and 100000 requests in total",
+        "description": "redis-benchmark -n 100000 -c 20 -t set",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average RPS of SET over virtio-net between Host Linux and Guest Linux",
+            "value": "103519.66",
+            "unit": "request per second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average RPS of SET over virtio-net between Host Linux and Guest Asterinas",
+            "value": "62932.66",
             "unit": "request per second",
             "extra": "aster_result"
           }
