@@ -24,7 +24,7 @@ window.BENCHMARK_DATA = {
         "tool": "customSmallerIsBetter",
         "title": "[Ext2] The deletes-between result of sqlite speedtest",
         "description": "sqlite-speed-test: 10000 DELETEs, numeric BETWEEN, indexed",
-        "display": false,
+        "display": true,
         "benches": [
           {
             "name": "The speed of deletes-between on Linux (Ext2)",
@@ -63,7 +63,7 @@ window.BENCHMARK_DATA = {
         "tool": "customSmallerIsBetter",
         "title": "[Ext2] The deletes-individual result of sqlite speedtest",
         "description": "sqlite-speed-test: 50000 DELETEs of individual rows",
-        "display": false,
+        "display": true,
         "benches": [
           {
             "name": "The speed of deletes-individual on Linux (Ext2)",
@@ -102,7 +102,7 @@ window.BENCHMARK_DATA = {
         "tool": "customSmallerIsBetter",
         "title": "[Ext2] The refill-replace result of sqlite speedtest",
         "description": "sqlite-speed-test: Refill two 50000-row tables using REPLACE",
-        "display": false,
+        "display": true,
         "benches": [
           {
             "name": "The speed of refill-replace on Linux (Ext2)",
@@ -141,7 +141,7 @@ window.BENCHMARK_DATA = {
         "tool": "customSmallerIsBetter",
         "title": "[Ext2] The selects-ipk result of sqlite speedtest",
         "description": "sqlite-speed-test: 70000 SELECTS on an IPK",
-        "display": false,
+        "display": true,
         "benches": [
           {
             "name": "The speed of selects-ipk on Linux (Ext2)",
@@ -180,7 +180,7 @@ window.BENCHMARK_DATA = {
         "tool": "customSmallerIsBetter",
         "title": "[Ext2] The selects-text-pk result of sqlite speedtest",
         "description": "sqlite-speed-test: 70000 SELECTS on a TEXT PK",
-        "display": false,
+        "display": true,
         "benches": [
           {
             "name": "The speed of selects-text-pk on Linux (Ext2)",
@@ -219,7 +219,7 @@ window.BENCHMARK_DATA = {
         "tool": "customSmallerIsBetter",
         "title": "[Ext2] The total result of sqlite speedtest",
         "description": "sqlite-speed-test: total",
-        "display": false,
+        "display": true,
         "benches": [
           {
             "name": "Total speed on Linux (Ext2)",
@@ -258,7 +258,7 @@ window.BENCHMARK_DATA = {
         "tool": "customSmallerIsBetter",
         "title": "[Ext2] The updates-between result of sqlite speedtest",
         "description": "sqlite-speed-test: 10000 UPDATES, numeric BETWEEN, indexed",
-        "display": false,
+        "display": true,
         "benches": [
           {
             "name": "The speed of updates-between on Linux (Ext2)",
@@ -297,7 +297,7 @@ window.BENCHMARK_DATA = {
         "tool": "customSmallerIsBetter",
         "title": "[Ext2] The updates-big-one result of sqlite speedtest",
         "description": "sqlite-speed-test: One big UPDATE of the whole 50000-row table",
-        "display": false,
+        "display": true,
         "benches": [
           {
             "name": "The speed of updates-big-one on Linux (Ext2)",
@@ -336,7 +336,7 @@ window.BENCHMARK_DATA = {
         "tool": "customSmallerIsBetter",
         "title": "[Ext2] The updates-individual result of sqlite speedtest",
         "description": "sqlite-speed-test: 50000 UPDATES of individual rows",
-        "display": false,
+        "display": true,
         "benches": [
           {
             "name": "The speed of updates-individual on Linux (Ext2)",
@@ -375,7 +375,7 @@ window.BENCHMARK_DATA = {
         "tool": "customSmallerIsBetter",
         "title": "[Ext2] The 'VACUUM' result of sqlite speedtest",
         "description": "sqlite-speed-test: repacking database file into a minimal amount of disk space",
-        "display": false,
+        "display": true,
         "benches": [
           {
             "name": "The speed of VACUUM on Linux (Ext2)",
