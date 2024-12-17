@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1734407758180,
+  "lastUpdate": 1734407802751,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_deletes_between": [
@@ -951,6 +951,45 @@ window.BENCHMARK_DATA = {
           {
             "name": "The speed of selects-text-pk on Asterinas (Ramfs)",
             "value": "3.315",
+            "unit": "second",
+            "extra": "aster_result"
+          }
+        ]
+      }
+    ],
+    "ramfs_updates_between": [
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "bf91551de124e4d674d18695312fedd37d6ec23f",
+          "message": "Fix a typo in Dockerfile",
+          "timestamp": "2024-12-17T02:59:13Z",
+          "url": "https://github.com/asterinas/asterinas/commit/bf91551de124e4d674d18695312fedd37d6ec23f"
+        },
+        "date": 1734407771472,
+        "tool": "customSmallerIsBetter",
+        "title": "[Ramfs] The updates-between result of sqlite speedtest",
+        "description": "sqlite-speed-test: 10000 UPDATES, numeric BETWEEN, indexed",
+        "display": true,
+        "benches": [
+          {
+            "name": "The speed of updates-between on Linux (Ramfs)",
+            "value": "1.662",
+            "unit": "second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "The speed of updates-between on Asterinas (Ramfs)",
+            "value": "1.718",
             "unit": "second",
             "extra": "aster_result"
           }
