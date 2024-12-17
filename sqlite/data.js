@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1734407355409,
+  "lastUpdate": 1734407394167,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_deletes_between": [
@@ -571,6 +571,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Total speed on Asterinas (Ext2)",
             "value": "79.516",
+            "unit": "second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "bf91551de124e4d674d18695312fedd37d6ec23f",
+          "message": "Fix a typo in Dockerfile",
+          "timestamp": "2024-12-17T02:59:13Z",
+          "url": "https://github.com/asterinas/asterinas/commit/bf91551de124e4d674d18695312fedd37d6ec23f"
+        },
+        "date": 1734407369604,
+        "tool": "customSmallerIsBetter",
+        "title": "[Ext2] The total result of sqlite speedtest",
+        "description": "sqlite-speed-test: total",
+        "display": true,
+        "benches": [
+          {
+            "name": "Total speed on Linux (Ext2)",
+            "value": "65.946",
+            "unit": "second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Total speed on Asterinas (Ext2)",
+            "value": "81.344",
             "unit": "second",
             "extra": "aster_result"
           }
