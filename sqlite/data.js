@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1734565558062,
+  "lastUpdate": 1734565598228,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_deletes_between": [
@@ -1002,6 +1002,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "The speed of updates-individual on Asterinas (Ext2)",
             "value": "1.974",
+            "unit": "second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Yuke Peng",
+            "username": "sdww0",
+            "email": "pykfirst@gmail.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "acc10376e60291386dd1026f238140d145230808",
+          "message": "Update benchmark README",
+          "timestamp": "2024-12-14T05:14:30Z",
+          "url": "https://github.com/asterinas/asterinas/commit/acc10376e60291386dd1026f238140d145230808"
+        },
+        "date": 1734565572430,
+        "tool": "customSmallerIsBetter",
+        "title": "[Ext2] The updates-individual result of sqlite speedtest",
+        "description": "sqlite-speed-test: 50000 UPDATES of individual rows",
+        "display": true,
+        "benches": [
+          {
+            "name": "The speed of updates-individual on Linux (Ext2)",
+            "value": "1.668",
+            "unit": "second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "The speed of updates-individual on Asterinas (Ext2)",
+            "value": "1.954",
             "unit": "second",
             "extra": "aster_result"
           }
