@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1734490443732,
+  "lastUpdate": 1734490487745,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_seq_write_bw": [
@@ -1256,6 +1256,42 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average file write bandwidth on Asterinas",
             "value": "2027",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "lab-pc-wtj",
+            "email": "wangtaojie2004@hotmail.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "6e4a4c58d050a8b42c43e06d42e7b54ec1bd400e",
+          "message": "Improve /proc/{PID}/stat",
+          "timestamp": "2024-12-17T12:10:31Z",
+          "url": "https://github.com/asterinas/asterinas/commit/6e4a4c58d050a8b42c43e06d42e7b54ec1bd400e"
+        },
+        "date": 1734490462093,
+        "tool": "customBiggerIsBetter",
+        "title": "[Ext2] The bandwidth of sequential writes",
+        "description": "fio -filename=/ext2/fio-test -size=1G -bs=1M -direct=1",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average file write bandwidth on Linux",
+            "value": "2545",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average file write bandwidth on Asterinas",
+            "value": "2964",
             "unit": "MB/s",
             "extra": "aster_result"
           }
