@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1734407985833,
+  "lastUpdate": 1734493193757,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "cpu_lat": [
@@ -6184,6 +6184,42 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/asterinas/asterinas/commit/bf91551de124e4d674d18695312fedd37d6ec23f"
         },
         "date": 1734407921912,
+        "tool": "customSmallerIsBetter",
+        "title": "[CPU] CPU performance",
+        "description": "sysbench cpu",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average Execution Time per CPU on Linux",
+            "value": "3.85",
+            "unit": "ms",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average Execution Time per CPU on Asterinas",
+            "value": "3.84",
+            "unit": "ms",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "lab-pc-wtj",
+            "email": "wangtaojie2004@hotmail.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "6e4a4c58d050a8b42c43e06d42e7b54ec1bd400e",
+          "message": "Improve /proc/{PID}/stat",
+          "timestamp": "2024-12-17T12:10:31Z",
+          "url": "https://github.com/asterinas/asterinas/commit/6e4a4c58d050a8b42c43e06d42e7b54ec1bd400e"
+        },
+        "date": 1734493168421,
         "tool": "customSmallerIsBetter",
         "title": "[CPU] CPU performance",
         "description": "sysbench cpu",
