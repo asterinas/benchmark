@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1734652289461,
+  "lastUpdate": 1734652329642,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_deletes_between": [
@@ -2415,6 +2415,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "The speed of selects-ipk on Asterinas (Ramfs)",
             "value": "2.992",
+            "unit": "second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "jiangjianfeng",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "9a540d0fb6d073f1feb20c30dc78230c46c595a3",
+          "message": "Notify virtqueue in a batch manner",
+          "timestamp": "2024-12-17T02:24:07Z",
+          "url": "https://github.com/asterinas/asterinas/commit/9a540d0fb6d073f1feb20c30dc78230c46c595a3"
+        },
+        "date": 1734652303708,
+        "tool": "customSmallerIsBetter",
+        "title": "[Ramfs] The selects-ipk result of sqlite speedtest",
+        "description": "sqlite-speed-test: 70000 SELECTS on an IPK",
+        "display": true,
+        "benches": [
+          {
+            "name": "The speed of selects-ipk on Linux (Ramfs)",
+            "value": "2.930",
+            "unit": "second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "The speed of selects-ipk on Asterinas (Ramfs)",
+            "value": "2.984",
             "unit": "second",
             "extra": "aster_result"
           }
