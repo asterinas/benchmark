@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1734652368626,
+  "lastUpdate": 1734652405085,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_deletes_between": [
@@ -3161,6 +3161,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Total speed on Asterinas (Ramfs)",
             "value": "60.020",
+            "unit": "second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "jiangjianfeng",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "9a540d0fb6d073f1feb20c30dc78230c46c595a3",
+          "message": "Notify virtqueue in a batch manner",
+          "timestamp": "2024-12-17T02:24:07Z",
+          "url": "https://github.com/asterinas/asterinas/commit/9a540d0fb6d073f1feb20c30dc78230c46c595a3"
+        },
+        "date": 1734652379700,
+        "tool": "customSmallerIsBetter",
+        "title": "[Ramfs] The total result of sqlite speedtest",
+        "description": "sqlite-speed-test: total",
+        "display": true,
+        "benches": [
+          {
+            "name": "Total speed on Linux (Ramfs)",
+            "value": "55.746",
+            "unit": "second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Total speed on Asterinas (Ramfs)",
+            "value": "59.376",
             "unit": "second",
             "extra": "aster_result"
           }
