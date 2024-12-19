@@ -280,9 +280,11 @@
             }
           
             const data = {
-              // Assuming all datasets has the same commit sequence
-              labels: benchSets.values().next().value.map(d => d.commit.id.slice(0, 7)),
-              datasets: datasets,
+              labels: benchSets.values().next().value.map(d => d.commit.id.slice(0, 7)).slice(-60),
+              datasets: datasets.map(dataset => ({
+                ...dataset,
+                data: dataset.data.slice(-60)
+              }))
             };
           
             const options = {
