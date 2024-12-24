@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1734998127066,
+  "lastUpdate": 1735084267224,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ping_inline_100k_conc20_rps": [
@@ -6070,6 +6070,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average RPS of GET over virtio-net between Host Linux and Guest Asterinas",
             "value": "102880.66",
+            "unit": "request per second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Fabing Li",
+            "username": "grief8",
+            "email": "lifabing.lfb@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "8a27f7a3b57704d5e71952be1d55069745150ffe",
+          "message": "Clarify the naming conventions under benchmark/schbench/",
+          "timestamp": "2024-12-23T07:50:03Z",
+          "url": "https://github.com/asterinas/asterinas/commit/8a27f7a3b57704d5e71952be1d55069745150ffe"
+        },
+        "date": 1735084239664,
+        "tool": "customBiggerIsBetter",
+        "title": "Redis GET performance with 20 concurrency and 100000 requests in total",
+        "description": "redis-benchmark -n 100000 -c 20 -t get",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average RPS of GET over virtio-net between Host Linux and Guest Linux",
+            "value": "111111.12",
+            "unit": "request per second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average RPS of GET over virtio-net between Host Linux and Guest Asterinas",
+            "value": "114416.48",
             "unit": "request per second",
             "extra": "aster_result"
           }
