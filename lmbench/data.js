@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1735563755985,
+  "lastUpdate": 1735563799761,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -177951,6 +177951,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average UDP latency on Asterinas",
             "value": "3.3440",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "jiangjianfeng",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "bfc71d1b2708075fb0abf326960a20b4bb6b58e2",
+          "message": "Bump version to 0.11.1",
+          "timestamp": "2024-12-30T06:39:28Z",
+          "url": "https://github.com/asterinas/asterinas/commit/bfc71d1b2708075fb0abf326960a20b4bb6b58e2"
+        },
+        "date": 1735563771239,
+        "tool": "customSmallerIsBetter",
+        "title": "[UDP sockets] The latency of write+read",
+        "description": "lat_udp",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average UDP latency on Linux",
+            "value": "4.8264",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average UDP latency on Asterinas",
+            "value": "3.4656",
             "unit": "µs",
             "extra": "aster_result"
           }
