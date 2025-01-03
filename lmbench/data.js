@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1735864158076,
+  "lastUpdate": 1735864203442,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -92663,6 +92663,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average unix bandwidth on Asterinas",
             "value": "9786.14",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "16862a20245d21ba900c3110881c8f671b7fa613",
+          "message": "Use mutable pointer for kernel heap\n\nCo-authored-by: Chen Chengjun <chenchengjun.ccj@antgroup.com>",
+          "timestamp": "2025-01-02T02:41:34Z",
+          "url": "https://github.com/asterinas/asterinas/commit/16862a20245d21ba900c3110881c8f671b7fa613"
+        },
+        "date": 1735864172805,
+        "tool": "customBiggerIsBetter",
+        "title": "[Unix sockets] The bandwidth",
+        "description": "bw_unix",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average unix bandwidth on Linux",
+            "value": "7560.55",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average unix bandwidth on Asterinas",
+            "value": "10046.31",
             "unit": "MB/s",
             "extra": "aster_result"
           }
