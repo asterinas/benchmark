@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1736036403042,
+  "lastUpdate": 1736036445821,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -59897,6 +59897,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average Signal handler overhead on Asterinas",
             "value": "0.4205",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "16862a20245d21ba900c3110881c8f671b7fa613",
+          "message": "Use mutable pointer for kernel heap\n\nCo-authored-by: Chen Chengjun <chenchengjun.ccj@antgroup.com>",
+          "timestamp": "2025-01-02T02:41:34Z",
+          "url": "https://github.com/asterinas/asterinas/commit/16862a20245d21ba900c3110881c8f671b7fa613"
+        },
+        "date": 1736036414723,
+        "tool": "customSmallerIsBetter",
+        "title": "[Signals] The cost of catching a signal",
+        "description": "lat_sig catch",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average Signal handler overhead on Linux",
+            "value": "0.8367",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average Signal handler overhead on Asterinas",
+            "value": "0.4208",
             "unit": "µs",
             "extra": "aster_result"
           }
