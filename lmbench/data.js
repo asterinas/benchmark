@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1736122938006,
+  "lastUpdate": 1736122985792,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -47785,6 +47785,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average shell latency on Asterinas",
             "value": "332.4000",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "16862a20245d21ba900c3110881c8f671b7fa613",
+          "message": "Use mutable pointer for kernel heap\n\nCo-authored-by: Chen Chengjun <chenchengjun.ccj@antgroup.com>",
+          "timestamp": "2025-01-02T02:41:34Z",
+          "url": "https://github.com/asterinas/asterinas/commit/16862a20245d21ba900c3110881c8f671b7fa613"
+        },
+        "date": 1736122954059,
+        "tool": "customSmallerIsBetter",
+        "title": "[Process] The cost of fork+exec+shell+exit",
+        "description": "lat_proc shell",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average shell latency on Linux",
+            "value": "329.1875",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average shell latency on Asterinas",
+            "value": "334.3333",
             "unit": "µs",
             "extra": "aster_result"
           }
