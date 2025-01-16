@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1736987916548,
+  "lastUpdate": 1736987969427,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -100248,6 +100248,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average unix bandwidth on Asterinas",
             "value": "9786.20",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Shaowei Song",
+            "username": "lucassong-mh",
+            "email": "songshaowei.ssw@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "6de5be1ecc345edb5dc9d18b27cb1ca2b179b2aa",
+          "message": "Make the generic inode permisson check faster",
+          "timestamp": "2025-01-09T09:52:36Z",
+          "url": "https://github.com/asterinas/asterinas/commit/6de5be1ecc345edb5dc9d18b27cb1ca2b179b2aa"
+        },
+        "date": 1736987932404,
+        "tool": "customBiggerIsBetter",
+        "title": "[Unix sockets] The bandwidth",
+        "description": "bw_unix",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average unix bandwidth on Linux",
+            "value": "7633.51",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average unix bandwidth on Asterinas",
+            "value": "9815.44",
             "unit": "MB/s",
             "extra": "aster_result"
           }
