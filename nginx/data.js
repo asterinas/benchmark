@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1737681037975,
+  "lastUpdate": 1737681094982,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "http_file4KB_bw": [
@@ -4187,6 +4187,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average HTTP Bandwidth over virtio-net between Host Linux and Guest Asterinas",
             "value": "6108.10",
+            "unit": "Requests per second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruize Tang",
+            "username": "tangruize",
+            "email": "1466040111@qq.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "c4229e3c2f10108ba964de8be8087cc103ede216",
+          "message": "Add INITRAMFS_SKIP_GZIP option to make initramfs encoding/decoding faster",
+          "timestamp": "2024-12-15T14:28:02Z",
+          "url": "https://github.com/asterinas/asterinas/commit/c4229e3c2f10108ba964de8be8087cc103ede216"
+        },
+        "date": 1737681053026,
+        "tool": "customBiggerIsBetter",
+        "title": "Nginx HTTP request performance with 64K bytes file size",
+        "description": "ab -n 10000 -c 1 http://10.0.2.15:8080/65536bytes.html",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average HTTP Bandwidth over virtio-net between Host Linux and Guest Linux",
+            "value": "4242.52",
+            "unit": "Requests per second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average HTTP Bandwidth over virtio-net between Host Linux and Guest Asterinas",
+            "value": "4325.88",
             "unit": "Requests per second",
             "extra": "aster_result"
           }
