@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1737679944475,
+  "lastUpdate": 1737679998476,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -219175,6 +219175,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average TCP latency over virtio-net on Asterinas",
             "value": "15.7413",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruize Tang",
+            "username": "tangruize",
+            "email": "1466040111@qq.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "c4229e3c2f10108ba964de8be8087cc103ede216",
+          "message": "Add INITRAMFS_SKIP_GZIP option to make initramfs encoding/decoding faster",
+          "timestamp": "2024-12-15T14:28:02Z",
+          "url": "https://github.com/asterinas/asterinas/commit/c4229e3c2f10108ba964de8be8087cc103ede216"
+        },
+        "date": 1737679957058,
+        "tool": "customSmallerIsBetter",
+        "title": "[TCP sockets] The latency over virtio-net",
+        "description": "lat_tcp_virtio",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average TCP latency over virtio-net on Linux",
+            "value": "24.4060",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average TCP latency over virtio-net on Asterinas",
+            "value": "15.6696",
             "unit": "µs",
             "extra": "aster_result"
           }
