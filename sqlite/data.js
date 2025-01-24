@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1737682749605,
+  "lastUpdate": 1737682805681,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_deletes_between": [
@@ -24272,6 +24272,43 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/asterinas/asterinas/commit/6a865062e6d55140c5d60529d96a082b0c99e493"
         },
         "date": 1737595214593,
+        "tool": "customSmallerIsBetter",
+        "title": "[Ramfs] The updates-big-one result of sqlite speedtest",
+        "description": "sqlite-speed-test: One big UPDATE of the whole 50000-row table",
+        "display": true,
+        "benches": [
+          {
+            "name": "The speed of updates-big-one on Linux (Ramfs)",
+            "value": "0.082",
+            "unit": "second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "The speed of updates-big-one on Asterinas (Ramfs)",
+            "value": "0.089",
+            "unit": "second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruize Tang",
+            "username": "tangruize",
+            "email": "1466040111@qq.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "c4229e3c2f10108ba964de8be8087cc103ede216",
+          "message": "Add INITRAMFS_SKIP_GZIP option to make initramfs encoding/decoding faster",
+          "timestamp": "2024-12-15T14:28:02Z",
+          "url": "https://github.com/asterinas/asterinas/commit/c4229e3c2f10108ba964de8be8087cc103ede216"
+        },
+        "date": 1737682764024,
         "tool": "customSmallerIsBetter",
         "title": "[Ramfs] The updates-big-one result of sqlite speedtest",
         "description": "sqlite-speed-test: One big UPDATE of the whole 50000-row table",
