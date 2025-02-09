@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1739063916687,
+  "lastUpdate": 1739063979213,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "p50_rps_smp1": [
@@ -10377,6 +10377,45 @@ window.BENCHMARK_DATA = {
             "name": "P50 RPS of schbench on Asterinas",
             "value": "408",
             "unit": "requests per second",
+            "extra": "aster_result"
+          }
+        ]
+      }
+    ],
+    "smp8_p99_request_latency": [
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "418f58ec89342e79039a12a26d524c37406bb542",
+          "message": "Avoid locking twice in UDP `send`",
+          "timestamp": "2025-01-23T05:27:53Z",
+          "url": "https://github.com/asterinas/asterinas/commit/418f58ec89342e79039a12a26d524c37406bb542"
+        },
+        "date": 1739063927961,
+        "tool": "customSmallerIsBetter",
+        "title": "[Scheduler] P99 request latency while max-loading the only CPU (SMP=8)",
+        "description": "schbench -F 256 -n 5 -r 90",
+        "display": false,
+        "benches": [
+          {
+            "name": "P99 request latency of schbench on Linux",
+            "value": "3124",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "P99 request latency of schbench on Asterinas",
+            "value": "43968",
+            "unit": "µs",
             "extra": "aster_result"
           }
         ]
