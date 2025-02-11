@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1739150872849,
+  "lastUpdate": 1739235608223,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "http_file4KB_bw": [
@@ -4405,6 +4405,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average HTTP Bandwidth over virtio-net between Host Linux and Guest Asterinas",
             "value": "8723.16",
+            "unit": "Requests per second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "jiangjianfeng",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "55713b88c433fa254663d629ac0946878d50800f",
+          "message": "Remove unused dependencies",
+          "timestamp": "2025-02-08T09:22:39Z",
+          "url": "https://github.com/asterinas/asterinas/commit/55713b88c433fa254663d629ac0946878d50800f"
+        },
+        "date": 1739235556711,
+        "tool": "customBiggerIsBetter",
+        "title": "Nginx HTTP request performance with 16K bytes file size",
+        "description": "ab -n 10000 -c 1 http://10.0.2.15:8080/16384bytes.html",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average HTTP Bandwidth over virtio-net between Host Linux and Guest Linux",
+            "value": "5689.66",
+            "unit": "Requests per second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average HTTP Bandwidth over virtio-net between Host Linux and Guest Asterinas",
+            "value": "10256.97",
             "unit": "Requests per second",
             "extra": "aster_result"
           }
