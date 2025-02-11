@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1739233568806,
+  "lastUpdate": 1739233638343,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -282008,6 +282008,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average semaphore latency on Asterinas",
             "value": "0.4536",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "jiangjianfeng",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "55713b88c433fa254663d629ac0946878d50800f",
+          "message": "Remove unused dependencies",
+          "timestamp": "2025-02-08T09:22:39Z",
+          "url": "https://github.com/asterinas/asterinas/commit/55713b88c433fa254663d629ac0946878d50800f"
+        },
+        "date": 1739233586446,
+        "tool": "customSmallerIsBetter",
+        "title": "[Semaphores] The cost of semop",
+        "description": "lat_sem",
+        "display": false,
+        "benches": [
+          {
+            "name": "Average semaphore latency on Linux",
+            "value": "0.6109",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average semaphore latency on Asterinas",
+            "value": "0.4802",
             "unit": "µs",
             "extra": "aster_result"
           }
