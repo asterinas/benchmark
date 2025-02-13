@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1739411089004,
+  "lastUpdate": 1739411156227,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_deletes_between": [
@@ -41751,6 +41751,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "The speed of updates-big-one on Asterinas (Ramfs)",
             "value": "0.089",
+            "unit": "second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "c9e866626705c79509c2d6895318676d75bd075e",
+          "message": "Clarify titles for TCP connect latency",
+          "timestamp": "2025-01-08T02:20:04Z",
+          "url": "https://github.com/asterinas/asterinas/commit/c9e866626705c79509c2d6895318676d75bd075e"
+        },
+        "date": 1739411102888,
+        "tool": "customSmallerIsBetter",
+        "title": "[Ramfs] The updates-big-one result of sqlite speedtest",
+        "description": "sqlite-speed-test: One big UPDATE of the whole 50000-row table",
+        "display": false,
+        "benches": [
+          {
+            "name": "The speed of updates-big-one on Linux (Ramfs)",
+            "value": "0.083",
+            "unit": "second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "The speed of updates-big-one on Asterinas (Ramfs)",
+            "value": "0.088",
             "unit": "second",
             "extra": "aster_result"
           }
