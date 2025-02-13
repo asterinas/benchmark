@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1739410846221,
+  "lastUpdate": 1739410914773,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_deletes_between": [
@@ -41079,6 +41079,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "The speed of selects-text-pk on Asterinas (Ramfs)",
             "value": "3.119",
+            "unit": "second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "c9e866626705c79509c2d6895318676d75bd075e",
+          "message": "Clarify titles for TCP connect latency",
+          "timestamp": "2025-01-08T02:20:04Z",
+          "url": "https://github.com/asterinas/asterinas/commit/c9e866626705c79509c2d6895318676d75bd075e"
+        },
+        "date": 1739410860754,
+        "tool": "customSmallerIsBetter",
+        "title": "[Ramfs] The selects-text-pk result of sqlite speedtest",
+        "description": "sqlite-speed-test: 70000 SELECTS on a TEXT PK",
+        "display": false,
+        "benches": [
+          {
+            "name": "The speed of selects-text-pk on Linux (Ramfs)",
+            "value": "3.275",
+            "unit": "second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "The speed of selects-text-pk on Asterinas (Ramfs)",
+            "value": "3.115",
             "unit": "second",
             "extra": "aster_result"
           }
