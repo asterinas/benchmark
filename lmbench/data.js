@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1740229711430,
+  "lastUpdate": 1740229781872,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -186216,6 +186216,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average file copy bandwidth on Asterinas",
             "value": "2258.7687",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Zhang Junyang",
+            "username": "junyang-zh",
+            "email": "junyang@stu.pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "ea8fd6f785cdb2d1d3e21c1d7e62aeceb78b1806",
+          "message": "Add a print in Makefile for the ktest target",
+          "timestamp": "2025-02-20T01:20:14Z",
+          "url": "https://github.com/asterinas/asterinas/commit/ea8fd6f785cdb2d1d3e21c1d7e62aeceb78b1806"
+        },
+        "date": 1740229722853,
+        "tool": "customBiggerIsBetter",
+        "title": "[Ramfs] The bandwidth of copying data between files",
+        "description": "lmdd",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average file copy bandwidth on Linux",
+            "value": "2238.1931",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average file copy bandwidth on Asterinas",
+            "value": "2265.1539",
             "unit": "MB/s",
             "extra": "aster_result"
           }
