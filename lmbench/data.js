@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1740443521753,
+  "lastUpdate": 1740443598630,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -311831,6 +311831,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Number of created/deleted files on Asterinas",
             "value": "182",
+            "unit": "number",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "18e0eae33104fbeecf8ebde63abbdcb7cdf7cfef",
+          "message": "Never expose `ERESTARTSYS` to the userspace",
+          "timestamp": "2025-02-21T02:29:35Z",
+          "url": "https://github.com/asterinas/asterinas/commit/18e0eae33104fbeecf8ebde63abbdcb7cdf7cfef"
+        },
+        "date": 1740443536993,
+        "tool": "customBiggerIsBetter",
+        "title": "[Ext2] The throughput of creating/deleting small files (10KB)",
+        "description": "lat_fs -s 10K /ext2",
+        "display": false,
+        "benches": [
+          {
+            "name": "Number of created/deleted files on Linux",
+            "value": "823",
+            "unit": "number",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Number of created/deleted files on Asterinas",
+            "value": "184",
             "unit": "number",
             "extra": "aster_result"
           }
