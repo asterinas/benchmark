@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1740554364983,
+  "lastUpdate": 1740554439480,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "p50_rps_smp1": [
@@ -11519,6 +11519,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "P99 request latency of schbench on Asterinas",
             "value": "4004",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Fabing Li",
+            "username": "grief8",
+            "email": "lifabing.lfb@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "6684e7fd02a3e927ac79e74665f7ea510845a354",
+          "message": "Convert benchmark configuration files into YAML format",
+          "timestamp": "2025-02-22T13:32:50Z",
+          "url": "https://github.com/asterinas/asterinas/commit/6684e7fd02a3e927ac79e74665f7ea510845a354"
+        },
+        "date": 1740554377287,
+        "tool": "customSmallerIsBetter",
+        "title": "[Scheduler] P99 request latency while max-loading the only CPU (SMP=1)",
+        "description": "schbench -F 256 -n 5 -r 90",
+        "display": false,
+        "benches": [
+          {
+            "name": "P99 request latency of schbench on Linux",
+            "value": "2876",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "P99 request latency of schbench on Asterinas",
+            "value": "3644",
             "unit": "µs",
             "extra": "aster_result"
           }
