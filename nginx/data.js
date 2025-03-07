@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1741315504139,
+  "lastUpdate": 1741315599120,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "http_file4KB_bw": [
@@ -4588,6 +4588,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average HTTP Bandwidth over virtio-net between Host Linux and Guest Asterinas",
             "value": "12342.89",
+            "unit": "Requests per second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "js2xxx",
+            "username": "js2xxx",
+            "email": "akucxy@163.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "ffc7e3612dfa714febe40f02480863b3a3f6c82c",
+          "message": "Fix `RLimit` lock update",
+          "timestamp": "2025-03-06T08:07:24Z",
+          "url": "https://github.com/asterinas/asterinas/commit/ffc7e3612dfa714febe40f02480863b3a3f6c82c"
+        },
+        "date": 1741315533396,
+        "tool": "customBiggerIsBetter",
+        "title": "Nginx HTTP request performance (virtio-net, 8KB file size)",
+        "description": "ab -n 10000 -c 1 http://10.0.2.15:8080/8192bytes.html",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average HTTP Bandwidth over virtio-net between Host Linux and Guest Linux",
+            "value": "8697.29",
+            "unit": "Requests per second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average HTTP Bandwidth over virtio-net between Host Linux and Guest Asterinas",
+            "value": "9171.91",
             "unit": "Requests per second",
             "extra": "aster_result"
           }
