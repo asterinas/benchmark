@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1741660167343,
+  "lastUpdate": 1741660263116,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "p50_rps_smp1": [
@@ -15373,6 +15373,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "P99 request latency of schbench on Asterinas",
             "value": "1004544",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "d40d452e9d525f40f064379241abc6e69f74ce02",
+          "message": "Receive RST packets as `ECONNRESET` errors",
+          "timestamp": "2025-02-24T15:07:58Z",
+          "url": "https://github.com/asterinas/asterinas/commit/d40d452e9d525f40f064379241abc6e69f74ce02"
+        },
+        "date": 1741660194209,
+        "tool": "customSmallerIsBetter",
+        "title": "[Scheduler] P99 request latency while max-loading the only CPU (SMP=8)",
+        "description": "schbench -F 256 -n 5 -r 90",
+        "display": false,
+        "benches": [
+          {
+            "name": "P99 request latency of schbench on Linux",
+            "value": "2892",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "P99 request latency of schbench on Asterinas",
+            "value": "887808",
             "unit": "µs",
             "extra": "aster_result"
           }
