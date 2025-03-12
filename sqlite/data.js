@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1741750309136,
+  "lastUpdate": 1741750483140,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_deletes_between": [
@@ -57735,6 +57735,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "The speed of updates-big-one on Asterinas (Ramfs)",
             "value": "0.087",
+            "unit": "second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "d40d452e9d525f40f064379241abc6e69f74ce02",
+          "message": "Receive RST packets as `ECONNRESET` errors",
+          "timestamp": "2025-02-24T15:07:58Z",
+          "url": "https://github.com/asterinas/asterinas/commit/d40d452e9d525f40f064379241abc6e69f74ce02"
+        },
+        "date": 1741750413641,
+        "tool": "customSmallerIsBetter",
+        "title": "[Ramfs] The updates-big-one result of sqlite speedtest",
+        "description": "sqlite-speed-test: One big UPDATE of the whole 50000-row table",
+        "display": false,
+        "benches": [
+          {
+            "name": "The speed of updates-big-one on Linux (Ramfs)",
+            "value": "0.082",
+            "unit": "second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "The speed of updates-big-one on Asterinas (Ramfs)",
+            "value": "0.089",
             "unit": "second",
             "extra": "aster_result"
           }
