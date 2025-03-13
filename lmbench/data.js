@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1741830316485,
+  "lastUpdate": 1741830417215,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -40234,6 +40234,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average context switch latency on Asterinas",
             "value": "1.82",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tate.thl@antgroup.com"
+          },
+          "committer": {
+            "name": "GitHub",
+            "username": "web-flow",
+            "email": "noreply@github.com"
+          },
+          "id": "55984e68cf0378220488efabf0eff58f5241b718",
+          "message": "Update system call count in linux-compatibility.md",
+          "timestamp": "2025-03-12T07:31:30Z",
+          "url": "https://github.com/asterinas/asterinas/commit/55984e68cf0378220488efabf0eff58f5241b718"
+        },
+        "date": 1741830347428,
+        "tool": "customSmallerIsBetter",
+        "title": "[Process] The cost of context switching",
+        "description": "lat_ctx 2",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average context switch latency on Linux",
+            "value": "1.07",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average context switch latency on Asterinas",
+            "value": "1.85",
             "unit": "µs",
             "extra": "aster_result"
           }
