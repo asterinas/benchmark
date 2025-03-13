@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1741833361393,
+  "lastUpdate": 1741833465558,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -181587,6 +181587,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average fstat latency on Asterinas",
             "value": "0.1933",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tate.thl@antgroup.com"
+          },
+          "committer": {
+            "name": "GitHub",
+            "username": "web-flow",
+            "email": "noreply@github.com"
+          },
+          "id": "55984e68cf0378220488efabf0eff58f5241b718",
+          "message": "Update system call count in linux-compatibility.md",
+          "timestamp": "2025-03-12T07:31:30Z",
+          "url": "https://github.com/asterinas/asterinas/commit/55984e68cf0378220488efabf0eff58f5241b718"
+        },
+        "date": 1741833394703,
+        "tool": "customSmallerIsBetter",
+        "title": "[VFS] The cost of fstat",
+        "description": "lat_syscall fstat",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average fstat latency on Linux",
+            "value": "0.2925",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average fstat latency on Asterinas",
+            "value": "0.1958",
             "unit": "µs",
             "extra": "aster_result"
           }
