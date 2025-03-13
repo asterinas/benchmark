@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1741834914392,
+  "lastUpdate": 1741835011946,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "http_file4KB_bw": [
@@ -4995,6 +4995,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average HTTP Bandwidth over virtio-net between Host Linux and Guest Asterinas",
             "value": "9337.89",
+            "unit": "Requests per second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tate.thl@antgroup.com"
+          },
+          "committer": {
+            "name": "GitHub",
+            "username": "web-flow",
+            "email": "noreply@github.com"
+          },
+          "id": "55984e68cf0378220488efabf0eff58f5241b718",
+          "message": "Update system call count in linux-compatibility.md",
+          "timestamp": "2025-03-12T07:31:30Z",
+          "url": "https://github.com/asterinas/asterinas/commit/55984e68cf0378220488efabf0eff58f5241b718"
+        },
+        "date": 1741834941072,
+        "tool": "customBiggerIsBetter",
+        "title": "Nginx HTTP request performance (virtio-net, 8KB file size)",
+        "description": "ab -n 10000 -c 1 http://10.0.2.15:8080/8192bytes.html",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average HTTP Bandwidth over virtio-net between Host Linux and Guest Linux",
+            "value": "14919.92",
+            "unit": "Requests per second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average HTTP Bandwidth over virtio-net between Host Linux and Guest Asterinas",
+            "value": "10404.10",
             "unit": "Requests per second",
             "extra": "aster_result"
           }
