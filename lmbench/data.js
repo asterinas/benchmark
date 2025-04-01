@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1743472563859,
+  "lastUpdate": 1743472605882,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -65063,6 +65063,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average TCP bandwidth on Asterinas",
             "value": "389.24",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Zhang Junyang",
+            "username": "junyang-zh",
+            "email": "junyang@stu.pku.edu.cn"
+          },
+          "committer": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "3329907643@qq.com"
+          },
+          "id": "09a8ab8800c930a4b8c89a70b61f52e85333c15e",
+          "message": "Respect local X2Apic MADT entry",
+          "timestamp": "2025-03-29T11:21:25Z",
+          "url": "https://github.com/asterinas/asterinas/commit/09a8ab8800c930a4b8c89a70b61f52e85333c15e"
+        },
+        "date": 1743472603276,
+        "tool": "customBiggerIsBetter",
+        "title": "[TCP sockets] The bandwidth (loopback, 128B message)",
+        "description": "bw_tcp -l",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average TCP bandwidth on Linux",
+            "value": "248.98",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average TCP bandwidth on Asterinas",
+            "value": "386.20",
             "unit": "MB/s",
             "extra": "aster_result"
           }
