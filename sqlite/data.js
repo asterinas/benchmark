@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1743477237703,
+  "lastUpdate": 1743564734699,
   "repoUrl": "https://github.com/grief8/asterinas",
   "entries": {
     "ext2_deletes_between": [
@@ -39423,6 +39423,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "The speed of deletes-between on Asterinas (Ext2)",
             "value": "3.163",
+            "unit": "second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Fabing Li",
+            "username": "grief8",
+            "email": "lifabing1349212501@gmail.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "f4e79d99d04757347a6eaa05f6acb41b8898c927",
+          "message": "Enforce the suitable width of badge",
+          "timestamp": "2025-03-31T00:48:12Z",
+          "url": "https://github.com/grief8/asterinas/commit/f4e79d99d04757347a6eaa05f6acb41b8898c927"
+        },
+        "date": 1743564728805,
+        "tool": "customSmallerIsBetter",
+        "title": "[Ext2] The deletes-between result of sqlite speedtest",
+        "description": "sqlite-speed-test: 10000 DELETEs, numeric BETWEEN, indexed",
+        "display": false,
+        "benches": [
+          {
+            "name": "The speed of deletes-between on Linux (Ext2)",
+            "value": "2.916",
+            "unit": "second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "The speed of deletes-between on Asterinas (Ext2)",
+            "value": "3.668",
             "unit": "second",
             "extra": "aster_result"
           }
