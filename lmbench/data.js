@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1743648544160,
+  "lastUpdate": 1743648584394,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -4810,6 +4810,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average mmap bandwidth on Asterinas",
             "value": "23125.04",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Zhang Junyang",
+            "username": "junyang-zh",
+            "email": "junyang@stu.pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "600f13ef78a32c185f6b4f891d6d5aec4b6b1a98",
+          "message": "Enforce a task not switched to multiple CPUs",
+          "timestamp": "2025-03-31T04:06:22Z",
+          "url": "https://github.com/asterinas/asterinas/commit/600f13ef78a32c185f6b4f891d6d5aec4b6b1a98"
+        },
+        "date": 1743648576590,
+        "tool": "customBiggerIsBetter",
+        "title": "[Memory] The bandwidth of mmap",
+        "description": "bw_mmap",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average mmap bandwidth on Linux",
+            "value": "25908.26",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average mmap bandwidth on Asterinas",
+            "value": "22228.84",
             "unit": "MB/s",
             "extra": "aster_result"
           }
