@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes" />
+    <style>
+      html {
+          font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+          -webkit-font-smoothing: antialiased;
+          background-color: #fff;
+          font-size: 16px;
+      }
+      body {
+          color: #4a4a4a;
+          margin: 8px;
+          font-size: 1em;
+          font-weight: 400;
+      }
+      header {
+            margin-bottom: 8px;
+            display: flex;
+            flex-direction: column;
+      }
+      main {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+      }
+      a {
+          color: #3273dc;
+          cursor: pointer;
+          text-decoration: none;
+      }
+      a:hover {
+          color: #000;
+      }
+      button {
+          color: #fff;
+          background-color: #3298dc;
+          border-color: transparent;
+          cursor: pointer;
+          text-align: center;
+      }
+      button:hover {
+          background-color: #2793da;
+          flex: none;
+      }
+      .spacer {
+          flex: auto;
+      }
+      .small {
+          font-size: 0.75rem;
+      }
+      footer {
+          margin-top: 16px;
+          display: flex;
+          align-items: center;
+      }
+      .header-label {
+          margin-right: 4px;
+      }
+      .benchmark-set {
+          margin: 8px 0;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+      }
+      .benchmark-title {
+          font-size: 3rem;
+          font-weight: 600;
+          word-break: break-word;
+          text-align: center;
+          margin-bottom: 5px;
+      }
+      .benchmark-graphs {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          align-items: center;
+          flex-wrap: wrap;
+          width: 100%;
+      }
+      .benchmark-chart-overview {
+          display: flex;
+          flex-direction: column;
+          max-width: 90%;
+          width: auto; /* Make width adaptive */
+          min-width: 1000px; /* Set minimum width to 1000px */
+          background-color: #ffffff; /* White background for better chart display */
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Slight shadow */
+      }
+      .chart-description {
+          font-family: 'Courier New', Courier, monospace;
+          color: #333; /* Changed to a darker color for better readability */
+          font-style: italic;
+          font-size: 0.9rem;
+          font-weight: 200;
+          word-break: break-word;
+          text-align: center;
+          margin-top: 0px; /* Added margin to create space between the title and the description */
+          margin-bottom: 20px; /* Added margin to create space between the description and the figure below it */
+      }
+    </style>
+    <title>Benchmarks</title>
+  </head>
+
+  <body>
+    <header id="header">
+      <div class="header-item">
+        <strong class="header-label">Last Update:</strong>
+        <span id="last-update"></span>
+      </div>
+      <div class="header-item">
+        <strong class="header-label">Repository:</strong>
+        <a id="repository-link" rel="noopener"></a>
+      </div>
+    </header>
+    <main id="main"></main>
+    <footer>
+      <button id="dl-button">Download data as JSON</button>
+      <div class="spacer"></div>
+      <div class="small">Powered by <a rel="noopener" href="https://github.com/marketplace/actions/continuous-benchmark">github-action-benchmark</a></div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-tick-configuration"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation"></script> <!-- Include annotation plugin -->
+    <script id="main-script">
+      'use strict';
+      (function() {
+        
+        async function init() {
+          const dataPaths = [
+            'lmbench/data.js',
+            'iperf3/data.js',
+            'nginx/data.js',
+            'sysbench/data.js',
+            'redis/data.js',
+            'fio/data.js',
+            'sqlite/data.js',
+            'hackbench/data.js',
+            'schbench/data.js',
+            'memcached/data.js',
+            // Add more paths as needed
+          ];
+
+          const allData = await Promise.all(dataPaths.map(path => fetch(path).then(res => res.text())));
+
+          // Parse and merge all data into a single object
+          const mergedData = {
+            lastUpdate: 0,
+            repoUrl: '',
+            normalizedDataSets: []
+          };
+
+          allData.forEach((data, index) => {
+            const scriptContent = data.replace('window.BENCHMARK_DATA = ', '');
+            const parsedData = JSON.parse(scriptContent);
+            mergedData.lastUpdate = Math.max(mergedData.lastUpdate, parsedData.lastUpdate);
+            mergedData.repoUrl = parsedData.repoUrl;
+            console.log(parsedData);
+
+            // Get the base name from the path
+            const baseName = dataPaths[index].split('/')[0];
+
+            const dateSets = Object.keys(parsedData.entries).map(name => ({
+              name,
+              dataSet: collectBenchesPerTestCase(parsedData.entries[name]),
+            }));
+
+            // Normalize the data
+            const normalizedData = getNormalizedData(dateSets);
+            mergedData.normalizedDataSets.push({ name: baseName, normalizedData });
+          });
+
+          // Render header
+          document.getElementById('last-update').textContent = new Date(mergedData.lastUpdate).toString();
+          const repoLink = document.getElementById('repository-link');
+          repoLink.href = mergedData.repoUrl;
+          repoLink.textContent = mergedData.repoUrl;
+
+          return mergedData.normalizedDataSets;
+        }
+
+        function collectBenchesPerTestCase(entries) {
+          const map = new Map();
+          // Ensure entries is an array
+          if (!Array.isArray(entries)) {
+            try {
+              entries = Array.from(entries);
+            } catch (e) {
+              throw new TypeError('entries is not iterable');
+            }
+          }
+          for (const entry of entries) {
+            const {commit, date, tool, title, description, display, benches} = entry;
+            for (const bench of benches) {
+              const result = { commit, date, tool, title, description, display, bench };
+              const arr = map.get(bench.name);
+              if (arr === undefined) {
+                map.set(bench.name, [result]);
+              } else {
+                arr.push(result);
+              }
+            }
+          }
+          return map;
+        }
+
+        // Get normalized data with display flag
+        function getNormalizedData(dataSets) {
+          function extractValuesAndTitle(map) {
+            const linuxEntry = [...map.values()].find(entry => entry[0].bench.extra === 'linux_result');
+            const asterinasEntry = [...map.values()].find(entry => entry[0].bench.extra === 'aster_result');
+
+            if (!linuxEntry || !asterinasEntry) {
+              throw new Error('Linux or Asterinas entry not found');
+            }
+
+            const linuxValue = linuxEntry[linuxEntry.length - 1].bench.value;
+            const asterinasValue = asterinasEntry[asterinasEntry.length - 1].bench.value;
+            const title = linuxEntry[linuxEntry.length - 1].title; 
+            const tool = linuxEntry[linuxEntry.length - 1].tool;
+            const display = linuxEntry[linuxEntry.length - 1].display;
+
+            return {
+              linuxValue,
+              asterinasValue,
+              title,
+              tool,
+              display
+            };
+          }
+          const normalizedDataSets = new Map();
+          for (const {name, dataSet} of dataSets) {
+            const {linuxValue, asterinasValue, title, tool, display} = extractValuesAndTitle(dataSet);
+            if (!display) {
+              continue;
+            }
+            const normalizedData = tool === 'customBiggerIsBetter' ? asterinasValue / linuxValue : linuxValue / asterinasValue;
+      
+            normalizedDataSets.set(title, normalizedData);
+          }
+          // Calculate Geometric Mean
+          const values = [...normalizedDataSets.values()];
+          const geometricMean = Math.pow(values.reduce((acc, val) => acc * val, 1), 1 / values.length);
+
+          // Add Geometric Mean to the result
+          normalizedDataSets.set('Geometric Mean', geometricMean);
+
+          return normalizedDataSets;
+        }
+
+        function renderAllChars(normalizedDataSets) {
+          function setCanvasHeight(canvas, numberOfBars) {
+              const heightPerBar = 25; // Height of each bar
+              const padding = 10; // Top and bottom padding
+
+              // Calculate total height based on the number of bars
+              const totalHeight = heightPerBar * (numberOfBars + 1) + padding * 2;
+
+              canvas.style.height = `${totalHeight}px`;
+          }
+
+          function renderOverview(ctx, labels, asterinasValues) {
+              const canvas = document.createElement('canvas');
+              canvas.className = 'benchmark-chart-overview';
+
+              // Set canvas width to 80% of the container
+              canvas.style.width = `80%`;
+
+              // Adjust height based on the number of bars
+              setCanvasHeight(canvas, labels.length);
+              ctx.appendChild(canvas);
+
+              const maxLabelWidth = 65; // Fixed length for each label
+              const formattedLabels = labels.map((label) =>
+                  label.length > maxLabelWidth
+                      ? label.slice(0, maxLabelWidth)
+                      : label.padEnd(maxLabelWidth, ' ')
+              );
+
+              new Chart(canvas, {
+                  type: 'bar', 
+                  data: {
+                      labels: formattedLabels,
+                      datasets: [
+                          {
+                              label: 'Asterinas',
+                              data: asterinasValues,
+                              backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                              borderColor: 'rgba(54, 162, 235, 1)',
+                              borderWidth: 1,
+                          },
+                      ],
+                  },
+                  options: {
+                      indexAxis: 'y', // Horizontal bars
+                      scales: {
+                          x: {
+                              reverse: true, // Reverse x-axis direction
+                              ticks: {
+                                  stepSize: 0.1,
+                                  major: {
+                                      enabled: true, // Highlight major ticks
+                                  },
+                              },
+                          },
+                          y: {
+                              position: 'right', // Position labels on the right
+                              ticks: {
+                                  padding: 10, // Ensure consistent spacing
+                                  autoSkip: false,
+                                  font: (context) => ({
+                                      family: 'Consolas, monospace',
+                                      weight: context.tick.label === 'Geometric Mean'.padEnd(maxLabelWidth, ' ') ? 'bold' : 'normal',
+                                      size: 12,
+                                  }),
+                              },
+                          },
+                      },
+                      barPercentage: 0.6, // Uniform bar width
+                      categoryPercentage: 0.8,
+                      plugins: {
+                          annotation: {
+                              annotations: [
+                                  {
+                                      type: 'line',
+                                      mode: 'horizontal',
+                                      scaleID: 'x',
+                                      value: 1, // Reference line at x=1
+                                      borderColor: 'rgba(0, 0, 0, 0.5)',
+                                      borderWidth: 2,
+                                      label: {
+                                          content: 'Reference Line (x=1)',
+                                          enabled: true,
+                                          position: 'right',
+                                      },
+                                  },
+                              ],
+                          },
+                      },
+                      responsive: false, // Fixed canvas size
+                      maintainAspectRatio: false,
+                  },
+              });
+          }
+
+          const main = document.getElementById('main');
+
+          normalizedDataSets.forEach((dataSet) => {
+            const setElem = document.createElement('div');
+            setElem.className = 'benchmark-set';
+            main.appendChild(setElem);
+
+            const labels = Array.from(dataSet.normalizedData.keys());
+            const asterinasValues = Array.from(dataSet.normalizedData.values());
+
+            const title = `<a href="${new URL(
+                dataSet.name,
+                window.location.href
+            )}" target="_blank">${dataSet.name}</a>: Normalized performance of Asterinas`;
+            const description =
+                'For bandwidth, use Asterinas / Linux; for latency, use Linux / Asterinas. The higher, the better.';
+
+            const nameElem = document.createElement('h1');
+            nameElem.className = 'benchmark-title';
+            nameElem.insertAdjacentHTML('beforeend', title);
+            setElem.appendChild(nameElem);
+
+            const descriptionElem = document.createElement('div');
+            descriptionElem.className = 'chart-description';
+            descriptionElem.textContent = description;
+            setElem.appendChild(descriptionElem);
+
+            const overviewElem = document.createElement('div');
+            overviewElem.className = 'benchmark-graphs';
+            setElem.appendChild(overviewElem);
+            
+            renderOverview(overviewElem, labels, asterinasValues, title, description);
+          });
+        }
+        
+        init().then(renderAllChars); // Start
+      })();
+    </script>
+  </body>
+</html>
