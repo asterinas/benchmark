@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1743652200731,
+  "lastUpdate": 1743652238318,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_deletes_between": [
@@ -73275,6 +73275,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "The speed of updates-big-one on Asterinas (Ramfs)",
             "value": "0.100",
+            "unit": "second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Zhang Junyang",
+            "username": "junyang-zh",
+            "email": "junyang@stu.pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "600f13ef78a32c185f6b4f891d6d5aec4b6b1a98",
+          "message": "Enforce a task not switched to multiple CPUs",
+          "timestamp": "2025-03-31T04:06:22Z",
+          "url": "https://github.com/asterinas/asterinas/commit/600f13ef78a32c185f6b4f891d6d5aec4b6b1a98"
+        },
+        "date": 1743652230469,
+        "tool": "customSmallerIsBetter",
+        "title": "[Ramfs] The updates-big-one result of sqlite speedtest",
+        "description": "sqlite-speed-test: One big UPDATE of the whole 50000-row table",
+        "display": false,
+        "benches": [
+          {
+            "name": "The speed of updates-big-one on Linux (Ramfs)",
+            "value": "0.082",
+            "unit": "second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "The speed of updates-big-one on Asterinas (Ramfs)",
+            "value": "0.102",
             "unit": "second",
             "extra": "aster_result"
           }
