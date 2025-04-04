@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1743737445108,
+  "lastUpdate": 1743737450344,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -36444,265 +36444,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Shaowei Song",
-            "username": "lucassong-mh",
-            "email": "songshaowei.ssw@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "56b85cb132e54cc51522e6444bc17f9e00eb2ee3",
-          "message": "Cache negative dentries for faster negative lookups",
-          "timestamp": "2025-01-14T09:32:02Z",
-          "url": "https://github.com/asterinas/asterinas/commit/56b85cb132e54cc51522e6444bc17f9e00eb2ee3"
-        },
-        "date": 1738803605217,
-        "tool": "customBiggerIsBetter",
-        "title": "[Unix sockets] The bandwidth",
-        "description": "bw_unix",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average unix bandwidth on Linux",
-            "value": "7531.90",
-            "unit": "MB/s",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average unix bandwidth on Asterinas",
-            "value": "9818.49",
-            "unit": "MB/s",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Shaowei Song",
-            "username": "lucassong-mh",
-            "email": "songshaowei.ssw@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "56b85cb132e54cc51522e6444bc17f9e00eb2ee3",
-          "message": "Cache negative dentries for faster negative lookups",
-          "timestamp": "2025-01-14T09:32:02Z",
-          "url": "https://github.com/asterinas/asterinas/commit/56b85cb132e54cc51522e6444bc17f9e00eb2ee3"
-        },
-        "date": 1738888978906,
-        "tool": "customBiggerIsBetter",
-        "title": "[Unix sockets] The bandwidth",
-        "description": "bw_unix",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average unix bandwidth on Linux",
-            "value": "7315.64",
-            "unit": "MB/s",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average unix bandwidth on Asterinas",
-            "value": "9808.82",
-            "unit": "MB/s",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Shaowei Song",
-            "username": "lucassong-mh",
-            "email": "songshaowei.ssw@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "56b85cb132e54cc51522e6444bc17f9e00eb2ee3",
-          "message": "Cache negative dentries for faster negative lookups",
-          "timestamp": "2025-01-14T09:32:02Z",
-          "url": "https://github.com/asterinas/asterinas/commit/56b85cb132e54cc51522e6444bc17f9e00eb2ee3"
-        },
-        "date": 1738975598278,
-        "tool": "customBiggerIsBetter",
-        "title": "[Unix sockets] The bandwidth",
-        "description": "bw_unix",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average unix bandwidth on Linux",
-            "value": "7594.28",
-            "unit": "MB/s",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average unix bandwidth on Asterinas",
-            "value": "10022.15",
-            "unit": "MB/s",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "418f58ec89342e79039a12a26d524c37406bb542",
-          "message": "Avoid locking twice in UDP `send`",
-          "timestamp": "2025-01-23T05:27:53Z",
-          "url": "https://github.com/asterinas/asterinas/commit/418f58ec89342e79039a12a26d524c37406bb542"
-        },
-        "date": 1739062138711,
-        "tool": "customBiggerIsBetter",
-        "title": "[Unix sockets] The bandwidth",
-        "description": "bw_unix",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average unix bandwidth on Linux",
-            "value": "7490.22",
-            "unit": "MB/s",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average unix bandwidth on Asterinas",
-            "value": "9829.09",
-            "unit": "MB/s",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "418f58ec89342e79039a12a26d524c37406bb542",
-          "message": "Avoid locking twice in UDP `send`",
-          "timestamp": "2025-01-23T05:27:53Z",
-          "url": "https://github.com/asterinas/asterinas/commit/418f58ec89342e79039a12a26d524c37406bb542"
-        },
-        "date": 1739149535143,
-        "tool": "customBiggerIsBetter",
-        "title": "[Unix sockets] The bandwidth",
-        "description": "bw_unix",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average unix bandwidth on Linux",
-            "value": "7430.09",
-            "unit": "MB/s",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average unix bandwidth on Asterinas",
-            "value": "9791.07",
-            "unit": "MB/s",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "jiangjianfeng",
-            "username": "StevenJiang1110",
-            "email": "jiangjianfeng.jjf@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "55713b88c433fa254663d629ac0946878d50800f",
-          "message": "Remove unused dependencies",
-          "timestamp": "2025-02-08T09:22:39Z",
-          "url": "https://github.com/asterinas/asterinas/commit/55713b88c433fa254663d629ac0946878d50800f"
-        },
-        "date": 1739234625701,
-        "tool": "customBiggerIsBetter",
-        "title": "[Unix sockets] The bandwidth",
-        "description": "bw_unix",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average unix bandwidth on Linux",
-            "value": "7603.94",
-            "unit": "MB/s",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average unix bandwidth on Asterinas",
-            "value": "9787.19",
-            "unit": "MB/s",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Qingsong Chen",
-            "username": "cqs21",
-            "email": "changxian.cqs@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "04be02efb7b7ddc0af90a00fdc0e955a539315e7",
-          "message": "Add init_component for mlsdisk",
-          "timestamp": "2025-01-10T03:15:59Z",
-          "url": "https://github.com/asterinas/asterinas/commit/04be02efb7b7ddc0af90a00fdc0e955a539315e7"
-        },
-        "date": 1739322639608,
-        "tool": "customBiggerIsBetter",
-        "title": "[Unix sockets] The bandwidth",
-        "description": "bw_unix",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average unix bandwidth on Linux",
-            "value": "7594.30",
-            "unit": "MB/s",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average unix bandwidth on Asterinas",
-            "value": "11689.29",
-            "unit": "MB/s",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Ruihan Li",
             "username": "lrh2000",
             "email": "lrh2000@pku.edu.cn"
@@ -38878,6 +38619,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average unix bandwidth on Asterinas",
             "value": "9800.93",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Chen Chengjun",
+            "username": "cchanging",
+            "email": "chenchengjun.ccj@antgroup.com"
+          },
+          "committer": {
+            "name": "Jianfeng Jiang",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "id": "9915978d35cf5ee0cbc4561ec718e0a4a16441fb",
+          "message": "Enable vfork gVisor test",
+          "timestamp": "2025-04-01T08:38:55Z",
+          "url": "https://github.com/asterinas/asterinas/commit/9915978d35cf5ee0cbc4561ec718e0a4a16441fb"
+        },
+        "date": 1743737446306,
+        "tool": "customBiggerIsBetter",
+        "title": "[Unix sockets] The bandwidth (64KB message)",
+        "description": "bw_unix",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average unix bandwidth on Linux",
+            "value": "7570.61",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average unix bandwidth on Asterinas",
+            "value": "9757.26",
             "unit": "MB/s",
             "extra": "aster_result"
           }
