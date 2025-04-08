@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1744073978266,
+  "lastUpdate": 1744073985164,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -20004,43 +20004,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Qingsong Chen",
-            "username": "cqs21",
-            "email": "changxian.cqs@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "04be02efb7b7ddc0af90a00fdc0e955a539315e7",
-          "message": "Add init_component for mlsdisk",
-          "timestamp": "2025-01-10T03:15:59Z",
-          "url": "https://github.com/asterinas/asterinas/commit/04be02efb7b7ddc0af90a00fdc0e955a539315e7"
-        },
-        "date": 1739321630430,
-        "tool": "customSmallerIsBetter",
-        "title": "[Signals] The cost of catching a signal",
-        "description": "lat_sig catch",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average Signal handler overhead on Linux",
-            "value": "0.8297",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average Signal handler overhead on Asterinas",
-            "value": "0.4216",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Zejun Zhao",
             "username": "jellllly420",
             "email": "jelly.zhao.42@gmail.com"
@@ -22216,6 +22179,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average Signal handler overhead on Asterinas",
             "value": "0.4884",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Caiyi Shyu",
+            "username": "Cai1Hsu",
+            "email": "cai1hsu@outlook.com"
+          },
+          "committer": {
+            "name": "Junyang Zhang",
+            "username": "junyang-zh",
+            "email": "user@junyang.me"
+          },
+          "id": "3c2c31ceb0af7bfe0f8ec63fd04fbb92e7233b9c",
+          "message": "feat(osdk): add LoongArch64 variant in `Arch` enum",
+          "timestamp": "2025-03-10T11:01:23Z",
+          "url": "https://github.com/asterinas/asterinas/commit/3c2c31ceb0af7bfe0f8ec63fd04fbb92e7233b9c"
+        },
+        "date": 1744073979689,
+        "tool": "customSmallerIsBetter",
+        "title": "[Signals] The cost of catching a signal",
+        "description": "lat_sig catch",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average Signal handler overhead on Linux",
+            "value": "0.8361",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average Signal handler overhead on Asterinas",
+            "value": "0.4909",
             "unit": "µs",
             "extra": "aster_result"
           }
