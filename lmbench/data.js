@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1744073836539,
+  "lastUpdate": 1744073843431,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -37794,43 +37794,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2025-02-13T02:34:24Z",
           "url": "https://github.com/asterinas/asterinas/commit/bf96f673dc958cc9a7846fa890eca7a50bab496a"
         },
-        "date": 1739581484094,
-        "tool": "customSmallerIsBetter",
-        "title": "[VFS] The cost of open+close",
-        "description": "lat_syscall open",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average open latency on Linux",
-            "value": "0.6934",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average open latency on Asterinas",
-            "value": "0.8016",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "jiangjianfeng",
-            "username": "StevenJiang1110",
-            "email": "jiangjianfeng.jjf@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "bf96f673dc958cc9a7846fa890eca7a50bab496a",
-          "message": "Unify network benchmark chart title",
-          "timestamp": "2025-02-13T02:34:24Z",
-          "url": "https://github.com/asterinas/asterinas/commit/bf96f673dc958cc9a7846fa890eca7a50bab496a"
-        },
         "date": 1739668695414,
         "tool": "customSmallerIsBetter",
         "title": "[VFS] The cost of open+close",
@@ -39992,6 +39955,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average open latency on Asterinas",
             "value": "1.0178",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Caiyi Shyu",
+            "username": "Cai1Hsu",
+            "email": "cai1hsu@outlook.com"
+          },
+          "committer": {
+            "name": "Junyang Zhang",
+            "username": "junyang-zh",
+            "email": "user@junyang.me"
+          },
+          "id": "3c2c31ceb0af7bfe0f8ec63fd04fbb92e7233b9c",
+          "message": "feat(osdk): add LoongArch64 variant in `Arch` enum",
+          "timestamp": "2025-03-10T11:01:23Z",
+          "url": "https://github.com/asterinas/asterinas/commit/3c2c31ceb0af7bfe0f8ec63fd04fbb92e7233b9c"
+        },
+        "date": 1744073837959,
+        "tool": "customSmallerIsBetter",
+        "title": "[VFS] The cost of open+close",
+        "description": "lat_syscall open",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average open latency on Linux",
+            "value": "0.6968",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average open latency on Asterinas",
+            "value": "1.0149",
             "unit": "µs",
             "extra": "aster_result"
           }
