@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1744245553306,
+  "lastUpdate": 1744245561168,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_deletes_between": [
@@ -47756,6 +47756,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "The speed of selects-text-pk on Asterinas (Ext2)",
             "value": "4.138",
+            "unit": "second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "jiangjianfeng",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "committer": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "3329907643@qq.com"
+          },
+          "id": "b833ec6ede869b9dbf16863744b9441702d979bd",
+          "message": "Implement ReadCString for MultiRead",
+          "timestamp": "2025-04-09T06:36:21Z",
+          "url": "https://github.com/asterinas/asterinas/commit/b833ec6ede869b9dbf16863744b9441702d979bd"
+        },
+        "date": 1744245554520,
+        "tool": "customSmallerIsBetter",
+        "title": "[Ext2] The selects-text-pk result of sqlite speedtest",
+        "description": "sqlite-speed-test: 70000 SELECTS on a TEXT PK",
+        "display": false,
+        "benches": [
+          {
+            "name": "The speed of selects-text-pk on Linux (Ext2)",
+            "value": "2.846",
+            "unit": "second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "The speed of selects-text-pk on Asterinas (Ext2)",
+            "value": "4.152",
             "unit": "second",
             "extra": "aster_result"
           }
