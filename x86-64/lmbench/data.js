@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1744364456115,
+  "lastUpdate": 1744364464917,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -77789,43 +77789,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2025-02-13T02:34:24Z",
           "url": "https://github.com/asterinas/asterinas/commit/bf96f673dc958cc9a7846fa890eca7a50bab496a"
         },
-        "date": 1739580733692,
-        "tool": "customBiggerIsBetter",
-        "title": "[TCP sockets] The bandwidth (virtio-net, 128B message)",
-        "description": "bw_tcp -l",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average TCP bandwidth on Linux",
-            "value": "119.69",
-            "unit": "MB/sec",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average TCP bandwidth on Asterinas",
-            "value": "378.18",
-            "unit": "MB/sec",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "jiangjianfeng",
-            "username": "StevenJiang1110",
-            "email": "jiangjianfeng.jjf@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "bf96f673dc958cc9a7846fa890eca7a50bab496a",
-          "message": "Unify network benchmark chart title",
-          "timestamp": "2025-02-13T02:34:24Z",
-          "url": "https://github.com/asterinas/asterinas/commit/bf96f673dc958cc9a7846fa890eca7a50bab496a"
-        },
         "date": 1739668001805,
         "tool": "customBiggerIsBetter",
         "title": "[TCP sockets] The bandwidth (virtio-net, 128B message)",
@@ -79987,6 +79950,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average TCP bandwidth on Asterinas",
             "value": "400.74",
+            "unit": "MB/sec",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Fabian LI",
+            "username": "grief8",
+            "email": "lifabing1349212501@gmail.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "e9c2886a84698efd3493dcacf8f6563cde139c40",
+          "message": "Fix platform definition",
+          "timestamp": "2025-04-10T08:27:21Z",
+          "url": "https://github.com/asterinas/asterinas/commit/e9c2886a84698efd3493dcacf8f6563cde139c40"
+        },
+        "date": 1744364457693,
+        "tool": "customBiggerIsBetter",
+        "title": "[TCP sockets] The bandwidth (virtio-net, 128B message)",
+        "description": "bw_tcp -l",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average TCP bandwidth on Linux",
+            "value": "142.54",
+            "unit": "MB/sec",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average TCP bandwidth on Asterinas",
+            "value": "177.11",
             "unit": "MB/sec",
             "extra": "aster_result"
           }
