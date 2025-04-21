@@ -1,45 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1745225132678,
+  "lastUpdate": 1745225141941,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_seq_write_bw": [
-      {
-        "commit": {
-          "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "eca88697dd5d326481cce22a26e0aa91335843b4",
-          "message": "Avoid some `#![expect(lint)]`",
-          "timestamp": "2025-02-17T06:27:00Z",
-          "url": "https://github.com/asterinas/asterinas/commit/eca88697dd5d326481cce22a26e0aa91335843b4"
-        },
-        "date": 1739923376895,
-        "tool": "customBiggerIsBetter",
-        "title": "[Ext2] The bandwidth of sequential writes",
-        "description": "fio -filename=/ext2/fio-test -size=1G -bs=1M -direct=1",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average file write bandwidth on Linux",
-            "value": "2845",
-            "unit": "MB/s",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average file write bandwidth on Asterinas",
-            "value": "2815",
-            "unit": "MB/s",
-            "extra": "aster_result"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2218,6 +2181,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average file write bandwidth on Asterinas",
             "value": "2740",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Zhang Junyang",
+            "username": "junyang-zh",
+            "email": "junyang@stu.pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "85d4cdbbb00130f97e62a98f2a159e1e7b4014ef",
+          "message": "Avoid excessive heap allocations in `sys_futex`",
+          "timestamp": "2025-04-14T15:16:58Z",
+          "url": "https://github.com/asterinas/asterinas/commit/85d4cdbbb00130f97e62a98f2a159e1e7b4014ef"
+        },
+        "date": 1745225134260,
+        "tool": "customBiggerIsBetter",
+        "title": "[Ext2] The bandwidth of sequential writes",
+        "description": "fio -filename=/ext2/fio-test -size=1G -bs=1M -direct=1",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average file write bandwidth on Linux",
+            "value": "1159",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average file write bandwidth on Asterinas",
+            "value": "1490",
             "unit": "MB/s",
             "extra": "aster_result"
           }
