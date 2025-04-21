@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1745250269241,
+  "lastUpdate": 1745250277832,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_deletes_between": [
@@ -41978,6 +41978,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "The speed of deletes-individual on Asterinas (Ext2)",
             "value": "8.823",
+            "unit": "second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Yuke Peng",
+            "username": "sdww0",
+            "email": "pykfirst@gmail.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "1130933546fba3ffa6332b726d361e79f75eecfd",
+          "message": "Remove unused `device.rs` file in mmio",
+          "timestamp": "2025-04-17T09:01:56Z",
+          "url": "https://github.com/asterinas/asterinas/commit/1130933546fba3ffa6332b726d361e79f75eecfd"
+        },
+        "date": 1745250270275,
+        "tool": "customSmallerIsBetter",
+        "title": "[Ext2] The deletes-individual result of sqlite speedtest",
+        "description": "sqlite-speed-test: 50000 DELETEs of individual rows",
+        "display": false,
+        "benches": [
+          {
+            "name": "The speed of deletes-individual on Linux (Ext2)",
+            "value": "2.903",
+            "unit": "second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "The speed of deletes-individual on Asterinas (Ext2)",
+            "value": "9.347",
             "unit": "second",
             "extra": "aster_result"
           }
