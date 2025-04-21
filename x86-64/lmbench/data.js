@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1745256123785,
+  "lastUpdate": 1745256133257,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -93343,43 +93343,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2025-02-21T02:29:35Z",
           "url": "https://github.com/asterinas/asterinas/commit/18e0eae33104fbeecf8ebde63abbdcb7cdf7cfef"
         },
-        "date": 1740357663119,
-        "tool": "customBiggerIsBetter",
-        "title": "[Memory] The bandwidth of writing integers",
-        "description": "bw_mem fwr",
-        "display": false,
-        "benches": [
-          {
-            "name": "Average memory write bandwidth on Linux",
-            "value": "8940.70",
-            "unit": "MB/s",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average memory write bandwidth on Asterinas",
-            "value": "8793.52",
-            "unit": "MB/s",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "18e0eae33104fbeecf8ebde63abbdcb7cdf7cfef",
-          "message": "Never expose `ERESTARTSYS` to the userspace",
-          "timestamp": "2025-02-21T02:29:35Z",
-          "url": "https://github.com/asterinas/asterinas/commit/18e0eae33104fbeecf8ebde63abbdcb7cdf7cfef"
-        },
         "date": 1740444064315,
         "tool": "customBiggerIsBetter",
         "title": "[Memory] The bandwidth of writing integers",
@@ -95541,6 +95504,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average memory write bandwidth on Asterinas",
             "value": "3678.66",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "81b79dacc651c24848407b2774455fbe086d5ec8",
+          "message": "Remove `read*_to_end` methods",
+          "timestamp": "2025-04-17T03:59:37Z",
+          "url": "https://github.com/asterinas/asterinas/commit/81b79dacc651c24848407b2774455fbe086d5ec8"
+        },
+        "date": 1745256125029,
+        "tool": "customBiggerIsBetter",
+        "title": "[Memory] The bandwidth of writing integers",
+        "description": "bw_mem fwr",
+        "display": false,
+        "benches": [
+          {
+            "name": "Average memory write bandwidth on Linux",
+            "value": "5934.37",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average memory write bandwidth on Asterinas",
+            "value": "3543.18",
             "unit": "MB/s",
             "extra": "aster_result"
           }
