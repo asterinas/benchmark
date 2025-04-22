@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1745303283617,
+  "lastUpdate": 1745303293356,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "smp1_p50_rps": [
@@ -6672,43 +6672,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Chen Chengjun",
-            "username": "cchanging",
-            "email": "chenchengjun.ccj@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "5834f299bce6292617885926d993ab1b31953494",
-          "message": "Fix a potential race condition during PTE read/write operations",
-          "timestamp": "2025-02-20T12:06:00Z",
-          "url": "https://github.com/asterinas/asterinas/commit/5834f299bce6292617885926d993ab1b31953494"
-        },
-        "date": 1740102498029,
-        "tool": "customBiggerIsBetter",
-        "title": "[Scheduler] P50 RPS while max-loading all CPUs (SMP=8)",
-        "description": "schbench -F 256 -n 5 -r 90",
-        "display": false,
-        "benches": [
-          {
-            "name": "P50 RPS of schbench on Linux",
-            "value": "2932",
-            "unit": "requests per second",
-            "extra": "linux_result"
-          },
-          {
-            "name": "P50 RPS of schbench on Asterinas",
-            "value": "85",
-            "unit": "requests per second",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Zhang Junyang",
             "username": "junyang-zh",
             "email": "junyang@stu.pku.edu.cn"
@@ -8884,6 +8847,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "P50 RPS of schbench on Asterinas",
             "value": "334",
+            "unit": "requests per second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "jiangjianfeng",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "13287c752e81e31b9cd28faa07ebdbf84c947394",
+          "message": "Make TDX accept the same virtio-net parameters as the normal setting",
+          "timestamp": "2025-04-11T03:45:36Z",
+          "url": "https://github.com/asterinas/asterinas/commit/13287c752e81e31b9cd28faa07ebdbf84c947394"
+        },
+        "date": 1745303284451,
+        "tool": "customBiggerIsBetter",
+        "title": "[Scheduler] P50 RPS while max-loading all CPUs (SMP=8)",
+        "description": "schbench -F 256 -n 5 -r 90",
+        "display": false,
+        "benches": [
+          {
+            "name": "P50 RPS of schbench on Linux",
+            "value": "2724",
+            "unit": "requests per second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "P50 RPS of schbench on Asterinas",
+            "value": "316",
             "unit": "requests per second",
             "extra": "aster_result"
           }
