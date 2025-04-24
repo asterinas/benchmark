@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1745470925715,
+  "lastUpdate": 1745470937575,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -68902,43 +68902,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2025-01-14T09:32:02Z",
           "url": "https://github.com/asterinas/asterinas/commit/56b85cb132e54cc51522e6444bc17f9e00eb2ee3"
         },
-        "date": 1738803105711,
-        "tool": "customSmallerIsBetter",
-        "title": "[TCP sockets] The latency of write+read",
-        "description": "lat_tcp",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average TCP latency on Linux",
-            "value": "6.0492",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average TCP latency on Asterinas",
-            "value": "3.8169",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Shaowei Song",
-            "username": "lucassong-mh",
-            "email": "songshaowei.ssw@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "56b85cb132e54cc51522e6444bc17f9e00eb2ee3",
-          "message": "Cache negative dentries for faster negative lookups",
-          "timestamp": "2025-01-14T09:32:02Z",
-          "url": "https://github.com/asterinas/asterinas/commit/56b85cb132e54cc51522e6444bc17f9e00eb2ee3"
-        },
         "date": 1738888479254,
         "tool": "customSmallerIsBetter",
         "title": "[TCP sockets] The latency of write+read",
@@ -71100,6 +71063,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average TCP latency on Asterinas",
             "value": "4.2645",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Zhenchen Wang",
+            "username": "Plucky923",
+            "email": "m202372036@hust.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "3a5f270ee96e77dfc0f54f6b9db945d88260ff89",
+          "message": "Made some minor improvements to syscall statx\n\nSigned-off-by: Zhenchen Wang <m202372036@hust.edu.cn>",
+          "timestamp": "2025-04-23T08:33:20Z",
+          "url": "https://github.com/asterinas/asterinas/commit/3a5f270ee96e77dfc0f54f6b9db945d88260ff89"
+        },
+        "date": 1745470927200,
+        "tool": "customSmallerIsBetter",
+        "title": "[TCP sockets] The latency of write+read (loopback, 1B message)",
+        "description": "lat_tcp",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average TCP latency on Linux",
+            "value": "6.9920",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average TCP latency on Asterinas",
+            "value": "4.2205",
             "unit": "µs",
             "extra": "aster_result"
           }
