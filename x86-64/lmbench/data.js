@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1745982017994,
+  "lastUpdate": 1745982030643,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -44446,43 +44446,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Yuke Peng",
-            "username": "sdww0",
-            "email": "pykfirst@gmail.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "96d83e43b43dfff03e8dee16af805b16b0cf9340",
-          "message": "Make VirtioConsolesPrinter heapless",
-          "timestamp": "2025-02-18T07:16:06Z",
-          "url": "https://github.com/asterinas/asterinas/commit/96d83e43b43dfff03e8dee16af805b16b0cf9340"
-        },
-        "date": 1741228588898,
-        "tool": "customSmallerIsBetter",
-        "title": "[VFS] The cost of stat",
-        "description": "lat_syscall stat",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average stat latency on Linux",
-            "value": "0.3213",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average stat latency on Asterinas",
-            "value": "0.3744",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "js2xxx",
             "username": "js2xxx",
             "email": "akucxy@163.com"
@@ -46658,6 +46621,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average stat latency on Asterinas",
             "value": "1.6626",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Qingsong Chen",
+            "username": "cqs21",
+            "email": "changxian.cqs@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "88f08de3af80641194f8afbf47c98648e8db3e5a",
+          "message": "Refactor framebuffer",
+          "timestamp": "2025-04-29T08:45:08Z",
+          "url": "https://github.com/asterinas/asterinas/commit/88f08de3af80641194f8afbf47c98648e8db3e5a"
+        },
+        "date": 1745982019169,
+        "tool": "customSmallerIsBetter",
+        "title": "[VFS] The cost of stat",
+        "description": "lat_syscall stat",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average stat latency on Linux",
+            "value": "0.3676",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average stat latency on Asterinas",
+            "value": "1.7079",
             "unit": "µs",
             "extra": "aster_result"
           }
