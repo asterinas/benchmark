@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1746067573489,
+  "lastUpdate": 1746067586363,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -84455,43 +84455,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2025-02-21T02:29:35Z",
           "url": "https://github.com/asterinas/asterinas/commit/18e0eae33104fbeecf8ebde63abbdcb7cdf7cfef"
         },
-        "date": 1740359396728,
-        "tool": "customSmallerIsBetter",
-        "title": "[TCP sockets] The latency of write+read (virtio-net, 1B message)",
-        "description": "lat_tcp_virtio",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average TCP latency over virtio-net on Linux",
-            "value": "26.2633",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average TCP latency over virtio-net on Asterinas",
-            "value": "15.9546",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "18e0eae33104fbeecf8ebde63abbdcb7cdf7cfef",
-          "message": "Never expose `ERESTARTSYS` to the userspace",
-          "timestamp": "2025-02-21T02:29:35Z",
-          "url": "https://github.com/asterinas/asterinas/commit/18e0eae33104fbeecf8ebde63abbdcb7cdf7cfef"
-        },
         "date": 1740446024273,
         "tool": "customSmallerIsBetter",
         "title": "[TCP sockets] The latency of write+read (virtio-net, 1B message)",
@@ -86653,6 +86616,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average TCP latency over virtio-net on Asterinas",
             "value": "52.1584",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Chen Chengjun",
+            "username": "cchanging",
+            "email": "chenchengjun.ccj@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "725a46fe72546af880ea183cf6d4b35349b709c6",
+          "message": "Modify VMO usages and fix the atomic-mode issue during handling page fault",
+          "timestamp": "2025-04-30T02:09:38Z",
+          "url": "https://github.com/asterinas/asterinas/commit/725a46fe72546af880ea183cf6d4b35349b709c6"
+        },
+        "date": 1746067574535,
+        "tool": "customSmallerIsBetter",
+        "title": "[TCP sockets] The latency of write+read (virtio-net, 1B message)",
+        "description": "lat_tcp_virtio",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average TCP latency over virtio-net on Linux",
+            "value": "52.3183",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average TCP latency over virtio-net on Asterinas",
+            "value": "51.7568",
             "unit": "µs",
             "extra": "aster_result"
           }
