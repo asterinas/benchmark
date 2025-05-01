@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1746067205005,
+  "lastUpdate": 1746067217453,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "smp1_p50_rps": [
@@ -2242,43 +2242,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2025-02-25T11:15:27Z",
           "url": "https://github.com/asterinas/asterinas/commit/65f9363d7c8802428fbdc0a9ec8812413b2e3f77"
         },
-        "date": 1741060942235,
-        "tool": "customSmallerIsBetter",
-        "title": "[Scheduler] P99 request latency while max-loading all CPUs (SMP=1)",
-        "description": "schbench -F 256 -n 5 -r 90",
-        "display": false,
-        "benches": [
-          {
-            "name": "P99 request latency of schbench on Linux",
-            "value": "3220",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "P99 request latency of schbench on Asterinas",
-            "value": "3748",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Chen Chengjun",
-            "username": "cchanging",
-            "email": "chenchengjun.ccj@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "65f9363d7c8802428fbdc0a9ec8812413b2e3f77",
-          "message": "Add a test for reaper functionality",
-          "timestamp": "2025-02-25T11:15:27Z",
-          "url": "https://github.com/asterinas/asterinas/commit/65f9363d7c8802428fbdc0a9ec8812413b2e3f77"
-        },
         "date": 1741141548048,
         "tool": "customSmallerIsBetter",
         "title": "[Scheduler] P99 request latency while max-loading all CPUs (SMP=1)",
@@ -4440,6 +4403,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "P99 request latency of schbench on Asterinas",
             "value": "12080",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Chen Chengjun",
+            "username": "cchanging",
+            "email": "chenchengjun.ccj@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "725a46fe72546af880ea183cf6d4b35349b709c6",
+          "message": "Modify VMO usages and fix the atomic-mode issue during handling page fault",
+          "timestamp": "2025-04-30T02:09:38Z",
+          "url": "https://github.com/asterinas/asterinas/commit/725a46fe72546af880ea183cf6d4b35349b709c6"
+        },
+        "date": 1746067205669,
+        "tool": "customSmallerIsBetter",
+        "title": "[Scheduler] P99 request latency while max-loading all CPUs (SMP=1)",
+        "description": "schbench -F 256 -n 5 -r 90",
+        "display": false,
+        "benches": [
+          {
+            "name": "P99 request latency of schbench on Linux",
+            "value": "3860",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "P99 request latency of schbench on Asterinas",
+            "value": "14960",
             "unit": "µs",
             "extra": "aster_result"
           }
