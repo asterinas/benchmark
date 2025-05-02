@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1746152910830,
+  "lastUpdate": 1746152924232,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -40016,43 +40016,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2025-01-16T08:55:28Z",
           "url": "https://github.com/asterinas/asterinas/commit/388eec449a6b7d6fd12c8c4cbf50485b4da9fddb"
         },
-        "date": 1741488540489,
-        "tool": "customSmallerIsBetter",
-        "title": "[VFS] The cost of read (/dev/zero)",
-        "description": "lat_syscall read",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average read latency on Linux",
-            "value": "0.1308",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average read latency on Asterinas",
-            "value": "0.0969",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "jiangjianfeng",
-            "username": "StevenJiang1110",
-            "email": "jiangjianfeng.jjf@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "388eec449a6b7d6fd12c8c4cbf50485b4da9fddb",
-          "message": "Add ip level socket option",
-          "timestamp": "2025-01-16T08:55:28Z",
-          "url": "https://github.com/asterinas/asterinas/commit/388eec449a6b7d6fd12c8c4cbf50485b4da9fddb"
-        },
         "date": 1741577344810,
         "tool": "customSmallerIsBetter",
         "title": "[VFS] The cost of read (/dev/zero)",
@@ -42214,6 +42177,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average read latency on Asterinas",
             "value": "0.4622",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Chen Chengjun",
+            "username": "cchanging",
+            "email": "chenchengjun.ccj@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "725a46fe72546af880ea183cf6d4b35349b709c6",
+          "message": "Modify VMO usages and fix the atomic-mode issue during handling page fault",
+          "timestamp": "2025-04-30T02:09:38Z",
+          "url": "https://github.com/asterinas/asterinas/commit/725a46fe72546af880ea183cf6d4b35349b709c6"
+        },
+        "date": 1746152911888,
+        "tool": "customSmallerIsBetter",
+        "title": "[VFS] The cost of read (/dev/zero)",
+        "description": "lat_syscall read",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average read latency on Linux",
+            "value": "0.1509",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average read latency on Asterinas",
+            "value": "0.2619",
             "unit": "µs",
             "extra": "aster_result"
           }
