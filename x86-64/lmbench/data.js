@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1746412489355,
+  "lastUpdate": 1746412504879,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -102217,43 +102217,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Fabing Li",
-            "username": "grief8",
-            "email": "lifabing.lfb@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "6684e7fd02a3e927ac79e74665f7ea510845a354",
-          "message": "Convert benchmark configuration files into YAML format",
-          "timestamp": "2025-02-22T13:32:50Z",
-          "url": "https://github.com/asterinas/asterinas/commit/6684e7fd02a3e927ac79e74665f7ea510845a354"
-        },
-        "date": 1740549816672,
-        "tool": "customBiggerIsBetter",
-        "title": "[Ext2] The throughput of creating/deleting small files (10KB)",
-        "description": "lat_fs -s 10K /ext2",
-        "display": false,
-        "benches": [
-          {
-            "name": "Number of created/deleted files on Linux",
-            "value": "965",
-            "unit": "number",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Number of created/deleted files on Asterinas",
-            "value": "182",
-            "unit": "number",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Yuke Peng",
             "username": "sdww0",
             "email": "pykfirst@gmail.com"
@@ -104429,6 +104392,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Number of created/deleted files on Asterinas",
             "value": "221",
+            "unit": "number",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "54bd64269bd688b149b7f48f063f0e8cf2704a01",
+          "message": "Rename `systree` to `aster-systree`",
+          "timestamp": "2025-04-30T12:59:53Z",
+          "url": "https://github.com/asterinas/asterinas/commit/54bd64269bd688b149b7f48f063f0e8cf2704a01"
+        },
+        "date": 1746412490855,
+        "tool": "customBiggerIsBetter",
+        "title": "[Ext2] The throughput of creating/deleting small files (10KB)",
+        "description": "lat_fs -s 10K /ext2",
+        "display": false,
+        "benches": [
+          {
+            "name": "Number of created/deleted files on Linux",
+            "value": "716",
+            "unit": "number",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Number of created/deleted files on Asterinas",
+            "value": "110",
             "unit": "number",
             "extra": "aster_result"
           }
