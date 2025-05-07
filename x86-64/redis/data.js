@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1746584702949,
+  "lastUpdate": 1746584719857,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ping_inline_100k_conc20_rps": [
@@ -2228,43 +2228,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Yuke Peng",
-            "username": "sdww0",
-            "email": "pykfirst@gmail.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "96d83e43b43dfff03e8dee16af805b16b0cf9340",
-          "message": "Make VirtioConsolesPrinter heapless",
-          "timestamp": "2025-02-18T07:16:06Z",
-          "url": "https://github.com/asterinas/asterinas/commit/96d83e43b43dfff03e8dee16af805b16b0cf9340"
-        },
-        "date": 1741230105046,
-        "tool": "customBiggerIsBetter",
-        "title": "Redis PING MBULK performance (virtio-net, 20 concurrency, 100K requests)",
-        "description": "redis-benchmark -n 100000 -c 20 -t ping_mbulk",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average RPS of PING_MBULK over virtio-net between Host Linux and Guest Linux",
-            "value": "127064.80",
-            "unit": "request per second",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average RPS of PING_MBULK over virtio-net between Host Linux and Guest Asterinas",
-            "value": "157232.70",
-            "unit": "request per second",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "js2xxx",
             "username": "js2xxx",
             "email": "akucxy@163.com"
@@ -4440,6 +4403,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average RPS of PING_MBULK over virtio-net between Host Linux and Guest Asterinas",
             "value": "108108.11",
+            "unit": "request per second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Zhang Junyang",
+            "username": "junyang-zh",
+            "email": "junyang@stu.pku.edu.cn"
+          },
+          "committer": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "3329907643@qq.com"
+          },
+          "id": "18df0f6ec94f018e3fc14b4bded6257d507611c4",
+          "message": "Fix the linear mapping size if the IO range is high",
+          "timestamp": "2025-05-06T09:26:25Z",
+          "url": "https://github.com/asterinas/asterinas/commit/18df0f6ec94f018e3fc14b4bded6257d507611c4"
+        },
+        "date": 1746584704352,
+        "tool": "customBiggerIsBetter",
+        "title": "Redis PING MBULK performance (virtio-net, 20 concurrency, 100K requests)",
+        "description": "redis-benchmark -n 100000 -c 20 -t ping_mbulk",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average RPS of PING_MBULK over virtio-net between Host Linux and Guest Linux",
+            "value": "91240.88",
+            "unit": "request per second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average RPS of PING_MBULK over virtio-net between Host Linux and Guest Asterinas",
+            "value": "105708.25",
             "unit": "request per second",
             "extra": "aster_result"
           }
