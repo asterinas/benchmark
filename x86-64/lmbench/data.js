@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1746585276042,
+  "lastUpdate": 1746585292184,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -62222,43 +62222,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "18e0eae33104fbeecf8ebde63abbdcb7cdf7cfef",
-          "message": "Never expose `ERESTARTSYS` to the userspace",
-          "timestamp": "2025-02-21T02:29:35Z",
-          "url": "https://github.com/asterinas/asterinas/commit/18e0eae33104fbeecf8ebde63abbdcb7cdf7cfef"
-        },
-        "date": 1740445324891,
-        "tool": "customBiggerIsBetter",
-        "title": "[TCP sockets] The bandwidth (loopback, 128B message)",
-        "description": "bw_tcp -l",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average TCP bandwidth on Linux",
-            "value": "242.50",
-            "unit": "MB/s",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average TCP bandwidth on Asterinas",
-            "value": "374.02",
-            "unit": "MB/s",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Fabing Li",
             "username": "grief8",
             "email": "lifabing.lfb@antgroup.com"
@@ -64434,6 +64397,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average TCP bandwidth on Asterinas",
             "value": "120.89",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Zhang Junyang",
+            "username": "junyang-zh",
+            "email": "junyang@stu.pku.edu.cn"
+          },
+          "committer": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "3329907643@qq.com"
+          },
+          "id": "18df0f6ec94f018e3fc14b4bded6257d507611c4",
+          "message": "Fix the linear mapping size if the IO range is high",
+          "timestamp": "2025-05-06T09:26:25Z",
+          "url": "https://github.com/asterinas/asterinas/commit/18df0f6ec94f018e3fc14b4bded6257d507611c4"
+        },
+        "date": 1746585277511,
+        "tool": "customBiggerIsBetter",
+        "title": "[TCP sockets] The bandwidth (loopback, 128B message)",
+        "description": "bw_tcp -l",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average TCP bandwidth on Linux",
+            "value": "205.28",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average TCP bandwidth on Asterinas",
+            "value": "120.14",
             "unit": "MB/s",
             "extra": "aster_result"
           }
