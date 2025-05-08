@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1746672866998,
+  "lastUpdate": 1746672883116,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -64444,43 +64444,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "jiangjianfeng",
-            "username": "StevenJiang1110",
-            "email": "jiangjianfeng.jjf@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "388eec449a6b7d6fd12c8c4cbf50485b4da9fddb",
-          "message": "Add ip level socket option",
-          "timestamp": "2025-01-16T08:55:28Z",
-          "url": "https://github.com/asterinas/asterinas/commit/388eec449a6b7d6fd12c8c4cbf50485b4da9fddb"
-        },
-        "date": 1741575567872,
-        "tool": "customBiggerIsBetter",
-        "title": "[TCP sockets] The bandwidth (loopback, 4KB message)",
-        "description": "bw_tcp -l",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average TCP bandwidth on Linux",
-            "value": "4422.08",
-            "unit": "MB/s",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average TCP bandwidth on Asterinas",
-            "value": "5129.93",
-            "unit": "MB/s",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Ruihan Li",
             "username": "lrh2000",
             "email": "lrh2000@pku.edu.cn"
@@ -66656,6 +66619,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average TCP bandwidth on Asterinas",
             "value": "4125.37",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Hsy-Intel",
+            "username": "Hsy-Intel",
+            "email": "siyuan.hui@intel.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "2961b89caa380f049766020b01e2c1af7930ec3d",
+          "message": "Bump Docker image version to 0.14.1-20250507",
+          "timestamp": "2025-05-07T08:34:42Z",
+          "url": "https://github.com/asterinas/asterinas/commit/2961b89caa380f049766020b01e2c1af7930ec3d"
+        },
+        "date": 1746672868379,
+        "tool": "customBiggerIsBetter",
+        "title": "[TCP sockets] The bandwidth (loopback, 4KB message)",
+        "description": "bw_tcp -l",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average TCP bandwidth on Linux",
+            "value": "3870.58",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average TCP bandwidth on Asterinas",
+            "value": "3799.30",
             "unit": "MB/s",
             "extra": "aster_result"
           }
