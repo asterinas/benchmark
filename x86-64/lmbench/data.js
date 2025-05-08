@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1746672898961,
+  "lastUpdate": 1746672914924,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -22226,43 +22226,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Zejun Zhao",
-            "username": "jellllly420",
-            "email": "jelly.zhao.42@gmail.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "455b8abba062e7b557477cc3069810f2c8fced94",
-          "message": "Adopt a round-robin strategy to select among equally idle CPUs",
-          "timestamp": "2025-03-12T10:28:39Z",
-          "url": "https://github.com/asterinas/asterinas/commit/455b8abba062e7b557477cc3069810f2c8fced94"
-        },
-        "date": 1741919223345,
-        "tool": "customSmallerIsBetter",
-        "title": "[Signals] The cost of catching a segfault",
-        "description": "lat_sig prot",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average protection fault latency on Linux",
-            "value": "0.4720",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average protection fault latency on Asterinas",
-            "value": "0.3008",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Zhang Junyang",
             "username": "junyang-zh",
             "email": "junyang@stu.pku.edu.cn"
@@ -24438,6 +24401,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average protection fault latency on Asterinas",
             "value": "1.5086",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Hsy-Intel",
+            "username": "Hsy-Intel",
+            "email": "siyuan.hui@intel.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "2961b89caa380f049766020b01e2c1af7930ec3d",
+          "message": "Bump Docker image version to 0.14.1-20250507",
+          "timestamp": "2025-05-07T08:34:42Z",
+          "url": "https://github.com/asterinas/asterinas/commit/2961b89caa380f049766020b01e2c1af7930ec3d"
+        },
+        "date": 1746672900069,
+        "tool": "customSmallerIsBetter",
+        "title": "[Signals] The cost of catching a segfault",
+        "description": "lat_sig prot",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average protection fault latency on Linux",
+            "value": "0.5810",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average protection fault latency on Asterinas",
+            "value": "1.5256",
             "unit": "µs",
             "extra": "aster_result"
           }
