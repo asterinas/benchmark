@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1747276025917,
+  "lastUpdate": 1747276043091,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "http_file4KB_bw": [
@@ -11130,43 +11130,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2025-01-16T08:55:28Z",
           "url": "https://github.com/asterinas/asterinas/commit/388eec449a6b7d6fd12c8c4cbf50485b4da9fddb"
         },
-        "date": 1741489937967,
-        "tool": "customBiggerIsBetter",
-        "title": "Nginx HTTP request performance with 1 concurrency and 10000 requests in total",
-        "description": "ab -n 10000 -c 1 http://localhost:8080/index.html",
-        "display": false,
-        "benches": [
-          {
-            "name": "Average HTTP Bandwidth over virtio-net between Host Linux and Guest Linux",
-            "value": "9003.80",
-            "unit": "Kbytes/sec",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average HTTP Bandwidth over virtio-net between Host Linux and Guest Asterinas",
-            "value": "5181.61",
-            "unit": "Kbytes/sec",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "jiangjianfeng",
-            "username": "StevenJiang1110",
-            "email": "jiangjianfeng.jjf@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "388eec449a6b7d6fd12c8c4cbf50485b4da9fddb",
-          "message": "Add ip level socket option",
-          "timestamp": "2025-01-16T08:55:28Z",
-          "url": "https://github.com/asterinas/asterinas/commit/388eec449a6b7d6fd12c8c4cbf50485b4da9fddb"
-        },
         "date": 1741578627739,
         "tool": "customBiggerIsBetter",
         "title": "Nginx HTTP request performance with 1 concurrency and 10000 requests in total",
@@ -13328,6 +13291,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average HTTP Bandwidth over virtio-net between Host Linux and Guest Asterinas",
             "value": "3052.25",
+            "unit": "Kbytes/sec",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "jiangjianfeng",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "d71ea25c06ed7ed427917cec77d3761ddc67d686",
+          "message": "Publish the heap allocator after updating the version",
+          "timestamp": "2025-05-13T04:56:07Z",
+          "url": "https://github.com/asterinas/asterinas/commit/d71ea25c06ed7ed427917cec77d3761ddc67d686"
+        },
+        "date": 1747276027015,
+        "tool": "customBiggerIsBetter",
+        "title": "Nginx HTTP request performance with 1 concurrency and 10000 requests in total",
+        "description": "ab -n 10000 -c 1 http://localhost:8080/index.html",
+        "display": false,
+        "benches": [
+          {
+            "name": "Average HTTP Bandwidth over virtio-net between Host Linux and Guest Linux",
+            "value": "5698.20",
+            "unit": "Kbytes/sec",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average HTTP Bandwidth over virtio-net between Host Linux and Guest Asterinas",
+            "value": "3121.72",
             "unit": "Kbytes/sec",
             "extra": "aster_result"
           }
