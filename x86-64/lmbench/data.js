@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1747535065317,
+  "lastUpdate": 1747535083822,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -84441,43 +84441,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "d40d452e9d525f40f064379241abc6e69f74ce02",
-          "message": "Receive RST packets as `ECONNRESET` errors",
-          "timestamp": "2025-02-24T15:07:58Z",
-          "url": "https://github.com/asterinas/asterinas/commit/d40d452e9d525f40f064379241abc6e69f74ce02"
-        },
-        "date": 1741744146802,
-        "tool": "customSmallerIsBetter",
-        "title": "[TCP sockets] The latency of write+read (virtio-net, 1B message)",
-        "description": "lat_tcp_virtio",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average TCP latency over virtio-net on Linux",
-            "value": "19.3772",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average TCP latency over virtio-net on Asterinas",
-            "value": "21.3176",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Tate, Hongliang Tian",
             "username": "tatetian",
             "email": "tate.thl@antgroup.com"
@@ -86653,6 +86616,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average TCP latency over virtio-net on Asterinas",
             "value": "44.8396",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Hsy-Intel",
+            "username": "Hsy-Intel",
+            "email": "siyuan.hui@intel.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "dec7ac1346649a0ef1a1256da258cd2f9f11ac4b",
+          "message": "Add safety check to `stop_guest` function to prevent killing non-existent processes",
+          "timestamp": "2025-05-16T01:17:00Z",
+          "url": "https://github.com/asterinas/asterinas/commit/dec7ac1346649a0ef1a1256da258cd2f9f11ac4b"
+        },
+        "date": 1747535066547,
+        "tool": "customSmallerIsBetter",
+        "title": "[TCP sockets] The latency of write+read (virtio-net, 1B message)",
+        "description": "lat_tcp_virtio",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average TCP latency over virtio-net on Linux",
+            "value": "43.5142",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average TCP latency over virtio-net on Asterinas",
+            "value": "39.5590",
             "unit": "µs",
             "extra": "aster_result"
           }
