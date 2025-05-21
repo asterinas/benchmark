@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1747867120967,
+  "lastUpdate": 1747867140407,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ramfs_benchmarks_vacuum": [
@@ -1075,6 +1075,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "The speed of updates-big-one on Asterinas (Ramfs)",
             "value": "0.415",
+            "unit": "second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Qingsong Chen",
+            "username": "cqs21",
+            "email": "changxian.cqs@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "12d693d7b4618b12f1617fa03dc2ce514226cc43",
+          "message": "Optimize Docker builds by skipping existing images",
+          "timestamp": "2025-05-19T11:50:39Z",
+          "url": "https://github.com/asterinas/asterinas/commit/12d693d7b4618b12f1617fa03dc2ce514226cc43"
+        },
+        "date": 1747867121633,
+        "tool": "customSmallerIsBetter",
+        "title": "[Ramfs] The updates-big-one result of sqlite speedtest",
+        "description": "sqlite-speed-test: One big UPDATE of the whole 50000-row table",
+        "display": false,
+        "benches": [
+          {
+            "name": "The speed of updates-big-one on Linux (Ramfs)",
+            "value": "0.093",
+            "unit": "second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "The speed of updates-big-one on Asterinas (Ramfs)",
+            "value": "0.422",
             "unit": "second",
             "extra": "aster_result"
           }
