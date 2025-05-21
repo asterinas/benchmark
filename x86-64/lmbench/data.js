@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1747800235546,
+  "lastUpdate": 1747800255912,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -26670,43 +26670,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Zhang Junyang",
-            "username": "junyang-zh",
-            "email": "junyang@stu.pku.edu.cn"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "4f0acddfd45e617460e32cf49e423410a7f712a6",
-          "message": "Strict TLB coherence",
-          "timestamp": "2025-03-21T09:22:05Z",
-          "url": "https://github.com/asterinas/asterinas/commit/4f0acddfd45e617460e32cf49e423410a7f712a6"
-        },
-        "date": 1742592633930,
-        "tool": "customBiggerIsBetter",
-        "title": "[Pipes] The bandwidth",
-        "description": "bw_pipe",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average pipe bandwidth on Linux",
-            "value": "9024.31",
-            "unit": "MB/s",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average pipe bandwidth on Asterinas",
-            "value": "10596.44",
-            "unit": "MB/s",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Yuke Peng",
             "username": "sdww0",
             "email": "pykfirst@gmail.com"
@@ -28882,6 +28845,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average pipe bandwidth on Asterinas",
             "value": "9057.77",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Qingsong Chen",
+            "username": "cqs21",
+            "email": "changxian.cqs@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "12d693d7b4618b12f1617fa03dc2ce514226cc43",
+          "message": "Optimize Docker builds by skipping existing images",
+          "timestamp": "2025-05-19T11:50:39Z",
+          "url": "https://github.com/asterinas/asterinas/commit/12d693d7b4618b12f1617fa03dc2ce514226cc43"
+        },
+        "date": 1747800236844,
+        "tool": "customBiggerIsBetter",
+        "title": "[Pipes] The bandwidth",
+        "description": "bw_pipe",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average pipe bandwidth on Linux",
+            "value": "8710.57",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average pipe bandwidth on Asterinas",
+            "value": "9096.48",
             "unit": "MB/s",
             "extra": "aster_result"
           }
