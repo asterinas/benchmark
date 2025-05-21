@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1747867062592,
+  "lastUpdate": 1747867082225,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "cpu_lat": [
@@ -405,6 +405,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average Execution Time per CPU on Asterinas",
             "value": "4.46",
+            "unit": "ms",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Qingsong Chen",
+            "username": "cqs21",
+            "email": "changxian.cqs@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "12d693d7b4618b12f1617fa03dc2ce514226cc43",
+          "message": "Optimize Docker builds by skipping existing images",
+          "timestamp": "2025-05-19T11:50:39Z",
+          "url": "https://github.com/asterinas/asterinas/commit/12d693d7b4618b12f1617fa03dc2ce514226cc43"
+        },
+        "date": 1747867063449,
+        "tool": "customSmallerIsBetter",
+        "title": "[CPU] CPU performance",
+        "description": "sysbench cpu",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average Execution Time per CPU on Linux",
+            "value": "3.85",
+            "unit": "ms",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average Execution Time per CPU on Asterinas",
+            "value": "4.42",
             "unit": "ms",
             "extra": "aster_result"
           }
