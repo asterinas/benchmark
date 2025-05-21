@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1747787198692,
+  "lastUpdate": 1747787218580,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ramfs_benchmarks_vacuum": [
@@ -1299,6 +1299,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "The speed of updates-between on Asterinas (Ramfs)",
             "value": "6.868",
+            "unit": "second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Hsy-Intel",
+            "username": "Hsy-Intel",
+            "email": "siyuan.hui@intel.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "dec7ac1346649a0ef1a1256da258cd2f9f11ac4b",
+          "message": "Add safety check to `stop_guest` function to prevent killing non-existent processes",
+          "timestamp": "2025-05-16T01:17:00Z",
+          "url": "https://github.com/asterinas/asterinas/commit/dec7ac1346649a0ef1a1256da258cd2f9f11ac4b"
+        },
+        "date": 1747787199839,
+        "tool": "customSmallerIsBetter",
+        "title": "[Ramfs] The updates-between result of sqlite speedtest",
+        "description": "sqlite-speed-test: 10000 UPDATES, numeric BETWEEN, indexed",
+        "display": false,
+        "benches": [
+          {
+            "name": "The speed of updates-between on Linux (Ramfs)",
+            "value": "1.672",
+            "unit": "second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "The speed of updates-between on Asterinas (Ramfs)",
+            "value": "7.328",
             "unit": "second",
             "extra": "aster_result"
           }
