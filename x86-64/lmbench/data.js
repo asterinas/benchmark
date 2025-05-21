@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1747799951820,
+  "lastUpdate": 1747799971968,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -64444,43 +64444,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Fabing Li",
-            "username": "grief8",
-            "email": "lifabing.lfb@antgroup.com"
-          },
-          "committer": {
-            "name": "GitHub",
-            "username": "web-flow",
-            "email": "noreply@github.com"
-          },
-          "id": "99f2a673d40db6fe4e0b98983612eafe549c22eb",
-          "message": "Update README.md",
-          "timestamp": "2025-03-19T09:16:38Z",
-          "url": "https://github.com/grief8/asterinas/commit/99f2a673d40db6fe4e0b98983612eafe549c22eb"
-        },
-        "date": 1742441036755,
-        "tool": "customBiggerIsBetter",
-        "title": "[TCP sockets] The bandwidth (loopback, 4KB message)",
-        "description": "bw_tcp -l",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average TCP bandwidth on Linux",
-            "value": "4416.78",
-            "unit": "MB/s",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average TCP bandwidth on Asterinas",
-            "value": "5053.43",
-            "unit": "MB/s",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "jiangjianfeng",
             "username": "StevenJiang1110",
             "email": "jiangjianfeng.jjf@antgroup.com"
@@ -66656,6 +66619,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average TCP bandwidth on Asterinas",
             "value": "3715.50",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Qingsong Chen",
+            "username": "cqs21",
+            "email": "changxian.cqs@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "12d693d7b4618b12f1617fa03dc2ce514226cc43",
+          "message": "Optimize Docker builds by skipping existing images",
+          "timestamp": "2025-05-19T11:50:39Z",
+          "url": "https://github.com/asterinas/asterinas/commit/12d693d7b4618b12f1617fa03dc2ce514226cc43"
+        },
+        "date": 1747799953151,
+        "tool": "customBiggerIsBetter",
+        "title": "[TCP sockets] The bandwidth (loopback, 4KB message)",
+        "description": "bw_tcp -l",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average TCP bandwidth on Linux",
+            "value": "3872.27",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average TCP bandwidth on Asterinas",
+            "value": "3601.68",
             "unit": "MB/s",
             "extra": "aster_result"
           }
