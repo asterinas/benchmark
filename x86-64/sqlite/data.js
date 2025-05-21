@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1747798882986,
+  "lastUpdate": 1747798902597,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_deletes_between": [
@@ -71101,43 +71101,6 @@ window.BENCHMARK_DATA = {
             "email": "lifabing.lfb@antgroup.com"
           },
           "committer": {
-            "name": "Fabing Li",
-            "username": "grief8",
-            "email": "lifabing.lfb@antgroup.com"
-          },
-          "id": "c83fb4dae19efa4b28871e156ecb5d65e300a3a1",
-          "message": "sdfg",
-          "timestamp": "2025-03-18T09:54:19Z",
-          "url": "https://github.com/grief8/asterinas/commit/c83fb4dae19efa4b28871e156ecb5d65e300a3a1"
-        },
-        "date": 1742358708938,
-        "tool": "customSmallerIsBetter",
-        "title": "[Ramfs] The total result of sqlite speedtest",
-        "description": "sqlite-speed-test: total",
-        "display": false,
-        "benches": [
-          {
-            "name": "Total speed on Linux (Ramfs)",
-            "value": "56.246",
-            "unit": "second",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Total speed on Asterinas (Ramfs)",
-            "value": "58.606",
-            "unit": "second",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Fabing Li",
-            "username": "grief8",
-            "email": "lifabing.lfb@antgroup.com"
-          },
-          "committer": {
             "name": "GitHub",
             "username": "web-flow",
             "email": "noreply@github.com"
@@ -73308,6 +73271,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Total speed on Asterinas (Ramfs)",
             "value": "205.861",
+            "unit": "second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Qingsong Chen",
+            "username": "cqs21",
+            "email": "changxian.cqs@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "12d693d7b4618b12f1617fa03dc2ce514226cc43",
+          "message": "Optimize Docker builds by skipping existing images",
+          "timestamp": "2025-05-19T11:50:39Z",
+          "url": "https://github.com/asterinas/asterinas/commit/12d693d7b4618b12f1617fa03dc2ce514226cc43"
+        },
+        "date": 1747798884075,
+        "tool": "customSmallerIsBetter",
+        "title": "[Ramfs] The total result of sqlite speedtest",
+        "description": "sqlite-speed-test: total",
+        "display": false,
+        "benches": [
+          {
+            "name": "Total speed on Linux (Ramfs)",
+            "value": "64.295",
+            "unit": "second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Total speed on Asterinas (Ramfs)",
+            "value": "200.554",
             "unit": "second",
             "extra": "aster_result"
           }
