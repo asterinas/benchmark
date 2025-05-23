@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1747965785332,
+  "lastUpdate": 1747965806361,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -22226,43 +22226,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Yuke Peng",
-            "username": "sdww0",
-            "email": "pykfirst@gmail.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "9a165ec41a4335335e2f49cf3231d0c7949bf77b",
-          "message": "Refactor and rename VirtAddrAllocator to RangeAllocator",
-          "timestamp": "2024-12-25T07:32:15Z",
-          "url": "https://github.com/asterinas/asterinas/commit/9a165ec41a4335335e2f49cf3231d0c7949bf77b"
-        },
-        "date": 1742680645842,
-        "tool": "customSmallerIsBetter",
-        "title": "[Signals] The cost of catching a segfault",
-        "description": "lat_sig prot",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average protection fault latency on Linux",
-            "value": "0.4910",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average protection fault latency on Asterinas",
-            "value": "0.4297",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Zejun Zhao",
             "username": "jellllly420",
             "email": "jelly.zhao.42@gmail.com"
@@ -24438,6 +24401,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average protection fault latency on Asterinas",
             "value": "1.6486",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Yuke Peng",
+            "username": "sdww0",
+            "email": "pykfirst@gmail.com"
+          },
+          "committer": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "3329907643@qq.com"
+          },
+          "id": "d4872af3c78769ed5ea7a1a1bbbe310fcd6d2908",
+          "message": "Refactor interrupt remapping in OSTD",
+          "timestamp": "2025-05-21T05:12:50Z",
+          "url": "https://github.com/asterinas/asterinas/commit/d4872af3c78769ed5ea7a1a1bbbe310fcd6d2908"
+        },
+        "date": 1747965786545,
+        "tool": "customSmallerIsBetter",
+        "title": "[Signals] The cost of catching a segfault",
+        "description": "lat_sig prot",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average protection fault latency on Linux",
+            "value": "0.5728",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average protection fault latency on Asterinas",
+            "value": "1.4044",
             "unit": "µs",
             "extra": "aster_result"
           }
