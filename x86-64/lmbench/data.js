@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1747965806361,
+  "lastUpdate": 1747965826970,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -17782,43 +17782,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Zejun Zhao",
-            "username": "jellllly420",
-            "email": "jelly.zhao.42@gmail.com"
-          },
-          "committer": {
-            "name": "Junyang Zhang",
-            "username": "junyang-zh",
-            "email": "user@junyang.me"
-          },
-          "id": "c85986caedf1bb42ade917038590f2e91fb5d175",
-          "message": "Correct OSDK profiling tool's behavior",
-          "timestamp": "2025-03-23T10:55:24Z",
-          "url": "https://github.com/asterinas/asterinas/commit/c85986caedf1bb42ade917038590f2e91fb5d175"
-        },
-        "date": 1742767428628,
-        "tool": "customSmallerIsBetter",
-        "title": "[Signals] The cost of installing a signal handler",
-        "description": "lat_sig install",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average Signal handler install latency on Linux",
-            "value": "0.1505",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average Signal handler install latency on Asterinas",
-            "value": "0.1887",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Ruihan Li",
             "username": "lrh2000",
             "email": "lrh2000@pku.edu.cn"
@@ -19994,6 +19957,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average Signal handler install latency on Asterinas",
             "value": "0.6731",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Yuke Peng",
+            "username": "sdww0",
+            "email": "pykfirst@gmail.com"
+          },
+          "committer": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "3329907643@qq.com"
+          },
+          "id": "d4872af3c78769ed5ea7a1a1bbbe310fcd6d2908",
+          "message": "Refactor interrupt remapping in OSTD",
+          "timestamp": "2025-05-21T05:12:50Z",
+          "url": "https://github.com/asterinas/asterinas/commit/d4872af3c78769ed5ea7a1a1bbbe310fcd6d2908"
+        },
+        "date": 1747965807552,
+        "tool": "customSmallerIsBetter",
+        "title": "[Signals] The cost of installing a signal handler",
+        "description": "lat_sig install",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average Signal handler install latency on Linux",
+            "value": "0.1707",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average Signal handler install latency on Asterinas",
+            "value": "0.7670",
             "unit": "µs",
             "extra": "aster_result"
           }
