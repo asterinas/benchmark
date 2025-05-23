@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1747958132377,
+  "lastUpdate": 1748044380604,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "cpu_lat": [
@@ -962,6 +962,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average Execution Time per Thread on Asterinas",
             "value": "11.22",
+            "unit": "ms",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Yuke Peng",
+            "username": "sdww0",
+            "email": "pykfirst@gmail.com"
+          },
+          "committer": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "3329907643@qq.com"
+          },
+          "id": "d4872af3c78769ed5ea7a1a1bbbe310fcd6d2908",
+          "message": "Refactor interrupt remapping in OSTD",
+          "timestamp": "2025-05-21T05:12:50Z",
+          "url": "https://github.com/asterinas/asterinas/commit/d4872af3c78769ed5ea7a1a1bbbe310fcd6d2908"
+        },
+        "date": 1748044360763,
+        "tool": "customSmallerIsBetter",
+        "title": "[Threads] Threads performance",
+        "description": "sysbench threads",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average Execution Time per Thread on Linux",
+            "value": "14.89",
+            "unit": "ms",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average Execution Time per Thread on Asterinas",
+            "value": "11.33",
             "unit": "ms",
             "extra": "aster_result"
           }
