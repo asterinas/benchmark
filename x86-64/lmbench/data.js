@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1747965660274,
+  "lastUpdate": 1747965681061,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -71110,43 +71110,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Zhang Junyang",
-            "username": "junyang-zh",
-            "email": "junyang@stu.pku.edu.cn"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "4f0acddfd45e617460e32cf49e423410a7f712a6",
-          "message": "Strict TLB coherence",
-          "timestamp": "2025-03-21T09:22:05Z",
-          "url": "https://github.com/asterinas/asterinas/commit/4f0acddfd45e617460e32cf49e423410a7f712a6"
-        },
-        "date": 1742594181384,
-        "tool": "customSmallerIsBetter",
-        "title": "[Network] The cost of select (TCP fds)",
-        "description": "lat_select",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average select TCP latency on Linux",
-            "value": "2.7588",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average select TCP latency on Asterinas",
-            "value": "2.0369",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Yuke Peng",
             "username": "sdww0",
             "email": "pykfirst@gmail.com"
@@ -73322,6 +73285,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average select TCP latency on Asterinas",
             "value": "8.6314",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Yuke Peng",
+            "username": "sdww0",
+            "email": "pykfirst@gmail.com"
+          },
+          "committer": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "3329907643@qq.com"
+          },
+          "id": "d4872af3c78769ed5ea7a1a1bbbe310fcd6d2908",
+          "message": "Refactor interrupt remapping in OSTD",
+          "timestamp": "2025-05-21T05:12:50Z",
+          "url": "https://github.com/asterinas/asterinas/commit/d4872af3c78769ed5ea7a1a1bbbe310fcd6d2908"
+        },
+        "date": 1747965661513,
+        "tool": "customSmallerIsBetter",
+        "title": "[Network] The cost of select (TCP fds)",
+        "description": "lat_select",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average select TCP latency on Linux",
+            "value": "3.1377",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average select TCP latency on Asterinas",
+            "value": "3.6879",
             "unit": "µs",
             "extra": "aster_result"
           }
