@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1748045125408,
+  "lastUpdate": 1748045145915,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -7541,6 +7541,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average unix connect latency on Asterinas",
             "value": "5.0313",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Yuke Peng",
+            "username": "sdww0",
+            "email": "pykfirst@gmail.com"
+          },
+          "committer": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "3329907643@qq.com"
+          },
+          "id": "d4872af3c78769ed5ea7a1a1bbbe310fcd6d2908",
+          "message": "Refactor interrupt remapping in OSTD",
+          "timestamp": "2025-05-21T05:12:50Z",
+          "url": "https://github.com/asterinas/asterinas/commit/d4872af3c78769ed5ea7a1a1bbbe310fcd6d2908"
+        },
+        "date": 1748045126291,
+        "tool": "customSmallerIsBetter",
+        "title": "[Unix sockets] The latency of connect",
+        "description": "lat_connect",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average unix connect latency on Linux",
+            "value": "7.6828",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average unix connect latency on Asterinas",
+            "value": "5.0159",
             "unit": "µs",
             "extra": "aster_result"
           }
