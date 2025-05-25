@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1748147125475,
+  "lastUpdate": 1748147147435,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -4450,43 +4450,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Chen Chengjun",
-            "username": "cchanging",
-            "email": "chenchengjun.ccj@antgroup.com"
-          },
-          "committer": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "3329907643@qq.com"
-          },
-          "id": "0078c18068f148618ff0d25624c747edbcbf5964",
-          "message": "Allow RCU to read with an atomic-mode guard",
-          "timestamp": "2025-03-25T09:45:48Z",
-          "url": "https://github.com/asterinas/asterinas/commit/0078c18068f148618ff0d25624c747edbcbf5964"
-        },
-        "date": 1742938077794,
-        "tool": "customSmallerIsBetter",
-        "title": "[Memory] The cost of mmap+unmap",
-        "description": "lat_mmap",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average mmap latency on Linux",
-            "value": "23",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average mmap latency on Asterinas",
-            "value": "21",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "jiangjianfeng",
             "username": "StevenJiang1110",
             "email": "jiangjianfeng.jjf@antgroup.com"
@@ -6662,6 +6625,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average mmap latency on Asterinas",
             "value": "64",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Zhang Junyang",
+            "username": "junyang-zh",
+            "email": "junyang@stu.pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "79b3f6889262bc606e38f0f3f313b3cbe8933d41",
+          "message": "Make the RCU lifetime of page tables explicit",
+          "timestamp": "2025-05-20T03:39:51Z",
+          "url": "https://github.com/asterinas/asterinas/commit/79b3f6889262bc606e38f0f3f313b3cbe8933d41"
+        },
+        "date": 1748147126711,
+        "tool": "customSmallerIsBetter",
+        "title": "[Memory] The cost of mmap+unmap",
+        "description": "lat_mmap",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average mmap latency on Linux",
+            "value": "26",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average mmap latency on Asterinas",
+            "value": "70",
             "unit": "µs",
             "extra": "aster_result"
           }
