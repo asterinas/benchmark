@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1748146299304,
+  "lastUpdate": 1748146320841,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -44460,43 +44460,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2025-03-22T15:47:13Z",
           "url": "https://github.com/asterinas/asterinas/commit/61fa1d19013635435bc26f8df67cc5c8acb87169"
         },
-        "date": 1742813043661,
-        "tool": "customSmallerIsBetter",
-        "title": "[VFS] The cost of stat",
-        "description": "lat_syscall stat",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average stat latency on Linux",
-            "value": "0.3227",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average stat latency on Asterinas",
-            "value": "0.4768",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
-            "name": "Junyang Zhang",
-            "username": "junyang-zh",
-            "email": "user@junyang.me"
-          },
-          "id": "61fa1d19013635435bc26f8df67cc5c8acb87169",
-          "message": "Simplify the lock usages when flush TLBs",
-          "timestamp": "2025-03-22T15:47:13Z",
-          "url": "https://github.com/asterinas/asterinas/commit/61fa1d19013635435bc26f8df67cc5c8acb87169"
-        },
         "date": 1742856409531,
         "tool": "customSmallerIsBetter",
         "title": "[VFS] The cost of stat",
@@ -46658,6 +46621,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average stat latency on Asterinas",
             "value": "1.9831",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Zhang Junyang",
+            "username": "junyang-zh",
+            "email": "junyang@stu.pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "79b3f6889262bc606e38f0f3f313b3cbe8933d41",
+          "message": "Make the RCU lifetime of page tables explicit",
+          "timestamp": "2025-05-20T03:39:51Z",
+          "url": "https://github.com/asterinas/asterinas/commit/79b3f6889262bc606e38f0f3f313b3cbe8933d41"
+        },
+        "date": 1748146300392,
+        "tool": "customSmallerIsBetter",
+        "title": "[VFS] The cost of stat",
+        "description": "lat_syscall stat",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average stat latency on Linux",
+            "value": "0.3680",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average stat latency on Asterinas",
+            "value": "1.6640",
             "unit": "µs",
             "extra": "aster_result"
           }
