@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1748219080579,
+  "lastUpdate": 1748219102721,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -22689,6 +22689,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average memory write bandwidth on Asterinas",
             "value": "3649.44",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Zhang Junyang",
+            "username": "junyang-zh",
+            "email": "junyang@stu.pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "79b3f6889262bc606e38f0f3f313b3cbe8933d41",
+          "message": "Make the RCU lifetime of page tables explicit",
+          "timestamp": "2025-05-20T03:39:51Z",
+          "url": "https://github.com/asterinas/asterinas/commit/79b3f6889262bc606e38f0f3f313b3cbe8933d41"
+        },
+        "date": 1748219081777,
+        "tool": "customBiggerIsBetter",
+        "title": "[Memory] The bandwidth of writing integers",
+        "description": "bw_mem fwr",
+        "display": false,
+        "benches": [
+          {
+            "name": "Average memory write bandwidth on Linux",
+            "value": "8953.22",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average memory write bandwidth on Asterinas",
+            "value": "3533.80",
             "unit": "MB/s",
             "extra": "aster_result"
           }
