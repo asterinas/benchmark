@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1748218414752,
+  "lastUpdate": 1748218436811,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -11510,6 +11510,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average fstat latency on Asterinas",
             "value": "0.8191",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Zhang Junyang",
+            "username": "junyang-zh",
+            "email": "junyang@stu.pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "79b3f6889262bc606e38f0f3f313b3cbe8933d41",
+          "message": "Make the RCU lifetime of page tables explicit",
+          "timestamp": "2025-05-20T03:39:51Z",
+          "url": "https://github.com/asterinas/asterinas/commit/79b3f6889262bc606e38f0f3f313b3cbe8933d41"
+        },
+        "date": 1748218415936,
+        "tool": "customSmallerIsBetter",
+        "title": "[VFS] The cost of fstat",
+        "description": "lat_syscall fstat",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average fstat latency on Linux",
+            "value": "0.2938",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average fstat latency on Asterinas",
+            "value": "0.9188",
             "unit": "µs",
             "extra": "aster_result"
           }
