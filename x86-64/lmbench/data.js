@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1748230994587,
+  "lastUpdate": 1748231016334,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -75553,43 +75553,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Zejun Zhao",
-            "username": "jellllly420",
-            "email": "jelly.zhao.42@gmail.com"
-          },
-          "committer": {
-            "name": "Junyang Zhang",
-            "username": "junyang-zh",
-            "email": "user@junyang.me"
-          },
-          "id": "c85986caedf1bb42ade917038590f2e91fb5d175",
-          "message": "Correct OSDK profiling tool's behavior",
-          "timestamp": "2025-03-23T10:55:24Z",
-          "url": "https://github.com/asterinas/asterinas/commit/c85986caedf1bb42ade917038590f2e91fb5d175"
-        },
-        "date": 1742768648491,
-        "tool": "customSmallerIsBetter",
-        "title": "[UDP sockets] The latency of write+read (loopback, 4B message)",
-        "description": "lat_udp",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average UDP latency on Linux",
-            "value": "4.6627",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average UDP latency on Asterinas",
-            "value": "3.1851",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Ruihan Li",
             "username": "lrh2000",
             "email": "lrh2000@pku.edu.cn"
@@ -77765,6 +77728,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average UDP latency on Asterinas",
             "value": "3.8488",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Junyang Zhang",
+            "username": "junyang-zh",
+            "email": "user@junyang.me"
+          },
+          "id": "758c80c32170cd3cc6d62bd2d867a1c902843d0f",
+          "message": "Pull code from `arch/*/irq.rs` to `trap/irq.rs`",
+          "timestamp": "2025-05-23T15:18:54Z",
+          "url": "https://github.com/asterinas/asterinas/commit/758c80c32170cd3cc6d62bd2d867a1c902843d0f"
+        },
+        "date": 1748230995649,
+        "tool": "customSmallerIsBetter",
+        "title": "[UDP sockets] The latency of write+read (loopback, 4B message)",
+        "description": "lat_udp",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average UDP latency on Linux",
+            "value": "5.3468",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average UDP latency on Asterinas",
+            "value": "3.4277",
             "unit": "µs",
             "extra": "aster_result"
           }
