@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1748319231165,
+  "lastUpdate": 1748319253267,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "smp1_p50_rps": [
@@ -6672,43 +6672,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Yuke Peng",
-            "username": "sdww0",
-            "email": "pykfirst@gmail.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "9a165ec41a4335335e2f49cf3231d0c7949bf77b",
-          "message": "Refactor and rename VirtAddrAllocator to RangeAllocator",
-          "timestamp": "2024-12-25T07:32:15Z",
-          "url": "https://github.com/asterinas/asterinas/commit/9a165ec41a4335335e2f49cf3231d0c7949bf77b"
-        },
-        "date": 1742684859812,
-        "tool": "customBiggerIsBetter",
-        "title": "[Scheduler] P50 RPS while max-loading all CPUs (SMP=8)",
-        "description": "schbench -F 256 -n 5 -r 90",
-        "display": false,
-        "benches": [
-          {
-            "name": "P50 RPS of schbench on Linux",
-            "value": "3124",
-            "unit": "requests per second",
-            "extra": "linux_result"
-          },
-          {
-            "name": "P50 RPS of schbench on Asterinas",
-            "value": "379",
-            "unit": "requests per second",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Zejun Zhao",
             "username": "jellllly420",
             "email": "jelly.zhao.42@gmail.com"
@@ -8884,6 +8847,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "P50 RPS of schbench on Asterinas",
             "value": "384",
+            "unit": "requests per second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Junyang Zhang",
+            "username": "junyang-zh",
+            "email": "user@junyang.me"
+          },
+          "id": "758c80c32170cd3cc6d62bd2d867a1c902843d0f",
+          "message": "Pull code from `arch/*/irq.rs` to `trap/irq.rs`",
+          "timestamp": "2025-05-23T15:18:54Z",
+          "url": "https://github.com/asterinas/asterinas/commit/758c80c32170cd3cc6d62bd2d867a1c902843d0f"
+        },
+        "date": 1748319232011,
+        "tool": "customBiggerIsBetter",
+        "title": "[Scheduler] P50 RPS while max-loading all CPUs (SMP=8)",
+        "description": "schbench -F 256 -n 5 -r 90",
+        "display": false,
+        "benches": [
+          {
+            "name": "P50 RPS of schbench on Linux",
+            "value": "3204",
+            "unit": "requests per second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "P50 RPS of schbench on Asterinas",
+            "value": "387",
             "unit": "requests per second",
             "extra": "aster_result"
           }
