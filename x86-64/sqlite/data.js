@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1748485867871,
+  "lastUpdate": 1748485891263,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_deletes_between": [
@@ -53320,43 +53320,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
-            "name": "Junyang Zhang",
-            "username": "junyang-zh",
-            "email": "user@junyang.me"
-          },
-          "id": "61fa1d19013635435bc26f8df67cc5c8acb87169",
-          "message": "Simplify the lock usages when flush TLBs",
-          "timestamp": "2025-03-22T15:47:13Z",
-          "url": "https://github.com/asterinas/asterinas/commit/61fa1d19013635435bc26f8df67cc5c8acb87169"
-        },
-        "date": 1742859731166,
-        "tool": "customSmallerIsBetter",
-        "title": "[Ext2] The updates-big-one result of sqlite speedtest",
-        "description": "sqlite-speed-test: One big UPDATE of the whole 50000-row table",
-        "display": false,
-        "benches": [
-          {
-            "name": "The speed of updates-big-one on Linux (Ext2)",
-            "value": "0.159",
-            "unit": "second",
-            "extra": "linux_result"
-          },
-          {
-            "name": "The speed of updates-big-one on Asterinas (Ext2)",
-            "value": "0.213",
-            "unit": "second",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Chen Chengjun",
             "username": "cchanging",
             "email": "chenchengjun.ccj@antgroup.com"
@@ -55532,6 +55495,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "The speed of updates-big-one on Asterinas (Ext2)",
             "value": "0.613",
+            "unit": "second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Junyang Zhang",
+            "username": "junyang-zh",
+            "email": "user@junyang.me"
+          },
+          "id": "758c80c32170cd3cc6d62bd2d867a1c902843d0f",
+          "message": "Pull code from `arch/*/irq.rs` to `trap/irq.rs`",
+          "timestamp": "2025-05-23T15:18:54Z",
+          "url": "https://github.com/asterinas/asterinas/commit/758c80c32170cd3cc6d62bd2d867a1c902843d0f"
+        },
+        "date": 1748485869039,
+        "tool": "customSmallerIsBetter",
+        "title": "[Ext2] The updates-big-one result of sqlite speedtest",
+        "description": "sqlite-speed-test: One big UPDATE of the whole 50000-row table",
+        "display": false,
+        "benches": [
+          {
+            "name": "The speed of updates-big-one on Linux (Ext2)",
+            "value": "0.294",
+            "unit": "second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "The speed of updates-big-one on Asterinas (Ext2)",
+            "value": "0.607",
             "unit": "second",
             "extra": "aster_result"
           }
