@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1748578794059,
+  "lastUpdate": 1748578818463,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -57792,43 +57792,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2025-03-14T12:02:41Z",
           "url": "https://github.com/asterinas/asterinas/commit/fbb8ea6ad1963c3b548553255d85c21910469b9c"
         },
-        "date": 1742004107277,
-        "tool": "customBiggerIsBetter",
-        "title": "[Ramfs] The throughput of creating/deleting small files (10KB)",
-        "description": "lat_fs -s 10K",
-        "display": true,
-        "benches": [
-          {
-            "name": "Number of created/deleted files on Linux",
-            "value": "1653",
-            "unit": "number",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Number of created/deleted files on Asterinas",
-            "value": "1180",
-            "unit": "number",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Zhang Junyang",
-            "username": "junyang-zh",
-            "email": "junyang@stu.pku.edu.cn"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "fbb8ea6ad1963c3b548553255d85c21910469b9c",
-          "message": "Bump version to 0.13.0",
-          "timestamp": "2025-03-14T12:02:41Z",
-          "url": "https://github.com/asterinas/asterinas/commit/fbb8ea6ad1963c3b548553255d85c21910469b9c"
-        },
         "date": 1742139072763,
         "tool": "customBiggerIsBetter",
         "title": "[Ramfs] The throughput of creating/deleting small files (10KB)",
@@ -59990,6 +59953,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Number of created/deleted files on Asterinas",
             "value": "66958",
+            "unit": "number",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Zejun Zhao",
+            "username": "jellllly420",
+            "email": "jelly.zhao.42@gmail.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "ffb40974364c74ee3adaffdf8a7063b575233807",
+          "message": "Add RISC-V timer support",
+          "timestamp": "2025-04-28T03:04:29Z",
+          "url": "https://github.com/asterinas/asterinas/commit/ffb40974364c74ee3adaffdf8a7063b575233807"
+        },
+        "date": 1748578795457,
+        "tool": "customBiggerIsBetter",
+        "title": "[Ramfs] The throughput of creating/deleting small files (10KB)",
+        "description": "lat_fs -s 10K",
+        "display": true,
+        "benches": [
+          {
+            "name": "Number of created/deleted files on Linux",
+            "value": "1187",
+            "unit": "number",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Number of created/deleted files on Asterinas",
+            "value": "374",
             "unit": "number",
             "extra": "aster_result"
           }
