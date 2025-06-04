@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1749025137141,
+  "lastUpdate": 1749025162579,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -11130,43 +11130,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2025-03-29T06:39:26Z",
           "url": "https://github.com/grief8/asterinas/commit/81780e64f87f9f80ee02dbe6db6bc5c7a7904afc"
         },
-        "date": 1743308720907,
-        "tool": "customSmallerIsBetter",
-        "title": "[Process] The cost of fork+exit",
-        "description": "lat_proc fork",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average Fork latency on Linux",
-            "value": "55.1700",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average Fork latency on Asterinas",
-            "value": "59.6484",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Fabing Li",
-            "username": "grief8",
-            "email": "lifabing.lfb@antgroup.com"
-          },
-          "committer": {
-            "name": "GitHub",
-            "username": "web-flow",
-            "email": "noreply@github.com"
-          },
-          "id": "81780e64f87f9f80ee02dbe6db6bc5c7a7904afc",
-          "message": "Update test_x86.yml",
-          "timestamp": "2025-03-29T06:39:26Z",
-          "url": "https://github.com/grief8/asterinas/commit/81780e64f87f9f80ee02dbe6db6bc5c7a7904afc"
-        },
         "date": 1743383989066,
         "tool": "customSmallerIsBetter",
         "title": "[Process] The cost of fork+exit",
@@ -13328,6 +13291,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average Fork latency on Asterinas",
             "value": "72.7584",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Wang Siyuan",
+            "username": "vvvvsv",
+            "email": "wsy@stu.pku.edu.cn"
+          },
+          "committer": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "3329907643@qq.com"
+          },
+          "id": "58e4f45bb17dff6ea0dbe266f9045155ee54edb8",
+          "message": "Add per-CPU counters and track RSS for each `Vmar`",
+          "timestamp": "2025-06-03T14:05:34Z",
+          "url": "https://github.com/asterinas/asterinas/commit/58e4f45bb17dff6ea0dbe266f9045155ee54edb8"
+        },
+        "date": 1749025138419,
+        "tool": "customSmallerIsBetter",
+        "title": "[Process] The cost of fork+exit",
+        "description": "lat_proc fork",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average Fork latency on Linux",
+            "value": "58.6882",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average Fork latency on Asterinas",
+            "value": "73.7361",
             "unit": "µs",
             "extra": "aster_result"
           }
