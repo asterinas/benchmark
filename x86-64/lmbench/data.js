@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1749025471143,
+  "lastUpdate": 1749094013522,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -42238,43 +42238,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2025-03-29T06:39:26Z",
           "url": "https://github.com/grief8/asterinas/commit/81780e64f87f9f80ee02dbe6db6bc5c7a7904afc"
         },
-        "date": 1743315503820,
-        "tool": "customSmallerIsBetter",
-        "title": "[VFS] The cost of write (/dev/null)",
-        "description": "lat_syscall write",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average write latency on Linux",
-            "value": "0.1075",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average write latency on Asterinas",
-            "value": "0.1151",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Fabing Li",
-            "username": "grief8",
-            "email": "lifabing.lfb@antgroup.com"
-          },
-          "committer": {
-            "name": "GitHub",
-            "username": "web-flow",
-            "email": "noreply@github.com"
-          },
-          "id": "81780e64f87f9f80ee02dbe6db6bc5c7a7904afc",
-          "message": "Update test_x86.yml",
-          "timestamp": "2025-03-29T06:39:26Z",
-          "url": "https://github.com/grief8/asterinas/commit/81780e64f87f9f80ee02dbe6db6bc5c7a7904afc"
-        },
         "date": 1743386817084,
         "tool": "customSmallerIsBetter",
         "title": "[VFS] The cost of write (/dev/null)",
@@ -44436,6 +44399,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average write latency on Asterinas",
             "value": "0.4759",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Qingsong Chen",
+            "username": "cqs21",
+            "email": "changxian.cqs@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "38c9ab06150e2fc322357705f8c40c13b1915648",
+          "message": "Add LTP syscall tests",
+          "timestamp": "2025-06-04T02:15:25Z",
+          "url": "https://github.com/asterinas/asterinas/commit/38c9ab06150e2fc322357705f8c40c13b1915648"
+        },
+        "date": 1749093989574,
+        "tool": "customSmallerIsBetter",
+        "title": "[VFS] The cost of write (/dev/null)",
+        "description": "lat_syscall write",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average write latency on Linux",
+            "value": "0.1212",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average write latency on Asterinas",
+            "value": "0.3884",
             "unit": "µs",
             "extra": "aster_result"
           }
