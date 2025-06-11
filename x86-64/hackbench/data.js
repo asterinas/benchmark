@@ -1,45 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1749641475180,
+  "lastUpdate": 1749643977037,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "group8_smp1": [
-      {
-        "commit": {
-          "author": {
-            "name": "Fabing Li",
-            "username": "grief8",
-            "email": "lifabing.lfb@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "2cfb470789077917180da7baca8af9017b0ed9f4",
-          "message": "Fix lmbench/ramfs_create_delete_files_0k_ops",
-          "timestamp": "2025-03-28T07:20:48Z",
-          "url": "https://github.com/asterinas/asterinas/commit/2cfb470789077917180da7baca8af9017b0ed9f4"
-        },
-        "date": 1743299609753,
-        "tool": "customSmallerIsBetter",
-        "title": "[Scheduler] Turnaround time of 8 groups using 1 CPU",
-        "description": "hackbench -g 8 -l 1000 -p -T",
-        "display": false,
-        "benches": [
-          {
-            "name": "Turnaround time of hackbench on Linux",
-            "value": "1.138",
-            "unit": "sec",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Turnaround time of hackbench on Asterinas",
-            "value": "1.576",
-            "unit": "sec",
-            "extra": "aster_result"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2218,6 +2181,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Turnaround time of hackbench on Asterinas",
             "value": "1.554",
+            "unit": "sec",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "5f28b48ca4afc7cece79d004370f3174b1ba4bda",
+          "message": "Assign framebuffer code owners",
+          "timestamp": "2025-06-10T05:24:21Z",
+          "url": "https://github.com/asterinas/asterinas/commit/5f28b48ca4afc7cece79d004370f3174b1ba4bda"
+        },
+        "date": 1749643951784,
+        "tool": "customSmallerIsBetter",
+        "title": "[Scheduler] Turnaround time of 8 groups using 1 CPU",
+        "description": "hackbench -g 8 -l 1000 -p -T",
+        "display": false,
+        "benches": [
+          {
+            "name": "Turnaround time of hackbench on Linux",
+            "value": "1.204",
+            "unit": "sec",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Turnaround time of hackbench on Asterinas",
+            "value": "1.548",
             "unit": "sec",
             "extra": "aster_result"
           }
