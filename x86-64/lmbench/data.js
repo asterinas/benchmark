@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1749643193481,
+  "lastUpdate": 1749643220120,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -66671,43 +66671,6 @@ window.BENCHMARK_DATA = {
             "email": "lifabing.lfb@antgroup.com"
           },
           "committer": {
-            "name": "Fabing Li",
-            "username": "grief8",
-            "email": "lifabing.lfb@antgroup.com"
-          },
-          "id": "166a0588c703b2b7238a4b515a601458c75901cb",
-          "message": "Reconstruct the integration/OSDK tests for flexible arch support",
-          "timestamp": "2025-03-28T06:13:08Z",
-          "url": "https://github.com/grief8/asterinas/commit/166a0588c703b2b7238a4b515a601458c75901cb"
-        },
-        "date": 1743216881830,
-        "tool": "customBiggerIsBetter",
-        "title": "[TCP sockets] The bandwidth (loopback, 64KB message)",
-        "description": "bw_tcp -l",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average TCP bandwidth on Linux",
-            "value": "7440.25",
-            "unit": "MB/s",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average TCP bandwidth on Asterinas",
-            "value": "7678.15",
-            "unit": "MB/s",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Fabing Li",
-            "username": "grief8",
-            "email": "lifabing.lfb@antgroup.com"
-          },
-          "committer": {
             "name": "Tate, Hongliang Tian",
             "username": "tatetian",
             "email": "tatetian@gmail.com"
@@ -68878,6 +68841,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average TCP bandwidth on Asterinas",
             "value": "7458.11",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "5f28b48ca4afc7cece79d004370f3174b1ba4bda",
+          "message": "Assign framebuffer code owners",
+          "timestamp": "2025-06-10T05:24:21Z",
+          "url": "https://github.com/asterinas/asterinas/commit/5f28b48ca4afc7cece79d004370f3174b1ba4bda"
+        },
+        "date": 1749643195046,
+        "tool": "customBiggerIsBetter",
+        "title": "[TCP sockets] The bandwidth (loopback, 64KB message)",
+        "description": "bw_tcp -l",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average TCP bandwidth on Linux",
+            "value": "7446.73",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average TCP bandwidth on Asterinas",
+            "value": "6852.19",
             "unit": "MB/s",
             "extra": "aster_result"
           }
