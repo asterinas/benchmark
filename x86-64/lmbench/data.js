@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1749688691644,
+  "lastUpdate": 1749688718545,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -11130,43 +11130,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2025-03-31T00:48:12Z",
           "url": "https://github.com/grief8/asterinas/commit/f4e79d99d04757347a6eaa05f6acb41b8898c927"
         },
-        "date": 1743474276430,
-        "tool": "customSmallerIsBetter",
-        "title": "[Process] The cost of fork+exit",
-        "description": "lat_proc fork",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average Fork latency on Linux",
-            "value": "56.2474",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average Fork latency on Asterinas",
-            "value": "57.1087",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Fabing Li",
-            "username": "grief8",
-            "email": "lifabing1349212501@gmail.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "f4e79d99d04757347a6eaa05f6acb41b8898c927",
-          "message": "Enforce the suitable width of badge",
-          "timestamp": "2025-03-31T00:48:12Z",
-          "url": "https://github.com/grief8/asterinas/commit/f4e79d99d04757347a6eaa05f6acb41b8898c927"
-        },
         "date": 1743562558991,
         "tool": "customSmallerIsBetter",
         "title": "[Process] The cost of fork+exit",
@@ -13328,6 +13291,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average Fork latency on Asterinas",
             "value": "64.0120",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Cautreoxit",
+            "username": "Cautreoxit",
+            "email": "huk@stu.pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "3e32a38316a9b134bea3121fb89887c41eb93dc8",
+          "message": "Add sys_close_range",
+          "timestamp": "2025-06-01T10:11:06Z",
+          "url": "https://github.com/asterinas/asterinas/commit/3e32a38316a9b134bea3121fb89887c41eb93dc8"
+        },
+        "date": 1749688693097,
+        "tool": "customSmallerIsBetter",
+        "title": "[Process] The cost of fork+exit",
+        "description": "lat_proc fork",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average Fork latency on Linux",
+            "value": "58.5667",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average Fork latency on Asterinas",
+            "value": "68.0494",
             "unit": "µs",
             "extra": "aster_result"
           }
