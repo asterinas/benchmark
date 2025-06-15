@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1749950753982,
+  "lastUpdate": 1749950782079,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -75558,43 +75558,6 @@ window.BENCHMARK_DATA = {
             "email": "junyang@stu.pku.edu.cn"
           },
           "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "83b9ebf87d783abdde3ffbb73f12256d77906670",
-          "message": "Avoid repetitive locking for clearing cache",
-          "timestamp": "2025-03-20T12:22:48Z",
-          "url": "https://github.com/asterinas/asterinas/commit/83b9ebf87d783abdde3ffbb73f12256d77906670"
-        },
-        "date": 1743392443233,
-        "tool": "customSmallerIsBetter",
-        "title": "[UDP sockets] The latency of write+read (loopback, 4B message)",
-        "description": "lat_udp",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average UDP latency on Linux",
-            "value": "4.8337",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average UDP latency on Asterinas",
-            "value": "3.3104",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Zhang Junyang",
-            "username": "junyang-zh",
-            "email": "junyang@stu.pku.edu.cn"
-          },
-          "committer": {
             "name": "Ruihan Li",
             "username": "lrh2000",
             "email": "3329907643@qq.com"
@@ -77765,6 +77728,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average UDP latency on Asterinas",
             "value": "3.5085",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Zhang Junyang",
+            "username": "junyang-zh",
+            "email": "junyang@stu.pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "a2aedcfb3afa31d8cf27b9b458df7103e3c68bfe",
+          "message": "Add a SMP LTP block list",
+          "timestamp": "2025-06-13T12:56:46Z",
+          "url": "https://github.com/asterinas/asterinas/commit/a2aedcfb3afa31d8cf27b9b458df7103e3c68bfe"
+        },
+        "date": 1749950755479,
+        "tool": "customSmallerIsBetter",
+        "title": "[UDP sockets] The latency of write+read (loopback, 4B message)",
+        "description": "lat_udp",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average UDP latency on Linux",
+            "value": "4.8282",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average UDP latency on Asterinas",
+            "value": "3.5162",
             "unit": "µs",
             "extra": "aster_result"
           }
