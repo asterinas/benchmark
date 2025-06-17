@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1750178623306,
+  "lastUpdate": 1750178652561,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -33002,6 +33002,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average TCP latency over virtio-net on Asterinas",
             "value": "39.0239",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Philipp Schuster",
+            "username": "phip1611",
+            "email": "phip1611@gmail.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "7a398167cf33d94415226c4f0b14c4e2c0b05f43",
+          "message": "ostd: update multiboot2 + use constant",
+          "timestamp": "2025-06-14T10:09:13Z",
+          "url": "https://github.com/asterinas/asterinas/commit/7a398167cf33d94415226c4f0b14c4e2c0b05f43"
+        },
+        "date": 1750178624648,
+        "tool": "customSmallerIsBetter",
+        "title": "[TCP sockets] The latency of write+read (virtio-net, 1B message)",
+        "description": "lat_tcp_virtio",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average TCP latency over virtio-net on Linux",
+            "value": "29.0161",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average TCP latency over virtio-net on Asterinas",
+            "value": "38.1939",
             "unit": "µs",
             "extra": "aster_result"
           }
