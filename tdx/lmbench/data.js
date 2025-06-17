@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1750179047026,
+  "lastUpdate": 1750179075984,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -8859,6 +8859,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average Signal handler overhead on Asterinas",
             "value": "0.4909",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Philipp Schuster",
+            "username": "phip1611",
+            "email": "phip1611@gmail.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "7a398167cf33d94415226c4f0b14c4e2c0b05f43",
+          "message": "ostd: update multiboot2 + use constant",
+          "timestamp": "2025-06-14T10:09:13Z",
+          "url": "https://github.com/asterinas/asterinas/commit/7a398167cf33d94415226c4f0b14c4e2c0b05f43"
+        },
+        "date": 1750179048255,
+        "tool": "customSmallerIsBetter",
+        "title": "[Signals] The cost of catching a signal",
+        "description": "lat_sig catch",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average Signal handler overhead on Linux",
+            "value": "0.8182",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average Signal handler overhead on Asterinas",
+            "value": "0.5009",
             "unit": "µs",
             "extra": "aster_result"
           }
