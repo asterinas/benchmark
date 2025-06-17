@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1750179709815,
+  "lastUpdate": 1750179784030,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -2689,6 +2689,43 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/asterinas/asterinas/commit/525085ab865b3850c0de2d704bab1bba6976a980"
         },
         "date": 1750109209628,
+        "tool": "customSmallerIsBetter",
+        "title": "[Memory] The cost of mmap+unmap",
+        "description": "lat_mmap",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average mmap latency on Linux",
+            "value": "23",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average mmap latency on Asterinas",
+            "value": "23",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Philipp Schuster",
+            "username": "phip1611",
+            "email": "phip1611@gmail.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "7a398167cf33d94415226c4f0b14c4e2c0b05f43",
+          "message": "ostd: update multiboot2 + use constant",
+          "timestamp": "2025-06-14T10:09:13Z",
+          "url": "https://github.com/asterinas/asterinas/commit/7a398167cf33d94415226c4f0b14c4e2c0b05f43"
+        },
+        "date": 1750179711132,
         "tool": "customSmallerIsBetter",
         "title": "[Memory] The cost of mmap+unmap",
         "description": "lat_mmap",
