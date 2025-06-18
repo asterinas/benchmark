@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1750209273058,
+  "lastUpdate": 1750209302862,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -102217,43 +102217,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Zejun Zhao",
-            "username": "jellllly420",
-            "email": "jelly.zhao.42@gmail.com"
-          },
-          "committer": {
-            "name": "Junyang Zhang",
-            "username": "junyang-zh",
-            "email": "user@junyang.me"
-          },
-          "id": "c85986caedf1bb42ade917038590f2e91fb5d175",
-          "message": "Correct OSDK profiling tool's behavior",
-          "timestamp": "2025-03-23T10:55:24Z",
-          "url": "https://github.com/asterinas/asterinas/commit/c85986caedf1bb42ade917038590f2e91fb5d175"
-        },
-        "date": 1742765039337,
-        "tool": "customBiggerIsBetter",
-        "title": "[Ext2] The throughput of creating/deleting small files (10KB)",
-        "description": "lat_fs -s 10K /ext2",
-        "display": false,
-        "benches": [
-          {
-            "name": "Number of created/deleted files on Linux",
-            "value": "893",
-            "unit": "number",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Number of created/deleted files on Asterinas",
-            "value": "172",
-            "unit": "number",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Ruihan Li",
             "username": "lrh2000",
             "email": "lrh2000@pku.edu.cn"
@@ -104429,6 +104392,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Number of created/deleted files on Asterinas",
             "value": "448",
+            "unit": "number",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Jianfeng Jiang",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "id": "4a9977d9a7d071dbe2ad4cea8ae69d4db81f566e",
+          "message": "Make zero reads/writes' behavior right",
+          "timestamp": "2025-06-15T11:24:53Z",
+          "url": "https://github.com/asterinas/asterinas/commit/4a9977d9a7d071dbe2ad4cea8ae69d4db81f566e"
+        },
+        "date": 1750209274652,
+        "tool": "customBiggerIsBetter",
+        "title": "[Ext2] The throughput of creating/deleting small files (10KB)",
+        "description": "lat_fs -s 10K /ext2",
+        "display": false,
+        "benches": [
+          {
+            "name": "Number of created/deleted files on Linux",
+            "value": "1109",
+            "unit": "number",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Number of created/deleted files on Asterinas",
+            "value": "363",
             "unit": "number",
             "extra": "aster_result"
           }
