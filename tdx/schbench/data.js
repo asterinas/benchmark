@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1750346524667,
+  "lastUpdate": 1750346554508,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "smp8_p99_wakeup_latency": [
@@ -5410,6 +5410,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "P50 RPS of schbench on Asterinas",
             "value": "303",
+            "unit": "requests per second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Marsman1996",
+            "username": "Marsman1996",
+            "email": "lqliuyuwei@outlook.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "2f097ab8f84ef6111eb8a3393ff72fae08225974",
+          "message": "Check file_table before use",
+          "timestamp": "2025-06-18T08:28:58Z",
+          "url": "https://github.com/asterinas/asterinas/commit/2f097ab8f84ef6111eb8a3393ff72fae08225974"
+        },
+        "date": 1750346525997,
+        "tool": "customBiggerIsBetter",
+        "title": "[Scheduler] P50 RPS while max-loading all CPUs (SMP=1)",
+        "description": "schbench -F 256 -n 5 -r 90",
+        "display": false,
+        "benches": [
+          {
+            "name": "P50 RPS of schbench on Linux",
+            "value": "351",
+            "unit": "requests per second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "P50 RPS of schbench on Asterinas",
+            "value": "293",
             "unit": "requests per second",
             "extra": "aster_result"
           }
