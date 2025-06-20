@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1750387514638,
+  "lastUpdate": 1750387544705,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -57778,43 +57778,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Cautreoxit",
-            "username": "Cautreoxit",
-            "email": "huk@stu.pku.edu.cn"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "8b5a6f0d588d1addb4fd497d143e993ab045fa5b",
-          "message": "Add a lint expectation",
-          "timestamp": "2025-03-25T09:38:16Z",
-          "url": "https://github.com/asterinas/asterinas/commit/8b5a6f0d588d1addb4fd497d143e993ab045fa5b"
-        },
-        "date": 1743123643102,
-        "tool": "customBiggerIsBetter",
-        "title": "[Ramfs] The throughput of creating/deleting small files (10KB)",
-        "description": "lat_fs -s 10K",
-        "display": true,
-        "benches": [
-          {
-            "name": "Number of created/deleted files on Linux",
-            "value": "1522",
-            "unit": "number",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Number of created/deleted files on Asterinas",
-            "value": "976",
-            "unit": "number",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Fabing Li",
             "username": "grief8",
             "email": "lifabing.lfb@antgroup.com"
@@ -59990,6 +59953,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Number of created/deleted files on Asterinas",
             "value": "1201",
+            "unit": "number",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Jianfeng Jiang",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "id": "bcf1e69878540e81ab15d79eee2f81f1f0787bba",
+          "message": "Expose `head`/`tail` of `RingBuffer`",
+          "timestamp": "2025-06-15T17:00:24Z",
+          "url": "https://github.com/asterinas/asterinas/commit/bcf1e69878540e81ab15d79eee2f81f1f0787bba"
+        },
+        "date": 1750387515859,
+        "tool": "customBiggerIsBetter",
+        "title": "[Ramfs] The throughput of creating/deleting small files (10KB)",
+        "description": "lat_fs -s 10K",
+        "display": true,
+        "benches": [
+          {
+            "name": "Number of created/deleted files on Linux",
+            "value": "1497",
+            "unit": "number",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Number of created/deleted files on Asterinas",
+            "value": "1148",
             "unit": "number",
             "extra": "aster_result"
           }
