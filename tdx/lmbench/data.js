@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1750801851237,
+  "lastUpdate": 1750801882492,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -23946,6 +23946,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average select file latency on Asterinas",
             "value": "2.0675",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "35e0918bced1b5cf4cf1abf59b9ae9a47c734b96",
+          "message": "Don't race between enabling IRQs and halting CPU",
+          "timestamp": "2025-04-09T02:23:58Z",
+          "url": "https://github.com/asterinas/asterinas/commit/35e0918bced1b5cf4cf1abf59b9ae9a47c734b96"
+        },
+        "date": 1750801852319,
+        "tool": "customSmallerIsBetter",
+        "title": "[VFS] The cost of select (file fds)",
+        "description": "lat_select",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average select file latency on Linux",
+            "value": "1.3155",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average select file latency on Asterinas",
+            "value": "2.0298",
             "unit": "µs",
             "extra": "aster_result"
           }
