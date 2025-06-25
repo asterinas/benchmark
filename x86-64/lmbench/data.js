@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1750816554371,
+  "lastUpdate": 1750816585873,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -37780,43 +37780,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "jiangjianfeng",
-            "username": "StevenJiang1110",
-            "email": "jiangjianfeng.jjf@antgroup.com"
-          },
-          "committer": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "3329907643@qq.com"
-          },
-          "id": "b833ec6ede869b9dbf16863744b9441702d979bd",
-          "message": "Implement ReadCString for MultiRead",
-          "timestamp": "2025-04-09T06:36:21Z",
-          "url": "https://github.com/asterinas/asterinas/commit/b833ec6ede869b9dbf16863744b9441702d979bd"
-        },
-        "date": 1744245768965,
-        "tool": "customSmallerIsBetter",
-        "title": "[VFS] The cost of open+close",
-        "description": "lat_syscall open",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average open latency on Linux",
-            "value": "0.6935",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average open latency on Asterinas",
-            "value": "1.0224",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Fabian LI",
             "username": "grief8",
             "email": "lifabing1349212501@gmail.com"
@@ -39992,6 +39955,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average open latency on Asterinas",
             "value": "1.0106",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "jiangjianfeng",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "committer": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "3329907643@qq.com"
+          },
+          "id": "e4c5c36be9fb58ee78e558e72762e8450bcb5ba2",
+          "message": "Support SO_PEERCRED & SO_PEERGROUPS",
+          "timestamp": "2025-06-11T08:28:05Z",
+          "url": "https://github.com/asterinas/asterinas/commit/e4c5c36be9fb58ee78e558e72762e8450bcb5ba2"
+        },
+        "date": 1750816555540,
+        "tool": "customSmallerIsBetter",
+        "title": "[VFS] The cost of open+close",
+        "description": "lat_syscall open",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average open latency on Linux",
+            "value": "0.6944",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average open latency on Asterinas",
+            "value": "1.0138",
             "unit": "µs",
             "extra": "aster_result"
           }
