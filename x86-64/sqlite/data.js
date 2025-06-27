@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1750990610381,
+  "lastUpdate": 1750990641493,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_deletes_between": [
@@ -51098,43 +51098,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "jiangjianfeng",
-            "username": "StevenJiang1110",
-            "email": "jiangjianfeng.jjf@antgroup.com"
-          },
-          "committer": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "3329907643@qq.com"
-          },
-          "id": "b833ec6ede869b9dbf16863744b9441702d979bd",
-          "message": "Implement ReadCString for MultiRead",
-          "timestamp": "2025-04-09T06:36:21Z",
-          "url": "https://github.com/asterinas/asterinas/commit/b833ec6ede869b9dbf16863744b9441702d979bd"
-        },
-        "date": 1744245540130,
-        "tool": "customSmallerIsBetter",
-        "title": "[Ext2] The updates-between result of sqlite speedtest",
-        "description": "sqlite-speed-test: 10000 UPDATES, numeric BETWEEN, indexed",
-        "display": false,
-        "benches": [
-          {
-            "name": "The speed of updates-between on Linux (Ext2)",
-            "value": "1.734",
-            "unit": "second",
-            "extra": "linux_result"
-          },
-          {
-            "name": "The speed of updates-between on Asterinas (Ext2)",
-            "value": "2.142",
-            "unit": "second",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Fabian LI",
             "username": "grief8",
             "email": "lifabing1349212501@gmail.com"
@@ -53310,6 +53273,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "The speed of updates-between on Asterinas (Ext2)",
             "value": "2.295",
+            "unit": "second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Chengjun Chen",
+            "username": "cchanging",
+            "email": "33800552+cchanging@users.noreply.github.com"
+          },
+          "id": "3f1bf99b2ade568a09e3a483ec8bf0f75ca36608",
+          "message": "Make `mremap` behavior consistent with Linux",
+          "timestamp": "2025-06-22T08:12:50Z",
+          "url": "https://github.com/asterinas/asterinas/commit/3f1bf99b2ade568a09e3a483ec8bf0f75ca36608"
+        },
+        "date": 1750990611923,
+        "tool": "customSmallerIsBetter",
+        "title": "[Ext2] The updates-between result of sqlite speedtest",
+        "description": "sqlite-speed-test: 10000 UPDATES, numeric BETWEEN, indexed",
+        "display": false,
+        "benches": [
+          {
+            "name": "The speed of updates-between on Linux (Ext2)",
+            "value": "1.885",
+            "unit": "second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "The speed of updates-between on Asterinas (Ext2)",
+            "value": "2.303",
             "unit": "second",
             "extra": "aster_result"
           }
