@@ -1,45 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1750992763300,
+  "lastUpdate": 1751074844841,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "group8_smp1": [
-      {
-        "commit": {
-          "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "d6e40933b8b8cfe91a6b529631b79dbeb53ac99c",
-          "message": "Move the log lock to a better location",
-          "timestamp": "2025-04-15T14:22:07Z",
-          "url": "https://github.com/asterinas/asterinas/commit/d6e40933b8b8cfe91a6b529631b79dbeb53ac99c"
-        },
-        "date": 1745247395260,
-        "tool": "customSmallerIsBetter",
-        "title": "[Scheduler] Turnaround time of 8 groups using 1 CPU",
-        "description": "hackbench -g 8 -l 1000 -p -T",
-        "display": false,
-        "benches": [
-          {
-            "name": "Turnaround time of hackbench on Linux",
-            "value": "1.312",
-            "unit": "sec",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Turnaround time of hackbench on Asterinas",
-            "value": "1.956",
-            "unit": "sec",
-            "extra": "aster_result"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2218,6 +2181,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Turnaround time of hackbench on Asterinas",
             "value": "1.596",
+            "unit": "sec",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Qingsong Chen",
+            "username": "cqs21",
+            "email": "changxian.cqs@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "5e3e23bf7c5130a9251b265c5377d2e21769097c",
+          "message": "Add basic i8042 keyboard support",
+          "timestamp": "2025-06-25T02:04:24Z",
+          "url": "https://github.com/asterinas/asterinas/commit/5e3e23bf7c5130a9251b265c5377d2e21769097c"
+        },
+        "date": 1751074814695,
+        "tool": "customSmallerIsBetter",
+        "title": "[Scheduler] Turnaround time of 8 groups using 1 CPU",
+        "description": "hackbench -g 8 -l 1000 -p -T",
+        "display": false,
+        "benches": [
+          {
+            "name": "Turnaround time of hackbench on Linux",
+            "value": "1.182",
+            "unit": "sec",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Turnaround time of hackbench on Asterinas",
+            "value": "1.560",
             "unit": "sec",
             "extra": "aster_result"
           }
