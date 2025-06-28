@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1751074335996,
+  "lastUpdate": 1751074367694,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -6684,43 +6684,6 @@ window.BENCHMARK_DATA = {
           "id": "e9c2886a84698efd3493dcacf8f6563cde139c40",
           "message": "Fix platform definition",
           "timestamp": "2025-04-10T08:27:21Z",
-          "url": "https://github.com/asterinas/asterinas/commit/e9c2886a84698efd3493dcacf8f6563cde139c40"
-        },
-        "date": 1744704240523,
-        "tool": "customSmallerIsBetter",
-        "title": "[Process] The cost of getppid",
-        "description": "lat_syscall null",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average syscall latency on Linux",
-            "value": "0.0896",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average syscall latency on Asterinas",
-            "value": "0.1159",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Fabian LI",
-            "username": "grief8",
-            "email": "lifabing1349212501@gmail.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "e9c2886a84698efd3493dcacf8f6563cde139c40",
-          "message": "Fix platform definition",
-          "timestamp": "2025-04-10T08:27:21Z",
           "url": "https://github.com/grief8/asterinas/commit/e9c2886a84698efd3493dcacf8f6563cde139c40"
         },
         "date": 1745220600838,
@@ -8884,6 +8847,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average syscall latency on Asterinas",
             "value": "0.1166",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Qingsong Chen",
+            "username": "cqs21",
+            "email": "changxian.cqs@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "5e3e23bf7c5130a9251b265c5377d2e21769097c",
+          "message": "Add basic i8042 keyboard support",
+          "timestamp": "2025-06-25T02:04:24Z",
+          "url": "https://github.com/asterinas/asterinas/commit/5e3e23bf7c5130a9251b265c5377d2e21769097c"
+        },
+        "date": 1751074337544,
+        "tool": "customSmallerIsBetter",
+        "title": "[Process] The cost of getppid",
+        "description": "lat_syscall null",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average syscall latency on Linux",
+            "value": "0.0964",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average syscall latency on Asterinas",
+            "value": "0.1137",
             "unit": "µs",
             "extra": "aster_result"
           }
