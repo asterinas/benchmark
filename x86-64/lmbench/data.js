@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1751163133884,
+  "lastUpdate": 1751163165470,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -57783,43 +57783,6 @@ window.BENCHMARK_DATA = {
             "email": "junyang@stu.pku.edu.cn"
           },
           "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "83b9ebf87d783abdde3ffbb73f12256d77906670",
-          "message": "Avoid repetitive locking for clearing cache",
-          "timestamp": "2025-03-20T12:22:48Z",
-          "url": "https://github.com/asterinas/asterinas/commit/83b9ebf87d783abdde3ffbb73f12256d77906670"
-        },
-        "date": 1743390441003,
-        "tool": "customBiggerIsBetter",
-        "title": "[Ramfs] The throughput of creating/deleting small files (10KB)",
-        "description": "lat_fs -s 10K",
-        "display": true,
-        "benches": [
-          {
-            "name": "Number of created/deleted files on Linux",
-            "value": "1548",
-            "unit": "number",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Number of created/deleted files on Asterinas",
-            "value": "982",
-            "unit": "number",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Zhang Junyang",
-            "username": "junyang-zh",
-            "email": "junyang@stu.pku.edu.cn"
-          },
-          "committer": {
             "name": "Ruihan Li",
             "username": "lrh2000",
             "email": "3329907643@qq.com"
@@ -59990,6 +59953,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Number of created/deleted files on Asterinas",
             "value": "1207",
+            "unit": "number",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Qingsong Chen",
+            "username": "cqs21",
+            "email": "changxian.cqs@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "5e3e23bf7c5130a9251b265c5377d2e21769097c",
+          "message": "Add basic i8042 keyboard support",
+          "timestamp": "2025-06-25T02:04:24Z",
+          "url": "https://github.com/asterinas/asterinas/commit/5e3e23bf7c5130a9251b265c5377d2e21769097c"
+        },
+        "date": 1751163135090,
+        "tool": "customBiggerIsBetter",
+        "title": "[Ramfs] The throughput of creating/deleting small files (10KB)",
+        "description": "lat_fs -s 10K",
+        "display": true,
+        "benches": [
+          {
+            "name": "Number of created/deleted files on Linux",
+            "value": "1600",
+            "unit": "number",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Number of created/deleted files on Asterinas",
+            "value": "1224",
             "unit": "number",
             "extra": "aster_result"
           }
