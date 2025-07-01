@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1751336528022,
+  "lastUpdate": 1751336560728,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -35572,43 +35572,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2025-04-18T08:24:17Z",
           "url": "https://github.com/asterinas/asterinas/commit/1fe0fef41003c824b780b7b228f7b01a46497be0"
         },
-        "date": 1745256841779,
-        "tool": "customSmallerIsBetter",
-        "title": "[Unix sockets] The latency of connect",
-        "description": "lat_connect",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average unix connect latency on Linux",
-            "value": "7.7640",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average unix connect latency on Asterinas",
-            "value": "13.6037",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Chen Chengjun",
-            "username": "cchanging",
-            "email": "chenchengjun.ccj@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "1fe0fef41003c824b780b7b228f7b01a46497be0",
-          "message": "Add ktests for the XArray",
-          "timestamp": "2025-04-18T08:24:17Z",
-          "url": "https://github.com/asterinas/asterinas/commit/1fe0fef41003c824b780b7b228f7b01a46497be0"
-        },
         "date": 1745262582858,
         "tool": "customSmallerIsBetter",
         "title": "[Unix sockets] The latency of connect",
@@ -37770,6 +37733,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average unix connect latency on Asterinas",
             "value": "4.1188",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "jiangjianfeng",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "dc26e183100dcabf292aa8ee41458f189b2f7b94",
+          "message": "Depend on int-to-c-enum instead of num crate",
+          "timestamp": "2025-06-27T08:29:34Z",
+          "url": "https://github.com/asterinas/asterinas/commit/dc26e183100dcabf292aa8ee41458f189b2f7b94"
+        },
+        "date": 1751336529208,
+        "tool": "customSmallerIsBetter",
+        "title": "[Unix sockets] The latency of connect",
+        "description": "lat_connect",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average unix connect latency on Linux",
+            "value": "6.6957",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average unix connect latency on Asterinas",
+            "value": "4.1269",
             "unit": "µs",
             "extra": "aster_result"
           }
