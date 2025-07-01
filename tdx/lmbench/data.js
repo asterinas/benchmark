@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1751382951314,
+  "lastUpdate": 1751382984706,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -1256,6 +1256,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average page fault latency on Asterinas",
             "value": "0.0963",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "jiangjianfeng",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "dc26e183100dcabf292aa8ee41458f189b2f7b94",
+          "message": "Depend on int-to-c-enum instead of num crate",
+          "timestamp": "2025-06-27T08:29:34Z",
+          "url": "https://github.com/asterinas/asterinas/commit/dc26e183100dcabf292aa8ee41458f189b2f7b94"
+        },
+        "date": 1751382953006,
+        "tool": "customSmallerIsBetter",
+        "title": "[Memory] The cost of page fault handling",
+        "description": "lat_pagefault",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average page fault latency on Linux",
+            "value": "0.1129",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average page fault latency on Asterinas",
+            "value": "0.0967",
             "unit": "µs",
             "extra": "aster_result"
           }
