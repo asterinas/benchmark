@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1751480155244,
+  "lastUpdate": 1751480187943,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -21484,6 +21484,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average unix connect latency on Linux",
             "value": "6.9764",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average unix connect latency on Asterinas",
+            "value": "4.1564",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "jiangjianfeng",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "49ef0e9f7aa7606ab62387e231f679197572cf28",
+          "message": "Change the documentation website of OSTD",
+          "timestamp": "2025-06-27T08:10:41Z",
+          "url": "https://github.com/asterinas/asterinas/commit/49ef0e9f7aa7606ab62387e231f679197572cf28"
+        },
+        "date": 1751480156359,
+        "tool": "customSmallerIsBetter",
+        "title": "[Unix sockets] The latency of connect",
+        "description": "lat_connect",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average unix connect latency on Linux",
+            "value": "6.6358",
             "unit": "µs",
             "extra": "linux_result"
           },
