@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1751590759601,
+  "lastUpdate": 1751590793062,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -33336,43 +33336,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "jiangjianfeng",
-            "username": "StevenJiang1110",
-            "email": "jiangjianfeng.jjf@antgroup.com"
-          },
-          "committer": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "3329907643@qq.com"
-          },
-          "id": "961ad738478518c084bd1d1c560dac56b9c72a81",
-          "message": "Poll the correct iface in irq handler",
-          "timestamp": "2025-04-22T03:26:16Z",
-          "url": "https://github.com/asterinas/asterinas/commit/961ad738478518c084bd1d1c560dac56b9c72a81"
-        },
-        "date": 1745376472172,
-        "tool": "customBiggerIsBetter",
-        "title": "[Unix sockets] The bandwidth (64KB message)",
-        "description": "bw_unix",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average unix bandwidth on Linux",
-            "value": "6830.77",
-            "unit": "MB/s",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average unix bandwidth on Asterinas",
-            "value": "8504.40",
-            "unit": "MB/s",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Zhenchen Wang",
             "username": "Plucky923",
             "email": "m202372036@hust.edu.cn"
@@ -35548,6 +35511,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average unix bandwidth on Asterinas",
             "value": "10410.65",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Wang Siyuan",
+            "username": "vvvvsv",
+            "email": "wsy@stu.pku.edu.cn"
+          },
+          "committer": {
+            "name": "Chengjun Chen",
+            "username": "cchanging",
+            "email": "33800552+cchanging@users.noreply.github.com"
+          },
+          "id": "37cc54f2aa837463386af9f3c27ec3979a039022",
+          "message": "Store `offset` in `MappedVmo` instead of `range`",
+          "timestamp": "2025-07-03T08:44:32Z",
+          "url": "https://github.com/asterinas/asterinas/commit/37cc54f2aa837463386af9f3c27ec3979a039022"
+        },
+        "date": 1751590760824,
+        "tool": "customBiggerIsBetter",
+        "title": "[Unix sockets] The bandwidth (64KB message)",
+        "description": "bw_unix",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average unix bandwidth on Linux",
+            "value": "7785.96",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average unix bandwidth on Asterinas",
+            "value": "10673.11",
             "unit": "MB/s",
             "extra": "aster_result"
           }
