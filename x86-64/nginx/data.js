@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1751958627882,
+  "lastUpdate": 1751958662223,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "http_file4KB_bw": [
@@ -2228,43 +2228,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Zhenchen Wang",
-            "username": "Plucky923",
-            "email": "m202372036@hust.edu.cn"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "3a5f270ee96e77dfc0f54f6b9db945d88260ff89",
-          "message": "Made some minor improvements to syscall statx\n\nSigned-off-by: Zhenchen Wang <m202372036@hust.edu.cn>",
-          "timestamp": "2025-04-23T08:33:20Z",
-          "url": "https://github.com/asterinas/asterinas/commit/3a5f270ee96e77dfc0f54f6b9db945d88260ff89"
-        },
-        "date": 1745470646677,
-        "tool": "customBiggerIsBetter",
-        "title": "Nginx HTTP request performance (virtio-net, 8KB file size)",
-        "description": "ab -n 10000 -c 1 http://10.0.2.15:8080/8192bytes.html",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average HTTP Bandwidth over virtio-net between Host Linux and Guest Linux",
-            "value": "5014.88",
-            "unit": "Requests per second",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average HTTP Bandwidth over virtio-net between Host Linux and Guest Asterinas",
-            "value": "4336.38",
-            "unit": "Requests per second",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Shaowei Song",
             "username": "lucassong-mh",
             "email": "songshaowei.ssw@antgroup.com"
@@ -4440,6 +4403,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average HTTP Bandwidth over virtio-net between Host Linux and Guest Asterinas",
             "value": "8977.30",
+            "unit": "Requests per second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Qingsong Chen",
+            "username": "cqs21",
+            "email": "changxian.cqs@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "20c2e967fea035e7377af4a0c6d947afbe507f43",
+          "message": "Fix benchmark CI errors",
+          "timestamp": "2025-07-07T03:39:38Z",
+          "url": "https://github.com/asterinas/asterinas/commit/20c2e967fea035e7377af4a0c6d947afbe507f43"
+        },
+        "date": 1751958629452,
+        "tool": "customBiggerIsBetter",
+        "title": "Nginx HTTP request performance (virtio-net, 8KB file size)",
+        "description": "ab -n 10000 -c 1 http://10.0.2.15:8080/8192bytes.html",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average HTTP Bandwidth over virtio-net between Host Linux and Guest Linux",
+            "value": "11783.25",
+            "unit": "Requests per second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average HTTP Bandwidth over virtio-net between Host Linux and Guest Asterinas",
+            "value": "9678.53",
             "unit": "Requests per second",
             "extra": "aster_result"
           }
