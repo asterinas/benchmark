@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1752582239559,
+  "lastUpdate": 1752582276023,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -68902,43 +68902,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2025-04-30T02:09:38Z",
           "url": "https://github.com/asterinas/asterinas/commit/725a46fe72546af880ea183cf6d4b35349b709c6"
         },
-        "date": 1746153100242,
-        "tool": "customSmallerIsBetter",
-        "title": "[TCP sockets] The latency of write+read (loopback, 1B message)",
-        "description": "lat_tcp",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average TCP latency on Linux",
-            "value": "6.7784",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average TCP latency on Asterinas",
-            "value": "4.1296",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Chen Chengjun",
-            "username": "cchanging",
-            "email": "chenchengjun.ccj@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "725a46fe72546af880ea183cf6d4b35349b709c6",
-          "message": "Modify VMO usages and fix the atomic-mode issue during handling page fault",
-          "timestamp": "2025-04-30T02:09:38Z",
-          "url": "https://github.com/asterinas/asterinas/commit/725a46fe72546af880ea183cf6d4b35349b709c6"
-        },
         "date": 1746242897374,
         "tool": "customSmallerIsBetter",
         "title": "[TCP sockets] The latency of write+read (loopback, 1B message)",
@@ -71100,6 +71063,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average TCP latency on Asterinas",
             "value": "3.6359",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Chen Chengjun",
+            "username": "cchanging",
+            "email": "chenchengjun.ccj@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "d02202dc7319a591ca71049304bcb88c3bbceea7",
+          "message": "Support the basic cgroupfs",
+          "timestamp": "2025-07-11T15:12:06Z",
+          "url": "https://github.com/asterinas/asterinas/commit/d02202dc7319a591ca71049304bcb88c3bbceea7"
+        },
+        "date": 1752582240871,
+        "tool": "customSmallerIsBetter",
+        "title": "[TCP sockets] The latency of write+read (loopback, 1B message)",
+        "description": "lat_tcp",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average TCP latency on Linux",
+            "value": "6.1128",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average TCP latency on Asterinas",
+            "value": "3.6454",
             "unit": "µs",
             "extra": "aster_result"
           }
