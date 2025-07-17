@@ -1,45 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1752755146405,
+  "lastUpdate": 1752755182894,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "cpu_lat": [
-      {
-        "commit": {
-          "author": {
-            "name": "Chen Chengjun",
-            "username": "cchanging",
-            "email": "chenchengjun.ccj@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "725a46fe72546af880ea183cf6d4b35349b709c6",
-          "message": "Modify VMO usages and fix the atomic-mode issue during handling page fault",
-          "timestamp": "2025-04-30T02:09:38Z",
-          "url": "https://github.com/asterinas/asterinas/commit/725a46fe72546af880ea183cf6d4b35349b709c6"
-        },
-        "date": 1746152323076,
-        "tool": "customSmallerIsBetter",
-        "title": "[CPU] CPU performance",
-        "description": "sysbench cpu",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average Execution Time per CPU on Linux",
-            "value": "4.45",
-            "unit": "ms",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average Execution Time per CPU on Asterinas",
-            "value": "4.36",
-            "unit": "ms",
-            "extra": "aster_result"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2204,6 +2167,42 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/asterinas/asterinas/commit/cdd7950d2eb600a3cabed167ad9b8251045a5466"
         },
         "date": 1752667416611,
+        "tool": "customSmallerIsBetter",
+        "title": "[CPU] CPU performance",
+        "description": "sysbench cpu",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average Execution Time per CPU on Linux",
+            "value": "4.03",
+            "unit": "ms",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average Execution Time per CPU on Asterinas",
+            "value": "4.03",
+            "unit": "ms",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "王英泰",
+            "email": "2253457010@qq.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "92fb51b99be0dfb849225cead4fd8518558001fe",
+          "message": "Add LoongArch QEMU to the docker image and bump versions",
+          "timestamp": "2025-07-13T17:13:36Z",
+          "url": "https://github.com/asterinas/asterinas/commit/92fb51b99be0dfb849225cead4fd8518558001fe"
+        },
+        "date": 1752755147309,
         "tool": "customSmallerIsBetter",
         "title": "[CPU] CPU performance",
         "description": "sysbench cpu",
