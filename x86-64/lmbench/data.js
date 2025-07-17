@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1752755330346,
+  "lastUpdate": 1752755367360,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -48902,43 +48902,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2025-04-30T12:59:53Z",
           "url": "https://github.com/asterinas/asterinas/commit/54bd64269bd688b149b7f48f063f0e8cf2704a01"
         },
-        "date": 1746325720720,
-        "tool": "customBiggerIsBetter",
-        "title": "[VFS] The bandwidth of file reads via page cache",
-        "description": "bw_file_rd",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average file read bandwidth on Linux",
-            "value": "9345.34",
-            "unit": "MB/s",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average file read bandwidth on Asterinas",
-            "value": "3408.10",
-            "unit": "MB/s",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "54bd64269bd688b149b7f48f063f0e8cf2704a01",
-          "message": "Rename `systree` to `aster-systree`",
-          "timestamp": "2025-04-30T12:59:53Z",
-          "url": "https://github.com/asterinas/asterinas/commit/54bd64269bd688b149b7f48f063f0e8cf2704a01"
-        },
         "date": 1746411885316,
         "tool": "customBiggerIsBetter",
         "title": "[VFS] The bandwidth of file reads via page cache",
@@ -51100,6 +51063,42 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average file read bandwidth on Asterinas",
             "value": "9491.39",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "王英泰",
+            "email": "2253457010@qq.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "92fb51b99be0dfb849225cead4fd8518558001fe",
+          "message": "Add LoongArch QEMU to the docker image and bump versions",
+          "timestamp": "2025-07-13T17:13:36Z",
+          "url": "https://github.com/asterinas/asterinas/commit/92fb51b99be0dfb849225cead4fd8518558001fe"
+        },
+        "date": 1752755331651,
+        "tool": "customBiggerIsBetter",
+        "title": "[VFS] The bandwidth of file reads via page cache",
+        "description": "bw_file_rd",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average file read bandwidth on Linux",
+            "value": "9452.12",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average file read bandwidth on Asterinas",
+            "value": "9328.61",
             "unit": "MB/s",
             "extra": "aster_result"
           }
