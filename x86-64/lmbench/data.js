@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1752755293326,
+  "lastUpdate": 1752755330346,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -51110,43 +51110,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Chen Chengjun",
-            "username": "cchanging",
-            "email": "chenchengjun.ccj@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "725a46fe72546af880ea183cf6d4b35349b709c6",
-          "message": "Modify VMO usages and fix the atomic-mode issue during handling page fault",
-          "timestamp": "2025-04-30T02:09:38Z",
-          "url": "https://github.com/asterinas/asterinas/commit/725a46fe72546af880ea183cf6d4b35349b709c6"
-        },
-        "date": 1746242672269,
-        "tool": "customSmallerIsBetter",
-        "title": "[VFS] The cost of select (file fds)",
-        "description": "lat_select",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average select file latency on Linux",
-            "value": "1.5121",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average select file latency on Asterinas",
-            "value": "8.3275",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Ruihan Li",
             "username": "lrh2000",
             "email": "lrh2000@pku.edu.cn"
@@ -53322,6 +53285,42 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average select file latency on Asterinas",
             "value": "2.0517",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "王英泰",
+            "email": "2253457010@qq.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "92fb51b99be0dfb849225cead4fd8518558001fe",
+          "message": "Add LoongArch QEMU to the docker image and bump versions",
+          "timestamp": "2025-07-13T17:13:36Z",
+          "url": "https://github.com/asterinas/asterinas/commit/92fb51b99be0dfb849225cead4fd8518558001fe"
+        },
+        "date": 1752755294614,
+        "tool": "customSmallerIsBetter",
+        "title": "[VFS] The cost of select (file fds)",
+        "description": "lat_select",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average select file latency on Linux",
+            "value": "1.3314",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average select file latency on Asterinas",
+            "value": "2.0533",
             "unit": "µs",
             "extra": "aster_result"
           }
