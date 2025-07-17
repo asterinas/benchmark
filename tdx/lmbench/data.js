@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1752764200718,
+  "lastUpdate": 1752764237954,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -35816,6 +35816,42 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average stat latency on Asterinas",
             "value": "0.5516",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "王英泰",
+            "email": "2253457010@qq.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "92fb51b99be0dfb849225cead4fd8518558001fe",
+          "message": "Add LoongArch QEMU to the docker image and bump versions",
+          "timestamp": "2025-07-13T17:13:36Z",
+          "url": "https://github.com/asterinas/asterinas/commit/92fb51b99be0dfb849225cead4fd8518558001fe"
+        },
+        "date": 1752764201945,
+        "tool": "customSmallerIsBetter",
+        "title": "[VFS] The cost of stat",
+        "description": "lat_syscall stat",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average stat latency on Linux",
+            "value": "0.3574",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average stat latency on Asterinas",
+            "value": "0.5213",
             "unit": "µs",
             "extra": "aster_result"
           }
