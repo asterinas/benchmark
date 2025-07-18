@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1752832501522,
+  "lastUpdate": 1752832542339,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -86641,43 +86641,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2025-04-30T02:09:38Z",
           "url": "https://github.com/asterinas/asterinas/commit/725a46fe72546af880ea183cf6d4b35349b709c6"
         },
-        "date": 1746153006406,
-        "tool": "customSmallerIsBetter",
-        "title": "[UDP sockets] The latency of write+read (virtio-net, 4B message)",
-        "description": "lat_udp",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average UDP latency over virtio-net on Linux",
-            "value": "46.8924",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average UDP latency over virtio-net on Asterinas",
-            "value": "46.1330",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Chen Chengjun",
-            "username": "cchanging",
-            "email": "chenchengjun.ccj@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "725a46fe72546af880ea183cf6d4b35349b709c6",
-          "message": "Modify VMO usages and fix the atomic-mode issue during handling page fault",
-          "timestamp": "2025-04-30T02:09:38Z",
-          "url": "https://github.com/asterinas/asterinas/commit/725a46fe72546af880ea183cf6d4b35349b709c6"
-        },
         "date": 1746242798378,
         "tool": "customSmallerIsBetter",
         "title": "[UDP sockets] The latency of write+read (virtio-net, 4B message)",
@@ -88839,6 +88802,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average UDP latency over virtio-net on Asterinas",
             "value": "19.0782",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Marsman1996",
+            "username": "Marsman1996",
+            "email": "lqliuyuwei@outlook.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "ab5e1999fc4578d1b0880f8920298869cea66342",
+          "message": "Apply the docker version bump for related files",
+          "timestamp": "2025-07-17T06:02:20Z",
+          "url": "https://github.com/asterinas/asterinas/commit/ab5e1999fc4578d1b0880f8920298869cea66342"
+        },
+        "date": 1752832503153,
+        "tool": "customSmallerIsBetter",
+        "title": "[UDP sockets] The latency of write+read (virtio-net, 4B message)",
+        "description": "lat_udp",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average UDP latency over virtio-net on Linux",
+            "value": "25.1448",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average UDP latency over virtio-net on Asterinas",
+            "value": "19.2220",
             "unit": "µs",
             "extra": "aster_result"
           }
