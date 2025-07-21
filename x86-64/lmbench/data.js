@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1753101679346,
+  "lastUpdate": 1753101717800,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -51089,43 +51089,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Zhang Junyang",
-            "username": "junyang-zh",
-            "email": "junyang@stu.pku.edu.cn"
-          },
-          "committer": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "3329907643@qq.com"
-          },
-          "id": "18df0f6ec94f018e3fc14b4bded6257d507611c4",
-          "message": "Fix the linear mapping size if the IO range is high",
-          "timestamp": "2025-05-06T09:26:25Z",
-          "url": "https://github.com/asterinas/asterinas/commit/18df0f6ec94f018e3fc14b4bded6257d507611c4"
-        },
-        "date": 1746584945880,
-        "tool": "customSmallerIsBetter",
-        "title": "[VFS] The cost of select (file fds)",
-        "description": "lat_select",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average select file latency on Linux",
-            "value": "1.5128",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average select file latency on Asterinas",
-            "value": "7.3764",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Hsy-Intel",
             "username": "Hsy-Intel",
             "email": "siyuan.hui@intel.com"
@@ -53300,6 +53263,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average select file latency on Asterinas",
             "value": "2.0538",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "jiangjianfeng",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "committer": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "3329907643@qq.com"
+          },
+          "id": "424fcda239fe14fa98ece0377ef377dad48bfc7d",
+          "message": "Use iret instead of sysret if the context is not clean",
+          "timestamp": "2025-07-18T07:13:13Z",
+          "url": "https://github.com/asterinas/asterinas/commit/424fcda239fe14fa98ece0377ef377dad48bfc7d"
+        },
+        "date": 1753101680884,
+        "tool": "customSmallerIsBetter",
+        "title": "[VFS] The cost of select (file fds)",
+        "description": "lat_select",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average select file latency on Linux",
+            "value": "1.3270",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average select file latency on Asterinas",
+            "value": "2.0273",
             "unit": "µs",
             "extra": "aster_result"
           }
