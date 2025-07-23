@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1753274552263,
+  "lastUpdate": 1753274591606,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -55531,43 +55531,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Fabing Li",
-            "username": "grief8",
-            "email": "lifabing1349212501@gmail.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "f4e79d99d04757347a6eaa05f6acb41b8898c927",
-          "message": "Enforce the suitable width of badge",
-          "timestamp": "2025-03-31T00:48:12Z",
-          "url": "https://github.com/grief8/asterinas/commit/f4e79d99d04757347a6eaa05f6acb41b8898c927"
-        },
-        "date": 1743646471553,
-        "tool": "customBiggerIsBetter",
-        "title": "[Ramfs] The throughput of creating/deleting small files (0KB)",
-        "description": "lat_fs -s 0k",
-        "display": true,
-        "benches": [
-          {
-            "name": "Number of created/deleted files on Linux",
-            "value": "3780",
-            "unit": "number",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Number of created/deleted files on Asterinas",
-            "value": "1867",
-            "unit": "number",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Zhang Junyang",
             "username": "junyang-zh",
             "email": "junyang@stu.pku.edu.cn"
@@ -57742,6 +57705,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Number of created/deleted files on Asterinas",
             "value": "2611",
+            "unit": "number",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Cautreoxit",
+            "username": "Cautreoxit",
+            "email": "huk@stu.pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "6ecccad3ee8f7802120db1952123da7efd3c7813",
+          "message": "Add sys_ioprio_set and sys_ioprio_get",
+          "timestamp": "2025-06-01T08:43:28Z",
+          "url": "https://github.com/asterinas/asterinas/commit/6ecccad3ee8f7802120db1952123da7efd3c7813"
+        },
+        "date": 1753274553800,
+        "tool": "customBiggerIsBetter",
+        "title": "[Ramfs] The throughput of creating/deleting small files (0KB)",
+        "description": "lat_fs -s 0k",
+        "display": true,
+        "benches": [
+          {
+            "name": "Number of created/deleted files on Linux",
+            "value": "3817",
+            "unit": "number",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Number of created/deleted files on Asterinas",
+            "value": "2222",
             "unit": "number",
             "extra": "aster_result"
           }
