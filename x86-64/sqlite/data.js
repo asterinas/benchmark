@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1753418261815,
+  "lastUpdate": 1753418301230,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_deletes_between": [
@@ -66652,43 +66652,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Zhenchen Wang",
-            "username": "Plucky923",
-            "email": "m202372036@hust.edu.cn"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "3a5f270ee96e77dfc0f54f6b9db945d88260ff89",
-          "message": "Made some minor improvements to syscall statx\n\nSigned-off-by: Zhenchen Wang <m202372036@hust.edu.cn>",
-          "timestamp": "2025-04-23T08:33:20Z",
-          "url": "https://github.com/asterinas/asterinas/commit/3a5f270ee96e77dfc0f54f6b9db945d88260ff89"
-        },
-        "date": 1745470343583,
-        "tool": "customSmallerIsBetter",
-        "title": "[Ramfs] The selects-ipk result of sqlite speedtest",
-        "description": "sqlite-speed-test: 70000 SELECTS on an IPK",
-        "display": false,
-        "benches": [
-          {
-            "name": "The speed of selects-ipk on Linux (Ramfs)",
-            "value": "2.946",
-            "unit": "second",
-            "extra": "linux_result"
-          },
-          {
-            "name": "The speed of selects-ipk on Asterinas (Ramfs)",
-            "value": "11.326",
-            "unit": "second",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Shaowei Song",
             "username": "lucassong-mh",
             "email": "songshaowei.ssw@antgroup.com"
@@ -68864,6 +68827,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "The speed of selects-ipk on Asterinas (Ramfs)",
             "value": "3.165",
+            "unit": "second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "jiangjianfeng",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "9219207b97f41ed412f2398b582eb4bb857c4ab8",
+          "message": "Add CLONE_PIDFD & pidfd_open support",
+          "timestamp": "2025-06-05T07:25:07Z",
+          "url": "https://github.com/asterinas/asterinas/commit/9219207b97f41ed412f2398b582eb4bb857c4ab8"
+        },
+        "date": 1753418262926,
+        "tool": "customSmallerIsBetter",
+        "title": "[Ramfs] The selects-ipk result of sqlite speedtest",
+        "description": "sqlite-speed-test: 70000 SELECTS on an IPK",
+        "display": false,
+        "benches": [
+          {
+            "name": "The speed of selects-ipk on Linux (Ramfs)",
+            "value": "2.884",
+            "unit": "second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "The speed of selects-ipk on Asterinas (Ramfs)",
+            "value": "3.153",
             "unit": "second",
             "extra": "aster_result"
           }
