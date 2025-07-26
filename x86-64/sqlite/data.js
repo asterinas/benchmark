@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1753506339095,
+  "lastUpdate": 1753506379006,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_deletes_between": [
@@ -73318,43 +73318,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Shaowei Song",
-            "username": "lucassong-mh",
-            "email": "songshaowei.ssw@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "764e3afa7c9a04b15afbaeb30f2bfa9df891176e",
-          "message": "Add a simple test case for OverlayFS",
-          "timestamp": "2025-04-24T07:58:29Z",
-          "url": "https://github.com/asterinas/asterinas/commit/764e3afa7c9a04b15afbaeb30f2bfa9df891176e"
-        },
-        "date": 1745552566455,
-        "tool": "customSmallerIsBetter",
-        "title": "[Ramfs] The updates-between result of sqlite speedtest",
-        "description": "sqlite-speed-test: 10000 UPDATES, numeric BETWEEN, indexed",
-        "display": false,
-        "benches": [
-          {
-            "name": "The speed of updates-between on Linux (Ramfs)",
-            "value": "1.667",
-            "unit": "second",
-            "extra": "linux_result"
-          },
-          {
-            "name": "The speed of updates-between on Asterinas (Ramfs)",
-            "value": "6.406",
-            "unit": "second",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Chen Chengjun",
             "username": "cchanging",
             "email": "chenchengjun.ccj@antgroup.com"
@@ -75530,6 +75493,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "The speed of updates-between on Asterinas (Ramfs)",
             "value": "2.038",
+            "unit": "second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "王英泰",
+            "username": "wyt8",
+            "email": "2253457010@qq.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "345cc9d0556eee0f680eb91d3355de7bd32181e8",
+          "message": "Save FPU context on signal stack for LoongArch",
+          "timestamp": "2025-07-19T17:40:45Z",
+          "url": "https://github.com/asterinas/asterinas/commit/345cc9d0556eee0f680eb91d3355de7bd32181e8"
+        },
+        "date": 1753506340193,
+        "tool": "customSmallerIsBetter",
+        "title": "[Ramfs] The updates-between result of sqlite speedtest",
+        "description": "sqlite-speed-test: 10000 UPDATES, numeric BETWEEN, indexed",
+        "display": false,
+        "benches": [
+          {
+            "name": "The speed of updates-between on Linux (Ramfs)",
+            "value": "1.734",
+            "unit": "second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "The speed of updates-between on Asterinas (Ramfs)",
+            "value": "2.067",
             "unit": "second",
             "extra": "aster_result"
           }
