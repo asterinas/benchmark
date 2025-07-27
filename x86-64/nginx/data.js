@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1753507682540,
+  "lastUpdate": 1753599573034,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "http_file4KB_bw": [
@@ -13337,43 +13337,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Hsy-Intel",
-            "username": "Hsy-Intel",
-            "email": "siyuan.hui@intel.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "ad6aa4960c11a712c56213bd30f0e271875337e5",
-          "message": "Bump the project version",
-          "timestamp": "2025-05-09T09:21:30Z",
-          "url": "https://github.com/asterinas/asterinas/commit/ad6aa4960c11a712c56213bd30f0e271875337e5"
-        },
-        "date": 1747103227033,
-        "tool": "customBiggerIsBetter",
-        "title": "Nginx HTTP request performance with 20 concurrency and 10000 requests in total",
-        "description": "ab -n 10000 -c 20 http://localhost:8080/index.html",
-        "display": false,
-        "benches": [
-          {
-            "name": "Average HTTP Bandwidth over virtio-net between Host Linux and Guest Linux",
-            "value": "15850.13",
-            "unit": "Kbytes/sec",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average HTTP Bandwidth over virtio-net between Host Linux and Guest Asterinas",
-            "value": "5242.34",
-            "unit": "Kbytes/sec",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "jiangjianfeng",
             "username": "StevenJiang1110",
             "email": "jiangjianfeng.jjf@antgroup.com"
@@ -15549,6 +15512,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average HTTP Bandwidth over virtio-net between Host Linux and Guest Asterinas",
             "value": "5470.26",
+            "unit": "Kbytes/sec",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "王英泰",
+            "username": "wyt8",
+            "email": "2253457010@qq.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "345cc9d0556eee0f680eb91d3355de7bd32181e8",
+          "message": "Save FPU context on signal stack for LoongArch",
+          "timestamp": "2025-07-19T17:40:45Z",
+          "url": "https://github.com/asterinas/asterinas/commit/345cc9d0556eee0f680eb91d3355de7bd32181e8"
+        },
+        "date": 1753599533659,
+        "tool": "customBiggerIsBetter",
+        "title": "Nginx HTTP request performance with 20 concurrency and 10000 requests in total",
+        "description": "ab -n 10000 -c 20 http://localhost:8080/index.html",
+        "display": false,
+        "benches": [
+          {
+            "name": "Average HTTP Bandwidth over virtio-net between Host Linux and Guest Linux",
+            "value": "35694.58",
+            "unit": "Kbytes/sec",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average HTTP Bandwidth over virtio-net between Host Linux and Guest Asterinas",
+            "value": "5771.84",
             "unit": "Kbytes/sec",
             "extra": "aster_result"
           }
