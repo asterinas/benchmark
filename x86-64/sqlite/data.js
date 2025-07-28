@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1753599129339,
+  "lastUpdate": 1753678964805,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_deletes_between": [
@@ -79998,43 +79998,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2025-04-25T08:16:50Z",
           "url": "https://github.com/asterinas/asterinas/commit/7def2649bab2131315b62b8d5340e1f3da97842e"
         },
-        "date": 1745718889055,
-        "tool": "customSmallerIsBetter",
-        "title": "[Ramfs] The 'VACUUM' result of sqlite speedtest",
-        "description": "sqlite-speed-test: repacking database file into a minimal amount of disk space",
-        "display": false,
-        "benches": [
-          {
-            "name": "The speed of VACUUM on Linux (Ramfs)",
-            "value": "1.179",
-            "unit": "second",
-            "extra": "linux_result"
-          },
-          {
-            "name": "The speed of VACUUM on Asterinas (Ramfs)",
-            "value": "3.316",
-            "unit": "second",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Chen Chengjun",
-            "username": "cchanging",
-            "email": "chenchengjun.ccj@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "7def2649bab2131315b62b8d5340e1f3da97842e",
-          "message": "Enable timerfd gvisor test",
-          "timestamp": "2025-04-25T08:16:50Z",
-          "url": "https://github.com/asterinas/asterinas/commit/7def2649bab2131315b62b8d5340e1f3da97842e"
-        },
         "date": 1745807751146,
         "tool": "customSmallerIsBetter",
         "title": "[Ramfs] The 'VACUUM' result of sqlite speedtest",
@@ -82196,6 +82159,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "The speed of VACUUM on Asterinas (Ramfs)",
             "value": "0.980",
+            "unit": "second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "王英泰",
+            "username": "wyt8",
+            "email": "2253457010@qq.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "345cc9d0556eee0f680eb91d3355de7bd32181e8",
+          "message": "Save FPU context on signal stack for LoongArch",
+          "timestamp": "2025-07-19T17:40:45Z",
+          "url": "https://github.com/asterinas/asterinas/commit/345cc9d0556eee0f680eb91d3355de7bd32181e8"
+        },
+        "date": 1753678924611,
+        "tool": "customSmallerIsBetter",
+        "title": "[Ramfs] The 'VACUUM' result of sqlite speedtest",
+        "description": "sqlite-speed-test: repacking database file into a minimal amount of disk space",
+        "display": false,
+        "benches": [
+          {
+            "name": "The speed of VACUUM on Linux (Ramfs)",
+            "value": "0.854",
+            "unit": "second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "The speed of VACUUM on Asterinas (Ramfs)",
+            "value": "0.974",
             "unit": "second",
             "extra": "aster_result"
           }
