@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1753874970764,
+  "lastUpdate": 1753875013178,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -64415,43 +64415,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Hsy-Intel",
-            "username": "Hsy-Intel",
-            "email": "siyuan.hui@intel.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "dec7ac1346649a0ef1a1256da258cd2f9f11ac4b",
-          "message": "Add safety check to `stop_guest` function to prevent killing non-existent processes",
-          "timestamp": "2025-05-16T01:17:00Z",
-          "url": "https://github.com/asterinas/asterinas/commit/dec7ac1346649a0ef1a1256da258cd2f9f11ac4b"
-        },
-        "date": 1747715143047,
-        "tool": "customBiggerIsBetter",
-        "title": "[TCP sockets] The bandwidth (loopback, 4KB message)",
-        "description": "bw_tcp -l",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average TCP bandwidth on Linux",
-            "value": "4408.07",
-            "unit": "MB/s",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average TCP bandwidth on Asterinas",
-            "value": "3715.50",
-            "unit": "MB/s",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Qingsong Chen",
             "username": "cqs21",
             "email": "changxian.cqs@antgroup.com"
@@ -66627,6 +66590,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average TCP bandwidth on Asterinas",
             "value": "4137.45",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tate.thl@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "659f079c2d41c2cecb3fc06ec62cbece1f67f86e",
+          "message": "Revise the doc of OSTD's scheduling module",
+          "timestamp": "2025-07-26T10:52:27Z",
+          "url": "https://github.com/asterinas/asterinas/commit/659f079c2d41c2cecb3fc06ec62cbece1f67f86e"
+        },
+        "date": 1753874972163,
+        "tool": "customBiggerIsBetter",
+        "title": "[TCP sockets] The bandwidth (loopback, 4KB message)",
+        "description": "bw_tcp -l",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average TCP bandwidth on Linux",
+            "value": "4411.73",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average TCP bandwidth on Asterinas",
+            "value": "4048.54",
             "unit": "MB/s",
             "extra": "aster_result"
           }
