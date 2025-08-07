@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1754598009401,
+  "lastUpdate": 1754598053205,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_deletes_between": [
@@ -44446,43 +44446,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2025-04-30T12:59:53Z",
           "url": "https://github.com/asterinas/asterinas/commit/54bd64269bd688b149b7f48f063f0e8cf2704a01"
         },
-        "date": 1746411477309,
-        "tool": "customSmallerIsBetter",
-        "title": "[Ext2] The selects-ipk result of sqlite speedtest",
-        "description": "sqlite-speed-test: 70000 SELECTS on an IPK",
-        "display": false,
-        "benches": [
-          {
-            "name": "The speed of selects-ipk on Linux (Ext2)",
-            "value": "3.099",
-            "unit": "second",
-            "extra": "linux_result"
-          },
-          {
-            "name": "The speed of selects-ipk on Asterinas (Ext2)",
-            "value": "11.816",
-            "unit": "second",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "54bd64269bd688b149b7f48f063f0e8cf2704a01",
-          "message": "Rename `systree` to `aster-systree`",
-          "timestamp": "2025-04-30T12:59:53Z",
-          "url": "https://github.com/asterinas/asterinas/commit/54bd64269bd688b149b7f48f063f0e8cf2704a01"
-        },
         "date": 1746503129902,
         "tool": "customSmallerIsBetter",
         "title": "[Ext2] The selects-ipk result of sqlite speedtest",
@@ -46644,6 +46607,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "The speed of selects-ipk on Asterinas (Ext2)",
             "value": "3.557",
+            "unit": "second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Zejun Zhao",
+            "username": "jellllly420",
+            "email": "jelly.zhao.42@gmail.com"
+          },
+          "committer": {
+            "name": "Jianfeng Jiang",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "id": "b76d61d2682f2ceb3ee9517895fbce1aef92b02c",
+          "message": "Show function name in panic stack trace",
+          "timestamp": "2025-08-03T16:25:53Z",
+          "url": "https://github.com/asterinas/asterinas/commit/b76d61d2682f2ceb3ee9517895fbce1aef92b02c"
+        },
+        "date": 1754598011155,
+        "tool": "customSmallerIsBetter",
+        "title": "[Ext2] The selects-ipk result of sqlite speedtest",
+        "description": "sqlite-speed-test: 70000 SELECTS on an IPK",
+        "display": false,
+        "benches": [
+          {
+            "name": "The speed of selects-ipk on Linux (Ext2)",
+            "value": "3.347",
+            "unit": "second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "The speed of selects-ipk on Asterinas (Ext2)",
+            "value": "14.052",
             "unit": "second",
             "extra": "aster_result"
           }
