@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1754668196567,
+  "lastUpdate": 1754668240894,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "smp1_p50_rps": [
@@ -2242,43 +2242,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2025-05-16T01:17:00Z",
           "url": "https://github.com/asterinas/asterinas/commit/dec7ac1346649a0ef1a1256da258cd2f9f11ac4b"
         },
-        "date": 1747534528719,
-        "tool": "customSmallerIsBetter",
-        "title": "[Scheduler] P99 request latency while max-loading all CPUs (SMP=1)",
-        "description": "schbench -F 256 -n 5 -r 90",
-        "display": false,
-        "benches": [
-          {
-            "name": "P99 request latency of schbench on Linux",
-            "value": "2564",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "P99 request latency of schbench on Asterinas",
-            "value": "5032",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Hsy-Intel",
-            "username": "Hsy-Intel",
-            "email": "siyuan.hui@intel.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "dec7ac1346649a0ef1a1256da258cd2f9f11ac4b",
-          "message": "Add safety check to `stop_guest` function to prevent killing non-existent processes",
-          "timestamp": "2025-05-16T01:17:00Z",
-          "url": "https://github.com/asterinas/asterinas/commit/dec7ac1346649a0ef1a1256da258cd2f9f11ac4b"
-        },
         "date": 1747623390062,
         "tool": "customSmallerIsBetter",
         "title": "[Scheduler] P99 request latency while max-loading all CPUs (SMP=1)",
@@ -4440,6 +4403,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "P99 request latency of schbench on Asterinas",
             "value": "3020",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "cfa4a6fba33d45de25de153c809ea4d02c27d231",
+          "message": "Specify SCHEME in Makefile for LoongArch",
+          "timestamp": "2025-08-05T17:16:48Z",
+          "url": "https://github.com/asterinas/asterinas/commit/cfa4a6fba33d45de25de153c809ea4d02c27d231"
+        },
+        "date": 1754668198237,
+        "tool": "customSmallerIsBetter",
+        "title": "[Scheduler] P99 request latency while max-loading all CPUs (SMP=1)",
+        "description": "schbench -F 256 -n 5 -r 90",
+        "display": false,
+        "benches": [
+          {
+            "name": "P99 request latency of schbench on Linux",
+            "value": "2572",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "P99 request latency of schbench on Asterinas",
+            "value": "6072",
             "unit": "µs",
             "extra": "aster_result"
           }
