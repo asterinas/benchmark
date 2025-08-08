@@ -1,45 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1754217385657,
+  "lastUpdate": 1754662245897,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "tcp_virtio_bw": [
-      {
-        "commit": {
-          "author": {
-            "name": "Hsy-Intel",
-            "username": "Hsy-Intel",
-            "email": "siyuan.hui@intel.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "dec7ac1346649a0ef1a1256da258cd2f9f11ac4b",
-          "message": "Add safety check to `stop_guest` function to prevent killing non-existent processes",
-          "timestamp": "2025-05-16T01:17:00Z",
-          "url": "https://github.com/asterinas/asterinas/commit/dec7ac1346649a0ef1a1256da258cd2f9f11ac4b"
-        },
-        "date": 1747535672896,
-        "tool": "customBiggerIsBetter",
-        "title": "[Network] iperf3 sender performance using TCP (virtio-net)",
-        "description": "iperf3 -s -B 10.0.2.15",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average TCP Bandwidth over virtio-net between Host Linux and Guest Linux",
-            "value": "6231",
-            "unit": "Mbits/sec",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average TCP Bandwidth over virtio-net between Host Linux and Guest Asterinas",
-            "value": "1919",
-            "unit": "Mbits/sec",
-            "extra": "aster_result"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2218,6 +2181,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average TCP Bandwidth over virtio-net between Host Linux and Guest Asterinas",
             "value": "5057",
+            "unit": "Mbits/sec",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Jianfeng Jiang",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "id": "db66946e22b687850b68515a334f7f3b0abbe392",
+          "message": "Re-enable several debug runs in CI",
+          "timestamp": "2025-07-30T08:28:04Z",
+          "url": "https://github.com/asterinas/asterinas/commit/db66946e22b687850b68515a334f7f3b0abbe392"
+        },
+        "date": 1754662203708,
+        "tool": "customBiggerIsBetter",
+        "title": "[Network] iperf3 sender performance using TCP (virtio-net)",
+        "description": "iperf3 -s -B 10.0.2.15",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average TCP Bandwidth over virtio-net between Host Linux and Guest Linux",
+            "value": "8052",
+            "unit": "Mbits/sec",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average TCP Bandwidth over virtio-net between Host Linux and Guest Asterinas",
+            "value": "2608",
             "unit": "Mbits/sec",
             "extra": "aster_result"
           }
