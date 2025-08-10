@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1754789102564,
+  "lastUpdate": 1754789146676,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_deletes_between": [
@@ -62208,43 +62208,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Chen Chengjun",
-            "username": "cchanging",
-            "email": "chenchengjun.ccj@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "725a46fe72546af880ea183cf6d4b35349b709c6",
-          "message": "Modify VMO usages and fix the atomic-mode issue during handling page fault",
-          "timestamp": "2025-04-30T02:09:38Z",
-          "url": "https://github.com/asterinas/asterinas/commit/725a46fe72546af880ea183cf6d4b35349b709c6"
-        },
-        "date": 1746242287930,
-        "tool": "customSmallerIsBetter",
-        "title": "[Ramfs] The deletes-individual result of sqlite speedtest",
-        "description": "sqlite-speed-test: 50000 DELETEs of individual rows",
-        "display": false,
-        "benches": [
-          {
-            "name": "The speed of deletes-individual on Linux (Ramfs)",
-            "value": "2.042",
-            "unit": "second",
-            "extra": "linux_result"
-          },
-          {
-            "name": "The speed of deletes-individual on Asterinas (Ramfs)",
-            "value": "7.854",
-            "unit": "second",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Ruihan Li",
             "username": "lrh2000",
             "email": "lrh2000@pku.edu.cn"
@@ -64420,6 +64383,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "The speed of deletes-individual on Asterinas (Ramfs)",
             "value": "2.024",
+            "unit": "second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tate.thl@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "f2ead0b3edfe621b6c37bdfb61172023b5abc3d7",
+          "message": "Remove O_TMPFILE flag because it is not really supported",
+          "timestamp": "2025-08-07T14:02:40Z",
+          "url": "https://github.com/asterinas/asterinas/commit/f2ead0b3edfe621b6c37bdfb61172023b5abc3d7"
+        },
+        "date": 1754789103717,
+        "tool": "customSmallerIsBetter",
+        "title": "[Ramfs] The deletes-individual result of sqlite speedtest",
+        "description": "sqlite-speed-test: 50000 DELETEs of individual rows",
+        "display": false,
+        "benches": [
+          {
+            "name": "The speed of deletes-individual on Linux (Ramfs)",
+            "value": "2.036",
+            "unit": "second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "The speed of deletes-individual on Asterinas (Ramfs)",
+            "value": "2.027",
             "unit": "second",
             "extra": "aster_result"
           }
