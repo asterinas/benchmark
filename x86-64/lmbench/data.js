@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1754960983493,
+  "lastUpdate": 1754961028396,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -48868,43 +48868,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Zejun Zhao",
-            "username": "jellllly420",
-            "email": "jelly.zhao.42@gmail.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "ffb40974364c74ee3adaffdf8a7063b575233807",
-          "message": "Add RISC-V timer support",
-          "timestamp": "2025-04-28T03:04:29Z",
-          "url": "https://github.com/asterinas/asterinas/commit/ffb40974364c74ee3adaffdf8a7063b575233807"
-        },
-        "date": 1748578226742,
-        "tool": "customBiggerIsBetter",
-        "title": "[VFS] The bandwidth of file reads via page cache",
-        "description": "bw_file_rd",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average file read bandwidth on Linux",
-            "value": "10151.28",
-            "unit": "MB/s",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average file read bandwidth on Asterinas",
-            "value": "3636.01",
-            "unit": "MB/s",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Ruihan Li",
             "username": "lrh2000",
             "email": "lrh2000@pku.edu.cn"
@@ -51079,6 +51042,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average file read bandwidth on Asterinas",
             "value": "10214.05",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "53bb7ea8ae4ccca020ea1d3f5e047dca4124edba",
+          "message": "Assign keyboard code owners",
+          "timestamp": "2025-08-11T10:46:32Z",
+          "url": "https://github.com/asterinas/asterinas/commit/53bb7ea8ae4ccca020ea1d3f5e047dca4124edba"
+        },
+        "date": 1754960984769,
+        "tool": "customBiggerIsBetter",
+        "title": "[VFS] The bandwidth of file reads via page cache",
+        "description": "bw_file_rd",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average file read bandwidth on Linux",
+            "value": "8987.99",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average file read bandwidth on Asterinas",
+            "value": "10601.30",
             "unit": "MB/s",
             "extra": "aster_result"
           }
