@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1755486053092,
+  "lastUpdate": 1755486100399,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -6669,43 +6669,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "5f28b48ca4afc7cece79d004370f3174b1ba4bda",
-          "message": "Assign framebuffer code owners",
-          "timestamp": "2025-06-10T05:24:21Z",
-          "url": "https://github.com/asterinas/asterinas/commit/5f28b48ca4afc7cece79d004370f3174b1ba4bda"
-        },
-        "date": 1749643492604,
-        "tool": "customSmallerIsBetter",
-        "title": "[Process] The cost of getppid",
-        "description": "lat_syscall null",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average syscall latency on Linux",
-            "value": "0.0901",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average syscall latency on Asterinas",
-            "value": "0.1163",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Cautreoxit",
             "username": "Cautreoxit",
             "email": "huk@stu.pku.edu.cn"
@@ -8880,6 +8843,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average syscall latency on Asterinas",
             "value": "0.1059",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Zhang Junyang",
+            "username": "junyang-zh",
+            "email": "junyang@stu.pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "1452aab69c9d0bf5ada7ea8a93a49fd0badafcca",
+          "message": "Optimize the space for `TlbFlushOp`s",
+          "timestamp": "2025-08-14T14:08:56Z",
+          "url": "https://github.com/asterinas/asterinas/commit/1452aab69c9d0bf5ada7ea8a93a49fd0badafcca"
+        },
+        "date": 1755486054316,
+        "tool": "customSmallerIsBetter",
+        "title": "[Process] The cost of getppid",
+        "description": "lat_syscall null",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average syscall latency on Linux",
+            "value": "0.1122",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average syscall latency on Asterinas",
+            "value": "0.1061",
             "unit": "µs",
             "extra": "aster_result"
           }
