@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1755568073423,
+  "lastUpdate": 1755568123323,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -44426,43 +44426,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Wang Siyuan",
-            "username": "vvvvsv",
-            "email": "wsy@stu.pku.edu.cn"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "b605bed5764ec21ec847f0357ed564329f165762",
-          "message": "Fix some typos",
-          "timestamp": "2025-06-12T03:13:04Z",
-          "url": "https://github.com/asterinas/asterinas/commit/b605bed5764ec21ec847f0357ed564329f165762"
-        },
-        "date": 1749775634354,
-        "tool": "customSmallerIsBetter",
-        "title": "[VFS] The cost of stat",
-        "description": "lat_syscall stat",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average stat latency on Linux",
-            "value": "0.3211",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average stat latency on Asterinas",
-            "value": "0.4881",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Zhang Junyang",
             "username": "junyang-zh",
             "email": "junyang@stu.pku.edu.cn"
@@ -46637,6 +46600,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average stat latency on Asterinas",
             "value": "0.4715",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Zhang Junyang",
+            "username": "junyang-zh",
+            "email": "junyang@stu.pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "1452aab69c9d0bf5ada7ea8a93a49fd0badafcca",
+          "message": "Optimize the space for `TlbFlushOp`s",
+          "timestamp": "2025-08-14T14:08:56Z",
+          "url": "https://github.com/asterinas/asterinas/commit/1452aab69c9d0bf5ada7ea8a93a49fd0badafcca"
+        },
+        "date": 1755568075128,
+        "tool": "customSmallerIsBetter",
+        "title": "[VFS] The cost of stat",
+        "description": "lat_syscall stat",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average stat latency on Linux",
+            "value": "0.4039",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average stat latency on Asterinas",
+            "value": "0.4713",
             "unit": "µs",
             "extra": "aster_result"
           }
