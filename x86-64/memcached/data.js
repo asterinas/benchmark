@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1755820390482,
+  "lastUpdate": 1755820586240,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "t8_conc32_window10k": [
@@ -4464,43 +4464,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2025-05-16T01:17:00Z",
           "url": "https://github.com/asterinas/asterinas/commit/dec7ac1346649a0ef1a1256da258cd2f9f11ac4b"
         },
-        "date": 1747449684626,
-        "tool": "customBiggerIsBetter",
-        "title": "Memaslap 10% SET and 90% GET throughput (virtio-net, 16 client threads, 64 concurrency, 10k window)",
-        "description": "memaslap -t 30s -T 16 -c 64 -w 10k -S 1s",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average OPS of SET and GET over virtio-net between Host Linux and Guest Linux",
-            "value": "3027006",
-            "unit": "operations per second",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average OPS of SET and GET over virtio-net between Host Linux and Guest Asterinas",
-            "value": "2881971",
-            "unit": "operations per second",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Hsy-Intel",
-            "username": "Hsy-Intel",
-            "email": "siyuan.hui@intel.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "dec7ac1346649a0ef1a1256da258cd2f9f11ac4b",
-          "message": "Add safety check to `stop_guest` function to prevent killing non-existent processes",
-          "timestamp": "2025-05-16T01:17:00Z",
-          "url": "https://github.com/asterinas/asterinas/commit/dec7ac1346649a0ef1a1256da258cd2f9f11ac4b"
-        },
         "date": 1747534804741,
         "tool": "customBiggerIsBetter",
         "title": "Memaslap 10% SET and 90% GET throughput (virtio-net, 16 client threads, 64 concurrency, 10k window)",
@@ -6662,6 +6625,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average OPS of SET and GET over virtio-net between Host Linux and Guest Asterinas",
             "value": "3514730",
+            "unit": "operations per second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tate.thl@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "9ab035c65491676d4ef46e52ede31ce6998a0b59",
+          "message": "Rename the docs directory to book",
+          "timestamp": "2025-08-21T10:40:35Z",
+          "url": "https://github.com/asterinas/asterinas/commit/9ab035c65491676d4ef46e52ede31ce6998a0b59"
+        },
+        "date": 1755820391327,
+        "tool": "customBiggerIsBetter",
+        "title": "Memaslap 10% SET and 90% GET throughput (virtio-net, 16 client threads, 64 concurrency, 10k window)",
+        "description": "memaslap -t 30s -T 16 -c 64 -w 10k -S 1s",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average OPS of SET and GET over virtio-net between Host Linux and Guest Linux",
+            "value": "5427482",
+            "unit": "operations per second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average OPS of SET and GET over virtio-net between Host Linux and Guest Asterinas",
+            "value": "4716706",
             "unit": "operations per second",
             "extra": "aster_result"
           }
