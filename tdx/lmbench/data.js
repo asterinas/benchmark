@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1755823892820,
+  "lastUpdate": 1755823942505,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -33335,43 +33335,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2025-05-13T04:56:07Z",
           "url": "https://github.com/asterinas/asterinas/commit/d71ea25c06ed7ed427917cec77d3761ddc67d686"
         },
-        "date": 1747221275554,
-        "tool": "customBiggerIsBetter",
-        "title": "[Unix sockets] The bandwidth (64KB message)",
-        "description": "bw_unix",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average unix bandwidth on Linux",
-            "value": "6799.82",
-            "unit": "MB/s",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average unix bandwidth on Asterinas",
-            "value": "9951.62",
-            "unit": "MB/s",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "jiangjianfeng",
-            "username": "StevenJiang1110",
-            "email": "jiangjianfeng.jjf@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "d71ea25c06ed7ed427917cec77d3761ddc67d686",
-          "message": "Publish the heap allocator after updating the version",
-          "timestamp": "2025-05-13T04:56:07Z",
-          "url": "https://github.com/asterinas/asterinas/commit/d71ea25c06ed7ed427917cec77d3761ddc67d686"
-        },
         "date": 1747309497503,
         "tool": "customBiggerIsBetter",
         "title": "[Unix sockets] The bandwidth (64KB message)",
@@ -35532,6 +35495,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average unix bandwidth on Asterinas",
             "value": "10211.58",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tate.thl@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "9ab035c65491676d4ef46e52ede31ce6998a0b59",
+          "message": "Rename the docs directory to book",
+          "timestamp": "2025-08-21T10:40:35Z",
+          "url": "https://github.com/asterinas/asterinas/commit/9ab035c65491676d4ef46e52ede31ce6998a0b59"
+        },
+        "date": 1755823894251,
+        "tool": "customBiggerIsBetter",
+        "title": "[Unix sockets] The bandwidth (64KB message)",
+        "description": "bw_unix",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average unix bandwidth on Linux",
+            "value": "7733.65",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average unix bandwidth on Asterinas",
+            "value": "10260.72",
             "unit": "MB/s",
             "extra": "aster_result"
           }
