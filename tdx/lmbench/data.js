@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1755826441384,
+  "lastUpdate": 1755826491822,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -4448,43 +4448,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Hsy-Intel",
-            "username": "Hsy-Intel",
-            "email": "siyuan.hui@intel.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "ad6aa4960c11a712c56213bd30f0e271875337e5",
-          "message": "Bump the project version",
-          "timestamp": "2025-05-09T09:21:30Z",
-          "url": "https://github.com/asterinas/asterinas/commit/ad6aa4960c11a712c56213bd30f0e271875337e5"
-        },
-        "date": 1747138479265,
-        "tool": "customSmallerIsBetter",
-        "title": "[Memory] The cost of mmap+unmap",
-        "description": "lat_mmap",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average mmap latency on Linux",
-            "value": "26",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average mmap latency on Asterinas",
-            "value": "64",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "jiangjianfeng",
             "username": "StevenJiang1110",
             "email": "jiangjianfeng.jjf@antgroup.com"
@@ -6659,6 +6622,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average mmap latency on Asterinas",
             "value": "19",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tate.thl@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "9ab035c65491676d4ef46e52ede31ce6998a0b59",
+          "message": "Rename the docs directory to book",
+          "timestamp": "2025-08-21T10:40:35Z",
+          "url": "https://github.com/asterinas/asterinas/commit/9ab035c65491676d4ef46e52ede31ce6998a0b59"
+        },
+        "date": 1755826442831,
+        "tool": "customSmallerIsBetter",
+        "title": "[Memory] The cost of mmap+unmap",
+        "description": "lat_mmap",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average mmap latency on Linux",
+            "value": "27",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average mmap latency on Asterinas",
+            "value": "23",
             "unit": "µs",
             "extra": "aster_result"
           }
