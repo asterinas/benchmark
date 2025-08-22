@@ -1,45 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1755826741236,
+  "lastUpdate": 1755826791049,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_seq_write_bw": [
-      {
-        "commit": {
-          "author": {
-            "name": "Zhang Junyang",
-            "username": "junyang-zh",
-            "email": "junyang@stu.pku.edu.cn"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "a2aedcfb3afa31d8cf27b9b458df7103e3c68bfe",
-          "message": "Add a SMP LTP block list",
-          "timestamp": "2025-06-13T12:56:46Z",
-          "url": "https://github.com/asterinas/asterinas/commit/a2aedcfb3afa31d8cf27b9b458df7103e3c68bfe"
-        },
-        "date": 1749951831100,
-        "tool": "customBiggerIsBetter",
-        "title": "[Ext2] The bandwidth of sequential writes",
-        "description": "fio -filename=/ext2/fio-test -size=1G -bs=1M -direct=1",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average file write bandwidth on Linux",
-            "value": "2029",
-            "unit": "MB/s",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average file write bandwidth on Asterinas",
-            "value": "2339",
-            "unit": "MB/s",
-            "extra": "aster_result"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2211,6 +2174,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average file write bandwidth on Linux",
             "value": "1176",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average file write bandwidth on Asterinas",
+            "value": "1388",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tate.thl@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "9ab035c65491676d4ef46e52ede31ce6998a0b59",
+          "message": "Rename the docs directory to book",
+          "timestamp": "2025-08-21T10:40:35Z",
+          "url": "https://github.com/asterinas/asterinas/commit/9ab035c65491676d4ef46e52ede31ce6998a0b59"
+        },
+        "date": 1755826742159,
+        "tool": "customBiggerIsBetter",
+        "title": "[Ext2] The bandwidth of sequential writes",
+        "description": "fio -filename=/ext2/fio-test -size=1G -bs=1M -direct=1",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average file write bandwidth on Linux",
+            "value": "1074",
             "unit": "MB/s",
             "extra": "linux_result"
           },
