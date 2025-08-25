@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1756165801929,
+  "lastUpdate": 1756165854577,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -24437,43 +24437,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
-            "name": "Jianfeng Jiang",
-            "username": "StevenJiang1110",
-            "email": "jiangjianfeng.jjf@antgroup.com"
-          },
-          "id": "bcf1e69878540e81ab15d79eee2f81f1f0787bba",
-          "message": "Expose `head`/`tail` of `RingBuffer`",
-          "timestamp": "2025-06-15T17:00:24Z",
-          "url": "https://github.com/asterinas/asterinas/commit/bcf1e69878540e81ab15d79eee2f81f1f0787bba"
-        },
-        "date": 1750387727402,
-        "tool": "customSmallerIsBetter",
-        "title": "[Pipes] The cost of write+read (1B)",
-        "description": "lat_pipe",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average pipe latency on Linux",
-            "value": "2.4723",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average pipe latency on Asterinas",
-            "value": "2.8800",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Marsman1996",
             "username": "Marsman1996",
             "email": "lqliuyuwei@outlook.com"
@@ -26648,6 +26611,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average pipe latency on Asterinas",
             "value": "3.2300",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Chen Chengjun",
+            "username": "cchanging",
+            "email": "chenchengjun.ccj@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "3882eb40000826020c6ffe5026e0f8d6ecb3b902",
+          "message": "Update docker version reference",
+          "timestamp": "2025-08-22T13:31:13Z",
+          "url": "https://github.com/asterinas/asterinas/commit/3882eb40000826020c6ffe5026e0f8d6ecb3b902"
+        },
+        "date": 1756165803817,
+        "tool": "customSmallerIsBetter",
+        "title": "[Pipes] The cost of write+read (1B)",
+        "description": "lat_pipe",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average pipe latency on Linux",
+            "value": "3.0619",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average pipe latency on Asterinas",
+            "value": "3.2332",
             "unit": "µs",
             "extra": "aster_result"
           }
