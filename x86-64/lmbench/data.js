@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1756253451504,
+  "lastUpdate": 1756253514822,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -97734,43 +97734,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
-            "name": "Jianfeng Jiang",
-            "username": "StevenJiang1110",
-            "email": "jiangjianfeng.jjf@antgroup.com"
-          },
-          "id": "bcf1e69878540e81ab15d79eee2f81f1f0787bba",
-          "message": "Expose `head`/`tail` of `RingBuffer`",
-          "timestamp": "2025-06-15T17:00:24Z",
-          "url": "https://github.com/asterinas/asterinas/commit/bcf1e69878540e81ab15d79eee2f81f1f0787bba"
-        },
-        "date": 1750386914132,
-        "tool": "customSmallerIsBetter",
-        "title": "[VFS] The cost of record locking/unlocking via fcntl",
-        "description": "lat_fcntl",
-        "display": false,
-        "benches": [
-          {
-            "name": "Average file locking latency on Linux",
-            "value": "2.0193",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average file locking latency on Asterinas",
-            "value": "0.6489",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Marsman1996",
             "username": "Marsman1996",
             "email": "lqliuyuwei@outlook.com"
@@ -99945,6 +99908,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average file locking latency on Asterinas",
             "value": "0.7520",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Arthur Paulino",
+            "username": "arthurpaulino",
+            "email": "arthurleonardo.ap@gmail.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "888eecb3509dac97ca739dabafbb5777d269a154",
+          "message": "Patch a futex vulnerability\n\nIf the futex wait operation was interrupted by a signal or timed out, the\n`FutexItem` must be dequeued and dropped. Otherwise, malicious user programs\ncould repeatedly issue futex wait operations to exhaust kernel memory.\n\nDue to asynchronicity, this removal can't be done by queue position nor by\nfutex key match up:\n* The position might have changed during the pause as some earlier futex might\n  have been dequeued\n* If two futexes with the same key are enqueued and then one of them times out\n  or is interrupted, a removal by key would likely dequeue the wrong futex\n\nTherefore, we need to perform a removal by unique global futex ID.",
+          "timestamp": "2025-08-26T08:43:06Z",
+          "url": "https://github.com/asterinas/asterinas/commit/888eecb3509dac97ca739dabafbb5777d269a154"
+        },
+        "date": 1756253453330,
+        "tool": "customSmallerIsBetter",
+        "title": "[VFS] The cost of record locking/unlocking via fcntl",
+        "description": "lat_fcntl",
+        "display": false,
+        "benches": [
+          {
+            "name": "Average file locking latency on Linux",
+            "value": "2.8169",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average file locking latency on Asterinas",
+            "value": "0.7481",
             "unit": "µs",
             "extra": "aster_result"
           }
