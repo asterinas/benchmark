@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1756425452992,
+  "lastUpdate": 1756425506384,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -2227,43 +2227,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Wang Siyuan",
-            "username": "vvvvsv",
-            "email": "wsy@stu.pku.edu.cn"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "11f9675f378d95ea124545c230d21abcf0bb361d",
-          "message": "Support the system call `mremap`",
-          "timestamp": "2025-06-16T07:39:56Z",
-          "url": "https://github.com/asterinas/asterinas/commit/11f9675f378d95ea124545c230d21abcf0bb361d"
-        },
-        "date": 1750555460847,
-        "tool": "customBiggerIsBetter",
-        "title": "[Memory] The bandwidth of mmap",
-        "description": "bw_mmap",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average mmap bandwidth on Linux",
-            "value": "26389.64",
-            "unit": "MB/s",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average mmap bandwidth on Asterinas",
-            "value": "21113.38",
-            "unit": "MB/s",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Marsman1996",
             "username": "Marsman1996",
             "email": "lqliuyuwei@outlook.com"
@@ -4438,6 +4401,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average mmap bandwidth on Asterinas",
             "value": "23694.54",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Zejun Zhao",
+            "username": "jellllly420",
+            "email": "jelly.zhao.42@gmail.com"
+          },
+          "committer": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "3329907643@qq.com"
+          },
+          "id": "d3e27ae03a41e7e3dd51293d722ea91fefd44218",
+          "message": "Use vDSO for fallback of user-provided sa_restorer on RISC-V platforms",
+          "timestamp": "2025-08-28T03:20:27Z",
+          "url": "https://github.com/asterinas/asterinas/commit/d3e27ae03a41e7e3dd51293d722ea91fefd44218"
+        },
+        "date": 1756425454200,
+        "tool": "customBiggerIsBetter",
+        "title": "[Memory] The bandwidth of mmap",
+        "description": "bw_mmap",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average mmap bandwidth on Linux",
+            "value": "24277.42",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average mmap bandwidth on Asterinas",
+            "value": "24597.77",
             "unit": "MB/s",
             "extra": "aster_result"
           }
