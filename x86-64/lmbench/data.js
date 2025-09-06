@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1757135145698,
+  "lastUpdate": 1757135198497,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -79964,43 +79964,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Marsman1996",
-            "username": "Marsman1996",
-            "email": "lqliuyuwei@outlook.com"
-          },
-          "committer": {
-            "name": "Jianfeng Jiang",
-            "username": "StevenJiang1110",
-            "email": "jiangjianfeng.jjf@antgroup.com"
-          },
-          "id": "bb3f21b41eec5588974e69d775d6f0f2fea7e2d4",
-          "message": "Fix integer overflow in futex wake",
-          "timestamp": "2025-06-20T07:45:05Z",
-          "url": "https://github.com/asterinas/asterinas/commit/bb3f21b41eec5588974e69d775d6f0f2fea7e2d4"
-        },
-        "date": 1750471405283,
-        "tool": "customBiggerIsBetter",
-        "title": "[TCP sockets] The bandwidth (virtio-net, 64KB message)",
-        "description": "bw_tcp -l",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average TCP bandwidth on Linux",
-            "value": "425.56",
-            "unit": "MB/sec",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average TCP bandwidth on Asterinas",
-            "value": "629.19",
-            "unit": "MB/sec",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Wang Siyuan",
             "username": "vvvvsv",
             "email": "wsy@stu.pku.edu.cn"
@@ -82175,6 +82138,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average TCP bandwidth on Asterinas",
             "value": "152.30",
+            "unit": "MB/sec",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Arthur Paulino",
+            "username": "arthurpaulino",
+            "email": "arthurleonardo.ap@gmail.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "f56d2f3bad8ff769b50507356c0306488926d1cb",
+          "message": "`context.rs` enhancements\n\n* Improve the phrasing of some docstrings and comments\n* Add warning comments about attempts to validate memory addresses\n  at reader/writer instantiation time\n* Create the `reader_writer` method for ergonomically instantiate\n  a reader/writer pair covering the same memory region. This method\n  is also slightly more efficient than calling `reader` and `writer`\n  separately\n* Clean up `check_vaddr` for clarity and rename it to `check_vaddr_lowerbound`\n  for explicity\n* Include the data length check before calling `check_vaddr_lowerbound`\n  in `atomic_load` and `atomic_fetch_update` for further consistency\n  with the delayed buffer validation",
+          "timestamp": "2025-08-29T09:58:10Z",
+          "url": "https://github.com/asterinas/asterinas/commit/f56d2f3bad8ff769b50507356c0306488926d1cb"
+        },
+        "date": 1757135146839,
+        "tool": "customBiggerIsBetter",
+        "title": "[TCP sockets] The bandwidth (virtio-net, 64KB message)",
+        "description": "bw_tcp -l",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average TCP bandwidth on Linux",
+            "value": "194.97",
+            "unit": "MB/sec",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average TCP bandwidth on Asterinas",
+            "value": "206.36",
             "unit": "MB/sec",
             "extra": "aster_result"
           }
