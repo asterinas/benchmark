@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1757194196070,
+  "lastUpdate": 1757194249490,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_deletes_between": [
@@ -48876,43 +48876,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Marsman1996",
-            "username": "Marsman1996",
-            "email": "lqliuyuwei@outlook.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "01328ee4040930274dcd30725be7b223198c18cc",
-          "message": "Fix panic when mount with invalid file system type",
-          "timestamp": "2025-06-06T09:52:08Z",
-          "url": "https://github.com/asterinas/asterinas/commit/01328ee4040930274dcd30725be7b223198c18cc"
-        },
-        "date": 1749639496595,
-        "tool": "customSmallerIsBetter",
-        "title": "[Ext2] The total result of sqlite speedtest",
-        "description": "sqlite-speed-test: total",
-        "display": false,
-        "benches": [
-          {
-            "name": "Total speed on Linux (Ext2)",
-            "value": "62.267",
-            "unit": "second",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Total speed on Asterinas (Ext2)",
-            "value": "78.957",
-            "unit": "second",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Ruihan Li",
             "username": "lrh2000",
             "email": "lrh2000@pku.edu.cn"
@@ -51088,6 +51051,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Total speed on Asterinas (Ext2)",
             "value": "85.396",
+            "unit": "second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tate.thl@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "d4d84f18b7288f7251c779aad5749de9ffbe368f",
+          "message": "Remove the outdated Github issue template for RFC",
+          "timestamp": "2025-09-05T09:37:12Z",
+          "url": "https://github.com/asterinas/asterinas/commit/d4d84f18b7288f7251c779aad5749de9ffbe368f"
+        },
+        "date": 1757194197084,
+        "tool": "customSmallerIsBetter",
+        "title": "[Ext2] The total result of sqlite speedtest",
+        "description": "sqlite-speed-test: total",
+        "display": false,
+        "benches": [
+          {
+            "name": "Total speed on Linux (Ext2)",
+            "value": "81.929",
+            "unit": "second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Total speed on Asterinas (Ext2)",
+            "value": "83.451",
             "unit": "second",
             "extra": "aster_result"
           }
