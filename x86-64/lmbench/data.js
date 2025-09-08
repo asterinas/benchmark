@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1757282163537,
+  "lastUpdate": 1757372733622,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -42205,43 +42205,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "jiangjianfeng",
-            "username": "StevenJiang1110",
-            "email": "jiangjianfeng.jjf@antgroup.com"
-          },
-          "committer": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "3329907643@qq.com"
-          },
-          "id": "e4c5c36be9fb58ee78e558e72762e8450bcb5ba2",
-          "message": "Support SO_PEERCRED & SO_PEERGROUPS",
-          "timestamp": "2025-06-11T08:28:05Z",
-          "url": "https://github.com/asterinas/asterinas/commit/e4c5c36be9fb58ee78e558e72762e8450bcb5ba2"
-        },
-        "date": 1750816398207,
-        "tool": "customSmallerIsBetter",
-        "title": "[VFS] The cost of write (/dev/null)",
-        "description": "lat_syscall write",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average write latency on Linux",
-            "value": "0.1086",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average write latency on Asterinas",
-            "value": "0.1247",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Ruihan Li",
             "username": "lrh2000",
             "email": "lrh2000@pku.edu.cn"
@@ -44416,6 +44379,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average write latency on Asterinas",
             "value": "0.1191",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Chengjun Chen",
+            "username": "cchanging",
+            "email": "33800552+cchanging@users.noreply.github.com"
+          },
+          "id": "c1b80f0f0f42be5f9be90e0d2e5d7314895185f2",
+          "message": "Use `'static` for FS types",
+          "timestamp": "2025-09-05T02:49:47Z",
+          "url": "https://github.com/asterinas/asterinas/commit/c1b80f0f0f42be5f9be90e0d2e5d7314895185f2"
+        },
+        "date": 1757372680723,
+        "tool": "customSmallerIsBetter",
+        "title": "[VFS] The cost of write (/dev/null)",
+        "description": "lat_syscall write",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average write latency on Linux",
+            "value": "0.1285",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average write latency on Asterinas",
+            "value": "0.1196",
             "unit": "µs",
             "extra": "aster_result"
           }
