@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1757370631578,
+  "lastUpdate": 1757459279042,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "cpu_lat": [
@@ -2227,43 +2227,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
-            "name": "Jianfeng Jiang",
-            "username": "StevenJiang1110",
-            "email": "jiangjianfeng.jjf@antgroup.com"
-          },
-          "id": "bcf1e69878540e81ab15d79eee2f81f1f0787bba",
-          "message": "Expose `head`/`tail` of `RingBuffer`",
-          "timestamp": "2025-06-15T17:00:24Z",
-          "url": "https://github.com/asterinas/asterinas/commit/bcf1e69878540e81ab15d79eee2f81f1f0787bba"
-        },
-        "date": 1750385549450,
-        "tool": "customSmallerIsBetter",
-        "title": "[Threads] Threads performance",
-        "description": "sysbench threads",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average Execution Time per Thread on Linux",
-            "value": "13.70",
-            "unit": "ms",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average Execution Time per Thread on Asterinas",
-            "value": "9.14",
-            "unit": "ms",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Marsman1996",
             "username": "Marsman1996",
             "email": "lqliuyuwei@outlook.com"
@@ -4438,6 +4401,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average Execution Time per Thread on Asterinas",
             "value": "3.43",
+            "unit": "ms",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Chengjun Chen",
+            "username": "cchanging",
+            "email": "33800552+cchanging@users.noreply.github.com"
+          },
+          "id": "c1b80f0f0f42be5f9be90e0d2e5d7314895185f2",
+          "message": "Use `'static` for FS types",
+          "timestamp": "2025-09-05T02:49:47Z",
+          "url": "https://github.com/asterinas/asterinas/commit/c1b80f0f0f42be5f9be90e0d2e5d7314895185f2"
+        },
+        "date": 1757459226163,
+        "tool": "customSmallerIsBetter",
+        "title": "[Threads] Threads performance",
+        "description": "sysbench threads",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average Execution Time per Thread on Linux",
+            "value": "14.11",
+            "unit": "ms",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average Execution Time per Thread on Asterinas",
+            "value": "3.39",
             "unit": "ms",
             "extra": "aster_result"
           }
