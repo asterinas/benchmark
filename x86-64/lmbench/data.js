@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1757545788699,
+  "lastUpdate": 1757545843614,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -97734,43 +97734,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "jiangjianfeng",
-            "username": "StevenJiang1110",
-            "email": "jiangjianfeng.jjf@antgroup.com"
-          },
-          "committer": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "3329907643@qq.com"
-          },
-          "id": "e4c5c36be9fb58ee78e558e72762e8450bcb5ba2",
-          "message": "Support SO_PEERCRED & SO_PEERGROUPS",
-          "timestamp": "2025-06-11T08:28:05Z",
-          "url": "https://github.com/asterinas/asterinas/commit/e4c5c36be9fb58ee78e558e72762e8450bcb5ba2"
-        },
-        "date": 1750816618480,
-        "tool": "customSmallerIsBetter",
-        "title": "[VFS] The cost of record locking/unlocking via fcntl",
-        "description": "lat_fcntl",
-        "display": false,
-        "benches": [
-          {
-            "name": "Average file locking latency on Linux",
-            "value": "2.0120",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average file locking latency on Asterinas",
-            "value": "0.6465",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Ruihan Li",
             "username": "lrh2000",
             "email": "lrh2000@pku.edu.cn"
@@ -99945,6 +99908,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average file locking latency on Asterinas",
             "value": "0.7413",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Chen Chengjun",
+            "username": "cchanging",
+            "email": "chenchengjun.ccj@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "8c36964bb940494cd8d1ad14cab0a93b0fd77598",
+          "message": "Introduce VmPrinter to write kernel generated data",
+          "timestamp": "2025-09-10T11:59:16Z",
+          "url": "https://github.com/asterinas/asterinas/commit/8c36964bb940494cd8d1ad14cab0a93b0fd77598"
+        },
+        "date": 1757545790034,
+        "tool": "customSmallerIsBetter",
+        "title": "[VFS] The cost of record locking/unlocking via fcntl",
+        "description": "lat_fcntl",
+        "display": false,
+        "benches": [
+          {
+            "name": "Average file locking latency on Linux",
+            "value": "2.5789",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average file locking latency on Asterinas",
+            "value": "0.7388",
             "unit": "µs",
             "extra": "aster_result"
           }
