@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1758318830766,
+  "lastUpdate": 1758318887236,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_deletes_between": [
@@ -39988,43 +39988,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Marsman1996",
-            "username": "Marsman1996",
-            "email": "lqliuyuwei@outlook.com"
-          },
-          "committer": {
-            "name": "Jianfeng Jiang",
-            "username": "StevenJiang1110",
-            "email": "jiangjianfeng.jjf@antgroup.com"
-          },
-          "id": "bb3f21b41eec5588974e69d775d6f0f2fea7e2d4",
-          "message": "Fix integer overflow in futex wake",
-          "timestamp": "2025-06-20T07:45:05Z",
-          "url": "https://github.com/asterinas/asterinas/commit/bb3f21b41eec5588974e69d775d6f0f2fea7e2d4"
-        },
-        "date": 1750470254028,
-        "tool": "customSmallerIsBetter",
-        "title": "[Ext2] The deletes-individual result of sqlite speedtest",
-        "description": "sqlite-speed-test: 50000 DELETEs of individual rows",
-        "display": false,
-        "benches": [
-          {
-            "name": "The speed of deletes-individual on Linux (Ext2)",
-            "value": "2.519",
-            "unit": "second",
-            "extra": "linux_result"
-          },
-          {
-            "name": "The speed of deletes-individual on Asterinas (Ext2)",
-            "value": "3.018",
-            "unit": "second",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Wang Siyuan",
             "username": "vvvvsv",
             "email": "wsy@stu.pku.edu.cn"
@@ -42200,6 +42163,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "The speed of deletes-individual on Asterinas (Ext2)",
             "value": "3.628",
+            "unit": "second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tate.thl@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "4b87dab86e8c9940f7713369edcbe74cc9d9bad9",
+          "message": "Unify CPU arch-specific logic that determines if the kernel is interrupted",
+          "timestamp": "2025-09-17T14:38:47Z",
+          "url": "https://github.com/asterinas/asterinas/commit/4b87dab86e8c9940f7713369edcbe74cc9d9bad9"
+        },
+        "date": 1758318831953,
+        "tool": "customSmallerIsBetter",
+        "title": "[Ext2] The deletes-individual result of sqlite speedtest",
+        "description": "sqlite-speed-test: 50000 DELETEs of individual rows",
+        "display": false,
+        "benches": [
+          {
+            "name": "The speed of deletes-individual on Linux (Ext2)",
+            "value": "3.945",
+            "unit": "second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "The speed of deletes-individual on Asterinas (Ext2)",
+            "value": "3.669",
             "unit": "second",
             "extra": "aster_result"
           }
