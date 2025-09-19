@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1758233505398,
+  "lastUpdate": 1758319112610,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -42214,43 +42214,6 @@ window.BENCHMARK_DATA = {
             "username": "tatetian",
             "email": "tatetian@gmail.com"
           },
-          "id": "dc26e183100dcabf292aa8ee41458f189b2f7b94",
-          "message": "Depend on int-to-c-enum instead of num crate",
-          "timestamp": "2025-06-27T08:29:34Z",
-          "url": "https://github.com/asterinas/asterinas/commit/dc26e183100dcabf292aa8ee41458f189b2f7b94"
-        },
-        "date": 1751336237460,
-        "tool": "customSmallerIsBetter",
-        "title": "[VFS] The cost of write (/dev/null)",
-        "description": "lat_syscall write",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average write latency on Linux",
-            "value": "0.1067",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average write latency on Asterinas",
-            "value": "0.1179",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "jiangjianfeng",
-            "username": "StevenJiang1110",
-            "email": "jiangjianfeng.jjf@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
           "id": "49ef0e9f7aa7606ab62387e231f679197572cf28",
           "message": "Change the documentation website of OSTD",
           "timestamp": "2025-06-27T08:10:41Z",
@@ -44416,6 +44379,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average write latency on Asterinas",
             "value": "0.1217",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tate.thl@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "4b87dab86e8c9940f7713369edcbe74cc9d9bad9",
+          "message": "Unify CPU arch-specific logic that determines if the kernel is interrupted",
+          "timestamp": "2025-09-17T14:38:47Z",
+          "url": "https://github.com/asterinas/asterinas/commit/4b87dab86e8c9940f7713369edcbe74cc9d9bad9"
+        },
+        "date": 1758319057335,
+        "tool": "customSmallerIsBetter",
+        "title": "[VFS] The cost of write (/dev/null)",
+        "description": "lat_syscall write",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average write latency on Linux",
+            "value": "0.1024",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average write latency on Asterinas",
+            "value": "0.1222",
             "unit": "µs",
             "extra": "aster_result"
           }
