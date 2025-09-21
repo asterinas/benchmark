@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1758490495688,
+  "lastUpdate": 1758490553770,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -31114,43 +31114,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2025-05-16T01:17:00Z",
           "url": "https://github.com/asterinas/asterinas/commit/dec7ac1346649a0ef1a1256da258cd2f9f11ac4b"
         },
-        "date": 1747527227050,
-        "tool": "customSmallerIsBetter",
-        "title": "[Unix sockets] The latency of write+read (1B message)",
-        "description": "lat_unix",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average unix latency on Linux",
-            "value": "3.3945",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average unix latency on Asterinas",
-            "value": "3.9061",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Hsy-Intel",
-            "username": "Hsy-Intel",
-            "email": "siyuan.hui@intel.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "dec7ac1346649a0ef1a1256da258cd2f9f11ac4b",
-          "message": "Add safety check to `stop_guest` function to prevent killing non-existent processes",
-          "timestamp": "2025-05-16T01:17:00Z",
-          "url": "https://github.com/asterinas/asterinas/commit/dec7ac1346649a0ef1a1256da258cd2f9f11ac4b"
-        },
         "date": 1747611314655,
         "tool": "customSmallerIsBetter",
         "title": "[Unix sockets] The latency of write+read (1B message)",
@@ -33311,6 +33274,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average unix latency on Asterinas",
             "value": "3.7271",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Yuke Peng",
+            "username": "sdww0",
+            "email": "pykfirst@gmail.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "37479383da4868302492d0d8f78562d159aa2621",
+          "message": "Assign pci code owner",
+          "timestamp": "2025-08-28T11:37:27Z",
+          "url": "https://github.com/asterinas/asterinas/commit/37479383da4868302492d0d8f78562d159aa2621"
+        },
+        "date": 1758490497179,
+        "tool": "customSmallerIsBetter",
+        "title": "[Unix sockets] The latency of write+read (1B message)",
+        "description": "lat_unix",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average unix latency on Linux",
+            "value": "3.3364",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average unix latency on Asterinas",
+            "value": "3.7395",
             "unit": "µs",
             "extra": "aster_result"
           }
