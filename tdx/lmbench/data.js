@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1758490726637,
+  "lastUpdate": 1758490784242,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -78451,6 +78451,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average TCP latency over virtio-net on Asterinas",
             "value": "97.2897",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Yuke Peng",
+            "username": "sdww0",
+            "email": "pykfirst@gmail.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "37479383da4868302492d0d8f78562d159aa2621",
+          "message": "Assign pci code owner",
+          "timestamp": "2025-08-28T11:37:27Z",
+          "url": "https://github.com/asterinas/asterinas/commit/37479383da4868302492d0d8f78562d159aa2621"
+        },
+        "date": 1758490728203,
+        "tool": "customSmallerIsBetter",
+        "title": "[TCP sockets] The latency of write+read (virtio-net, 1B message)",
+        "description": "lat_tcp_virtio",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average TCP latency over virtio-net on Linux",
+            "value": "93.6037",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average TCP latency over virtio-net on Asterinas",
+            "value": "84.2102",
             "unit": "µs",
             "extra": "aster_result"
           }
