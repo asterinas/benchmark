@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1758924228615,
+  "lastUpdate": 1758924288780,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_deletes_between": [
@@ -51098,43 +51098,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "jiangjianfeng",
-            "username": "StevenJiang1110",
-            "email": "jiangjianfeng.jjf@antgroup.com"
-          },
-          "committer": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "3329907643@qq.com"
-          },
-          "id": "e4c5c36be9fb58ee78e558e72762e8450bcb5ba2",
-          "message": "Support SO_PEERCRED & SO_PEERGROUPS",
-          "timestamp": "2025-06-11T08:28:05Z",
-          "url": "https://github.com/asterinas/asterinas/commit/e4c5c36be9fb58ee78e558e72762e8450bcb5ba2"
-        },
-        "date": 1750815651651,
-        "tool": "customSmallerIsBetter",
-        "title": "[Ext2] The updates-between result of sqlite speedtest",
-        "description": "sqlite-speed-test: 10000 UPDATES, numeric BETWEEN, indexed",
-        "display": false,
-        "benches": [
-          {
-            "name": "The speed of updates-between on Linux (Ext2)",
-            "value": "1.886",
-            "unit": "second",
-            "extra": "linux_result"
-          },
-          {
-            "name": "The speed of updates-between on Asterinas (Ext2)",
-            "value": "2.321",
-            "unit": "second",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Ruihan Li",
             "username": "lrh2000",
             "email": "lrh2000@pku.edu.cn"
@@ -53310,6 +53273,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "The speed of updates-between on Asterinas (Ext2)",
             "value": "3.545",
+            "unit": "second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Chen Chengjun",
+            "username": "cchanging",
+            "email": "chenchengjun.ccj@antgroup.com"
+          },
+          "committer": {
+            "name": "Qingsong Chen",
+            "username": "cqs21",
+            "email": "changxian.cqs@antgroup.com"
+          },
+          "id": "2c456709b6f6c058b1a68ee05f99b2b6119df1a9",
+          "message": "Block a setuid ltp test for exfat test",
+          "timestamp": "2025-09-26T08:19:13Z",
+          "url": "https://github.com/asterinas/asterinas/commit/2c456709b6f6c058b1a68ee05f99b2b6119df1a9"
+        },
+        "date": 1758924230438,
+        "tool": "customSmallerIsBetter",
+        "title": "[Ext2] The updates-between result of sqlite speedtest",
+        "description": "sqlite-speed-test: 10000 UPDATES, numeric BETWEEN, indexed",
+        "display": false,
+        "benches": [
+          {
+            "name": "The speed of updates-between on Linux (Ext2)",
+            "value": "2.677",
+            "unit": "second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "The speed of updates-between on Asterinas (Ext2)",
+            "value": "2.864",
             "unit": "second",
             "extra": "aster_result"
           }
