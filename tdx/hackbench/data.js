@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1758844314400,
+  "lastUpdate": 1758934882130,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "group8_smp1": [
@@ -1885,6 +1885,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Turnaround time of hackbench on Asterinas",
             "value": "1.692",
+            "unit": "sec",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Chen Chengjun",
+            "username": "cchanging",
+            "email": "chenchengjun.ccj@antgroup.com"
+          },
+          "committer": {
+            "name": "Qingsong Chen",
+            "username": "cqs21",
+            "email": "changxian.cqs@antgroup.com"
+          },
+          "id": "2c456709b6f6c058b1a68ee05f99b2b6119df1a9",
+          "message": "Block a setuid ltp test for exfat test",
+          "timestamp": "2025-09-26T08:19:13Z",
+          "url": "https://github.com/asterinas/asterinas/commit/2c456709b6f6c058b1a68ee05f99b2b6119df1a9"
+        },
+        "date": 1758934823644,
+        "tool": "customSmallerIsBetter",
+        "title": "[Scheduler] Turnaround time of 8 groups using 1 CPU",
+        "description": "hackbench -g 8 -l 1000 -p -T",
+        "display": false,
+        "benches": [
+          {
+            "name": "Turnaround time of hackbench on Linux",
+            "value": "1.151",
+            "unit": "sec",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Turnaround time of hackbench on Asterinas",
+            "value": "1.766",
             "unit": "sec",
             "extra": "aster_result"
           }
