@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1759011488636,
+  "lastUpdate": 1759098047198,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ping_inline_100k_conc20_rps": [
@@ -6677,43 +6677,6 @@ window.BENCHMARK_DATA = {
             "email": "lrh2000@pku.edu.cn"
           },
           "committer": {
-            "name": "Junyang Zhang",
-            "username": "junyang-zh",
-            "email": "user@junyang.me"
-          },
-          "id": "780b35848e484bb091725c232a8c4ba09d5d7765",
-          "message": "Remove `SameSizeAs`",
-          "timestamp": "2025-06-20T16:35:35Z",
-          "url": "https://github.com/asterinas/asterinas/commit/780b35848e484bb091725c232a8c4ba09d5d7765"
-        },
-        "date": 1750899579754,
-        "tool": "customBiggerIsBetter",
-        "title": "Redis SET performance (virtio-net, 20 concurrency, 100K requests)",
-        "description": "redis-benchmark -n 100000 -c 20 -t set",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average RPS of SET over virtio-net between Host Linux and Guest Linux",
-            "value": "128369.71",
-            "unit": "request per second",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average RPS of SET over virtio-net between Host Linux and Guest Asterinas",
-            "value": "141442.72",
-            "unit": "request per second",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
             "name": "Chengjun Chen",
             "username": "cchanging",
             "email": "33800552+cchanging@users.noreply.github.com"
@@ -8884,6 +8847,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average RPS of SET over virtio-net between Host Linux and Guest Asterinas",
             "value": "37257.82",
+            "unit": "request per second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Zejun Zhao",
+            "username": "jellllly420",
+            "email": "jelly.zhao.42@gmail.com"
+          },
+          "committer": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "3329907643@qq.com"
+          },
+          "id": "899db770f62234e89590ce1ae35067f7082107a5",
+          "message": "Fix parameter passing of `preadv/pwritev`-family syscalls",
+          "timestamp": "2025-09-27T17:35:30Z",
+          "url": "https://github.com/asterinas/asterinas/commit/899db770f62234e89590ce1ae35067f7082107a5"
+        },
+        "date": 1759097988458,
+        "tool": "customBiggerIsBetter",
+        "title": "Redis SET performance (virtio-net, 20 concurrency, 100K requests)",
+        "description": "redis-benchmark -n 100000 -c 20 -t set",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average RPS of SET over virtio-net between Host Linux and Guest Linux",
+            "value": "135685.22",
+            "unit": "request per second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average RPS of SET over virtio-net between Host Linux and Guest Asterinas",
+            "value": "108342.37",
             "unit": "request per second",
             "extra": "aster_result"
           }
