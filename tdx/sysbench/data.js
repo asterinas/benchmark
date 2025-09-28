@@ -1,45 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1758839454080,
+  "lastUpdate": 1759099368338,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "cpu_lat": [
-      {
-        "commit": {
-          "author": {
-            "name": "Hsy-Intel",
-            "username": "Hsy-Intel",
-            "email": "siyuan.hui@intel.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "ad6aa4960c11a712c56213bd30f0e271875337e5",
-          "message": "Bump the project version",
-          "timestamp": "2025-05-09T09:21:30Z",
-          "url": "https://github.com/asterinas/asterinas/commit/ad6aa4960c11a712c56213bd30f0e271875337e5"
-        },
-        "date": 1747137399478,
-        "tool": "customSmallerIsBetter",
-        "title": "[CPU] CPU performance",
-        "description": "sysbench cpu",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average Execution Time per CPU on Linux",
-            "value": "3.85",
-            "unit": "ms",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average Execution Time per CPU on Asterinas",
-            "value": "4.15",
-            "unit": "ms",
-            "extra": "aster_result"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2217,6 +2180,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average Execution Time per CPU on Asterinas",
             "value": "4.12",
+            "unit": "ms",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Zejun Zhao",
+            "username": "jellllly420",
+            "email": "jelly.zhao.42@gmail.com"
+          },
+          "committer": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "3329907643@qq.com"
+          },
+          "id": "899db770f62234e89590ce1ae35067f7082107a5",
+          "message": "Fix parameter passing of `preadv/pwritev`-family syscalls",
+          "timestamp": "2025-09-27T17:35:30Z",
+          "url": "https://github.com/asterinas/asterinas/commit/899db770f62234e89590ce1ae35067f7082107a5"
+        },
+        "date": 1759099309361,
+        "tool": "customSmallerIsBetter",
+        "title": "[CPU] CPU performance",
+        "description": "sysbench cpu",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average Execution Time per CPU on Linux",
+            "value": "4.12",
+            "unit": "ms",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average Execution Time per CPU on Asterinas",
+            "value": "4.11",
             "unit": "ms",
             "extra": "aster_result"
           }
