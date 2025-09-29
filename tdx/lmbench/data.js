@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1759104466705,
+  "lastUpdate": 1759104587611,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -4448,43 +4448,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
-            "name": "Junyang Zhang",
-            "username": "junyang-zh",
-            "email": "user@junyang.me"
-          },
-          "id": "e81053b9dcfba903be8395b1987883a058f5c486",
-          "message": "Remove unnecessary `_rdtsc` uses",
-          "timestamp": "2025-05-21T07:15:25Z",
-          "url": "https://github.com/asterinas/asterinas/commit/e81053b9dcfba903be8395b1987883a058f5c486"
-        },
-        "date": 1747959440452,
-        "tool": "customSmallerIsBetter",
-        "title": "[Memory] The cost of mmap+unmap",
-        "description": "lat_mmap",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average mmap latency on Linux",
-            "value": "23",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average mmap latency on Asterinas",
-            "value": "60",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Yuke Peng",
             "username": "sdww0",
             "email": "pykfirst@gmail.com"
@@ -6659,6 +6622,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average mmap latency on Asterinas",
             "value": "23",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Zejun Zhao",
+            "username": "jellllly420",
+            "email": "jelly.zhao.42@gmail.com"
+          },
+          "committer": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "3329907643@qq.com"
+          },
+          "id": "899db770f62234e89590ce1ae35067f7082107a5",
+          "message": "Fix parameter passing of `preadv/pwritev`-family syscalls",
+          "timestamp": "2025-09-27T17:35:30Z",
+          "url": "https://github.com/asterinas/asterinas/commit/899db770f62234e89590ce1ae35067f7082107a5"
+        },
+        "date": 1759104467913,
+        "tool": "customSmallerIsBetter",
+        "title": "[Memory] The cost of mmap+unmap",
+        "description": "lat_mmap",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average mmap latency on Linux",
+            "value": "29",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average mmap latency on Asterinas",
+            "value": "19",
             "unit": "µs",
             "extra": "aster_result"
           }
