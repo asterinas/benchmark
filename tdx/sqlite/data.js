@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1759532101046,
+  "lastUpdate": 1759532163992,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ramfs_benchmarks_vacuum": [
@@ -12222,6 +12222,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "The speed of refill-replace on Asterinas (Ramfs)",
             "value": "4.061",
+            "unit": "second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruize Tang",
+            "username": "tangruize",
+            "email": "1466040111@qq.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "50eaffc7314d5ef2f4a16cb0e2437cc0010c01ee",
+          "message": "Remove `RwLock.downgrade` due to potential contention with `RwLock.read`",
+          "timestamp": "2025-05-24T14:28:39Z",
+          "url": "https://github.com/asterinas/asterinas/commit/50eaffc7314d5ef2f4a16cb0e2437cc0010c01ee"
+        },
+        "date": 1759532101890,
+        "tool": "customSmallerIsBetter",
+        "title": "[Ramfs] The refill-replace result of sqlite speedtest",
+        "description": "sqlite-speed-test: Refill two 50000-row tables using REPLACE",
+        "display": false,
+        "benches": [
+          {
+            "name": "The speed of refill-replace on Linux (Ramfs)",
+            "value": "3.963",
+            "unit": "second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "The speed of refill-replace on Asterinas (Ramfs)",
+            "value": "4.059",
             "unit": "second",
             "extra": "aster_result"
           }
