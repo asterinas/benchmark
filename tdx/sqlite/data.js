@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1759531911343,
+  "lastUpdate": 1759531974441,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ramfs_benchmarks_vacuum": [
@@ -7517,6 +7517,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Total speed on Asterinas (Ramfs)",
             "value": "61.018",
+            "unit": "second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruize Tang",
+            "username": "tangruize",
+            "email": "1466040111@qq.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "50eaffc7314d5ef2f4a16cb0e2437cc0010c01ee",
+          "message": "Remove `RwLock.downgrade` due to potential contention with `RwLock.read`",
+          "timestamp": "2025-05-24T14:28:39Z",
+          "url": "https://github.com/asterinas/asterinas/commit/50eaffc7314d5ef2f4a16cb0e2437cc0010c01ee"
+        },
+        "date": 1759531912273,
+        "tool": "customSmallerIsBetter",
+        "title": "[Ramfs] The total result of sqlite speedtest",
+        "description": "sqlite-speed-test: total",
+        "display": false,
+        "benches": [
+          {
+            "name": "Total speed on Linux (Ramfs)",
+            "value": "60.617",
+            "unit": "second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Total speed on Asterinas (Ramfs)",
+            "value": "59.742",
             "unit": "second",
             "extra": "aster_result"
           }
