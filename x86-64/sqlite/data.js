@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1759787735846,
+  "lastUpdate": 1759787801685,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_deletes_between": [
@@ -73323,43 +73323,6 @@ window.BENCHMARK_DATA = {
             "email": "wsy@stu.pku.edu.cn"
           },
           "committer": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "3329907643@qq.com"
-          },
-          "id": "a13297ae4c0b445ae5e9fed8ed7ffa8c7d334621",
-          "message": "Add fields in `/proc/*/stat` and `/proc/*/status`",
-          "timestamp": "2025-07-02T02:54:59Z",
-          "url": "https://github.com/asterinas/asterinas/commit/a13297ae4c0b445ae5e9fed8ed7ffa8c7d334621"
-        },
-        "date": 1751502734586,
-        "tool": "customSmallerIsBetter",
-        "title": "[Ramfs] The updates-between result of sqlite speedtest",
-        "description": "sqlite-speed-test: 10000 UPDATES, numeric BETWEEN, indexed",
-        "display": false,
-        "benches": [
-          {
-            "name": "The speed of updates-between on Linux (Ramfs)",
-            "value": "1.659",
-            "unit": "second",
-            "extra": "linux_result"
-          },
-          {
-            "name": "The speed of updates-between on Asterinas (Ramfs)",
-            "value": "1.927",
-            "unit": "second",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Wang Siyuan",
-            "username": "vvvvsv",
-            "email": "wsy@stu.pku.edu.cn"
-          },
-          "committer": {
             "name": "Chengjun Chen",
             "username": "cchanging",
             "email": "33800552+cchanging@users.noreply.github.com"
@@ -75530,6 +75493,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "The speed of updates-between on Asterinas (Ramfs)",
             "value": "2.051",
+            "unit": "second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "56d78ab64965194ad03cb6cde07fd5d98b17129d",
+          "message": "Fix some minor style issues",
+          "timestamp": "2025-09-27T15:55:03Z",
+          "url": "https://github.com/asterinas/asterinas/commit/56d78ab64965194ad03cb6cde07fd5d98b17129d"
+        },
+        "date": 1759787737298,
+        "tool": "customSmallerIsBetter",
+        "title": "[Ramfs] The updates-between result of sqlite speedtest",
+        "description": "sqlite-speed-test: 10000 UPDATES, numeric BETWEEN, indexed",
+        "display": false,
+        "benches": [
+          {
+            "name": "The speed of updates-between on Linux (Ramfs)",
+            "value": "1.747",
+            "unit": "second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "The speed of updates-between on Asterinas (Ramfs)",
+            "value": "2.034",
             "unit": "second",
             "extra": "aster_result"
           }
