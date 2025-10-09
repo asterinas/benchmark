@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1759884646775,
+  "lastUpdate": 1759973656104,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "tcp_virtio_bw": [
@@ -2107,6 +2107,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average TCP Bandwidth over virtio-net between Host Linux and Guest Asterinas",
             "value": "2603",
+            "unit": "Mbits/sec",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "cded205535e176963dc49bf40f4c8492c2289c6c",
+          "message": "Retire the LTP SMP blocklist",
+          "timestamp": "2025-10-03T11:50:02Z",
+          "url": "https://github.com/asterinas/asterinas/commit/cded205535e176963dc49bf40f4c8492c2289c6c"
+        },
+        "date": 1759973576825,
+        "tool": "customBiggerIsBetter",
+        "title": "[Network] iperf3 sender performance using TCP (virtio-net)",
+        "description": "iperf3 -s -B 10.0.2.15",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average TCP Bandwidth over virtio-net between Host Linux and Guest Linux",
+            "value": "537",
+            "unit": "Mbits/sec",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average TCP Bandwidth over virtio-net between Host Linux and Guest Asterinas",
+            "value": "2551",
             "unit": "Mbits/sec",
             "extra": "aster_result"
           }
