@@ -1,45 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1760052099682,
+  "lastUpdate": 1760052166716,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
-      {
-        "commit": {
-          "author": {
-            "name": "Ruize Tang",
-            "username": "tangruize",
-            "email": "1466040111@qq.com"
-          },
-          "committer": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "3329907643@qq.com"
-          },
-          "id": "d083aef69020460e1d88999ec96bb2f6a81bdad4",
-          "message": "Add a simple test for checking FPU state in signal",
-          "timestamp": "2025-06-25T06:34:43Z",
-          "url": "https://github.com/asterinas/asterinas/commit/d083aef69020460e1d88999ec96bb2f6a81bdad4"
-        },
-        "date": 1753012962617,
-        "tool": "customSmallerIsBetter",
-        "title": "[Memory] The cost of page fault handling",
-        "description": "lat_pagefault",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average page fault latency on Linux",
-            "value": "0.1153",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average page fault latency on Asterinas",
-            "value": "0.0836",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2218,6 +2181,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average page fault latency on Asterinas",
             "value": "0.0886",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Chen Chengjun",
+            "username": "cchanging",
+            "email": "chenchengjun.ccj@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "d2b46640782d7b0f5002cae819c115096cb84add",
+          "message": "Add a configfs usage example in ktest",
+          "timestamp": "2025-10-09T05:05:24Z",
+          "url": "https://github.com/asterinas/asterinas/commit/d2b46640782d7b0f5002cae819c115096cb84add"
+        },
+        "date": 1760052101023,
+        "tool": "customSmallerIsBetter",
+        "title": "[Memory] The cost of page fault handling",
+        "description": "lat_pagefault",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average page fault latency on Linux",
+            "value": "0.1556",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average page fault latency on Asterinas",
+            "value": "0.0913",
             "unit": "µs",
             "extra": "aster_result"
           }
