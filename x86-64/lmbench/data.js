@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1760139083872,
+  "lastUpdate": 1760139151904,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -60000,43 +60000,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "jiangjianfeng",
-            "username": "StevenJiang1110",
-            "email": "jiangjianfeng.jjf@antgroup.com"
-          },
-          "committer": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "3329907643@qq.com"
-          },
-          "id": "424fcda239fe14fa98ece0377ef377dad48bfc7d",
-          "message": "Use iret instead of sysret if the context is not clean",
-          "timestamp": "2025-07-18T07:13:13Z",
-          "url": "https://github.com/asterinas/asterinas/commit/424fcda239fe14fa98ece0377ef377dad48bfc7d"
-        },
-        "date": 1753103428963,
-        "tool": "customBiggerIsBetter",
-        "title": "[Ext2] The bandwidth of copying data between files",
-        "description": "lmdd",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average file copy bandwidth on Linux",
-            "value": "1801.5742",
-            "unit": "MB/s",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average file copy bandwidth on Asterinas",
-            "value": "1850.6664",
-            "unit": "MB/s",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Chen Chengjun",
             "username": "cchanging",
             "email": "chenchengjun.ccj@antgroup.com"
@@ -62212,6 +62175,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average file copy bandwidth on Asterinas",
             "value": "1939.4504",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Chen Chengjun",
+            "username": "cchanging",
+            "email": "chenchengjun.ccj@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "d2b46640782d7b0f5002cae819c115096cb84add",
+          "message": "Add a configfs usage example in ktest",
+          "timestamp": "2025-10-09T05:05:24Z",
+          "url": "https://github.com/asterinas/asterinas/commit/d2b46640782d7b0f5002cae819c115096cb84add"
+        },
+        "date": 1760139085285,
+        "tool": "customBiggerIsBetter",
+        "title": "[Ext2] The bandwidth of copying data between files",
+        "description": "lmdd",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average file copy bandwidth on Linux",
+            "value": "1498.9025",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average file copy bandwidth on Asterinas",
+            "value": "1947.2163",
             "unit": "MB/s",
             "extra": "aster_result"
           }
