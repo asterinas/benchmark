@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1760140329805,
+  "lastUpdate": 1760140397911,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ramfs_benchmarks_vacuum": [
@@ -27667,6 +27667,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "The speed of selects-text-pk on Asterinas (Ext2)",
             "value": "3.125",
+            "unit": "second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Chen Chengjun",
+            "username": "cchanging",
+            "email": "chenchengjun.ccj@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "d2b46640782d7b0f5002cae819c115096cb84add",
+          "message": "Add a configfs usage example in ktest",
+          "timestamp": "2025-10-09T05:05:24Z",
+          "url": "https://github.com/asterinas/asterinas/commit/d2b46640782d7b0f5002cae819c115096cb84add"
+        },
+        "date": 1760140331090,
+        "tool": "customSmallerIsBetter",
+        "title": "[Ext2] The selects-text-pk result of sqlite speedtest",
+        "description": "sqlite-speed-test: 70000 SELECTS on a TEXT PK",
+        "display": false,
+        "benches": [
+          {
+            "name": "The speed of selects-text-pk on Linux (Ext2)",
+            "value": "3.643",
+            "unit": "second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "The speed of selects-text-pk on Asterinas (Ext2)",
+            "value": "3.164",
             "unit": "second",
             "extra": "aster_result"
           }
