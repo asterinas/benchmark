@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1760135959599,
+  "lastUpdate": 1760136027066,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -44445,43 +44445,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Chen Chengjun",
-            "username": "cchanging",
-            "email": "chenchengjun.ccj@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "03fc309b9523ff21c7c9e7a94163cd349ebd7afb",
-          "message": "Enable more waitid LTP tests",
-          "timestamp": "2025-07-21T10:38:03Z",
-          "url": "https://github.com/asterinas/asterinas/commit/03fc309b9523ff21c7c9e7a94163cd349ebd7afb"
-        },
-        "date": 1753191707227,
-        "tool": "customSmallerIsBetter",
-        "title": "[VFS] The cost of stat",
-        "description": "lat_syscall stat",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average stat latency on Linux",
-            "value": "0.3553",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average stat latency on Asterinas",
-            "value": "0.4985",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Cautreoxit",
             "username": "Cautreoxit",
             "email": "huk@stu.pku.edu.cn"
@@ -46657,6 +46620,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average stat latency on Asterinas",
             "value": "0.4437",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Chen Chengjun",
+            "username": "cchanging",
+            "email": "chenchengjun.ccj@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "d2b46640782d7b0f5002cae819c115096cb84add",
+          "message": "Add a configfs usage example in ktest",
+          "timestamp": "2025-10-09T05:05:24Z",
+          "url": "https://github.com/asterinas/asterinas/commit/d2b46640782d7b0f5002cae819c115096cb84add"
+        },
+        "date": 1760135960752,
+        "tool": "customSmallerIsBetter",
+        "title": "[VFS] The cost of stat",
+        "description": "lat_syscall stat",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average stat latency on Linux",
+            "value": "0.3733",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average stat latency on Asterinas",
+            "value": "0.4447",
             "unit": "µs",
             "extra": "aster_result"
           }
