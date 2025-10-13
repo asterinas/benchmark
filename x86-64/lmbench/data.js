@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1760314056401,
+  "lastUpdate": 1760314196549,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -86664,43 +86664,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "jiangjianfeng",
-            "username": "StevenJiang1110",
-            "email": "jiangjianfeng.jjf@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "9219207b97f41ed412f2398b582eb4bb857c4ab8",
-          "message": "Add CLONE_PIDFD & pidfd_open support",
-          "timestamp": "2025-06-05T07:25:07Z",
-          "url": "https://github.com/asterinas/asterinas/commit/9219207b97f41ed412f2398b582eb4bb857c4ab8"
-        },
-        "date": 1753420038685,
-        "tool": "customSmallerIsBetter",
-        "title": "[UDP sockets] The latency of write+read (virtio-net, 4B message)",
-        "description": "lat_udp",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average UDP latency over virtio-net on Linux",
-            "value": "28.7118",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average UDP latency over virtio-net on Asterinas",
-            "value": "18.5441",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "王英泰",
             "username": "wyt8",
             "email": "2253457010@qq.com"
@@ -88876,6 +88839,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average UDP latency over virtio-net on Asterinas",
             "value": "40.9022",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Chen Chengjun",
+            "username": "cchanging",
+            "email": "chenchengjun.ccj@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "d2b46640782d7b0f5002cae819c115096cb84add",
+          "message": "Add a configfs usage example in ktest",
+          "timestamp": "2025-10-09T05:05:24Z",
+          "url": "https://github.com/asterinas/asterinas/commit/d2b46640782d7b0f5002cae819c115096cb84add"
+        },
+        "date": 1760314058033,
+        "tool": "customSmallerIsBetter",
+        "title": "[UDP sockets] The latency of write+read (virtio-net, 4B message)",
+        "description": "lat_udp",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average UDP latency over virtio-net on Linux",
+            "value": "44.0286",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average UDP latency over virtio-net on Asterinas",
+            "value": "38.4362",
             "unit": "µs",
             "extra": "aster_result"
           }
