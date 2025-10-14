@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1760482327933,
+  "lastUpdate": 1760482399116,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -31114,43 +31114,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Wei Zhang",
-            "username": "TinaZhangZW",
-            "email": "ruoyuan.zw@antgroup.com"
-          },
-          "committer": {
-            "name": "Jianfeng Jiang",
-            "username": "StevenJiang1110",
-            "email": "jiangjianfeng.jjf@antgroup.com"
-          },
-          "id": "8a801676ab2f827e1d6e4d1ec6803261b5e7859c",
-          "message": "Disallow masking SIGKILL and SIGSTOP in user space\n\nAccording to the Linux man pages[1], \"It is not possible to block SIGKILL\nor SIGSTOP. Attempts to do so are silently ignored.\" This patch ensures\ncompliance by explicitly removing SIGKILL and SIGSTOP from the signal\nmask in the `MaskOp::SetMask` operation of the `rt_sigprocmask` syscall.\n\n[1]: https://www.man7.org/linux/man-pages/man2/sigprocmask.2.html",
-          "timestamp": "2025-07-17T08:55:05Z",
-          "url": "https://github.com/asterinas/asterinas/commit/8a801676ab2f827e1d6e4d1ec6803261b5e7859c"
-        },
-        "date": 1753771086509,
-        "tool": "customSmallerIsBetter",
-        "title": "[Unix sockets] The latency of write+read (1B message)",
-        "description": "lat_unix",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average unix latency on Linux",
-            "value": "3.4496",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average unix latency on Asterinas",
-            "value": "3.1845",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Tate, Hongliang Tian",
             "username": "tatetian",
             "email": "tate.thl@antgroup.com"
@@ -33326,6 +33289,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average unix latency on Asterinas",
             "value": "3.7762",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Qingsong Chen",
+            "username": "cqs21",
+            "email": "changxian.cqs@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "257b0c63b1f039e1ec4fd94c2c7bd549f8db2830",
+          "message": "Fix ext2 block groups count",
+          "timestamp": "2025-10-14T03:53:10Z",
+          "url": "https://github.com/asterinas/asterinas/commit/257b0c63b1f039e1ec4fd94c2c7bd549f8db2830"
+        },
+        "date": 1760482329201,
+        "tool": "customSmallerIsBetter",
+        "title": "[Unix sockets] The latency of write+read (1B message)",
+        "description": "lat_unix",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average unix latency on Linux",
+            "value": "4.0760",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average unix latency on Asterinas",
+            "value": "3.8324",
             "unit": "µs",
             "extra": "aster_result"
           }
