@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1760656924998,
+  "lastUpdate": 1760656997380,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -13352,43 +13352,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2025-07-26T10:52:27Z",
           "url": "https://github.com/asterinas/asterinas/commit/659f079c2d41c2cecb3fc06ec62cbece1f67f86e"
         },
-        "date": 1753875479985,
-        "tool": "customSmallerIsBetter",
-        "title": "[Process] The cost of fork+exec+exit",
-        "description": "lat_proc exec",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average exec latency on Linux",
-            "value": "739.3750",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average exec latency on Asterinas",
-            "value": "684.5000",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tate.thl@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "659f079c2d41c2cecb3fc06ec62cbece1f67f86e",
-          "message": "Revise the doc of OSTD's scheduling module",
-          "timestamp": "2025-07-26T10:52:27Z",
-          "url": "https://github.com/asterinas/asterinas/commit/659f079c2d41c2cecb3fc06ec62cbece1f67f86e"
-        },
         "date": 1753938452110,
         "tool": "customSmallerIsBetter",
         "title": "[Process] The cost of fork+exec+exit",
@@ -15550,6 +15513,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average exec latency on Asterinas",
             "value": "849.8571",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "384e5bc70da4fcc7d150140a0ae3706b6a33a91a",
+          "message": "Fix an off-by-one bug in the trap frame",
+          "timestamp": "2025-10-15T15:38:57Z",
+          "url": "https://github.com/asterinas/asterinas/commit/384e5bc70da4fcc7d150140a0ae3706b6a33a91a"
+        },
+        "date": 1760656926121,
+        "tool": "customSmallerIsBetter",
+        "title": "[Process] The cost of fork+exec+exit",
+        "description": "lat_proc exec",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average exec latency on Linux",
+            "value": "1010.5000",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average exec latency on Asterinas",
+            "value": "811.0000",
             "unit": "µs",
             "extra": "aster_result"
           }
