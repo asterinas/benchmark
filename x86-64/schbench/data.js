@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1760742476050,
+  "lastUpdate": 1760742548953,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "smp1_p50_rps": [
@@ -4464,43 +4464,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2025-07-19T17:40:45Z",
           "url": "https://github.com/asterinas/asterinas/commit/345cc9d0556eee0f680eb91d3355de7bd32181e8"
         },
-        "date": 1753599251558,
-        "tool": "customSmallerIsBetter",
-        "title": "[Scheduler] P99 wakeup latency while max-loading all CPUs (SMP=1)",
-        "description": "schbench -F 256 -n 5 -r 90",
-        "display": false,
-        "benches": [
-          {
-            "name": "P99 wakeup latency of schbench on Linux",
-            "value": "1",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "P99 wakeup latency of schbench on Asterinas",
-            "value": "2",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "王英泰",
-            "username": "wyt8",
-            "email": "2253457010@qq.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "345cc9d0556eee0f680eb91d3355de7bd32181e8",
-          "message": "Save FPU context on signal stack for LoongArch",
-          "timestamp": "2025-07-19T17:40:45Z",
-          "url": "https://github.com/asterinas/asterinas/commit/345cc9d0556eee0f680eb91d3355de7bd32181e8"
-        },
         "date": 1753679887457,
         "tool": "customSmallerIsBetter",
         "title": "[Scheduler] P99 wakeup latency while max-loading all CPUs (SMP=1)",
@@ -6656,6 +6619,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "P99 wakeup latency of schbench on Linux",
             "value": "2",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "P99 wakeup latency of schbench on Asterinas",
+            "value": "4",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Chen Chengjun",
+            "username": "cchanging",
+            "email": "chenchengjun.ccj@antgroup.com"
+          },
+          "committer": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "3329907643@qq.com"
+          },
+          "id": "782301c2399f18865035fcb966777c164d915afa",
+          "message": "Remove open-related APIs from FsResolver",
+          "timestamp": "2025-10-16T09:50:28Z",
+          "url": "https://github.com/asterinas/asterinas/commit/782301c2399f18865035fcb966777c164d915afa"
+        },
+        "date": 1760742476892,
+        "tool": "customSmallerIsBetter",
+        "title": "[Scheduler] P99 wakeup latency while max-loading all CPUs (SMP=1)",
+        "description": "schbench -F 256 -n 5 -r 90",
+        "display": false,
+        "benches": [
+          {
+            "name": "P99 wakeup latency of schbench on Linux",
+            "value": "1",
             "unit": "µs",
             "extra": "linux_result"
           },
