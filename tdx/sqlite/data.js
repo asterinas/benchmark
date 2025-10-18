@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1760747174377,
+  "lastUpdate": 1760747247488,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ramfs_benchmarks_vacuum": [
@@ -21663,6 +21663,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "The speed of VACUUM on Asterinas (Ext2)",
             "value": "1.010",
+            "unit": "second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Chen Chengjun",
+            "username": "cchanging",
+            "email": "chenchengjun.ccj@antgroup.com"
+          },
+          "committer": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "3329907643@qq.com"
+          },
+          "id": "782301c2399f18865035fcb966777c164d915afa",
+          "message": "Remove open-related APIs from FsResolver",
+          "timestamp": "2025-10-16T09:50:28Z",
+          "url": "https://github.com/asterinas/asterinas/commit/782301c2399f18865035fcb966777c164d915afa"
+        },
+        "date": 1760747175400,
+        "tool": "customSmallerIsBetter",
+        "title": "[Ext2] The 'VACUUM' result of sqlite speedtest",
+        "description": "sqlite-speed-test: repacking database file into a minimal amount of disk space",
+        "display": false,
+        "benches": [
+          {
+            "name": "The speed of VACUUM on Linux (Ext2)",
+            "value": "4.256",
+            "unit": "second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "The speed of VACUUM on Asterinas (Ext2)",
+            "value": "0.847",
             "unit": "second",
             "extra": "aster_result"
           }
