@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1760920202032,
+  "lastUpdate": 1760920276988,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -94650,43 +94650,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2025-06-25T02:04:24Z",
           "url": "https://github.com/asterinas/asterinas/commit/5e3e23bf7c5130a9251b265c5377d2e21769097c"
         },
-        "date": 1751144016094,
-        "tool": "customBiggerIsBetter",
-        "title": "[Memory] The bandwidth of writing integers",
-        "description": "bw_mem fwr",
-        "display": false,
-        "benches": [
-          {
-            "name": "Average memory write bandwidth on Linux",
-            "value": "8892.71",
-            "unit": "MB/s",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average memory write bandwidth on Asterinas",
-            "value": "7744.71",
-            "unit": "MB/s",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Qingsong Chen",
-            "username": "cqs21",
-            "email": "changxian.cqs@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "5e3e23bf7c5130a9251b265c5377d2e21769097c",
-          "message": "Add basic i8042 keyboard support",
-          "timestamp": "2025-06-25T02:04:24Z",
-          "url": "https://github.com/asterinas/asterinas/commit/5e3e23bf7c5130a9251b265c5377d2e21769097c"
-        },
         "date": 1751221787129,
         "tool": "customBiggerIsBetter",
         "title": "[Memory] The bandwidth of writing integers",
@@ -96847,6 +96810,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average memory write bandwidth on Asterinas",
             "value": "6447.35",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tate.thl@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "a7e45201e739ab20d43418fb6dd3839e3c326b1d",
+          "message": "Update README.md for ICSE 2026 paper acceptance",
+          "timestamp": "2025-10-18T09:58:02Z",
+          "url": "https://github.com/asterinas/asterinas/commit/a7e45201e739ab20d43418fb6dd3839e3c326b1d"
+        },
+        "date": 1760920203544,
+        "tool": "customBiggerIsBetter",
+        "title": "[Memory] The bandwidth of writing integers",
+        "description": "bw_mem fwr",
+        "display": false,
+        "benches": [
+          {
+            "name": "Average memory write bandwidth on Linux",
+            "value": "6570.36",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average memory write bandwidth on Asterinas",
+            "value": "6547.53",
             "unit": "MB/s",
             "extra": "aster_result"
           }
