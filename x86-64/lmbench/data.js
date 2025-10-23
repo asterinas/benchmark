@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1761260013771,
+  "lastUpdate": 1761260090673,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -48890,43 +48890,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "cfa4a6fba33d45de25de153c809ea4d02c27d231",
-          "message": "Specify SCHEME in Makefile for LoongArch",
-          "timestamp": "2025-08-05T17:16:48Z",
-          "url": "https://github.com/asterinas/asterinas/commit/cfa4a6fba33d45de25de153c809ea4d02c27d231"
-        },
-        "date": 1754668423461,
-        "tool": "customBiggerIsBetter",
-        "title": "[VFS] The bandwidth of file reads via page cache",
-        "description": "bw_file_rd",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average file read bandwidth on Linux",
-            "value": "9106.92",
-            "unit": "MB/s",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average file read bandwidth on Asterinas",
-            "value": "9420.61",
-            "unit": "MB/s",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "jiangjianfeng",
             "username": "StevenJiang1110",
             "email": "jiangjianfeng.jjf@antgroup.com"
@@ -51102,6 +51065,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average file read bandwidth on Asterinas",
             "value": "10131.55",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Tao Su",
+            "username": "taosue",
+            "email": "st498824@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "79d737c268efc8ba22a35539127bb2b385aae72c",
+          "message": "Support arrays with multiple element types in SCML",
+          "timestamp": "2025-10-10T11:43:56Z",
+          "url": "https://github.com/asterinas/asterinas/commit/79d737c268efc8ba22a35539127bb2b385aae72c"
+        },
+        "date": 1761260015194,
+        "tool": "customBiggerIsBetter",
+        "title": "[VFS] The bandwidth of file reads via page cache",
+        "description": "bw_file_rd",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average file read bandwidth on Linux",
+            "value": "7997.12",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average file read bandwidth on Asterinas",
+            "value": "10252.87",
             "unit": "MB/s",
             "extra": "aster_result"
           }
