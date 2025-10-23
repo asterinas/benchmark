@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1761182243362,
+  "lastUpdate": 1761182335813,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -84442,43 +84442,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Wang Siyuan",
-            "username": "vvvvsv",
-            "email": "wsy@stu.pku.edu.cn"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "48fa40bbf28a7b7f1d3481be280332f36858d868",
-          "message": "Support the system call `memfd_create`",
-          "timestamp": "2025-07-30T09:00:08Z",
-          "url": "https://github.com/asterinas/asterinas/commit/48fa40bbf28a7b7f1d3481be280332f36858d868"
-        },
-        "date": 1754215819505,
-        "tool": "customSmallerIsBetter",
-        "title": "[TCP sockets] The latency of write+read (virtio-net, 1B message)",
-        "description": "lat_tcp_virtio",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average TCP latency over virtio-net on Linux",
-            "value": "30.8358",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average TCP latency over virtio-net on Asterinas",
-            "value": "25.2431",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Ruihan Li",
             "username": "lrh2000",
             "email": "lrh2000@pku.edu.cn"
@@ -86654,6 +86617,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average TCP latency over virtio-net on Asterinas",
             "value": "42.8054",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Tao Su",
+            "username": "taosue",
+            "email": "st498824@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "79d737c268efc8ba22a35539127bb2b385aae72c",
+          "message": "Support arrays with multiple element types in SCML",
+          "timestamp": "2025-10-10T11:43:56Z",
+          "url": "https://github.com/asterinas/asterinas/commit/79d737c268efc8ba22a35539127bb2b385aae72c"
+        },
+        "date": 1761182245046,
+        "tool": "customSmallerIsBetter",
+        "title": "[TCP sockets] The latency of write+read (virtio-net, 1B message)",
+        "description": "lat_tcp_virtio",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average TCP latency over virtio-net on Linux",
+            "value": "45.6958",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average TCP latency over virtio-net on Asterinas",
+            "value": "55.7956",
             "unit": "µs",
             "extra": "aster_result"
           }
