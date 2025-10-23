@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1761185973218,
+  "lastUpdate": 1761186064550,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_seq_write_bw": [
@@ -2233,43 +2233,6 @@ window.BENCHMARK_DATA = {
             "email": "lrh2000@pku.edu.cn"
           },
           "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "53bb7ea8ae4ccca020ea1d3f5e047dca4124edba",
-          "message": "Assign keyboard code owners",
-          "timestamp": "2025-08-11T10:46:32Z",
-          "url": "https://github.com/asterinas/asterinas/commit/53bb7ea8ae4ccca020ea1d3f5e047dca4124edba"
-        },
-        "date": 1754963239661,
-        "tool": "customBiggerIsBetter",
-        "title": "[Ext2] The bandwidth of sequential reads",
-        "description": "fio -filename=/ext2/fio-test -size=1G -bs=1M -direct=1",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average file read bandwidth on Linux",
-            "value": "1581",
-            "unit": "MB/s",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average file read bandwidth on Asterinas",
-            "value": "1132",
-            "unit": "MB/s",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
             "name": "Junyang Zhang",
             "username": "junyang-zh",
             "email": "user@junyang.me"
@@ -4440,6 +4403,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average file read bandwidth on Asterinas",
             "value": "1280",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Tao Su",
+            "username": "taosue",
+            "email": "st498824@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "79d737c268efc8ba22a35539127bb2b385aae72c",
+          "message": "Support arrays with multiple element types in SCML",
+          "timestamp": "2025-10-10T11:43:56Z",
+          "url": "https://github.com/asterinas/asterinas/commit/79d737c268efc8ba22a35539127bb2b385aae72c"
+        },
+        "date": 1761185974373,
+        "tool": "customBiggerIsBetter",
+        "title": "[Ext2] The bandwidth of sequential reads",
+        "description": "fio -filename=/ext2/fio-test -size=1G -bs=1M -direct=1",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average file read bandwidth on Linux",
+            "value": "2133",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average file read bandwidth on Asterinas",
+            "value": "1227",
             "unit": "MB/s",
             "extra": "aster_result"
           }
