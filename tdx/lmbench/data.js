@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1761349668618,
+  "lastUpdate": 1761349745900,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -79232,43 +79232,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Zhang Junyang",
-            "username": "junyang-zh",
-            "email": "junyang@stu.pku.edu.cn"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "79b3f6889262bc606e38f0f3f313b3cbe8933d41",
-          "message": "Make the RCU lifetime of page tables explicit",
-          "timestamp": "2025-05-20T03:39:51Z",
-          "url": "https://github.com/asterinas/asterinas/commit/79b3f6889262bc606e38f0f3f313b3cbe8933d41"
-        },
-        "date": 1748218614569,
-        "tool": "customBiggerIsBetter",
-        "title": "[TCP sockets] The bandwidth (virtio-net, 64KB message)",
-        "description": "bw_tcp -l",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average TCP bandwidth on Linux",
-            "value": "425.63",
-            "unit": "MB/sec",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average TCP bandwidth on Asterinas",
-            "value": "182.30",
-            "unit": "MB/sec",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Ruihan Li",
             "username": "lrh2000",
             "email": "lrh2000@pku.edu.cn"
@@ -81444,6 +81407,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average TCP bandwidth on Asterinas",
             "value": "252.76",
+            "unit": "MB/sec",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Zejun Zhao",
+            "username": "jellllly420",
+            "email": "jelly.zhao.42@gmail.com"
+          },
+          "committer": {
+            "name": "Junyang Zhang",
+            "username": "junyang-zh",
+            "email": "user@junyang.me"
+          },
+          "id": "8251d48bf26f169c2c0b14825b2721472e8159cf",
+          "message": "Add RISC-V PLIC support",
+          "timestamp": "2025-05-28T07:35:00Z",
+          "url": "https://github.com/asterinas/asterinas/commit/8251d48bf26f169c2c0b14825b2721472e8159cf"
+        },
+        "date": 1761349670235,
+        "tool": "customBiggerIsBetter",
+        "title": "[TCP sockets] The bandwidth (virtio-net, 64KB message)",
+        "description": "bw_tcp -l",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average TCP bandwidth on Linux",
+            "value": "116.03",
+            "unit": "MB/sec",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average TCP bandwidth on Asterinas",
+            "value": "173.74",
             "unit": "MB/sec",
             "extra": "aster_result"
           }
