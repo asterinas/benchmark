@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1761344137799,
+  "lastUpdate": 1761344230152,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_deletes_between": [
@@ -48876,43 +48876,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Hsy-Intel",
-            "username": "Hsy-Intel",
-            "email": "siyuan.hui@intel.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "35ac8a407b6bd4c2d5f74961d38e848b9ac53b3f",
-          "message": "Bump the Docker image version",
-          "timestamp": "2025-08-14T07:39:55Z",
-          "url": "https://github.com/asterinas/asterinas/commit/35ac8a407b6bd4c2d5f74961d38e848b9ac53b3f"
-        },
-        "date": 1755303804288,
-        "tool": "customSmallerIsBetter",
-        "title": "[Ext2] The total result of sqlite speedtest",
-        "description": "sqlite-speed-test: total",
-        "display": false,
-        "benches": [
-          {
-            "name": "Total speed on Linux (Ext2)",
-            "value": "77.117",
-            "unit": "second",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Total speed on Asterinas (Ext2)",
-            "value": "78.727",
-            "unit": "second",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Zhang Junyang",
             "username": "junyang-zh",
             "email": "junyang@stu.pku.edu.cn"
@@ -51088,6 +51051,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Total speed on Asterinas (Ext2)",
             "value": "81.897",
+            "unit": "second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Zejun Zhao",
+            "username": "jellllly420",
+            "email": "jelly.zhao.42@gmail.com"
+          },
+          "committer": {
+            "name": "Junyang Zhang",
+            "username": "junyang-zh",
+            "email": "user@junyang.me"
+          },
+          "id": "8251d48bf26f169c2c0b14825b2721472e8159cf",
+          "message": "Add RISC-V PLIC support",
+          "timestamp": "2025-05-28T07:35:00Z",
+          "url": "https://github.com/asterinas/asterinas/commit/8251d48bf26f169c2c0b14825b2721472e8159cf"
+        },
+        "date": 1761344139399,
+        "tool": "customSmallerIsBetter",
+        "title": "[Ext2] The total result of sqlite speedtest",
+        "description": "sqlite-speed-test: total",
+        "display": false,
+        "benches": [
+          {
+            "name": "Total speed on Linux (Ext2)",
+            "value": "78.506",
+            "unit": "second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Total speed on Asterinas (Ext2)",
+            "value": "86.889",
             "unit": "second",
             "extra": "aster_result"
           }
