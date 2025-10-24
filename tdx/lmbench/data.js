@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1761267651517,
+  "lastUpdate": 1761267728081,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -94784,43 +94784,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "jiangjianfeng",
-            "username": "StevenJiang1110",
-            "email": "jiangjianfeng.jjf@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "49ef0e9f7aa7606ab62387e231f679197572cf28",
-          "message": "Change the documentation website of OSTD",
-          "timestamp": "2025-06-27T08:10:41Z",
-          "url": "https://github.com/asterinas/asterinas/commit/49ef0e9f7aa7606ab62387e231f679197572cf28"
-        },
-        "date": 1751481079352,
-        "tool": "customBiggerIsBetter",
-        "title": "[Memory] The bandwidth of writing integers",
-        "description": "bw_mem fwr",
-        "display": false,
-        "benches": [
-          {
-            "name": "Average memory write bandwidth on Linux",
-            "value": "9084.42",
-            "unit": "MB/s",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average memory write bandwidth on Asterinas",
-            "value": "7880.33",
-            "unit": "MB/s",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Wang Siyuan",
             "username": "vvvvsv",
             "email": "wsy@stu.pku.edu.cn"
@@ -96995,6 +96958,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average memory write bandwidth on Asterinas",
             "value": "6686.48",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Tao Su",
+            "username": "taosue",
+            "email": "st498824@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "79d737c268efc8ba22a35539127bb2b385aae72c",
+          "message": "Support arrays with multiple element types in SCML",
+          "timestamp": "2025-10-10T11:43:56Z",
+          "url": "https://github.com/asterinas/asterinas/commit/79d737c268efc8ba22a35539127bb2b385aae72c"
+        },
+        "date": 1761267652735,
+        "tool": "customBiggerIsBetter",
+        "title": "[Memory] The bandwidth of writing integers",
+        "description": "bw_mem fwr",
+        "display": false,
+        "benches": [
+          {
+            "name": "Average memory write bandwidth on Linux",
+            "value": "6589.88",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average memory write bandwidth on Asterinas",
+            "value": "6400.92",
             "unit": "MB/s",
             "extra": "aster_result"
           }
