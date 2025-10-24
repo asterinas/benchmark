@@ -1,45 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1761342747992,
+  "lastUpdate": 1761342840211,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "cpu_lat": [
-      {
-        "commit": {
-          "author": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tate.thl@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "f2ead0b3edfe621b6c37bdfb61172023b5abc3d7",
-          "message": "Remove O_TMPFILE flag because it is not really supported",
-          "timestamp": "2025-08-07T14:02:40Z",
-          "url": "https://github.com/asterinas/asterinas/commit/f2ead0b3edfe621b6c37bdfb61172023b5abc3d7"
-        },
-        "date": 1754788707849,
-        "tool": "customSmallerIsBetter",
-        "title": "[CPU] CPU performance",
-        "description": "sysbench cpu",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average Execution Time per CPU on Linux",
-            "value": "4.12",
-            "unit": "ms",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average Execution Time per CPU on Asterinas",
-            "value": "4.11",
-            "unit": "ms",
-            "extra": "aster_result"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2218,6 +2181,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average Execution Time per CPU on Asterinas",
             "value": "4.28",
+            "unit": "ms",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Zejun Zhao",
+            "username": "jellllly420",
+            "email": "jelly.zhao.42@gmail.com"
+          },
+          "committer": {
+            "name": "Junyang Zhang",
+            "username": "junyang-zh",
+            "email": "user@junyang.me"
+          },
+          "id": "8251d48bf26f169c2c0b14825b2721472e8159cf",
+          "message": "Add RISC-V PLIC support",
+          "timestamp": "2025-05-28T07:35:00Z",
+          "url": "https://github.com/asterinas/asterinas/commit/8251d48bf26f169c2c0b14825b2721472e8159cf"
+        },
+        "date": 1761342749370,
+        "tool": "customSmallerIsBetter",
+        "title": "[CPU] CPU performance",
+        "description": "sysbench cpu",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average Execution Time per CPU on Linux",
+            "value": "4.21",
+            "unit": "ms",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average Execution Time per CPU on Asterinas",
+            "value": "4.32",
             "unit": "ms",
             "extra": "aster_result"
           }
