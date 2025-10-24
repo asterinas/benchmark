@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1761347562871,
+  "lastUpdate": 1761347639942,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "http_file4KB_bw": [
@@ -10000,6 +10000,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average HTTP Bandwidth over virtio-net between Host Linux and Guest Asterinas",
             "value": "1942.04",
+            "unit": "Kbytes/sec",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Zejun Zhao",
+            "username": "jellllly420",
+            "email": "jelly.zhao.42@gmail.com"
+          },
+          "committer": {
+            "name": "Junyang Zhang",
+            "username": "junyang-zh",
+            "email": "user@junyang.me"
+          },
+          "id": "8251d48bf26f169c2c0b14825b2721472e8159cf",
+          "message": "Add RISC-V PLIC support",
+          "timestamp": "2025-05-28T07:35:00Z",
+          "url": "https://github.com/asterinas/asterinas/commit/8251d48bf26f169c2c0b14825b2721472e8159cf"
+        },
+        "date": 1761347564228,
+        "tool": "customBiggerIsBetter",
+        "title": "Nginx HTTP request performance with 1 concurrency and 10000 requests in total",
+        "description": "ab -n 10000 -c 1 http://localhost:8080/index.html",
+        "display": false,
+        "benches": [
+          {
+            "name": "Average HTTP Bandwidth over virtio-net between Host Linux and Guest Linux",
+            "value": "3037.11",
+            "unit": "Kbytes/sec",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average HTTP Bandwidth over virtio-net between Host Linux and Guest Asterinas",
+            "value": "2590.85",
             "unit": "Kbytes/sec",
             "extra": "aster_result"
           }
