@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1761350794586,
+  "lastUpdate": 1761350875163,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -20000,43 +20000,6 @@ window.BENCHMARK_DATA = {
             "email": "wsy@stu.pku.edu.cn"
           },
           "committer": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "3329907643@qq.com"
-          },
-          "id": "a13297ae4c0b445ae5e9fed8ed7ffa8c7d334621",
-          "message": "Add fields in `/proc/*/stat` and `/proc/*/status`",
-          "timestamp": "2025-07-02T02:54:59Z",
-          "url": "https://github.com/asterinas/asterinas/commit/a13297ae4c0b445ae5e9fed8ed7ffa8c7d334621"
-        },
-        "date": 1751553247359,
-        "tool": "customSmallerIsBetter",
-        "title": "[Signals] The cost of catching a signal",
-        "description": "lat_sig catch",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average Signal handler overhead on Linux",
-            "value": "0.8353",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average Signal handler overhead on Asterinas",
-            "value": "0.4954",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Wang Siyuan",
-            "username": "vvvvsv",
-            "email": "wsy@stu.pku.edu.cn"
-          },
-          "committer": {
             "name": "Chengjun Chen",
             "username": "cchanging",
             "email": "33800552+cchanging@users.noreply.github.com"
@@ -22206,6 +22169,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average Signal handler overhead on Asterinas",
             "value": "1.0251",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Zejun Zhao",
+            "username": "jellllly420",
+            "email": "jelly.zhao.42@gmail.com"
+          },
+          "committer": {
+            "name": "Junyang Zhang",
+            "username": "junyang-zh",
+            "email": "user@junyang.me"
+          },
+          "id": "8251d48bf26f169c2c0b14825b2721472e8159cf",
+          "message": "Add RISC-V PLIC support",
+          "timestamp": "2025-05-28T07:35:00Z",
+          "url": "https://github.com/asterinas/asterinas/commit/8251d48bf26f169c2c0b14825b2721472e8159cf"
+        },
+        "date": 1761350796201,
+        "tool": "customSmallerIsBetter",
+        "title": "[Signals] The cost of catching a signal",
+        "description": "lat_sig catch",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average Signal handler overhead on Linux",
+            "value": "1.0402",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average Signal handler overhead on Asterinas",
+            "value": "1.0040",
             "unit": "µs",
             "extra": "aster_result"
           }
