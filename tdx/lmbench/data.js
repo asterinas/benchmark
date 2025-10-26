@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1761441786067,
+  "lastUpdate": 1761441864906,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -55541,43 +55541,6 @@ window.BENCHMARK_DATA = {
             "username": "tatetian",
             "email": "tatetian@gmail.com"
           },
-          "id": "dc26e183100dcabf292aa8ee41458f189b2f7b94",
-          "message": "Depend on int-to-c-enum instead of num crate",
-          "timestamp": "2025-06-27T08:29:34Z",
-          "url": "https://github.com/asterinas/asterinas/commit/dc26e183100dcabf292aa8ee41458f189b2f7b94"
-        },
-        "date": 1751382586315,
-        "tool": "customBiggerIsBetter",
-        "title": "[Ramfs] The throughput of creating/deleting small files (0KB)",
-        "description": "lat_fs -s 0k",
-        "display": true,
-        "benches": [
-          {
-            "name": "Number of created/deleted files on Linux",
-            "value": "3842",
-            "unit": "number",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Number of created/deleted files on Asterinas",
-            "value": "2165",
-            "unit": "number",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "jiangjianfeng",
-            "username": "StevenJiang1110",
-            "email": "jiangjianfeng.jjf@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
           "id": "49ef0e9f7aa7606ab62387e231f679197572cf28",
           "message": "Change the documentation website of OSTD",
           "timestamp": "2025-06-27T08:10:41Z",
@@ -57743,6 +57706,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Number of created/deleted files on Asterinas",
             "value": "2497",
+            "unit": "number",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Arthur Paulino",
+            "username": "arthurpaulino",
+            "email": "arthurleonardo.ap@gmail.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "6a67807fd003692a75abbf7f86085eba16bc25d1",
+          "message": "Implement `IdSet::iter_in`\n\nThis patch enables more expressive ways to slice and iterate over\nthe `Id`s in an `IdSet` with `IdSet::iter_in`, which takes an arbitrary\n`IdSetSlicer`.\n\n`IdSet::iter_in` efficiently slices out unintended inner parts and\nthen, within the remaining parts, skips inactive bits by using\n`BitSlice::iter_ones` from the `bitvec` crate.\n\nIt also delivers several implementations of `IdSetSlicer` so OSTD\nconsumers can represent `Id` ranges ergonomically.\n\nIn the Asterinas kernel, `CpuSet::iter_in` enables a cleaner way to\ndefine an interator that cycles over the CPUs.",
+          "timestamp": "2025-10-22T18:57:03Z",
+          "url": "https://github.com/asterinas/asterinas/commit/6a67807fd003692a75abbf7f86085eba16bc25d1"
+        },
+        "date": 1761441787717,
+        "tool": "customBiggerIsBetter",
+        "title": "[Ramfs] The throughput of creating/deleting small files (0KB)",
+        "description": "lat_fs -s 0k",
+        "display": true,
+        "benches": [
+          {
+            "name": "Number of created/deleted files on Linux",
+            "value": "25907",
+            "unit": "number",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Number of created/deleted files on Asterinas",
+            "value": "2477",
             "unit": "number",
             "extra": "aster_result"
           }
