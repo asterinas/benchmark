@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1761527681059,
+  "lastUpdate": 1761527766852,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -66640,43 +66640,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Zejun Zhao",
-            "username": "jellllly420",
-            "email": "jelly.zhao.42@gmail.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "ffb40974364c74ee3adaffdf8a7063b575233807",
-          "message": "Add RISC-V timer support",
-          "timestamp": "2025-04-28T03:04:29Z",
-          "url": "https://github.com/asterinas/asterinas/commit/ffb40974364c74ee3adaffdf8a7063b575233807"
-        },
-        "date": 1748650311766,
-        "tool": "customBiggerIsBetter",
-        "title": "[TCP sockets] The bandwidth (loopback, 64KB message)",
-        "description": "bw_tcp -l",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average TCP bandwidth on Linux",
-            "value": "6431.49",
-            "unit": "MB/s",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average TCP bandwidth on Asterinas",
-            "value": "6475.49",
-            "unit": "MB/s",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Ruihan Li",
             "username": "lrh2000",
             "email": "lrh2000@pku.edu.cn"
@@ -68852,6 +68815,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average TCP bandwidth on Asterinas",
             "value": "7698.70",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "8a16aa3b860e17956ecae24396a2169477cb830b",
+          "message": "Refine the `ProcessVm` structure",
+          "timestamp": "2025-10-24T14:56:19Z",
+          "url": "https://github.com/asterinas/asterinas/commit/8a16aa3b860e17956ecae24396a2169477cb830b"
+        },
+        "date": 1761527682693,
+        "tool": "customBiggerIsBetter",
+        "title": "[TCP sockets] The bandwidth (loopback, 64KB message)",
+        "description": "bw_tcp -l",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average TCP bandwidth on Linux",
+            "value": "8520.77",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average TCP bandwidth on Asterinas",
+            "value": "7055.51",
             "unit": "MB/s",
             "extra": "aster_result"
           }
