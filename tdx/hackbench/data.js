@@ -1,45 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1761443446971,
+  "lastUpdate": 1761530012301,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "group8_smp1": [
-      {
-        "commit": {
-          "author": {
-            "name": "Zhang Junyang",
-            "username": "junyang-zh",
-            "email": "junyang@stu.pku.edu.cn"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "a2aedcfb3afa31d8cf27b9b458df7103e3c68bfe",
-          "message": "Add a SMP LTP block list",
-          "timestamp": "2025-06-13T12:56:46Z",
-          "url": "https://github.com/asterinas/asterinas/commit/a2aedcfb3afa31d8cf27b9b458df7103e3c68bfe"
-        },
-        "date": 1749919817224,
-        "tool": "customSmallerIsBetter",
-        "title": "[Scheduler] Turnaround time of 8 groups using 1 CPU",
-        "description": "hackbench -g 8 -l 1000 -p -T",
-        "display": false,
-        "benches": [
-          {
-            "name": "Turnaround time of hackbench on Linux",
-            "value": "1.270",
-            "unit": "sec",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Turnaround time of hackbench on Asterinas",
-            "value": "1.568",
-            "unit": "sec",
-            "extra": "aster_result"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2218,6 +2181,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Turnaround time of hackbench on Asterinas",
             "value": "1.827",
+            "unit": "sec",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "8a16aa3b860e17956ecae24396a2169477cb830b",
+          "message": "Refine the `ProcessVm` structure",
+          "timestamp": "2025-10-24T14:56:19Z",
+          "url": "https://github.com/asterinas/asterinas/commit/8a16aa3b860e17956ecae24396a2169477cb830b"
+        },
+        "date": 1761529934228,
+        "tool": "customSmallerIsBetter",
+        "title": "[Scheduler] Turnaround time of 8 groups using 1 CPU",
+        "description": "hackbench -g 8 -l 1000 -p -T",
+        "display": false,
+        "benches": [
+          {
+            "name": "Turnaround time of hackbench on Linux",
+            "value": "1.180",
+            "unit": "sec",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Turnaround time of hackbench on Asterinas",
+            "value": "1.774",
             "unit": "sec",
             "extra": "aster_result"
           }
