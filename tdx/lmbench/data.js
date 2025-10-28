@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1761613143798,
+  "lastUpdate": 1761613223174,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -35556,43 +35556,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2025-07-11T04:57:27Z",
           "url": "https://github.com/asterinas/asterinas/commit/e5c5bc79921ae89e9b574d69640b9f9f96b2f86f"
         },
-        "date": 1752427768241,
-        "tool": "customSmallerIsBetter",
-        "title": "[Unix sockets] The latency of connect",
-        "description": "lat_connect",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average unix connect latency on Linux",
-            "value": "6.8447",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average unix connect latency on Asterinas",
-            "value": "4.1081",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "e5c5bc79921ae89e9b574d69640b9f9f96b2f86f",
-          "message": "Clarify safety comments in `dyn_cpu_local.rs`",
-          "timestamp": "2025-07-11T04:57:27Z",
-          "url": "https://github.com/asterinas/asterinas/commit/e5c5bc79921ae89e9b574d69640b9f9f96b2f86f"
-        },
         "date": 1752504861320,
         "tool": "customSmallerIsBetter",
         "title": "[Unix sockets] The latency of connect",
@@ -37753,6 +37716,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average unix connect latency on Asterinas",
             "value": "4.8859",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "2d74e69b4b7c294438cd4d1ac22bb87ee5edcca6",
+          "message": "Add KDGKBMODE and KDSKBMODE ioctl support",
+          "timestamp": "2025-10-23T13:28:21Z",
+          "url": "https://github.com/asterinas/asterinas/commit/2d74e69b4b7c294438cd4d1ac22bb87ee5edcca6"
+        },
+        "date": 1761613145058,
+        "tool": "customSmallerIsBetter",
+        "title": "[Unix sockets] The latency of connect",
+        "description": "lat_connect",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average unix connect latency on Linux",
+            "value": "4.6529",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average unix connect latency on Asterinas",
+            "value": "4.3091",
             "unit": "µs",
             "extra": "aster_result"
           }
