@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1761694596699,
+  "lastUpdate": 1761694676879,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -26670,43 +26670,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Zejun Zhao",
-            "username": "jellllly420",
-            "email": "jelly.zhao.42@gmail.com"
-          },
-          "committer": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "3329907643@qq.com"
-          },
-          "id": "597b0b5f25f91b8500894fa30b133aa415f7ccab",
-          "message": "Disable kernel traps before going to userspace",
-          "timestamp": "2025-08-08T12:30:20Z",
-          "url": "https://github.com/asterinas/asterinas/commit/597b0b5f25f91b8500894fa30b133aa415f7ccab"
-        },
-        "date": 1754876366137,
-        "tool": "customBiggerIsBetter",
-        "title": "[Pipes] The bandwidth",
-        "description": "bw_pipe",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average pipe bandwidth on Linux",
-            "value": "8908.68",
-            "unit": "MB/s",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average pipe bandwidth on Asterinas",
-            "value": "9490.55",
-            "unit": "MB/s",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Ruihan Li",
             "username": "lrh2000",
             "email": "lrh2000@pku.edu.cn"
@@ -28882,6 +28845,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average pipe bandwidth on Asterinas",
             "value": "9463.80",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Cautreoxit",
+            "username": "Cautreoxit",
+            "email": "huk@stu.pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "43fc98dc77e4171035bb7e35c6100d577660acc1",
+          "message": "Migrate virtio-input to input subsystem API",
+          "timestamp": "2025-08-22T09:02:32Z",
+          "url": "https://github.com/asterinas/asterinas/commit/43fc98dc77e4171035bb7e35c6100d577660acc1"
+        },
+        "date": 1761694598117,
+        "tool": "customBiggerIsBetter",
+        "title": "[Pipes] The bandwidth",
+        "description": "bw_pipe",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average pipe bandwidth on Linux",
+            "value": "10223.74",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average pipe bandwidth on Asterinas",
+            "value": "9448.98",
             "unit": "MB/s",
             "extra": "aster_result"
           }
