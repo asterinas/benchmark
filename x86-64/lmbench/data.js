@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1761694116960,
+  "lastUpdate": 1761694196999,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -15560,43 +15560,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Hsy-Intel",
-            "username": "Hsy-Intel",
-            "email": "siyuan.hui@intel.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "35ac8a407b6bd4c2d5f74961d38e848b9ac53b3f",
-          "message": "Bump the Docker image version",
-          "timestamp": "2025-08-14T07:39:55Z",
-          "url": "https://github.com/asterinas/asterinas/commit/35ac8a407b6bd4c2d5f74961d38e848b9ac53b3f"
-        },
-        "date": 1755306474984,
-        "tool": "customSmallerIsBetter",
-        "title": "[Process] The cost of fork+exec+shell+exit",
-        "description": "lat_proc shell",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average shell latency on Linux",
-            "value": "1313.6000",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average shell latency on Asterinas",
-            "value": "1254.0000",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Zhang Junyang",
             "username": "junyang-zh",
             "email": "junyang@stu.pku.edu.cn"
@@ -17772,6 +17735,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average shell latency on Asterinas",
             "value": "1189.4000",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Cautreoxit",
+            "username": "Cautreoxit",
+            "email": "huk@stu.pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "43fc98dc77e4171035bb7e35c6100d577660acc1",
+          "message": "Migrate virtio-input to input subsystem API",
+          "timestamp": "2025-08-22T09:02:32Z",
+          "url": "https://github.com/asterinas/asterinas/commit/43fc98dc77e4171035bb7e35c6100d577660acc1"
+        },
+        "date": 1761694118316,
+        "tool": "customSmallerIsBetter",
+        "title": "[Process] The cost of fork+exec+shell+exit",
+        "description": "lat_proc shell",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average shell latency on Linux",
+            "value": "1295.0000",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average shell latency on Asterinas",
+            "value": "1212.8000",
             "unit": "µs",
             "extra": "aster_result"
           }
