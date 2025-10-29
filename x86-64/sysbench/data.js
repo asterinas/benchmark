@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1761688451864,
+  "lastUpdate": 1761775351772,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "cpu_lat": [
@@ -2228,43 +2228,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Hsy-Intel",
-            "username": "Hsy-Intel",
-            "email": "siyuan.hui@intel.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "35ac8a407b6bd4c2d5f74961d38e848b9ac53b3f",
-          "message": "Bump the Docker image version",
-          "timestamp": "2025-08-14T07:39:55Z",
-          "url": "https://github.com/asterinas/asterinas/commit/35ac8a407b6bd4c2d5f74961d38e848b9ac53b3f"
-        },
-        "date": 1755303058410,
-        "tool": "customSmallerIsBetter",
-        "title": "[Threads] Threads performance",
-        "description": "sysbench threads",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average Execution Time per Thread on Linux",
-            "value": "14.15",
-            "unit": "ms",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average Execution Time per Thread on Asterinas",
-            "value": "3.83",
-            "unit": "ms",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Zhang Junyang",
             "username": "junyang-zh",
             "email": "junyang@stu.pku.edu.cn"
@@ -4440,6 +4403,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average Execution Time per Thread on Asterinas",
             "value": "3.53",
+            "unit": "ms",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Zejun Zhao",
+            "username": "jellllly420",
+            "email": "jelly.zhao.42@gmail.com"
+          },
+          "committer": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "3329907643@qq.com"
+          },
+          "id": "39a541fdeba53dd90cc85d13dcdd3fee916bb53a",
+          "message": "Add RISC-V FPU support",
+          "timestamp": "2025-08-07T20:53:33Z",
+          "url": "https://github.com/asterinas/asterinas/commit/39a541fdeba53dd90cc85d13dcdd3fee916bb53a"
+        },
+        "date": 1761775272936,
+        "tool": "customSmallerIsBetter",
+        "title": "[Threads] Threads performance",
+        "description": "sysbench threads",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average Execution Time per Thread on Linux",
+            "value": "22.40",
+            "unit": "ms",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average Execution Time per Thread on Asterinas",
+            "value": "3.90",
             "unit": "ms",
             "extra": "aster_result"
           }
