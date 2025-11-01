@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1762038314792,
+  "lastUpdate": 1762038394361,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -40002,43 +40002,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Hsy-Intel",
-            "username": "Hsy-Intel",
-            "email": "siyuan.hui@intel.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "35ac8a407b6bd4c2d5f74961d38e848b9ac53b3f",
-          "message": "Bump the Docker image version",
-          "timestamp": "2025-08-14T07:39:55Z",
-          "url": "https://github.com/asterinas/asterinas/commit/35ac8a407b6bd4c2d5f74961d38e848b9ac53b3f"
-        },
-        "date": 1755305202443,
-        "tool": "customSmallerIsBetter",
-        "title": "[VFS] The cost of read (/dev/zero)",
-        "description": "lat_syscall read",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average read latency on Linux",
-            "value": "0.1512",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average read latency on Asterinas",
-            "value": "0.1056",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Zhang Junyang",
             "username": "junyang-zh",
             "email": "junyang@stu.pku.edu.cn"
@@ -42214,6 +42177,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average read latency on Asterinas",
             "value": "0.1154",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Hsy-Intel",
+            "username": "Hsy-Intel",
+            "email": "siyuan.hui@intel.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "63efd4891b36e49c466c8a5137820e4dcb878143",
+          "message": "Fix Linux TDX network performance by unifying virtio-net-pci parameters",
+          "timestamp": "2025-10-28T22:33:45Z",
+          "url": "https://github.com/asterinas/asterinas/commit/63efd4891b36e49c466c8a5137820e4dcb878143"
+        },
+        "date": 1762038316098,
+        "tool": "customSmallerIsBetter",
+        "title": "[VFS] The cost of read (/dev/zero)",
+        "description": "lat_syscall read",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average read latency on Linux",
+            "value": "0.1374",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average read latency on Asterinas",
+            "value": "0.1071",
             "unit": "µs",
             "extra": "aster_result"
           }
