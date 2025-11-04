@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1762219128399,
+  "lastUpdate": 1762219208832,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -104440,43 +104440,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tate.thl@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "9ab035c65491676d4ef46e52ede31ce6998a0b59",
-          "message": "Rename the docs directory to book",
-          "timestamp": "2025-08-21T10:40:35Z",
-          "url": "https://github.com/asterinas/asterinas/commit/9ab035c65491676d4ef46e52ede31ce6998a0b59"
-        },
-        "date": 1755826342554,
-        "tool": "customBiggerIsBetter",
-        "title": "[Ext2] The throughput of creating/deleting small files (0KB)",
-        "description": "lat_fs -s 0k /ext2",
-        "display": false,
-        "benches": [
-          {
-            "name": "Number of created/deleted files on Linux",
-            "value": "2174",
-            "unit": "number",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Number of created/deleted files on Asterinas",
-            "value": "516",
-            "unit": "number",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Hsy-Intel",
             "username": "Hsy-Intel",
             "email": "siyuan.hui@intel.com"
@@ -106652,6 +106615,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Number of created/deleted files on Asterinas",
             "value": "732",
+            "unit": "number",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Chen Chengjun",
+            "username": "cchanging",
+            "email": "chenchengjun.ccj@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "9b0b445e4a1a7d43f0542b95fa85b3d8554785d2",
+          "message": "Enable some mount givsor tests",
+          "timestamp": "2025-11-03T06:13:31Z",
+          "url": "https://github.com/asterinas/asterinas/commit/9b0b445e4a1a7d43f0542b95fa85b3d8554785d2"
+        },
+        "date": 1762219129940,
+        "tool": "customBiggerIsBetter",
+        "title": "[Ext2] The throughput of creating/deleting small files (0KB)",
+        "description": "lat_fs -s 0k /ext2",
+        "display": false,
+        "benches": [
+          {
+            "name": "Number of created/deleted files on Linux",
+            "value": "92",
+            "unit": "number",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Number of created/deleted files on Asterinas",
+            "value": "475",
             "unit": "number",
             "extra": "aster_result"
           }
