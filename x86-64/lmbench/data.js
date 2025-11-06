@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1762420316332,
+  "lastUpdate": 1762420399055,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -84442,43 +84442,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Arthur Paulino",
-            "username": "arthurpaulino",
-            "email": "arthurleonardo.ap@gmail.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "a73f210c7a7dc2ca806594ccdeb644e162ff30fb",
-          "message": "Make `wake_robust_futex` atomic\n\nReplace `VmWriter::atomic_update` with `VmWriter::atomic_compare_exchange`,\nwhich takes the old value for comparison and new value instead of a\nclosure to compute it. This version has one less unsafe call.\n\nThen use `atomic_compare_exchange` to reimplement the looping logic\nof `wake_robust_futex` and make it atomic.",
-          "timestamp": "2025-08-18T23:34:01Z",
-          "url": "https://github.com/asterinas/asterinas/commit/a73f210c7a7dc2ca806594ccdeb644e162ff30fb"
-        },
-        "date": 1755646779551,
-        "tool": "customSmallerIsBetter",
-        "title": "[TCP sockets] The latency of write+read (virtio-net, 1B message)",
-        "description": "lat_tcp_virtio",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average TCP latency over virtio-net on Linux",
-            "value": "46.1397",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average TCP latency over virtio-net on Asterinas",
-            "value": "42.5759",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Ruihan Li",
             "username": "lrh2000",
             "email": "lrh2000@pku.edu.cn"
@@ -86654,6 +86617,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average TCP latency over virtio-net on Asterinas",
             "value": "43.7881",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Junyang Zhang",
+            "username": "junyang-zh",
+            "email": "user@junyang.me"
+          },
+          "id": "d447fe0ca8ae25ceafcb30cdbe7559250be4fcb4",
+          "message": "Update APICs' MMIO region sizes",
+          "timestamp": "2025-10-28T15:53:36Z",
+          "url": "https://github.com/asterinas/asterinas/commit/d447fe0ca8ae25ceafcb30cdbe7559250be4fcb4"
+        },
+        "date": 1762420318278,
+        "tool": "customSmallerIsBetter",
+        "title": "[TCP sockets] The latency of write+read (virtio-net, 1B message)",
+        "description": "lat_tcp_virtio",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average TCP latency over virtio-net on Linux",
+            "value": "52.3143",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average TCP latency over virtio-net on Asterinas",
+            "value": "42.5085",
             "unit": "µs",
             "extra": "aster_result"
           }
