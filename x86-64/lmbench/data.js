@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1762484684294,
+  "lastUpdate": 1762484767309,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -8894,43 +8894,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "924d87398ab75723a0cf9e1466cbb604c513a6d6",
-          "message": "Introduce `first_context_switch`",
-          "timestamp": "2025-08-13T02:16:11Z",
-          "url": "https://github.com/asterinas/asterinas/commit/924d87398ab75723a0cf9e1466cbb604c513a6d6"
-        },
-        "date": 1755754813731,
-        "tool": "customSmallerIsBetter",
-        "title": "[Process] The cost of context switching",
-        "description": "lat_ctx 2",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average context switch latency on Linux",
-            "value": "1.27",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average context switch latency on Asterinas",
-            "value": "1.31",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Tate, Hongliang Tian",
             "username": "tatetian",
             "email": "tate.thl@antgroup.com"
@@ -11106,6 +11069,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average context switch latency on Asterinas",
             "value": "1.42",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Wang Siyuan",
+            "username": "vvvvsv",
+            "email": "wsy@stu.pku.edu.cn"
+          },
+          "committer": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "3329907643@qq.com"
+          },
+          "id": "e336882eee9d556480caafa267d097b7116c02c2",
+          "message": "Do not drop `Arc<dyn FileLike>` in an incorrect context",
+          "timestamp": "2025-11-06T11:31:41Z",
+          "url": "https://github.com/asterinas/asterinas/commit/e336882eee9d556480caafa267d097b7116c02c2"
+        },
+        "date": 1762484685915,
+        "tool": "customSmallerIsBetter",
+        "title": "[Process] The cost of context switching",
+        "description": "lat_ctx 2",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average context switch latency on Linux",
+            "value": "1.33",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average context switch latency on Asterinas",
+            "value": "1.35",
             "unit": "µs",
             "extra": "aster_result"
           }
