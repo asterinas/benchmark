@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1762484850044,
+  "lastUpdate": 1762484932485,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -91108,43 +91108,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Zejun Zhao",
-            "username": "jellllly420",
-            "email": "jelly.zhao.42@gmail.com"
-          },
-          "committer": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "3329907643@qq.com"
-          },
-          "id": "0a126a0c8c3d05e5d55132500d47dadec1605011",
-          "message": "Set correct default value for VdsoData::mask",
-          "timestamp": "2025-08-22T12:08:36Z",
-          "url": "https://github.com/asterinas/asterinas/commit/0a126a0c8c3d05e5d55132500d47dadec1605011"
-        },
-        "date": 1755995390195,
-        "tool": "customBiggerIsBetter",
-        "title": "[Memory] The bandwidth of reading integers",
-        "description": "bw_mem frd",
-        "display": false,
-        "benches": [
-          {
-            "name": "Average memory read bandwidth on Linux",
-            "value": "10809.84",
-            "unit": "MB/s",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average memory read bandwidth on Asterinas",
-            "value": "10499.70",
-            "unit": "MB/s",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Chen Chengjun",
             "username": "cchanging",
             "email": "chenchengjun.ccj@antgroup.com"
@@ -93320,6 +93283,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average memory read bandwidth on Asterinas",
             "value": "10853.77",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Wang Siyuan",
+            "username": "vvvvsv",
+            "email": "wsy@stu.pku.edu.cn"
+          },
+          "committer": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "3329907643@qq.com"
+          },
+          "id": "e336882eee9d556480caafa267d097b7116c02c2",
+          "message": "Do not drop `Arc<dyn FileLike>` in an incorrect context",
+          "timestamp": "2025-11-06T11:31:41Z",
+          "url": "https://github.com/asterinas/asterinas/commit/e336882eee9d556480caafa267d097b7116c02c2"
+        },
+        "date": 1762484851503,
+        "tool": "customBiggerIsBetter",
+        "title": "[Memory] The bandwidth of reading integers",
+        "description": "bw_mem frd",
+        "display": false,
+        "benches": [
+          {
+            "name": "Average memory read bandwidth on Linux",
+            "value": "10245.04",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average memory read bandwidth on Asterinas",
+            "value": "11072.01",
             "unit": "MB/s",
             "extra": "aster_result"
           }
