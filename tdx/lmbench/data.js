@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1762977684241,
+  "lastUpdate": 1762977768416,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -81687,43 +81687,6 @@ window.BENCHMARK_DATA = {
             "username": "tatetian",
             "email": "tatetian@gmail.com"
           },
-          "id": "a2aedcfb3afa31d8cf27b9b458df7103e3c68bfe",
-          "message": "Add a SMP LTP block list",
-          "timestamp": "2025-06-13T12:56:46Z",
-          "url": "https://github.com/asterinas/asterinas/commit/a2aedcfb3afa31d8cf27b9b458df7103e3c68bfe"
-        },
-        "date": 1750019596245,
-        "tool": "customSmallerIsBetter",
-        "title": "[TCP sockets] The latency of connect (virtio-net)",
-        "description": "lat_connect",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average TCP connection latency on Linux",
-            "value": "32.0778",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average TCP connection latency on Asterinas",
-            "value": "48.7182",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Zhang Junyang",
-            "username": "junyang-zh",
-            "email": "junyang@stu.pku.edu.cn"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
           "id": "525085ab865b3850c0de2d704bab1bba6976a980",
           "message": "Implement system call `msync`",
           "timestamp": "2025-06-10T12:45:52Z",
@@ -83890,6 +83853,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average TCP connection latency on Asterinas",
             "value": "141.8605",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Tao Su",
+            "username": "taosue",
+            "email": "st498824@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "0615e6f6424ead8e12d73670428149fa7270571f",
+          "message": "Unify all syscall titles in SCML to level 3",
+          "timestamp": "2025-11-11T02:09:03Z",
+          "url": "https://github.com/asterinas/asterinas/commit/0615e6f6424ead8e12d73670428149fa7270571f"
+        },
+        "date": 1762977685947,
+        "tool": "customSmallerIsBetter",
+        "title": "[TCP sockets] The latency of connect (virtio-net)",
+        "description": "lat_connect",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average TCP connection latency on Linux",
+            "value": "125.8810",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average TCP connection latency on Asterinas",
+            "value": "119.7024",
             "unit": "µs",
             "extra": "aster_result"
           }
