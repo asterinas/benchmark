@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1762972324997,
+  "lastUpdate": 1762972408105,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -102218,43 +102218,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Chen Chengjun",
-            "username": "cchanging",
-            "email": "chenchengjun.ccj@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "3882eb40000826020c6ffe5026e0f8d6ecb3b902",
-          "message": "Update docker version reference",
-          "timestamp": "2025-08-22T13:31:13Z",
-          "url": "https://github.com/asterinas/asterinas/commit/3882eb40000826020c6ffe5026e0f8d6ecb3b902"
-        },
-        "date": 1756166297741,
-        "tool": "customBiggerIsBetter",
-        "title": "[Ext2] The throughput of creating/deleting small files (10KB)",
-        "description": "lat_fs -s 10K /ext2",
-        "display": false,
-        "benches": [
-          {
-            "name": "Number of created/deleted files on Linux",
-            "value": "940",
-            "unit": "number",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Number of created/deleted files on Asterinas",
-            "value": "370",
-            "unit": "number",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Arthur Paulino",
             "username": "arthurpaulino",
             "email": "arthurleonardo.ap@gmail.com"
@@ -104430,6 +104393,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Number of created/deleted files on Asterinas",
             "value": "377",
+            "unit": "number",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Tao Su",
+            "username": "taosue",
+            "email": "st498824@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "0615e6f6424ead8e12d73670428149fa7270571f",
+          "message": "Unify all syscall titles in SCML to level 3",
+          "timestamp": "2025-11-11T02:09:03Z",
+          "url": "https://github.com/asterinas/asterinas/commit/0615e6f6424ead8e12d73670428149fa7270571f"
+        },
+        "date": 1762972326299,
+        "tool": "customBiggerIsBetter",
+        "title": "[Ext2] The throughput of creating/deleting small files (10KB)",
+        "description": "lat_fs -s 10K /ext2",
+        "display": false,
+        "benches": [
+          {
+            "name": "Number of created/deleted files on Linux",
+            "value": "54",
+            "unit": "number",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Number of created/deleted files on Asterinas",
+            "value": "372",
             "unit": "number",
             "extra": "aster_result"
           }
