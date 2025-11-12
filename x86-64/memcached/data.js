@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1762990884120,
+  "lastUpdate": 1762990967292,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "t8_conc32_window10k": [
@@ -4455,43 +4455,6 @@ window.BENCHMARK_DATA = {
             "email": "jelly.zhao.42@gmail.com"
           },
           "committer": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "3329907643@qq.com"
-          },
-          "id": "d3e27ae03a41e7e3dd51293d722ea91fefd44218",
-          "message": "Use vDSO for fallback of user-provided sa_restorer on RISC-V platforms",
-          "timestamp": "2025-08-28T03:20:27Z",
-          "url": "https://github.com/asterinas/asterinas/commit/d3e27ae03a41e7e3dd51293d722ea91fefd44218"
-        },
-        "date": 1756423184325,
-        "tool": "customBiggerIsBetter",
-        "title": "Memaslap 10% SET and 90% GET throughput (virtio-net, 16 client threads, 64 concurrency, 10k window)",
-        "description": "memaslap -t 30s -T 16 -c 64 -w 10k -S 1s",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average OPS of SET and GET over virtio-net between Host Linux and Guest Linux",
-            "value": "5419932",
-            "unit": "operations per second",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average OPS of SET and GET over virtio-net between Host Linux and Guest Asterinas",
-            "value": "4161383",
-            "unit": "operations per second",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Zejun Zhao",
-            "username": "jellllly420",
-            "email": "jelly.zhao.42@gmail.com"
-          },
-          "committer": {
             "name": "Junyang Zhang",
             "username": "junyang-zh",
             "email": "user@junyang.me"
@@ -6662,6 +6625,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average OPS of SET and GET over virtio-net between Host Linux and Guest Asterinas",
             "value": "4875754",
+            "unit": "operations per second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "f57a54aa0dce4905b70023077a68a0b32cd6ab04",
+          "message": "Remove `AccessMode` from `InodeHandle`",
+          "timestamp": "2025-11-12T09:47:28Z",
+          "url": "https://github.com/asterinas/asterinas/commit/f57a54aa0dce4905b70023077a68a0b32cd6ab04"
+        },
+        "date": 1762990884904,
+        "tool": "customBiggerIsBetter",
+        "title": "Memaslap 10% SET and 90% GET throughput (virtio-net, 16 client threads, 64 concurrency, 10k window)",
+        "description": "memaslap -t 30s -T 16 -c 64 -w 10k -S 1s",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average OPS of SET and GET over virtio-net between Host Linux and Guest Linux",
+            "value": "3561110",
+            "unit": "operations per second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average OPS of SET and GET over virtio-net between Host Linux and Guest Asterinas",
+            "value": "5174889",
             "unit": "operations per second",
             "extra": "aster_result"
           }
