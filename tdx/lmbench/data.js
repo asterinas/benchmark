@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1763087650728,
+  "lastUpdate": 1763087821631,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -57759,43 +57759,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "jiangjianfeng",
-            "username": "StevenJiang1110",
-            "email": "jiangjianfeng.jjf@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "665de6bd355a454309ee1d21448ce6d0ac566b21",
-          "message": "Make RISC-V code compile under new exception APIs",
-          "timestamp": "2025-07-08T05:17:25Z",
-          "url": "https://github.com/asterinas/asterinas/commit/665de6bd355a454309ee1d21448ce6d0ac566b21"
-        },
-        "date": 1752161602251,
-        "tool": "customBiggerIsBetter",
-        "title": "[Ramfs] The throughput of creating/deleting small files (10KB)",
-        "description": "lat_fs -s 10K",
-        "display": true,
-        "benches": [
-          {
-            "name": "Number of created/deleted files on Linux",
-            "value": "1527",
-            "unit": "number",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Number of created/deleted files on Asterinas",
-            "value": "1107",
-            "unit": "number",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Hsy-Intel",
             "username": "Hsy-Intel",
             "email": "siyuan.hui@intel.com"
@@ -59970,6 +59933,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Number of created/deleted files on Asterinas",
             "value": "2574",
+            "unit": "number",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Zhang Junyang",
+            "username": "junyang-zh",
+            "email": "junyang@stu.pku.edu.cn"
+          },
+          "committer": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "3329907643@qq.com"
+          },
+          "id": "73c0f34947e37216500ad6166f10b579d00b850a",
+          "message": "Remove `Arc` guards of locks that have no users",
+          "timestamp": "2025-02-05T01:50:22Z",
+          "url": "https://github.com/asterinas/asterinas/commit/73c0f34947e37216500ad6166f10b579d00b850a"
+        },
+        "date": 1763087653019,
+        "tool": "customBiggerIsBetter",
+        "title": "[Ramfs] The throughput of creating/deleting small files (10KB)",
+        "description": "lat_fs -s 10K",
+        "display": true,
+        "benches": [
+          {
+            "name": "Number of created/deleted files on Linux",
+            "value": "1181",
+            "unit": "number",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Number of created/deleted files on Asterinas",
+            "value": "1300",
             "unit": "number",
             "extra": "aster_result"
           }
