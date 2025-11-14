@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1763081891572,
+  "lastUpdate": 1763081975861,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ping_inline_100k_conc20_rps": [
@@ -3330,6 +3330,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average RPS of PING_MBULK over virtio-net between Host Linux and Guest Asterinas",
             "value": "77220.08",
+            "unit": "request per second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Zhang Junyang",
+            "username": "junyang-zh",
+            "email": "junyang@stu.pku.edu.cn"
+          },
+          "committer": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "3329907643@qq.com"
+          },
+          "id": "73c0f34947e37216500ad6166f10b579d00b850a",
+          "message": "Remove `Arc` guards of locks that have no users",
+          "timestamp": "2025-02-05T01:50:22Z",
+          "url": "https://github.com/asterinas/asterinas/commit/73c0f34947e37216500ad6166f10b579d00b850a"
+        },
+        "date": 1763081892526,
+        "tool": "customBiggerIsBetter",
+        "title": "Redis PING MBULK performance (virtio-net, 20 concurrency, 100K requests)",
+        "description": "redis-benchmark -n 100000 -c 20 -t ping_mbulk",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average RPS of PING_MBULK over virtio-net between Host Linux and Guest Linux",
+            "value": "96805.42",
+            "unit": "request per second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average RPS of PING_MBULK over virtio-net between Host Linux and Guest Asterinas",
+            "value": "97370.98",
             "unit": "request per second",
             "extra": "aster_result"
           }
