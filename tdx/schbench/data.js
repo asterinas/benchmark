@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1763081469034,
+  "lastUpdate": 1763081553507,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "smp8_p99_wakeup_latency": [
@@ -4464,43 +4464,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2025-05-23T15:18:54Z",
           "url": "https://github.com/asterinas/asterinas/commit/758c80c32170cd3cc6d62bd2d867a1c902843d0f"
         },
-        "date": 1748476631696,
-        "tool": "customBiggerIsBetter",
-        "title": "[Scheduler] P50 RPS while max-loading all CPUs (SMP=8)",
-        "description": "schbench -F 256 -n 5 -r 90",
-        "display": false,
-        "benches": [
-          {
-            "name": "P50 RPS of schbench on Linux",
-            "value": "3300",
-            "unit": "requests per second",
-            "extra": "linux_result"
-          },
-          {
-            "name": "P50 RPS of schbench on Asterinas",
-            "value": "371",
-            "unit": "requests per second",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
-            "name": "Junyang Zhang",
-            "username": "junyang-zh",
-            "email": "user@junyang.me"
-          },
-          "id": "758c80c32170cd3cc6d62bd2d867a1c902843d0f",
-          "message": "Pull code from `arch/*/irq.rs` to `trap/irq.rs`",
-          "timestamp": "2025-05-23T15:18:54Z",
-          "url": "https://github.com/asterinas/asterinas/commit/758c80c32170cd3cc6d62bd2d867a1c902843d0f"
-        },
         "date": 1748561871558,
         "tool": "customBiggerIsBetter",
         "title": "[Scheduler] P50 RPS while max-loading all CPUs (SMP=8)",
@@ -6648,6 +6611,43 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/asterinas/asterinas/commit/f57a54aa0dce4905b70023077a68a0b32cd6ab04"
         },
         "date": 1762997132036,
+        "tool": "customBiggerIsBetter",
+        "title": "[Scheduler] P50 RPS while max-loading all CPUs (SMP=8)",
+        "description": "schbench -F 256 -n 5 -r 90",
+        "display": false,
+        "benches": [
+          {
+            "name": "P50 RPS of schbench on Linux",
+            "value": "0",
+            "unit": "requests per second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "P50 RPS of schbench on Asterinas",
+            "value": "0",
+            "unit": "requests per second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Zhang Junyang",
+            "username": "junyang-zh",
+            "email": "junyang@stu.pku.edu.cn"
+          },
+          "committer": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "3329907643@qq.com"
+          },
+          "id": "73c0f34947e37216500ad6166f10b579d00b850a",
+          "message": "Remove `Arc` guards of locks that have no users",
+          "timestamp": "2025-02-05T01:50:22Z",
+          "url": "https://github.com/asterinas/asterinas/commit/73c0f34947e37216500ad6166f10b579d00b850a"
+        },
+        "date": 1763081469854,
         "tool": "customBiggerIsBetter",
         "title": "[Scheduler] P50 RPS while max-loading all CPUs (SMP=8)",
         "description": "schbench -F 256 -n 5 -r 90",
