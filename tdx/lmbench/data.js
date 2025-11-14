@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1763088925928,
+  "lastUpdate": 1763089011275,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -97345,43 +97345,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "e5c5bc79921ae89e9b574d69640b9f9f96b2f86f",
-          "message": "Clarify safety comments in `dyn_cpu_local.rs`",
-          "timestamp": "2025-07-11T04:57:27Z",
-          "url": "https://github.com/asterinas/asterinas/commit/e5c5bc79921ae89e9b574d69640b9f9f96b2f86f"
-        },
-        "date": 1752505563996,
-        "tool": "customBiggerIsBetter",
-        "title": "[Memory] The bandwidth of reading integers",
-        "description": "bw_mem frd",
-        "display": false,
-        "benches": [
-          {
-            "name": "Average memory read bandwidth on Linux",
-            "value": "11600.50",
-            "unit": "MB/s",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average memory read bandwidth on Asterinas",
-            "value": "9356.58",
-            "unit": "MB/s",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Chen Chengjun",
             "username": "cchanging",
             "email": "chenchengjun.ccj@antgroup.com"
@@ -99556,6 +99519,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average memory read bandwidth on Asterinas",
             "value": "9570.23",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Zhang Junyang",
+            "username": "junyang-zh",
+            "email": "junyang@stu.pku.edu.cn"
+          },
+          "committer": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "3329907643@qq.com"
+          },
+          "id": "73c0f34947e37216500ad6166f10b579d00b850a",
+          "message": "Remove `Arc` guards of locks that have no users",
+          "timestamp": "2025-02-05T01:50:22Z",
+          "url": "https://github.com/asterinas/asterinas/commit/73c0f34947e37216500ad6166f10b579d00b850a"
+        },
+        "date": 1763088927132,
+        "tool": "customBiggerIsBetter",
+        "title": "[Memory] The bandwidth of reading integers",
+        "description": "bw_mem frd",
+        "display": false,
+        "benches": [
+          {
+            "name": "Average memory read bandwidth on Linux",
+            "value": "10014.19",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average memory read bandwidth on Asterinas",
+            "value": "10432.78",
             "unit": "MB/s",
             "extra": "aster_result"
           }
