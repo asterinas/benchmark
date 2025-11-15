@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1763234981592,
+  "lastUpdate": 1763235066652,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -71110,43 +71110,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Chen Chengjun",
-            "username": "cchanging",
-            "email": "chenchengjun.ccj@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "3882eb40000826020c6ffe5026e0f8d6ecb3b902",
-          "message": "Update docker version reference",
-          "timestamp": "2025-08-22T13:31:13Z",
-          "url": "https://github.com/asterinas/asterinas/commit/3882eb40000826020c6ffe5026e0f8d6ecb3b902"
-        },
-        "date": 1756164725015,
-        "tool": "customSmallerIsBetter",
-        "title": "[Network] The cost of select (TCP fds)",
-        "description": "lat_select",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average select TCP latency on Linux",
-            "value": "3.1372",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average select TCP latency on Asterinas",
-            "value": "1.9982",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Arthur Paulino",
             "username": "arthurpaulino",
             "email": "arthurleonardo.ap@gmail.com"
@@ -73322,6 +73285,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average select TCP latency on Asterinas",
             "value": "1.8402",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Wang Siyuan",
+            "username": "vvvvsv",
+            "email": "wsy@stu.pku.edu.cn"
+          },
+          "committer": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "3329907643@qq.com"
+          },
+          "id": "35ab40057a50c587fcfca9a13110e2db55178b45",
+          "message": "Support stopping states in `proc/pid/stat`",
+          "timestamp": "2025-11-13T13:32:52Z",
+          "url": "https://github.com/asterinas/asterinas/commit/35ab40057a50c587fcfca9a13110e2db55178b45"
+        },
+        "date": 1763234982734,
+        "tool": "customSmallerIsBetter",
+        "title": "[Network] The cost of select (TCP fds)",
+        "description": "lat_select",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average select TCP latency on Linux",
+            "value": "3.2122",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average select TCP latency on Asterinas",
+            "value": "2.1371",
             "unit": "µs",
             "extra": "aster_result"
           }
