@@ -1,45 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1763236861384,
+  "lastUpdate": 1763236946953,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
-      {
-        "commit": {
-          "author": {
-            "name": "Zejun Zhao",
-            "username": "jellllly420",
-            "email": "jelly.zhao.42@gmail.com"
-          },
-          "committer": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "3329907643@qq.com"
-          },
-          "id": "d3e27ae03a41e7e3dd51293d722ea91fefd44218",
-          "message": "Use vDSO for fallback of user-provided sa_restorer on RISC-V platforms",
-          "timestamp": "2025-08-28T03:20:27Z",
-          "url": "https://github.com/asterinas/asterinas/commit/d3e27ae03a41e7e3dd51293d722ea91fefd44218"
-        },
-        "date": 1756425348153,
-        "tool": "customSmallerIsBetter",
-        "title": "[Memory] The cost of page fault handling",
-        "description": "lat_pagefault",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average page fault latency on Linux",
-            "value": "0.1302",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average page fault latency on Asterinas",
-            "value": "0.0790",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2218,6 +2181,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average page fault latency on Asterinas",
             "value": "0.0945",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Wang Siyuan",
+            "username": "vvvvsv",
+            "email": "wsy@stu.pku.edu.cn"
+          },
+          "committer": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "3329907643@qq.com"
+          },
+          "id": "35ab40057a50c587fcfca9a13110e2db55178b45",
+          "message": "Support stopping states in `proc/pid/stat`",
+          "timestamp": "2025-11-13T13:32:52Z",
+          "url": "https://github.com/asterinas/asterinas/commit/35ab40057a50c587fcfca9a13110e2db55178b45"
+        },
+        "date": 1763236862729,
+        "tool": "customSmallerIsBetter",
+        "title": "[Memory] The cost of page fault handling",
+        "description": "lat_pagefault",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average page fault latency on Linux",
+            "value": "0.1618",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average page fault latency on Asterinas",
+            "value": "0.0970",
             "unit": "µs",
             "extra": "aster_result"
           }
