@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1763319604363,
+  "lastUpdate": 1763319689720,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ramfs_benchmarks_vacuum": [
@@ -33003,43 +33003,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Hsy-Intel",
-            "username": "Hsy-Intel",
-            "email": "siyuan.hui@intel.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "dec7ac1346649a0ef1a1256da258cd2f9f11ac4b",
-          "message": "Add safety check to `stop_guest` function to prevent killing non-existent processes",
-          "timestamp": "2025-05-16T01:17:00Z",
-          "url": "https://github.com/asterinas/asterinas/commit/dec7ac1346649a0ef1a1256da258cd2f9f11ac4b"
-        },
-        "date": 1747787441266,
-        "tool": "customSmallerIsBetter",
-        "title": "[Ext2] The selects-text-pk result of sqlite speedtest",
-        "description": "sqlite-speed-test: 70000 SELECTS on a TEXT PK",
-        "display": false,
-        "benches": [
-          {
-            "name": "The speed of selects-text-pk on Linux (Ext2)",
-            "value": "3.277",
-            "unit": "second",
-            "extra": "linux_result"
-          },
-          {
-            "name": "The speed of selects-text-pk on Asterinas (Ext2)",
-            "value": "12.119",
-            "unit": "second",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Qingsong Chen",
             "username": "cqs21",
             "email": "changxian.cqs@antgroup.com"
@@ -35215,6 +35178,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "The speed of selects-text-pk on Asterinas (Ext2)",
             "value": "4.024",
+            "unit": "second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Wang Siyuan",
+            "username": "vvvvsv",
+            "email": "wsy@stu.pku.edu.cn"
+          },
+          "committer": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "3329907643@qq.com"
+          },
+          "id": "35ab40057a50c587fcfca9a13110e2db55178b45",
+          "message": "Support stopping states in `proc/pid/stat`",
+          "timestamp": "2025-11-13T13:32:52Z",
+          "url": "https://github.com/asterinas/asterinas/commit/35ab40057a50c587fcfca9a13110e2db55178b45"
+        },
+        "date": 1763319605462,
+        "tool": "customSmallerIsBetter",
+        "title": "[Ext2] The selects-text-pk result of sqlite speedtest",
+        "description": "sqlite-speed-test: 70000 SELECTS on a TEXT PK",
+        "display": false,
+        "benches": [
+          {
+            "name": "The speed of selects-text-pk on Linux (Ext2)",
+            "value": "2.938",
+            "unit": "second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "The speed of selects-text-pk on Asterinas (Ext2)",
+            "value": "3.557",
             "unit": "second",
             "extra": "aster_result"
           }
