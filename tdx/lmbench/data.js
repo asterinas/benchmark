@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1763688976553,
+  "lastUpdate": 1763689063521,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -86365,43 +86365,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Qingsong Chen",
-            "username": "cqs21",
-            "email": "changxian.cqs@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "5e3e23bf7c5130a9251b265c5377d2e21769097c",
-          "message": "Add basic i8042 keyboard support",
-          "timestamp": "2025-06-25T02:04:24Z",
-          "url": "https://github.com/asterinas/asterinas/commit/5e3e23bf7c5130a9251b265c5377d2e21769097c"
-        },
-        "date": 1751294003449,
-        "tool": "customSmallerIsBetter",
-        "title": "[UDP sockets] The latency of write+read (virtio-net, 4B message)",
-        "description": "lat_udp",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average UDP latency over virtio-net on Linux",
-            "value": "21.6844",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average UDP latency over virtio-net on Asterinas",
-            "value": "33.3718",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "jiangjianfeng",
             "username": "StevenJiang1110",
             "email": "jiangjianfeng.jjf@antgroup.com"
@@ -88577,6 +88540,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average UDP latency over virtio-net on Asterinas",
             "value": "84.7839",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Qingsong Chen",
+            "username": "cqs21",
+            "email": "changxian.cqs@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "76c7752130316e9ce605aada13d49a09463ac0f7",
+          "message": "Separate inode and opened file types for BlockFile",
+          "timestamp": "2025-11-20T10:55:36Z",
+          "url": "https://github.com/asterinas/asterinas/commit/76c7752130316e9ce605aada13d49a09463ac0f7"
+        },
+        "date": 1763688977722,
+        "tool": "customSmallerIsBetter",
+        "title": "[UDP sockets] The latency of write+read (virtio-net, 4B message)",
+        "description": "lat_udp",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average UDP latency over virtio-net on Linux",
+            "value": "69.9940",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average UDP latency over virtio-net on Asterinas",
+            "value": "93.6308",
             "unit": "µs",
             "extra": "aster_result"
           }
