@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1763686985103,
+  "lastUpdate": 1763687071310,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ping_inline_100k_conc20_rps": [
@@ -1811,6 +1811,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average RPS of PING_INLINE over virtio-net between Host Linux and Guest Asterinas",
             "value": "106269.93",
+            "unit": "request per second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Qingsong Chen",
+            "username": "cqs21",
+            "email": "changxian.cqs@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "76c7752130316e9ce605aada13d49a09463ac0f7",
+          "message": "Separate inode and opened file types for BlockFile",
+          "timestamp": "2025-11-20T10:55:36Z",
+          "url": "https://github.com/asterinas/asterinas/commit/76c7752130316e9ce605aada13d49a09463ac0f7"
+        },
+        "date": 1763686985926,
+        "tool": "customBiggerIsBetter",
+        "title": "Redis PING INLINE performance (virtio-net, 20 concurrency, 100K requests)",
+        "description": "redis-benchmark -n 100000 -c 20 -t ping_inline",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average RPS of PING_INLINE over virtio-net between Host Linux and Guest Linux",
+            "value": "84388.19",
+            "unit": "request per second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average RPS of PING_INLINE over virtio-net between Host Linux and Guest Asterinas",
+            "value": "85984.52",
             "unit": "request per second",
             "extra": "aster_result"
           }
