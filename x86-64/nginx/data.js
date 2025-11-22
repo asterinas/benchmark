@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1763769977442,
+  "lastUpdate": 1763770065167,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "http_file4KB_bw": [
@@ -11121,43 +11121,6 @@ window.BENCHMARK_DATA = {
             "email": "jelly.zhao.42@gmail.com"
           },
           "committer": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "3329907643@qq.com"
-          },
-          "id": "d3e27ae03a41e7e3dd51293d722ea91fefd44218",
-          "message": "Use vDSO for fallback of user-provided sa_restorer on RISC-V platforms",
-          "timestamp": "2025-08-28T03:20:27Z",
-          "url": "https://github.com/asterinas/asterinas/commit/d3e27ae03a41e7e3dd51293d722ea91fefd44218"
-        },
-        "date": 1756422765642,
-        "tool": "customBiggerIsBetter",
-        "title": "Nginx HTTP request performance with 1 concurrency and 10000 requests in total",
-        "description": "ab -n 10000 -c 1 http://localhost:8080/index.html",
-        "display": false,
-        "benches": [
-          {
-            "name": "Average HTTP Bandwidth over virtio-net between Host Linux and Guest Linux",
-            "value": "5768.50",
-            "unit": "Kbytes/sec",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average HTTP Bandwidth over virtio-net between Host Linux and Guest Asterinas",
-            "value": "3129.80",
-            "unit": "Kbytes/sec",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Zejun Zhao",
-            "username": "jellllly420",
-            "email": "jelly.zhao.42@gmail.com"
-          },
-          "committer": {
             "name": "Junyang Zhang",
             "username": "junyang-zh",
             "email": "user@junyang.me"
@@ -13328,6 +13291,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average HTTP Bandwidth over virtio-net between Host Linux and Guest Asterinas",
             "value": "3142.23",
+            "unit": "Kbytes/sec",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Tao Su",
+            "username": "taosue",
+            "email": "st498824@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "2034055f90607f67f04de044ee88dd52a488d612",
+          "message": "Bump the Docker image version",
+          "timestamp": "2025-11-21T06:53:09Z",
+          "url": "https://github.com/asterinas/asterinas/commit/2034055f90607f67f04de044ee88dd52a488d612"
+        },
+        "date": 1763769978714,
+        "tool": "customBiggerIsBetter",
+        "title": "Nginx HTTP request performance with 1 concurrency and 10000 requests in total",
+        "description": "ab -n 10000 -c 1 http://localhost:8080/index.html",
+        "display": false,
+        "benches": [
+          {
+            "name": "Average HTTP Bandwidth over virtio-net between Host Linux and Guest Linux",
+            "value": "5018.36",
+            "unit": "Kbytes/sec",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average HTTP Bandwidth over virtio-net between Host Linux and Guest Asterinas",
+            "value": "3172.77",
             "unit": "Kbytes/sec",
             "extra": "aster_result"
           }
