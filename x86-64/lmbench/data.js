@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1766013333599,
+  "lastUpdate": 1766013422887,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -88900,43 +88900,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2025-09-05T02:49:47Z",
           "url": "https://github.com/asterinas/asterinas/commit/c1b80f0f0f42be5f9be90e0d2e5d7314895185f2"
         },
-        "date": 1757373713008,
-        "tool": "customSmallerIsBetter",
-        "title": "[TCP sockets] The latency of connect (loopback)",
-        "description": "lat_connect",
-        "display": false,
-        "benches": [
-          {
-            "name": "Average TCP connection latency on Linux",
-            "value": "17.5929",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average TCP connection latency on Asterinas",
-            "value": "185.0333",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
-            "name": "Chengjun Chen",
-            "username": "cchanging",
-            "email": "33800552+cchanging@users.noreply.github.com"
-          },
-          "id": "c1b80f0f0f42be5f9be90e0d2e5d7314895185f2",
-          "message": "Use `'static` for FS types",
-          "timestamp": "2025-09-05T02:49:47Z",
-          "url": "https://github.com/asterinas/asterinas/commit/c1b80f0f0f42be5f9be90e0d2e5d7314895185f2"
-        },
         "date": 1757461656557,
         "tool": "customSmallerIsBetter",
         "title": "[TCP sockets] The latency of connect (loopback)",
@@ -91098,6 +91061,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average TCP connection latency on Asterinas",
             "value": "190.1395",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "jiangjianfeng",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "b8654ed1b9786c2bc088e3a7102aebbd6276433d",
+          "message": "Add SCML for faccessat2",
+          "timestamp": "2025-12-17T06:53:59Z",
+          "url": "https://github.com/asterinas/asterinas/commit/b8654ed1b9786c2bc088e3a7102aebbd6276433d"
+        },
+        "date": 1766013334738,
+        "tool": "customSmallerIsBetter",
+        "title": "[TCP sockets] The latency of connect (loopback)",
+        "description": "lat_connect",
+        "display": false,
+        "benches": [
+          {
+            "name": "Average TCP connection latency on Linux",
+            "value": "39.8429",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average TCP connection latency on Asterinas",
+            "value": "174.4333",
             "unit": "µs",
             "extra": "aster_result"
           }
