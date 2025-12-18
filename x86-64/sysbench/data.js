@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1766007964209,
+  "lastUpdate": 1766094101092,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "cpu_lat": [
@@ -2228,43 +2228,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tate.thl@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "4b87dab86e8c9940f7713369edcbe74cc9d9bad9",
-          "message": "Unify CPU arch-specific logic that determines if the kernel is interrupted",
-          "timestamp": "2025-09-17T14:38:47Z",
-          "url": "https://github.com/asterinas/asterinas/commit/4b87dab86e8c9940f7713369edcbe74cc9d9bad9"
-        },
-        "date": 1758317704011,
-        "tool": "customSmallerIsBetter",
-        "title": "[Threads] Threads performance",
-        "description": "sysbench threads",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average Execution Time per Thread on Linux",
-            "value": "23.67",
-            "unit": "ms",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average Execution Time per Thread on Asterinas",
-            "value": "3.47",
-            "unit": "ms",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Ruihan Li",
             "username": "lrh2000",
             "email": "lrh2000@pku.edu.cn"
@@ -4440,6 +4403,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average Execution Time per Thread on Asterinas",
             "value": "4.85",
+            "unit": "ms",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "jiangjianfeng",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "b8654ed1b9786c2bc088e3a7102aebbd6276433d",
+          "message": "Add SCML for faccessat2",
+          "timestamp": "2025-12-17T06:53:59Z",
+          "url": "https://github.com/asterinas/asterinas/commit/b8654ed1b9786c2bc088e3a7102aebbd6276433d"
+        },
+        "date": 1766094011778,
+        "tool": "customSmallerIsBetter",
+        "title": "[Threads] Threads performance",
+        "description": "sysbench threads",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average Execution Time per Thread on Linux",
+            "value": "22.08",
+            "unit": "ms",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average Execution Time per Thread on Asterinas",
+            "value": "4.31",
             "unit": "ms",
             "extra": "aster_result"
           }
