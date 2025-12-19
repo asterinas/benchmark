@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1766184679625,
+  "lastUpdate": 1766184770359,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -20004,43 +20004,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Yuke Peng",
-            "username": "sdww0",
-            "email": "pykfirst@gmail.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "eb9edbd67f5da8f2dd5f58f18a397650b0e4d187",
-          "message": "Bump the Docker image to 0.16.1",
-          "timestamp": "2025-09-22T11:14:54Z",
-          "url": "https://github.com/asterinas/asterinas/commit/eb9edbd67f5da8f2dd5f58f18a397650b0e4d187"
-        },
-        "date": 1758669224784,
-        "tool": "customSmallerIsBetter",
-        "title": "[Signals] The cost of catching a signal",
-        "description": "lat_sig catch",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average Signal handler overhead on Linux",
-            "value": "1.1358",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average Signal handler overhead on Asterinas",
-            "value": "1.1286",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Ruihan Li",
             "username": "lrh2000",
             "email": "lrh2000@pku.edu.cn"
@@ -22216,6 +22179,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average Signal handler overhead on Asterinas",
             "value": "1.0487",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tate.thl@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "cc0609bc81dfe4bec1767f4f5bf500f80210fdb2",
+          "message": "Add 0.17.0 release notes",
+          "timestamp": "2025-12-17T15:32:20Z",
+          "url": "https://github.com/asterinas/asterinas/commit/cc0609bc81dfe4bec1767f4f5bf500f80210fdb2"
+        },
+        "date": 1766184681198,
+        "tool": "customSmallerIsBetter",
+        "title": "[Signals] The cost of catching a signal",
+        "description": "lat_sig catch",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average Signal handler overhead on Linux",
+            "value": "1.1460",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average Signal handler overhead on Asterinas",
+            "value": "1.0516",
             "unit": "µs",
             "extra": "aster_result"
           }
