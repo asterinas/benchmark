@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1766357801430,
+  "lastUpdate": 1766357892935,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -6672,43 +6672,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Yuke Peng",
-            "username": "sdww0",
-            "email": "pykfirst@gmail.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "eb9edbd67f5da8f2dd5f58f18a397650b0e4d187",
-          "message": "Bump the Docker image to 0.16.1",
-          "timestamp": "2025-09-22T11:14:54Z",
-          "url": "https://github.com/asterinas/asterinas/commit/eb9edbd67f5da8f2dd5f58f18a397650b0e4d187"
-        },
-        "date": 1758669587490,
-        "tool": "customSmallerIsBetter",
-        "title": "[Process] The cost of getppid",
-        "description": "lat_syscall null",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average syscall latency on Linux",
-            "value": "0.1046",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average syscall latency on Asterinas",
-            "value": "0.1087",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Ruihan Li",
             "username": "lrh2000",
             "email": "lrh2000@pku.edu.cn"
@@ -8884,6 +8847,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average syscall latency on Asterinas",
             "value": "0.1542",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "zjp",
+            "username": "zjp-CN",
+            "email": "jiping_zhou@foxmail.com"
+          },
+          "committer": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "3329907643@qq.com"
+          },
+          "id": "9c4f644bd9287da1815a13115fbdfa914d8426f0",
+          "message": "Replace caps_lock's load+store by fetch_xor\n\nIt's a bit less efficient, but solves atomic violation.",
+          "timestamp": "2025-12-20T06:03:28Z",
+          "url": "https://github.com/asterinas/asterinas/commit/9c4f644bd9287da1815a13115fbdfa914d8426f0"
+        },
+        "date": 1766357802963,
+        "tool": "customSmallerIsBetter",
+        "title": "[Process] The cost of getppid",
+        "description": "lat_syscall null",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average syscall latency on Linux",
+            "value": "0.1043",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average syscall latency on Asterinas",
+            "value": "0.1522",
             "unit": "µs",
             "extra": "aster_result"
           }
