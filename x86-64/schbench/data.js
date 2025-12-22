@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1766440118980,
+  "lastUpdate": 1766440209344,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "smp1_p50_rps": [
@@ -4450,43 +4450,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
-            "name": "Chengjun Chen",
-            "username": "cchanging",
-            "email": "33800552+cchanging@users.noreply.github.com"
-          },
-          "id": "c1b80f0f0f42be5f9be90e0d2e5d7314895185f2",
-          "message": "Use `'static` for FS types",
-          "timestamp": "2025-09-05T02:49:47Z",
-          "url": "https://github.com/asterinas/asterinas/commit/c1b80f0f0f42be5f9be90e0d2e5d7314895185f2"
-        },
-        "date": 1757459875241,
-        "tool": "customSmallerIsBetter",
-        "title": "[Scheduler] P99 wakeup latency while max-loading all CPUs (SMP=1)",
-        "description": "schbench -F 256 -n 5 -r 90",
-        "display": false,
-        "benches": [
-          {
-            "name": "P99 wakeup latency of schbench on Linux",
-            "value": "1",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "P99 wakeup latency of schbench on Asterinas",
-            "value": "4",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Chen Chengjun",
             "username": "cchanging",
             "email": "chenchengjun.ccj@antgroup.com"
@@ -6662,6 +6625,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "P99 wakeup latency of schbench on Asterinas",
             "value": "3",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "zjp",
+            "username": "zjp-CN",
+            "email": "jiping_zhou@foxmail.com"
+          },
+          "committer": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "3329907643@qq.com"
+          },
+          "id": "9c4f644bd9287da1815a13115fbdfa914d8426f0",
+          "message": "Replace caps_lock's load+store by fetch_xor\n\nIt's a bit less efficient, but solves atomic violation.",
+          "timestamp": "2025-12-20T06:03:28Z",
+          "url": "https://github.com/asterinas/asterinas/commit/9c4f644bd9287da1815a13115fbdfa914d8426f0"
+        },
+        "date": 1766440119699,
+        "tool": "customSmallerIsBetter",
+        "title": "[Scheduler] P99 wakeup latency while max-loading all CPUs (SMP=1)",
+        "description": "schbench -F 256 -n 5 -r 90",
+        "display": false,
+        "benches": [
+          {
+            "name": "P99 wakeup latency of schbench on Linux",
+            "value": "1",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "P99 wakeup latency of schbench on Asterinas",
+            "value": "4",
             "unit": "µs",
             "extra": "aster_result"
           }
