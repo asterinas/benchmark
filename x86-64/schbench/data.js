@@ -1,45 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1766785740337,
+  "lastUpdate": 1766785832063,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "smp1_p50_rps": [
-      {
-        "commit": {
-          "author": {
-            "name": "Wang Siyuan",
-            "username": "vvvvsv",
-            "email": "wsy@stu.pku.edu.cn"
-          },
-          "committer": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "3329907643@qq.com"
-          },
-          "id": "46aa437c8738e72a47510e764cb2b6eed8032706",
-          "message": "Add `/proc/pid/oom_score_adj`",
-          "timestamp": "2025-09-13T06:37:48Z",
-          "url": "https://github.com/asterinas/asterinas/commit/46aa437c8738e72a47510e764cb2b6eed8032706"
-        },
-        "date": 1758060204841,
-        "tool": "customBiggerIsBetter",
-        "title": "[Scheduler] P50 RPS while max-loading all CPUs (SMP=1)",
-        "description": "schbench -F 256 -n 5 -r 90",
-        "display": false,
-        "benches": [
-          {
-            "name": "P50 RPS of schbench on Linux",
-            "value": "0",
-            "unit": "requests per second",
-            "extra": "linux_result"
-          },
-          {
-            "name": "P50 RPS of schbench on Asterinas",
-            "value": "0",
-            "unit": "requests per second",
-            "extra": "aster_result"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2204,6 +2167,43 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/asterinas/asterinas/commit/08be9252402cf14e14000035f2e9ad40fc2a6a1d"
         },
         "date": 1766699180001,
+        "tool": "customBiggerIsBetter",
+        "title": "[Scheduler] P50 RPS while max-loading all CPUs (SMP=1)",
+        "description": "schbench -F 256 -n 5 -r 90",
+        "display": false,
+        "benches": [
+          {
+            "name": "P50 RPS of schbench on Linux",
+            "value": "0",
+            "unit": "requests per second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "P50 RPS of schbench on Asterinas",
+            "value": "0",
+            "unit": "requests per second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "rikosellic",
+            "username": "rikosellic",
+            "email": "64517311+rikosellic@users.noreply.github.com"
+          },
+          "committer": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "3329907643@qq.com"
+          },
+          "id": "c4e8bf2c21aa8ad4b272dbc1d68461fa3b42004e",
+          "message": "Remove WeakRef and NonNullPtr impl for Weak<T>",
+          "timestamp": "2025-12-26T08:19:44Z",
+          "url": "https://github.com/asterinas/asterinas/commit/c4e8bf2c21aa8ad4b272dbc1d68461fa3b42004e"
+        },
+        "date": 1766785741174,
         "tool": "customBiggerIsBetter",
         "title": "[Scheduler] P50 RPS while max-loading all CPUs (SMP=1)",
         "description": "schbench -F 256 -n 5 -r 90",
