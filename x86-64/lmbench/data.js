@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1766876456969,
+  "lastUpdate": 1766876549704,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -15569,43 +15569,6 @@ window.BENCHMARK_DATA = {
             "username": "lrh2000",
             "email": "3329907643@qq.com"
           },
-          "id": "899db770f62234e89590ce1ae35067f7082107a5",
-          "message": "Fix parameter passing of `preadv/pwritev`-family syscalls",
-          "timestamp": "2025-09-27T17:35:30Z",
-          "url": "https://github.com/asterinas/asterinas/commit/899db770f62234e89590ce1ae35067f7082107a5"
-        },
-        "date": 1759105860019,
-        "tool": "customSmallerIsBetter",
-        "title": "[Process] The cost of fork+exec+shell+exit",
-        "description": "lat_proc shell",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average shell latency on Linux",
-            "value": "1474.7500",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average shell latency on Asterinas",
-            "value": "1189.6000",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Zejun Zhao",
-            "username": "jellllly420",
-            "email": "jelly.zhao.42@gmail.com"
-          },
-          "committer": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "3329907643@qq.com"
-          },
           "id": "294c55d0dfa5e5784729548f9764b26e608c18ff",
           "message": "Fix `semid_ds`'s layout on non-x86_64 platforms",
           "timestamp": "2025-09-27T18:01:19Z",
@@ -17772,6 +17735,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average shell latency on Asterinas",
             "value": "1192.4000",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "rikosellic",
+            "username": "rikosellic",
+            "email": "64517311+rikosellic@users.noreply.github.com"
+          },
+          "committer": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "3329907643@qq.com"
+          },
+          "id": "c4e8bf2c21aa8ad4b272dbc1d68461fa3b42004e",
+          "message": "Remove WeakRef and NonNullPtr impl for Weak<T>",
+          "timestamp": "2025-12-26T08:19:44Z",
+          "url": "https://github.com/asterinas/asterinas/commit/c4e8bf2c21aa8ad4b272dbc1d68461fa3b42004e"
+        },
+        "date": 1766876458792,
+        "tool": "customSmallerIsBetter",
+        "title": "[Process] The cost of fork+exec+shell+exit",
+        "description": "lat_proc shell",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average shell latency on Linux",
+            "value": "1608.7500",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average shell latency on Asterinas",
+            "value": "1184.6000",
             "unit": "µs",
             "extra": "aster_result"
           }
