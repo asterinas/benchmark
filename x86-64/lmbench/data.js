@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1766964524607,
+  "lastUpdate": 1766964616833,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -99996,43 +99996,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "391f11f1aa112382e7a68d6eb6ec443bc5289eeb",
-          "message": "Make per-CPU callbacks explicit",
-          "timestamp": "2025-09-20T01:19:49Z",
-          "url": "https://github.com/asterinas/asterinas/commit/391f11f1aa112382e7a68d6eb6ec443bc5289eeb"
-        },
-        "date": 1758402988787,
-        "tool": "customSmallerIsBetter",
-        "title": "[Semaphores] The cost of semop",
-        "description": "lat_sem",
-        "display": false,
-        "benches": [
-          {
-            "name": "Average semaphore latency on Linux",
-            "value": "0.9060",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average semaphore latency on Asterinas",
-            "value": "0.5969",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Yuke Peng",
             "username": "sdww0",
             "email": "pykfirst@gmail.com"
@@ -102208,6 +102171,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average semaphore latency on Asterinas",
             "value": "0.6306",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Marsman1996",
+            "username": "Marsman1996",
+            "email": "lqliuyuwei@outlook.com"
+          },
+          "committer": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "3329907643@qq.com"
+          },
+          "id": "545efaa15516e62775d382406acc8091755eb1e3",
+          "message": "Validate futex address alignment when waking robust futexes",
+          "timestamp": "2025-12-28T02:55:24Z",
+          "url": "https://github.com/asterinas/asterinas/commit/545efaa15516e62775d382406acc8091755eb1e3"
+        },
+        "date": 1766964525770,
+        "tool": "customSmallerIsBetter",
+        "title": "[Semaphores] The cost of semop",
+        "description": "lat_sem",
+        "display": false,
+        "benches": [
+          {
+            "name": "Average semaphore latency on Linux",
+            "value": "1.0157",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average semaphore latency on Asterinas",
+            "value": "0.6369",
             "unit": "µs",
             "extra": "aster_result"
           }
