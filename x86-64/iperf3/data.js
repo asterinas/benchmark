@@ -1,45 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1766878124784,
+  "lastUpdate": 1766966558599,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "tcp_virtio_bw": [
-      {
-        "commit": {
-          "author": {
-            "name": "Zejun Zhao",
-            "username": "jellllly420",
-            "email": "jelly.zhao.42@gmail.com"
-          },
-          "committer": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "3329907643@qq.com"
-          },
-          "id": "899db770f62234e89590ce1ae35067f7082107a5",
-          "message": "Fix parameter passing of `preadv/pwritev`-family syscalls",
-          "timestamp": "2025-09-27T17:35:30Z",
-          "url": "https://github.com/asterinas/asterinas/commit/899db770f62234e89590ce1ae35067f7082107a5"
-        },
-        "date": 1759106897410,
-        "tool": "customBiggerIsBetter",
-        "title": "[Network] iperf3 sender performance using TCP (virtio-net)",
-        "description": "iperf3 -s -B 10.0.2.15",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average TCP Bandwidth over virtio-net between Host Linux and Guest Linux",
-            "value": "4608",
-            "unit": "Mbits/sec",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average TCP Bandwidth over virtio-net between Host Linux and Guest Asterinas",
-            "value": "2418",
-            "unit": "Mbits/sec",
-            "extra": "aster_result"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2218,6 +2181,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average TCP Bandwidth over virtio-net between Host Linux and Guest Asterinas",
             "value": "2526",
+            "unit": "Mbits/sec",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Marsman1996",
+            "username": "Marsman1996",
+            "email": "lqliuyuwei@outlook.com"
+          },
+          "committer": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "3329907643@qq.com"
+          },
+          "id": "545efaa15516e62775d382406acc8091755eb1e3",
+          "message": "Validate futex address alignment when waking robust futexes",
+          "timestamp": "2025-12-28T02:55:24Z",
+          "url": "https://github.com/asterinas/asterinas/commit/545efaa15516e62775d382406acc8091755eb1e3"
+        },
+        "date": 1766966467234,
+        "tool": "customBiggerIsBetter",
+        "title": "[Network] iperf3 sender performance using TCP (virtio-net)",
+        "description": "iperf3 -s -B 10.0.2.15",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average TCP Bandwidth over virtio-net between Host Linux and Guest Linux",
+            "value": "9991",
+            "unit": "Mbits/sec",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average TCP Bandwidth over virtio-net between Host Linux and Guest Asterinas",
+            "value": "2192",
             "unit": "Mbits/sec",
             "extra": "aster_result"
           }
