@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1767223129908,
+  "lastUpdate": 1767223223523,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -2242,43 +2242,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2025-05-24T14:28:39Z",
           "url": "https://github.com/asterinas/asterinas/commit/50eaffc7314d5ef2f4a16cb0e2437cc0010c01ee"
         },
-        "date": 1759625565706,
-        "tool": "customBiggerIsBetter",
-        "title": "[Memory] The bandwidth of mmap",
-        "description": "bw_mmap",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average mmap bandwidth on Linux",
-            "value": "24227.03",
-            "unit": "MB/s",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average mmap bandwidth on Asterinas",
-            "value": "24963.77",
-            "unit": "MB/s",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Ruize Tang",
-            "username": "tangruize",
-            "email": "1466040111@qq.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "50eaffc7314d5ef2f4a16cb0e2437cc0010c01ee",
-          "message": "Remove `RwLock.downgrade` due to potential contention with `RwLock.read`",
-          "timestamp": "2025-05-24T14:28:39Z",
-          "url": "https://github.com/asterinas/asterinas/commit/50eaffc7314d5ef2f4a16cb0e2437cc0010c01ee"
-        },
         "date": 1759706203837,
         "tool": "customBiggerIsBetter",
         "title": "[Memory] The bandwidth of mmap",
@@ -4440,6 +4403,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average mmap bandwidth on Asterinas",
             "value": "27973.68",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "jiangjianfeng",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "committer": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "3329907643@qq.com"
+          },
+          "id": "82ccfcd4c6f69d538e3fd62153d7245b7d2fcaa1",
+          "message": "Refactor the implementation of prlimit64",
+          "timestamp": "2025-12-30T09:35:04Z",
+          "url": "https://github.com/asterinas/asterinas/commit/82ccfcd4c6f69d538e3fd62153d7245b7d2fcaa1"
+        },
+        "date": 1767223131114,
+        "tool": "customBiggerIsBetter",
+        "title": "[Memory] The bandwidth of mmap",
+        "description": "bw_mmap",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average mmap bandwidth on Linux",
+            "value": "25660.59",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average mmap bandwidth on Asterinas",
+            "value": "25148.53",
             "unit": "MB/s",
             "extra": "aster_result"
           }
