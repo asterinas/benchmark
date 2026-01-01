@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1767309717796,
+  "lastUpdate": 1767309810624,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -33336,43 +33336,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Chen Chengjun",
-            "username": "cchanging",
-            "email": "chenchengjun.ccj@antgroup.com"
-          },
-          "committer": {
-            "name": "Qingsong Chen",
-            "username": "cqs21",
-            "email": "changxian.cqs@antgroup.com"
-          },
-          "id": "2c456709b6f6c058b1a68ee05f99b2b6119df1a9",
-          "message": "Block a setuid ltp test for exfat test",
-          "timestamp": "2025-09-26T08:19:13Z",
-          "url": "https://github.com/asterinas/asterinas/commit/2c456709b6f6c058b1a68ee05f99b2b6119df1a9"
-        },
-        "date": 1758926444042,
-        "tool": "customBiggerIsBetter",
-        "title": "[Unix sockets] The bandwidth (64KB message)",
-        "description": "bw_unix",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average unix bandwidth on Linux",
-            "value": "12083.94",
-            "unit": "MB/s",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average unix bandwidth on Asterinas",
-            "value": "9050.11",
-            "unit": "MB/s",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Yang Zhichao",
             "username": "IfReturn",
             "email": "yzc2004.12@qq.com"
@@ -35548,6 +35511,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average unix bandwidth on Asterinas",
             "value": "9249.65",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Marsman1996",
+            "username": "Marsman1996",
+            "email": "lqliuyuwei@outlook.com"
+          },
+          "committer": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "3329907643@qq.com"
+          },
+          "id": "26ac77c3713b79cc96508d83586d6434d5f173b7",
+          "message": "Fix overflow panic in syscall `fcntl`",
+          "timestamp": "2026-01-01T14:14:44Z",
+          "url": "https://github.com/asterinas/asterinas/commit/26ac77c3713b79cc96508d83586d6434d5f173b7"
+        },
+        "date": 1767309718797,
+        "tool": "customBiggerIsBetter",
+        "title": "[Unix sockets] The bandwidth (64KB message)",
+        "description": "bw_unix",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average unix bandwidth on Linux",
+            "value": "10734.95",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average unix bandwidth on Asterinas",
+            "value": "9260.67",
             "unit": "MB/s",
             "extra": "aster_result"
           }
