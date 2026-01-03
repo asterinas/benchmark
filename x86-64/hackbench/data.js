@@ -1,45 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1767313444782,
+  "lastUpdate": 1767401491842,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "group8_smp1": [
-      {
-        "commit": {
-          "author": {
-            "name": "Ruize Tang",
-            "username": "tangruize",
-            "email": "1466040111@qq.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "50eaffc7314d5ef2f4a16cb0e2437cc0010c01ee",
-          "message": "Remove `RwLock.downgrade` due to potential contention with `RwLock.read`",
-          "timestamp": "2025-05-24T14:28:39Z",
-          "url": "https://github.com/asterinas/asterinas/commit/50eaffc7314d5ef2f4a16cb0e2437cc0010c01ee"
-        },
-        "date": 1759538952248,
-        "tool": "customSmallerIsBetter",
-        "title": "[Scheduler] Turnaround time of 8 groups using 1 CPU",
-        "description": "hackbench -g 8 -l 1000 -p -T",
-        "display": false,
-        "benches": [
-          {
-            "name": "Turnaround time of hackbench on Linux",
-            "value": "1.299",
-            "unit": "sec",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Turnaround time of hackbench on Asterinas",
-            "value": "2.109",
-            "unit": "sec",
-            "extra": "aster_result"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2218,6 +2181,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Turnaround time of hackbench on Asterinas",
             "value": "1.922",
+            "unit": "sec",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Marsman1996",
+            "username": "Marsman1996",
+            "email": "lqliuyuwei@outlook.com"
+          },
+          "committer": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "3329907643@qq.com"
+          },
+          "id": "26ac77c3713b79cc96508d83586d6434d5f173b7",
+          "message": "Fix overflow panic in syscall `fcntl`",
+          "timestamp": "2026-01-01T14:14:44Z",
+          "url": "https://github.com/asterinas/asterinas/commit/26ac77c3713b79cc96508d83586d6434d5f173b7"
+        },
+        "date": 1767401349599,
+        "tool": "customSmallerIsBetter",
+        "title": "[Scheduler] Turnaround time of 8 groups using 1 CPU",
+        "description": "hackbench -g 8 -l 1000 -p -T",
+        "display": false,
+        "benches": [
+          {
+            "name": "Turnaround time of hackbench on Linux",
+            "value": "1.595",
+            "unit": "sec",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Turnaround time of hackbench on Asterinas",
+            "value": "2.326",
             "unit": "sec",
             "extra": "aster_result"
           }
