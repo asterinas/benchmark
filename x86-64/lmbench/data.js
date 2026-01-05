@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1767655601350,
+  "lastUpdate": 1767655697430,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -20018,43 +20018,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2025-10-09T05:05:24Z",
           "url": "https://github.com/asterinas/asterinas/commit/d2b46640782d7b0f5002cae819c115096cb84add"
         },
-        "date": 1760137654967,
-        "tool": "customSmallerIsBetter",
-        "title": "[Signals] The cost of catching a signal",
-        "description": "lat_sig catch",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average Signal handler overhead on Linux",
-            "value": "1.1440",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average Signal handler overhead on Asterinas",
-            "value": "1.1441",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Chen Chengjun",
-            "username": "cchanging",
-            "email": "chenchengjun.ccj@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "d2b46640782d7b0f5002cae819c115096cb84add",
-          "message": "Add a configfs usage example in ktest",
-          "timestamp": "2025-10-09T05:05:24Z",
-          "url": "https://github.com/asterinas/asterinas/commit/d2b46640782d7b0f5002cae819c115096cb84add"
-        },
         "date": 1760230142240,
         "tool": "customSmallerIsBetter",
         "title": "[Signals] The cost of catching a signal",
@@ -22216,6 +22179,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average Signal handler overhead on Asterinas",
             "value": "1.0722",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Zhang Junyang",
+            "username": "junyang-zh",
+            "email": "junyang@stu.pku.edu.cn"
+          },
+          "committer": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "3329907643@qq.com"
+          },
+          "id": "d7cefdb761de7ec55929fbb733104315a48b6b9d",
+          "message": "Fix the DMA debug assertion regression",
+          "timestamp": "2026-01-05T09:06:11Z",
+          "url": "https://github.com/asterinas/asterinas/commit/d7cefdb761de7ec55929fbb733104315a48b6b9d"
+        },
+        "date": 1767655602953,
+        "tool": "customSmallerIsBetter",
+        "title": "[Signals] The cost of catching a signal",
+        "description": "lat_sig catch",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average Signal handler overhead on Linux",
+            "value": "1.1634",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average Signal handler overhead on Asterinas",
+            "value": "1.0407",
             "unit": "µs",
             "extra": "aster_result"
           }
