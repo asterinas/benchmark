@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1767652825360,
+  "lastUpdate": 1767738324555,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "http_file4KB_bw": [
@@ -13347,43 +13347,6 @@ window.BENCHMARK_DATA = {
             "username": "tatetian",
             "email": "tatetian@gmail.com"
           },
-          "id": "56d78ab64965194ad03cb6cde07fd5d98b17129d",
-          "message": "Fix some minor style issues",
-          "timestamp": "2025-09-27T15:55:03Z",
-          "url": "https://github.com/asterinas/asterinas/commit/56d78ab64965194ad03cb6cde07fd5d98b17129d"
-        },
-        "date": 1759789575987,
-        "tool": "customBiggerIsBetter",
-        "title": "Nginx HTTP request performance with 20 concurrency and 10000 requests in total",
-        "description": "ab -n 10000 -c 20 http://localhost:8080/index.html",
-        "display": false,
-        "benches": [
-          {
-            "name": "Average HTTP Bandwidth over virtio-net between Host Linux and Guest Linux",
-            "value": "20019.94",
-            "unit": "Kbytes/sec",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average HTTP Bandwidth over virtio-net between Host Linux and Guest Asterinas",
-            "value": "1846.20",
-            "unit": "Kbytes/sec",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
           "id": "cded205535e176963dc49bf40f4c8492c2289c6c",
           "message": "Retire the LTP SMP blocklist",
           "timestamp": "2025-10-03T11:50:02Z",
@@ -15550,6 +15513,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average HTTP Bandwidth over virtio-net between Host Linux and Guest Asterinas",
             "value": "4231.60",
+            "unit": "Kbytes/sec",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Wang Siyuan",
+            "username": "vvvvsv",
+            "email": "wsy@stu.pku.edu.cn"
+          },
+          "committer": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "3329907643@qq.com"
+          },
+          "id": "bb9b9795865c1ed7533b72c24265a6e2c736ec17",
+          "message": "Support allocating inodes from `PseudoFs`",
+          "timestamp": "2025-12-24T08:50:40Z",
+          "url": "https://github.com/asterinas/asterinas/commit/bb9b9795865c1ed7533b72c24265a6e2c736ec17"
+        },
+        "date": 1767738230483,
+        "tool": "customBiggerIsBetter",
+        "title": "Nginx HTTP request performance with 20 concurrency and 10000 requests in total",
+        "description": "ab -n 10000 -c 20 http://localhost:8080/index.html",
+        "display": false,
+        "benches": [
+          {
+            "name": "Average HTTP Bandwidth over virtio-net between Host Linux and Guest Linux",
+            "value": "22659.98",
+            "unit": "Kbytes/sec",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average HTTP Bandwidth over virtio-net between Host Linux and Guest Asterinas",
+            "value": "4156.44",
             "unit": "Kbytes/sec",
             "extra": "aster_result"
           }
