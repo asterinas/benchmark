@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1767915986972,
+  "lastUpdate": 1767916102991,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -15574,43 +15574,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2025-10-09T05:05:24Z",
           "url": "https://github.com/asterinas/asterinas/commit/d2b46640782d7b0f5002cae819c115096cb84add"
         },
-        "date": 1760137995223,
-        "tool": "customSmallerIsBetter",
-        "title": "[Process] The cost of fork+exec+shell+exit",
-        "description": "lat_proc shell",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average shell latency on Linux",
-            "value": "1630.0000",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average shell latency on Asterinas",
-            "value": "1185.0000",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Chen Chengjun",
-            "username": "cchanging",
-            "email": "chenchengjun.ccj@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "d2b46640782d7b0f5002cae819c115096cb84add",
-          "message": "Add a configfs usage example in ktest",
-          "timestamp": "2025-10-09T05:05:24Z",
-          "url": "https://github.com/asterinas/asterinas/commit/d2b46640782d7b0f5002cae819c115096cb84add"
-        },
         "date": 1760230488288,
         "tool": "customSmallerIsBetter",
         "title": "[Process] The cost of fork+exec+shell+exit",
@@ -17772,6 +17735,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average shell latency on Asterinas",
             "value": "1200.8000",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Tao Su",
+            "username": "taosue",
+            "email": "st498824@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "8ace76978eadd74dd2952866c269ac88b41c577b",
+          "message": "Add unit tests for DMA `alloc` and `alloc_uninit()`",
+          "timestamp": "2026-01-07T11:30:57Z",
+          "url": "https://github.com/asterinas/asterinas/commit/8ace76978eadd74dd2952866c269ac88b41c577b"
+        },
+        "date": 1767915988666,
+        "tool": "customSmallerIsBetter",
+        "title": "[Process] The cost of fork+exec+shell+exit",
+        "description": "lat_proc shell",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average shell latency on Linux",
+            "value": "1626.7500",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average shell latency on Asterinas",
+            "value": "1212.6000",
             "unit": "µs",
             "extra": "aster_result"
           }
