@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1768084566378,
+  "lastUpdate": 1768084661253,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -71124,43 +71124,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2025-10-09T05:05:24Z",
           "url": "https://github.com/asterinas/asterinas/commit/d2b46640782d7b0f5002cae819c115096cb84add"
         },
-        "date": 1760137042822,
-        "tool": "customSmallerIsBetter",
-        "title": "[Network] The cost of select (TCP fds)",
-        "description": "lat_select",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average select TCP latency on Linux",
-            "value": "3.1063",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average select TCP latency on Asterinas",
-            "value": "2.0463",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Chen Chengjun",
-            "username": "cchanging",
-            "email": "chenchengjun.ccj@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "d2b46640782d7b0f5002cae819c115096cb84add",
-          "message": "Add a configfs usage example in ktest",
-          "timestamp": "2025-10-09T05:05:24Z",
-          "url": "https://github.com/asterinas/asterinas/commit/d2b46640782d7b0f5002cae819c115096cb84add"
-        },
         "date": 1760229520035,
         "tool": "customSmallerIsBetter",
         "title": "[Network] The cost of select (TCP fds)",
@@ -73322,6 +73285,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average select TCP latency on Asterinas",
             "value": "2.1944",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "jiangjianfeng",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "184e803869d93f7793d33dabcab508f0bec8b5e9",
+          "message": "Use accurate build time only when publishing",
+          "timestamp": "2026-01-08T09:49:51Z",
+          "url": "https://github.com/asterinas/asterinas/commit/184e803869d93f7793d33dabcab508f0bec8b5e9"
+        },
+        "date": 1768084567537,
+        "tool": "customSmallerIsBetter",
+        "title": "[Network] The cost of select (TCP fds)",
+        "description": "lat_select",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average select TCP latency on Linux",
+            "value": "3.1024",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average select TCP latency on Asterinas",
+            "value": "2.1973",
             "unit": "µs",
             "extra": "aster_result"
           }
