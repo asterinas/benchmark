@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1768260008180,
+  "lastUpdate": 1768260105230,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -91122,43 +91122,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2025-10-18T09:58:02Z",
           "url": "https://github.com/asterinas/asterinas/commit/a7e45201e739ab20d43418fb6dd3839e3c326b1d"
         },
-        "date": 1760830215354,
-        "tool": "customBiggerIsBetter",
-        "title": "[Memory] The bandwidth of reading integers",
-        "description": "bw_mem frd",
-        "display": false,
-        "benches": [
-          {
-            "name": "Average memory read bandwidth on Linux",
-            "value": "11011.38",
-            "unit": "MB/s",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average memory read bandwidth on Asterinas",
-            "value": "10839.53",
-            "unit": "MB/s",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tate.thl@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "a7e45201e739ab20d43418fb6dd3839e3c326b1d",
-          "message": "Update README.md for ICSE 2026 paper acceptance",
-          "timestamp": "2025-10-18T09:58:02Z",
-          "url": "https://github.com/asterinas/asterinas/commit/a7e45201e739ab20d43418fb6dd3839e3c326b1d"
-        },
         "date": 1760923117984,
         "tool": "customBiggerIsBetter",
         "title": "[Memory] The bandwidth of reading integers",
@@ -93320,6 +93283,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average memory read bandwidth on Asterinas",
             "value": "10835.59",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Marsman1996",
+            "username": "Marsman1996",
+            "email": "lqliuyuwei@outlook.com"
+          },
+          "committer": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "3329907643@qq.com"
+          },
+          "id": "8335ba22d9973c64900013fd613bedb312bdcb80",
+          "message": "Fix stack overflow handling in InitStackWriter by validating positions before writing",
+          "timestamp": "2026-01-11T16:16:43Z",
+          "url": "https://github.com/asterinas/asterinas/commit/8335ba22d9973c64900013fd613bedb312bdcb80"
+        },
+        "date": 1768260010106,
+        "tool": "customBiggerIsBetter",
+        "title": "[Memory] The bandwidth of reading integers",
+        "description": "bw_mem frd",
+        "display": false,
+        "benches": [
+          {
+            "name": "Average memory read bandwidth on Linux",
+            "value": "9891.13",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average memory read bandwidth on Asterinas",
+            "value": "10037.22",
             "unit": "MB/s",
             "extra": "aster_result"
           }
