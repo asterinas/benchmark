@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1768341010982,
+  "lastUpdate": 1768517505761,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "cpu_lat": [
@@ -2242,43 +2242,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2025-10-18T09:58:02Z",
           "url": "https://github.com/asterinas/asterinas/commit/a7e45201e739ab20d43418fb6dd3839e3c326b1d"
         },
-        "date": 1760824253411,
-        "tool": "customSmallerIsBetter",
-        "title": "[Threads] Threads performance",
-        "description": "sysbench threads",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average Execution Time per Thread on Linux",
-            "value": "22.00",
-            "unit": "ms",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average Execution Time per Thread on Asterinas",
-            "value": "3.80",
-            "unit": "ms",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tate.thl@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "a7e45201e739ab20d43418fb6dd3839e3c326b1d",
-          "message": "Update README.md for ICSE 2026 paper acceptance",
-          "timestamp": "2025-10-18T09:58:02Z",
-          "url": "https://github.com/asterinas/asterinas/commit/a7e45201e739ab20d43418fb6dd3839e3c326b1d"
-        },
         "date": 1760910726764,
         "tool": "customSmallerIsBetter",
         "title": "[Threads] Threads performance",
@@ -4440,6 +4403,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average Execution Time per Thread on Asterinas",
             "value": "4.49",
+            "unit": "ms",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Qingsong Chen",
+            "username": "cqs21",
+            "email": "changxian.cqs@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "815cbf061b6d8ef0871f47f6237dda4eb32fe0d6",
+          "message": "Switch to a new Docker image 0.17.0-20260114",
+          "timestamp": "2026-01-15T03:55:23Z",
+          "url": "https://github.com/asterinas/asterinas/commit/815cbf061b6d8ef0871f47f6237dda4eb32fe0d6"
+        },
+        "date": 1768517410126,
+        "tool": "customSmallerIsBetter",
+        "title": "[Threads] Threads performance",
+        "description": "sysbench threads",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average Execution Time per Thread on Linux",
+            "value": "21.27",
+            "unit": "ms",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average Execution Time per Thread on Asterinas",
+            "value": "4.69",
             "unit": "ms",
             "extra": "aster_result"
           }
