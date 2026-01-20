@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1768868508423,
+  "lastUpdate": 1768868642107,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -71124,43 +71124,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2025-10-18T09:58:02Z",
           "url": "https://github.com/asterinas/asterinas/commit/a7e45201e739ab20d43418fb6dd3839e3c326b1d"
         },
-        "date": 1760828591708,
-        "tool": "customSmallerIsBetter",
-        "title": "[Network] The cost of select (TCP fds)",
-        "description": "lat_select",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average select TCP latency on Linux",
-            "value": "3.1022",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average select TCP latency on Asterinas",
-            "value": "1.7799",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tate.thl@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "a7e45201e739ab20d43418fb6dd3839e3c326b1d",
-          "message": "Update README.md for ICSE 2026 paper acceptance",
-          "timestamp": "2025-10-18T09:58:02Z",
-          "url": "https://github.com/asterinas/asterinas/commit/a7e45201e739ab20d43418fb6dd3839e3c326b1d"
-        },
         "date": 1760921446015,
         "tool": "customSmallerIsBetter",
         "title": "[Network] The cost of select (TCP fds)",
@@ -73322,6 +73285,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average select TCP latency on Asterinas",
             "value": "2.2179",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Zhang Junyang",
+            "username": "junyang-zh",
+            "email": "junyang@stu.pku.edu.cn"
+          },
+          "committer": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "3329907643@qq.com"
+          },
+          "id": "77f0b0e746ce2df0066b007fb050fc5be0e86e47",
+          "message": "Add missing safety comments in `boot_pt`",
+          "timestamp": "2025-11-18T03:27:37Z",
+          "url": "https://github.com/asterinas/asterinas/commit/77f0b0e746ce2df0066b007fb050fc5be0e86e47"
+        },
+        "date": 1768868509975,
+        "tool": "customSmallerIsBetter",
+        "title": "[Network] The cost of select (TCP fds)",
+        "description": "lat_select",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average select TCP latency on Linux",
+            "value": "3.1102",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average select TCP latency on Asterinas",
+            "value": "2.1936",
             "unit": "µs",
             "extra": "aster_result"
           }
