@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1769120276319,
+  "lastUpdate": 1769120375524,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_deletes_between": [
@@ -44432,43 +44432,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Zejun Zhao",
-            "username": "jellllly420",
-            "email": "jelly.zhao.42@gmail.com"
-          },
-          "committer": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "3329907643@qq.com"
-          },
-          "id": "294c55d0dfa5e5784729548f9764b26e608c18ff",
-          "message": "Fix `semid_ds`'s layout on non-x86_64 platforms",
-          "timestamp": "2025-09-27T18:01:19Z",
-          "url": "https://github.com/asterinas/asterinas/commit/294c55d0dfa5e5784729548f9764b26e608c18ff"
-        },
-        "date": 1759183484210,
-        "tool": "customSmallerIsBetter",
-        "title": "[Ext2] The selects-ipk result of sqlite speedtest",
-        "description": "sqlite-speed-test: 70000 SELECTS on an IPK",
-        "display": false,
-        "benches": [
-          {
-            "name": "The speed of selects-ipk on Linux (Ext2)",
-            "value": "2.426",
-            "unit": "second",
-            "extra": "linux_result"
-          },
-          {
-            "name": "The speed of selects-ipk on Asterinas (Ext2)",
-            "value": "3.201",
-            "unit": "second",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Ruize Tang",
             "username": "tangruize",
             "email": "1466040111@qq.com"
@@ -46638,6 +46601,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "The speed of selects-ipk on Linux (Ext2)",
             "value": "2.931",
+            "unit": "second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "The speed of selects-ipk on Asterinas (Ext2)",
+            "value": "3.815",
+            "unit": "second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Wang Siyuan",
+            "username": "vvvvsv",
+            "email": "wsy@stu.pku.edu.cn"
+          },
+          "committer": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "3329907643@qq.com"
+          },
+          "id": "b7ae7383102800529a079f00f92178511d35b8f3",
+          "message": "Cleanup: Only maintain children for directory dentries",
+          "timestamp": "2026-01-08T09:48:25Z",
+          "url": "https://github.com/asterinas/asterinas/commit/b7ae7383102800529a079f00f92178511d35b8f3"
+        },
+        "date": 1769120277493,
+        "tool": "customSmallerIsBetter",
+        "title": "[Ext2] The selects-ipk result of sqlite speedtest",
+        "description": "sqlite-speed-test: 70000 SELECTS on an IPK",
+        "display": false,
+        "benches": [
+          {
+            "name": "The speed of selects-ipk on Linux (Ext2)",
+            "value": "2.573",
             "unit": "second",
             "extra": "linux_result"
           },
