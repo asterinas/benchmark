@@ -1,45 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1769212934294,
+  "lastUpdate": 1769213034528,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
-      {
-        "commit": {
-          "author": {
-            "name": "Zejun Zhao",
-            "username": "jellllly420",
-            "email": "jelly.zhao.42@gmail.com"
-          },
-          "committer": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "3329907643@qq.com"
-          },
-          "id": "39a541fdeba53dd90cc85d13dcdd3fee916bb53a",
-          "message": "Add RISC-V FPU support",
-          "timestamp": "2025-08-07T20:53:33Z",
-          "url": "https://github.com/asterinas/asterinas/commit/39a541fdeba53dd90cc85d13dcdd3fee916bb53a"
-        },
-        "date": 1761781816237,
-        "tool": "customSmallerIsBetter",
-        "title": "[Memory] The cost of page fault handling",
-        "description": "lat_pagefault",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average page fault latency on Linux",
-            "value": "0.1635",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average page fault latency on Asterinas",
-            "value": "0.0977",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2218,6 +2181,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average page fault latency on Asterinas",
             "value": "0.1023",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Wang Siyuan",
+            "username": "vvvvsv",
+            "email": "wsy@stu.pku.edu.cn"
+          },
+          "committer": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "3329907643@qq.com"
+          },
+          "id": "b7ae7383102800529a079f00f92178511d35b8f3",
+          "message": "Cleanup: Only maintain children for directory dentries",
+          "timestamp": "2026-01-08T09:48:25Z",
+          "url": "https://github.com/asterinas/asterinas/commit/b7ae7383102800529a079f00f92178511d35b8f3"
+        },
+        "date": 1769212935618,
+        "tool": "customSmallerIsBetter",
+        "title": "[Memory] The cost of page fault handling",
+        "description": "lat_pagefault",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average page fault latency on Linux",
+            "value": "0.1550",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average page fault latency on Asterinas",
+            "value": "0.0986",
             "unit": "µs",
             "extra": "aster_result"
           }
