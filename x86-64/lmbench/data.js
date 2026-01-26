@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1769471502837,
+  "lastUpdate": 1769471603822,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -15560,43 +15560,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Zejun Zhao",
-            "username": "jellllly420",
-            "email": "jelly.zhao.42@gmail.com"
-          },
-          "committer": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "3329907643@qq.com"
-          },
-          "id": "39a541fdeba53dd90cc85d13dcdd3fee916bb53a",
-          "message": "Add RISC-V FPU support",
-          "timestamp": "2025-08-07T20:53:33Z",
-          "url": "https://github.com/asterinas/asterinas/commit/39a541fdeba53dd90cc85d13dcdd3fee916bb53a"
-        },
-        "date": 1761781094551,
-        "tool": "customSmallerIsBetter",
-        "title": "[Process] The cost of fork+exec+shell+exit",
-        "description": "lat_proc shell",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average shell latency on Linux",
-            "value": "1462.2500",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average shell latency on Asterinas",
-            "value": "1175.8000",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Ruihan Li",
             "username": "lrh2000",
             "email": "lrh2000@pku.edu.cn"
@@ -17772,6 +17735,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average shell latency on Asterinas",
             "value": "1232.4000",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tate.thl@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "e44d7e2b12d25e5928670f976fd085bcb1888c8b",
+          "message": "Update the intro section of README",
+          "timestamp": "2026-01-24T01:42:07Z",
+          "url": "https://github.com/asterinas/asterinas/commit/e44d7e2b12d25e5928670f976fd085bcb1888c8b"
+        },
+        "date": 1769471504151,
+        "tool": "customSmallerIsBetter",
+        "title": "[Process] The cost of fork+exec+shell+exit",
+        "description": "lat_proc shell",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average shell latency on Linux",
+            "value": "1477.7500",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average shell latency on Asterinas",
+            "value": "1224.8000",
             "unit": "µs",
             "extra": "aster_result"
           }
