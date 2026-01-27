@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1769552131579,
+  "lastUpdate": 1769552233643,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_deletes_between": [
@@ -53329,43 +53329,6 @@ window.BENCHMARK_DATA = {
             "username": "tatetian",
             "email": "tatetian@gmail.com"
           },
-          "id": "56d78ab64965194ad03cb6cde07fd5d98b17129d",
-          "message": "Fix some minor style issues",
-          "timestamp": "2025-09-27T15:55:03Z",
-          "url": "https://github.com/asterinas/asterinas/commit/56d78ab64965194ad03cb6cde07fd5d98b17129d"
-        },
-        "date": 1759788333813,
-        "tool": "customSmallerIsBetter",
-        "title": "[Ext2] The updates-big-one result of sqlite speedtest",
-        "description": "sqlite-speed-test: One big UPDATE of the whole 50000-row table",
-        "display": false,
-        "benches": [
-          {
-            "name": "The speed of updates-big-one on Linux (Ext2)",
-            "value": "0.686",
-            "unit": "second",
-            "extra": "linux_result"
-          },
-          {
-            "name": "The speed of updates-big-one on Asterinas (Ext2)",
-            "value": "0.914",
-            "unit": "second",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
           "id": "cded205535e176963dc49bf40f4c8492c2289c6c",
           "message": "Retire the LTP SMP blocklist",
           "timestamp": "2025-10-03T11:50:02Z",
@@ -55532,6 +55495,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "The speed of updates-big-one on Asterinas (Ext2)",
             "value": "0.373",
+            "unit": "second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Qingsong Chen",
+            "username": "cqs21",
+            "email": "changxian.cqs@antgroup.com"
+          },
+          "id": "5499436807f423e4d0cffce4afce303008ea95c2",
+          "message": "Add regression tests for recent issues",
+          "timestamp": "2026-01-25T17:37:28Z",
+          "url": "https://github.com/asterinas/asterinas/commit/5499436807f423e4d0cffce4afce303008ea95c2"
+        },
+        "date": 1769552133065,
+        "tool": "customSmallerIsBetter",
+        "title": "[Ext2] The updates-big-one result of sqlite speedtest",
+        "description": "sqlite-speed-test: One big UPDATE of the whole 50000-row table",
+        "display": false,
+        "benches": [
+          {
+            "name": "The speed of updates-big-one on Linux (Ext2)",
+            "value": "0.264",
+            "unit": "second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "The speed of updates-big-one on Asterinas (Ext2)",
+            "value": "0.386",
             "unit": "second",
             "extra": "aster_result"
           }
