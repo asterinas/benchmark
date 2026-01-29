@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1769728226945,
+  "lastUpdate": 1769728516060,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_deletes_between": [
@@ -37780,43 +37780,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2025-10-03T11:50:02Z",
           "url": "https://github.com/asterinas/asterinas/commit/cded205535e176963dc49bf40f4c8492c2289c6c"
         },
-        "date": 1759878234999,
-        "tool": "customSmallerIsBetter",
-        "title": "[Ext2] The deletes-between result of sqlite speedtest",
-        "description": "sqlite-speed-test: 10000 DELETEs, numeric BETWEEN, indexed",
-        "display": false,
-        "benches": [
-          {
-            "name": "The speed of deletes-between on Linux (Ext2)",
-            "value": "3.649",
-            "unit": "second",
-            "extra": "linux_result"
-          },
-          {
-            "name": "The speed of deletes-between on Asterinas (Ext2)",
-            "value": "3.021",
-            "unit": "second",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "cded205535e176963dc49bf40f4c8492c2289c6c",
-          "message": "Retire the LTP SMP blocklist",
-          "timestamp": "2025-10-03T11:50:02Z",
-          "url": "https://github.com/asterinas/asterinas/commit/cded205535e176963dc49bf40f4c8492c2289c6c"
-        },
         "date": 1759961471774,
         "tool": "customSmallerIsBetter",
         "title": "[Ext2] The deletes-between result of sqlite speedtest",
@@ -39978,6 +39941,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "The speed of deletes-between on Asterinas (Ext2)",
             "value": "3.155",
+            "unit": "second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "6d2ff13a639b9fff72842869cfd78f78ff21bbf2",
+          "message": "Redirect serial output if `hvc0` is on",
+          "timestamp": "2026-01-29T02:31:06Z",
+          "url": "https://github.com/asterinas/asterinas/commit/6d2ff13a639b9fff72842869cfd78f78ff21bbf2"
+        },
+        "date": 1769728228574,
+        "tool": "customSmallerIsBetter",
+        "title": "[Ext2] The deletes-between result of sqlite speedtest",
+        "description": "sqlite-speed-test: 10000 DELETEs, numeric BETWEEN, indexed",
+        "display": false,
+        "benches": [
+          {
+            "name": "The speed of deletes-between on Linux (Ext2)",
+            "value": "2.790",
+            "unit": "second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "The speed of deletes-between on Asterinas (Ext2)",
+            "value": "3.793",
             "unit": "second",
             "extra": "aster_result"
           }
