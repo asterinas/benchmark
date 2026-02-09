@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1770588229693,
+  "lastUpdate": 1770676364145,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "cpu_lat": [
@@ -2242,43 +2242,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2025-11-13T13:32:52Z",
           "url": "https://github.com/asterinas/asterinas/commit/35ab40057a50c587fcfca9a13110e2db55178b45"
         },
-        "date": 1763230041458,
-        "tool": "customSmallerIsBetter",
-        "title": "[Threads] Threads performance",
-        "description": "sysbench threads",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average Execution Time per Thread on Linux",
-            "value": "21.06",
-            "unit": "ms",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average Execution Time per Thread on Asterinas",
-            "value": "5.14",
-            "unit": "ms",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Wang Siyuan",
-            "username": "vvvvsv",
-            "email": "wsy@stu.pku.edu.cn"
-          },
-          "committer": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "3329907643@qq.com"
-          },
-          "id": "35ab40057a50c587fcfca9a13110e2db55178b45",
-          "message": "Support stopping states in `proc/pid/stat`",
-          "timestamp": "2025-11-13T13:32:52Z",
-          "url": "https://github.com/asterinas/asterinas/commit/35ab40057a50c587fcfca9a13110e2db55178b45"
-        },
         "date": 1763312551995,
         "tool": "customSmallerIsBetter",
         "title": "[Threads] Threads performance",
@@ -4440,6 +4403,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average Execution Time per Thread on Asterinas",
             "value": "4.71",
+            "unit": "ms",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Jianfeng Jiang",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "5f8b019369c97bc8dc072ebfe3859ea1ff23450d",
+          "message": "Replace `from_first_bytes` with `from_bytes` if possible",
+          "timestamp": "2026-02-05T11:15:15Z",
+          "url": "https://github.com/asterinas/asterinas/commit/5f8b019369c97bc8dc072ebfe3859ea1ff23450d"
+        },
+        "date": 1770676260266,
+        "tool": "customSmallerIsBetter",
+        "title": "[Threads] Threads performance",
+        "description": "sysbench threads",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average Execution Time per Thread on Linux",
+            "value": "21.11",
+            "unit": "ms",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average Execution Time per Thread on Asterinas",
+            "value": "5.50",
             "unit": "ms",
             "extra": "aster_result"
           }
