@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1770855546714,
+  "lastUpdate": 1770855652013,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -99996,43 +99996,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Tao Su",
-            "username": "taosue",
-            "email": "st498824@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "0615e6f6424ead8e12d73670428149fa7270571f",
-          "message": "Unify all syscall titles in SCML to level 3",
-          "timestamp": "2025-11-11T02:09:03Z",
-          "url": "https://github.com/asterinas/asterinas/commit/0615e6f6424ead8e12d73670428149fa7270571f"
-        },
-        "date": 1762970912588,
-        "tool": "customSmallerIsBetter",
-        "title": "[Semaphores] The cost of semop",
-        "description": "lat_sem",
-        "display": false,
-        "benches": [
-          {
-            "name": "Average semaphore latency on Linux",
-            "value": "0.9980",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average semaphore latency on Asterinas",
-            "value": "0.6629",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Zhang Junyang",
             "username": "junyang-zh",
             "email": "junyang@stu.pku.edu.cn"
@@ -102208,6 +102171,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average semaphore latency on Asterinas",
             "value": "0.6281",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "f4102e7db42d12dddcc2a3d689027e7be46434e9",
+          "message": "Rename `call_ostd_main` to `start_kernel`",
+          "timestamp": "2026-02-11T09:28:13Z",
+          "url": "https://github.com/asterinas/asterinas/commit/f4102e7db42d12dddcc2a3d689027e7be46434e9"
+        },
+        "date": 1770855547822,
+        "tool": "customSmallerIsBetter",
+        "title": "[Semaphores] The cost of semop",
+        "description": "lat_sem",
+        "display": false,
+        "benches": [
+          {
+            "name": "Average semaphore latency on Linux",
+            "value": "1.1027",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average semaphore latency on Asterinas",
+            "value": "0.5565",
             "unit": "µs",
             "extra": "aster_result"
           }
