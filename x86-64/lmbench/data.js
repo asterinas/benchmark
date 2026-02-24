@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1771894766493,
+  "lastUpdate": 1771894880301,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -8908,43 +8908,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2025-12-22T06:43:42Z",
           "url": "https://github.com/asterinas/asterinas/commit/2c80e0c3a4bfcd3b877790e50b4f27d52613629b"
         },
-        "date": 1766531457694,
-        "tool": "customSmallerIsBetter",
-        "title": "[Process] The cost of context switching",
-        "description": "lat_ctx 2",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average context switch latency on Linux",
-            "value": "1.35",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average context switch latency on Asterinas",
-            "value": "1.34",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Marsman1996",
-            "username": "Marsman1996",
-            "email": "lqliuyuwei@outlook.com"
-          },
-          "committer": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "3329907643@qq.com"
-          },
-          "id": "2c80e0c3a4bfcd3b877790e50b4f27d52613629b",
-          "message": "Fix reachable unwrap in sys_arch_prctl by using the ? operator",
-          "timestamp": "2025-12-22T06:43:42Z",
-          "url": "https://github.com/asterinas/asterinas/commit/2c80e0c3a4bfcd3b877790e50b4f27d52613629b"
-        },
         "date": 1766618567257,
         "tool": "customSmallerIsBetter",
         "title": "[Process] The cost of context switching",
@@ -11106,6 +11069,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average context switch latency on Asterinas",
             "value": "1.35",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Xinyi Wan",
+            "username": "rikosellic",
+            "email": "64517311+rikosellic@users.noreply.github.com"
+          },
+          "committer": {
+            "name": "GitHub",
+            "username": "web-flow",
+            "email": "noreply@github.com"
+          },
+          "id": "97bc17fa58ff2d3be555c48be8973e4d1c924b94",
+          "message": "Fix typos in ostd documentation",
+          "timestamp": "2026-02-18T22:48:17Z",
+          "url": "https://github.com/asterinas/asterinas/commit/97bc17fa58ff2d3be555c48be8973e4d1c924b94"
+        },
+        "date": 1771894767802,
+        "tool": "customSmallerIsBetter",
+        "title": "[Process] The cost of context switching",
+        "description": "lat_ctx 2",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average context switch latency on Linux",
+            "value": "1.34",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average context switch latency on Asterinas",
+            "value": "1.38",
             "unit": "µs",
             "extra": "aster_result"
           }
