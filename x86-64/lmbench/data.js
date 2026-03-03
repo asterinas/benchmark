@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1772501496025,
+  "lastUpdate": 1772501610163,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -2228,43 +2228,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "zjp",
-            "username": "zjp-CN",
-            "email": "jiping_zhou@foxmail.com"
-          },
-          "committer": {
-            "name": "Junyang Zhang",
-            "username": "junyang-zh",
-            "email": "user@junyang.me"
-          },
-          "id": "c91d383c91a5dccb057fa7f315657ed73ff8e0e6",
-          "message": "Fix `offset: *mut Self` by `offset: usize` in SingleInstruction traits",
-          "timestamp": "2025-12-30T03:05:19Z",
-          "url": "https://github.com/asterinas/asterinas/commit/c91d383c91a5dccb057fa7f315657ed73ff8e0e6"
-        },
-        "date": 1767136520704,
-        "tool": "customBiggerIsBetter",
-        "title": "[Memory] The bandwidth of mmap",
-        "description": "bw_mmap",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average mmap bandwidth on Linux",
-            "value": "25485.19",
-            "unit": "MB/s",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average mmap bandwidth on Asterinas",
-            "value": "27973.68",
-            "unit": "MB/s",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "jiangjianfeng",
             "username": "StevenJiang1110",
             "email": "jiangjianfeng.jjf@antgroup.com"
@@ -4440,6 +4403,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average mmap bandwidth on Asterinas",
             "value": "24472.19",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tate.thl@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "232b269a4d91bb06dc53c0cb386705b3c17ef102",
+          "message": "Fetch Codex output schema from upstream default branch via API\n\nThe previous approach used `git checkout \"$BASE_SHA\"` to restore the\nschema file, which fails when the PR's base SHA predates the addition\nof the schema file. Instead, fetch it from the upstream default branch\nvia the GitHub Contents API. This always works regardless of git\nhistory and ensures the schema matches the workflow version on main.",
+          "timestamp": "2026-03-02T09:47:02Z",
+          "url": "https://github.com/asterinas/asterinas/commit/232b269a4d91bb06dc53c0cb386705b3c17ef102"
+        },
+        "date": 1772501497374,
+        "tool": "customBiggerIsBetter",
+        "title": "[Memory] The bandwidth of mmap",
+        "description": "bw_mmap",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average mmap bandwidth on Linux",
+            "value": "25386.37",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average mmap bandwidth on Asterinas",
+            "value": "24681.45",
             "unit": "MB/s",
             "extra": "aster_result"
           }
