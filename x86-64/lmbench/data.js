@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1772667986547,
+  "lastUpdate": 1772668104921,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -46682,43 +46682,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2026-01-01T14:14:44Z",
           "url": "https://github.com/asterinas/asterinas/commit/26ac77c3713b79cc96508d83586d6434d5f173b7"
         },
-        "date": 1767309347158,
-        "tool": "customSmallerIsBetter",
-        "title": "[VFS] The cost of fstat",
-        "description": "lat_syscall fstat",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average fstat latency on Linux",
-            "value": "0.1709",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average fstat latency on Asterinas",
-            "value": "0.1919",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Marsman1996",
-            "username": "Marsman1996",
-            "email": "lqliuyuwei@outlook.com"
-          },
-          "committer": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "3329907643@qq.com"
-          },
-          "id": "26ac77c3713b79cc96508d83586d6434d5f173b7",
-          "message": "Fix overflow panic in syscall `fcntl`",
-          "timestamp": "2026-01-01T14:14:44Z",
-          "url": "https://github.com/asterinas/asterinas/commit/26ac77c3713b79cc96508d83586d6434d5f173b7"
-        },
         "date": 1767396928942,
         "tool": "customSmallerIsBetter",
         "title": "[VFS] The cost of fstat",
@@ -48880,6 +48843,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average fstat latency on Asterinas",
             "value": "0.2004",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "b205cacbf5e5406172e5c7216179c2559c091885",
+          "message": "Adjust some comments in OSTD",
+          "timestamp": "2026-01-29T11:15:50Z",
+          "url": "https://github.com/asterinas/asterinas/commit/b205cacbf5e5406172e5c7216179c2559c091885"
+        },
+        "date": 1772667987729,
+        "tool": "customSmallerIsBetter",
+        "title": "[VFS] The cost of fstat",
+        "description": "lat_syscall fstat",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average fstat latency on Linux",
+            "value": "0.1724",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average fstat latency on Asterinas",
+            "value": "0.1971",
             "unit": "µs",
             "extra": "aster_result"
           }
