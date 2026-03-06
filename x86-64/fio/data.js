@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1772765642889,
+  "lastUpdate": 1772765837722,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_seq_write_bw": [
@@ -6672,43 +6672,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Marsman1996",
-            "username": "Marsman1996",
-            "email": "lqliuyuwei@outlook.com"
-          },
-          "committer": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "3329907643@qq.com"
-          },
-          "id": "545efaa15516e62775d382406acc8091755eb1e3",
-          "message": "Validate futex address alignment when waking robust futexes",
-          "timestamp": "2025-12-28T02:55:24Z",
-          "url": "https://github.com/asterinas/asterinas/commit/545efaa15516e62775d382406acc8091755eb1e3"
-        },
-        "date": 1766966836366,
-        "tool": "customBiggerIsBetter",
-        "title": "[Ext2] The bandwidth of sequential reads (IOMMU disabled on Asterinas)",
-        "description": "fio -filename=/ext2/fio-test -size=1G -bs=1M -direct=1",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average file read bandwidth on Linux",
-            "value": "1079",
-            "unit": "MB/s",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average file read bandwidth on Asterinas",
-            "value": "1433",
-            "unit": "MB/s",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Ruihan Li",
             "username": "lrh2000",
             "email": "lrh2000@pku.edu.cn"
@@ -8884,6 +8847,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average file read bandwidth on Asterinas",
             "value": "1477",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Zhang Junyang",
+            "username": "junyang-zh",
+            "email": "junyang@stu.pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "670ce782c2732b10da6d7d2e060f93a4fd6b29b0",
+          "message": "Bump docker image version to 0.17.1",
+          "timestamp": "2026-03-05T04:20:09Z",
+          "url": "https://github.com/asterinas/asterinas/commit/670ce782c2732b10da6d7d2e060f93a4fd6b29b0"
+        },
+        "date": 1772765644573,
+        "tool": "customBiggerIsBetter",
+        "title": "[Ext2] The bandwidth of sequential reads (IOMMU disabled on Asterinas)",
+        "description": "fio -filename=/ext2/fio-test -size=1G -bs=1M -direct=1",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average file read bandwidth on Linux",
+            "value": "2264",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average file read bandwidth on Asterinas",
+            "value": "1412",
             "unit": "MB/s",
             "extra": "aster_result"
           }
