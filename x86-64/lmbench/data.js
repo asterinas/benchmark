@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1773186681570,
+  "lastUpdate": 1773186797157,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -35558,43 +35558,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
-            "name": "Jianfeng Jiang",
-            "username": "StevenJiang1110",
-            "email": "jiangjianfeng.jjf@antgroup.com"
-          },
-          "id": "922b204280440203d0e5f9d6a06040df64d1e7e5",
-          "message": "Move `Pipe` from `InodeImpl` to `Inode`",
-          "timestamp": "2026-01-06T15:51:42Z",
-          "url": "https://github.com/asterinas/asterinas/commit/922b204280440203d0e5f9d6a06040df64d1e7e5"
-        },
-        "date": 1767826323490,
-        "tool": "customSmallerIsBetter",
-        "title": "[Unix sockets] The latency of connect",
-        "description": "lat_connect",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average unix connect latency on Linux",
-            "value": "4.4371",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average unix connect latency on Asterinas",
-            "value": "4.7974",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Tao Su",
             "username": "taosue",
             "email": "st498824@antgroup.com"
@@ -37770,6 +37733,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average unix connect latency on Asterinas",
             "value": "5.3631",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Chengjun Chen",
+            "username": "cchanging",
+            "email": "33800552+cchanging@users.noreply.github.com"
+          },
+          "id": "417d58dbac51a71cbe02b5615a7198184371ebd6",
+          "message": "Remove duplicate re-exports",
+          "timestamp": "2026-03-09T12:25:37Z",
+          "url": "https://github.com/asterinas/asterinas/commit/417d58dbac51a71cbe02b5615a7198184371ebd6"
+        },
+        "date": 1773186682742,
+        "tool": "customSmallerIsBetter",
+        "title": "[Unix sockets] The latency of connect",
+        "description": "lat_connect",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average unix connect latency on Linux",
+            "value": "4.4846",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average unix connect latency on Asterinas",
+            "value": "5.3284",
             "unit": "µs",
             "extra": "aster_result"
           }
