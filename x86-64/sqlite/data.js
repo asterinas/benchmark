@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1773703452774,
+  "lastUpdate": 1773703571114,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_deletes_between": [
@@ -57764,43 +57764,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "wyt8",
-            "username": "wyt8",
-            "email": "2253457010@qq.com"
-          },
-          "committer": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "3329907643@qq.com"
-          },
-          "id": "4fa2b55e47884bb53b2048cb2fa55c10ba7b1716",
-          "message": "Place the heap after bss segment",
-          "timestamp": "2026-01-12T03:21:40Z",
-          "url": "https://github.com/asterinas/asterinas/commit/4fa2b55e47884bb53b2048cb2fa55c10ba7b1716"
-        },
-        "date": 1768341986239,
-        "tool": "customSmallerIsBetter",
-        "title": "[Ext2] The 'VACUUM' result of sqlite speedtest",
-        "description": "sqlite-speed-test: repacking database file into a minimal amount of disk space",
-        "display": false,
-        "benches": [
-          {
-            "name": "The speed of VACUUM on Linux (Ext2)",
-            "value": "2.502",
-            "unit": "second",
-            "extra": "linux_result"
-          },
-          {
-            "name": "The speed of VACUUM on Asterinas (Ext2)",
-            "value": "2.704",
-            "unit": "second",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Qingsong Chen",
             "username": "cqs21",
             "email": "changxian.cqs@antgroup.com"
@@ -59976,6 +59939,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "The speed of VACUUM on Asterinas (Ext2)",
             "value": "3.031",
+            "unit": "second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Tao Su",
+            "username": "taosue",
+            "email": "st498824@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "30cb622701490622d218618a969e3d2d4d09fd27",
+          "message": "Switch to a new Docker image 0.17.1-20260308",
+          "timestamp": "2026-03-16T01:59:44Z",
+          "url": "https://github.com/asterinas/asterinas/commit/30cb622701490622d218618a969e3d2d4d09fd27"
+        },
+        "date": 1773703453990,
+        "tool": "customSmallerIsBetter",
+        "title": "[Ext2] The 'VACUUM' result of sqlite speedtest",
+        "description": "sqlite-speed-test: repacking database file into a minimal amount of disk space",
+        "display": false,
+        "benches": [
+          {
+            "name": "The speed of VACUUM on Linux (Ext2)",
+            "value": "2.258",
+            "unit": "second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "The speed of VACUUM on Asterinas (Ext2)",
+            "value": "2.756",
             "unit": "second",
             "extra": "aster_result"
           }
