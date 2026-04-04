@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1775333873968,
+  "lastUpdate": 1775333993044,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_deletes_between": [
@@ -75545,43 +75545,6 @@ window.BENCHMARK_DATA = {
             "email": "lqliuyuwei@outlook.com"
           },
           "committer": {
-            "name": "Jianfeng Jiang",
-            "username": "StevenJiang1110",
-            "email": "jiangjianfeng.jjf@antgroup.com"
-          },
-          "id": "43f570730c852208a3160b6cfe3f98e0e29d995c",
-          "message": "Fix new_fd validation to use resource limits in `do_dup3`",
-          "timestamp": "2026-01-20T07:25:42Z",
-          "url": "https://github.com/asterinas/asterinas/commit/43f570730c852208a3160b6cfe3f98e0e29d995c"
-        },
-        "date": 1768946036863,
-        "tool": "customSmallerIsBetter",
-        "title": "[Ramfs] The updates-big-one result of sqlite speedtest",
-        "description": "sqlite-speed-test: One big UPDATE of the whole 50000-row table",
-        "display": false,
-        "benches": [
-          {
-            "name": "The speed of updates-big-one on Linux (Ramfs)",
-            "value": "0.086",
-            "unit": "second",
-            "extra": "linux_result"
-          },
-          {
-            "name": "The speed of updates-big-one on Asterinas (Ramfs)",
-            "value": "0.089",
-            "unit": "second",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Marsman1996",
-            "username": "Marsman1996",
-            "email": "lqliuyuwei@outlook.com"
-          },
-          "committer": {
             "name": "Tate, Hongliang Tian",
             "username": "tatetian",
             "email": "tatetian@gmail.com"
@@ -77752,6 +77715,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "The speed of updates-big-one on Asterinas (Ramfs)",
             "value": "0.105",
+            "unit": "second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Jianfeng Jiang",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "f05e89b615c5dcb3f7c74accf24bdc23f96fcfc3",
+          "message": "Block flaky gVisor epoll_pwait2 timeout test",
+          "timestamp": "2026-03-20T09:14:21Z",
+          "url": "https://github.com/asterinas/asterinas/commit/f05e89b615c5dcb3f7c74accf24bdc23f96fcfc3"
+        },
+        "date": 1775333875098,
+        "tool": "customSmallerIsBetter",
+        "title": "[Ramfs] The updates-big-one result of sqlite speedtest",
+        "description": "sqlite-speed-test: One big UPDATE of the whole 50000-row table",
+        "display": false,
+        "benches": [
+          {
+            "name": "The speed of updates-big-one on Linux (Ramfs)",
+            "value": "0.085",
+            "unit": "second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "The speed of updates-big-one on Asterinas (Ramfs)",
+            "value": "0.090",
             "unit": "second",
             "extra": "aster_result"
           }
