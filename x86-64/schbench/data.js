@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1775308784754,
+  "lastUpdate": 1775308902765,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "smp1_p50_rps": [
@@ -8908,43 +8908,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2026-01-15T15:48:44Z",
           "url": "https://github.com/asterinas/asterinas/commit/2219e83f8e13e3f139b1120e8f46e76da61bcec1"
         },
-        "date": 1768688224801,
-        "tool": "customSmallerIsBetter",
-        "title": "[Scheduler] P99 request latency while max-loading all CPUs (SMP=8)",
-        "description": "schbench -F 256 -n 5 -r 90",
-        "display": false,
-        "benches": [
-          {
-            "name": "P99 request latency of schbench on Linux",
-            "value": "3860",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "P99 request latency of schbench on Asterinas",
-            "value": "157440",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Marsman1996",
-            "username": "Marsman1996",
-            "email": "lqliuyuwei@outlook.com"
-          },
-          "committer": {
-            "name": "Chengjun Chen",
-            "username": "cchanging",
-            "email": "33800552+cchanging@users.noreply.github.com"
-          },
-          "id": "2219e83f8e13e3f139b1120e8f46e76da61bcec1",
-          "message": "Fix invalid mapping in mremap fast path",
-          "timestamp": "2026-01-15T15:48:44Z",
-          "url": "https://github.com/asterinas/asterinas/commit/2219e83f8e13e3f139b1120e8f46e76da61bcec1"
-        },
         "date": 1768774643415,
         "tool": "customSmallerIsBetter",
         "title": "[Scheduler] P99 request latency while max-loading all CPUs (SMP=8)",
@@ -11106,6 +11069,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "P99 request latency of schbench on Asterinas",
             "value": "140544",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Tao Su",
+            "username": "taosue",
+            "email": "st498824@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "36b3d34a924db299e7c9955d0d6f7439f41c69f3",
+          "message": "Bumped Docker image version to 0.17.1-20260319",
+          "timestamp": "2026-03-19T05:52:06Z",
+          "url": "https://github.com/asterinas/asterinas/commit/36b3d34a924db299e7c9955d0d6f7439f41c69f3"
+        },
+        "date": 1775308785618,
+        "tool": "customSmallerIsBetter",
+        "title": "[Scheduler] P99 request latency while max-loading all CPUs (SMP=8)",
+        "description": "schbench -F 256 -n 5 -r 90",
+        "display": false,
+        "benches": [
+          {
+            "name": "P99 request latency of schbench on Linux",
+            "value": "4136",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "P99 request latency of schbench on Asterinas",
+            "value": "147712",
             "unit": "µs",
             "extra": "aster_result"
           }
