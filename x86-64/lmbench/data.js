@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1775518965057,
+  "lastUpdate": 1775519089502,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -31114,43 +31114,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Marsman1996",
-            "username": "Marsman1996",
-            "email": "lqliuyuwei@outlook.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "5792b497224e383feff3e17fbaec619c028e27d6",
-          "message": "Fix error handling in OverlayFsType by propagating lookup errors",
-          "timestamp": "2026-01-21T05:14:33Z",
-          "url": "https://github.com/asterinas/asterinas/commit/5792b497224e383feff3e17fbaec619c028e27d6"
-        },
-        "date": 1769038214186,
-        "tool": "customSmallerIsBetter",
-        "title": "[Unix sockets] The latency of write+read (1B message)",
-        "description": "lat_unix",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average unix latency on Linux",
-            "value": "4.1513",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average unix latency on Asterinas",
-            "value": "3.5247",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Wang Siyuan",
             "username": "vvvvsv",
             "email": "wsy@stu.pku.edu.cn"
@@ -33326,6 +33289,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average unix latency on Asterinas",
             "value": "3.8103",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "f6fb67e78d5babf48939793ddb273db7048bf76c",
+          "message": "Fix `poll` behavior about invalid entries",
+          "timestamp": "2026-04-03T11:36:01Z",
+          "url": "https://github.com/asterinas/asterinas/commit/f6fb67e78d5babf48939793ddb273db7048bf76c"
+        },
+        "date": 1775518966311,
+        "tool": "customSmallerIsBetter",
+        "title": "[Unix sockets] The latency of write+read (1B message)",
+        "description": "lat_unix",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average unix latency on Linux",
+            "value": "4.1604",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average unix latency on Asterinas",
+            "value": "3.6802",
             "unit": "µs",
             "extra": "aster_result"
           }
