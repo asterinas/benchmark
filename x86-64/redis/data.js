@@ -1,45 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1775608377387,
+  "lastUpdate": 1775608500030,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ping_inline_100k_conc20_rps": [
-      {
-        "commit": {
-          "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "6d2ff13a639b9fff72842869cfd78f78ff21bbf2",
-          "message": "Redirect serial output if `hvc0` is on",
-          "timestamp": "2026-01-29T02:31:06Z",
-          "url": "https://github.com/asterinas/asterinas/commit/6d2ff13a639b9fff72842869cfd78f78ff21bbf2"
-        },
-        "date": 1769729550050,
-        "tool": "customBiggerIsBetter",
-        "title": "Redis PING INLINE performance (virtio-net, 20 concurrency, 100K requests)",
-        "description": "redis-benchmark -n 100000 -c 20 -t ping_inline",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average RPS of PING_INLINE over virtio-net between Host Linux and Guest Linux",
-            "value": "97276.27",
-            "unit": "request per second",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average RPS of PING_INLINE over virtio-net between Host Linux and Guest Asterinas",
-            "value": "36683.79",
-            "unit": "request per second",
-            "extra": "aster_result"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2218,6 +2181,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average RPS of PING_INLINE over virtio-net between Host Linux and Guest Asterinas",
             "value": "14981.27",
+            "unit": "request per second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Tao Su",
+            "username": "taosue",
+            "email": "st498824@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "c2ea64841a56953ac4c1b815b341dad44457ca27",
+          "message": "Update book to document `init` fallback paths when `init` parameter is omitted",
+          "timestamp": "2026-04-07T08:04:47Z",
+          "url": "https://github.com/asterinas/asterinas/commit/c2ea64841a56953ac4c1b815b341dad44457ca27"
+        },
+        "date": 1775608378388,
+        "tool": "customBiggerIsBetter",
+        "title": "Redis PING INLINE performance (virtio-net, 20 concurrency, 100K requests)",
+        "description": "redis-benchmark -n 100000 -c 20 -t ping_inline",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average RPS of PING_INLINE over virtio-net between Host Linux and Guest Linux",
+            "value": "106382.98",
+            "unit": "request per second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average RPS of PING_INLINE over virtio-net between Host Linux and Guest Asterinas",
+            "value": "4846.60",
             "unit": "request per second",
             "extra": "aster_result"
           }
