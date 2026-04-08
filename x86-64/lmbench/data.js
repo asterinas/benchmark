@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1775610229784,
+  "lastUpdate": 1775610353834,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -48904,43 +48904,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2026-01-29T02:31:06Z",
           "url": "https://github.com/asterinas/asterinas/commit/6d2ff13a639b9fff72842869cfd78f78ff21bbf2"
         },
-        "date": 1769732341519,
-        "tool": "customBiggerIsBetter",
-        "title": "[VFS] The bandwidth of file reads via page cache",
-        "description": "bw_file_rd",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average file read bandwidth on Linux",
-            "value": "9565.63",
-            "unit": "MB/s",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average file read bandwidth on Asterinas",
-            "value": "11572.24",
-            "unit": "MB/s",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "6d2ff13a639b9fff72842869cfd78f78ff21bbf2",
-          "message": "Redirect serial output if `hvc0` is on",
-          "timestamp": "2026-01-29T02:31:06Z",
-          "url": "https://github.com/asterinas/asterinas/commit/6d2ff13a639b9fff72842869cfd78f78ff21bbf2"
-        },
         "date": 1769815490711,
         "tool": "customBiggerIsBetter",
         "title": "[VFS] The bandwidth of file reads via page cache",
@@ -51102,6 +51065,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average file read bandwidth on Asterinas",
             "value": "10130.02",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Tao Su",
+            "username": "taosue",
+            "email": "st498824@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "c2ea64841a56953ac4c1b815b341dad44457ca27",
+          "message": "Update book to document `init` fallback paths when `init` parameter is omitted",
+          "timestamp": "2026-04-07T08:04:47Z",
+          "url": "https://github.com/asterinas/asterinas/commit/c2ea64841a56953ac4c1b815b341dad44457ca27"
+        },
+        "date": 1775610231096,
+        "tool": "customBiggerIsBetter",
+        "title": "[VFS] The bandwidth of file reads via page cache",
+        "description": "bw_file_rd",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average file read bandwidth on Linux",
+            "value": "9334.61",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average file read bandwidth on Asterinas",
+            "value": "10008.59",
             "unit": "MB/s",
             "extra": "aster_result"
           }
