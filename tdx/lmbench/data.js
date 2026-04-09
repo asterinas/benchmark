@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1775707610660,
+  "lastUpdate": 1775707739293,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -22226,43 +22226,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Wang Siyuan",
-            "username": "vvvvsv",
-            "email": "wsy@stu.pku.edu.cn"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "48fa40bbf28a7b7f1d3481be280332f36858d868",
-          "message": "Support the system call `memfd_create`",
-          "timestamp": "2025-07-30T09:00:08Z",
-          "url": "https://github.com/asterinas/asterinas/commit/48fa40bbf28a7b7f1d3481be280332f36858d868"
-        },
-        "date": 1754213795036,
-        "tool": "customSmallerIsBetter",
-        "title": "[Signals] The cost of catching a segfault",
-        "description": "lat_sig prot",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average protection fault latency on Linux",
-            "value": "0.4730",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average protection fault latency on Asterinas",
-            "value": "0.4165",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Zhang Junyang",
             "username": "junyang-zh",
             "email": "junyang@stu.pku.edu.cn"
@@ -24438,6 +24401,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average protection fault latency on Asterinas",
             "value": "0.3733",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Chen Chengjun",
+            "username": "cchanging",
+            "email": "chenchengjun.ccj@antgroup.com"
+          },
+          "committer": {
+            "name": "Jianfeng Jiang",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "id": "ac432d5f147df65249f4f89d0edd24db2bfa98af",
+          "message": "Make rootfs display the correct fs_type",
+          "timestamp": "2026-04-08T09:48:05Z",
+          "url": "https://github.com/asterinas/asterinas/commit/ac432d5f147df65249f4f89d0edd24db2bfa98af"
+        },
+        "date": 1775707612321,
+        "tool": "customSmallerIsBetter",
+        "title": "[Signals] The cost of catching a segfault",
+        "description": "lat_sig prot",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average protection fault latency on Linux",
+            "value": "0.4865",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average protection fault latency on Asterinas",
+            "value": "0.4137",
             "unit": "µs",
             "extra": "aster_result"
           }
