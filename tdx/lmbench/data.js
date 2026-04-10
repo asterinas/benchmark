@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1775796310989,
+  "lastUpdate": 1775796439158,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -2228,43 +2228,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Wang Siyuan",
-            "username": "vvvvsv",
-            "email": "wsy@stu.pku.edu.cn"
-          },
-          "committer": {
-            "name": "Jianfeng Jiang",
-            "username": "StevenJiang1110",
-            "email": "jiangjianfeng.jjf@antgroup.com"
-          },
-          "id": "70b26f824d8beddcfd559fe3cac26ecc5caa6c88",
-          "message": "Support `RUSAGE_CHILDREN` option for `getrusage`",
-          "timestamp": "2025-09-18T08:28:55Z",
-          "url": "https://github.com/asterinas/asterinas/commit/70b26f824d8beddcfd559fe3cac26ecc5caa6c88"
-        },
-        "date": 1758227794062,
-        "tool": "customBiggerIsBetter",
-        "title": "[Memory] The bandwidth of mmap",
-        "description": "bw_mmap",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average mmap bandwidth on Linux",
-            "value": "26454.66",
-            "unit": "MB/s",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average mmap bandwidth on Asterinas",
-            "value": "26402.62",
-            "unit": "MB/s",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Tate, Hongliang Tian",
             "username": "tatetian",
             "email": "tate.thl@antgroup.com"
@@ -4440,6 +4403,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average mmap bandwidth on Asterinas",
             "value": "23188.96",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Marsman1996",
+            "username": "Marsman1996",
+            "email": "lqliuyuwei@outlook.com"
+          },
+          "committer": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "3329907643@qq.com"
+          },
+          "id": "0896044646a8c4ddd745479482a49d8edf0f50f3",
+          "message": "Fix fork and vfork panic on pids.max exhaustion",
+          "timestamp": "2026-04-09T08:48:00Z",
+          "url": "https://github.com/asterinas/asterinas/commit/0896044646a8c4ddd745479482a49d8edf0f50f3"
+        },
+        "date": 1775796312147,
+        "tool": "customBiggerIsBetter",
+        "title": "[Memory] The bandwidth of mmap",
+        "description": "bw_mmap",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average mmap bandwidth on Linux",
+            "value": "25482.77",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average mmap bandwidth on Asterinas",
+            "value": "22700.67",
             "unit": "MB/s",
             "extra": "aster_result"
           }
