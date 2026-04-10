@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1775783908401,
+  "lastUpdate": 1775784031674,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -13352,43 +13352,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2026-01-08T09:48:25Z",
           "url": "https://github.com/asterinas/asterinas/commit/b7ae7383102800529a079f00f92178511d35b8f3"
         },
-        "date": 1769126037171,
-        "tool": "customSmallerIsBetter",
-        "title": "[Process] The cost of fork+exec+exit",
-        "description": "lat_proc exec",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average exec latency on Linux",
-            "value": "975.3333",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average exec latency on Asterinas",
-            "value": "832.1429",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Wang Siyuan",
-            "username": "vvvvsv",
-            "email": "wsy@stu.pku.edu.cn"
-          },
-          "committer": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "3329907643@qq.com"
-          },
-          "id": "b7ae7383102800529a079f00f92178511d35b8f3",
-          "message": "Cleanup: Only maintain children for directory dentries",
-          "timestamp": "2026-01-08T09:48:25Z",
-          "url": "https://github.com/asterinas/asterinas/commit/b7ae7383102800529a079f00f92178511d35b8f3"
-        },
         "date": 1769212335030,
         "tool": "customSmallerIsBetter",
         "title": "[Process] The cost of fork+exec+exit",
@@ -15550,6 +15513,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average exec latency on Asterinas",
             "value": "895.1667",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Marsman1996",
+            "username": "Marsman1996",
+            "email": "lqliuyuwei@outlook.com"
+          },
+          "committer": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "3329907643@qq.com"
+          },
+          "id": "0896044646a8c4ddd745479482a49d8edf0f50f3",
+          "message": "Fix fork and vfork panic on pids.max exhaustion",
+          "timestamp": "2026-04-09T08:48:00Z",
+          "url": "https://github.com/asterinas/asterinas/commit/0896044646a8c4ddd745479482a49d8edf0f50f3"
+        },
+        "date": 1775783909609,
+        "tool": "customSmallerIsBetter",
+        "title": "[Process] The cost of fork+exec+exit",
+        "description": "lat_proc exec",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average exec latency on Linux",
+            "value": "1008.3333",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average exec latency on Asterinas",
+            "value": "848.8571",
             "unit": "µs",
             "extra": "aster_result"
           }
