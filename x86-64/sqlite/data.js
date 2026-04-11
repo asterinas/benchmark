@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1775948595426,
+  "lastUpdate": 1775948719400,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_deletes_between": [
@@ -48890,43 +48890,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2026-02-03T08:22:31Z",
           "url": "https://github.com/asterinas/asterinas/commit/5d0779bd832cc6ac029e6d4131586635c4cd4779"
         },
-        "date": 1770244950259,
-        "tool": "customSmallerIsBetter",
-        "title": "[Ext2] The total result of sqlite speedtest",
-        "description": "sqlite-speed-test: total",
-        "display": false,
-        "benches": [
-          {
-            "name": "Total speed on Linux (Ext2)",
-            "value": "67.454",
-            "unit": "second",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Total speed on Asterinas (Ext2)",
-            "value": "71.893",
-            "unit": "second",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Hsy-Intel",
-            "username": "Hsy-Intel",
-            "email": "siyuan.hui@intel.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "5d0779bd832cc6ac029e6d4131586635c4cd4779",
-          "message": "Fix format issue",
-          "timestamp": "2026-02-03T08:22:31Z",
-          "url": "https://github.com/asterinas/asterinas/commit/5d0779bd832cc6ac029e6d4131586635c4cd4779"
-        },
         "date": 1770331122944,
         "tool": "customSmallerIsBetter",
         "title": "[Ext2] The total result of sqlite speedtest",
@@ -51088,6 +51051,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Total speed on Asterinas (Ext2)",
             "value": "76.017",
+            "unit": "second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Jianfeng Jiang",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "id": "9e961e07d414a44be3e8ccb82681fc9f79f9a3ba",
+          "message": "Reorder methods in `process/exit.rs`",
+          "timestamp": "2026-04-10T08:12:34Z",
+          "url": "https://github.com/asterinas/asterinas/commit/9e961e07d414a44be3e8ccb82681fc9f79f9a3ba"
+        },
+        "date": 1775948596587,
+        "tool": "customSmallerIsBetter",
+        "title": "[Ext2] The total result of sqlite speedtest",
+        "description": "sqlite-speed-test: total",
+        "display": false,
+        "benches": [
+          {
+            "name": "Total speed on Linux (Ext2)",
+            "value": "72.359",
+            "unit": "second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Total speed on Asterinas (Ext2)",
+            "value": "76.161",
             "unit": "second",
             "extra": "aster_result"
           }
