@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1776036203872,
+  "lastUpdate": 1776036333608,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "smp1_p50_rps": [
@@ -4464,43 +4464,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2026-02-03T08:22:31Z",
           "url": "https://github.com/asterinas/asterinas/commit/5d0779bd832cc6ac029e6d4131586635c4cd4779"
         },
-        "date": 1770245879138,
-        "tool": "customSmallerIsBetter",
-        "title": "[Scheduler] P99 wakeup latency while max-loading all CPUs (SMP=1)",
-        "description": "schbench -F 256 -n 5 -r 90",
-        "display": false,
-        "benches": [
-          {
-            "name": "P99 wakeup latency of schbench on Linux",
-            "value": "2",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "P99 wakeup latency of schbench on Asterinas",
-            "value": "4",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Hsy-Intel",
-            "username": "Hsy-Intel",
-            "email": "siyuan.hui@intel.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "5d0779bd832cc6ac029e6d4131586635c4cd4779",
-          "message": "Fix format issue",
-          "timestamp": "2026-02-03T08:22:31Z",
-          "url": "https://github.com/asterinas/asterinas/commit/5d0779bd832cc6ac029e6d4131586635c4cd4779"
-        },
         "date": 1770332059904,
         "tool": "customSmallerIsBetter",
         "title": "[Scheduler] P99 wakeup latency while max-loading all CPUs (SMP=1)",
@@ -6662,6 +6625,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "P99 wakeup latency of schbench on Asterinas",
             "value": "3",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Jianfeng Jiang",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "id": "9e961e07d414a44be3e8ccb82681fc9f79f9a3ba",
+          "message": "Reorder methods in `process/exit.rs`",
+          "timestamp": "2026-04-10T08:12:34Z",
+          "url": "https://github.com/asterinas/asterinas/commit/9e961e07d414a44be3e8ccb82681fc9f79f9a3ba"
+        },
+        "date": 1776036204711,
+        "tool": "customSmallerIsBetter",
+        "title": "[Scheduler] P99 wakeup latency while max-loading all CPUs (SMP=1)",
+        "description": "schbench -F 256 -n 5 -r 90",
+        "display": false,
+        "benches": [
+          {
+            "name": "P99 wakeup latency of schbench on Linux",
+            "value": "2",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "P99 wakeup latency of schbench on Asterinas",
+            "value": "5",
             "unit": "µs",
             "extra": "aster_result"
           }
