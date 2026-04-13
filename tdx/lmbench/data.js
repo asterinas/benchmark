@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1776049251524,
+  "lastUpdate": 1776049380349,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -60013,43 +60013,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2025-08-14T14:08:56Z",
           "url": "https://github.com/asterinas/asterinas/commit/1452aab69c9d0bf5ada7ea8a93a49fd0badafcca"
         },
-        "date": 1755489943072,
-        "tool": "customBiggerIsBetter",
-        "title": "[Ext2] The bandwidth of copying data between files",
-        "description": "lmdd",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average file copy bandwidth on Linux",
-            "value": "1678.7026",
-            "unit": "MB/s",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average file copy bandwidth on Asterinas",
-            "value": "2483.3865",
-            "unit": "MB/s",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Zhang Junyang",
-            "username": "junyang-zh",
-            "email": "junyang@stu.pku.edu.cn"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "1452aab69c9d0bf5ada7ea8a93a49fd0badafcca",
-          "message": "Optimize the space for `TlbFlushOp`s",
-          "timestamp": "2025-08-14T14:08:56Z",
-          "url": "https://github.com/asterinas/asterinas/commit/1452aab69c9d0bf5ada7ea8a93a49fd0badafcca"
-        },
         "date": 1755574521152,
         "tool": "customBiggerIsBetter",
         "title": "[Ext2] The bandwidth of copying data between files",
@@ -62211,6 +62174,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average file copy bandwidth on Asterinas",
             "value": "2573.7231",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Jianfeng Jiang",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "id": "9e961e07d414a44be3e8ccb82681fc9f79f9a3ba",
+          "message": "Reorder methods in `process/exit.rs`",
+          "timestamp": "2026-04-10T08:12:34Z",
+          "url": "https://github.com/asterinas/asterinas/commit/9e961e07d414a44be3e8ccb82681fc9f79f9a3ba"
+        },
+        "date": 1776049253176,
+        "tool": "customBiggerIsBetter",
+        "title": "[Ext2] The bandwidth of copying data between files",
+        "description": "lmdd",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average file copy bandwidth on Linux",
+            "value": "1180.5770",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average file copy bandwidth on Asterinas",
+            "value": "2484.4668",
             "unit": "MB/s",
             "extra": "aster_result"
           }
