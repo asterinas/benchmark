@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1776122382964,
+  "lastUpdate": 1776122509378,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ramfs_benchmarks_vacuum": [
@@ -2077,43 +2077,6 @@ window.BENCHMARK_DATA = {
       }
     ],
     "ramfs_benchmarks_updates_individual": [
-      {
-        "commit": {
-          "author": {
-            "name": "jiangjianfeng",
-            "username": "StevenJiang1110",
-            "email": "jiangjianfeng.jjf@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "d71ea25c06ed7ed427917cec77d3761ddc67d686",
-          "message": "Publish the heap allocator after updating the version",
-          "timestamp": "2025-05-13T04:56:07Z",
-          "url": "https://github.com/asterinas/asterinas/commit/d71ea25c06ed7ed427917cec77d3761ddc67d686"
-        },
-        "date": 1747220664990,
-        "tool": "customSmallerIsBetter",
-        "title": "[Ramfs] The updates-individual result of sqlite speedtest",
-        "description": "sqlite-speed-test: 50000 UPDATES of individual rows",
-        "display": false,
-        "benches": [
-          {
-            "name": "The speed of updates-individual on Linux (Ramfs)",
-            "value": "1.398",
-            "unit": "second",
-            "extra": "linux_result"
-          },
-          {
-            "name": "The speed of updates-individual on Asterinas (Ramfs)",
-            "value": "4.939",
-            "unit": "second",
-            "extra": "aster_result"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -4292,6 +4255,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "The speed of updates-individual on Asterinas (Ramfs)",
             "value": "1.599",
+            "unit": "second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Chen Chengjun",
+            "username": "cchanging",
+            "email": "chenchengjun.ccj@antgroup.com"
+          },
+          "committer": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "3329907643@qq.com"
+          },
+          "id": "974ca574a90ceb11a56a2057c397398387693e65",
+          "message": "Add tests for cgroup namespace\n\nCo-authored-by: Ruihan Li <lrh2000@pku.edu.cn>",
+          "timestamp": "2026-04-13T02:29:48Z",
+          "url": "https://github.com/asterinas/asterinas/commit/974ca574a90ceb11a56a2057c397398387693e65"
+        },
+        "date": 1776122384008,
+        "tool": "customSmallerIsBetter",
+        "title": "[Ramfs] The updates-individual result of sqlite speedtest",
+        "description": "sqlite-speed-test: 50000 UPDATES of individual rows",
+        "display": false,
+        "benches": [
+          {
+            "name": "The speed of updates-individual on Linux (Ramfs)",
+            "value": "1.305",
+            "unit": "second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "The speed of updates-individual on Asterinas (Ramfs)",
+            "value": "1.416",
             "unit": "second",
             "extra": "aster_result"
           }
