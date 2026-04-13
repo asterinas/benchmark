@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1776123643509,
+  "lastUpdate": 1776123769610,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ramfs_benchmarks_vacuum": [
@@ -24314,43 +24314,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2025-08-14T14:08:56Z",
           "url": "https://github.com/asterinas/asterinas/commit/1452aab69c9d0bf5ada7ea8a93a49fd0badafcca"
         },
-        "date": 1755482198762,
-        "tool": "customSmallerIsBetter",
-        "title": "[Ext2] The updates-individual result of sqlite speedtest",
-        "description": "sqlite-speed-test: 50000 UPDATES of individual rows",
-        "display": false,
-        "benches": [
-          {
-            "name": "The speed of updates-individual on Linux (Ext2)",
-            "value": "2.073",
-            "unit": "second",
-            "extra": "linux_result"
-          },
-          {
-            "name": "The speed of updates-individual on Asterinas (Ext2)",
-            "value": "1.344",
-            "unit": "second",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Zhang Junyang",
-            "username": "junyang-zh",
-            "email": "junyang@stu.pku.edu.cn"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "1452aab69c9d0bf5ada7ea8a93a49fd0badafcca",
-          "message": "Optimize the space for `TlbFlushOp`s",
-          "timestamp": "2025-08-14T14:08:56Z",
-          "url": "https://github.com/asterinas/asterinas/commit/1452aab69c9d0bf5ada7ea8a93a49fd0badafcca"
-        },
         "date": 1755570778868,
         "tool": "customSmallerIsBetter",
         "title": "[Ext2] The updates-individual result of sqlite speedtest",
@@ -26512,6 +26475,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "The speed of updates-individual on Asterinas (Ext2)",
             "value": "1.413",
+            "unit": "second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Chen Chengjun",
+            "username": "cchanging",
+            "email": "chenchengjun.ccj@antgroup.com"
+          },
+          "committer": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "3329907643@qq.com"
+          },
+          "id": "974ca574a90ceb11a56a2057c397398387693e65",
+          "message": "Add tests for cgroup namespace\n\nCo-authored-by: Ruihan Li <lrh2000@pku.edu.cn>",
+          "timestamp": "2026-04-13T02:29:48Z",
+          "url": "https://github.com/asterinas/asterinas/commit/974ca574a90ceb11a56a2057c397398387693e65"
+        },
+        "date": 1776123644573,
+        "tool": "customSmallerIsBetter",
+        "title": "[Ext2] The updates-individual result of sqlite speedtest",
+        "description": "sqlite-speed-test: 50000 UPDATES of individual rows",
+        "display": false,
+        "benches": [
+          {
+            "name": "The speed of updates-individual on Linux (Ext2)",
+            "value": "1.692",
+            "unit": "second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "The speed of updates-individual on Asterinas (Ext2)",
+            "value": "1.478",
             "unit": "second",
             "extra": "aster_result"
           }
