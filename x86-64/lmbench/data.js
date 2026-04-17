@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1776387914442,
+  "lastUpdate": 1776388043616,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -73332,43 +73332,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Hsy-Intel",
-            "username": "Hsy-Intel",
-            "email": "siyuan.hui@intel.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "5d0779bd832cc6ac029e6d4131586635c4cd4779",
-          "message": "Fix format issue",
-          "timestamp": "2026-02-03T08:22:31Z",
-          "url": "https://github.com/asterinas/asterinas/commit/5d0779bd832cc6ac029e6d4131586635c4cd4779"
-        },
-        "date": 1770335802835,
-        "tool": "customBiggerIsBetter",
-        "title": "[HTTP] The bandwidth (loopback)",
-        "description": "bw_http",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average simple HTTP transaction bandwidth on Linux",
-            "value": "1281.73",
-            "unit": "MB/s",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average simple HTTP transaction bandwidth on Asterinas",
-            "value": "1768.82",
-            "unit": "MB/s",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "dependabot[bot]",
             "username": "dependabot[bot]",
             "email": "49699333+dependabot[bot]@users.noreply.github.com"
@@ -75544,6 +75507,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average simple HTTP transaction bandwidth on Asterinas",
             "value": "1763.52",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Jianfeng Jiang",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "id": "18b1fb6255456808b5b42867344f7216179a1cc5",
+          "message": "Check privileged ports in `bind()`",
+          "timestamp": "2026-04-15T15:51:50Z",
+          "url": "https://github.com/asterinas/asterinas/commit/18b1fb6255456808b5b42867344f7216179a1cc5"
+        },
+        "date": 1776387916147,
+        "tool": "customBiggerIsBetter",
+        "title": "[HTTP] The bandwidth (loopback)",
+        "description": "bw_http",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average simple HTTP transaction bandwidth on Linux",
+            "value": "1215.13",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average simple HTTP transaction bandwidth on Asterinas",
+            "value": "1523.51",
             "unit": "MB/s",
             "extra": "aster_result"
           }
