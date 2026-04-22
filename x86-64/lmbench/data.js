@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1776817463350,
+  "lastUpdate": 1776817599611,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -51112,43 +51112,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "f4102e7db42d12dddcc2a3d689027e7be46434e9",
-          "message": "Rename `call_ostd_main` to `start_kernel`",
-          "timestamp": "2026-02-11T09:28:13Z",
-          "url": "https://github.com/asterinas/asterinas/commit/f4102e7db42d12dddcc2a3d689027e7be46434e9"
-        },
-        "date": 1770852909306,
-        "tool": "customSmallerIsBetter",
-        "title": "[VFS] The cost of select (file fds)",
-        "description": "lat_select",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average select file latency on Linux",
-            "value": "1.1983",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average select file latency on Asterinas",
-            "value": "1.8411",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Chaoqun Zheng",
             "username": "LordaeronESZ",
             "email": "chaoqun_zh@foxmail.com"
@@ -53324,6 +53287,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average select file latency on Asterinas",
             "value": "1.6617",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Jianfeng Jiang",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "aa44d6e4975b86427e686b1996cbd0967da7b264",
+          "message": "Add IPC namespace support",
+          "timestamp": "2026-03-05T08:19:08Z",
+          "url": "https://github.com/asterinas/asterinas/commit/aa44d6e4975b86427e686b1996cbd0967da7b264"
+        },
+        "date": 1776817464859,
+        "tool": "customSmallerIsBetter",
+        "title": "[VFS] The cost of select (file fds)",
+        "description": "lat_select",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average select file latency on Linux",
+            "value": "1.2029",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average select file latency on Asterinas",
+            "value": "1.6897",
             "unit": "µs",
             "extra": "aster_result"
           }
