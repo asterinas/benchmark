@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1776831348430,
+  "lastUpdate": 1776831481421,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -77776,43 +77776,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Yuke Peng",
-            "username": "sdww0",
-            "email": "pykfirst@gmail.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "eb9edbd67f5da8f2dd5f58f18a397650b0e4d187",
-          "message": "Bump the Docker image to 0.16.1",
-          "timestamp": "2025-09-22T11:14:54Z",
-          "url": "https://github.com/asterinas/asterinas/commit/eb9edbd67f5da8f2dd5f58f18a397650b0e4d187"
-        },
-        "date": 1758672424168,
-        "tool": "customBiggerIsBetter",
-        "title": "[TCP sockets] The bandwidth (virtio-net, 128B message)",
-        "description": "bw_tcp -l",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average TCP bandwidth on Linux",
-            "value": "106.01",
-            "unit": "MB/sec",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average TCP bandwidth on Asterinas",
-            "value": "257.71",
-            "unit": "MB/sec",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Ruihan Li",
             "username": "lrh2000",
             "email": "lrh2000@pku.edu.cn"
@@ -79988,6 +79951,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average TCP bandwidth on Asterinas",
             "value": "1.93",
+            "unit": "MB/sec",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Jianfeng Jiang",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "aa44d6e4975b86427e686b1996cbd0967da7b264",
+          "message": "Add IPC namespace support",
+          "timestamp": "2026-03-05T08:19:08Z",
+          "url": "https://github.com/asterinas/asterinas/commit/aa44d6e4975b86427e686b1996cbd0967da7b264"
+        },
+        "date": 1776831350617,
+        "tool": "customBiggerIsBetter",
+        "title": "[TCP sockets] The bandwidth (virtio-net, 128B message)",
+        "description": "bw_tcp -l",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average TCP bandwidth on Linux",
+            "value": "250.33",
+            "unit": "MB/sec",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average TCP bandwidth on Asterinas",
+            "value": "2.41",
             "unit": "MB/sec",
             "extra": "aster_result"
           }
