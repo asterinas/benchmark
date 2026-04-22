@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1776821932576,
+  "lastUpdate": 1776822068045,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -8908,43 +8908,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2026-01-29T02:31:06Z",
           "url": "https://github.com/asterinas/asterinas/commit/6d2ff13a639b9fff72842869cfd78f78ff21bbf2"
         },
-        "date": 1769990280236,
-        "tool": "customSmallerIsBetter",
-        "title": "[Process] The cost of context switching",
-        "description": "lat_ctx 2",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average context switch latency on Linux",
-            "value": "1.25",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average context switch latency on Asterinas",
-            "value": "1.12",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "6d2ff13a639b9fff72842869cfd78f78ff21bbf2",
-          "message": "Redirect serial output if `hvc0` is on",
-          "timestamp": "2026-01-29T02:31:06Z",
-          "url": "https://github.com/asterinas/asterinas/commit/6d2ff13a639b9fff72842869cfd78f78ff21bbf2"
-        },
         "date": 1770164531495,
         "tool": "customSmallerIsBetter",
         "title": "[Process] The cost of context switching",
@@ -11100,6 +11063,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average context switch latency on Linux",
             "value": "1.34",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average context switch latency on Asterinas",
+            "value": "1.37",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Jianfeng Jiang",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "aa44d6e4975b86427e686b1996cbd0967da7b264",
+          "message": "Add IPC namespace support",
+          "timestamp": "2026-03-05T08:19:08Z",
+          "url": "https://github.com/asterinas/asterinas/commit/aa44d6e4975b86427e686b1996cbd0967da7b264"
+        },
+        "date": 1776821934057,
+        "tool": "customSmallerIsBetter",
+        "title": "[Process] The cost of context switching",
+        "description": "lat_ctx 2",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average context switch latency on Linux",
+            "value": "1.35",
             "unit": "µs",
             "extra": "linux_result"
           },
