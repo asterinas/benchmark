@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1776917809024,
+  "lastUpdate": 1776917944171,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -82229,43 +82229,6 @@ window.BENCHMARK_DATA = {
             "username": "tatetian",
             "email": "tatetian@gmail.com"
           },
-          "id": "c9032ad97cbc002afcc5eab41c837a850fb70aa0",
-          "message": "Fix `redundant_test_prefix`",
-          "timestamp": "2026-02-07T15:45:31Z",
-          "url": "https://github.com/asterinas/asterinas/commit/c9032ad97cbc002afcc5eab41c837a850fb70aa0"
-        },
-        "date": 1770768054959,
-        "tool": "customSmallerIsBetter",
-        "title": "[TCP sockets] The latency of connect (virtio-net)",
-        "description": "lat_connect",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average TCP connection latency on Linux",
-            "value": "72.1690",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average TCP connection latency on Asterinas",
-            "value": "111.6383",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
           "id": "f4102e7db42d12dddcc2a3d689027e7be46434e9",
           "message": "Rename `call_ostd_main` to `start_kernel`",
           "timestamp": "2026-02-11T09:28:13Z",
@@ -84432,6 +84395,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average TCP connection latency on Asterinas",
             "value": "272.2105",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "408db891aac95e8b765df90a61bfe06dcbdb99aa",
+          "message": "Fix several other minor problems",
+          "timestamp": "2026-04-20T05:57:15Z",
+          "url": "https://github.com/asterinas/asterinas/commit/408db891aac95e8b765df90a61bfe06dcbdb99aa"
+        },
+        "date": 1776917810610,
+        "tool": "customSmallerIsBetter",
+        "title": "[TCP sockets] The latency of connect (virtio-net)",
+        "description": "lat_connect",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average TCP connection latency on Linux",
+            "value": "67.6234",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average TCP connection latency on Asterinas",
+            "value": "245.0476",
             "unit": "µs",
             "extra": "aster_result"
           }
