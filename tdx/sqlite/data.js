@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1777072714677,
+  "lastUpdate": 1777072848766,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ramfs_benchmarks_vacuum": [
@@ -22189,43 +22189,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Yang Zhichao",
-            "username": "IfReturn",
-            "email": "yzc2004.12@qq.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "66356e133db8eee843bdffae29303e3e62fc4e7e",
-          "message": "Add support for `/proc/stat` and `/proc/uptime`",
-          "timestamp": "2025-09-19T13:55:13Z",
-          "url": "https://github.com/asterinas/asterinas/commit/66356e133db8eee843bdffae29303e3e62fc4e7e"
-        },
-        "date": 1759015754247,
-        "tool": "customSmallerIsBetter",
-        "title": "[Ext2] The 'VACUUM' result of sqlite speedtest",
-        "description": "sqlite-speed-test: repacking database file into a minimal amount of disk space",
-        "display": false,
-        "benches": [
-          {
-            "name": "The speed of VACUUM on Linux (Ext2)",
-            "value": "4.437",
-            "unit": "second",
-            "extra": "linux_result"
-          },
-          {
-            "name": "The speed of VACUUM on Asterinas (Ext2)",
-            "value": "0.855",
-            "unit": "second",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Zejun Zhao",
             "username": "jellllly420",
             "email": "jelly.zhao.42@gmail.com"
@@ -24401,6 +24364,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "The speed of VACUUM on Asterinas (Ext2)",
             "value": "0.884",
+            "unit": "second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Qingsong Chen",
+            "username": "cqs21",
+            "email": "changxian.cqs@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "233f8699fe5a49a367b6b04f635ed7fb47e344ce",
+          "message": "Add Linux kernel selftest (kselftest) support",
+          "timestamp": "2026-04-24T05:54:51Z",
+          "url": "https://github.com/asterinas/asterinas/commit/233f8699fe5a49a367b6b04f635ed7fb47e344ce"
+        },
+        "date": 1777072716412,
+        "tool": "customSmallerIsBetter",
+        "title": "[Ext2] The 'VACUUM' result of sqlite speedtest",
+        "description": "sqlite-speed-test: repacking database file into a minimal amount of disk space",
+        "display": false,
+        "benches": [
+          {
+            "name": "The speed of VACUUM on Linux (Ext2)",
+            "value": "1.427",
+            "unit": "second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "The speed of VACUUM on Asterinas (Ext2)",
+            "value": "0.872",
             "unit": "second",
             "extra": "aster_result"
           }
