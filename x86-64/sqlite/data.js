@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1777085174689,
+  "lastUpdate": 1777154285219,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_deletes_between": [
@@ -79984,43 +79984,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Jianfeng Jiang",
-            "username": "StevenJiang1110",
-            "email": "jiangjianfeng.jjf@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "5f8b019369c97bc8dc072ebfe3859ea1ff23450d",
-          "message": "Replace `from_first_bytes` with `from_bytes` if possible",
-          "timestamp": "2026-02-05T11:15:15Z",
-          "url": "https://github.com/asterinas/asterinas/commit/5f8b019369c97bc8dc072ebfe3859ea1ff23450d"
-        },
-        "date": 1770676469354,
-        "tool": "customSmallerIsBetter",
-        "title": "[Ramfs] The 'VACUUM' result of sqlite speedtest",
-        "description": "sqlite-speed-test: repacking database file into a minimal amount of disk space",
-        "display": false,
-        "benches": [
-          {
-            "name": "The speed of VACUUM on Linux (Ramfs)",
-            "value": "0.868",
-            "unit": "second",
-            "extra": "linux_result"
-          },
-          {
-            "name": "The speed of VACUUM on Asterinas (Ramfs)",
-            "value": "1.206",
-            "unit": "second",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Ruihan Li",
             "username": "lrh2000",
             "email": "lrh2000@pku.edu.cn"
@@ -82196,6 +82159,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "The speed of VACUUM on Asterinas (Ramfs)",
             "value": "0.880",
+            "unit": "second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Qingsong Chen",
+            "username": "cqs21",
+            "email": "changxian.cqs@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "233f8699fe5a49a367b6b04f635ed7fb47e344ce",
+          "message": "Add Linux kernel selftest (kselftest) support",
+          "timestamp": "2026-04-24T05:54:51Z",
+          "url": "https://github.com/asterinas/asterinas/commit/233f8699fe5a49a367b6b04f635ed7fb47e344ce"
+        },
+        "date": 1777154148806,
+        "tool": "customSmallerIsBetter",
+        "title": "[Ramfs] The 'VACUUM' result of sqlite speedtest",
+        "description": "sqlite-speed-test: repacking database file into a minimal amount of disk space",
+        "display": false,
+        "benches": [
+          {
+            "name": "The speed of VACUUM on Linux (Ramfs)",
+            "value": "0.870",
+            "unit": "second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "The speed of VACUUM on Asterinas (Ramfs)",
+            "value": "0.894",
             "unit": "second",
             "extra": "aster_result"
           }
