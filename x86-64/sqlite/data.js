@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1777240966858,
+  "lastUpdate": 1777241106484,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_deletes_between": [
@@ -77762,43 +77762,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Chaoqun Zheng",
-            "username": "LordaeronESZ",
-            "email": "chaoqun_zh@foxmail.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "6882eb73f4d0d5a934c8c89cb7897dc8213e1e37",
-          "message": "Fix the issue of `InodeBlockManager::read_blocks`",
-          "timestamp": "2026-01-09T04:48:19Z",
-          "url": "https://github.com/asterinas/asterinas/commit/6882eb73f4d0d5a934c8c89cb7897dc8213e1e37"
-        },
-        "date": 1770934907369,
-        "tool": "customSmallerIsBetter",
-        "title": "[Ramfs] The updates-individual result of sqlite speedtest",
-        "description": "sqlite-speed-test: 50000 UPDATES of individual rows",
-        "display": false,
-        "benches": [
-          {
-            "name": "The speed of updates-individual on Linux (Ramfs)",
-            "value": "1.208",
-            "unit": "second",
-            "extra": "linux_result"
-          },
-          {
-            "name": "The speed of updates-individual on Asterinas (Ramfs)",
-            "value": "1.476",
-            "unit": "second",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Jianfeng Jiang",
             "username": "StevenJiang1110",
             "email": "jiangjianfeng.jjf@antgroup.com"
@@ -79974,6 +79937,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "The speed of updates-individual on Asterinas (Ramfs)",
             "value": "1.327",
+            "unit": "second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Wang Siyuan",
+            "username": "vvvvsv",
+            "email": "wsy@stu.pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "7bcb2fe3849b64788a945d1b916c52a16bce8a0c",
+          "message": "Add basic ptrace tests",
+          "timestamp": "2026-03-24T15:35:57Z",
+          "url": "https://github.com/asterinas/asterinas/commit/7bcb2fe3849b64788a945d1b916c52a16bce8a0c"
+        },
+        "date": 1777240968695,
+        "tool": "customSmallerIsBetter",
+        "title": "[Ramfs] The updates-individual result of sqlite speedtest",
+        "description": "sqlite-speed-test: 50000 UPDATES of individual rows",
+        "display": false,
+        "benches": [
+          {
+            "name": "The speed of updates-individual on Linux (Ramfs)",
+            "value": "1.218",
+            "unit": "second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "The speed of updates-individual on Asterinas (Ramfs)",
+            "value": "1.325",
             "unit": "second",
             "extra": "aster_result"
           }
