@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1777174569288,
+  "lastUpdate": 1777174709233,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -73332,43 +73332,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Yang Zhichao",
-            "username": "IfReturn",
-            "email": "yzc2004.12@qq.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "66356e133db8eee843bdffae29303e3e62fc4e7e",
-          "message": "Add support for `/proc/stat` and `/proc/uptime`",
-          "timestamp": "2025-09-19T13:55:13Z",
-          "url": "https://github.com/asterinas/asterinas/commit/66356e133db8eee843bdffae29303e3e62fc4e7e"
-        },
-        "date": 1759018710880,
-        "tool": "customBiggerIsBetter",
-        "title": "[HTTP] The bandwidth (loopback)",
-        "description": "bw_http",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average simple HTTP transaction bandwidth on Linux",
-            "value": "1180.06",
-            "unit": "MB/s",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average simple HTTP transaction bandwidth on Asterinas",
-            "value": "1617.40",
-            "unit": "MB/s",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Zejun Zhao",
             "username": "jellllly420",
             "email": "jelly.zhao.42@gmail.com"
@@ -75544,6 +75507,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average simple HTTP transaction bandwidth on Asterinas",
             "value": "4771.35",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Qingsong Chen",
+            "username": "cqs21",
+            "email": "changxian.cqs@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "233f8699fe5a49a367b6b04f635ed7fb47e344ce",
+          "message": "Add Linux kernel selftest (kselftest) support",
+          "timestamp": "2026-04-24T05:54:51Z",
+          "url": "https://github.com/asterinas/asterinas/commit/233f8699fe5a49a367b6b04f635ed7fb47e344ce"
+        },
+        "date": 1777174571240,
+        "tool": "customBiggerIsBetter",
+        "title": "[HTTP] The bandwidth (loopback)",
+        "description": "bw_http",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average simple HTTP transaction bandwidth on Linux",
+            "value": "3671.57",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average simple HTTP transaction bandwidth on Asterinas",
+            "value": "4698.85",
             "unit": "MB/s",
             "extra": "aster_result"
           }
