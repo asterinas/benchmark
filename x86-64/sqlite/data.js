@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1779921004065,
+  "lastUpdate": 1779921142726,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_deletes_between": [
@@ -55556,43 +55556,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2026-02-14T05:57:35Z",
           "url": "https://github.com/asterinas/asterinas/commit/8b7b915b2b405de22fea15e728267caf36950518"
         },
-        "date": 1771367702308,
-        "tool": "customSmallerIsBetter",
-        "title": "[Ext2] The updates-individual result of sqlite speedtest",
-        "description": "sqlite-speed-test: 50000 UPDATES of individual rows",
-        "display": false,
-        "benches": [
-          {
-            "name": "The speed of updates-individual on Linux (Ext2)",
-            "value": "1.898",
-            "unit": "second",
-            "extra": "linux_result"
-          },
-          {
-            "name": "The speed of updates-individual on Asterinas (Ext2)",
-            "value": "1.868",
-            "unit": "second",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tate.thl@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "8b7b915b2b405de22fea15e728267caf36950518",
-          "message": "Extend the doc of the `[ostd::main]` attribute macro",
-          "timestamp": "2026-02-14T05:57:35Z",
-          "url": "https://github.com/asterinas/asterinas/commit/8b7b915b2b405de22fea15e728267caf36950518"
-        },
         "date": 1771454437661,
         "tool": "customSmallerIsBetter",
         "title": "[Ext2] The updates-individual result of sqlite speedtest",
@@ -57754,6 +57717,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "The speed of updates-individual on Asterinas (Ext2)",
             "value": "1.494",
+            "unit": "second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "li041",
+            "username": "li041",
+            "email": "lxh050013@outlook.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "cdf412ed25b62afe811cdbc19b157be532cc729a",
+          "message": "Add QEMU virtiofs options",
+          "timestamp": "2026-05-25T12:40:20Z",
+          "url": "https://github.com/asterinas/asterinas/commit/cdf412ed25b62afe811cdbc19b157be532cc729a"
+        },
+        "date": 1779921005565,
+        "tool": "customSmallerIsBetter",
+        "title": "[Ext2] The updates-individual result of sqlite speedtest",
+        "description": "sqlite-speed-test: 50000 UPDATES of individual rows",
+        "display": false,
+        "benches": [
+          {
+            "name": "The speed of updates-individual on Linux (Ext2)",
+            "value": "1.340",
+            "unit": "second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "The speed of updates-individual on Asterinas (Ext2)",
+            "value": "1.673",
             "unit": "second",
             "extra": "aster_result"
           }
