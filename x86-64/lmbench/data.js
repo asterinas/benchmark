@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1779926106408,
+  "lastUpdate": 1779926244343,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -31114,43 +31114,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Chaoqun Zheng",
-            "username": "LordaeronESZ",
-            "email": "chaoqun_zh@foxmail.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "6882eb73f4d0d5a934c8c89cb7897dc8213e1e37",
-          "message": "Fix the issue of `InodeBlockManager::read_blocks`",
-          "timestamp": "2026-01-09T04:48:19Z",
-          "url": "https://github.com/asterinas/asterinas/commit/6882eb73f4d0d5a934c8c89cb7897dc8213e1e37"
-        },
-        "date": 1770939950592,
-        "tool": "customSmallerIsBetter",
-        "title": "[Unix sockets] The latency of write+read (1B message)",
-        "description": "lat_unix",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average unix latency on Linux",
-            "value": "4.0644",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average unix latency on Asterinas",
-            "value": "3.6972",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Jianfeng Jiang",
             "username": "StevenJiang1110",
             "email": "jiangjianfeng.jjf@antgroup.com"
@@ -33326,6 +33289,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average unix latency on Asterinas",
             "value": "3.3755",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "li041",
+            "username": "li041",
+            "email": "lxh050013@outlook.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "cdf412ed25b62afe811cdbc19b157be532cc729a",
+          "message": "Add QEMU virtiofs options",
+          "timestamp": "2026-05-25T12:40:20Z",
+          "url": "https://github.com/asterinas/asterinas/commit/cdf412ed25b62afe811cdbc19b157be532cc729a"
+        },
+        "date": 1779926108066,
+        "tool": "customSmallerIsBetter",
+        "title": "[Unix sockets] The latency of write+read (1B message)",
+        "description": "lat_unix",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average unix latency on Linux",
+            "value": "3.6711",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average unix latency on Asterinas",
+            "value": "3.4359",
             "unit": "µs",
             "extra": "aster_result"
           }
