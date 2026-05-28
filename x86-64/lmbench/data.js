@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1779931077482,
+  "lastUpdate": 1779931215511,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -28906,43 +28906,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2026-02-06T03:41:10Z",
           "url": "https://github.com/asterinas/asterinas/commit/3d6d91ea18161646f71000fc0139af463a55dafd"
         },
-        "date": 1770424466190,
-        "tool": "customSmallerIsBetter",
-        "title": "[FIFO] The cost of write+read (1B)",
-        "description": "lat_fifo",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average fifo latency on Linux",
-            "value": "2.6770",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average fifo latency on Asterinas",
-            "value": "3.3478",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "dependabot[bot]",
-            "username": "dependabot[bot]",
-            "email": "49699333+dependabot[bot]@users.noreply.github.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "3d6d91ea18161646f71000fc0139af463a55dafd",
-          "message": "Bump time from 0.3.41 to 0.3.47\n\nBumps [time](https://github.com/time-rs/time) from 0.3.41 to 0.3.47.\n- [Release notes](https://github.com/time-rs/time/releases)\n- [Changelog](https://github.com/time-rs/time/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/time-rs/time/compare/v0.3.41...v0.3.47)\n\n---\nupdated-dependencies:\n- dependency-name: time\n  dependency-version: 0.3.47\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
-          "timestamp": "2026-02-06T03:41:10Z",
-          "url": "https://github.com/asterinas/asterinas/commit/3d6d91ea18161646f71000fc0139af463a55dafd"
-        },
         "date": 1770510701372,
         "tool": "customSmallerIsBetter",
         "title": "[FIFO] The cost of write+read (1B)",
@@ -31104,6 +31067,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average fifo latency on Asterinas",
             "value": "3.0156",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "li041",
+            "username": "li041",
+            "email": "lxh050013@outlook.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "cdf412ed25b62afe811cdbc19b157be532cc729a",
+          "message": "Add QEMU virtiofs options",
+          "timestamp": "2026-05-25T12:40:20Z",
+          "url": "https://github.com/asterinas/asterinas/commit/cdf412ed25b62afe811cdbc19b157be532cc729a"
+        },
+        "date": 1779931079354,
+        "tool": "customSmallerIsBetter",
+        "title": "[FIFO] The cost of write+read (1B)",
+        "description": "lat_fifo",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average fifo latency on Linux",
+            "value": "2.5425",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average fifo latency on Asterinas",
+            "value": "2.9493",
             "unit": "µs",
             "extra": "aster_result"
           }
