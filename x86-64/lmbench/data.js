@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1779929833259,
+  "lastUpdate": 1779929971337,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -8908,43 +8908,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2026-02-06T03:41:10Z",
           "url": "https://github.com/asterinas/asterinas/commit/3d6d91ea18161646f71000fc0139af463a55dafd"
         },
-        "date": 1770423528629,
-        "tool": "customSmallerIsBetter",
-        "title": "[Process] The cost of context switching",
-        "description": "lat_ctx 2",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average context switch latency on Linux",
-            "value": "1.34",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average context switch latency on Asterinas",
-            "value": "1.36",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "dependabot[bot]",
-            "username": "dependabot[bot]",
-            "email": "49699333+dependabot[bot]@users.noreply.github.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "3d6d91ea18161646f71000fc0139af463a55dafd",
-          "message": "Bump time from 0.3.41 to 0.3.47\n\nBumps [time](https://github.com/time-rs/time) from 0.3.41 to 0.3.47.\n- [Release notes](https://github.com/time-rs/time/releases)\n- [Changelog](https://github.com/time-rs/time/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/time-rs/time/compare/v0.3.41...v0.3.47)\n\n---\nupdated-dependencies:\n- dependency-name: time\n  dependency-version: 0.3.47\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
-          "timestamp": "2026-02-06T03:41:10Z",
-          "url": "https://github.com/asterinas/asterinas/commit/3d6d91ea18161646f71000fc0139af463a55dafd"
-        },
         "date": 1770509764332,
         "tool": "customSmallerIsBetter",
         "title": "[Process] The cost of context switching",
@@ -11106,6 +11069,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average context switch latency on Asterinas",
             "value": "1.13",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "li041",
+            "username": "li041",
+            "email": "lxh050013@outlook.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "cdf412ed25b62afe811cdbc19b157be532cc729a",
+          "message": "Add QEMU virtiofs options",
+          "timestamp": "2026-05-25T12:40:20Z",
+          "url": "https://github.com/asterinas/asterinas/commit/cdf412ed25b62afe811cdbc19b157be532cc729a"
+        },
+        "date": 1779929834900,
+        "tool": "customSmallerIsBetter",
+        "title": "[Process] The cost of context switching",
+        "description": "lat_ctx 2",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average context switch latency on Linux",
+            "value": "1.17",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average context switch latency on Asterinas",
+            "value": "1.23",
             "unit": "µs",
             "extra": "aster_result"
           }
