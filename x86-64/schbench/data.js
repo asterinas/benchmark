@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1780095527640,
+  "lastUpdate": 1780095666286,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "smp1_p50_rps": [
@@ -4464,43 +4464,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2026-02-18T22:48:17Z",
           "url": "https://github.com/asterinas/asterinas/commit/97bc17fa58ff2d3be555c48be8973e4d1c924b94"
         },
-        "date": 1771628334031,
-        "tool": "customSmallerIsBetter",
-        "title": "[Scheduler] P99 wakeup latency while max-loading all CPUs (SMP=1)",
-        "description": "schbench -F 256 -n 5 -r 90",
-        "display": false,
-        "benches": [
-          {
-            "name": "P99 wakeup latency of schbench on Linux",
-            "value": "2",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "P99 wakeup latency of schbench on Asterinas",
-            "value": "4",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Xinyi Wan",
-            "username": "rikosellic",
-            "email": "64517311+rikosellic@users.noreply.github.com"
-          },
-          "committer": {
-            "name": "GitHub",
-            "username": "web-flow",
-            "email": "noreply@github.com"
-          },
-          "id": "97bc17fa58ff2d3be555c48be8973e4d1c924b94",
-          "message": "Fix typos in ostd documentation",
-          "timestamp": "2026-02-18T22:48:17Z",
-          "url": "https://github.com/asterinas/asterinas/commit/97bc17fa58ff2d3be555c48be8973e4d1c924b94"
-        },
         "date": 1771714530708,
         "tool": "customSmallerIsBetter",
         "title": "[Scheduler] P99 wakeup latency while max-loading all CPUs (SMP=1)",
@@ -6648,6 +6611,43 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/asterinas/asterinas/commit/5831c49a9a1c9c7d512fe12f200dd1c7575fd0bf"
         },
         "date": 1780009121270,
+        "tool": "customSmallerIsBetter",
+        "title": "[Scheduler] P99 wakeup latency while max-loading all CPUs (SMP=1)",
+        "description": "schbench -F 256 -n 5 -r 90",
+        "display": false,
+        "benches": [
+          {
+            "name": "P99 wakeup latency of schbench on Linux",
+            "value": "1",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "P99 wakeup latency of schbench on Asterinas",
+            "value": "2",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "li041",
+            "username": "li041",
+            "email": "lxh050013@outlook.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "d1d3b85229eb86979631fc911d76fc78ed039974",
+          "message": "Fix linux-legacy32 boot with stripped payload",
+          "timestamp": "2026-05-27T14:55:14Z",
+          "url": "https://github.com/asterinas/asterinas/commit/d1d3b85229eb86979631fc911d76fc78ed039974"
+        },
+        "date": 1780095528937,
         "tool": "customSmallerIsBetter",
         "title": "[Scheduler] P99 wakeup latency while max-loading all CPUs (SMP=1)",
         "description": "schbench -F 256 -n 5 -r 90",
