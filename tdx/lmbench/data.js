@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1780114537419,
+  "lastUpdate": 1780114687048,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -20013,43 +20013,6 @@ window.BENCHMARK_DATA = {
             "username": "tatetian",
             "email": "tatetian@gmail.com"
           },
-          "id": "56d78ab64965194ad03cb6cde07fd5d98b17129d",
-          "message": "Fix some minor style issues",
-          "timestamp": "2025-09-27T15:55:03Z",
-          "url": "https://github.com/asterinas/asterinas/commit/56d78ab64965194ad03cb6cde07fd5d98b17129d"
-        },
-        "date": 1759795060444,
-        "tool": "customSmallerIsBetter",
-        "title": "[Signals] The cost of catching a signal",
-        "description": "lat_sig catch",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average Signal handler overhead on Linux",
-            "value": "1.0294",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average Signal handler overhead on Asterinas",
-            "value": "1.0424",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
           "id": "cded205535e176963dc49bf40f4c8492c2289c6c",
           "message": "Retire the LTP SMP blocklist",
           "timestamp": "2025-10-03T11:50:02Z",
@@ -22216,6 +22179,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average Signal handler overhead on Asterinas",
             "value": "0.9620",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "li041",
+            "username": "li041",
+            "email": "lxh050013@outlook.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "d1d3b85229eb86979631fc911d76fc78ed039974",
+          "message": "Fix linux-legacy32 boot with stripped payload",
+          "timestamp": "2026-05-27T14:55:14Z",
+          "url": "https://github.com/asterinas/asterinas/commit/d1d3b85229eb86979631fc911d76fc78ed039974"
+        },
+        "date": 1780114539411,
+        "tool": "customSmallerIsBetter",
+        "title": "[Signals] The cost of catching a signal",
+        "description": "lat_sig catch",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average Signal handler overhead on Linux",
+            "value": "1.0461",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average Signal handler overhead on Asterinas",
+            "value": "0.9720",
             "unit": "µs",
             "extra": "aster_result"
           }
