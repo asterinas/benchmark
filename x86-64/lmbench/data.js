@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1780539188035,
+  "lastUpdate": 1780539330641,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -60014,43 +60014,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2026-02-14T05:57:35Z",
           "url": "https://github.com/asterinas/asterinas/commit/8b7b915b2b405de22fea15e728267caf36950518"
         },
-        "date": 1771202265651,
-        "tool": "customBiggerIsBetter",
-        "title": "[Ext2] The bandwidth of copying data between files",
-        "description": "lmdd",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average file copy bandwidth on Linux",
-            "value": "1491.9961",
-            "unit": "MB/s",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average file copy bandwidth on Asterinas",
-            "value": "1953.6218",
-            "unit": "MB/s",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tate.thl@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "8b7b915b2b405de22fea15e728267caf36950518",
-          "message": "Extend the doc of the `[ostd::main]` attribute macro",
-          "timestamp": "2026-02-14T05:57:35Z",
-          "url": "https://github.com/asterinas/asterinas/commit/8b7b915b2b405de22fea15e728267caf36950518"
-        },
         "date": 1771291048948,
         "tool": "customBiggerIsBetter",
         "title": "[Ext2] The bandwidth of copying data between files",
@@ -62212,6 +62175,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average file copy bandwidth on Asterinas",
             "value": "2154.8187",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tate.thl@antgroup.com"
+          },
+          "committer": {
+            "name": "GitHub",
+            "username": "web-flow",
+            "email": "noreply@github.com"
+          },
+          "id": "cb1dbc55c62c0fd76783abf2e42f89f39ea5fd00",
+          "message": "Update 0.18.0 demo video link in README.md",
+          "timestamp": "2026-06-03T14:26:59Z",
+          "url": "https://github.com/asterinas/asterinas/commit/cb1dbc55c62c0fd76783abf2e42f89f39ea5fd00"
+        },
+        "date": 1780539190210,
+        "tool": "customBiggerIsBetter",
+        "title": "[Ext2] The bandwidth of copying data between files",
+        "description": "lmdd",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average file copy bandwidth on Linux",
+            "value": "1415.9332",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average file copy bandwidth on Asterinas",
+            "value": "2207.8098",
             "unit": "MB/s",
             "extra": "aster_result"
           }
