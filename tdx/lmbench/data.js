@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1780622178962,
+  "lastUpdate": 1780622291824,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -24462,43 +24462,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2025-05-24T14:28:39Z",
           "url": "https://github.com/asterinas/asterinas/commit/50eaffc7314d5ef2f4a16cb0e2437cc0010c01ee"
         },
-        "date": 1759624399227,
-        "tool": "customSmallerIsBetter",
-        "title": "[Pipes] The cost of write+read (1B)",
-        "description": "lat_pipe",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average pipe latency on Linux",
-            "value": "2.1072",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average pipe latency on Asterinas",
-            "value": "2.7392",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Ruize Tang",
-            "username": "tangruize",
-            "email": "1466040111@qq.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "50eaffc7314d5ef2f4a16cb0e2437cc0010c01ee",
-          "message": "Remove `RwLock.downgrade` due to potential contention with `RwLock.read`",
-          "timestamp": "2025-05-24T14:28:39Z",
-          "url": "https://github.com/asterinas/asterinas/commit/50eaffc7314d5ef2f4a16cb0e2437cc0010c01ee"
-        },
         "date": 1759711734242,
         "tool": "customSmallerIsBetter",
         "title": "[Pipes] The cost of write+read (1B)",
@@ -26660,6 +26623,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average pipe latency on Asterinas",
             "value": "2.9739",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tate.thl@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "866d050736f3c19ffe3e8cba759fffa50c138e4e",
+          "message": "Add 0.18.0 release notes",
+          "timestamp": "2026-06-04T09:25:53Z",
+          "url": "https://github.com/asterinas/asterinas/commit/866d050736f3c19ffe3e8cba759fffa50c138e4e"
+        },
+        "date": 1780622180597,
+        "tool": "customSmallerIsBetter",
+        "title": "[Pipes] The cost of write+read (1B)",
+        "description": "lat_pipe",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average pipe latency on Linux",
+            "value": "2.1527",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average pipe latency on Asterinas",
+            "value": "3.1028",
             "unit": "µs",
             "extra": "aster_result"
           }
