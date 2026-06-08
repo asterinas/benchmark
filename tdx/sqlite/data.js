@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1780959522619,
+  "lastUpdate": 1780959522828,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ramfs_benchmarks_vacuum": [
@@ -2228,43 +2228,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
-            "name": "Junyang Zhang",
-            "username": "junyang-zh",
-            "email": "user@junyang.me"
-          },
-          "id": "d4afe3a035481f3a36d4c4f930ac8794690c87dc",
-          "message": "Avoid Rust references of IRT entries",
-          "timestamp": "2025-05-09T03:39:19Z",
-          "url": "https://github.com/asterinas/asterinas/commit/d4afe3a035481f3a36d4c4f930ac8794690c87dc"
-        },
-        "date": 1748135953540,
-        "tool": "customSmallerIsBetter",
-        "title": "[Ramfs] The updates-individual result of sqlite speedtest",
-        "description": "sqlite-speed-test: 50000 UPDATES of individual rows",
-        "display": false,
-        "benches": [
-          {
-            "name": "The speed of updates-individual on Linux (Ramfs)",
-            "value": "1.266",
-            "unit": "second",
-            "extra": "linux_result"
-          },
-          {
-            "name": "The speed of updates-individual on Asterinas (Ramfs)",
-            "value": "3.303",
-            "unit": "second",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Zhang Junyang",
             "username": "junyang-zh",
             "email": "junyang@stu.pku.edu.cn"
@@ -4440,6 +4403,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "The speed of updates-individual on Asterinas (Ramfs)",
             "value": "1.478",
+            "unit": "second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "li041",
+            "username": "li041",
+            "email": "lxh050013@outlook.com"
+          },
+          "committer": {
+            "name": "Jianfeng Jiang",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "id": "dde91f0ccbe8d3fb0b239d2ed30da1053a3a8824",
+          "message": "Implement `rename` in virtio-fs",
+          "timestamp": "2026-06-08T03:45:12Z",
+          "url": "https://github.com/asterinas/asterinas/commit/dde91f0ccbe8d3fb0b239d2ed30da1053a3a8824"
+        },
+        "date": 1780959522820,
+        "tool": "customSmallerIsBetter",
+        "title": "[Ramfs] The updates-individual result of sqlite speedtest",
+        "description": "sqlite-speed-test: 50000 UPDATES of individual rows",
+        "display": false,
+        "benches": [
+          {
+            "name": "The speed of updates-individual on Linux (Ramfs)",
+            "value": "1.297",
+            "unit": "second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "The speed of updates-individual on Asterinas (Ramfs)",
+            "value": "1.479",
             "unit": "second",
             "extra": "aster_result"
           }
