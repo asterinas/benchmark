@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1780959543800,
+  "lastUpdate": 1780959544054,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -28892,43 +28892,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Arthur Paulino",
-            "username": "arthurpaulino",
-            "email": "arthurleonardo.ap@gmail.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "a73f210c7a7dc2ca806594ccdeb644e162ff30fb",
-          "message": "Make `wake_robust_futex` atomic\n\nReplace `VmWriter::atomic_update` with `VmWriter::atomic_compare_exchange`,\nwhich takes the old value for comparison and new value instead of a\nclosure to compute it. This version has one less unsafe call.\n\nThen use `atomic_compare_exchange` to reimplement the looping logic\nof `wake_robust_futex` and make it atomic.",
-          "timestamp": "2025-08-18T23:34:01Z",
-          "url": "https://github.com/asterinas/asterinas/commit/a73f210c7a7dc2ca806594ccdeb644e162ff30fb"
-        },
-        "date": 1755644747943,
-        "tool": "customSmallerIsBetter",
-        "title": "[FIFO] The cost of write+read (1B)",
-        "description": "lat_fifo",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average fifo latency on Linux",
-            "value": "2.6962",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average fifo latency on Asterinas",
-            "value": "3.2912",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Ruihan Li",
             "username": "lrh2000",
             "email": "lrh2000@pku.edu.cn"
@@ -31104,6 +31067,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average fifo latency on Asterinas",
             "value": "3.0539",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "li041",
+            "username": "li041",
+            "email": "lxh050013@outlook.com"
+          },
+          "committer": {
+            "name": "Jianfeng Jiang",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "id": "dde91f0ccbe8d3fb0b239d2ed30da1053a3a8824",
+          "message": "Implement `rename` in virtio-fs",
+          "timestamp": "2026-06-08T03:45:12Z",
+          "url": "https://github.com/asterinas/asterinas/commit/dde91f0ccbe8d3fb0b239d2ed30da1053a3a8824"
+        },
+        "date": 1780959544035,
+        "tool": "customSmallerIsBetter",
+        "title": "[FIFO] The cost of write+read (1B)",
+        "description": "lat_fifo",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average fifo latency on Linux",
+            "value": "2.2722",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average fifo latency on Asterinas",
+            "value": "3.0770",
             "unit": "µs",
             "extra": "aster_result"
           }
