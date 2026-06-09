@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1781043324599,
+  "lastUpdate": 1781043324961,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -33350,43 +33350,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2026-02-18T22:48:17Z",
           "url": "https://github.com/asterinas/asterinas/commit/97bc17fa58ff2d3be555c48be8973e4d1c924b94"
         },
-        "date": 1772067681882,
-        "tool": "customBiggerIsBetter",
-        "title": "[Unix sockets] The bandwidth (64KB message)",
-        "description": "bw_unix",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average unix bandwidth on Linux",
-            "value": "12284.94",
-            "unit": "MB/s",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average unix bandwidth on Asterinas",
-            "value": "9108.64",
-            "unit": "MB/s",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Xinyi Wan",
-            "username": "rikosellic",
-            "email": "64517311+rikosellic@users.noreply.github.com"
-          },
-          "committer": {
-            "name": "GitHub",
-            "username": "web-flow",
-            "email": "noreply@github.com"
-          },
-          "id": "97bc17fa58ff2d3be555c48be8973e4d1c924b94",
-          "message": "Fix typos in ostd documentation",
-          "timestamp": "2026-02-18T22:48:17Z",
-          "url": "https://github.com/asterinas/asterinas/commit/97bc17fa58ff2d3be555c48be8973e4d1c924b94"
-        },
         "date": 1772150432178,
         "tool": "customBiggerIsBetter",
         "title": "[Unix sockets] The bandwidth (64KB message)",
@@ -35548,6 +35511,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average unix bandwidth on Asterinas",
             "value": "10353.02",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "li041",
+            "username": "li041",
+            "email": "lxh050013@outlook.com"
+          },
+          "committer": {
+            "name": "Jianfeng Jiang",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "id": "dde91f0ccbe8d3fb0b239d2ed30da1053a3a8824",
+          "message": "Implement `rename` in virtio-fs",
+          "timestamp": "2026-06-08T03:45:12Z",
+          "url": "https://github.com/asterinas/asterinas/commit/dde91f0ccbe8d3fb0b239d2ed30da1053a3a8824"
+        },
+        "date": 1781043324935,
+        "tool": "customBiggerIsBetter",
+        "title": "[Unix sockets] The bandwidth (64KB message)",
+        "description": "bw_unix",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average unix bandwidth on Linux",
+            "value": "12004.66",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average unix bandwidth on Asterinas",
+            "value": "10376.36",
             "unit": "MB/s",
             "extra": "aster_result"
           }
