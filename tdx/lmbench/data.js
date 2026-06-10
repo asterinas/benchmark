@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1781132246200,
+  "lastUpdate": 1781132246463,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -26684,43 +26684,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2025-10-09T05:05:24Z",
           "url": "https://github.com/asterinas/asterinas/commit/d2b46640782d7b0f5002cae819c115096cb84add"
         },
-        "date": 1760144586592,
-        "tool": "customBiggerIsBetter",
-        "title": "[Pipes] The bandwidth",
-        "description": "bw_pipe",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average pipe bandwidth on Linux",
-            "value": "10758.53",
-            "unit": "MB/s",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average pipe bandwidth on Asterinas",
-            "value": "10661.93",
-            "unit": "MB/s",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Chen Chengjun",
-            "username": "cchanging",
-            "email": "chenchengjun.ccj@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "d2b46640782d7b0f5002cae819c115096cb84add",
-          "message": "Add a configfs usage example in ktest",
-          "timestamp": "2025-10-09T05:05:24Z",
-          "url": "https://github.com/asterinas/asterinas/commit/d2b46640782d7b0f5002cae819c115096cb84add"
-        },
         "date": 1760227731545,
         "tool": "customBiggerIsBetter",
         "title": "[Pipes] The bandwidth",
@@ -28882,6 +28845,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average pipe bandwidth on Asterinas",
             "value": "10417.69",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Marsman1996",
+            "username": "Marsman1996",
+            "email": "lqliuyuwei@outlook.com"
+          },
+          "committer": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "3329907643@qq.com"
+          },
+          "id": "9c8359219ae4827a0e55e478f17252b1bc3c7d72",
+          "message": "Reject `MAP_SHARED_VALIDATE` for anonymous mappings",
+          "timestamp": "2026-06-10T01:51:24Z",
+          "url": "https://github.com/asterinas/asterinas/commit/9c8359219ae4827a0e55e478f17252b1bc3c7d72"
+        },
+        "date": 1781132246444,
+        "tool": "customBiggerIsBetter",
+        "title": "[Pipes] The bandwidth",
+        "description": "bw_pipe",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average pipe bandwidth on Linux",
+            "value": "10826.82",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average pipe bandwidth on Asterinas",
+            "value": "10380.38",
             "unit": "MB/s",
             "extra": "aster_result"
           }
