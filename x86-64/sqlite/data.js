@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1781130718184,
+  "lastUpdate": 1781130718437,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_deletes_between": [
@@ -55542,43 +55542,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Jianfeng Jiang",
-            "username": "StevenJiang1110",
-            "email": "jiangjianfeng.jjf@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "ad90114bbc9b581673b46589c52248f108480676",
-          "message": "Bump docker version references to 0.17.0-20260227",
-          "timestamp": "2026-02-28T06:11:41Z",
-          "url": "https://github.com/asterinas/asterinas/commit/ad90114bbc9b581673b46589c52248f108480676"
-        },
-        "date": 1772405443447,
-        "tool": "customSmallerIsBetter",
-        "title": "[Ext2] The updates-individual result of sqlite speedtest",
-        "description": "sqlite-speed-test: 50000 UPDATES of individual rows",
-        "display": false,
-        "benches": [
-          {
-            "name": "The speed of updates-individual on Linux (Ext2)",
-            "value": "1.742",
-            "unit": "second",
-            "extra": "linux_result"
-          },
-          {
-            "name": "The speed of updates-individual on Asterinas (Ext2)",
-            "value": "2.234",
-            "unit": "second",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Tate, Hongliang Tian",
             "username": "tatetian",
             "email": "tate.thl@antgroup.com"
@@ -57754,6 +57717,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "The speed of updates-individual on Asterinas (Ext2)",
             "value": "2.116",
+            "unit": "second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Marsman1996",
+            "username": "Marsman1996",
+            "email": "lqliuyuwei@outlook.com"
+          },
+          "committer": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "3329907643@qq.com"
+          },
+          "id": "9c8359219ae4827a0e55e478f17252b1bc3c7d72",
+          "message": "Reject `MAP_SHARED_VALIDATE` for anonymous mappings",
+          "timestamp": "2026-06-10T01:51:24Z",
+          "url": "https://github.com/asterinas/asterinas/commit/9c8359219ae4827a0e55e478f17252b1bc3c7d72"
+        },
+        "date": 1781130718424,
+        "tool": "customSmallerIsBetter",
+        "title": "[Ext2] The updates-individual result of sqlite speedtest",
+        "description": "sqlite-speed-test: 50000 UPDATES of individual rows",
+        "display": false,
+        "benches": [
+          {
+            "name": "The speed of updates-individual on Linux (Ext2)",
+            "value": "1.926",
+            "unit": "second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "The speed of updates-individual on Asterinas (Ext2)",
+            "value": "2.059",
             "unit": "second",
             "extra": "aster_result"
           }
