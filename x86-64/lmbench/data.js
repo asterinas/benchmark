@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1781302808503,
+  "lastUpdate": 1781302808792,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -99996,43 +99996,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Xinyi Wan",
-            "username": "rikosellic",
-            "email": "64517311+rikosellic@users.noreply.github.com"
-          },
-          "committer": {
-            "name": "GitHub",
-            "username": "web-flow",
-            "email": "noreply@github.com"
-          },
-          "id": "97bc17fa58ff2d3be555c48be8973e4d1c924b94",
-          "message": "Fix typos in ostd documentation",
-          "timestamp": "2026-02-18T22:48:17Z",
-          "url": "https://github.com/asterinas/asterinas/commit/97bc17fa58ff2d3be555c48be8973e4d1c924b94"
-        },
-        "date": 1772152348897,
-        "tool": "customSmallerIsBetter",
-        "title": "[Semaphores] The cost of semop",
-        "description": "lat_sem",
-        "display": false,
-        "benches": [
-          {
-            "name": "Average semaphore latency on Linux",
-            "value": "0.9943",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average semaphore latency on Asterinas",
-            "value": "0.6121",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Ruihan Li",
             "username": "lrh2000",
             "email": "lrh2000@pku.edu.cn"
@@ -102208,6 +102171,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average semaphore latency on Asterinas",
             "value": "0.6980",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Qingsong Chen",
+            "username": "cqs21",
+            "email": "changxian.cqs@antgroup.com"
+          },
+          "committer": {
+            "name": "Jianfeng Jiang",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "id": "5e0f46c2bf979aa764528b0767fd6893c65d3739",
+          "message": "Increase LTP timeout multiplier for slow CI machines",
+          "timestamp": "2026-06-11T09:31:59Z",
+          "url": "https://github.com/asterinas/asterinas/commit/5e0f46c2bf979aa764528b0767fd6893c65d3739"
+        },
+        "date": 1781302808772,
+        "tool": "customSmallerIsBetter",
+        "title": "[Semaphores] The cost of semop",
+        "description": "lat_sem",
+        "display": false,
+        "benches": [
+          {
+            "name": "Average semaphore latency on Linux",
+            "value": "1.0090",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average semaphore latency on Asterinas",
+            "value": "0.7233",
             "unit": "µs",
             "extra": "aster_result"
           }
