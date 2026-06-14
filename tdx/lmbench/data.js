@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1781476621689,
+  "lastUpdate": 1781476621943,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -51112,43 +51112,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "384e5bc70da4fcc7d150140a0ae3706b6a33a91a",
-          "message": "Fix an off-by-one bug in the trap frame",
-          "timestamp": "2025-10-15T15:38:57Z",
-          "url": "https://github.com/asterinas/asterinas/commit/384e5bc70da4fcc7d150140a0ae3706b6a33a91a"
-        },
-        "date": 1760660390431,
-        "tool": "customSmallerIsBetter",
-        "title": "[VFS] The cost of select (file fds)",
-        "description": "lat_select",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average select file latency on Linux",
-            "value": "1.2442",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average select file latency on Asterinas",
-            "value": "2.0451",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Chen Chengjun",
             "username": "cchanging",
             "email": "chenchengjun.ccj@antgroup.com"
@@ -53324,6 +53287,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average select file latency on Asterinas",
             "value": "1.6758",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Xinyi Yu",
+            "username": "Fischer0522",
+            "email": "1809327837@qq.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "0167ca19f34b5ccf960b6e9e5296ed25c97fc04b",
+          "message": "Implement `BLKSSZGET` ioctl",
+          "timestamp": "2026-05-28T04:35:48Z",
+          "url": "https://github.com/asterinas/asterinas/commit/0167ca19f34b5ccf960b6e9e5296ed25c97fc04b"
+        },
+        "date": 1781476621923,
+        "tool": "customSmallerIsBetter",
+        "title": "[VFS] The cost of select (file fds)",
+        "description": "lat_select",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average select file latency on Linux",
+            "value": "1.0766",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average select file latency on Asterinas",
+            "value": "1.4673",
             "unit": "µs",
             "extra": "aster_result"
           }
