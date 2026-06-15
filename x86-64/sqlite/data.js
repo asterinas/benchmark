@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1781565243528,
+  "lastUpdate": 1781565243845,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_deletes_between": [
@@ -57778,43 +57778,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2026-03-05T09:17:17Z",
           "url": "https://github.com/asterinas/asterinas/commit/d4c092f9ad08489b06b0cf236e711b1137fa92ef"
         },
-        "date": 1772925705874,
-        "tool": "customSmallerIsBetter",
-        "title": "[Ext2] The 'VACUUM' result of sqlite speedtest",
-        "description": "sqlite-speed-test: repacking database file into a minimal amount of disk space",
-        "display": false,
-        "benches": [
-          {
-            "name": "The speed of VACUUM on Linux (Ext2)",
-            "value": "2.458",
-            "unit": "second",
-            "extra": "linux_result"
-          },
-          {
-            "name": "The speed of VACUUM on Asterinas (Ext2)",
-            "value": "2.765",
-            "unit": "second",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Wang Siyuan",
-            "username": "vvvvsv",
-            "email": "wsy@stu.pku.edu.cn"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "d4c092f9ad08489b06b0cf236e711b1137fa92ef",
-          "message": "Rename `Vmar::access_remote` to `Vmar::access_alien`",
-          "timestamp": "2026-03-05T09:17:17Z",
-          "url": "https://github.com/asterinas/asterinas/commit/d4c092f9ad08489b06b0cf236e711b1137fa92ef"
-        },
         "date": 1773008419102,
         "tool": "customSmallerIsBetter",
         "title": "[Ext2] The 'VACUUM' result of sqlite speedtest",
@@ -59976,6 +59939,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "The speed of VACUUM on Asterinas (Ext2)",
             "value": "3.172",
+            "unit": "second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Marsman1996",
+            "username": "Marsman1996",
+            "email": "lqliuyuwei@outlook.com"
+          },
+          "committer": {
+            "name": "Jianfeng Jiang",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "id": "f7ff85597d892ec7476489216672b0ad61b7090f",
+          "message": "Fix `pidfd_open` accepting pid=0 instead of returning EINVAL",
+          "timestamp": "2026-06-11T07:43:59Z",
+          "url": "https://github.com/asterinas/asterinas/commit/f7ff85597d892ec7476489216672b0ad61b7090f"
+        },
+        "date": 1781565243834,
+        "tool": "customSmallerIsBetter",
+        "title": "[Ext2] The 'VACUUM' result of sqlite speedtest",
+        "description": "sqlite-speed-test: repacking database file into a minimal amount of disk space",
+        "display": false,
+        "benches": [
+          {
+            "name": "The speed of VACUUM on Linux (Ext2)",
+            "value": "2.417",
+            "unit": "second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "The speed of VACUUM on Asterinas (Ext2)",
+            "value": "2.962",
             "unit": "second",
             "extra": "aster_result"
           }
