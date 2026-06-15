@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1781565256029,
+  "lastUpdate": 1781565256345,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -33336,43 +33336,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Zhang Junyang",
-            "username": "junyang-zh",
-            "email": "junyang@stu.pku.edu.cn"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "6f684acdc934c8a2342ea7e00421b770f04d3cf1",
-          "message": "Accept should panic expected string as a substring",
-          "timestamp": "2026-03-03T07:05:15Z",
-          "url": "https://github.com/asterinas/asterinas/commit/6f684acdc934c8a2342ea7e00421b770f04d3cf1"
-        },
-        "date": 1772586868291,
-        "tool": "customBiggerIsBetter",
-        "title": "[Unix sockets] The bandwidth (64KB message)",
-        "description": "bw_unix",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average unix bandwidth on Linux",
-            "value": "12061.57",
-            "unit": "MB/s",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average unix bandwidth on Asterinas",
-            "value": "9033.63",
-            "unit": "MB/s",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Ruihan Li",
             "username": "lrh2000",
             "email": "lrh2000@pku.edu.cn"
@@ -35548,6 +35511,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average unix bandwidth on Asterinas",
             "value": "10188.00",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Marsman1996",
+            "username": "Marsman1996",
+            "email": "lqliuyuwei@outlook.com"
+          },
+          "committer": {
+            "name": "Jianfeng Jiang",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "id": "f7ff85597d892ec7476489216672b0ad61b7090f",
+          "message": "Fix `pidfd_open` accepting pid=0 instead of returning EINVAL",
+          "timestamp": "2026-06-11T07:43:59Z",
+          "url": "https://github.com/asterinas/asterinas/commit/f7ff85597d892ec7476489216672b0ad61b7090f"
+        },
+        "date": 1781565256326,
+        "tool": "customBiggerIsBetter",
+        "title": "[Unix sockets] The bandwidth (64KB message)",
+        "description": "bw_unix",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average unix bandwidth on Linux",
+            "value": "10551.63",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average unix bandwidth on Asterinas",
+            "value": "10148.45",
             "unit": "MB/s",
             "extra": "aster_result"
           }
