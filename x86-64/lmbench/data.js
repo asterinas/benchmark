@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1781651304480,
+  "lastUpdate": 1781651304755,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -15574,43 +15574,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2026-02-18T22:48:17Z",
           "url": "https://github.com/asterinas/asterinas/commit/97bc17fa58ff2d3be555c48be8973e4d1c924b94"
         },
-        "date": 1772070040960,
-        "tool": "customSmallerIsBetter",
-        "title": "[Process] The cost of fork+exec+shell+exit",
-        "description": "lat_proc shell",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average shell latency on Linux",
-            "value": "1472.7500",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average shell latency on Asterinas",
-            "value": "2460.5000",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Xinyi Wan",
-            "username": "rikosellic",
-            "email": "64517311+rikosellic@users.noreply.github.com"
-          },
-          "committer": {
-            "name": "GitHub",
-            "username": "web-flow",
-            "email": "noreply@github.com"
-          },
-          "id": "97bc17fa58ff2d3be555c48be8973e4d1c924b94",
-          "message": "Fix typos in ostd documentation",
-          "timestamp": "2026-02-18T22:48:17Z",
-          "url": "https://github.com/asterinas/asterinas/commit/97bc17fa58ff2d3be555c48be8973e4d1c924b94"
-        },
         "date": 1772152800137,
         "tool": "customSmallerIsBetter",
         "title": "[Process] The cost of fork+exec+shell+exit",
@@ -17772,6 +17735,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average shell latency on Asterinas",
             "value": "1337.5000",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Marsman1996",
+            "username": "Marsman1996",
+            "email": "lqliuyuwei@outlook.com"
+          },
+          "committer": {
+            "name": "Jianfeng Jiang",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "id": "e4f8507720924b42e04dfa40b8b10e2c0bf11941",
+          "message": "Fix `memfd_create` returning wrong errno for too-long name",
+          "timestamp": "2026-06-11T07:00:25Z",
+          "url": "https://github.com/asterinas/asterinas/commit/e4f8507720924b42e04dfa40b8b10e2c0bf11941"
+        },
+        "date": 1781651304737,
+        "tool": "customSmallerIsBetter",
+        "title": "[Process] The cost of fork+exec+shell+exit",
+        "description": "lat_proc shell",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average shell latency on Linux",
+            "value": "1482.5000",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average shell latency on Asterinas",
+            "value": "1325.7500",
             "unit": "µs",
             "extra": "aster_result"
           }
