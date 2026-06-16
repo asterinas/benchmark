@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1781653717948,
+  "lastUpdate": 1781653718331,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ramfs_benchmarks_vacuum": [
@@ -11116,43 +11116,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "384e5bc70da4fcc7d150140a0ae3706b6a33a91a",
-          "message": "Fix an off-by-one bug in the trap frame",
-          "timestamp": "2025-10-15T15:38:57Z",
-          "url": "https://github.com/asterinas/asterinas/commit/384e5bc70da4fcc7d150140a0ae3706b6a33a91a"
-        },
-        "date": 1760657359986,
-        "tool": "customSmallerIsBetter",
-        "title": "[Ramfs] The selects-text-pk result of sqlite speedtest",
-        "description": "sqlite-speed-test: 70000 SELECTS on a TEXT PK",
-        "display": false,
-        "benches": [
-          {
-            "name": "The speed of selects-text-pk on Linux (Ramfs)",
-            "value": "3.409",
-            "unit": "second",
-            "extra": "linux_result"
-          },
-          {
-            "name": "The speed of selects-text-pk on Asterinas (Ramfs)",
-            "value": "3.218",
-            "unit": "second",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Chen Chengjun",
             "username": "cchanging",
             "email": "chenchengjun.ccj@antgroup.com"
@@ -13328,6 +13291,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "The speed of selects-text-pk on Asterinas (Ramfs)",
             "value": "3.574",
+            "unit": "second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Marsman1996",
+            "username": "Marsman1996",
+            "email": "lqliuyuwei@outlook.com"
+          },
+          "committer": {
+            "name": "Jianfeng Jiang",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "id": "e4f8507720924b42e04dfa40b8b10e2c0bf11941",
+          "message": "Fix `memfd_create` returning wrong errno for too-long name",
+          "timestamp": "2026-06-11T07:00:25Z",
+          "url": "https://github.com/asterinas/asterinas/commit/e4f8507720924b42e04dfa40b8b10e2c0bf11941"
+        },
+        "date": 1781653718324,
+        "tool": "customSmallerIsBetter",
+        "title": "[Ramfs] The selects-text-pk result of sqlite speedtest",
+        "description": "sqlite-speed-test: 70000 SELECTS on a TEXT PK",
+        "display": false,
+        "benches": [
+          {
+            "name": "The speed of selects-text-pk on Linux (Ramfs)",
+            "value": "3.462",
+            "unit": "second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "The speed of selects-text-pk on Asterinas (Ramfs)",
+            "value": "3.548",
             "unit": "second",
             "extra": "aster_result"
           }
