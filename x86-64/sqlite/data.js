@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1782145825141,
+  "lastUpdate": 1782166595819,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_deletes_between": [
@@ -79984,43 +79984,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Zhang Junyang",
-            "username": "junyang-zh",
-            "email": "junyang@stu.pku.edu.cn"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "670ce782c2732b10da6d7d2e060f93a4fd6b29b0",
-          "message": "Bump docker image version to 0.17.1",
-          "timestamp": "2026-03-05T04:20:09Z",
-          "url": "https://github.com/asterinas/asterinas/commit/670ce782c2732b10da6d7d2e060f93a4fd6b29b0"
-        },
-        "date": 1772835020835,
-        "tool": "customSmallerIsBetter",
-        "title": "[Ramfs] The 'VACUUM' result of sqlite speedtest",
-        "description": "sqlite-speed-test: repacking database file into a minimal amount of disk space",
-        "display": false,
-        "benches": [
-          {
-            "name": "The speed of VACUUM on Linux (Ramfs)",
-            "value": "1.250",
-            "unit": "second",
-            "extra": "linux_result"
-          },
-          {
-            "name": "The speed of VACUUM on Asterinas (Ramfs)",
-            "value": "0.874",
-            "unit": "second",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Wang Siyuan",
             "username": "vvvvsv",
             "email": "wsy@stu.pku.edu.cn"
@@ -82196,6 +82159,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "The speed of VACUUM on Asterinas (Ramfs)",
             "value": "0.866",
+            "unit": "second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "zjp",
+            "username": "zjp-CN",
+            "email": "jiping_zhou@foxmail.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "c6284a9106f5a4c87deb7c8a990af6211dc5f540",
+          "message": "Switch to a new Docker image at 0.18.0-20260618",
+          "timestamp": "2026-06-18T08:39:34Z",
+          "url": "https://github.com/asterinas/asterinas/commit/c6284a9106f5a4c87deb7c8a990af6211dc5f540"
+        },
+        "date": 1782166595806,
+        "tool": "customSmallerIsBetter",
+        "title": "[Ramfs] The 'VACUUM' result of sqlite speedtest",
+        "description": "sqlite-speed-test: repacking database file into a minimal amount of disk space",
+        "display": false,
+        "benches": [
+          {
+            "name": "The speed of VACUUM on Linux (Ramfs)",
+            "value": "0.870",
+            "unit": "second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "The speed of VACUUM on Asterinas (Ramfs)",
+            "value": "0.878",
             "unit": "second",
             "extra": "aster_result"
           }
