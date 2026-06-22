@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1782145819520,
+  "lastUpdate": 1782145819887,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_deletes_between": [
@@ -68874,43 +68874,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Chen Chengjun",
-            "username": "cchanging",
-            "email": "chenchengjun.ccj@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "c2edfe05cb3f7edc161a305f097139c6791a30a9",
-          "message": "Modify the related import paths",
-          "timestamp": "2026-03-09T04:51:29Z",
-          "url": "https://github.com/asterinas/asterinas/commit/c2edfe05cb3f7edc161a305f097139c6791a30a9"
-        },
-        "date": 1773095262642,
-        "tool": "customSmallerIsBetter",
-        "title": "[Ramfs] The selects-text-pk result of sqlite speedtest",
-        "description": "sqlite-speed-test: 70000 SELECTS on a TEXT PK",
-        "display": false,
-        "benches": [
-          {
-            "name": "The speed of selects-text-pk on Linux (Ramfs)",
-            "value": "3.207",
-            "unit": "second",
-            "extra": "linux_result"
-          },
-          {
-            "name": "The speed of selects-text-pk on Asterinas (Ramfs)",
-            "value": "3.233",
-            "unit": "second",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Ruihan Li",
             "username": "lrh2000",
             "email": "lrh2000@pku.edu.cn"
@@ -71086,6 +71049,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "The speed of selects-text-pk on Asterinas (Ramfs)",
             "value": "3.985",
+            "unit": "second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "li041",
+            "username": "li041",
+            "email": "lxh050013@outlook.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "22ca7ccf30757c8ece7dcffbe933b8e1072f052a",
+          "message": "Fix virtiofs request queue descriptor exhaustion",
+          "timestamp": "2026-06-03T07:04:21Z",
+          "url": "https://github.com/asterinas/asterinas/commit/22ca7ccf30757c8ece7dcffbe933b8e1072f052a"
+        },
+        "date": 1782145819877,
+        "tool": "customSmallerIsBetter",
+        "title": "[Ramfs] The selects-text-pk result of sqlite speedtest",
+        "description": "sqlite-speed-test: 70000 SELECTS on a TEXT PK",
+        "display": false,
+        "benches": [
+          {
+            "name": "The speed of selects-text-pk on Linux (Ramfs)",
+            "value": "3.270",
+            "unit": "second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "The speed of selects-text-pk on Asterinas (Ramfs)",
+            "value": "3.506",
             "unit": "second",
             "extra": "aster_result"
           }
