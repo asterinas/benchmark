@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1782146692267,
+  "lastUpdate": 1782146692708,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -28906,43 +28906,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2025-05-24T14:28:39Z",
           "url": "https://github.com/asterinas/asterinas/commit/50eaffc7314d5ef2f4a16cb0e2437cc0010c01ee"
         },
-        "date": 1759276516678,
-        "tool": "customSmallerIsBetter",
-        "title": "[FIFO] The cost of write+read (1B)",
-        "description": "lat_fifo",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average fifo latency on Linux",
-            "value": "2.2414",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average fifo latency on Asterinas",
-            "value": "3.2630",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Ruize Tang",
-            "username": "tangruize",
-            "email": "1466040111@qq.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "50eaffc7314d5ef2f4a16cb0e2437cc0010c01ee",
-          "message": "Remove `RwLock.downgrade` due to potential contention with `RwLock.read`",
-          "timestamp": "2025-05-24T14:28:39Z",
-          "url": "https://github.com/asterinas/asterinas/commit/50eaffc7314d5ef2f4a16cb0e2437cc0010c01ee"
-        },
         "date": 1759363774071,
         "tool": "customSmallerIsBetter",
         "title": "[FIFO] The cost of write+read (1B)",
@@ -31104,6 +31067,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average fifo latency on Asterinas",
             "value": "3.0634",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "zjp",
+            "username": "zjp-CN",
+            "email": "jiping_zhou@foxmail.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "c6284a9106f5a4c87deb7c8a990af6211dc5f540",
+          "message": "Switch to a new Docker image at 0.18.0-20260618",
+          "timestamp": "2026-06-18T08:39:34Z",
+          "url": "https://github.com/asterinas/asterinas/commit/c6284a9106f5a4c87deb7c8a990af6211dc5f540"
+        },
+        "date": 1782146692687,
+        "tool": "customSmallerIsBetter",
+        "title": "[FIFO] The cost of write+read (1B)",
+        "description": "lat_fifo",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average fifo latency on Linux",
+            "value": "2.3254",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average fifo latency on Asterinas",
+            "value": "3.0510",
             "unit": "µs",
             "extra": "aster_result"
           }
