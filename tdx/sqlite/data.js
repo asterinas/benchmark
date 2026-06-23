@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1782247037547,
+  "lastUpdate": 1782247037889,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ramfs_benchmarks_vacuum": [
@@ -28906,43 +28906,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2025-10-20T02:30:27Z",
           "url": "https://github.com/asterinas/asterinas/commit/857424de52c8a1d344c7d23353fa5bdf80ea794e"
         },
-        "date": 1761002053386,
-        "tool": "customSmallerIsBetter",
-        "title": "[Ext2] The updates-between result of sqlite speedtest",
-        "description": "sqlite-speed-test: 10000 UPDATES, numeric BETWEEN, indexed",
-        "display": false,
-        "benches": [
-          {
-            "name": "The speed of updates-between on Linux (Ext2)",
-            "value": "3.025",
-            "unit": "second",
-            "extra": "linux_result"
-          },
-          {
-            "name": "The speed of updates-between on Asterinas (Ext2)",
-            "value": "1.883",
-            "unit": "second",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Chen Chengjun",
-            "username": "cchanging",
-            "email": "chenchengjun.ccj@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "857424de52c8a1d344c7d23353fa5bdf80ea794e",
-          "message": "Test the case where pidfd is negative in the test",
-          "timestamp": "2025-10-20T02:30:27Z",
-          "url": "https://github.com/asterinas/asterinas/commit/857424de52c8a1d344c7d23353fa5bdf80ea794e"
-        },
         "date": 1761089726477,
         "tool": "customSmallerIsBetter",
         "title": "[Ext2] The updates-between result of sqlite speedtest",
@@ -31104,6 +31067,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "The speed of updates-between on Asterinas (Ext2)",
             "value": "11.624",
+            "unit": "second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Zhihang Shao",
+            "username": "BattiestStone4",
+            "email": "dio_ro@outlook.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "42d38f9af388c28c2dda8cb4d6e62de465f23e8e",
+          "message": "Add regression test for `O_PATH` notification suppression\n\nVerify that opening a file with `O_PATH` does not generate inotify\nevents (`IN_OPEN` / `IN_CLOSE_NOWRITE`), matching the Linux behavior\nwhere `FMODE_NONOTIFY` is set on `O_PATH` file descriptors. A sanity\ncheck confirms that normal opens still produce events.\n\nRegister the test in `run_test.sh` so it runs alongside the other\ninotify regression tests.\n\nSigned-off-by: Zhenchen Wang <m202372036@hust.edu.cn>\nSigned-off-by: Zhihang Shao <dio_ro@outlook.com>",
+          "timestamp": "2026-06-18T11:51:25Z",
+          "url": "https://github.com/asterinas/asterinas/commit/42d38f9af388c28c2dda8cb4d6e62de465f23e8e"
+        },
+        "date": 1782247037883,
+        "tool": "customSmallerIsBetter",
+        "title": "[Ext2] The updates-between result of sqlite speedtest",
+        "description": "sqlite-speed-test: 10000 UPDATES, numeric BETWEEN, indexed",
+        "display": false,
+        "benches": [
+          {
+            "name": "The speed of updates-between on Linux (Ext2)",
+            "value": "1.938",
+            "unit": "second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "The speed of updates-between on Asterinas (Ext2)",
+            "value": "10.158",
             "unit": "second",
             "extra": "aster_result"
           }
