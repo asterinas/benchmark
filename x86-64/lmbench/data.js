@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1782594619879,
+  "lastUpdate": 1782594620152,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -13338,43 +13338,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Zhang Junyang",
-            "username": "junyang-zh",
-            "email": "junyang@stu.pku.edu.cn"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "6f684acdc934c8a2342ea7e00421b770f04d3cf1",
-          "message": "Accept should panic expected string as a substring",
-          "timestamp": "2026-03-03T07:05:15Z",
-          "url": "https://github.com/asterinas/asterinas/commit/6f684acdc934c8a2342ea7e00421b770f04d3cf1"
-        },
-        "date": 1772592656433,
-        "tool": "customSmallerIsBetter",
-        "title": "[Process] The cost of fork+exec+exit",
-        "description": "lat_proc exec",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average exec latency on Linux",
-            "value": "977.3333",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average exec latency on Asterinas",
-            "value": "833.5714",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Ruihan Li",
             "username": "lrh2000",
             "email": "lrh2000@pku.edu.cn"
@@ -15550,6 +15513,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average exec latency on Asterinas",
             "value": "786.2857",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tate.thl@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "a19974df7f48dda7d1f6540350d787f5d7df7860",
+          "message": "Restructure the Design subcategory around design principles\n\nReplace the For Maintainability \"Design\" guidelines with eight design\nprinciples (single-responsibility, dry, information-hiding, open-closed,\nleast-surprise, coupling-cohesion, consistency, rust-native), relocated\nfrom the \"How Guidelines Are Written\" page. Fold the former design and\nlayout rules (familiar-conventions, hide-impl-details, small-functions,\none-concept-per-file) into the principles as worked examples, and move\nDesign ahead of Process in the index.",
+          "timestamp": "2026-06-26T10:17:15Z",
+          "url": "https://github.com/asterinas/asterinas/commit/a19974df7f48dda7d1f6540350d787f5d7df7860"
+        },
+        "date": 1782594620132,
+        "tool": "customSmallerIsBetter",
+        "title": "[Process] The cost of fork+exec+exit",
+        "description": "lat_proc exec",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average exec latency on Linux",
+            "value": "886.4286",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average exec latency on Asterinas",
+            "value": "788.8571",
             "unit": "µs",
             "extra": "aster_result"
           }
