@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1782680278406,
+  "lastUpdate": 1782680278681,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -24462,43 +24462,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2026-03-05T04:20:09Z",
           "url": "https://github.com/asterinas/asterinas/commit/670ce782c2732b10da6d7d2e060f93a4fd6b29b0"
         },
-        "date": 1772763247908,
-        "tool": "customSmallerIsBetter",
-        "title": "[Pipes] The cost of write+read (1B)",
-        "description": "lat_pipe",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average pipe latency on Linux",
-            "value": "2.7489",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average pipe latency on Asterinas",
-            "value": "3.2997",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Zhang Junyang",
-            "username": "junyang-zh",
-            "email": "junyang@stu.pku.edu.cn"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "670ce782c2732b10da6d7d2e060f93a4fd6b29b0",
-          "message": "Bump docker image version to 0.17.1",
-          "timestamp": "2026-03-05T04:20:09Z",
-          "url": "https://github.com/asterinas/asterinas/commit/670ce782c2732b10da6d7d2e060f93a4fd6b29b0"
-        },
         "date": 1772843719146,
         "tool": "customSmallerIsBetter",
         "title": "[Pipes] The cost of write+read (1B)",
@@ -26660,6 +26623,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average pipe latency on Asterinas",
             "value": "3.1486",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tate.thl@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "a19974df7f48dda7d1f6540350d787f5d7df7860",
+          "message": "Restructure the Design subcategory around design principles\n\nReplace the For Maintainability \"Design\" guidelines with eight design\nprinciples (single-responsibility, dry, information-hiding, open-closed,\nleast-surprise, coupling-cohesion, consistency, rust-native), relocated\nfrom the \"How Guidelines Are Written\" page. Fold the former design and\nlayout rules (familiar-conventions, hide-impl-details, small-functions,\none-concept-per-file) into the principles as worked examples, and move\nDesign ahead of Process in the index.",
+          "timestamp": "2026-06-26T10:17:15Z",
+          "url": "https://github.com/asterinas/asterinas/commit/a19974df7f48dda7d1f6540350d787f5d7df7860"
+        },
+        "date": 1782680278663,
+        "tool": "customSmallerIsBetter",
+        "title": "[Pipes] The cost of write+read (1B)",
+        "description": "lat_pipe",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average pipe latency on Linux",
+            "value": "2.3811",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average pipe latency on Asterinas",
+            "value": "3.1566",
             "unit": "µs",
             "extra": "aster_result"
           }
