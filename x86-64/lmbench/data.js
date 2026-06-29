@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1782767790626,
+  "lastUpdate": 1782767791041,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -51121,43 +51121,6 @@ window.BENCHMARK_DATA = {
             "username": "tatetian",
             "email": "tatetian@gmail.com"
           },
-          "id": "cef80ffa56d85e546144aa1747485ff2bc406da0",
-          "message": "Add OSTD soundness analysis section to the book\n\nAdd 8 new pages to the mdBook under \"Soundness Analysis\" covering the\nsystematic soundness argument for OSTD: what soundness means, sensitivity\nclassification, safe physical memory management, safe user-kernel\ninteractions, safe kernel-peripheral interactions, safe kernel logic,\nand safe policy injection.",
-          "timestamp": "2026-03-17T08:20:36Z",
-          "url": "https://github.com/asterinas/asterinas/commit/cef80ffa56d85e546144aa1747485ff2bc406da0"
-        },
-        "date": 1775295276811,
-        "tool": "customSmallerIsBetter",
-        "title": "[VFS] The cost of select (file fds)",
-        "description": "lat_select",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average select file latency on Linux",
-            "value": "1.2028",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average select file latency on Asterinas",
-            "value": "1.8982",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tate.thl@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
           "id": "e4bcaabb395dae631e41797383125b52ad3d2eb2",
           "message": "Add `Memcpy`/`Memset` trait framework for typed memory copies\n\nIntroduce `Memcpy` and `Memset` traits that generalize the classic C\n`memcpy` and `memset` for typed memory categories (`KernelMem`,\n`UserMem`). The compiler resolves the correct implementation at\nmonomorphization time, making it straightforward to add new memory\ncategories (e.g., `IoMem` for TDX-aware I/O memory in #2958) without\na combinatorial explosion of function names.\n\nReplace the four ad-hoc private functions (`memcpy`, `memcpy_fallible`,\n`memset`, `memset_fallible`) in `mm/io/mod.rs` with trait-dispatched\nfree functions `memcpy::<Dst, Src>()` and `memset::<Dst>()`, and\nupdate all call sites including `io_util` imports across the kernel\ncrate.",
           "timestamp": "2026-03-10T07:19:03Z",
@@ -53324,6 +53287,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average select file latency on Asterinas",
             "value": "1.5284",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "co63oc",
+            "username": "co63oc",
+            "email": "4617245+co63oc@users.noreply.github.com"
+          },
+          "committer": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "3329907643@qq.com"
+          },
+          "id": "56bf21533b4278663e817b124f4dc9f4afcdc7d5",
+          "message": "Update `birth_at` field type from `Duration` to `Option<Duration>`",
+          "timestamp": "2026-06-29T06:18:20Z",
+          "url": "https://github.com/asterinas/asterinas/commit/56bf21533b4278663e817b124f4dc9f4afcdc7d5"
+        },
+        "date": 1782767791024,
+        "tool": "customSmallerIsBetter",
+        "title": "[VFS] The cost of select (file fds)",
+        "description": "lat_select",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average select file latency on Linux",
+            "value": "1.0540",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average select file latency on Asterinas",
+            "value": "1.4782",
             "unit": "µs",
             "extra": "aster_result"
           }
