@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1782940903154,
+  "lastUpdate": 1782940903437,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -11130,43 +11130,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2026-03-05T09:17:17Z",
           "url": "https://github.com/asterinas/asterinas/commit/d4c092f9ad08489b06b0cf236e711b1137fa92ef"
         },
-        "date": 1772932975572,
-        "tool": "customSmallerIsBetter",
-        "title": "[Process] The cost of fork+exit",
-        "description": "lat_proc fork",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average Fork latency on Linux",
-            "value": "144.8286",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average Fork latency on Asterinas",
-            "value": "144.1026",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Wang Siyuan",
-            "username": "vvvvsv",
-            "email": "wsy@stu.pku.edu.cn"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "d4c092f9ad08489b06b0cf236e711b1137fa92ef",
-          "message": "Rename `Vmar::access_remote` to `Vmar::access_alien`",
-          "timestamp": "2026-03-05T09:17:17Z",
-          "url": "https://github.com/asterinas/asterinas/commit/d4c092f9ad08489b06b0cf236e711b1137fa92ef"
-        },
         "date": 1773015749804,
         "tool": "customSmallerIsBetter",
         "title": "[Process] The cost of fork+exit",
@@ -13328,6 +13291,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average Fork latency on Asterinas",
             "value": "141.6410",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "zjp",
+            "username": "zjp-CN",
+            "email": "jiping_zhou@foxmail.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "5b46e566dee52a836b0189082d88e0bb208b549e",
+          "message": "Switch to a new Docker image 0.18.0-20260701",
+          "timestamp": "2026-07-01T14:16:03Z",
+          "url": "https://github.com/asterinas/asterinas/commit/5b46e566dee52a836b0189082d88e0bb208b549e"
+        },
+        "date": 1782940903419,
+        "tool": "customSmallerIsBetter",
+        "title": "[Process] The cost of fork+exit",
+        "description": "lat_proc fork",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average Fork latency on Linux",
+            "value": "138.5676",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average Fork latency on Asterinas",
+            "value": "140.3056",
             "unit": "µs",
             "extra": "aster_result"
           }
