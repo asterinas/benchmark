@@ -1,45 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1783372494295,
+  "lastUpdate": 1783372494593,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "cpu_lat": [
-      {
-        "commit": {
-          "author": {
-            "name": "Hsy-Intel",
-            "username": "Hsy-Intel",
-            "email": "siyuan.hui@intel.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "48b160e33ac43b5ed8a010b939811a0c96f339c3",
-          "message": "Use default process name in TDX QEMU configuration",
-          "timestamp": "2025-05-20T00:59:28Z",
-          "url": "https://github.com/asterinas/asterinas/commit/48b160e33ac43b5ed8a010b939811a0c96f339c3"
-        },
-        "date": 1752237087542,
-        "tool": "customSmallerIsBetter",
-        "title": "[CPU] CPU performance",
-        "description": "sysbench cpu",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average Execution Time per CPU on Linux",
-            "value": "4.02",
-            "unit": "ms",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average Execution Time per CPU on Asterinas",
-            "value": "4.07",
-            "unit": "ms",
-            "extra": "aster_result"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2217,6 +2180,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average Execution Time per CPU on Asterinas",
             "value": "4.08",
+            "unit": "ms",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "li041",
+            "username": "li041",
+            "email": "lxh050013@outlook.com"
+          },
+          "committer": {
+            "name": "Jianfeng Jiang",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "id": "afe922d16ee72357f4b05a6c5c1bf8919e5883ee",
+          "message": "Fix VirtioFS stale status flags in read paths",
+          "timestamp": "2026-07-06T06:55:57Z",
+          "url": "https://github.com/asterinas/asterinas/commit/afe922d16ee72357f4b05a6c5c1bf8919e5883ee"
+        },
+        "date": 1783372494591,
+        "tool": "customSmallerIsBetter",
+        "title": "[CPU] CPU performance",
+        "description": "sysbench cpu",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average Execution Time per CPU on Linux",
+            "value": "4.13",
+            "unit": "ms",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average Execution Time per CPU on Asterinas",
+            "value": "4.07",
             "unit": "ms",
             "extra": "aster_result"
           }
