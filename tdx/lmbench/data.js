@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1783457182170,
+  "lastUpdate": 1783457182461,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -91113,43 +91113,6 @@ window.BENCHMARK_DATA = {
             "email": "lrh2000@pku.edu.cn"
           },
           "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "2d74e69b4b7c294438cd4d1ac22bb87ee5edcca6",
-          "message": "Add KDGKBMODE and KDSKBMODE ioctl support",
-          "timestamp": "2025-10-23T13:28:21Z",
-          "url": "https://github.com/asterinas/asterinas/commit/2d74e69b4b7c294438cd4d1ac22bb87ee5edcca6"
-        },
-        "date": 1761614018781,
-        "tool": "customSmallerIsBetter",
-        "title": "[TCP sockets] The latency of connect (loopback)",
-        "description": "lat_connect",
-        "display": false,
-        "benches": [
-          {
-            "name": "Average TCP connection latency on Linux",
-            "value": "55.3011",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average TCP connection latency on Asterinas",
-            "value": "155.6923",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
             "name": "Junyang Zhang",
             "username": "junyang-zh",
             "email": "user@junyang.me"
@@ -93320,6 +93283,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average TCP connection latency on Asterinas",
             "value": "6462.8716",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Jianfeng Jiang",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "id": "bf8e15eff0877954deba68c4bf188f700d501572",
+          "message": "Add `/proc/sys/vm/mmap_min_addr`",
+          "timestamp": "2026-07-07T04:46:37Z",
+          "url": "https://github.com/asterinas/asterinas/commit/bf8e15eff0877954deba68c4bf188f700d501572"
+        },
+        "date": 1783457182443,
+        "tool": "customSmallerIsBetter",
+        "title": "[TCP sockets] The latency of connect (loopback)",
+        "description": "lat_connect",
+        "display": false,
+        "benches": [
+          {
+            "name": "Average TCP connection latency on Linux",
+            "value": "8339.1588",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average TCP connection latency on Asterinas",
+            "value": "8274.6353",
             "unit": "µs",
             "extra": "aster_result"
           }
