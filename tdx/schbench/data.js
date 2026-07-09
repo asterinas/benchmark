@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1783633839339,
+  "lastUpdate": 1783633839653,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "smp8_p99_wakeup_latency": [
@@ -8894,43 +8894,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Zejun Zhao",
-            "username": "jellllly420",
-            "email": "jelly.zhao.42@gmail.com"
-          },
-          "committer": {
-            "name": "Junyang Zhang",
-            "username": "junyang-zh",
-            "email": "user@junyang.me"
-          },
-          "id": "8251d48bf26f169c2c0b14825b2721472e8159cf",
-          "message": "Add RISC-V PLIC support",
-          "timestamp": "2025-05-28T07:35:00Z",
-          "url": "https://github.com/asterinas/asterinas/commit/8251d48bf26f169c2c0b14825b2721472e8159cf"
-        },
-        "date": 1761347001526,
-        "tool": "customSmallerIsBetter",
-        "title": "[Scheduler] P99 request latency while max-loading all CPUs (SMP=1)",
-        "description": "schbench -F 256 -n 5 -r 90",
-        "display": false,
-        "benches": [
-          {
-            "name": "P99 request latency of schbench on Linux",
-            "value": "2660",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "P99 request latency of schbench on Asterinas",
-            "value": "5144",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Arthur Paulino",
             "username": "arthurpaulino",
             "email": "arthurleonardo.ap@gmail.com"
@@ -11106,6 +11069,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "P99 request latency of schbench on Asterinas",
             "value": "3076",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ray Lee",
+            "username": "hburaylee",
+            "email": "hburaylee@gmail.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "c3864a759e3ae54352b2657df4ff2fcbc6f152d3",
+          "message": "Fix virtio device initialization sequence\n\nFollow the VirtIO initialization sequence more closely by setting\nACKNOWLEDGE and DRIVER separately, rechecking FEATURES_OK after feature\nnegotiation, and marking the device as FAILED if any of the steps go wrong.\n\nMove initial receive and event queue notifications until after DRIVER_OK\nfor console, input, network, and vsock devices, so buffers are not\nannounced before the device becomes live.\n\nSigned-off-by: Ray Lee <hburaylee@gmail.com>",
+          "timestamp": "2026-06-26T08:54:32Z",
+          "url": "https://github.com/asterinas/asterinas/commit/c3864a759e3ae54352b2657df4ff2fcbc6f152d3"
+        },
+        "date": 1783633839650,
+        "tool": "customSmallerIsBetter",
+        "title": "[Scheduler] P99 request latency while max-loading all CPUs (SMP=1)",
+        "description": "schbench -F 256 -n 5 -r 90",
+        "display": false,
+        "benches": [
+          {
+            "name": "P99 request latency of schbench on Linux",
+            "value": "2356",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "P99 request latency of schbench on Asterinas",
+            "value": "3020",
             "unit": "µs",
             "extra": "aster_result"
           }
