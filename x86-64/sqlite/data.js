@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1783632039822,
+  "lastUpdate": 1783632040221,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_deletes_between": [
@@ -39988,43 +39988,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tate.thl@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "f1e20cd34a1075317b24543d71d63837b83107e4",
-          "message": "Add coding guideline: qualify function imports with parent module\n\nAdd the `qualified-fn-imports` guideline to the Modules and Crates\nsection. The guideline recommends importing the parent module and\ncalling functions through it (`module::function()`) rather than\nimporting free functions directly by name. This convention is\nrecommended by The Rust Programming Language book (Chapter 7.4)\nand followed by the Rust compiler codebase. The same rule applies\nto statics and constants.",
-          "timestamp": "2026-03-31T10:06:07Z",
-          "url": "https://github.com/asterinas/asterinas/commit/f1e20cd34a1075317b24543d71d63837b83107e4"
-        },
-        "date": 1775373882041,
-        "tool": "customSmallerIsBetter",
-        "title": "[Ext2] The deletes-individual result of sqlite speedtest",
-        "description": "sqlite-speed-test: 50000 DELETEs of individual rows",
-        "display": false,
-        "benches": [
-          {
-            "name": "The speed of deletes-individual on Linux (Ext2)",
-            "value": "2.673",
-            "unit": "second",
-            "extra": "linux_result"
-          },
-          {
-            "name": "The speed of deletes-individual on Asterinas (Ext2)",
-            "value": "3.920",
-            "unit": "second",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Ruihan Li",
             "username": "lrh2000",
             "email": "lrh2000@pku.edu.cn"
@@ -42200,6 +42163,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "The speed of deletes-individual on Asterinas (Ext2)",
             "value": "4.584",
+            "unit": "second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ray Lee",
+            "username": "hburaylee",
+            "email": "hburaylee@gmail.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "c3864a759e3ae54352b2657df4ff2fcbc6f152d3",
+          "message": "Fix virtio device initialization sequence\n\nFollow the VirtIO initialization sequence more closely by setting\nACKNOWLEDGE and DRIVER separately, rechecking FEATURES_OK after feature\nnegotiation, and marking the device as FAILED if any of the steps go wrong.\n\nMove initial receive and event queue notifications until after DRIVER_OK\nfor console, input, network, and vsock devices, so buffers are not\nannounced before the device becomes live.\n\nSigned-off-by: Ray Lee <hburaylee@gmail.com>",
+          "timestamp": "2026-06-26T08:54:32Z",
+          "url": "https://github.com/asterinas/asterinas/commit/c3864a759e3ae54352b2657df4ff2fcbc6f152d3"
+        },
+        "date": 1783632040205,
+        "tool": "customSmallerIsBetter",
+        "title": "[Ext2] The deletes-individual result of sqlite speedtest",
+        "description": "sqlite-speed-test: 50000 DELETEs of individual rows",
+        "display": false,
+        "benches": [
+          {
+            "name": "The speed of deletes-individual on Linux (Ext2)",
+            "value": "2.235",
+            "unit": "second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "The speed of deletes-individual on Asterinas (Ext2)",
+            "value": "4.366",
             "unit": "second",
             "extra": "aster_result"
           }
