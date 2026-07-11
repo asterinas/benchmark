@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1783805223260,
+  "lastUpdate": 1783805223667,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -100010,43 +100010,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2026-03-08T05:11:59Z",
           "url": "https://github.com/asterinas/asterinas/commit/3f3ad398cd8ec9016aa4f32cd18e44a56cc4a2c5"
         },
-        "date": 1773449707198,
-        "tool": "customSmallerIsBetter",
-        "title": "[Semaphores] The cost of semop",
-        "description": "lat_sem",
-        "display": false,
-        "benches": [
-          {
-            "name": "Average semaphore latency on Linux",
-            "value": "0.8841",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average semaphore latency on Asterinas",
-            "value": "0.6114",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Tao Su",
-            "username": "taosue",
-            "email": "st498824@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "3f3ad398cd8ec9016aa4f32cd18e44a56cc4a2c5",
-          "message": "Bumped Docker image version to 0.17.1-20260308",
-          "timestamp": "2026-03-08T05:11:59Z",
-          "url": "https://github.com/asterinas/asterinas/commit/3f3ad398cd8ec9016aa4f32cd18e44a56cc4a2c5"
-        },
         "date": 1773534271466,
         "tool": "customSmallerIsBetter",
         "title": "[Semaphores] The cost of semop",
@@ -102208,6 +102171,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average semaphore latency on Asterinas",
             "value": "0.6267",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Bet4",
+            "username": "bet4it",
+            "email": "0xbet4@gmail.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "37411049265056135a5e18c8c75a0c3d16b18579",
+          "message": "Add more procfs kernel compatibility files",
+          "timestamp": "2026-07-07T07:08:11Z",
+          "url": "https://github.com/asterinas/asterinas/commit/37411049265056135a5e18c8c75a0c3d16b18579"
+        },
+        "date": 1783805223648,
+        "tool": "customSmallerIsBetter",
+        "title": "[Semaphores] The cost of semop",
+        "description": "lat_sem",
+        "display": false,
+        "benches": [
+          {
+            "name": "Average semaphore latency on Linux",
+            "value": "1.0054",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average semaphore latency on Asterinas",
+            "value": "0.6347",
             "unit": "µs",
             "extra": "aster_result"
           }
