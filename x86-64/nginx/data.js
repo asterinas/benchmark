@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1783805211058,
+  "lastUpdate": 1783805211373,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "http_file4KB_bw": [
@@ -4459,43 +4459,6 @@ window.BENCHMARK_DATA = {
             "username": "tatetian",
             "email": "tatetian@gmail.com"
           },
-          "id": "cef80ffa56d85e546144aa1747485ff2bc406da0",
-          "message": "Add OSTD soundness analysis section to the book\n\nAdd 8 new pages to the mdBook under \"Soundness Analysis\" covering the\nsystematic soundness argument for OSTD: what soundness means, sensitivity\nclassification, safe physical memory management, safe user-kernel\ninteractions, safe kernel-peripheral interactions, safe kernel logic,\nand safe policy injection.",
-          "timestamp": "2026-03-17T08:20:36Z",
-          "url": "https://github.com/asterinas/asterinas/commit/cef80ffa56d85e546144aa1747485ff2bc406da0"
-        },
-        "date": 1775294701375,
-        "tool": "customBiggerIsBetter",
-        "title": "Nginx HTTP request performance (virtio-net, 16KB file size)",
-        "description": "ab -n 10000 -c 1 http://10.0.2.15:8080/16384bytes.html",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average HTTP Bandwidth over virtio-net between Host Linux and Guest Linux",
-            "value": "7455.75",
-            "unit": "Requests per second",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average HTTP Bandwidth over virtio-net between Host Linux and Guest Asterinas",
-            "value": "2432.01",
-            "unit": "Requests per second",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tate.thl@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
           "id": "e4bcaabb395dae631e41797383125b52ad3d2eb2",
           "message": "Add `Memcpy`/`Memset` trait framework for typed memory copies\n\nIntroduce `Memcpy` and `Memset` traits that generalize the classic C\n`memcpy` and `memset` for typed memory categories (`KernelMem`,\n`UserMem`). The compiler resolves the correct implementation at\nmonomorphization time, making it straightforward to add new memory\ncategories (e.g., `IoMem` for TDX-aware I/O memory in #2958) without\na combinatorial explosion of function names.\n\nReplace the four ad-hoc private functions (`memcpy`, `memcpy_fallible`,\n`memset`, `memset_fallible`) in `mm/io/mod.rs` with trait-dispatched\nfree functions `memcpy::<Dst, Src>()` and `memset::<Dst>()`, and\nupdate all call sites including `io_util` imports across the kernel\ncrate.",
           "timestamp": "2026-03-10T07:19:03Z",
@@ -6662,6 +6625,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average HTTP Bandwidth over virtio-net between Host Linux and Guest Asterinas",
             "value": "9019.93",
+            "unit": "Requests per second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Bet4",
+            "username": "bet4it",
+            "email": "0xbet4@gmail.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "37411049265056135a5e18c8c75a0c3d16b18579",
+          "message": "Add more procfs kernel compatibility files",
+          "timestamp": "2026-07-07T07:08:11Z",
+          "url": "https://github.com/asterinas/asterinas/commit/37411049265056135a5e18c8c75a0c3d16b18579"
+        },
+        "date": 1783805211369,
+        "tool": "customBiggerIsBetter",
+        "title": "Nginx HTTP request performance (virtio-net, 16KB file size)",
+        "description": "ab -n 10000 -c 1 http://10.0.2.15:8080/16384bytes.html",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average HTTP Bandwidth over virtio-net between Host Linux and Guest Linux",
+            "value": "16505.63",
+            "unit": "Requests per second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average HTTP Bandwidth over virtio-net between Host Linux and Guest Asterinas",
+            "value": "8771.86",
             "unit": "Requests per second",
             "extra": "aster_result"
           }
