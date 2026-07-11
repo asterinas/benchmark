@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1783805217815,
+  "lastUpdate": 1783805218241,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -82220,43 +82220,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Tao Su",
-            "username": "taosue",
-            "email": "st498824@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "c2ea64841a56953ac4c1b815b341dad44457ca27",
-          "message": "Update book to document `init` fallback paths when `init` parameter is omitted",
-          "timestamp": "2026-04-07T08:04:47Z",
-          "url": "https://github.com/asterinas/asterinas/commit/c2ea64841a56953ac4c1b815b341dad44457ca27"
-        },
-        "date": 1775611588615,
-        "tool": "customSmallerIsBetter",
-        "title": "[TCP sockets] The latency of connect (virtio-net)",
-        "description": "lat_connect",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average TCP connection latency on Linux",
-            "value": "84.6364",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average TCP connection latency on Asterinas",
-            "value": "263.7895",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Chen Chengjun",
             "username": "cchanging",
             "email": "chenchengjun.ccj@antgroup.com"
@@ -84432,6 +84395,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average TCP connection latency on Asterinas",
             "value": "33.2638",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Bet4",
+            "username": "bet4it",
+            "email": "0xbet4@gmail.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "37411049265056135a5e18c8c75a0c3d16b18579",
+          "message": "Add more procfs kernel compatibility files",
+          "timestamp": "2026-07-07T07:08:11Z",
+          "url": "https://github.com/asterinas/asterinas/commit/37411049265056135a5e18c8c75a0c3d16b18579"
+        },
+        "date": 1783805218223,
+        "tool": "customSmallerIsBetter",
+        "title": "[TCP sockets] The latency of connect (virtio-net)",
+        "description": "lat_connect",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average TCP connection latency on Linux",
+            "value": "26.7537",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average TCP connection latency on Asterinas",
+            "value": "37.7092",
             "unit": "µs",
             "extra": "aster_result"
           }
