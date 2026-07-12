@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1783892183935,
+  "lastUpdate": 1783892184174,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -20018,43 +20018,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2026-04-03T11:36:01Z",
           "url": "https://github.com/asterinas/asterinas/commit/f6fb67e78d5babf48939793ddb273db7048bf76c"
         },
-        "date": 1775434097069,
-        "tool": "customSmallerIsBetter",
-        "title": "[Signals] The cost of catching a signal",
-        "description": "lat_sig catch",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average Signal handler overhead on Linux",
-            "value": "1.1665",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average Signal handler overhead on Asterinas",
-            "value": "1.0841",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "f6fb67e78d5babf48939793ddb273db7048bf76c",
-          "message": "Fix `poll` behavior about invalid entries",
-          "timestamp": "2026-04-03T11:36:01Z",
-          "url": "https://github.com/asterinas/asterinas/commit/f6fb67e78d5babf48939793ddb273db7048bf76c"
-        },
         "date": 1775521190527,
         "tool": "customSmallerIsBetter",
         "title": "[Signals] The cost of catching a signal",
@@ -22216,6 +22179,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average Signal handler overhead on Asterinas",
             "value": "0.9756",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Bet4",
+            "username": "bet4it",
+            "email": "0xbet4@gmail.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "37411049265056135a5e18c8c75a0c3d16b18579",
+          "message": "Add more procfs kernel compatibility files",
+          "timestamp": "2026-07-07T07:08:11Z",
+          "url": "https://github.com/asterinas/asterinas/commit/37411049265056135a5e18c8c75a0c3d16b18579"
+        },
+        "date": 1783892184153,
+        "tool": "customSmallerIsBetter",
+        "title": "[Signals] The cost of catching a signal",
+        "description": "lat_sig catch",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average Signal handler overhead on Linux",
+            "value": "1.0263",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average Signal handler overhead on Asterinas",
+            "value": "0.9852",
             "unit": "µs",
             "extra": "aster_result"
           }
