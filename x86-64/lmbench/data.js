@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1783892178310,
+  "lastUpdate": 1783892178609,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -31128,43 +31128,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2026-03-08T05:11:59Z",
           "url": "https://github.com/asterinas/asterinas/commit/3f3ad398cd8ec9016aa4f32cd18e44a56cc4a2c5"
         },
-        "date": 1773362825564,
-        "tool": "customSmallerIsBetter",
-        "title": "[Unix sockets] The latency of write+read (1B message)",
-        "description": "lat_unix",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average unix latency on Linux",
-            "value": "4.0954",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average unix latency on Asterinas",
-            "value": "3.8075",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Tao Su",
-            "username": "taosue",
-            "email": "st498824@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "3f3ad398cd8ec9016aa4f32cd18e44a56cc4a2c5",
-          "message": "Bumped Docker image version to 0.17.1-20260308",
-          "timestamp": "2026-03-08T05:11:59Z",
-          "url": "https://github.com/asterinas/asterinas/commit/3f3ad398cd8ec9016aa4f32cd18e44a56cc4a2c5"
-        },
         "date": 1773447044334,
         "tool": "customSmallerIsBetter",
         "title": "[Unix sockets] The latency of write+read (1B message)",
@@ -33326,6 +33289,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average unix latency on Asterinas",
             "value": "3.5293",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Bet4",
+            "username": "bet4it",
+            "email": "0xbet4@gmail.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "37411049265056135a5e18c8c75a0c3d16b18579",
+          "message": "Add more procfs kernel compatibility files",
+          "timestamp": "2026-07-07T07:08:11Z",
+          "url": "https://github.com/asterinas/asterinas/commit/37411049265056135a5e18c8c75a0c3d16b18579"
+        },
+        "date": 1783892178588,
+        "tool": "customSmallerIsBetter",
+        "title": "[Unix sockets] The latency of write+read (1B message)",
+        "description": "lat_unix",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average unix latency on Linux",
+            "value": "3.5809",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average unix latency on Asterinas",
+            "value": "3.5215",
             "unit": "µs",
             "extra": "aster_result"
           }
