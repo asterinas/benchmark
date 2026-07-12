@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1783893020698,
+  "lastUpdate": 1783893020891,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ping_inline_100k_conc20_rps": [
@@ -4450,43 +4450,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Zhang Junyang",
-            "username": "junyang-zh",
-            "email": "junyang@stu.pku.edu.cn"
-          },
-          "committer": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "3329907643@qq.com"
-          },
-          "id": "73c0f34947e37216500ad6166f10b579d00b850a",
-          "message": "Remove `Arc` guards of locks that have no users",
-          "timestamp": "2025-02-05T01:50:22Z",
-          "url": "https://github.com/asterinas/asterinas/commit/73c0f34947e37216500ad6166f10b579d00b850a"
-        },
-        "date": 1763082061180,
-        "tool": "customBiggerIsBetter",
-        "title": "Redis GET performance (virtio-net, 20 concurrency, 100K requests)",
-        "description": "redis-benchmark -n 100000 -c 20 -t get",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average RPS of GET over virtio-net between Host Linux and Guest Linux",
-            "value": "96805.42",
-            "unit": "request per second",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average RPS of GET over virtio-net between Host Linux and Guest Asterinas",
-            "value": "102564.10",
-            "unit": "request per second",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Wang Siyuan",
             "username": "vvvvsv",
             "email": "wsy@stu.pku.edu.cn"
@@ -6662,6 +6625,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average RPS of GET over virtio-net between Host Linux and Guest Asterinas",
             "value": "19920.32",
+            "unit": "request per second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Bet4",
+            "username": "bet4it",
+            "email": "0xbet4@gmail.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "37411049265056135a5e18c8c75a0c3d16b18579",
+          "message": "Add more procfs kernel compatibility files",
+          "timestamp": "2026-07-07T07:08:11Z",
+          "url": "https://github.com/asterinas/asterinas/commit/37411049265056135a5e18c8c75a0c3d16b18579"
+        },
+        "date": 1783893020889,
+        "tool": "customBiggerIsBetter",
+        "title": "Redis GET performance (virtio-net, 20 concurrency, 100K requests)",
+        "description": "redis-benchmark -n 100000 -c 20 -t get",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average RPS of GET over virtio-net between Host Linux and Guest Linux",
+            "value": "108813.92",
+            "unit": "request per second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average RPS of GET over virtio-net between Host Linux and Guest Asterinas",
+            "value": "19349.84",
             "unit": "request per second",
             "extra": "aster_result"
           }
