@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1784066185407,
+  "lastUpdate": 1784066185692,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ramfs_benchmarks_vacuum": [
@@ -35558,43 +35558,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Tao Su",
-            "username": "taosue",
-            "email": "st498824@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "0615e6f6424ead8e12d73670428149fa7270571f",
-          "message": "Unify all syscall titles in SCML to level 3",
-          "timestamp": "2025-11-11T02:09:03Z",
-          "url": "https://github.com/asterinas/asterinas/commit/0615e6f6424ead8e12d73670428149fa7270571f"
-        },
-        "date": 1762974510328,
-        "tool": "customSmallerIsBetter",
-        "title": "[Ext2] The selects-ipk result of sqlite speedtest",
-        "description": "sqlite-speed-test: 70000 SELECTS on an IPK",
-        "display": false,
-        "benches": [
-          {
-            "name": "The speed of selects-ipk on Linux (Ext2)",
-            "value": "2.926",
-            "unit": "second",
-            "extra": "linux_result"
-          },
-          {
-            "name": "The speed of selects-ipk on Asterinas (Ext2)",
-            "value": "3.361",
-            "unit": "second",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Ruihan Li",
             "username": "lrh2000",
             "email": "lrh2000@pku.edu.cn"
@@ -37770,6 +37733,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "The speed of selects-ipk on Asterinas (Ext2)",
             "value": "3.681",
+            "unit": "second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Jianfeng Jiang",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "committer": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "3329907643@qq.com"
+          },
+          "id": "b91ce0947fa3cc5af74d6a1cadd8745cca48dc1d",
+          "message": "Remove redundant empty-path checks",
+          "timestamp": "2026-07-13T03:14:10Z",
+          "url": "https://github.com/asterinas/asterinas/commit/b91ce0947fa3cc5af74d6a1cadd8745cca48dc1d"
+        },
+        "date": 1784066185682,
+        "tool": "customSmallerIsBetter",
+        "title": "[Ext2] The selects-ipk result of sqlite speedtest",
+        "description": "sqlite-speed-test: 70000 SELECTS on an IPK",
+        "display": false,
+        "benches": [
+          {
+            "name": "The speed of selects-ipk on Linux (Ext2)",
+            "value": "2.552",
+            "unit": "second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "The speed of selects-ipk on Asterinas (Ext2)",
+            "value": "3.703",
             "unit": "second",
             "extra": "aster_result"
           }
