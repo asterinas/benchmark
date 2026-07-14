@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1784065045564,
+  "lastUpdate": 1784065045809,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -62236,43 +62236,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2026-03-08T05:11:59Z",
           "url": "https://github.com/asterinas/asterinas/commit/3f3ad398cd8ec9016aa4f32cd18e44a56cc4a2c5"
         },
-        "date": 1773533801396,
-        "tool": "customBiggerIsBetter",
-        "title": "[TCP sockets] The bandwidth (loopback, 128B message)",
-        "description": "bw_tcp -l",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average TCP bandwidth on Linux",
-            "value": "156.47",
-            "unit": "MB/s",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average TCP bandwidth on Asterinas",
-            "value": "121.72",
-            "unit": "MB/s",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Tao Su",
-            "username": "taosue",
-            "email": "st498824@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "3f3ad398cd8ec9016aa4f32cd18e44a56cc4a2c5",
-          "message": "Bumped Docker image version to 0.17.1-20260308",
-          "timestamp": "2026-03-08T05:11:59Z",
-          "url": "https://github.com/asterinas/asterinas/commit/3f3ad398cd8ec9016aa4f32cd18e44a56cc4a2c5"
-        },
         "date": 1773619954864,
         "tool": "customBiggerIsBetter",
         "title": "[TCP sockets] The bandwidth (loopback, 128B message)",
@@ -64434,6 +64397,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average TCP bandwidth on Asterinas",
             "value": "127.54",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Jianfeng Jiang",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "committer": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "3329907643@qq.com"
+          },
+          "id": "b91ce0947fa3cc5af74d6a1cadd8745cca48dc1d",
+          "message": "Remove redundant empty-path checks",
+          "timestamp": "2026-07-13T03:14:10Z",
+          "url": "https://github.com/asterinas/asterinas/commit/b91ce0947fa3cc5af74d6a1cadd8745cca48dc1d"
+        },
+        "date": 1784065045792,
+        "tool": "customBiggerIsBetter",
+        "title": "[TCP sockets] The bandwidth (loopback, 128B message)",
+        "description": "bw_tcp -l",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average TCP bandwidth on Linux",
+            "value": "158.39",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average TCP bandwidth on Asterinas",
+            "value": "128.40",
             "unit": "MB/s",
             "extra": "aster_result"
           }
