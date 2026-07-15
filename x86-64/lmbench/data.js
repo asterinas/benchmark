@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1784151160444,
+  "lastUpdate": 1784151160735,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -60014,43 +60014,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2026-04-03T11:36:01Z",
           "url": "https://github.com/asterinas/asterinas/commit/f6fb67e78d5babf48939793ddb273db7048bf76c"
         },
-        "date": 1775436635330,
-        "tool": "customBiggerIsBetter",
-        "title": "[Ext2] The bandwidth of copying data between files",
-        "description": "lmdd",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average file copy bandwidth on Linux",
-            "value": "1452.5021",
-            "unit": "MB/s",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average file copy bandwidth on Asterinas",
-            "value": "1917.9921",
-            "unit": "MB/s",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "f6fb67e78d5babf48939793ddb273db7048bf76c",
-          "message": "Fix `poll` behavior about invalid entries",
-          "timestamp": "2026-04-03T11:36:01Z",
-          "url": "https://github.com/asterinas/asterinas/commit/f6fb67e78d5babf48939793ddb273db7048bf76c"
-        },
         "date": 1775523779128,
         "tool": "customBiggerIsBetter",
         "title": "[Ext2] The bandwidth of copying data between files",
@@ -62212,6 +62175,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average file copy bandwidth on Asterinas",
             "value": "200.7806",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "li041",
+            "username": "li041",
+            "email": "lxh050013@outlook.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "435916bf0714a61e0fd1ebab5f6486532dedd8e4",
+          "message": "Update linux kernel binary for benchmark",
+          "timestamp": "2026-07-13T09:58:07Z",
+          "url": "https://github.com/asterinas/asterinas/commit/435916bf0714a61e0fd1ebab5f6486532dedd8e4"
+        },
+        "date": 1784151160720,
+        "tool": "customBiggerIsBetter",
+        "title": "[Ext2] The bandwidth of copying data between files",
+        "description": "lmdd",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average file copy bandwidth on Linux",
+            "value": "1582.2944",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average file copy bandwidth on Asterinas",
+            "value": "150.1563",
             "unit": "MB/s",
             "extra": "aster_result"
           }
