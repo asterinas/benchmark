@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1784239459603,
+  "lastUpdate": 1784239459977,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -4464,43 +4464,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2025-11-13T13:32:52Z",
           "url": "https://github.com/asterinas/asterinas/commit/35ab40057a50c587fcfca9a13110e2db55178b45"
         },
-        "date": 1763300254240,
-        "tool": "customSmallerIsBetter",
-        "title": "[Memory] The cost of mmap+unmap",
-        "description": "lat_mmap",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average mmap latency on Linux",
-            "value": "30",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average mmap latency on Asterinas",
-            "value": "21",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Wang Siyuan",
-            "username": "vvvvsv",
-            "email": "wsy@stu.pku.edu.cn"
-          },
-          "committer": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "3329907643@qq.com"
-          },
-          "id": "35ab40057a50c587fcfca9a13110e2db55178b45",
-          "message": "Support stopping states in `proc/pid/stat`",
-          "timestamp": "2025-11-13T13:32:52Z",
-          "url": "https://github.com/asterinas/asterinas/commit/35ab40057a50c587fcfca9a13110e2db55178b45"
-        },
         "date": 1763325080124,
         "tool": "customSmallerIsBetter",
         "title": "[Memory] The cost of mmap+unmap",
@@ -6662,6 +6625,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average mmap latency on Asterinas",
             "value": "23",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Jianfeng Jiang",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "id": "c08cd16e3d59ff36f6e4765a006bae963b44cc6e",
+          "message": "Format RTC code",
+          "timestamp": "2026-07-15T05:24:36Z",
+          "url": "https://github.com/asterinas/asterinas/commit/c08cd16e3d59ff36f6e4765a006bae963b44cc6e"
+        },
+        "date": 1784239459959,
+        "tool": "customSmallerIsBetter",
+        "title": "[Memory] The cost of mmap+unmap",
+        "description": "lat_mmap",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average mmap latency on Linux",
+            "value": "29",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average mmap latency on Asterinas",
+            "value": "22",
             "unit": "µs",
             "extra": "aster_result"
           }
