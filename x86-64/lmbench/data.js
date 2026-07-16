@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1784238279680,
+  "lastUpdate": 1784238280035,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -22240,43 +22240,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2026-04-10T08:12:34Z",
           "url": "https://github.com/asterinas/asterinas/commit/9e961e07d414a44be3e8ccb82681fc9f79f9a3ba"
         },
-        "date": 1775868820821,
-        "tool": "customSmallerIsBetter",
-        "title": "[Signals] The cost of catching a segfault",
-        "description": "lat_sig prot",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average protection fault latency on Linux",
-            "value": "0.5787",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average protection fault latency on Asterinas",
-            "value": "0.3174",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
-            "name": "Jianfeng Jiang",
-            "username": "StevenJiang1110",
-            "email": "jiangjianfeng.jjf@antgroup.com"
-          },
-          "id": "9e961e07d414a44be3e8ccb82681fc9f79f9a3ba",
-          "message": "Reorder methods in `process/exit.rs`",
-          "timestamp": "2026-04-10T08:12:34Z",
-          "url": "https://github.com/asterinas/asterinas/commit/9e961e07d414a44be3e8ccb82681fc9f79f9a3ba"
-        },
         "date": 1775954816672,
         "tool": "customSmallerIsBetter",
         "title": "[Signals] The cost of catching a segfault",
@@ -24438,6 +24401,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average protection fault latency on Asterinas",
             "value": "0.4206",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Jianfeng Jiang",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "id": "c08cd16e3d59ff36f6e4765a006bae963b44cc6e",
+          "message": "Format RTC code",
+          "timestamp": "2026-07-15T05:24:36Z",
+          "url": "https://github.com/asterinas/asterinas/commit/c08cd16e3d59ff36f6e4765a006bae963b44cc6e"
+        },
+        "date": 1784238280013,
+        "tool": "customSmallerIsBetter",
+        "title": "[Signals] The cost of catching a segfault",
+        "description": "lat_sig prot",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average protection fault latency on Linux",
+            "value": "0.4990",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average protection fault latency on Asterinas",
+            "value": "0.4115",
             "unit": "µs",
             "extra": "aster_result"
           }
