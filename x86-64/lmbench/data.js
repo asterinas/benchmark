@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1784324002018,
+  "lastUpdate": 1784324002296,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -79998,43 +79998,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Chen Chengjun",
-            "username": "cchanging",
-            "email": "chenchengjun.ccj@antgroup.com"
-          },
-          "committer": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "3329907643@qq.com"
-          },
-          "id": "974ca574a90ceb11a56a2057c397398387693e65",
-          "message": "Add tests for cgroup namespace\n\nCo-authored-by: Ruihan Li <lrh2000@pku.edu.cn>",
-          "timestamp": "2026-04-13T02:29:48Z",
-          "url": "https://github.com/asterinas/asterinas/commit/974ca574a90ceb11a56a2057c397398387693e65"
-        },
-        "date": 1776140214889,
-        "tool": "customBiggerIsBetter",
-        "title": "[TCP sockets] The bandwidth (virtio-net, 64KB message)",
-        "description": "bw_tcp -l",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average TCP bandwidth on Linux",
-            "value": "243.75",
-            "unit": "MB/sec",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average TCP bandwidth on Asterinas",
-            "value": "1.04",
-            "unit": "MB/sec",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "jiangjianfeng",
             "username": "StevenJiang1110",
             "email": "jiangjianfeng.jjf@antgroup.com"
@@ -82210,6 +82173,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average TCP bandwidth on Asterinas",
             "value": "646.93",
+            "unit": "MB/sec",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Chen Chengjun",
+            "username": "cchanging",
+            "email": "chenchengjun.ccj@antgroup.com"
+          },
+          "committer": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "3329907643@qq.com"
+          },
+          "id": "2b34b10513172de67b69502fe68df5774f6d0cb4",
+          "message": "Add regression tests",
+          "timestamp": "2026-07-16T06:46:49Z",
+          "url": "https://github.com/asterinas/asterinas/commit/2b34b10513172de67b69502fe68df5774f6d0cb4"
+        },
+        "date": 1784324002279,
+        "tool": "customBiggerIsBetter",
+        "title": "[TCP sockets] The bandwidth (virtio-net, 64KB message)",
+        "description": "bw_tcp -l",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average TCP bandwidth on Linux",
+            "value": "597.19",
+            "unit": "MB/sec",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average TCP bandwidth on Asterinas",
+            "value": "532.43",
             "unit": "MB/sec",
             "extra": "aster_result"
           }
