@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1784591684140,
+  "lastUpdate": 1784591684391,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -28892,43 +28892,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "384e5bc70da4fcc7d150140a0ae3706b6a33a91a",
-          "message": "Fix an off-by-one bug in the trap frame",
-          "timestamp": "2025-10-15T15:38:57Z",
-          "url": "https://github.com/asterinas/asterinas/commit/384e5bc70da4fcc7d150140a0ae3706b6a33a91a"
-        },
-        "date": 1760664171348,
-        "tool": "customSmallerIsBetter",
-        "title": "[FIFO] The cost of write+read (1B)",
-        "description": "lat_fifo",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average fifo latency on Linux",
-            "value": "2.2476",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average fifo latency on Asterinas",
-            "value": "2.8358",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Chen Chengjun",
             "username": "cchanging",
             "email": "chenchengjun.ccj@antgroup.com"
@@ -31104,6 +31067,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average fifo latency on Asterinas",
             "value": "3.0703",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Bet4",
+            "username": "bet4it",
+            "email": "0xbet4@gmail.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "e155c3b6d8a03d08129edcc73de4ab02d38fc37a",
+          "message": "Document sysinfo compatibility",
+          "timestamp": "2026-07-15T03:23:13Z",
+          "url": "https://github.com/asterinas/asterinas/commit/e155c3b6d8a03d08129edcc73de4ab02d38fc37a"
+        },
+        "date": 1784591684372,
+        "tool": "customSmallerIsBetter",
+        "title": "[FIFO] The cost of write+read (1B)",
+        "description": "lat_fifo",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average fifo latency on Linux",
+            "value": "2.2745",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average fifo latency on Asterinas",
+            "value": "3.0753",
             "unit": "µs",
             "extra": "aster_result"
           }
