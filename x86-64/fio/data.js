@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1784584393268,
+  "lastUpdate": 1784584393520,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_seq_write_bw": [
@@ -2228,43 +2228,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Wang Siyuan",
-            "username": "vvvvsv",
-            "email": "wsy@stu.pku.edu.cn"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "c19ab3fa98f66459ff166ee5ab013ee550e671d2",
-          "message": "Add `SKIP_TEST_IF` to the general test framework",
-          "timestamp": "2026-03-19T12:59:05Z",
-          "url": "https://github.com/asterinas/asterinas/commit/c19ab3fa98f66459ff166ee5ab013ee550e671d2"
-        },
-        "date": 1775322853655,
-        "tool": "customBiggerIsBetter",
-        "title": "[Ext2] The bandwidth of sequential reads",
-        "description": "fio -filename=/ext2/fio-test -size=1G -bs=1M -direct=1",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average file read bandwidth on Linux",
-            "value": "2209",
-            "unit": "MB/s",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average file read bandwidth on Asterinas",
-            "value": "1401",
-            "unit": "MB/s",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Jianfeng Jiang",
             "username": "StevenJiang1110",
             "email": "jiangjianfeng.jjf@antgroup.com"
@@ -4440,6 +4403,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average file read bandwidth on Asterinas",
             "value": "2524",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Bet4",
+            "username": "bet4it",
+            "email": "0xbet4@gmail.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "e155c3b6d8a03d08129edcc73de4ab02d38fc37a",
+          "message": "Document sysinfo compatibility",
+          "timestamp": "2026-07-15T03:23:13Z",
+          "url": "https://github.com/asterinas/asterinas/commit/e155c3b6d8a03d08129edcc73de4ab02d38fc37a"
+        },
+        "date": 1784584393518,
+        "tool": "customBiggerIsBetter",
+        "title": "[Ext2] The bandwidth of sequential reads",
+        "description": "fio -filename=/ext2/fio-test -size=1G -bs=1M -direct=1",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average file read bandwidth on Linux",
+            "value": "3335",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average file read bandwidth on Asterinas",
+            "value": "2513",
             "unit": "MB/s",
             "extra": "aster_result"
           }
