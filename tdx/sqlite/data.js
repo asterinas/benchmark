@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1784672208690,
+  "lastUpdate": 1784672209000,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ramfs_benchmarks_vacuum": [
@@ -8894,43 +8894,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Zejun Zhao",
-            "username": "jellllly420",
-            "email": "jelly.zhao.42@gmail.com"
-          },
-          "committer": {
-            "name": "Junyang Zhang",
-            "username": "junyang-zh",
-            "email": "user@junyang.me"
-          },
-          "id": "8251d48bf26f169c2c0b14825b2721472e8159cf",
-          "message": "Add RISC-V PLIC support",
-          "timestamp": "2025-05-28T07:35:00Z",
-          "url": "https://github.com/asterinas/asterinas/commit/8251d48bf26f169c2c0b14825b2721472e8159cf"
-        },
-        "date": 1761345457492,
-        "tool": "customSmallerIsBetter",
-        "title": "[Ramfs] The total result of sqlite speedtest",
-        "description": "sqlite-speed-test: total",
-        "display": false,
-        "benches": [
-          {
-            "name": "Total speed on Linux (Ramfs)",
-            "value": "58.198",
-            "unit": "second",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Total speed on Asterinas (Ramfs)",
-            "value": "64.201",
-            "unit": "second",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Arthur Paulino",
             "username": "arthurpaulino",
             "email": "arthurleonardo.ap@gmail.com"
@@ -11106,6 +11069,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Total speed on Asterinas (Ramfs)",
             "value": "64.005",
+            "unit": "second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "1b22aab02a161013cf11d200c9a28a2e58d4737b",
+          "message": "Enforce no trailing whitespace",
+          "timestamp": "2026-07-17T10:44:24Z",
+          "url": "https://github.com/asterinas/asterinas/commit/1b22aab02a161013cf11d200c9a28a2e58d4737b"
+        },
+        "date": 1784672208990,
+        "tool": "customSmallerIsBetter",
+        "title": "[Ramfs] The total result of sqlite speedtest",
+        "description": "sqlite-speed-test: total",
+        "display": false,
+        "benches": [
+          {
+            "name": "Total speed on Linux (Ramfs)",
+            "value": "58.371",
+            "unit": "second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Total speed on Asterinas (Ramfs)",
+            "value": "64.545",
             "unit": "second",
             "extra": "aster_result"
           }
