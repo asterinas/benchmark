@@ -1,45 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1784672213647,
+  "lastUpdate": 1784757344384,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ramfs_benchmarks_vacuum": [
-      {
-        "commit": {
-          "author": {
-            "name": "Zejun Zhao",
-            "username": "jellllly420",
-            "email": "jelly.zhao.42@gmail.com"
-          },
-          "committer": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "3329907643@qq.com"
-          },
-          "id": "899db770f62234e89590ce1ae35067f7082107a5",
-          "message": "Fix parameter passing of `preadv/pwritev`-family syscalls",
-          "timestamp": "2025-09-27T17:35:30Z",
-          "url": "https://github.com/asterinas/asterinas/commit/899db770f62234e89590ce1ae35067f7082107a5"
-        },
-        "date": 1759099369138,
-        "tool": "customSmallerIsBetter",
-        "title": "[Ramfs] The 'VACUUM' result of sqlite speedtest",
-        "description": "sqlite-speed-test: repacking database file into a minimal amount of disk space",
-        "display": false,
-        "benches": [
-          {
-            "name": "The speed of VACUUM on Linux (Ramfs)",
-            "value": "0.837",
-            "unit": "second",
-            "extra": "linux_result"
-          },
-          {
-            "name": "The speed of VACUUM on Asterinas (Ramfs)",
-            "value": "0.846",
-            "unit": "second",
-            "extra": "aster_result"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2218,6 +2181,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "The speed of VACUUM on Asterinas (Ramfs)",
             "value": "0.863",
+            "unit": "second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Junyang Zhang",
+            "username": "junyang-zh",
+            "email": "user@junyang.me"
+          },
+          "id": "5c05f837d9bcdcdc8b4bf3ba8a837e5df0eb9749",
+          "message": "Use `map_untracked` to simplify code",
+          "timestamp": "2026-07-21T01:23:35Z",
+          "url": "https://github.com/asterinas/asterinas/commit/5c05f837d9bcdcdc8b4bf3ba8a837e5df0eb9749"
+        },
+        "date": 1784757344374,
+        "tool": "customSmallerIsBetter",
+        "title": "[Ramfs] The 'VACUUM' result of sqlite speedtest",
+        "description": "sqlite-speed-test: repacking database file into a minimal amount of disk space",
+        "display": false,
+        "benches": [
+          {
+            "name": "The speed of VACUUM on Linux (Ramfs)",
+            "value": "0.847",
+            "unit": "second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "The speed of VACUUM on Asterinas (Ramfs)",
+            "value": "0.851",
             "unit": "second",
             "extra": "aster_result"
           }
