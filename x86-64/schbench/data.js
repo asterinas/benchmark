@@ -1,45 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1784755988828,
+  "lastUpdate": 1784755989132,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "smp1_p50_rps": [
-      {
-        "commit": {
-          "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
-            "name": "Jianfeng Jiang",
-            "username": "StevenJiang1110",
-            "email": "jiangjianfeng.jjf@antgroup.com"
-          },
-          "id": "18b1fb6255456808b5b42867344f7216179a1cc5",
-          "message": "Check privileged ports in `bind()`",
-          "timestamp": "2026-04-15T15:51:50Z",
-          "url": "https://github.com/asterinas/asterinas/commit/18b1fb6255456808b5b42867344f7216179a1cc5"
-        },
-        "date": 1776383498164,
-        "tool": "customBiggerIsBetter",
-        "title": "[Scheduler] P50 RPS while max-loading all CPUs (SMP=1)",
-        "description": "schbench -F 256 -n 5 -r 90",
-        "display": false,
-        "benches": [
-          {
-            "name": "P50 RPS of schbench on Linux",
-            "value": "0",
-            "unit": "requests per second",
-            "extra": "linux_result"
-          },
-          {
-            "name": "P50 RPS of schbench on Asterinas",
-            "value": "0",
-            "unit": "requests per second",
-            "extra": "aster_result"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2204,6 +2167,43 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/asterinas/asterinas/commit/1b22aab02a161013cf11d200c9a28a2e58d4737b"
         },
         "date": 1784669903307,
+        "tool": "customBiggerIsBetter",
+        "title": "[Scheduler] P50 RPS while max-loading all CPUs (SMP=1)",
+        "description": "schbench -F 256 -n 5 -r 90",
+        "display": false,
+        "benches": [
+          {
+            "name": "P50 RPS of schbench on Linux",
+            "value": "0",
+            "unit": "requests per second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "P50 RPS of schbench on Asterinas",
+            "value": "0",
+            "unit": "requests per second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Junyang Zhang",
+            "username": "junyang-zh",
+            "email": "user@junyang.me"
+          },
+          "id": "5c05f837d9bcdcdc8b4bf3ba8a837e5df0eb9749",
+          "message": "Use `map_untracked` to simplify code",
+          "timestamp": "2026-07-21T01:23:35Z",
+          "url": "https://github.com/asterinas/asterinas/commit/5c05f837d9bcdcdc8b4bf3ba8a837e5df0eb9749"
+        },
+        "date": 1784755989129,
         "tool": "customBiggerIsBetter",
         "title": "[Scheduler] P50 RPS while max-loading all CPUs (SMP=1)",
         "description": "schbench -F 256 -n 5 -r 90",
