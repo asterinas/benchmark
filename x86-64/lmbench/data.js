@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1784842921810,
+  "lastUpdate": 1784842922143,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -11116,43 +11116,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "jiangjianfeng",
-            "username": "StevenJiang1110",
-            "email": "jiangjianfeng.jjf@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "72e395b5f10d6f87e28b813adb40370c7b54cbb4",
-          "message": "Bump libflate to 2.3.0 and replace core2",
-          "timestamp": "2026-04-15T11:25:41Z",
-          "url": "https://github.com/asterinas/asterinas/commit/72e395b5f10d6f87e28b813adb40370c7b54cbb4"
-        },
-        "date": 1776304676624,
-        "tool": "customSmallerIsBetter",
-        "title": "[Process] The cost of fork+exit",
-        "description": "lat_proc fork",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average Fork latency on Linux",
-            "value": "159.5429",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average Fork latency on Asterinas",
-            "value": "147.5588",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Tate, Hongliang Tian",
             "username": "tatetian",
             "email": "tate.thl@antgroup.com"
@@ -13328,6 +13291,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average Fork latency on Asterinas",
             "value": "143.0000",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Junyang Zhang",
+            "username": "junyang-zh",
+            "email": "user@junyang.me"
+          },
+          "id": "276552ed5ea09fe019d391e24aebd0980a80b1d6",
+          "message": "Rewrite safety comments for `KVirtArea::drop`",
+          "timestamp": "2026-07-22T11:25:09Z",
+          "url": "https://github.com/asterinas/asterinas/commit/276552ed5ea09fe019d391e24aebd0980a80b1d6"
+        },
+        "date": 1784842922125,
+        "tool": "customSmallerIsBetter",
+        "title": "[Process] The cost of fork+exit",
+        "description": "lat_proc fork",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average Fork latency on Linux",
+            "value": "138.9500",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average Fork latency on Asterinas",
+            "value": "140.4750",
             "unit": "µs",
             "extra": "aster_result"
           }
