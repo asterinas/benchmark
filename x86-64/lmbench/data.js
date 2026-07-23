@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1784842924593,
+  "lastUpdate": 1784842924928,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -4450,43 +4450,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Marsman1996",
-            "username": "Marsman1996",
-            "email": "lqliuyuwei@outlook.com"
-          },
-          "committer": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "3329907643@qq.com"
-          },
-          "id": "0896044646a8c4ddd745479482a49d8edf0f50f3",
-          "message": "Fix fork and vfork panic on pids.max exhaustion",
-          "timestamp": "2026-04-09T08:48:00Z",
-          "url": "https://github.com/asterinas/asterinas/commit/0896044646a8c4ddd745479482a49d8edf0f50f3"
-        },
-        "date": 1775784772569,
-        "tool": "customSmallerIsBetter",
-        "title": "[Memory] The cost of mmap+unmap",
-        "description": "lat_mmap",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average mmap latency on Linux",
-            "value": "45",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average mmap latency on Asterinas",
-            "value": "25",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Ruihan Li",
             "username": "lrh2000",
             "email": "lrh2000@pku.edu.cn"
@@ -6656,6 +6619,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average mmap latency on Linux",
             "value": "28",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average mmap latency on Asterinas",
+            "value": "21",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Junyang Zhang",
+            "username": "junyang-zh",
+            "email": "user@junyang.me"
+          },
+          "id": "276552ed5ea09fe019d391e24aebd0980a80b1d6",
+          "message": "Rewrite safety comments for `KVirtArea::drop`",
+          "timestamp": "2026-07-22T11:25:09Z",
+          "url": "https://github.com/asterinas/asterinas/commit/276552ed5ea09fe019d391e24aebd0980a80b1d6"
+        },
+        "date": 1784842924906,
+        "tool": "customSmallerIsBetter",
+        "title": "[Memory] The cost of mmap+unmap",
+        "description": "lat_mmap",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average mmap latency on Linux",
+            "value": "27",
             "unit": "µs",
             "extra": "linux_result"
           },
