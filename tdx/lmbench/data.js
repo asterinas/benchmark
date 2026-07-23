@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1784844455560,
+  "lastUpdate": 1784844455824,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -97788,43 +97788,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2025-11-13T13:32:52Z",
           "url": "https://github.com/asterinas/asterinas/commit/35ab40057a50c587fcfca9a13110e2db55178b45"
         },
-        "date": 1763300082478,
-        "tool": "customBiggerIsBetter",
-        "title": "[Memory] The bandwidth of reading integers",
-        "description": "bw_mem frd",
-        "display": false,
-        "benches": [
-          {
-            "name": "Average memory read bandwidth on Linux",
-            "value": "10275.63",
-            "unit": "MB/s",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average memory read bandwidth on Asterinas",
-            "value": "9684.52",
-            "unit": "MB/s",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Wang Siyuan",
-            "username": "vvvvsv",
-            "email": "wsy@stu.pku.edu.cn"
-          },
-          "committer": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "3329907643@qq.com"
-          },
-          "id": "35ab40057a50c587fcfca9a13110e2db55178b45",
-          "message": "Support stopping states in `proc/pid/stat`",
-          "timestamp": "2025-11-13T13:32:52Z",
-          "url": "https://github.com/asterinas/asterinas/commit/35ab40057a50c587fcfca9a13110e2db55178b45"
-        },
         "date": 1763324909207,
         "tool": "customBiggerIsBetter",
         "title": "[Memory] The bandwidth of reading integers",
@@ -99986,6 +99949,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average memory read bandwidth on Asterinas",
             "value": "12726.88",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Junyang Zhang",
+            "username": "junyang-zh",
+            "email": "user@junyang.me"
+          },
+          "id": "276552ed5ea09fe019d391e24aebd0980a80b1d6",
+          "message": "Rewrite safety comments for `KVirtArea::drop`",
+          "timestamp": "2026-07-22T11:25:09Z",
+          "url": "https://github.com/asterinas/asterinas/commit/276552ed5ea09fe019d391e24aebd0980a80b1d6"
+        },
+        "date": 1784844455803,
+        "tool": "customBiggerIsBetter",
+        "title": "[Memory] The bandwidth of reading integers",
+        "description": "bw_mem frd",
+        "display": false,
+        "benches": [
+          {
+            "name": "Average memory read bandwidth on Linux",
+            "value": "10396.82",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average memory read bandwidth on Asterinas",
+            "value": "12704.90",
             "unit": "MB/s",
             "extra": "aster_result"
           }
