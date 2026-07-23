@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1784842898104,
+  "lastUpdate": 1784842898433,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_deletes_between": [
@@ -73332,43 +73332,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2026-03-05T08:19:08Z",
           "url": "https://github.com/asterinas/asterinas/commit/aa44d6e4975b86427e686b1996cbd0967da7b264"
         },
-        "date": 1776726249974,
-        "tool": "customSmallerIsBetter",
-        "title": "[Ramfs] The updates-between result of sqlite speedtest",
-        "description": "sqlite-speed-test: 10000 UPDATES, numeric BETWEEN, indexed",
-        "display": false,
-        "benches": [
-          {
-            "name": "The speed of updates-between on Linux (Ramfs)",
-            "value": "1.969",
-            "unit": "second",
-            "extra": "linux_result"
-          },
-          {
-            "name": "The speed of updates-between on Asterinas (Ramfs)",
-            "value": "1.967",
-            "unit": "second",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Jianfeng Jiang",
-            "username": "StevenJiang1110",
-            "email": "jiangjianfeng.jjf@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "aa44d6e4975b86427e686b1996cbd0967da7b264",
-          "message": "Add IPC namespace support",
-          "timestamp": "2026-03-05T08:19:08Z",
-          "url": "https://github.com/asterinas/asterinas/commit/aa44d6e4975b86427e686b1996cbd0967da7b264"
-        },
         "date": 1776812167998,
         "tool": "customSmallerIsBetter",
         "title": "[Ramfs] The updates-between result of sqlite speedtest",
@@ -75524,6 +75487,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "The speed of updates-between on Linux (Ramfs)",
             "value": "1.758",
+            "unit": "second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "The speed of updates-between on Asterinas (Ramfs)",
+            "value": "1.853",
+            "unit": "second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Junyang Zhang",
+            "username": "junyang-zh",
+            "email": "user@junyang.me"
+          },
+          "id": "276552ed5ea09fe019d391e24aebd0980a80b1d6",
+          "message": "Rewrite safety comments for `KVirtArea::drop`",
+          "timestamp": "2026-07-22T11:25:09Z",
+          "url": "https://github.com/asterinas/asterinas/commit/276552ed5ea09fe019d391e24aebd0980a80b1d6"
+        },
+        "date": 1784842898417,
+        "tool": "customSmallerIsBetter",
+        "title": "[Ramfs] The updates-between result of sqlite speedtest",
+        "description": "sqlite-speed-test: 10000 UPDATES, numeric BETWEEN, indexed",
+        "display": false,
+        "benches": [
+          {
+            "name": "The speed of updates-between on Linux (Ramfs)",
+            "value": "1.757",
             "unit": "second",
             "extra": "linux_result"
           },
