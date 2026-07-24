@@ -1,45 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1784930411720,
+  "lastUpdate": 1784930412011,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "cpu_lat": [
-      {
-        "commit": {
-          "author": {
-            "name": "Wei Zhang",
-            "username": "TinaZhangZW",
-            "email": "ruoyuan.zw@antgroup.com"
-          },
-          "committer": {
-            "name": "Jianfeng Jiang",
-            "username": "StevenJiang1110",
-            "email": "jiangjianfeng.jjf@antgroup.com"
-          },
-          "id": "8a801676ab2f827e1d6e4d1ec6803261b5e7859c",
-          "message": "Disallow masking SIGKILL and SIGSTOP in user space\n\nAccording to the Linux man pages[1], \"It is not possible to block SIGKILL\nor SIGSTOP. Attempts to do so are silently ignored.\" This patch ensures\ncompliance by explicitly removing SIGKILL and SIGSTOP from the signal\nmask in the `MaskOp::SetMask` operation of the `rt_sigprocmask` syscall.\n\n[1]: https://www.man7.org/linux/man-pages/man2/sigprocmask.2.html",
-          "timestamp": "2025-07-17T08:55:05Z",
-          "url": "https://github.com/asterinas/asterinas/commit/8a801676ab2f827e1d6e4d1ec6803261b5e7859c"
-        },
-        "date": 1753789653475,
-        "tool": "customSmallerIsBetter",
-        "title": "[CPU] CPU performance",
-        "description": "sysbench cpu",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average Execution Time per CPU on Linux",
-            "value": "4.02",
-            "unit": "ms",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average Execution Time per CPU on Asterinas",
-            "value": "4.07",
-            "unit": "ms",
-            "extra": "aster_result"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2218,6 +2181,42 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average Execution Time per CPU on Asterinas",
             "value": "4.09",
+            "unit": "ms",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "yao",
+            "email": "yoohoo1287@gmail.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "6c314ef6da150a9ce394642bbb0d89c81b045da6",
+          "message": "Fix aster-code-review total_defects to nreal",
+          "timestamp": "2026-07-21T02:58:14Z",
+          "url": "https://github.com/asterinas/asterinas/commit/6c314ef6da150a9ce394642bbb0d89c81b045da6"
+        },
+        "date": 1784930412009,
+        "tool": "customSmallerIsBetter",
+        "title": "[CPU] CPU performance",
+        "description": "sysbench cpu",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average Execution Time per CPU on Linux",
+            "value": "4.11",
+            "unit": "ms",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average Execution Time per CPU on Asterinas",
+            "value": "4.08",
             "unit": "ms",
             "extra": "aster_result"
           }
