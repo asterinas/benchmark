@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1784929331022,
+  "lastUpdate": 1784929331479,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_deletes_between": [
@@ -68874,43 +68874,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Jianfeng Jiang",
-            "username": "StevenJiang1110",
-            "email": "jiangjianfeng.jjf@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "aa44d6e4975b86427e686b1996cbd0967da7b264",
-          "message": "Add IPC namespace support",
-          "timestamp": "2026-03-05T08:19:08Z",
-          "url": "https://github.com/asterinas/asterinas/commit/aa44d6e4975b86427e686b1996cbd0967da7b264"
-        },
-        "date": 1776812438335,
-        "tool": "customSmallerIsBetter",
-        "title": "[Ramfs] The selects-text-pk result of sqlite speedtest",
-        "description": "sqlite-speed-test: 70000 SELECTS on a TEXT PK",
-        "display": false,
-        "benches": [
-          {
-            "name": "The speed of selects-text-pk on Linux (Ramfs)",
-            "value": "3.552",
-            "unit": "second",
-            "extra": "linux_result"
-          },
-          {
-            "name": "The speed of selects-text-pk on Asterinas (Ramfs)",
-            "value": "3.331",
-            "unit": "second",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Ruihan Li",
             "username": "lrh2000",
             "email": "lrh2000@pku.edu.cn"
@@ -71086,6 +71049,42 @@ window.BENCHMARK_DATA = {
           {
             "name": "The speed of selects-text-pk on Asterinas (Ramfs)",
             "value": "3.485",
+            "unit": "second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "yao",
+            "email": "yoohoo1287@gmail.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "6c314ef6da150a9ce394642bbb0d89c81b045da6",
+          "message": "Fix aster-code-review total_defects to nreal",
+          "timestamp": "2026-07-21T02:58:14Z",
+          "url": "https://github.com/asterinas/asterinas/commit/6c314ef6da150a9ce394642bbb0d89c81b045da6"
+        },
+        "date": 1784929331468,
+        "tool": "customSmallerIsBetter",
+        "title": "[Ramfs] The selects-text-pk result of sqlite speedtest",
+        "description": "sqlite-speed-test: 70000 SELECTS on a TEXT PK",
+        "display": false,
+        "benches": [
+          {
+            "name": "The speed of selects-text-pk on Linux (Ramfs)",
+            "value": "3.295",
+            "unit": "second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "The speed of selects-text-pk on Asterinas (Ramfs)",
+            "value": "3.488",
             "unit": "second",
             "extra": "aster_result"
           }
