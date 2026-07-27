@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1785190927822,
+  "lastUpdate": 1785190928013,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "smp8_p99_wakeup_latency": [
@@ -11103,43 +11103,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "f6fb67e78d5babf48939793ddb273db7048bf76c",
-          "message": "Fix `poll` behavior about invalid entries",
-          "timestamp": "2026-04-03T11:36:01Z",
-          "url": "https://github.com/asterinas/asterinas/commit/f6fb67e78d5babf48939793ddb273db7048bf76c"
-        },
-        "date": 1775527023940,
-        "tool": "customBiggerIsBetter",
-        "title": "[Scheduler] P50 RPS while max-loading all CPUs (SMP=1)",
-        "description": "schbench -F 256 -n 5 -r 90",
-        "display": false,
-        "benches": [
-          {
-            "name": "P50 RPS of schbench on Linux",
-            "value": "0",
-            "unit": "requests per second",
-            "extra": "linux_result"
-          },
-          {
-            "name": "P50 RPS of schbench on Asterinas",
-            "value": "0",
-            "unit": "requests per second",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Tao Su",
             "username": "taosue",
             "email": "st498824@antgroup.com"
@@ -13299,6 +13262,43 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/asterinas/asterinas/commit/6c314ef6da150a9ce394642bbb0d89c81b045da6"
         },
         "date": 1785102790960,
+        "tool": "customBiggerIsBetter",
+        "title": "[Scheduler] P50 RPS while max-loading all CPUs (SMP=1)",
+        "description": "schbench -F 256 -n 5 -r 90",
+        "display": false,
+        "benches": [
+          {
+            "name": "P50 RPS of schbench on Linux",
+            "value": "0",
+            "unit": "requests per second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "P50 RPS of schbench on Asterinas",
+            "value": "0",
+            "unit": "requests per second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "li041",
+            "username": "li041",
+            "email": "lxh050013@outlook.com"
+          },
+          "committer": {
+            "name": "Jianfeng Jiang",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "id": "6e57d226d3b3db6d733aaa6ad05cc80c207f96c6",
+          "message": "Refine virtiofs attr revalidation",
+          "timestamp": "2026-07-22T13:16:18Z",
+          "url": "https://github.com/asterinas/asterinas/commit/6e57d226d3b3db6d733aaa6ad05cc80c207f96c6"
+        },
+        "date": 1785190928010,
         "tool": "customBiggerIsBetter",
         "title": "[Scheduler] P50 RPS while max-loading all CPUs (SMP=1)",
         "description": "schbench -F 256 -n 5 -r 90",
