@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1785190944046,
+  "lastUpdate": 1785190944332,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -99879,43 +99879,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2026-04-03T11:36:01Z",
           "url": "https://github.com/asterinas/asterinas/commit/f6fb67e78d5babf48939793ddb273db7048bf76c"
         },
-        "date": 1775446861907,
-        "tool": "customBiggerIsBetter",
-        "title": "[Memory] The bandwidth of copying integers",
-        "description": "bw_mem fcp",
-        "display": false,
-        "benches": [
-          {
-            "name": "Average memory copy bandwidth on Linux",
-            "value": "5639.70",
-            "unit": "MB/s",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average memory copy bandwidth on Asterinas",
-            "value": "5332.08",
-            "unit": "MB/s",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "f6fb67e78d5babf48939793ddb273db7048bf76c",
-          "message": "Fix `poll` behavior about invalid entries",
-          "timestamp": "2026-04-03T11:36:01Z",
-          "url": "https://github.com/asterinas/asterinas/commit/f6fb67e78d5babf48939793ddb273db7048bf76c"
-        },
         "date": 1775534266487,
         "tool": "customBiggerIsBetter",
         "title": "[Memory] The bandwidth of copying integers",
@@ -102074,6 +102037,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average memory copy bandwidth on Asterinas",
             "value": "5723.39",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "li041",
+            "username": "li041",
+            "email": "lxh050013@outlook.com"
+          },
+          "committer": {
+            "name": "Jianfeng Jiang",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "id": "6e57d226d3b3db6d733aaa6ad05cc80c207f96c6",
+          "message": "Refine virtiofs attr revalidation",
+          "timestamp": "2026-07-22T13:16:18Z",
+          "url": "https://github.com/asterinas/asterinas/commit/6e57d226d3b3db6d733aaa6ad05cc80c207f96c6"
+        },
+        "date": 1785190944314,
+        "tool": "customBiggerIsBetter",
+        "title": "[Memory] The bandwidth of copying integers",
+        "description": "bw_mem fcp",
+        "display": false,
+        "benches": [
+          {
+            "name": "Average memory copy bandwidth on Linux",
+            "value": "5309.51",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average memory copy bandwidth on Asterinas",
+            "value": "6160.73",
             "unit": "MB/s",
             "extra": "aster_result"
           }
