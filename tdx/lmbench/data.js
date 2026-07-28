@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1785279753430,
+  "lastUpdate": 1785279753810,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -11101,43 +11101,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
-            "name": "Jianfeng Jiang",
-            "username": "StevenJiang1110",
-            "email": "jiangjianfeng.jjf@antgroup.com"
-          },
-          "id": "9e961e07d414a44be3e8ccb82681fc9f79f9a3ba",
-          "message": "Reorder methods in `process/exit.rs`",
-          "timestamp": "2026-04-10T08:12:34Z",
-          "url": "https://github.com/asterinas/asterinas/commit/9e961e07d414a44be3e8ccb82681fc9f79f9a3ba"
-        },
-        "date": 1776047459215,
-        "tool": "customSmallerIsBetter",
-        "title": "[Process] The cost of fork+exit",
-        "description": "lat_proc fork",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average Fork latency on Linux",
-            "value": "194.1071",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average Fork latency on Asterinas",
-            "value": "164.2090",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Chen Chengjun",
             "username": "cchanging",
             "email": "chenchengjun.ccj@antgroup.com"
@@ -13310,6 +13273,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average Fork latency on Asterinas",
             "value": "159.5714",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Jianfeng Jiang",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "id": "8a95431093609ed1ecca15b13e4568118513fe06",
+          "message": "Adjust signalfd method signatures and comments",
+          "timestamp": "2026-07-28T08:41:15Z",
+          "url": "https://github.com/asterinas/asterinas/commit/8a95431093609ed1ecca15b13e4568118513fe06"
+        },
+        "date": 1785279753796,
+        "tool": "customSmallerIsBetter",
+        "title": "[Process] The cost of fork+exit",
+        "description": "lat_proc fork",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average Fork latency on Linux",
+            "value": "164.1290",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average Fork latency on Asterinas",
+            "value": "161.2857",
             "unit": "µs",
             "extra": "aster_result"
           }
