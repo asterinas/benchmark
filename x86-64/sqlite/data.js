@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1785793151958,
+  "lastUpdate": 1785793152260,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_deletes_between": [
@@ -59950,43 +59950,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2026-05-29T08:23:11Z",
           "url": "https://github.com/asterinas/asterinas/commit/ba344a4cc532186ac1b8ab5468001f7ef3f388fd"
         },
-        "date": 1780177942819,
-        "tool": "customSmallerIsBetter",
-        "title": "[Ramfs] The deletes-between result of sqlite speedtest",
-        "description": "sqlite-speed-test: 10000 DELETEs, numeric BETWEEN, indexed",
-        "display": false,
-        "benches": [
-          {
-            "name": "The speed of deletes-between on Linux (Ramfs)",
-            "value": "2.155",
-            "unit": "second",
-            "extra": "linux_result"
-          },
-          {
-            "name": "The speed of deletes-between on Asterinas (Ramfs)",
-            "value": "2.483",
-            "unit": "second",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Marsman1996",
-            "username": "Marsman1996",
-            "email": "lqliuyuwei@outlook.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "ba344a4cc532186ac1b8ab5468001f7ef3f388fd",
-          "message": "Add regression test for clock_nanosleep unknown flags bits",
-          "timestamp": "2026-05-29T08:23:11Z",
-          "url": "https://github.com/asterinas/asterinas/commit/ba344a4cc532186ac1b8ab5468001f7ef3f388fd"
-        },
         "date": 1780264421439,
         "tool": "customSmallerIsBetter",
         "title": "[Ramfs] The deletes-between result of sqlite speedtest",
@@ -62143,6 +62106,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "The speed of deletes-between on Asterinas (Ramfs)",
             "value": "2.530",
+            "unit": "second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Jianfeng Jiang",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "id": "3389b533f894f855e946e975daa29f7a46b54171",
+          "message": "Pass `&mut FsCreationCtx` to `FsType`",
+          "timestamp": "2026-08-03T09:15:59Z",
+          "url": "https://github.com/asterinas/asterinas/commit/3389b533f894f855e946e975daa29f7a46b54171"
+        },
+        "date": 1785793152249,
+        "tool": "customSmallerIsBetter",
+        "title": "[Ramfs] The deletes-between result of sqlite speedtest",
+        "description": "sqlite-speed-test: 10000 DELETEs, numeric BETWEEN, indexed",
+        "display": false,
+        "benches": [
+          {
+            "name": "The speed of deletes-between on Linux (Ramfs)",
+            "value": "2.126",
+            "unit": "second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "The speed of deletes-between on Asterinas (Ramfs)",
+            "value": "2.522",
             "unit": "second",
             "extra": "aster_result"
           }
