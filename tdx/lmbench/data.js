@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1785740520897,
+  "lastUpdate": 1785740521293,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -51020,43 +51020,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "34ff028f4c79dcc643decc18811a33219ead7ae8",
-          "message": "Reimplement vsock sockets",
-          "timestamp": "2026-04-06T15:14:21Z",
-          "url": "https://github.com/asterinas/asterinas/commit/34ff028f4c79dcc643decc18811a33219ead7ae8"
-        },
-        "date": 1777001068006,
-        "tool": "customSmallerIsBetter",
-        "title": "[VFS] The cost of select (file fds)",
-        "description": "lat_select",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average select file latency on Linux",
-            "value": "1.0950",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average select file latency on Asterinas",
-            "value": "1.4596",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Qingsong Chen",
             "username": "cqs21",
             "email": "changxian.cqs@antgroup.com"
@@ -53228,6 +53191,42 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average select file latency on Asterinas",
             "value": "1.4642",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Martin Holovsky",
+            "email": "coding@probably.group"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "397ee46b2cf8413c8a30083362526d607e82d6e7",
+          "message": "Stop hardcoding the pinned nightly version in docs\n\nBoth references had drifted to nightly-2025-12-06 while rust-toolchain.toml\npins nightly-2026-07-21. Point at the manifest instead, so they cannot go\nstale again.",
+          "timestamp": "2026-07-29T18:44:57Z",
+          "url": "https://github.com/asterinas/asterinas/commit/397ee46b2cf8413c8a30083362526d607e82d6e7"
+        },
+        "date": 1785740521276,
+        "tool": "customSmallerIsBetter",
+        "title": "[VFS] The cost of select (file fds)",
+        "description": "lat_select",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average select file latency on Linux",
+            "value": "1.0828",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average select file latency on Asterinas",
+            "value": "1.4628",
             "unit": "µs",
             "extra": "aster_result"
           }
