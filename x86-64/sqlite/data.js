@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1785736604667,
+  "lastUpdate": 1785736604961,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_deletes_between": [
@@ -75486,43 +75486,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2026-05-29T08:23:11Z",
           "url": "https://github.com/asterinas/asterinas/commit/ba344a4cc532186ac1b8ab5468001f7ef3f388fd"
         },
-        "date": 1780176919456,
-        "tool": "customSmallerIsBetter",
-        "title": "[Ramfs] The updates-big-one result of sqlite speedtest",
-        "description": "sqlite-speed-test: One big UPDATE of the whole 50000-row table",
-        "display": false,
-        "benches": [
-          {
-            "name": "The speed of updates-big-one on Linux (Ramfs)",
-            "value": "0.086",
-            "unit": "second",
-            "extra": "linux_result"
-          },
-          {
-            "name": "The speed of updates-big-one on Asterinas (Ramfs)",
-            "value": "0.088",
-            "unit": "second",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Marsman1996",
-            "username": "Marsman1996",
-            "email": "lqliuyuwei@outlook.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "ba344a4cc532186ac1b8ab5468001f7ef3f388fd",
-          "message": "Add regression test for clock_nanosleep unknown flags bits",
-          "timestamp": "2026-05-29T08:23:11Z",
-          "url": "https://github.com/asterinas/asterinas/commit/ba344a4cc532186ac1b8ab5468001f7ef3f388fd"
-        },
         "date": 1780263390259,
         "tool": "customSmallerIsBetter",
         "title": "[Ramfs] The updates-big-one result of sqlite speedtest",
@@ -77680,6 +77643,42 @@ window.BENCHMARK_DATA = {
           {
             "name": "The speed of updates-big-one on Asterinas (Ramfs)",
             "value": "0.094",
+            "unit": "second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Martin Holovsky",
+            "email": "coding@probably.group"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "397ee46b2cf8413c8a30083362526d607e82d6e7",
+          "message": "Stop hardcoding the pinned nightly version in docs\n\nBoth references had drifted to nightly-2025-12-06 while rust-toolchain.toml\npins nightly-2026-07-21. Point at the manifest instead, so they cannot go\nstale again.",
+          "timestamp": "2026-07-29T18:44:57Z",
+          "url": "https://github.com/asterinas/asterinas/commit/397ee46b2cf8413c8a30083362526d607e82d6e7"
+        },
+        "date": 1785736604947,
+        "tool": "customSmallerIsBetter",
+        "title": "[Ramfs] The updates-big-one result of sqlite speedtest",
+        "description": "sqlite-speed-test: One big UPDATE of the whole 50000-row table",
+        "display": false,
+        "benches": [
+          {
+            "name": "The speed of updates-big-one on Linux (Ramfs)",
+            "value": "0.087",
+            "unit": "second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "The speed of updates-big-one on Asterinas (Ramfs)",
+            "value": "0.095",
             "unit": "second",
             "extra": "aster_result"
           }
