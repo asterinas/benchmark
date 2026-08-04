@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1785879434479,
+  "lastUpdate": 1785879434761,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -88701,43 +88701,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2026-04-17T08:35:49Z",
           "url": "https://github.com/asterinas/asterinas/commit/c1e6cfe448508b93aef4e2d6bcdbc644e102b719"
         },
-        "date": 1776560164263,
-        "tool": "customSmallerIsBetter",
-        "title": "[TCP sockets] The latency of connect (loopback)",
-        "description": "lat_connect",
-        "display": false,
-        "benches": [
-          {
-            "name": "Average TCP connection latency on Linux",
-            "value": "18.2534",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average TCP connection latency on Asterinas",
-            "value": "178.0000",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Tao Su",
-            "username": "taosue",
-            "email": "st498824@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "c1e6cfe448508b93aef4e2d6bcdbc644e102b719",
-          "message": "overlayfs: Add regression test `readdir_small_buffer`",
-          "timestamp": "2026-04-17T08:35:49Z",
-          "url": "https://github.com/asterinas/asterinas/commit/c1e6cfe448508b93aef4e2d6bcdbc644e102b719"
-        },
         "date": 1776646632606,
         "tool": "customSmallerIsBetter",
         "title": "[TCP sockets] The latency of connect (loopback)",
@@ -90894,6 +90857,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average TCP connection latency on Asterinas",
             "value": "7020.2871",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Zhang Junyang",
+            "username": "junyang-zh",
+            "email": "junyang@stu.pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "4f0a3fccd6d24522a4d5280fa7dd84eba9895c6d",
+          "message": "Fix OSDK panic trace and coverage utils",
+          "timestamp": "2026-08-04T12:01:25Z",
+          "url": "https://github.com/asterinas/asterinas/commit/4f0a3fccd6d24522a4d5280fa7dd84eba9895c6d"
+        },
+        "date": 1785879434742,
+        "tool": "customSmallerIsBetter",
+        "title": "[TCP sockets] The latency of connect (loopback)",
+        "description": "lat_connect",
+        "display": false,
+        "benches": [
+          {
+            "name": "Average TCP connection latency on Linux",
+            "value": "6071.7181",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average TCP connection latency on Asterinas",
+            "value": "6826.5769",
             "unit": "µs",
             "extra": "aster_result"
           }
