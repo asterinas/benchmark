@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1785970807003,
+  "lastUpdate": 1785970807394,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -66520,43 +66520,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "408db891aac95e8b765df90a61bfe06dcbdb99aa",
-          "message": "Fix several other minor problems",
-          "timestamp": "2026-04-20T05:57:15Z",
-          "url": "https://github.com/asterinas/asterinas/commit/408db891aac95e8b765df90a61bfe06dcbdb99aa"
-        },
-        "date": 1776909819209,
-        "tool": "customBiggerIsBetter",
-        "title": "[TCP sockets] The bandwidth (loopback, 64KB message)",
-        "description": "bw_tcp -l",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average TCP bandwidth on Linux",
-            "value": "8250.12",
-            "unit": "MB/s",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average TCP bandwidth on Asterinas",
-            "value": "6926.10",
-            "unit": "MB/s",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Qingsong Chen",
             "username": "cqs21",
             "email": "changxian.cqs@antgroup.com"
@@ -68727,6 +68690,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average TCP bandwidth on Asterinas",
             "value": "7432.88",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "rikosellic",
+            "username": "rikosellic",
+            "email": "64517311+rikosellic@users.noreply.github.com"
+          },
+          "committer": {
+            "name": "Junyang Zhang",
+            "username": "junyang-zh",
+            "email": "user@junyang.me"
+          },
+          "id": "ab59d29891f1505267f22f0d1626311a96514525",
+          "message": "Refine the safety condition of `drop_meta_in_place`",
+          "timestamp": "2026-08-05T08:34:03Z",
+          "url": "https://github.com/asterinas/asterinas/commit/ab59d29891f1505267f22f0d1626311a96514525"
+        },
+        "date": 1785970807373,
+        "tool": "customBiggerIsBetter",
+        "title": "[TCP sockets] The bandwidth (loopback, 64KB message)",
+        "description": "bw_tcp -l",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average TCP bandwidth on Linux",
+            "value": "8397.50",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average TCP bandwidth on Asterinas",
+            "value": "7475.33",
             "unit": "MB/s",
             "extra": "aster_result"
           }
