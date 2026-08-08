@@ -1,45 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1786138238068,
+  "lastUpdate": 1786223904364,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "group8_smp1": [
-      {
-        "commit": {
-          "author": {
-            "name": "li041",
-            "username": "li041",
-            "email": "lxh050013@outlook.com"
-          },
-          "committer": {
-            "name": "Jianfeng Jiang",
-            "username": "StevenJiang1110",
-            "email": "jiangjianfeng.jjf@antgroup.com"
-          },
-          "id": "dde91f0ccbe8d3fb0b239d2ed30da1053a3a8824",
-          "message": "Implement `rename` in virtio-fs",
-          "timestamp": "2026-06-08T03:45:12Z",
-          "url": "https://github.com/asterinas/asterinas/commit/dde91f0ccbe8d3fb0b239d2ed30da1053a3a8824"
-        },
-        "date": 1781043338061,
-        "tool": "customSmallerIsBetter",
-        "title": "[Scheduler] Turnaround time of 8 groups using 1 CPU",
-        "description": "hackbench -g 8 -l 1000 -p -T",
-        "display": false,
-        "benches": [
-          {
-            "name": "Turnaround time of hackbench on Linux",
-            "value": "1.473",
-            "unit": "sec",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Turnaround time of hackbench on Asterinas",
-            "value": "2.168",
-            "unit": "sec",
-            "extra": "aster_result"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2213,6 +2176,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Turnaround time of hackbench on Asterinas",
             "value": "2.000",
+            "unit": "sec",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Chengjun Chen",
+            "username": "cchanging",
+            "email": "33800552+cchanging@users.noreply.github.com"
+          },
+          "id": "a110dfc73da00191d58ed62defaf6a5b3a12045e",
+          "message": "Update page cache tests",
+          "timestamp": "2026-06-18T02:14:07Z",
+          "url": "https://github.com/asterinas/asterinas/commit/a110dfc73da00191d58ed62defaf6a5b3a12045e"
+        },
+        "date": 1786223904363,
+        "tool": "customSmallerIsBetter",
+        "title": "[Scheduler] Turnaround time of 8 groups using 1 CPU",
+        "description": "hackbench -g 8 -l 1000 -p -T",
+        "display": false,
+        "benches": [
+          {
+            "name": "Turnaround time of hackbench on Linux",
+            "value": "1.159",
+            "unit": "sec",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Turnaround time of hackbench on Asterinas",
+            "value": "1.971",
             "unit": "sec",
             "extra": "aster_result"
           }
