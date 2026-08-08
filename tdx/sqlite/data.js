@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1786225333471,
+  "lastUpdate": 1786225333823,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ramfs_benchmarks_vacuum": [
@@ -8874,43 +8874,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "jiangjianfeng",
-            "username": "StevenJiang1110",
-            "email": "jiangjianfeng.jjf@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "72e395b5f10d6f87e28b813adb40370c7b54cbb4",
-          "message": "Bump libflate to 2.3.0 and replace core2",
-          "timestamp": "2026-04-15T11:25:41Z",
-          "url": "https://github.com/asterinas/asterinas/commit/72e395b5f10d6f87e28b813adb40370c7b54cbb4"
-        },
-        "date": 1776295546584,
-        "tool": "customSmallerIsBetter",
-        "title": "[Ramfs] The total result of sqlite speedtest",
-        "description": "sqlite-speed-test: total",
-        "display": false,
-        "benches": [
-          {
-            "name": "Total speed on Linux (Ramfs)",
-            "value": "60.561",
-            "unit": "second",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Total speed on Asterinas (Ramfs)",
-            "value": "65.778",
-            "unit": "second",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Ruihan Li",
             "username": "lrh2000",
             "email": "lrh2000@pku.edu.cn"
@@ -11081,6 +11044,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Total speed on Asterinas (Ramfs)",
             "value": "64.979",
+            "unit": "second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Chengjun Chen",
+            "username": "cchanging",
+            "email": "33800552+cchanging@users.noreply.github.com"
+          },
+          "id": "a110dfc73da00191d58ed62defaf6a5b3a12045e",
+          "message": "Update page cache tests",
+          "timestamp": "2026-06-18T02:14:07Z",
+          "url": "https://github.com/asterinas/asterinas/commit/a110dfc73da00191d58ed62defaf6a5b3a12045e"
+        },
+        "date": 1786225333814,
+        "tool": "customSmallerIsBetter",
+        "title": "[Ramfs] The total result of sqlite speedtest",
+        "description": "sqlite-speed-test: total",
+        "display": false,
+        "benches": [
+          {
+            "name": "Total speed on Linux (Ramfs)",
+            "value": "58.206",
+            "unit": "second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Total speed on Asterinas (Ramfs)",
+            "value": "63.703",
             "unit": "second",
             "extra": "aster_result"
           }
