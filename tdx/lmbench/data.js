@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1786225359983,
+  "lastUpdate": 1786225360391,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -53216,43 +53216,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tate.thl@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "5b93972e6fd61efcca18772431a92313005d2d6a",
-          "message": "Remove all manually-written log prefixes\n\nRemove bracket-style prefixes ([IOAPIC], [sys_getpid], [Task entry],\netc.) and text prefixes that duplicate what __log_prefix already\nprovides (VirtIO Input:, IOMMU, PCI device, etc.) across the kernel\nsyscalls, virtio, PCI, IOMMU, IRQ, UART, ACPI, timer, mlsdisk, input,\nand rootfs subsystems.",
-          "timestamp": "2026-04-16T03:42:02Z",
-          "url": "https://github.com/asterinas/asterinas/commit/5b93972e6fd61efcca18772431a92313005d2d6a"
-        },
-        "date": 1776488705845,
-        "tool": "customBiggerIsBetter",
-        "title": "[Ramfs] The bandwidth of copying data between files",
-        "description": "lmdd",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average file copy bandwidth on Linux",
-            "value": "2260.5091",
-            "unit": "MB/s",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average file copy bandwidth on Asterinas",
-            "value": "2562.8866",
-            "unit": "MB/s",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Tao Su",
             "username": "taosue",
             "email": "st498824@antgroup.com"
@@ -55423,6 +55386,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average file copy bandwidth on Asterinas",
             "value": "3065.2065",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Chengjun Chen",
+            "username": "cchanging",
+            "email": "33800552+cchanging@users.noreply.github.com"
+          },
+          "id": "a110dfc73da00191d58ed62defaf6a5b3a12045e",
+          "message": "Update page cache tests",
+          "timestamp": "2026-06-18T02:14:07Z",
+          "url": "https://github.com/asterinas/asterinas/commit/a110dfc73da00191d58ed62defaf6a5b3a12045e"
+        },
+        "date": 1786225360372,
+        "tool": "customBiggerIsBetter",
+        "title": "[Ramfs] The bandwidth of copying data between files",
+        "description": "lmdd",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average file copy bandwidth on Linux",
+            "value": "2087.7165",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average file copy bandwidth on Asterinas",
+            "value": "3104.1793",
             "unit": "MB/s",
             "extra": "aster_result"
           }
