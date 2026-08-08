@@ -1,45 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1786223904700,
+  "lastUpdate": 1786223905689,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_seq_write_bw": [
-      {
-        "commit": {
-          "author": {
-            "name": "Marsman1996",
-            "username": "Marsman1996",
-            "email": "lqliuyuwei@outlook.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "ba344a4cc532186ac1b8ab5468001f7ef3f388fd",
-          "message": "Add regression test for clock_nanosleep unknown flags bits",
-          "timestamp": "2026-05-29T08:23:11Z",
-          "url": "https://github.com/asterinas/asterinas/commit/ba344a4cc532186ac1b8ab5468001f7ef3f388fd"
-        },
-        "date": 1780276462426,
-        "tool": "customBiggerIsBetter",
-        "title": "[Ext2] The bandwidth of sequential writes",
-        "description": "fio -filename=/ext2/fio-test -size=1G -bs=1M -direct=1",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average file write bandwidth on Linux",
-            "value": "2007",
-            "unit": "MB/s",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average file write bandwidth on Asterinas",
-            "value": "3017",
-            "unit": "MB/s",
-            "extra": "aster_result"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2213,6 +2176,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average file write bandwidth on Asterinas",
             "value": "2564",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Chengjun Chen",
+            "username": "cchanging",
+            "email": "33800552+cchanging@users.noreply.github.com"
+          },
+          "id": "a110dfc73da00191d58ed62defaf6a5b3a12045e",
+          "message": "Update page cache tests",
+          "timestamp": "2026-06-18T02:14:07Z",
+          "url": "https://github.com/asterinas/asterinas/commit/a110dfc73da00191d58ed62defaf6a5b3a12045e"
+        },
+        "date": 1786223905687,
+        "tool": "customBiggerIsBetter",
+        "title": "[Ext2] The bandwidth of sequential writes",
+        "description": "fio -filename=/ext2/fio-test -size=1G -bs=1M -direct=1",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average file write bandwidth on Linux",
+            "value": "2213",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average file write bandwidth on Asterinas",
+            "value": "2444",
             "unit": "MB/s",
             "extra": "aster_result"
           }
