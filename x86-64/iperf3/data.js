@@ -1,45 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1786397194244,
+  "lastUpdate": 1786484390353,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "tcp_virtio_bw": [
-      {
-        "commit": {
-          "author": {
-            "name": "Qingsong Chen",
-            "username": "cqs21",
-            "email": "changxian.cqs@antgroup.com"
-          },
-          "committer": {
-            "name": "Jianfeng Jiang",
-            "username": "StevenJiang1110",
-            "email": "jiangjianfeng.jjf@antgroup.com"
-          },
-          "id": "5e0f46c2bf979aa764528b0767fd6893c65d3739",
-          "message": "Increase LTP timeout multiplier for slow CI machines",
-          "timestamp": "2026-06-11T09:31:59Z",
-          "url": "https://github.com/asterinas/asterinas/commit/5e0f46c2bf979aa764528b0767fd6893c65d3739"
-        },
-        "date": 1781302815693,
-        "tool": "customBiggerIsBetter",
-        "title": "[Network] iperf3 sender performance using TCP (virtio-net)",
-        "description": "iperf3 -s -B 10.0.2.15",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average TCP Bandwidth over virtio-net between Host Linux and Guest Linux",
-            "value": "9369",
-            "unit": "Mbits/sec",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average TCP Bandwidth over virtio-net between Host Linux and Guest Asterinas",
-            "value": "2032",
-            "unit": "Mbits/sec",
-            "extra": "aster_result"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2213,6 +2176,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average TCP Bandwidth over virtio-net between Host Linux and Guest Asterinas",
             "value": "4820",
+            "unit": "Mbits/sec",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "le-monde-bleu",
+            "username": "le-monde-bleu",
+            "email": "2301110750@stu.pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "4ba4abbe8cb3f2892129d67b0301cf247bbdda0f",
+          "message": "Isolate the dormant `controlled` crate",
+          "timestamp": "2026-07-19T12:26:19Z",
+          "url": "https://github.com/asterinas/asterinas/commit/4ba4abbe8cb3f2892129d67b0301cf247bbdda0f"
+        },
+        "date": 1786484390352,
+        "tool": "customBiggerIsBetter",
+        "title": "[Network] iperf3 sender performance using TCP (virtio-net)",
+        "description": "iperf3 -s -B 10.0.2.15",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average TCP Bandwidth over virtio-net between Host Linux and Guest Linux",
+            "value": "13915",
+            "unit": "Mbits/sec",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average TCP Bandwidth over virtio-net between Host Linux and Guest Asterinas",
+            "value": "6007",
             "unit": "Mbits/sec",
             "extra": "aster_result"
           }
