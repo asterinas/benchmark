@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1786744516745,
+  "lastUpdate": 1786744517088,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -39928,43 +39928,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2026-06-08T03:45:12Z",
           "url": "https://github.com/asterinas/asterinas/commit/dde91f0ccbe8d3fb0b239d2ed30da1053a3a8824"
         },
-        "date": 1780959533023,
-        "tool": "customSmallerIsBetter",
-        "title": "[VFS] The cost of read (/dev/zero)",
-        "description": "lat_syscall read",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average read latency on Linux",
-            "value": "0.1294",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average read latency on Asterinas",
-            "value": "0.1810",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "li041",
-            "username": "li041",
-            "email": "lxh050013@outlook.com"
-          },
-          "committer": {
-            "name": "Jianfeng Jiang",
-            "username": "StevenJiang1110",
-            "email": "jiangjianfeng.jjf@antgroup.com"
-          },
-          "id": "dde91f0ccbe8d3fb0b239d2ed30da1053a3a8824",
-          "message": "Implement `rename` in virtio-fs",
-          "timestamp": "2026-06-08T03:45:12Z",
-          "url": "https://github.com/asterinas/asterinas/commit/dde91f0ccbe8d3fb0b239d2ed30da1053a3a8824"
-        },
         "date": 1781045151586,
         "tool": "customSmallerIsBetter",
         "title": "[VFS] The cost of read (/dev/zero)",
@@ -42121,6 +42084,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average read latency on Asterinas",
             "value": "0.1785",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Chen Chengjun",
+            "username": "cchanging",
+            "email": "chenchengjun.ccj@antgroup.com"
+          },
+          "committer": {
+            "name": "Junyang Zhang",
+            "username": "junyang-zh",
+            "email": "user@junyang.me"
+          },
+          "id": "437365615c653bb0ad3993fd3c4afc30d033af46",
+          "message": "Add some regression tests",
+          "timestamp": "2026-08-07T05:20:29Z",
+          "url": "https://github.com/asterinas/asterinas/commit/437365615c653bb0ad3993fd3c4afc30d033af46"
+        },
+        "date": 1786744517070,
+        "tool": "customSmallerIsBetter",
+        "title": "[VFS] The cost of read (/dev/zero)",
+        "description": "lat_syscall read",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average read latency on Linux",
+            "value": "0.1294",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average read latency on Asterinas",
+            "value": "0.1796",
             "unit": "µs",
             "extra": "aster_result"
           }
