@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1786916533010,
+  "lastUpdate": 1786916533317,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -17742,43 +17742,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
-            "name": "Jianfeng Jiang",
-            "username": "StevenJiang1110",
-            "email": "jiangjianfeng.jjf@antgroup.com"
-          },
-          "id": "5831c49a9a1c9c7d512fe12f200dd1c7575fd0bf",
-          "message": "Check `high_watermark` against `avail_pages`",
-          "timestamp": "2026-05-26T15:52:33Z",
-          "url": "https://github.com/asterinas/asterinas/commit/5831c49a9a1c9c7d512fe12f200dd1c7575fd0bf"
-        },
-        "date": 1780027901305,
-        "tool": "customSmallerIsBetter",
-        "title": "[Signals] The cost of installing a signal handler",
-        "description": "lat_sig install",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average Signal handler install latency on Linux",
-            "value": "0.1570",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average Signal handler install latency on Asterinas",
-            "value": "0.2276",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "li041",
             "username": "li041",
             "email": "lxh050013@outlook.com"
@@ -19949,6 +19912,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average Signal handler install latency on Asterinas",
             "value": "0.2279",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Junyang Zhang",
+            "username": "junyang-zh",
+            "email": "user@junyang.me"
+          },
+          "id": "9503fbdb07ec6d5e8470de9956348c660261b487",
+          "message": "Clean up some visibility marks and comments",
+          "timestamp": "2026-08-16T11:23:59Z",
+          "url": "https://github.com/asterinas/asterinas/commit/9503fbdb07ec6d5e8470de9956348c660261b487"
+        },
+        "date": 1786916533299,
+        "tool": "customSmallerIsBetter",
+        "title": "[Signals] The cost of installing a signal handler",
+        "description": "lat_sig install",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average Signal handler install latency on Linux",
+            "value": "0.1513",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average Signal handler install latency on Asterinas",
+            "value": "0.2272",
             "unit": "µs",
             "extra": "aster_result"
           }
