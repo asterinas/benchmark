@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1787262398585,
+  "lastUpdate": 1787262398907,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -6657,43 +6657,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Qingsong Chen",
-            "username": "cqs21",
-            "email": "changxian.cqs@antgroup.com"
-          },
-          "committer": {
-            "name": "Jianfeng Jiang",
-            "username": "StevenJiang1110",
-            "email": "jiangjianfeng.jjf@antgroup.com"
-          },
-          "id": "5e0f46c2bf979aa764528b0767fd6893c65d3739",
-          "message": "Increase LTP timeout multiplier for slow CI machines",
-          "timestamp": "2026-06-11T09:31:59Z",
-          "url": "https://github.com/asterinas/asterinas/commit/5e0f46c2bf979aa764528b0767fd6893c65d3739"
-        },
-        "date": 1781305852948,
-        "tool": "customSmallerIsBetter",
-        "title": "[Process] The cost of getppid",
-        "description": "lat_syscall null",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average syscall latency on Linux",
-            "value": "0.0940",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average syscall latency on Asterinas",
-            "value": "0.1509",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Xinyi Yu",
             "username": "Fischer0522",
             "email": "1809327837@qq.com"
@@ -8864,6 +8827,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average syscall latency on Asterinas",
             "value": "0.1493",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "1d5dad707a0b6356923d6f08a95e372a42ac69d6",
+          "message": "Drop `not same fs` errors from `fs_impls`",
+          "timestamp": "2026-08-20T09:21:56Z",
+          "url": "https://github.com/asterinas/asterinas/commit/1d5dad707a0b6356923d6f08a95e372a42ac69d6"
+        },
+        "date": 1787262398888,
+        "tool": "customSmallerIsBetter",
+        "title": "[Process] The cost of getppid",
+        "description": "lat_syscall null",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average syscall latency on Linux",
+            "value": "0.0936",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average syscall latency on Asterinas",
+            "value": "0.1501",
             "unit": "µs",
             "extra": "aster_result"
           }
