@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1787433310167,
+  "lastUpdate": 1787519918080,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_deletes_between": [
@@ -79889,43 +79889,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Zhihang Shao",
-            "username": "BattiestStone4",
-            "email": "dio_ro@outlook.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "42d38f9af388c28c2dda8cb4d6e62de465f23e8e",
-          "message": "Add regression test for `O_PATH` notification suppression\n\nVerify that opening a file with `O_PATH` does not generate inotify\nevents (`IN_OPEN` / `IN_CLOSE_NOWRITE`), matching the Linux behavior\nwhere `FMODE_NONOTIFY` is set on `O_PATH` file descriptors. A sanity\ncheck confirms that normal opens still produce events.\n\nRegister the test in `run_test.sh` so it runs alongside the other\ninotify regression tests.\n\nSigned-off-by: Zhenchen Wang <m202372036@hust.edu.cn>\nSigned-off-by: Zhihang Shao <dio_ro@outlook.com>",
-          "timestamp": "2026-06-18T11:51:25Z",
-          "url": "https://github.com/asterinas/asterinas/commit/42d38f9af388c28c2dda8cb4d6e62de465f23e8e"
-        },
-        "date": 1782249708403,
-        "tool": "customSmallerIsBetter",
-        "title": "[Ramfs] The 'VACUUM' result of sqlite speedtest",
-        "description": "sqlite-speed-test: repacking database file into a minimal amount of disk space",
-        "display": false,
-        "benches": [
-          {
-            "name": "The speed of VACUUM on Linux (Ramfs)",
-            "value": "0.873",
-            "unit": "second",
-            "extra": "linux_result"
-          },
-          {
-            "name": "The speed of VACUUM on Asterinas (Ramfs)",
-            "value": "0.881",
-            "unit": "second",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "WaterWhisperer",
             "username": "WaterWhisperer",
             "email": "waterwhisperer24@qq.com"
@@ -82096,6 +82059,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "The speed of VACUUM on Asterinas (Ramfs)",
             "value": "0.874",
+            "unit": "second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ya0rk",
+            "username": "Ya0rk",
+            "email": "yoohoo1287@gmail.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "604948581512d83734377974d4c34adb4530f2d7",
+          "message": "Add aster-code-review benchmark problem:500-508",
+          "timestamp": "2026-08-08T01:53:59Z",
+          "url": "https://github.com/asterinas/asterinas/commit/604948581512d83734377974d4c34adb4530f2d7"
+        },
+        "date": 1787519918064,
+        "tool": "customSmallerIsBetter",
+        "title": "[Ramfs] The 'VACUUM' result of sqlite speedtest",
+        "description": "sqlite-speed-test: repacking database file into a minimal amount of disk space",
+        "display": false,
+        "benches": [
+          {
+            "name": "The speed of VACUUM on Linux (Ramfs)",
+            "value": "0.871",
+            "unit": "second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "The speed of VACUUM on Asterinas (Ramfs)",
+            "value": "0.882",
             "unit": "second",
             "extra": "aster_result"
           }
