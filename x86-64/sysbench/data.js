@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1787433303816,
+  "lastUpdate": 1787519917251,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "cpu_lat": [
@@ -2224,43 +2224,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Jianfeng Jiang",
-            "username": "StevenJiang1110",
-            "email": "jiangjianfeng.jjf@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "456271b977256b0e9fe7bebb90da1bf9da57ae20",
-          "message": "Update Kata networking guide",
-          "timestamp": "2026-06-02T07:22:49Z",
-          "url": "https://github.com/asterinas/asterinas/commit/456271b977256b0e9fe7bebb90da1bf9da57ae20"
-        },
-        "date": 1780438311040,
-        "tool": "customSmallerIsBetter",
-        "title": "[Threads] Threads performance",
-        "description": "sysbench threads",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average Execution Time per Thread on Linux",
-            "value": "21.46",
-            "unit": "ms",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average Execution Time per Thread on Asterinas",
-            "value": "4.56",
-            "unit": "ms",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Tate, Hongliang Tian",
             "username": "tatetian",
             "email": "tate.thl@antgroup.com"
@@ -4425,6 +4388,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average Execution Time per Thread on Linux",
             "value": "20.25",
+            "unit": "ms",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average Execution Time per Thread on Asterinas",
+            "value": "4.57",
+            "unit": "ms",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ya0rk",
+            "username": "Ya0rk",
+            "email": "yoohoo1287@gmail.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "604948581512d83734377974d4c34adb4530f2d7",
+          "message": "Add aster-code-review benchmark problem:500-508",
+          "timestamp": "2026-08-08T01:53:59Z",
+          "url": "https://github.com/asterinas/asterinas/commit/604948581512d83734377974d4c34adb4530f2d7"
+        },
+        "date": 1787519917248,
+        "tool": "customSmallerIsBetter",
+        "title": "[Threads] Threads performance",
+        "description": "sysbench threads",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average Execution Time per Thread on Linux",
+            "value": "21.63",
             "unit": "ms",
             "extra": "linux_result"
           },
