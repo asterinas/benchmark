@@ -1,45 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1787437773548,
+  "lastUpdate": 1787520746157,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_seq_write_bw_no_iommu": [
-      {
-        "commit": {
-          "author": {
-            "name": "Tao Su",
-            "username": "taosue",
-            "email": "st498824@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "c2ea64841a56953ac4c1b815b341dad44457ca27",
-          "message": "Update book to document `init` fallback paths when `init` parameter is omitted",
-          "timestamp": "2026-04-07T08:04:47Z",
-          "url": "https://github.com/asterinas/asterinas/commit/c2ea64841a56953ac4c1b815b341dad44457ca27"
-        },
-        "date": 1775626878368,
-        "tool": "customBiggerIsBetter",
-        "title": "[Ext2] The bandwidth of sequential writes (IOMMU disabled on Asterinas)",
-        "description": "fio -filename=/ext2/fio-test -size=1G -bs=1M -direct=1",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average file write bandwidth on Linux",
-            "value": "1331",
-            "unit": "MB/s",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average file write bandwidth on Asterinas",
-            "value": "7254",
-            "unit": "MB/s",
-            "extra": "aster_result"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2213,6 +2176,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average file write bandwidth on Asterinas",
             "value": "2746",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ya0rk",
+            "username": "Ya0rk",
+            "email": "yoohoo1287@gmail.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "604948581512d83734377974d4c34adb4530f2d7",
+          "message": "Add aster-code-review benchmark problem:500-508",
+          "timestamp": "2026-08-08T01:53:59Z",
+          "url": "https://github.com/asterinas/asterinas/commit/604948581512d83734377974d4c34adb4530f2d7"
+        },
+        "date": 1787520746156,
+        "tool": "customBiggerIsBetter",
+        "title": "[Ext2] The bandwidth of sequential writes (IOMMU disabled on Asterinas)",
+        "description": "fio -filename=/ext2/fio-test -size=1G -bs=1M -direct=1",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average file write bandwidth on Linux",
+            "value": "3178",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average file write bandwidth on Asterinas",
+            "value": "2986",
             "unit": "MB/s",
             "extra": "aster_result"
           }
