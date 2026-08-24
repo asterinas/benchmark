@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1787607964654,
+  "lastUpdate": 1787607965031,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -15525,43 +15525,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Xinyi Yu",
-            "username": "Fischer0522",
-            "email": "1809327837@qq.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "0167ca19f34b5ccf960b6e9e5296ed25c97fc04b",
-          "message": "Implement `BLKSSZGET` ioctl",
-          "timestamp": "2026-05-28T04:35:48Z",
-          "url": "https://github.com/asterinas/asterinas/commit/0167ca19f34b5ccf960b6e9e5296ed25c97fc04b"
-        },
-        "date": 1781476630013,
-        "tool": "customSmallerIsBetter",
-        "title": "[Process] The cost of fork+exec+shell+exit",
-        "description": "lat_proc shell",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average shell latency on Linux",
-            "value": "1420.0000",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average shell latency on Asterinas",
-            "value": "1425.5000",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Marsman1996",
             "username": "Marsman1996",
             "email": "lqliuyuwei@outlook.com"
@@ -17732,6 +17695,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average shell latency on Asterinas",
             "value": "1257.8000",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Cautreoxit",
+            "username": "Cautreoxit",
+            "email": "huk@stu.pku.edu.cn"
+          },
+          "committer": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "3329907643@qq.com"
+          },
+          "id": "2bcd1ae127794d2d5c49019cd8ace1ff4dbf8e98",
+          "message": "Reorder NVMe block_device for top-down reading",
+          "timestamp": "2026-08-21T13:00:00Z",
+          "url": "https://github.com/asterinas/asterinas/commit/2bcd1ae127794d2d5c49019cd8ace1ff4dbf8e98"
+        },
+        "date": 1787607965017,
+        "tool": "customSmallerIsBetter",
+        "title": "[Process] The cost of fork+exec+shell+exit",
+        "description": "lat_proc shell",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average shell latency on Linux",
+            "value": "1473.7500",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average shell latency on Asterinas",
+            "value": "1246.8000",
             "unit": "µs",
             "extra": "aster_result"
           }
