@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1787692755565,
+  "lastUpdate": 1787692755849,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -95352,43 +95352,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2026-05-28T04:35:48Z",
           "url": "https://github.com/asterinas/asterinas/commit/0167ca19f34b5ccf960b6e9e5296ed25c97fc04b"
         },
-        "date": 1781388415755,
-        "tool": "customBiggerIsBetter",
-        "title": "[Memory] The bandwidth of copying integers",
-        "description": "bw_mem fcp",
-        "display": false,
-        "benches": [
-          {
-            "name": "Average memory copy bandwidth on Linux",
-            "value": "5835.68",
-            "unit": "MB/s",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average memory copy bandwidth on Asterinas",
-            "value": "6027.58",
-            "unit": "MB/s",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Xinyi Yu",
-            "username": "Fischer0522",
-            "email": "1809327837@qq.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "0167ca19f34b5ccf960b6e9e5296ed25c97fc04b",
-          "message": "Implement `BLKSSZGET` ioctl",
-          "timestamp": "2026-05-28T04:35:48Z",
-          "url": "https://github.com/asterinas/asterinas/commit/0167ca19f34b5ccf960b6e9e5296ed25c97fc04b"
-        },
         "date": 1781474827514,
         "tool": "customBiggerIsBetter",
         "title": "[Memory] The bandwidth of copying integers",
@@ -97545,6 +97508,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average memory copy bandwidth on Asterinas",
             "value": "6383.49",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Tao Su",
+            "username": "taosue",
+            "email": "st498824@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "09e169786f5f65bb3a126454216108fe1bdda7d0",
+          "message": "Add devtmpfs ktests",
+          "timestamp": "2026-08-22T13:03:13Z",
+          "url": "https://github.com/asterinas/asterinas/commit/09e169786f5f65bb3a126454216108fe1bdda7d0"
+        },
+        "date": 1787692755832,
+        "tool": "customBiggerIsBetter",
+        "title": "[Memory] The bandwidth of copying integers",
+        "description": "bw_mem fcp",
+        "display": false,
+        "benches": [
+          {
+            "name": "Average memory copy bandwidth on Linux",
+            "value": "6243.56",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average memory copy bandwidth on Asterinas",
+            "value": "6430.98",
             "unit": "MB/s",
             "extra": "aster_result"
           }
