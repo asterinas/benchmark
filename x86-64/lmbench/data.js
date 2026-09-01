@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1788299813253,
+  "lastUpdate": 1788299813725,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -8874,43 +8874,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "zjp",
-            "username": "zjp-CN",
-            "email": "jiping_zhou@foxmail.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "5b46e566dee52a836b0189082d88e0bb208b549e",
-          "message": "Switch to a new Docker image 0.18.0-20260701",
-          "timestamp": "2026-07-01T14:16:03Z",
-          "url": "https://github.com/asterinas/asterinas/commit/5b46e566dee52a836b0189082d88e0bb208b549e"
-        },
-        "date": 1782940903977,
-        "tool": "customSmallerIsBetter",
-        "title": "[Process] The cost of context switching",
-        "description": "lat_ctx 2",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average context switch latency on Linux",
-            "value": "1.10",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average context switch latency on Asterinas",
-            "value": "1.25",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Bet4",
             "username": "bet4it",
             "email": "0xbet4@gmail.com"
@@ -11081,6 +11044,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average context switch latency on Asterinas",
             "value": "1.29",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Qingsong Chen",
+            "username": "cqs21",
+            "email": "changxian.cqs@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "29b0f4bcf111efb590ee14768c624ecf1e81bbd7",
+          "message": "Bump Docker image version to 0.18.1-20260901",
+          "timestamp": "2026-09-01T07:37:38Z",
+          "url": "https://github.com/asterinas/asterinas/commit/29b0f4bcf111efb590ee14768c624ecf1e81bbd7"
+        },
+        "date": 1788299813705,
+        "tool": "customSmallerIsBetter",
+        "title": "[Process] The cost of context switching",
+        "description": "lat_ctx 2",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average context switch latency on Linux",
+            "value": "1.20",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average context switch latency on Asterinas",
+            "value": "1.23",
             "unit": "µs",
             "extra": "aster_result"
           }
