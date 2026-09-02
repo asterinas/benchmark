@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1788388941078,
+  "lastUpdate": 1788388941462,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ramfs_benchmarks_vacuum": [
@@ -33261,43 +33261,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Zhihang Shao",
-            "username": "BattiestStone4",
-            "email": "dio_ro@outlook.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "42d38f9af388c28c2dda8cb4d6e62de465f23e8e",
-          "message": "Add regression test for `O_PATH` notification suppression\n\nVerify that opening a file with `O_PATH` does not generate inotify\nevents (`IN_OPEN` / `IN_CLOSE_NOWRITE`), matching the Linux behavior\nwhere `FMODE_NONOTIFY` is set on `O_PATH` file descriptors. A sanity\ncheck confirms that normal opens still produce events.\n\nRegister the test in `run_test.sh` so it runs alongside the other\ninotify regression tests.\n\nSigned-off-by: Zhenchen Wang <m202372036@hust.edu.cn>\nSigned-off-by: Zhihang Shao <dio_ro@outlook.com>",
-          "timestamp": "2026-06-18T11:51:25Z",
-          "url": "https://github.com/asterinas/asterinas/commit/42d38f9af388c28c2dda8cb4d6e62de465f23e8e"
-        },
-        "date": 1782247038563,
-        "tool": "customSmallerIsBetter",
-        "title": "[Ext2] The selects-text-pk result of sqlite speedtest",
-        "description": "sqlite-speed-test: 70000 SELECTS on a TEXT PK",
-        "display": false,
-        "benches": [
-          {
-            "name": "The speed of selects-text-pk on Linux (Ext2)",
-            "value": "2.857",
-            "unit": "second",
-            "extra": "linux_result"
-          },
-          {
-            "name": "The speed of selects-text-pk on Asterinas (Ext2)",
-            "value": "3.911",
-            "unit": "second",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "WaterWhisperer",
             "username": "WaterWhisperer",
             "email": "waterwhisperer24@qq.com"
@@ -35468,6 +35431,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "The speed of selects-text-pk on Asterinas (Ext2)",
             "value": "3.975",
+            "unit": "second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Qingsong Chen",
+            "username": "cqs21",
+            "email": "changxian.cqs@antgroup.com"
+          },
+          "committer": {
+            "name": "Jianfeng Jiang",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "id": "e60087be133ce30657ca648415fa48f7d8d0c310",
+          "message": "Fix Redis cross-compilation on ARM64 builders",
+          "timestamp": "2026-09-02T06:20:40Z",
+          "url": "https://github.com/asterinas/asterinas/commit/e60087be133ce30657ca648415fa48f7d8d0c310"
+        },
+        "date": 1788388941449,
+        "tool": "customSmallerIsBetter",
+        "title": "[Ext2] The selects-text-pk result of sqlite speedtest",
+        "description": "sqlite-speed-test: 70000 SELECTS on a TEXT PK",
+        "display": false,
+        "benches": [
+          {
+            "name": "The speed of selects-text-pk on Linux (Ext2)",
+            "value": "2.940",
+            "unit": "second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "The speed of selects-text-pk on Asterinas (Ext2)",
+            "value": "3.946",
             "unit": "second",
             "extra": "aster_result"
           }
