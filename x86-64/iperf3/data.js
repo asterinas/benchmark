@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1788338173986,
+  "lastUpdate": 1788338174228,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "tcp_virtio_bw": [
@@ -2213,6 +2213,45 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average TCP Bandwidth over virtio-net between Host Linux and Guest Asterinas",
             "value": "6269",
+            "unit": "Mbits/sec",
+            "extra": "aster_result"
+          }
+        ]
+      }
+    ],
+    "udp_virtio_bw_rx": [
+      {
+        "commit": {
+          "author": {
+            "name": "Qingsong Chen",
+            "username": "cqs21",
+            "email": "changxian.cqs@antgroup.com"
+          },
+          "committer": {
+            "name": "Jianfeng Jiang",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "id": "51c59734ee59da113ce5272b18761cb133d0470b",
+          "message": "Fix host/guest benchmark initramfs rebuild",
+          "timestamp": "2026-09-02T03:03:42Z",
+          "url": "https://github.com/asterinas/asterinas/commit/51c59734ee59da113ce5272b18761cb133d0470b"
+        },
+        "date": 1788338174226,
+        "tool": "customBiggerIsBetter",
+        "title": "[Network] iperf3 receiver performance using UDP (virtio-net)",
+        "description": "iperf3 -s -B 10.0.2.15",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average UDP Bandwidth over virtio-net between Host Linux and Guest Linux",
+            "value": "5065",
+            "unit": "Mbits/sec",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average UDP Bandwidth over virtio-net between Host Linux and Guest Asterinas",
+            "value": "4243",
             "unit": "Mbits/sec",
             "extra": "aster_result"
           }
