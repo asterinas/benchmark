@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1788299818962,
+  "lastUpdate": 1788338154696,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -42129,43 +42129,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "li041",
-            "username": "li041",
-            "email": "lxh050013@outlook.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "22ca7ccf30757c8ece7dcffbe933b8e1072f052a",
-          "message": "Fix virtiofs request queue descriptor exhaustion",
-          "timestamp": "2026-06-03T07:04:21Z",
-          "url": "https://github.com/asterinas/asterinas/commit/22ca7ccf30757c8ece7dcffbe933b8e1072f052a"
-        },
-        "date": 1782145828781,
-        "tool": "customSmallerIsBetter",
-        "title": "[VFS] The cost of write (/dev/null)",
-        "description": "lat_syscall write",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average write latency on Linux",
-            "value": "0.0979",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average write latency on Asterinas",
-            "value": "0.1836",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Ray Lee",
             "username": "hburaylee",
             "email": "hburaylee@gmail.com"
@@ -44336,6 +44299,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average write latency on Asterinas",
             "value": "0.1949",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Qingsong Chen",
+            "username": "cqs21",
+            "email": "changxian.cqs@antgroup.com"
+          },
+          "committer": {
+            "name": "Jianfeng Jiang",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "id": "51c59734ee59da113ce5272b18761cb133d0470b",
+          "message": "Fix host/guest benchmark initramfs rebuild",
+          "timestamp": "2026-09-02T03:03:42Z",
+          "url": "https://github.com/asterinas/asterinas/commit/51c59734ee59da113ce5272b18761cb133d0470b"
+        },
+        "date": 1788338154677,
+        "tool": "customSmallerIsBetter",
+        "title": "[VFS] The cost of write (/dev/null)",
+        "description": "lat_syscall write",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average write latency on Linux",
+            "value": "0.0996",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average write latency on Asterinas",
+            "value": "0.1951",
             "unit": "µs",
             "extra": "aster_result"
           }
