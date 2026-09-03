@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1788472820005,
+  "lastUpdate": 1788472820284,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -35478,43 +35478,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "li041",
-            "username": "li041",
-            "email": "lxh050013@outlook.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "22ca7ccf30757c8ece7dcffbe933b8e1072f052a",
-          "message": "Fix virtiofs request queue descriptor exhaustion",
-          "timestamp": "2026-06-03T07:04:21Z",
-          "url": "https://github.com/asterinas/asterinas/commit/22ca7ccf30757c8ece7dcffbe933b8e1072f052a"
-        },
-        "date": 1782151229244,
-        "tool": "customSmallerIsBetter",
-        "title": "[Unix sockets] The latency of connect",
-        "description": "lat_connect",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average unix connect latency on Linux",
-            "value": "3.9911",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average unix connect latency on Asterinas",
-            "value": "4.8148",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "WaterWhisperer",
             "username": "WaterWhisperer",
             "email": "waterwhisperer24@qq.com"
@@ -37687,6 +37650,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average unix connect latency on Asterinas",
             "value": "4.9300",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Chen Chengjun",
+            "username": "cchanging",
+            "email": "chenchengjun.ccj@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "864b9138be22d5436ef30692c0b2e5d35dafaef4",
+          "message": "Adjust the symlink implementation for other file systems",
+          "timestamp": "2026-09-02T02:12:28Z",
+          "url": "https://github.com/asterinas/asterinas/commit/864b9138be22d5436ef30692c0b2e5d35dafaef4"
+        },
+        "date": 1788472820265,
+        "tool": "customSmallerIsBetter",
+        "title": "[Unix sockets] The latency of connect",
+        "description": "lat_connect",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average unix connect latency on Linux",
+            "value": "4.0139",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average unix connect latency on Asterinas",
+            "value": "4.9258",
             "unit": "µs",
             "extra": "aster_result"
           }
