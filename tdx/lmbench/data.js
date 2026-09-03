@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1788472829159,
+  "lastUpdate": 1788472829456,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -26610,43 +26610,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Junrui Luo",
-            "username": "avasummer",
-            "email": "moonafterrain@outlook.com"
-          },
-          "committer": {
-            "name": "Chengjun Chen",
-            "username": "cchanging",
-            "email": "33800552+cchanging@users.noreply.github.com"
-          },
-          "id": "6eeea918b46452cda2dbe1cc9058654e383bf9b6",
-          "message": "Remove redundant REMOUNT_LOCK",
-          "timestamp": "2026-07-02T04:17:36Z",
-          "url": "https://github.com/asterinas/asterinas/commit/6eeea918b46452cda2dbe1cc9058654e383bf9b6"
-        },
-        "date": 1783111097538,
-        "tool": "customBiggerIsBetter",
-        "title": "[Pipes] The bandwidth",
-        "description": "bw_pipe",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average pipe bandwidth on Linux",
-            "value": "10840.20",
-            "unit": "MB/s",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average pipe bandwidth on Asterinas",
-            "value": "10437.27",
-            "unit": "MB/s",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Qingsong Chen",
             "username": "cqs21",
             "email": "changxian.cqs@antgroup.com"
@@ -28817,6 +28780,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average pipe bandwidth on Asterinas",
             "value": "10133.49",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Chen Chengjun",
+            "username": "cchanging",
+            "email": "chenchengjun.ccj@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "864b9138be22d5436ef30692c0b2e5d35dafaef4",
+          "message": "Adjust the symlink implementation for other file systems",
+          "timestamp": "2026-09-02T02:12:28Z",
+          "url": "https://github.com/asterinas/asterinas/commit/864b9138be22d5436ef30692c0b2e5d35dafaef4"
+        },
+        "date": 1788472829435,
+        "tool": "customBiggerIsBetter",
+        "title": "[Pipes] The bandwidth",
+        "description": "bw_pipe",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average pipe bandwidth on Linux",
+            "value": "9418.88",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average pipe bandwidth on Asterinas",
+            "value": "10169.19",
             "unit": "MB/s",
             "extra": "aster_result"
           }
