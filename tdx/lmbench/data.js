@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1788558820857,
+  "lastUpdate": 1788558821212,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -13322,43 +13322,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2026-06-26T10:17:15Z",
           "url": "https://github.com/asterinas/asterinas/commit/a19974df7f48dda7d1f6540350d787f5d7df7860"
         },
-        "date": 1782593648316,
-        "tool": "customSmallerIsBetter",
-        "title": "[Process] The cost of fork+exec+exit",
-        "description": "lat_proc exec",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average exec latency on Linux",
-            "value": "1011.1667",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average exec latency on Asterinas",
-            "value": "845.6667",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tate.thl@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "a19974df7f48dda7d1f6540350d787f5d7df7860",
-          "message": "Restructure the Design subcategory around design principles\n\nReplace the For Maintainability \"Design\" guidelines with eight design\nprinciples (single-responsibility, dry, information-hiding, open-closed,\nleast-surprise, coupling-cohesion, consistency, rust-native), relocated\nfrom the \"How Guidelines Are Written\" page. Fold the former design and\nlayout rules (familiar-conventions, hide-impl-details, small-functions,\none-concept-per-file) into the principles as worked examples, and move\nDesign ahead of Process in the index.",
-          "timestamp": "2026-06-26T10:17:15Z",
-          "url": "https://github.com/asterinas/asterinas/commit/a19974df7f48dda7d1f6540350d787f5d7df7860"
-        },
         "date": 1782678839655,
         "tool": "customSmallerIsBetter",
         "title": "[Process] The cost of fork+exec+exit",
@@ -15515,6 +15478,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average exec latency on Asterinas",
             "value": "857.8333",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Jianfeng Jiang",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "committer": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "3329907643@qq.com"
+          },
+          "id": "2de6b07ee933a033081029f940f741bec678a3c2",
+          "message": "Clear IOPL in RFLAGS before returning to user space",
+          "timestamp": "2026-09-03T08:49:16Z",
+          "url": "https://github.com/asterinas/asterinas/commit/2de6b07ee933a033081029f940f741bec678a3c2"
+        },
+        "date": 1788558821190,
+        "tool": "customSmallerIsBetter",
+        "title": "[Process] The cost of fork+exec+exit",
+        "description": "lat_proc exec",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average exec latency on Linux",
+            "value": "1026.5000",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average exec latency on Asterinas",
+            "value": "866.4167",
             "unit": "µs",
             "extra": "aster_result"
           }
