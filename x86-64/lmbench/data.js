@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1788730124878,
+  "lastUpdate": 1788730125195,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -46563,43 +46563,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Marsman1996",
-            "username": "Marsman1996",
-            "email": "lqliuyuwei@outlook.com"
-          },
-          "committer": {
-            "name": "Jianfeng Jiang",
-            "username": "StevenJiang1110",
-            "email": "jiangjianfeng.jjf@antgroup.com"
-          },
-          "id": "e4f8507720924b42e04dfa40b8b10e2c0bf11941",
-          "message": "Fix `memfd_create` returning wrong errno for too-long name",
-          "timestamp": "2026-06-11T07:00:25Z",
-          "url": "https://github.com/asterinas/asterinas/commit/e4f8507720924b42e04dfa40b8b10e2c0bf11941"
-        },
-        "date": 1781651297436,
-        "tool": "customSmallerIsBetter",
-        "title": "[VFS] The cost of fstat",
-        "description": "lat_syscall fstat",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average fstat latency on Linux",
-            "value": "0.1711",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average fstat latency on Asterinas",
-            "value": "0.2115",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "zjp",
             "username": "zjp-CN",
             "email": "jiping_zhou@foxmail.com"
@@ -48770,6 +48733,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average fstat latency on Asterinas",
             "value": "0.1840",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Zhang Junyang",
+            "username": "junyang-zh",
+            "email": "junyang@stu.pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "e60f6de4e991d3ad66fc61d0340a363a2096bd85",
+          "message": "Revert the temporary fix since dev containers are updated",
+          "timestamp": "2026-09-04T13:41:56Z",
+          "url": "https://github.com/asterinas/asterinas/commit/e60f6de4e991d3ad66fc61d0340a363a2096bd85"
+        },
+        "date": 1788730125178,
+        "tool": "customSmallerIsBetter",
+        "title": "[VFS] The cost of fstat",
+        "description": "lat_syscall fstat",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average fstat latency on Linux",
+            "value": "0.1485",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average fstat latency on Asterinas",
+            "value": "0.1842",
             "unit": "µs",
             "extra": "aster_result"
           }
