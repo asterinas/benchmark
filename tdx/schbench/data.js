@@ -1,45 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1788731329132,
+  "lastUpdate": 1788817960310,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "smp8_p99_wakeup_latency": [
-      {
-        "commit": {
-          "author": {
-            "name": "li041",
-            "username": "li041",
-            "email": "lxh050013@outlook.com"
-          },
-          "committer": {
-            "name": "Jianfeng Jiang",
-            "username": "StevenJiang1110",
-            "email": "jiangjianfeng.jjf@antgroup.com"
-          },
-          "id": "afe922d16ee72357f4b05a6c5c1bf8919e5883ee",
-          "message": "Fix VirtioFS stale status flags in read paths",
-          "timestamp": "2026-07-06T06:55:57Z",
-          "url": "https://github.com/asterinas/asterinas/commit/afe922d16ee72357f4b05a6c5c1bf8919e5883ee"
-        },
-        "date": 1783372497620,
-        "tool": "customSmallerIsBetter",
-        "title": "[Scheduler] P99 wakeup latency while max-loading all CPUs (SMP=8)",
-        "description": "schbench -F 256 -n 5 -r 90",
-        "display": false,
-        "benches": [
-          {
-            "name": "P99 wakeup latency of schbench on Linux",
-            "value": "88",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "P99 wakeup latency of schbench on Asterinas",
-            "value": "1078",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2213,6 +2176,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "P99 wakeup latency of schbench on Asterinas",
             "value": "1050",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Mike Solar",
+            "username": "Mike-Solar",
+            "email": "iam@mikesolar.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "1601bf53792fd81420a4f3c1da3119e84d5b36ef",
+          "message": "Improve doc comments for Either\n\nSigned-off-by: Mike Solar <iam@mikesolar.cn>",
+          "timestamp": "2026-09-07T11:26:29Z",
+          "url": "https://github.com/asterinas/asterinas/commit/1601bf53792fd81420a4f3c1da3119e84d5b36ef"
+        },
+        "date": 1788817960307,
+        "tool": "customSmallerIsBetter",
+        "title": "[Scheduler] P99 wakeup latency while max-loading all CPUs (SMP=8)",
+        "description": "schbench -F 256 -n 5 -r 90",
+        "display": false,
+        "benches": [
+          {
+            "name": "P99 wakeup latency of schbench on Linux",
+            "value": "89",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "P99 wakeup latency of schbench on Asterinas",
+            "value": "1042",
             "unit": "µs",
             "extra": "aster_result"
           }
