@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1788816297804,
+  "lastUpdate": 1788816298124,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -46563,43 +46563,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "zjp",
-            "username": "zjp-CN",
-            "email": "jiping_zhou@foxmail.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "c6284a9106f5a4c87deb7c8a990af6211dc5f540",
-          "message": "Switch to a new Docker image at 0.18.0-20260618",
-          "timestamp": "2026-06-18T08:39:34Z",
-          "url": "https://github.com/asterinas/asterinas/commit/c6284a9106f5a4c87deb7c8a990af6211dc5f540"
-        },
-        "date": 1782144330918,
-        "tool": "customSmallerIsBetter",
-        "title": "[VFS] The cost of fstat",
-        "description": "lat_syscall fstat",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average fstat latency on Linux",
-            "value": "0.1508",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average fstat latency on Asterinas",
-            "value": "0.1849",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Ray Lee",
             "username": "hburaylee",
             "email": "hburaylee@gmail.com"
@@ -48770,6 +48733,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average fstat latency on Asterinas",
             "value": "0.1842",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Mike Solar",
+            "username": "Mike-Solar",
+            "email": "iam@mikesolar.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "1601bf53792fd81420a4f3c1da3119e84d5b36ef",
+          "message": "Improve doc comments for Either\n\nSigned-off-by: Mike Solar <iam@mikesolar.cn>",
+          "timestamp": "2026-09-07T11:26:29Z",
+          "url": "https://github.com/asterinas/asterinas/commit/1601bf53792fd81420a4f3c1da3119e84d5b36ef"
+        },
+        "date": 1788816298105,
+        "tool": "customSmallerIsBetter",
+        "title": "[VFS] The cost of fstat",
+        "description": "lat_syscall fstat",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average fstat latency on Linux",
+            "value": "0.1555",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average fstat latency on Asterinas",
+            "value": "0.1845",
             "unit": "µs",
             "extra": "aster_result"
           }
