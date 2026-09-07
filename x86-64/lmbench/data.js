@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1788816296175,
+  "lastUpdate": 1788816296503,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -44346,43 +44346,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "li041",
-            "username": "li041",
-            "email": "lxh050013@outlook.com"
-          },
-          "committer": {
-            "name": "Jianfeng Jiang",
-            "username": "StevenJiang1110",
-            "email": "jiangjianfeng.jjf@antgroup.com"
-          },
-          "id": "afe922d16ee72357f4b05a6c5c1bf8919e5883ee",
-          "message": "Fix VirtioFS stale status flags in read paths",
-          "timestamp": "2026-07-06T06:55:57Z",
-          "url": "https://github.com/asterinas/asterinas/commit/afe922d16ee72357f4b05a6c5c1bf8919e5883ee"
-        },
-        "date": 1783372882969,
-        "tool": "customSmallerIsBetter",
-        "title": "[VFS] The cost of stat",
-        "description": "lat_syscall stat",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average stat latency on Linux",
-            "value": "0.3261",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average stat latency on Asterinas",
-            "value": "0.4947",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Bet4",
             "username": "bet4it",
             "email": "0xbet4@gmail.com"
@@ -46553,6 +46516,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average stat latency on Asterinas",
             "value": "0.4929",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Mike Solar",
+            "username": "Mike-Solar",
+            "email": "iam@mikesolar.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "1601bf53792fd81420a4f3c1da3119e84d5b36ef",
+          "message": "Improve doc comments for Either\n\nSigned-off-by: Mike Solar <iam@mikesolar.cn>",
+          "timestamp": "2026-09-07T11:26:29Z",
+          "url": "https://github.com/asterinas/asterinas/commit/1601bf53792fd81420a4f3c1da3119e84d5b36ef"
+        },
+        "date": 1788816296485,
+        "tool": "customSmallerIsBetter",
+        "title": "[VFS] The cost of stat",
+        "description": "lat_syscall stat",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average stat latency on Linux",
+            "value": "0.3218",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average stat latency on Asterinas",
+            "value": "0.4884",
             "unit": "µs",
             "extra": "aster_result"
           }
