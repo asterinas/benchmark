@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1788989681393,
+  "lastUpdate": 1788989681680,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -73148,43 +73148,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2026-07-07T07:08:11Z",
           "url": "https://github.com/asterinas/asterinas/commit/37411049265056135a5e18c8c75a0c3d16b18579"
         },
-        "date": 1783805220784,
-        "tool": "customBiggerIsBetter",
-        "title": "[HTTP] The bandwidth (loopback)",
-        "description": "bw_http",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average simple HTTP transaction bandwidth on Linux",
-            "value": "4106.03",
-            "unit": "MB/s",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average simple HTTP transaction bandwidth on Asterinas",
-            "value": "5628.06",
-            "unit": "MB/s",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Bet4",
-            "username": "bet4it",
-            "email": "0xbet4@gmail.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "37411049265056135a5e18c8c75a0c3d16b18579",
-          "message": "Add more procfs kernel compatibility files",
-          "timestamp": "2026-07-07T07:08:11Z",
-          "url": "https://github.com/asterinas/asterinas/commit/37411049265056135a5e18c8c75a0c3d16b18579"
-        },
         "date": 1783892182500,
         "tool": "customBiggerIsBetter",
         "title": "[HTTP] The bandwidth (loopback)",
@@ -75340,6 +75303,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average simple HTTP transaction bandwidth on Asterinas",
             "value": "5169.39",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "li041",
+            "username": "li041",
+            "email": "lxh050013@outlook.com"
+          },
+          "committer": {
+            "name": "Jianfeng Jiang",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "id": "414f27702dee7c2f25672295c7aa9b83f247877e",
+          "message": "Support virtiofs symbolic links",
+          "timestamp": "2026-09-08T03:20:37Z",
+          "url": "https://github.com/asterinas/asterinas/commit/414f27702dee7c2f25672295c7aa9b83f247877e"
+        },
+        "date": 1788989681660,
+        "tool": "customBiggerIsBetter",
+        "title": "[HTTP] The bandwidth (loopback)",
+        "description": "bw_http",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average simple HTTP transaction bandwidth on Linux",
+            "value": "4011.30",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average simple HTTP transaction bandwidth on Asterinas",
+            "value": "4639.73",
             "unit": "MB/s",
             "extra": "aster_result"
           }
