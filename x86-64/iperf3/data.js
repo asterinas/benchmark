@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1788989692707,
+  "lastUpdate": 1788989693613,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "tcp_virtio_bw": [
@@ -2509,6 +2509,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average UDP Bandwidth over virtio-net between Host Linux and Guest Asterinas",
             "value": "4296",
+            "unit": "Mbits/sec",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "li041",
+            "username": "li041",
+            "email": "lxh050013@outlook.com"
+          },
+          "committer": {
+            "name": "Jianfeng Jiang",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "id": "414f27702dee7c2f25672295c7aa9b83f247877e",
+          "message": "Support virtiofs symbolic links",
+          "timestamp": "2026-09-08T03:20:37Z",
+          "url": "https://github.com/asterinas/asterinas/commit/414f27702dee7c2f25672295c7aa9b83f247877e"
+        },
+        "date": 1788989693612,
+        "tool": "customBiggerIsBetter",
+        "title": "[Network] iperf3 receiver performance using UDP (virtio-net)",
+        "description": "iperf3 -s -B 10.0.2.15",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average UDP Bandwidth over virtio-net between Host Linux and Guest Linux",
+            "value": "7506",
+            "unit": "Mbits/sec",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average UDP Bandwidth over virtio-net between Host Linux and Guest Asterinas",
+            "value": "3864",
             "unit": "Mbits/sec",
             "extra": "aster_result"
           }
