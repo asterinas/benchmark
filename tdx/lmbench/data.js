@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1788990299848,
+  "lastUpdate": 1788990300111,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -104170,43 +104170,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "刘景宇",
-            "username": "liulog",
-            "email": "2537738252@qq.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "3a34935ba3ebdfbc96472e992acda5a74d3b9352",
-          "message": "Add cmdline to disable earlycon",
-          "timestamp": "2026-07-04T09:08:18Z",
-          "url": "https://github.com/asterinas/asterinas/commit/3a34935ba3ebdfbc96472e992acda5a74d3b9352"
-        },
-        "date": 1783283287664,
-        "tool": "customBiggerIsBetter",
-        "title": "[Ext2] The throughput of creating/deleting small files (0KB)",
-        "description": "lat_fs -s 0k /ext2",
-        "display": false,
-        "benches": [
-          {
-            "name": "Number of created/deleted files on Linux",
-            "value": "54",
-            "unit": "number",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Number of created/deleted files on Asterinas",
-            "value": "383",
-            "unit": "number",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Ruihan Li",
             "username": "lrh2000",
             "email": "lrh2000@pku.edu.cn"
@@ -106376,6 +106339,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Number of created/deleted files on Asterinas",
             "value": "375",
+            "unit": "number",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "li041",
+            "username": "li041",
+            "email": "lxh050013@outlook.com"
+          },
+          "committer": {
+            "name": "Jianfeng Jiang",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "id": "414f27702dee7c2f25672295c7aa9b83f247877e",
+          "message": "Support virtiofs symbolic links",
+          "timestamp": "2026-09-08T03:20:37Z",
+          "url": "https://github.com/asterinas/asterinas/commit/414f27702dee7c2f25672295c7aa9b83f247877e"
+        },
+        "date": 1788990300092,
+        "tool": "customBiggerIsBetter",
+        "title": "[Ext2] The throughput of creating/deleting small files (0KB)",
+        "description": "lat_fs -s 0k /ext2",
+        "display": false,
+        "benches": [
+          {
+            "name": "Number of created/deleted files on Linux",
+            "value": "57",
+            "unit": "number",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Number of created/deleted files on Asterinas",
+            "value": "380",
             "unit": "number",
             "extra": "aster_result"
           }
