@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1788904178426,
+  "lastUpdate": 1788990301984,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "boot_lat": [
@@ -850,6 +850,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Boot latency (~500MB pad) on Asterinas",
             "value": "0.79",
+            "unit": "sec",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "li041",
+            "username": "li041",
+            "email": "lxh050013@outlook.com"
+          },
+          "committer": {
+            "name": "Jianfeng Jiang",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "id": "414f27702dee7c2f25672295c7aa9b83f247877e",
+          "message": "Support virtiofs symbolic links",
+          "timestamp": "2026-09-08T03:20:37Z",
+          "url": "https://github.com/asterinas/asterinas/commit/414f27702dee7c2f25672295c7aa9b83f247877e"
+        },
+        "date": 1788990301983,
+        "tool": "customSmallerIsBetter",
+        "title": "[Boot] Boot latency (~500MB pad)",
+        "description": "Boot latency with a ~500MB-padded initramfs (measured via /proc/uptime)",
+        "display": true,
+        "benches": [
+          {
+            "name": "Boot latency (~500MB pad) on Linux",
+            "value": "5.30",
+            "unit": "sec",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Boot latency (~500MB pad) on Asterinas",
+            "value": "0.78",
             "unit": "sec",
             "extra": "aster_result"
           }
