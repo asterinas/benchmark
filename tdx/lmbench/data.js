@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1789422455537,
+  "lastUpdate": 1789422455816,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -39897,43 +39897,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Bet4",
-            "username": "bet4it",
-            "email": "0xbet4@gmail.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "37411049265056135a5e18c8c75a0c3d16b18579",
-          "message": "Add more procfs kernel compatibility files",
-          "timestamp": "2026-07-07T07:08:11Z",
-          "url": "https://github.com/asterinas/asterinas/commit/37411049265056135a5e18c8c75a0c3d16b18579"
-        },
-        "date": 1783893023943,
-        "tool": "customSmallerIsBetter",
-        "title": "[VFS] The cost of read (/dev/zero)",
-        "description": "lat_syscall read",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average read latency on Linux",
-            "value": "0.1297",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average read latency on Asterinas",
-            "value": "0.1801",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Jianfeng Jiang",
             "username": "StevenJiang1110",
             "email": "jiangjianfeng.jjf@antgroup.com"
@@ -42103,6 +42066,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average read latency on Asterinas",
             "value": "0.1926",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Hsy-Intel",
+            "username": "Hsy-Intel",
+            "email": "siyuan.hui@intel.com"
+          },
+          "committer": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "3329907643@qq.com"
+          },
+          "id": "ab90d2941875c619a430fa6fa3b65df6d25e8bc7",
+          "message": "Fix TDX retry issue",
+          "timestamp": "2026-08-13T06:14:58Z",
+          "url": "https://github.com/asterinas/asterinas/commit/ab90d2941875c619a430fa6fa3b65df6d25e8bc7"
+        },
+        "date": 1789422455805,
+        "tool": "customSmallerIsBetter",
+        "title": "[VFS] The cost of read (/dev/zero)",
+        "description": "lat_syscall read",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average read latency on Linux",
+            "value": "0.1305",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average read latency on Asterinas",
+            "value": "0.1918",
             "unit": "µs",
             "extra": "aster_result"
           }
