@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1789509115465,
+  "lastUpdate": 1789509115789,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -28815,43 +28815,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Jianfeng Jiang",
-            "username": "StevenJiang1110",
-            "email": "jiangjianfeng.jjf@antgroup.com"
-          },
-          "committer": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "3329907643@qq.com"
-          },
-          "id": "b91ce0947fa3cc5af74d6a1cadd8745cca48dc1d",
-          "message": "Remove redundant empty-path checks",
-          "timestamp": "2026-07-13T03:14:10Z",
-          "url": "https://github.com/asterinas/asterinas/commit/b91ce0947fa3cc5af74d6a1cadd8745cca48dc1d"
-        },
-        "date": 1784066206951,
-        "tool": "customSmallerIsBetter",
-        "title": "[FIFO] The cost of write+read (1B)",
-        "description": "lat_fifo",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average fifo latency on Linux",
-            "value": "2.2631",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average fifo latency on Asterinas",
-            "value": "3.0631",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "li041",
             "username": "li041",
             "email": "lxh050013@outlook.com"
@@ -31021,6 +30984,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average fifo latency on Asterinas",
             "value": "3.1580",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "WX Chen",
+            "username": "zhenbaii",
+            "email": "wxchen0913@gmail.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "d4b407ca87de203f79c27c9a83ada1d8223fe280",
+          "message": "Fix `getcwd` panic after unmounting a parent with child mounts\n\nTreat a dead parent mount as unreachable instead of unwrapping it.",
+          "timestamp": "2026-09-12T08:28:59Z",
+          "url": "https://github.com/asterinas/asterinas/commit/d4b407ca87de203f79c27c9a83ada1d8223fe280"
+        },
+        "date": 1789509115775,
+        "tool": "customSmallerIsBetter",
+        "title": "[FIFO] The cost of write+read (1B)",
+        "description": "lat_fifo",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average fifo latency on Linux",
+            "value": "2.3599",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average fifo latency on Asterinas",
+            "value": "3.1439",
             "unit": "µs",
             "extra": "aster_result"
           }
