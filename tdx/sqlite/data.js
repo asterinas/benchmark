@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1789509086931,
+  "lastUpdate": 1789509087211,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ramfs_benchmarks_vacuum": [
@@ -2236,43 +2236,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2026-07-16T06:46:49Z",
           "url": "https://github.com/asterinas/asterinas/commit/2b34b10513172de67b69502fe68df5774f6d0cb4"
         },
-        "date": 1784325778212,
-        "tool": "customSmallerIsBetter",
-        "title": "[Ramfs] The updates-individual result of sqlite speedtest",
-        "description": "sqlite-speed-test: 50000 UPDATES of individual rows",
-        "display": false,
-        "benches": [
-          {
-            "name": "The speed of updates-individual on Linux (Ramfs)",
-            "value": "1.311",
-            "unit": "second",
-            "extra": "linux_result"
-          },
-          {
-            "name": "The speed of updates-individual on Asterinas (Ramfs)",
-            "value": "1.499",
-            "unit": "second",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Chen Chengjun",
-            "username": "cchanging",
-            "email": "chenchengjun.ccj@antgroup.com"
-          },
-          "committer": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "3329907643@qq.com"
-          },
-          "id": "2b34b10513172de67b69502fe68df5774f6d0cb4",
-          "message": "Add regression tests",
-          "timestamp": "2026-07-16T06:46:49Z",
-          "url": "https://github.com/asterinas/asterinas/commit/2b34b10513172de67b69502fe68df5774f6d0cb4"
-        },
         "date": 1784411607683,
         "tool": "customSmallerIsBetter",
         "title": "[Ramfs] The updates-individual result of sqlite speedtest",
@@ -4428,6 +4391,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "The speed of updates-individual on Asterinas (Ramfs)",
             "value": "1.540",
+            "unit": "second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "WX Chen",
+            "username": "zhenbaii",
+            "email": "wxchen0913@gmail.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "d4b407ca87de203f79c27c9a83ada1d8223fe280",
+          "message": "Fix `getcwd` panic after unmounting a parent with child mounts\n\nTreat a dead parent mount as unreachable instead of unwrapping it.",
+          "timestamp": "2026-09-12T08:28:59Z",
+          "url": "https://github.com/asterinas/asterinas/commit/d4b407ca87de203f79c27c9a83ada1d8223fe280"
+        },
+        "date": 1789509087201,
+        "tool": "customSmallerIsBetter",
+        "title": "[Ramfs] The updates-individual result of sqlite speedtest",
+        "description": "sqlite-speed-test: 50000 UPDATES of individual rows",
+        "display": false,
+        "benches": [
+          {
+            "name": "The speed of updates-individual on Linux (Ramfs)",
+            "value": "1.357",
+            "unit": "second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "The speed of updates-individual on Asterinas (Ramfs)",
+            "value": "1.587",
             "unit": "second",
             "extra": "aster_result"
           }
