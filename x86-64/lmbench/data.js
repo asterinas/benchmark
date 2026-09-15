@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1789507982697,
+  "lastUpdate": 1789507982934,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -39894,43 +39894,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "li041",
-            "username": "li041",
-            "email": "lxh050013@outlook.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "435916bf0714a61e0fd1ebab5f6486532dedd8e4",
-          "message": "Update linux kernel binary for benchmark",
-          "timestamp": "2026-07-13T09:58:07Z",
-          "url": "https://github.com/asterinas/asterinas/commit/435916bf0714a61e0fd1ebab5f6486532dedd8e4"
-        },
-        "date": 1784151145103,
-        "tool": "customSmallerIsBetter",
-        "title": "[VFS] The cost of read (/dev/zero)",
-        "description": "lat_syscall read",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average read latency on Linux",
-            "value": "0.1233",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average read latency on Asterinas",
-            "value": "0.1791",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Ruihan Li",
             "username": "lrh2000",
             "email": "lrh2000@pku.edu.cn"
@@ -42100,6 +42063,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average read latency on Asterinas",
             "value": "0.1898",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "WX Chen",
+            "username": "zhenbaii",
+            "email": "wxchen0913@gmail.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "d4b407ca87de203f79c27c9a83ada1d8223fe280",
+          "message": "Fix `getcwd` panic after unmounting a parent with child mounts\n\nTreat a dead parent mount as unreachable instead of unwrapping it.",
+          "timestamp": "2026-09-12T08:28:59Z",
+          "url": "https://github.com/asterinas/asterinas/commit/d4b407ca87de203f79c27c9a83ada1d8223fe280"
+        },
+        "date": 1789507982921,
+        "tool": "customSmallerIsBetter",
+        "title": "[VFS] The cost of read (/dev/zero)",
+        "description": "lat_syscall read",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average read latency on Linux",
+            "value": "0.1263",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average read latency on Asterinas",
+            "value": "0.1909",
             "unit": "µs",
             "extra": "aster_result"
           }
