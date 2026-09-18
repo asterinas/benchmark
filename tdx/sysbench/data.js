@@ -1,45 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1789771698173,
+  "lastUpdate": 1789771698702,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "cpu_lat": [
-      {
-        "commit": {
-          "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
-            "name": "Jianfeng Jiang",
-            "username": "StevenJiang1110",
-            "email": "jiangjianfeng.jjf@antgroup.com"
-          },
-          "id": "c08cd16e3d59ff36f6e4765a006bae963b44cc6e",
-          "message": "Format RTC code",
-          "timestamp": "2026-07-15T05:24:36Z",
-          "url": "https://github.com/asterinas/asterinas/commit/c08cd16e3d59ff36f6e4765a006bae963b44cc6e"
-        },
-        "date": 1784239427139,
-        "tool": "customSmallerIsBetter",
-        "title": "[CPU] CPU performance",
-        "description": "sysbench cpu",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average Execution Time per CPU on Linux",
-            "value": "4.13",
-            "unit": "ms",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average Execution Time per CPU on Asterinas",
-            "value": "4.08",
-            "unit": "ms",
-            "extra": "aster_result"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2213,6 +2176,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average Execution Time per CPU on Asterinas",
             "value": "3.86",
+            "unit": "ms",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ya0rk",
+            "username": "Ya0rk",
+            "email": "yoohoo1287@gmail.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "415851eb38dec4fd2674149a85ccd7ec1f81b77a",
+          "message": "Add aster-code-review benchmark: 508-521",
+          "timestamp": "2026-08-19T05:07:19Z",
+          "url": "https://github.com/asterinas/asterinas/commit/415851eb38dec4fd2674149a85ccd7ec1f81b77a"
+        },
+        "date": 1789771698700,
+        "tool": "customSmallerIsBetter",
+        "title": "[CPU] CPU performance",
+        "description": "sysbench cpu",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average Execution Time per CPU on Linux",
+            "value": "3.88",
+            "unit": "ms",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average Execution Time per CPU on Asterinas",
+            "value": "3.85",
             "unit": "ms",
             "extra": "aster_result"
           }
