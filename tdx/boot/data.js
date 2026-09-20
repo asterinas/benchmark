@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1789943897119,
+  "lastUpdate": 1789943897266,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "boot_lat": [
@@ -663,6 +663,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Boot latency on Asterinas",
             "value": "0.58",
+            "unit": "sec",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "li041",
+            "username": "li041",
+            "email": "lxh050013@outlook.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "9f9f784e3e04b09468012e8b50b167f3e8c872b3",
+          "message": "Use shared DMA arena in BIO",
+          "timestamp": "2026-08-25T10:19:34Z",
+          "url": "https://github.com/asterinas/asterinas/commit/9f9f784e3e04b09468012e8b50b167f3e8c872b3"
+        },
+        "date": 1789943897265,
+        "tool": "customSmallerIsBetter",
+        "title": "[Boot] Boot latency",
+        "description": "Boot latency with a minimal initramfs (measured via /proc/uptime)",
+        "display": true,
+        "benches": [
+          {
+            "name": "Boot latency on Linux",
+            "value": "5.05",
+            "unit": "sec",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Boot latency on Asterinas",
+            "value": "0.57",
             "unit": "sec",
             "extra": "aster_result"
           }
