@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1789855811626,
+  "lastUpdate": 1789942087874,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "http_file4KB_bw": [
@@ -13311,43 +13311,6 @@ window.BENCHMARK_DATA = {
             "username": "junyang-zh",
             "email": "user@junyang.me"
           },
-          "id": "5c05f837d9bcdcdc8b4bf3ba8a837e5df0eb9749",
-          "message": "Use `map_untracked` to simplify code",
-          "timestamp": "2026-07-21T01:23:35Z",
-          "url": "https://github.com/asterinas/asterinas/commit/5c05f837d9bcdcdc8b4bf3ba8a837e5df0eb9749"
-        },
-        "date": 1784755990735,
-        "tool": "customBiggerIsBetter",
-        "title": "Nginx HTTP request performance with 20 concurrency and 10000 requests in total",
-        "description": "ab -n 10000 -c 20 http://localhost:8080/index.html",
-        "display": false,
-        "benches": [
-          {
-            "name": "Average HTTP Bandwidth over virtio-net between Host Linux and Guest Linux",
-            "value": "27985.23",
-            "unit": "Kbytes/sec",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average HTTP Bandwidth over virtio-net between Host Linux and Guest Asterinas",
-            "value": "5985.40",
-            "unit": "Kbytes/sec",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
-            "name": "Junyang Zhang",
-            "username": "junyang-zh",
-            "email": "user@junyang.me"
-          },
           "id": "276552ed5ea09fe019d391e24aebd0980a80b1d6",
           "message": "Rewrite safety comments for `KVirtArea::drop`",
           "timestamp": "2026-07-22T11:25:09Z",
@@ -15508,6 +15471,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average HTTP Bandwidth over virtio-net between Host Linux and Guest Asterinas",
             "value": "2121.54",
+            "unit": "Kbytes/sec",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "li041",
+            "username": "li041",
+            "email": "lxh050013@outlook.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "9f9f784e3e04b09468012e8b50b167f3e8c872b3",
+          "message": "Use shared DMA arena in BIO",
+          "timestamp": "2026-08-25T10:19:34Z",
+          "url": "https://github.com/asterinas/asterinas/commit/9f9f784e3e04b09468012e8b50b167f3e8c872b3"
+        },
+        "date": 1789942087871,
+        "tool": "customBiggerIsBetter",
+        "title": "Nginx HTTP request performance with 20 concurrency and 10000 requests in total",
+        "description": "ab -n 10000 -c 20 http://localhost:8080/index.html",
+        "display": false,
+        "benches": [
+          {
+            "name": "Average HTTP Bandwidth over virtio-net between Host Linux and Guest Linux",
+            "value": "25241.34",
+            "unit": "Kbytes/sec",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average HTTP Bandwidth over virtio-net between Host Linux and Guest Asterinas",
+            "value": "1874.98",
             "unit": "Kbytes/sec",
             "extra": "aster_result"
           }
