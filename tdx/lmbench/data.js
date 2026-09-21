@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1790030753635,
+  "lastUpdate": 1790030754018,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -4448,43 +4448,6 @@ window.BENCHMARK_DATA = {
             "username": "junyang-zh",
             "email": "user@junyang.me"
           },
-          "id": "5c05f837d9bcdcdc8b4bf3ba8a837e5df0eb9749",
-          "message": "Use `map_untracked` to simplify code",
-          "timestamp": "2026-07-21T01:23:35Z",
-          "url": "https://github.com/asterinas/asterinas/commit/5c05f837d9bcdcdc8b4bf3ba8a837e5df0eb9749"
-        },
-        "date": 1784757374805,
-        "tool": "customSmallerIsBetter",
-        "title": "[Memory] The cost of mmap+unmap",
-        "description": "lat_mmap",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average mmap latency on Linux",
-            "value": "30",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average mmap latency on Asterinas",
-            "value": "22",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
-            "name": "Junyang Zhang",
-            "username": "junyang-zh",
-            "email": "user@junyang.me"
-          },
           "id": "276552ed5ea09fe019d391e24aebd0980a80b1d6",
           "message": "Rewrite safety comments for `KVirtArea::drop`",
           "timestamp": "2026-07-22T11:25:09Z",
@@ -6631,6 +6594,43 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/asterinas/asterinas/commit/0fa78e6012c80acc8f03caf49f89e231a9c61cee"
         },
         "date": 1789857365160,
+        "tool": "customSmallerIsBetter",
+        "title": "[Memory] The cost of mmap+unmap",
+        "description": "lat_mmap",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average mmap latency on Linux",
+            "value": "27",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average mmap latency on Asterinas",
+            "value": "21",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Fan Jie",
+            "username": "f-jye",
+            "email": "fanjie@uniontech.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "c3fc8a5409ce337b3e0d6666b66462f8a8021cdc",
+          "message": "Introduce `PartitionManager` to serialize partition updates",
+          "timestamp": "2026-09-08T08:45:56Z",
+          "url": "https://github.com/asterinas/asterinas/commit/c3fc8a5409ce337b3e0d6666b66462f8a8021cdc"
+        },
+        "date": 1790030754000,
         "tool": "customSmallerIsBetter",
         "title": "[Memory] The cost of mmap+unmap",
         "description": "lat_mmap",
