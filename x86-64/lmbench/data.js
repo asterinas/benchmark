@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1790029616204,
+  "lastUpdate": 1790029616605,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -64280,43 +64280,6 @@ window.BENCHMARK_DATA = {
             "username": "junyang-zh",
             "email": "user@junyang.me"
           },
-          "id": "5c05f837d9bcdcdc8b4bf3ba8a837e5df0eb9749",
-          "message": "Use `map_untracked` to simplify code",
-          "timestamp": "2026-07-21T01:23:35Z",
-          "url": "https://github.com/asterinas/asterinas/commit/5c05f837d9bcdcdc8b4bf3ba8a837e5df0eb9749"
-        },
-        "date": 1784756004081,
-        "tool": "customBiggerIsBetter",
-        "title": "[TCP sockets] The bandwidth (loopback, 4KB message)",
-        "description": "bw_tcp -l",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average TCP bandwidth on Linux",
-            "value": "4185.12",
-            "unit": "MB/s",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average TCP bandwidth on Asterinas",
-            "value": "3636.06",
-            "unit": "MB/s",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
-            "name": "Junyang Zhang",
-            "username": "junyang-zh",
-            "email": "user@junyang.me"
-          },
           "id": "276552ed5ea09fe019d391e24aebd0980a80b1d6",
           "message": "Rewrite safety comments for `KVirtArea::drop`",
           "timestamp": "2026-07-22T11:25:09Z",
@@ -66477,6 +66440,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average TCP bandwidth on Asterinas",
             "value": "3848.21",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Fan Jie",
+            "username": "f-jye",
+            "email": "fanjie@uniontech.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "c3fc8a5409ce337b3e0d6666b66462f8a8021cdc",
+          "message": "Introduce `PartitionManager` to serialize partition updates",
+          "timestamp": "2026-09-08T08:45:56Z",
+          "url": "https://github.com/asterinas/asterinas/commit/c3fc8a5409ce337b3e0d6666b66462f8a8021cdc"
+        },
+        "date": 1790029616585,
+        "tool": "customBiggerIsBetter",
+        "title": "[TCP sockets] The bandwidth (loopback, 4KB message)",
+        "description": "bw_tcp -l",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average TCP bandwidth on Linux",
+            "value": "4924.88",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average TCP bandwidth on Asterinas",
+            "value": "3821.22",
             "unit": "MB/s",
             "extra": "aster_result"
           }
