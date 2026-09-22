@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1790116795467,
+  "lastUpdate": 1790116795785,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "smp8_p99_wakeup_latency": [
@@ -2231,43 +2231,6 @@ window.BENCHMARK_DATA = {
             "username": "junyang-zh",
             "email": "user@junyang.me"
           },
-          "id": "5c05f837d9bcdcdc8b4bf3ba8a837e5df0eb9749",
-          "message": "Use `map_untracked` to simplify code",
-          "timestamp": "2026-07-21T01:23:35Z",
-          "url": "https://github.com/asterinas/asterinas/commit/5c05f837d9bcdcdc8b4bf3ba8a837e5df0eb9749"
-        },
-        "date": 1784757352470,
-        "tool": "customSmallerIsBetter",
-        "title": "[Scheduler] P99 request latency while max-loading all CPUs (SMP=8)",
-        "description": "schbench -F 256 -n 5 -r 90",
-        "display": false,
-        "benches": [
-          {
-            "name": "P99 request latency of schbench on Linux",
-            "value": "2452",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "P99 request latency of schbench on Asterinas",
-            "value": "53184",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
-            "name": "Junyang Zhang",
-            "username": "junyang-zh",
-            "email": "user@junyang.me"
-          },
           "id": "276552ed5ea09fe019d391e24aebd0980a80b1d6",
           "message": "Rewrite safety comments for `KVirtArea::drop`",
           "timestamp": "2026-07-22T11:25:09Z",
@@ -4428,6 +4391,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "P99 request latency of schbench on Asterinas",
             "value": "130688",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Bitter127",
+            "username": "Bitter127",
+            "email": "1571681846@qq.com"
+          },
+          "committer": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "3329907643@qq.com"
+          },
+          "id": "ac790aa89b2f39e700d263882e1a1301e0a77a25",
+          "message": "Initialize RISC-V BSS for flat-binary boot",
+          "timestamp": "2026-09-14T05:02:39Z",
+          "url": "https://github.com/asterinas/asterinas/commit/ac790aa89b2f39e700d263882e1a1301e0a77a25"
+        },
+        "date": 1790116795783,
+        "tool": "customSmallerIsBetter",
+        "title": "[Scheduler] P99 request latency while max-loading all CPUs (SMP=8)",
+        "description": "schbench -F 256 -n 5 -r 90",
+        "display": false,
+        "benches": [
+          {
+            "name": "P99 request latency of schbench on Linux",
+            "value": "4824",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "P99 request latency of schbench on Asterinas",
+            "value": "81024",
             "unit": "µs",
             "extra": "aster_result"
           }
