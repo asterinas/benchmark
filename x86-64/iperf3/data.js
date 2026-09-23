@@ -1,44 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1790200879172,
+  "lastUpdate": 1790200879479,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "tcp_virtio_bw": [
-      {
-        "commit": {
-          "author": {
-            "name": "yao",
-            "email": "yoohoo1287@gmail.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "6c314ef6da150a9ce394642bbb0d89c81b045da6",
-          "message": "Fix aster-code-review total_defects to nreal",
-          "timestamp": "2026-07-21T02:58:14Z",
-          "url": "https://github.com/asterinas/asterinas/commit/6c314ef6da150a9ce394642bbb0d89c81b045da6"
-        },
-        "date": 1785014964631,
-        "tool": "customBiggerIsBetter",
-        "title": "[Network] iperf3 sender performance using TCP (virtio-net)",
-        "description": "iperf3 -s -B 10.0.2.15",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average TCP Bandwidth over virtio-net between Host Linux and Guest Linux",
-            "value": "12506",
-            "unit": "Mbits/sec",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average TCP Bandwidth over virtio-net between Host Linux and Guest Asterinas",
-            "value": "5793",
-            "unit": "Mbits/sec",
-            "extra": "aster_result"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2213,6 +2177,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average TCP Bandwidth over virtio-net between Host Linux and Guest Asterinas",
             "value": "6010",
+            "unit": "Mbits/sec",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "li041",
+            "username": "li041",
+            "email": "lxh050013@outlook.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "c27a1ab9b7108ea1a44e5090bc580a92405f787c",
+          "message": "Configure managed virtio-fs services for QEMU",
+          "timestamp": "2026-09-21T04:24:58Z",
+          "url": "https://github.com/asterinas/asterinas/commit/c27a1ab9b7108ea1a44e5090bc580a92405f787c"
+        },
+        "date": 1790200879478,
+        "tool": "customBiggerIsBetter",
+        "title": "[Network] iperf3 receiver performance using TCP (virtio-net)",
+        "description": "iperf3 -s -B 10.0.2.15",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average TCP Bandwidth over virtio-net between Host Linux and Guest Linux",
+            "value": "8732",
+            "unit": "Mbits/sec",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average TCP Bandwidth over virtio-net between Host Linux and Guest Asterinas",
+            "value": "5439",
             "unit": "Mbits/sec",
             "extra": "aster_result"
           }
