@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1790461324900,
+  "lastUpdate": 1790461325149,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "boot_lat": [
@@ -959,6 +959,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Boot latency on Asterinas",
             "value": "0.32",
+            "unit": "sec",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "3eb661e12ebd7989db6fce53ca91bbfe97edda23",
+          "message": "Bumped Docker image version to 0.18.1-20260926",
+          "timestamp": "2026-09-25T15:23:03Z",
+          "url": "https://github.com/asterinas/asterinas/commit/3eb661e12ebd7989db6fce53ca91bbfe97edda23"
+        },
+        "date": 1790461325148,
+        "tool": "customSmallerIsBetter",
+        "title": "[Boot] Boot latency",
+        "description": "Boot latency with a minimal initramfs (measured via /proc/uptime)",
+        "display": true,
+        "benches": [
+          {
+            "name": "Boot latency on Linux",
+            "value": "0.82",
+            "unit": "sec",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Boot latency on Asterinas",
+            "value": "0.31",
             "unit": "sec",
             "extra": "aster_result"
           }
