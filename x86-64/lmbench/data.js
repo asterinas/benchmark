@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1790549405303,
+  "lastUpdate": 1790549405570,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -44395,43 +44395,6 @@ window.BENCHMARK_DATA = {
             "username": "StevenJiang1110",
             "email": "jiangjianfeng.jjf@antgroup.com"
           },
-          "id": "8a95431093609ed1ecca15b13e4568118513fe06",
-          "message": "Adjust signalfd method signatures and comments",
-          "timestamp": "2026-07-28T08:41:15Z",
-          "url": "https://github.com/asterinas/asterinas/commit/8a95431093609ed1ecca15b13e4568118513fe06"
-        },
-        "date": 1785361125655,
-        "tool": "customSmallerIsBetter",
-        "title": "[VFS] The cost of stat",
-        "description": "lat_syscall stat",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average stat latency on Linux",
-            "value": "0.3265",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average stat latency on Asterinas",
-            "value": "0.4970",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
-            "name": "Jianfeng Jiang",
-            "username": "StevenJiang1110",
-            "email": "jiangjianfeng.jjf@antgroup.com"
-          },
           "id": "07ae890cef4380273464e0748e9fa17b6e831f28",
           "message": "Adjust blank lines and error messages",
           "timestamp": "2026-07-30T03:08:13Z",
@@ -46595,6 +46558,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average stat latency on Asterinas",
             "value": "0.4541",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "li041",
+            "username": "li041",
+            "email": "lxh050013@outlook.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "98e71727529efdbe87f35c20bcaceb0fc2e6e8f3",
+          "message": "Register cached fio benchmarks",
+          "timestamp": "2026-09-02T02:13:28Z",
+          "url": "https://github.com/asterinas/asterinas/commit/98e71727529efdbe87f35c20bcaceb0fc2e6e8f3"
+        },
+        "date": 1790549405553,
+        "tool": "customSmallerIsBetter",
+        "title": "[VFS] The cost of stat",
+        "description": "lat_syscall stat",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average stat latency on Linux",
+            "value": "0.2865",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average stat latency on Asterinas",
+            "value": "0.4543",
             "unit": "µs",
             "extra": "aster_result"
           }
