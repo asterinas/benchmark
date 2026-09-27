@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1790461322248,
+  "lastUpdate": 1790549419671,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "tcp_virtio_bw": [
@@ -4141,6 +4141,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average UDP Bandwidth over virtio-net between Host Linux and Guest Asterinas",
             "value": "19.1",
+            "unit": "Mbits/sec",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "li041",
+            "username": "li041",
+            "email": "lxh050013@outlook.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "98e71727529efdbe87f35c20bcaceb0fc2e6e8f3",
+          "message": "Register cached fio benchmarks",
+          "timestamp": "2026-09-02T02:13:28Z",
+          "url": "https://github.com/asterinas/asterinas/commit/98e71727529efdbe87f35c20bcaceb0fc2e6e8f3"
+        },
+        "date": 1790549419670,
+        "tool": "customBiggerIsBetter",
+        "title": "[Network] iperf3 sender performance using UDP (virtio-net)",
+        "description": "iperf3 -s -B 10.0.2.15",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average UDP Bandwidth over virtio-net between Host Linux and Guest Linux",
+            "value": "6398",
+            "unit": "Mbits/sec",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average UDP Bandwidth over virtio-net between Host Linux and Guest Asterinas",
+            "value": "3765",
             "unit": "Mbits/sec",
             "extra": "aster_result"
           }
