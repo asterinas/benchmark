@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1790635933898,
+  "lastUpdate": 1790635934124,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "boot_lat": [
@@ -2064,6 +2064,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Boot latency (~100MB pad) on Linux",
             "value": "0.82",
+            "unit": "sec",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Boot latency (~100MB pad) on Asterinas",
+            "value": "0.36",
+            "unit": "sec",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ray Lee",
+            "username": "hburaylee",
+            "email": "hburaylee@gmail.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "be72e21f4a993e09064d6eff91147c47196e092d",
+          "message": "Add Firecracker boot documentation to the book\n\nSigned-off-by: Ray Lee <hburaylee@gmail.com>",
+          "timestamp": "2026-09-08T08:56:32Z",
+          "url": "https://github.com/asterinas/asterinas/commit/be72e21f4a993e09064d6eff91147c47196e092d"
+        },
+        "date": 1790635934123,
+        "tool": "customSmallerIsBetter",
+        "title": "[Boot] Boot latency (~100MB pad)",
+        "description": "Boot latency with a ~100MB-padded initramfs (measured via /proc/uptime)",
+        "display": true,
+        "benches": [
+          {
+            "name": "Boot latency (~100MB pad) on Linux",
+            "value": "0.83",
             "unit": "sec",
             "extra": "linux_result"
           },
