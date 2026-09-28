@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1790636545471,
+  "lastUpdate": 1790636545825,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -99866,43 +99866,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "li041",
-            "username": "li041",
-            "email": "lxh050013@outlook.com"
-          },
-          "committer": {
-            "name": "Jianfeng Jiang",
-            "username": "StevenJiang1110",
-            "email": "jiangjianfeng.jjf@antgroup.com"
-          },
-          "id": "6e57d226d3b3db6d733aaa6ad05cc80c207f96c6",
-          "message": "Refine virtiofs attr revalidation",
-          "timestamp": "2026-07-22T13:16:18Z",
-          "url": "https://github.com/asterinas/asterinas/commit/6e57d226d3b3db6d733aaa6ad05cc80c207f96c6"
-        },
-        "date": 1785190944314,
-        "tool": "customBiggerIsBetter",
-        "title": "[Memory] The bandwidth of copying integers",
-        "description": "bw_mem fcp",
-        "display": false,
-        "benches": [
-          {
-            "name": "Average memory copy bandwidth on Linux",
-            "value": "5309.51",
-            "unit": "MB/s",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average memory copy bandwidth on Asterinas",
-            "value": "6160.73",
-            "unit": "MB/s",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Ruihan Li",
             "username": "lrh2000",
             "email": "lrh2000@pku.edu.cn"
@@ -102076,6 +102039,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average memory copy bandwidth on Asterinas",
             "value": "6811.27",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ray Lee",
+            "username": "hburaylee",
+            "email": "hburaylee@gmail.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "be72e21f4a993e09064d6eff91147c47196e092d",
+          "message": "Add Firecracker boot documentation to the book\n\nSigned-off-by: Ray Lee <hburaylee@gmail.com>",
+          "timestamp": "2026-09-08T08:56:32Z",
+          "url": "https://github.com/asterinas/asterinas/commit/be72e21f4a993e09064d6eff91147c47196e092d"
+        },
+        "date": 1790636545807,
+        "tool": "customBiggerIsBetter",
+        "title": "[Memory] The bandwidth of copying integers",
+        "description": "bw_mem fcp",
+        "display": false,
+        "benches": [
+          {
+            "name": "Average memory copy bandwidth on Linux",
+            "value": "6587.62",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average memory copy bandwidth on Asterinas",
+            "value": "6718.70",
             "unit": "MB/s",
             "extra": "aster_result"
           }
