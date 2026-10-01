@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1790895504371,
+  "lastUpdate": 1790895504722,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -75496,43 +75496,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
-            "name": "Jianfeng Jiang",
-            "username": "StevenJiang1110",
-            "email": "jiangjianfeng.jjf@antgroup.com"
-          },
-          "id": "3389b533f894f855e946e975daa29f7a46b54171",
-          "message": "Pass `&mut FsCreationCtx` to `FsType`",
-          "timestamp": "2026-08-03T09:15:59Z",
-          "url": "https://github.com/asterinas/asterinas/commit/3389b533f894f855e946e975daa29f7a46b54171"
-        },
-        "date": 1785793164986,
-        "tool": "customSmallerIsBetter",
-        "title": "[UDP sockets] The latency of write+read (loopback, 4B message)",
-        "description": "lat_udp",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average UDP latency on Linux",
-            "value": "4.5292",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average UDP latency on Asterinas",
-            "value": "3.5797",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Zhang Junyang",
             "username": "junyang-zh",
             "email": "junyang@stu.pku.edu.cn"
@@ -77707,6 +77670,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average UDP latency on Asterinas",
             "value": "3.3809",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "harry",
+            "username": "Cosh-y",
+            "email": "ambition0316@126.com"
+          },
+          "committer": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "3329907643@qq.com"
+          },
+          "id": "577826860f5ebca1210fbe27d261b2327a0ae60f",
+          "message": "Add guest physical memory management with EPT",
+          "timestamp": "2026-09-09T13:29:13Z",
+          "url": "https://github.com/asterinas/asterinas/commit/577826860f5ebca1210fbe27d261b2327a0ae60f"
+        },
+        "date": 1790895504708,
+        "tool": "customSmallerIsBetter",
+        "title": "[UDP sockets] The latency of write+read (loopback, 4B message)",
+        "description": "lat_udp",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average UDP latency on Linux",
+            "value": "3.5324",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average UDP latency on Asterinas",
+            "value": "3.3793",
             "unit": "µs",
             "extra": "aster_result"
           }
