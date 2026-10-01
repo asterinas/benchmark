@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1790895518115,
+  "lastUpdate": 1790895518356,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_seq_write_bw": [
@@ -4584,6 +4584,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average direct I/O file write bandwidth on Asterinas",
             "value": "1491",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "harry",
+            "username": "Cosh-y",
+            "email": "ambition0316@126.com"
+          },
+          "committer": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "3329907643@qq.com"
+          },
+          "id": "577826860f5ebca1210fbe27d261b2327a0ae60f",
+          "message": "Add guest physical memory management with EPT",
+          "timestamp": "2026-09-09T13:29:13Z",
+          "url": "https://github.com/asterinas/asterinas/commit/577826860f5ebca1210fbe27d261b2327a0ae60f"
+        },
+        "date": 1790895518354,
+        "tool": "customBiggerIsBetter",
+        "title": "[Ext2] The bandwidth of sequential writes (direct I/O, w/t IOMMU)",
+        "description": "fio -filename=/ext2/fio-test -size=1G -bs=1M -direct=1",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average direct I/O file write bandwidth on Linux",
+            "value": "1373",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average direct I/O file write bandwidth on Asterinas",
+            "value": "1545",
             "unit": "MB/s",
             "extra": "aster_result"
           }
