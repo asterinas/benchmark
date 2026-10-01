@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1790895509282,
+  "lastUpdate": 1790895509591,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -99926,43 +99926,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
-            "name": "Jianfeng Jiang",
-            "username": "StevenJiang1110",
-            "email": "jiangjianfeng.jjf@antgroup.com"
-          },
-          "id": "3389b533f894f855e946e975daa29f7a46b54171",
-          "message": "Pass `&mut FsCreationCtx` to `FsType`",
-          "timestamp": "2026-08-03T09:15:59Z",
-          "url": "https://github.com/asterinas/asterinas/commit/3389b533f894f855e946e975daa29f7a46b54171"
-        },
-        "date": 1785793170182,
-        "tool": "customSmallerIsBetter",
-        "title": "[Semaphores] The cost of semop",
-        "description": "lat_sem",
-        "display": false,
-        "benches": [
-          {
-            "name": "Average semaphore latency on Linux",
-            "value": "1.0047",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average semaphore latency on Asterinas",
-            "value": "0.6271",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Zhang Junyang",
             "username": "junyang-zh",
             "email": "junyang@stu.pku.edu.cn"
@@ -102137,6 +102100,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average semaphore latency on Asterinas",
             "value": "0.5762",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "harry",
+            "username": "Cosh-y",
+            "email": "ambition0316@126.com"
+          },
+          "committer": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "3329907643@qq.com"
+          },
+          "id": "577826860f5ebca1210fbe27d261b2327a0ae60f",
+          "message": "Add guest physical memory management with EPT",
+          "timestamp": "2026-09-09T13:29:13Z",
+          "url": "https://github.com/asterinas/asterinas/commit/577826860f5ebca1210fbe27d261b2327a0ae60f"
+        },
+        "date": 1790895509578,
+        "tool": "customSmallerIsBetter",
+        "title": "[Semaphores] The cost of semop",
+        "description": "lat_sem",
+        "display": false,
+        "benches": [
+          {
+            "name": "Average semaphore latency on Linux",
+            "value": "0.7970",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average semaphore latency on Asterinas",
+            "value": "0.5634",
             "unit": "µs",
             "extra": "aster_result"
           }
