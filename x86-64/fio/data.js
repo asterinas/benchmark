@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1791074093233,
+  "lastUpdate": 1791074093487,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_seq_write_bw": [
@@ -9883,6 +9883,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average direct I/O read bandwidth on Asterinas",
             "value": "2377",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Marsman1996",
+            "username": "Marsman1996",
+            "email": "lqliuyuwei@outlook.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "0c60537098f4c2949ad2d382aaf499de72263d76",
+          "message": "Refactor sigset size validation into `RequireFullSize` and `AllowTruncSize`\n\nalso fix `rt_sigpending` rejecting sigsetsize smaller than 8",
+          "timestamp": "2026-09-21T11:59:59Z",
+          "url": "https://github.com/asterinas/asterinas/commit/0c60537098f4c2949ad2d382aaf499de72263d76"
+        },
+        "date": 1791074093485,
+        "tool": "customBiggerIsBetter",
+        "title": "[NVMe] The bandwidth of sequential reads (direct I/O, w/t IOMMU)",
+        "description": "fio -filename=/dev/nvme0n1 -size=1G -bs=1M -direct=1",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average direct I/O read bandwidth on Linux",
+            "value": "5591",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average direct I/O read bandwidth on Asterinas",
+            "value": "2360",
             "unit": "MB/s",
             "extra": "aster_result"
           }
