@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1791074091628,
+  "lastUpdate": 1791074091901,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "tcp_virtio_bw": [
@@ -3402,6 +3402,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average UDP Bandwidth over virtio-net between Host Linux and Guest Asterinas",
             "value": "3196",
+            "unit": "Mbits/sec",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Marsman1996",
+            "username": "Marsman1996",
+            "email": "lqliuyuwei@outlook.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "0c60537098f4c2949ad2d382aaf499de72263d76",
+          "message": "Refactor sigset size validation into `RequireFullSize` and `AllowTruncSize`\n\nalso fix `rt_sigpending` rejecting sigsetsize smaller than 8",
+          "timestamp": "2026-09-21T11:59:59Z",
+          "url": "https://github.com/asterinas/asterinas/commit/0c60537098f4c2949ad2d382aaf499de72263d76"
+        },
+        "date": 1791074091899,
+        "tool": "customBiggerIsBetter",
+        "title": "[Network] iperf3 receiver performance using UDP (virtio-net)",
+        "description": "iperf3 -s -B 10.0.2.15",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average UDP Bandwidth over virtio-net between Host Linux and Guest Linux",
+            "value": "5846",
+            "unit": "Mbits/sec",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average UDP Bandwidth over virtio-net between Host Linux and Guest Asterinas",
+            "value": "3325",
             "unit": "Mbits/sec",
             "extra": "aster_result"
           }
