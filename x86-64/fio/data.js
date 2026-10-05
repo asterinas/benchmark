@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1791159769175,
+  "lastUpdate": 1791159769340,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_seq_write_bw": [
@@ -10105,6 +10105,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average direct I/O read bandwidth on Asterinas",
             "value": "2360",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "73ef2b9b5fd7b1a8d9583525d8824ef31985e179",
+          "message": "Enhance UART console in AArch64",
+          "timestamp": "2026-07-03T17:41:02Z",
+          "url": "https://github.com/asterinas/asterinas/commit/73ef2b9b5fd7b1a8d9583525d8824ef31985e179"
+        },
+        "date": 1791159769338,
+        "tool": "customBiggerIsBetter",
+        "title": "[NVMe] The bandwidth of sequential reads (direct I/O, w/t IOMMU)",
+        "description": "fio -filename=/dev/nvme0n1 -size=1G -bs=1M -direct=1",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average direct I/O read bandwidth on Linux",
+            "value": "5702",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average direct I/O read bandwidth on Asterinas",
+            "value": "2351",
             "unit": "MB/s",
             "extra": "aster_result"
           }
