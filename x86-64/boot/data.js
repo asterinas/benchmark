@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1791074095587,
+  "lastUpdate": 1791159770699,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "boot_lat": [
@@ -3773,6 +3773,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Boot latency (~500MB pad) on Asterinas",
             "value": "0.54",
+            "unit": "sec",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "73ef2b9b5fd7b1a8d9583525d8824ef31985e179",
+          "message": "Enhance UART console in AArch64",
+          "timestamp": "2026-07-03T17:41:02Z",
+          "url": "https://github.com/asterinas/asterinas/commit/73ef2b9b5fd7b1a8d9583525d8824ef31985e179"
+        },
+        "date": 1791159770698,
+        "tool": "customSmallerIsBetter",
+        "title": "[Boot] Boot latency (~500MB pad)",
+        "description": "Boot latency with a ~500MB-padded initramfs (measured via /proc/uptime)",
+        "display": true,
+        "benches": [
+          {
+            "name": "Boot latency (~500MB pad) on Linux",
+            "value": "1.01",
+            "unit": "sec",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Boot latency (~500MB pad) on Asterinas",
+            "value": "0.51",
             "unit": "sec",
             "extra": "aster_result"
           }
