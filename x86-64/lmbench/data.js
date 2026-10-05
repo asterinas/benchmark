@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1791159764560,
+  "lastUpdate": 1791159764821,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -26658,43 +26658,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
-            "name": "Jianfeng Jiang",
-            "username": "StevenJiang1110",
-            "email": "jiangjianfeng.jjf@antgroup.com"
-          },
-          "id": "3389b533f894f855e946e975daa29f7a46b54171",
-          "message": "Pass `&mut FsCreationCtx` to `FsType`",
-          "timestamp": "2026-08-03T09:15:59Z",
-          "url": "https://github.com/asterinas/asterinas/commit/3389b533f894f855e946e975daa29f7a46b54171"
-        },
-        "date": 1785793173436,
-        "tool": "customBiggerIsBetter",
-        "title": "[Pipes] The bandwidth",
-        "description": "bw_pipe",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average pipe bandwidth on Linux",
-            "value": "10251.66",
-            "unit": "MB/s",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average pipe bandwidth on Asterinas",
-            "value": "10465.42",
-            "unit": "MB/s",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Zhang Junyang",
             "username": "junyang-zh",
             "email": "junyang@stu.pku.edu.cn"
@@ -28869,6 +28832,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average pipe bandwidth on Asterinas",
             "value": "11120.67",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "73ef2b9b5fd7b1a8d9583525d8824ef31985e179",
+          "message": "Enhance UART console in AArch64",
+          "timestamp": "2026-07-03T17:41:02Z",
+          "url": "https://github.com/asterinas/asterinas/commit/73ef2b9b5fd7b1a8d9583525d8824ef31985e179"
+        },
+        "date": 1791159764805,
+        "tool": "customBiggerIsBetter",
+        "title": "[Pipes] The bandwidth",
+        "description": "bw_pipe",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average pipe bandwidth on Linux",
+            "value": "10161.64",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average pipe bandwidth on Asterinas",
+            "value": "11135.67",
             "unit": "MB/s",
             "extra": "aster_result"
           }
