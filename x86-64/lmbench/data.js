@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1791329464393,
+  "lastUpdate": 1791329464685,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -73313,43 +73313,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2026-06-18T02:14:07Z",
           "url": "https://github.com/asterinas/asterinas/commit/a110dfc73da00191d58ed62defaf6a5b3a12045e"
         },
-        "date": 1786138228168,
-        "tool": "customBiggerIsBetter",
-        "title": "[HTTP] The bandwidth (loopback)",
-        "description": "bw_http",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average simple HTTP transaction bandwidth on Linux",
-            "value": "4084.54",
-            "unit": "MB/s",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average simple HTTP transaction bandwidth on Asterinas",
-            "value": "4656.14",
-            "unit": "MB/s",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
-            "name": "Chengjun Chen",
-            "username": "cchanging",
-            "email": "33800552+cchanging@users.noreply.github.com"
-          },
-          "id": "a110dfc73da00191d58ed62defaf6a5b3a12045e",
-          "message": "Update page cache tests",
-          "timestamp": "2026-06-18T02:14:07Z",
-          "url": "https://github.com/asterinas/asterinas/commit/a110dfc73da00191d58ed62defaf6a5b3a12045e"
-        },
         "date": 1786223893148,
         "tool": "customBiggerIsBetter",
         "title": "[HTTP] The bandwidth (loopback)",
@@ -75510,6 +75473,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average simple HTTP transaction bandwidth on Asterinas",
             "value": "3767.63",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "QcN3ep",
+            "username": "QcN3ep",
+            "email": "qc_n3ep@outlook.com"
+          },
+          "committer": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "3329907643@qq.com"
+          },
+          "id": "3d85cb44263808723ee46c5dbbd06b330a2b3204",
+          "message": "Reserve device tree memory on ARM",
+          "timestamp": "2026-10-05T12:51:37Z",
+          "url": "https://github.com/asterinas/asterinas/commit/3d85cb44263808723ee46c5dbbd06b330a2b3204"
+        },
+        "date": 1791329464668,
+        "tool": "customBiggerIsBetter",
+        "title": "[HTTP] The bandwidth (loopback)",
+        "description": "bw_http",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average simple HTTP transaction bandwidth on Linux",
+            "value": "3124.55",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average simple HTTP transaction bandwidth on Asterinas",
+            "value": "3853.07",
             "unit": "MB/s",
             "extra": "aster_result"
           }
