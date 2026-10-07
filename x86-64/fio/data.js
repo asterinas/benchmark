@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1791416403783,
+  "lastUpdate": 1791416403980,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_seq_write_bw": [
@@ -10547,6 +10547,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average direct I/O write bandwidth on Asterinas",
             "value": "1585",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "le-monde-bleu",
+            "username": "le-monde-bleu",
+            "email": "2301110750@stu.pku.edu.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "c4c0d992bd0fc93fa4558ca63fa7a2937b5c87ff",
+          "message": "Move the i8042 component to `kernel/comps`\n\nRegister i8042 as a fallback restart provider and let each architecture define the system power policy injected into OSTD. Keep ACPI ahead of i8042 without making aster-core depend on the high-level component.",
+          "timestamp": "2026-09-21T12:48:26Z",
+          "url": "https://github.com/asterinas/asterinas/commit/c4c0d992bd0fc93fa4558ca63fa7a2937b5c87ff"
+        },
+        "date": 1791416403979,
+        "tool": "customBiggerIsBetter",
+        "title": "[NVMe] The bandwidth of sequential writes (direct I/O, w/t IOMMU)",
+        "description": "fio -filename=/dev/nvme0n1 -size=1G -bs=1M -direct=1",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average direct I/O write bandwidth on Linux",
+            "value": "2382",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average direct I/O write bandwidth on Asterinas",
+            "value": "1597",
             "unit": "MB/s",
             "extra": "aster_result"
           }
