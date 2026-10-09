@@ -89,6 +89,17 @@
           background-color: #ffffff; /* White background for better chart display */
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Slight shadow */
       }
+      .chart-container {
+          position: relative;
+          width: 80%;
+          margin: 0 auto;
+      }
+      .chart-container canvas {
+          display: block;
+          max-width: 100%;
+          min-width: 0;
+          width: 100%;
+      }
       .chart-description {
           font-family: 'Courier New', Courier, monospace;
           color: #333; /* Changed to a darker color for better readability */
@@ -122,266 +133,197 @@
       <div class="small">Powered by <a rel="noopener" href="https://github.com/marketplace/actions/continuous-benchmark">github-action-benchmark</a></div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-tick-configuration"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation"></script> <!-- Include annotation plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.8/dist/chart.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@3.1.0/dist/chartjs-plugin-annotation.min.js"></script>
     <script id="main-script">
       'use strict';
       (function() {
-        
-        async function init() {
-          const dataPaths = [
-            'lmbench/data.js',
-            'iperf3/data.js',
-            'nginx/data.js',
-            'sysbench/data.js',
-            'redis/data.js',
-            'fio/data.js',
-            'sqlite/data.js',
-            'hackbench/data.js',
-            'schbench/data.js',
-            'memcached/data.js',
-            // Add more paths as needed
-          ];
+        const dataPaths = [
+          'lmbench/data.js',
+          'iperf3/data.js',
+          'nginx/data.js',
+          'sysbench/data.js',
+          'redis/data.js',
+          'fio/data.js',
+          'sqlite/data.js',
+          'hackbench/data.js',
+          'schbench/data.js',
+          'memcached/data.js',
+        ];
 
-          const allData = await Promise.all(dataPaths.map(path => fetch(path).then(res => res.text())));
+        function numericValue(value) {
+          if (typeof value !== 'number' && typeof value !== 'string') return null;
+          if (typeof value === 'string' && value.trim() === '') return null;
+          const number = Number(value);
+          return Number.isFinite(number) && number >= 0 ? number : null;
+        }
 
-          // Parse and merge all data into a single object
-          const mergedData = {
-            lastUpdate: 0,
-            repoUrl: '',
-            normalizedDataSets: []
-          };
+        function getComparison(entry) {
+          const linux = entry.benches.filter(bench => bench.extra === 'linux_result');
+          const aster = entry.benches.filter(bench => bench.extra === 'aster_result');
+          if (linux.length !== 1 || aster.length !== 1 || linux[0].unit !== aster[0].unit) {
+            return null;
+          }
+          const linuxValue = numericValue(linux[0].value);
+          const asterValue = numericValue(aster[0].value);
+          if (linuxValue === null || asterValue === null || linuxValue <= 0 || asterValue <= 0) {
+            return null;
+          }
+          let ratio;
+          if (entry.tool === 'customBiggerIsBetter') ratio = asterValue / linuxValue;
+          else if (entry.tool === 'customSmallerIsBetter') ratio = linuxValue / asterValue;
+          else return null;
+          return Number.isFinite(ratio) && ratio > 0 ? ratio : null;
+        }
 
-          allData.forEach((data, index) => {
-            const scriptContent = data.replace('window.BENCHMARK_DATA = ', '');
-            const parsedData = JSON.parse(scriptContent);
-            mergedData.lastUpdate = Math.max(mergedData.lastUpdate, parsedData.lastUpdate);
-            mergedData.repoUrl = parsedData.repoUrl;
-            console.log(parsedData);
+        function appendText(parent, tag, className, text) {
+          const element = document.createElement(tag);
+          element.className = className;
+          element.textContent = text;
+          parent.appendChild(element);
+          return element;
+        }
 
-            // Get the base name from the path
-            const baseName = dataPaths[index].split('/')[0];
-
-            const dateSets = Object.keys(parsedData.entries).map(name => ({
-              name,
-              dataSet: collectBenchesPerTestCase(parsedData.entries[name]),
-            }));
-
-            // Normalize the data
-            const normalizedData = getNormalizedData(dateSets);
-            mergedData.normalizedDataSets.push({ name: baseName, normalizedData });
+        function renderOverview(parent, benchmarks) {
+          const labelCharacters = 65;
+          // Keep test identity separate from its title; titles need not be unique.
+          const included = benchmarks.filter(benchmark => benchmark.latestEntry.display);
+          const comparisons = included.map(benchmark => ({
+            name: benchmark.name,
+            title: benchmark.latestEntry.title,
+            ratio: getComparison(benchmark.latestEntry),
+          }));
+          const valid = comparisons.filter(comparison => comparison.ratio !== null);
+          appendText(parent, 'div', 'chart-description',
+            'For bandwidth, use Asterinas / Linux; for latency, use Linux / Asterinas. The higher, the better.');
+          const invalid = comparisons.filter(comparison => comparison.ratio === null);
+          if (invalid.length > 0) {
+            appendText(parent, 'div', 'chart-description',
+              'Latest comparison unavailable: ' + invalid.map(comparison => comparison.name).join(', ') + '.');
+          }
+          const labels = comparisons.map(comparison => comparison.title);
+          const barValues = comparisons.map(comparison => comparison.ratio);
+          // Keep the mean row in empty charts without inventing a measured value.
+          labels.push('Geometric Mean');
+          barValues.push(valid.length > 0
+            ? Math.exp(valid.reduce((sum, comparison) => sum + Math.log(comparison.ratio), 0) / valid.length)
+            : null);
+          const container = document.createElement('div');
+          container.className = 'chart-container';
+          container.style.height = (25 * (comparisons.length + 2) + 20) + 'px';
+          parent.appendChild(container);
+          const canvas = document.createElement('canvas');
+          canvas.className = 'benchmark-chart-overview';
+          container.appendChild(canvas);
+          new Chart(canvas, {
+            type: 'bar',
+            data: {
+              labels,
+              datasets: [{
+                label: 'Asterinas',
+                data: barValues,
+                backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                borderColor: 'rgb(54, 162, 235)',
+                borderWidth: 1,
+              }],
+            },
+            options: {
+              indexAxis: 'y',
+              scales: {
+                x: { beginAtZero: true, reverse: true },
+                y: {
+                  position: 'right',
+                  ticks: {
+                    padding: 10,
+                    autoSkip: false,
+                    // Equal-width labels keep the zero aligned across all suites.
+                    callback: function(value) {
+                      return this.getLabelForValue(value).slice(0, labelCharacters).padEnd(labelCharacters, ' ');
+                    },
+                    font: context => ({
+                      family: 'Consolas, monospace',
+                      weight: context.tick.label.trim() === 'Geometric Mean' ? 'bold' : 'normal',
+                      size: 12,
+                    }),
+                  },
+                },
+              },
+              plugins: {
+                annotation: {
+                  annotations: {
+                    reference: {
+                      type: 'line',
+                      xMin: 1,
+                      xMax: 1,
+                      borderColor: 'rgba(0, 0, 0, 0.5)',
+                      borderWidth: 2,
+                    },
+                  },
+                },
+              },
+              barPercentage: 0.6,
+              responsive: true,
+              maintainAspectRatio: false,
+            },
           });
-
-          // Render header
-          document.getElementById('last-update').textContent = new Date(mergedData.lastUpdate).toString();
-          const repoLink = document.getElementById('repository-link');
-          repoLink.href = mergedData.repoUrl;
-          repoLink.textContent = mergedData.repoUrl;
-
-          return mergedData.normalizedDataSets;
         }
 
-        function collectBenchesPerTestCase(entries) {
-          const map = new Map();
-          // Ensure entries is an array
-          if (!Array.isArray(entries)) {
+        async function init() {
+          const loaded = await Promise.all(dataPaths.map(async path => {
             try {
-              entries = Array.from(entries);
-            } catch (e) {
-              throw new TypeError('entries is not iterable');
+              const response = await fetch(path);
+              if (!response.ok) throw new Error('HTTP ' + response.status);
+              const text = await response.text();
+              const data = JSON.parse(text.replace(/^window\.BENCHMARK_DATA\s*=\s*/, ''));
+              return { name: path.split('/')[0], data };
+            } catch (error) {
+              return { name: path.split('/')[0], error };
             }
+          }));
+          const main = document.getElementById('main');
+          const available = loaded.filter(suite => !suite.error);
+          if (available.length > 0) {
+            const lastUpdate = Math.max(...available.map(suite => suite.data.lastUpdate));
+            document.getElementById('last-update').textContent = new Date(lastUpdate).toString();
+            const repoLink = document.getElementById('repository-link');
+            repoLink.href = available[0].data.repoUrl;
+            repoLink.textContent = available[0].data.repoUrl;
           }
-          for (const entry of entries) {
-            const {commit, date, tool, title, description, display, benches} = entry;
-            for (const bench of benches) {
-              const result = { commit, date, tool, title, description, display, bench };
-              const arr = map.get(bench.name);
-              if (arr === undefined) {
-                map.set(bench.name, [result]);
-              } else {
-                arr.push(result);
-              }
-            }
-          }
-          return map;
-        }
-
-        // Get normalized data with display flag
-        function getNormalizedData(dataSets) {
-          function extractValuesAndTitle(map) {
-            const linuxEntry = [...map.values()].find(entry => entry[0].bench.extra === 'linux_result');
-            const asterinasEntry = [...map.values()].find(entry => entry[0].bench.extra === 'aster_result');
-
-            if (!linuxEntry || !asterinasEntry) {
-              throw new Error('Linux or Asterinas entry not found');
-            }
-
-            const linuxValue = linuxEntry[linuxEntry.length - 1].bench.value;
-            const asterinasValue = asterinasEntry[asterinasEntry.length - 1].bench.value;
-            const title = linuxEntry[linuxEntry.length - 1].title; 
-            const tool = linuxEntry[linuxEntry.length - 1].tool;
-            const display = linuxEntry[linuxEntry.length - 1].display;
-
-            return {
-              linuxValue,
-              asterinasValue,
-              title,
-              tool,
-              display
-            };
-          }
-          const normalizedDataSets = new Map();
-          for (const {name, dataSet} of dataSets) {
-            const {linuxValue, asterinasValue, title, tool, display} = extractValuesAndTitle(dataSet);
-            if (!display) {
+          document.getElementById('dl-button').onclick = () => {
+            const anchor = document.createElement('a');
+            const data = {};
+            available.forEach(suite => { data[suite.name] = suite.data; });
+            anchor.href = 'data:application/json;charset=utf-8,' + encodeURIComponent(JSON.stringify(data, null, 2));
+            anchor.download = 'benchmark_data.json';
+            anchor.click();
+          };
+          for (const suite of loaded) {
+            const section = document.createElement('div');
+            section.className = 'benchmark-set';
+            section.id = suite.name;
+            main.appendChild(section);
+            const title = appendText(section, 'h1', 'benchmark-title', '');
+            const link = appendText(title, 'a', '', suite.name);
+            link.href = new URL(suite.name + '/', window.location.href).href;
+            link.target = '_blank';
+            link.rel = 'noopener';
+            appendText(title, 'span', '', ': Normalized performance of Asterinas');
+            if (suite.error) {
+              appendText(section, 'div', 'chart-description',
+                'Results unavailable: ' + suite.name + ' (' + suite.error.message + ').');
               continue;
             }
-            const normalizedData = tool === 'customBiggerIsBetter' ? asterinasValue / linuxValue : linuxValue / asterinasValue;
-      
-            normalizedDataSets.set(title, normalizedData);
+            const benchmarks = Object.entries(suite.data.entries)
+              .filter(([, history]) => history.length > 0)
+              .map(([name, history]) => ({ name, latestEntry: history[history.length - 1] }));
+            renderOverview(section, benchmarks);
           }
-          // Calculate Geometric Mean
-          const values = [...normalizedDataSets.values()];
-          const geometricMean = Math.pow(values.reduce((acc, val) => acc * val, 1), 1 / values.length);
-
-          // Add Geometric Mean to the result
-          normalizedDataSets.set('Geometric Mean', geometricMean);
-
-          return normalizedDataSets;
         }
 
-        function renderAllChars(normalizedDataSets) {
-          function setCanvasHeight(canvas, numberOfBars) {
-              const heightPerBar = 25; // Height of each bar
-              const padding = 10; // Top and bottom padding
-
-              // Calculate total height based on the number of bars
-              const totalHeight = heightPerBar * (numberOfBars + 1) + padding * 2;
-
-              canvas.style.height = `${totalHeight}px`;
-          }
-
-          function renderOverview(ctx, labels, asterinasValues) {
-              const canvas = document.createElement('canvas');
-              canvas.className = 'benchmark-chart-overview';
-
-              // Set canvas width to 80% of the container
-              canvas.style.width = `80%`;
-
-              // Adjust height based on the number of bars
-              setCanvasHeight(canvas, labels.length);
-              ctx.appendChild(canvas);
-
-              const maxLabelWidth = 65; // Fixed length for each label
-              const formattedLabels = labels.map((label) =>
-                  label.length > maxLabelWidth
-                      ? label.slice(0, maxLabelWidth)
-                      : label.padEnd(maxLabelWidth, ' ')
-              );
-
-              new Chart(canvas, {
-                  type: 'bar', 
-                  data: {
-                      labels: formattedLabels,
-                      datasets: [
-                          {
-                              label: 'Asterinas',
-                              data: asterinasValues,
-                              backgroundColor: 'rgba(54, 162, 235, 0.2)',
-                              borderColor: 'rgba(54, 162, 235, 1)',
-                              borderWidth: 1,
-                          },
-                      ],
-                  },
-                  options: {
-                      indexAxis: 'y', // Horizontal bars
-                      scales: {
-                          x: {
-                              reverse: true, // Reverse x-axis direction
-                              ticks: {
-                                  stepSize: 0.1,
-                                  major: {
-                                      enabled: true, // Highlight major ticks
-                                  },
-                              },
-                          },
-                          y: {
-                              position: 'right', // Position labels on the right
-                              ticks: {
-                                  padding: 10, // Ensure consistent spacing
-                                  autoSkip: false,
-                                  font: (context) => ({
-                                      family: 'Consolas, monospace',
-                                      weight: context.tick.label === 'Geometric Mean'.padEnd(maxLabelWidth, ' ') ? 'bold' : 'normal',
-                                      size: 12,
-                                  }),
-                              },
-                          },
-                      },
-                      barPercentage: 0.6, // Uniform bar width
-                      categoryPercentage: 0.8,
-                      plugins: {
-                          annotation: {
-                              annotations: [
-                                  {
-                                      type: 'line',
-                                      mode: 'horizontal',
-                                      scaleID: 'x',
-                                      value: 1, // Reference line at x=1
-                                      borderColor: 'rgba(0, 0, 0, 0.5)',
-                                      borderWidth: 2,
-                                      label: {
-                                          content: 'Reference Line (x=1)',
-                                          enabled: true,
-                                          position: 'right',
-                                      },
-                                  },
-                              ],
-                          },
-                      },
-                      responsive: false, // Fixed canvas size
-                      maintainAspectRatio: false,
-                  },
-              });
-          }
-
-          const main = document.getElementById('main');
-
-          normalizedDataSets.forEach((dataSet) => {
-            const setElem = document.createElement('div');
-            setElem.className = 'benchmark-set';
-            main.appendChild(setElem);
-
-            const labels = Array.from(dataSet.normalizedData.keys());
-            const asterinasValues = Array.from(dataSet.normalizedData.values());
-
-            const title = `<a href="${new URL(
-                dataSet.name,
-                window.location.href
-            )}" target="_blank">${dataSet.name}</a>: Normalized performance of Asterinas`;
-            const description =
-                'For bandwidth, use Asterinas / Linux; for latency, use Linux / Asterinas. The higher, the better.';
-
-            const nameElem = document.createElement('h1');
-            nameElem.className = 'benchmark-title';
-            nameElem.insertAdjacentHTML('beforeend', title);
-            setElem.appendChild(nameElem);
-
-            const descriptionElem = document.createElement('div');
-            descriptionElem.className = 'chart-description';
-            descriptionElem.textContent = description;
-            setElem.appendChild(descriptionElem);
-
-            const overviewElem = document.createElement('div');
-            overviewElem.className = 'benchmark-graphs';
-            setElem.appendChild(overviewElem);
-            
-            renderOverview(overviewElem, labels, asterinasValues, title, description);
-          });
-        }
-        
-        init().then(renderAllChars); // Start
+        init().catch(error => {
+          appendText(document.getElementById('main'), 'div', 'chart-description',
+            'Unable to render benchmark overview: ' + error.message + '.');
+        });
       })();
     </script>
   </body>
