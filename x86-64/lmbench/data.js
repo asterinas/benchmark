@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1791675730462,
+  "lastUpdate": 1791675730775,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -91067,43 +91067,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Duck Ran",
-            "username": "laipuran",
-            "email": "puranlai@qq.com"
-          },
-          "committer": {
-            "name": "Junyang Zhang",
-            "username": "junyang-zh",
-            "email": "user@junyang.me"
-          },
-          "id": "76dac6f5524fe9477ce0df9535ba837cc853e32e",
-          "message": "Add ktest for kernel slab allocation counter\n\nVerify that allocating enough slots forces new slab pages and increases\nthe counter, that freeing them releases some slabs back, and that\ndropping the cache returns the counter to its original value.",
-          "timestamp": "2026-08-06T08:23:21Z",
-          "url": "https://github.com/asterinas/asterinas/commit/76dac6f5524fe9477ce0df9535ba837cc853e32e"
-        },
-        "date": 1786570021270,
-        "tool": "customBiggerIsBetter",
-        "title": "[Memory] The bandwidth of reading integers",
-        "description": "bw_mem frd",
-        "display": false,
-        "benches": [
-          {
-            "name": "Average memory read bandwidth on Linux",
-            "value": "12188.59",
-            "unit": "MB/s",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average memory read bandwidth on Asterinas",
-            "value": "12677.60",
-            "unit": "MB/s",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "le-monde-bleu",
             "username": "le-monde-bleu",
             "email": "2301110750@stu.pku.edu.cn"
@@ -93278,6 +93241,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average memory read bandwidth on Asterinas",
             "value": "14730.18",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tate.thl@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "3a670449aa1ef6933c34c74b47eb4551c7aa5126",
+          "message": "Add 0.19.0 release notes",
+          "timestamp": "2026-10-10T10:22:43Z",
+          "url": "https://github.com/asterinas/asterinas/commit/3a670449aa1ef6933c34c74b47eb4551c7aa5126"
+        },
+        "date": 1791675730757,
+        "tool": "customBiggerIsBetter",
+        "title": "[Memory] The bandwidth of reading integers",
+        "description": "bw_mem frd",
+        "display": false,
+        "benches": [
+          {
+            "name": "Average memory read bandwidth on Linux",
+            "value": "14635.41",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average memory read bandwidth on Asterinas",
+            "value": "13360.65",
             "unit": "MB/s",
             "extra": "aster_result"
           }
