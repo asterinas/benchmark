@@ -1,44 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1791675739457,
+  "lastUpdate": 1791675739726,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_seq_write_bw": [
-      {
-        "commit": {
-          "author": {
-            "name": "Martin Holovsky",
-            "email": "coding@probably.group"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "397ee46b2cf8413c8a30083362526d607e82d6e7",
-          "message": "Stop hardcoding the pinned nightly version in docs\n\nBoth references had drifted to nightly-2025-12-06 while rust-toolchain.toml\npins nightly-2026-07-21. Point at the manifest instead, so they cannot go\nstale again.",
-          "timestamp": "2026-07-29T18:44:57Z",
-          "url": "https://github.com/asterinas/asterinas/commit/397ee46b2cf8413c8a30083362526d607e82d6e7"
-        },
-        "date": 1785735310367,
-        "tool": "customBiggerIsBetter",
-        "title": "[Ext2] The bandwidth of sequential writes",
-        "description": "fio -filename=/ext2/fio-test -size=1G -bs=1M -direct=1",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average file write bandwidth on Linux",
-            "value": "1596",
-            "unit": "MB/s",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average file write bandwidth on Asterinas",
-            "value": "3153",
-            "unit": "MB/s",
-            "extra": "aster_result"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2215,6 +2179,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average buffered I/O file write bandwidth on Asterinas",
             "value": "6344",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tate.thl@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "3a670449aa1ef6933c34c74b47eb4551c7aa5126",
+          "message": "Add 0.19.0 release notes",
+          "timestamp": "2026-10-10T10:22:43Z",
+          "url": "https://github.com/asterinas/asterinas/commit/3a670449aa1ef6933c34c74b47eb4551c7aa5126"
+        },
+        "date": 1791675739724,
+        "tool": "customBiggerIsBetter",
+        "title": "[Ext2] The bandwidth of sequential writes (buffered I/O, w/t IOMMU)",
+        "description": "fio -filename=/ext2/fio-test -size=1G -bs=1M -direct=0",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average buffered I/O file write bandwidth on Linux",
+            "value": "2811.929087",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average buffered I/O file write bandwidth on Asterinas",
+            "value": "6546.358678",
             "unit": "MB/s",
             "extra": "aster_result"
           }
