@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1791591297156,
+  "lastUpdate": 1791591297488,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_seq_write_bw": [
@@ -10771,6 +10771,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average buffered I/O file read bandwidth on Asterinas",
             "value": "9458",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tate.thl@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "7cf6fb02d097d0c9c9b1969d51fb112e2e060b1d",
+          "message": "Remove the stale `@boterinas codex` command from the Book",
+          "timestamp": "2026-10-09T06:01:17Z",
+          "url": "https://github.com/asterinas/asterinas/commit/7cf6fb02d097d0c9c9b1969d51fb112e2e060b1d"
+        },
+        "date": 1791591297487,
+        "tool": "customBiggerIsBetter",
+        "title": "[virtio-fs] The bandwidth of sequential reads (buffered I/O, w/o IOMMU)",
+        "description": "fio -filename=/virtiofs/fio-test -size=1G -bs=1M -direct=0",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average buffered I/O file read bandwidth on Linux",
+            "value": "9704",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average buffered I/O file read bandwidth on Asterinas",
+            "value": "9353",
             "unit": "MB/s",
             "extra": "aster_result"
           }
