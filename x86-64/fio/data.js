@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1791762594086,
+  "lastUpdate": 1791762594331,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_seq_write_bw": [
@@ -11219,6 +11219,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average buffered I/O file read bandwidth on Asterinas",
             "value": "9822.458426",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Mike Solar",
+            "username": "Mike-Solar",
+            "email": "iam@mikesolar.cn"
+          },
+          "committer": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "3329907643@qq.com"
+          },
+          "id": "af0b77c8f11db24ba59b8d2cf29a189281b8e270",
+          "message": "Fix stale frame metadata access via empty `Segment`s",
+          "timestamp": "2026-10-11T06:55:04Z",
+          "url": "https://github.com/asterinas/asterinas/commit/af0b77c8f11db24ba59b8d2cf29a189281b8e270"
+        },
+        "date": 1791762594330,
+        "tool": "customBiggerIsBetter",
+        "title": "[virtio-fs] The bandwidth of sequential reads (buffered I/O, w/o IOMMU)",
+        "description": "fio -filename=/virtiofs/fio-test -size=1G -bs=1M -direct=0",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average buffered I/O file read bandwidth on Linux",
+            "value": "10189.204701",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average buffered I/O file read bandwidth on Asterinas",
+            "value": "9814.069902",
             "unit": "MB/s",
             "extra": "aster_result"
           }
