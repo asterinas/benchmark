@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1791931797899,
+  "lastUpdate": 1791931798266,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ping_inline_100k_conc20_rps": [
@@ -4446,43 +4446,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
-            "name": "Chengjun Chen",
-            "username": "cchanging",
-            "email": "33800552+cchanging@users.noreply.github.com"
-          },
-          "id": "2e2b3468f07815be2c372fd5cd103bb37664ad5c",
-          "message": "Remove `FileLike::status_flags`",
-          "timestamp": "2026-07-31T01:57:16Z",
-          "url": "https://github.com/asterinas/asterinas/commit/2e2b3468f07815be2c372fd5cd103bb37664ad5c"
-        },
-        "date": 1785739447734,
-        "tool": "customBiggerIsBetter",
-        "title": "Redis GET performance (virtio-net, 20 concurrency, 100K requests)",
-        "description": "redis-benchmark -n 100000 -c 20 -t get",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average RPS of GET over virtio-net between Host Linux and Guest Linux",
-            "value": "109409.20",
-            "unit": "request per second",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average RPS of GET over virtio-net between Host Linux and Guest Asterinas",
-            "value": "19708.32",
-            "unit": "request per second",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Martin Holovsky",
             "email": "coding@probably.group"
           },
@@ -6655,6 +6618,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average RPS of GET over virtio-net between Host Linux and Guest Asterinas",
             "value": "113378.68",
+            "unit": "request per second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "bmalum",
+            "username": "bmalum",
+            "email": "support@bmalum.com"
+          },
+          "committer": {
+            "name": "Chengjun Chen",
+            "username": "cchanging",
+            "email": "344789491@qq.com"
+          },
+          "id": "745ebe54e63c35c8b8c49971b581e62e5d5ed569",
+          "message": "Fix stale `IN` readiness of `TimerfdFile` after `set_time` and `read`\n\n`TimerfdFile::set_time` and `TimerfdFile::try_read` reset the expiration\ncounter but left the `Pollee`'s cached readiness untouched, so `epoll_wait`\nkept reporting a disarmed or drained timerfd as readable. ERTS arms a\ntimerfd before every `epoll_wait` and disarms it afterwards without\nreading it; on Asterinas its poll thread therefore spun at 100%.\n\nInvalidate the pollee wherever the counter is reset, so that the cached\nreadiness stays consistent with `check_io_events`. Add a regression test\nthat covers disarming, reading and rearming.",
+          "timestamp": "2026-10-12T07:23:08Z",
+          "url": "https://github.com/asterinas/asterinas/commit/745ebe54e63c35c8b8c49971b581e62e5d5ed569"
+        },
+        "date": 1791931798264,
+        "tool": "customBiggerIsBetter",
+        "title": "Redis GET performance (virtio-net, 20 concurrency, 100K requests)",
+        "description": "redis-benchmark -n 100000 -c 20 -t get",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average RPS of GET over virtio-net between Host Linux and Guest Linux",
+            "value": "99601.60",
+            "unit": "request per second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average RPS of GET over virtio-net between Host Linux and Guest Asterinas",
+            "value": "123762.38",
             "unit": "request per second",
             "extra": "aster_result"
           }
