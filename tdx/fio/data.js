@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1791850450193,
+  "lastUpdate": 1791850450597,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_seq_write_bw_no_iommu": [
@@ -2225,43 +2225,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
-            "name": "Chengjun Chen",
-            "username": "cchanging",
-            "email": "33800552+cchanging@users.noreply.github.com"
-          },
-          "id": "2e2b3468f07815be2c372fd5cd103bb37664ad5c",
-          "message": "Remove `FileLike::status_flags`",
-          "timestamp": "2026-07-31T01:57:16Z",
-          "url": "https://github.com/asterinas/asterinas/commit/2e2b3468f07815be2c372fd5cd103bb37664ad5c"
-        },
-        "date": 1785739468012,
-        "tool": "customBiggerIsBetter",
-        "title": "[Ext2] The bandwidth of sequential reads (IOMMU disabled on Asterinas)",
-        "description": "fio -filename=/ext2/fio-test -size=1G -bs=1M -direct=1",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average file read bandwidth on Linux",
-            "value": "1143",
-            "unit": "MB/s",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average file read bandwidth on Asterinas",
-            "value": "2489",
-            "unit": "MB/s",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Martin Holovsky",
             "email": "coding@probably.group"
           },
@@ -4420,6 +4383,43 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/asterinas/asterinas/commit/99d0495cc2ebcfa263de5c4e2073b56312e48cee"
         },
         "date": 1791848805034,
+        "tool": "customBiggerIsBetter",
+        "title": "[Ext2] The bandwidth of sequential reads (buffered I/O, w/o IOMMU)",
+        "description": "fio -filename=/ext2/fio-test -size=1G -bs=1M -direct=0",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average buffered I/O file read bandwidth on Linux",
+            "value": "10130.254348",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average buffered I/O file read bandwidth on Asterinas",
+            "value": "9784.0285",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tate.thl@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "99d0495cc2ebcfa263de5c4e2073b56312e48cee",
+          "message": "Polish the wording of the README introduction",
+          "timestamp": "2026-10-12T12:09:23Z",
+          "url": "https://github.com/asterinas/asterinas/commit/99d0495cc2ebcfa263de5c4e2073b56312e48cee"
+        },
+        "date": 1791850450596,
         "tool": "customBiggerIsBetter",
         "title": "[Ext2] The bandwidth of sequential reads (buffered I/O, w/o IOMMU)",
         "description": "fio -filename=/ext2/fio-test -size=1G -bs=1M -direct=0",
