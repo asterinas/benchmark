@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1792019962152,
+  "lastUpdate": 1792019962522,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ramfs_benchmarks_vacuum": [
@@ -37763,43 +37763,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Zhang Junyang",
-            "username": "junyang-zh",
-            "email": "junyang@stu.pku.edu.cn"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "4f0a3fccd6d24522a4d5280fa7dd84eba9895c6d",
-          "message": "Fix OSDK panic trace and coverage utils",
-          "timestamp": "2026-08-04T12:01:25Z",
-          "url": "https://github.com/asterinas/asterinas/commit/4f0a3fccd6d24522a4d5280fa7dd84eba9895c6d"
-        },
-        "date": 1785881607475,
-        "tool": "customSmallerIsBetter",
-        "title": "[Ext2] The refill-replace result of sqlite speedtest",
-        "description": "sqlite-speed-test: Refill two 50000-row tables using REPLACE",
-        "display": false,
-        "benches": [
-          {
-            "name": "The speed of refill-replace on Linux (Ext2)",
-            "value": "4.422",
-            "unit": "second",
-            "extra": "linux_result"
-          },
-          {
-            "name": "The speed of refill-replace on Asterinas (Ext2)",
-            "value": "23.908",
-            "unit": "second",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "rikosellic",
             "username": "rikosellic",
             "email": "64517311+rikosellic@users.noreply.github.com"
@@ -39974,6 +39937,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "The speed of refill-replace on Asterinas (Ext2)",
             "value": "15.406",
+            "unit": "second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Chen Chengjun",
+            "username": "cchanging",
+            "email": "chenchengjun.ccj@antgroup.com"
+          },
+          "committer": {
+            "name": "Jianfeng Jiang",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "id": "01acaa7eeed755a32fc658e7d732b080061b4872",
+          "message": "Add regression tests",
+          "timestamp": "2026-10-13T12:44:17Z",
+          "url": "https://github.com/asterinas/asterinas/commit/01acaa7eeed755a32fc658e7d732b080061b4872"
+        },
+        "date": 1792019962516,
+        "tool": "customSmallerIsBetter",
+        "title": "[Ext2] The refill-replace result of sqlite speedtest",
+        "description": "sqlite-speed-test: Refill two 50000-row tables using REPLACE",
+        "display": false,
+        "benches": [
+          {
+            "name": "The speed of refill-replace on Linux (Ext2)",
+            "value": "5.815",
+            "unit": "second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "The speed of refill-replace on Asterinas (Ext2)",
+            "value": "14.152",
             "unit": "second",
             "extra": "aster_result"
           }
