@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1792107556950,
+  "lastUpdate": 1792107557258,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_seq_write_bw": [
@@ -13673,6 +13673,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average direct I/O read bandwidth on Asterinas",
             "value": "2300.90925",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Chen Chengjun",
+            "username": "cchanging",
+            "email": "chenchengjun.ccj@antgroup.com"
+          },
+          "committer": {
+            "name": "Jianfeng Jiang",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "id": "01acaa7eeed755a32fc658e7d732b080061b4872",
+          "message": "Add regression tests",
+          "timestamp": "2026-10-13T12:44:17Z",
+          "url": "https://github.com/asterinas/asterinas/commit/01acaa7eeed755a32fc658e7d732b080061b4872"
+        },
+        "date": 1792107557256,
+        "tool": "customBiggerIsBetter",
+        "title": "[NVMe] The bandwidth of sequential reads (direct I/O, w/t IOMMU)",
+        "description": "fio -filename=/dev/nvme0n1 -size=1G -bs=1M -direct=1",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average direct I/O read bandwidth on Linux",
+            "value": "5320.012479",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average direct I/O read bandwidth on Asterinas",
+            "value": "2487.428084",
             "unit": "MB/s",
             "extra": "aster_result"
           }
