@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1792451661445,
+  "lastUpdate": 1792451661792,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -24443,43 +24443,6 @@ window.BENCHMARK_DATA = {
             "email": "lrh2000@pku.edu.cn"
           },
           "committer": {
-            "name": "Chengjun Chen",
-            "username": "cchanging",
-            "email": "33800552+cchanging@users.noreply.github.com"
-          },
-          "id": "a110dfc73da00191d58ed62defaf6a5b3a12045e",
-          "message": "Update page cache tests",
-          "timestamp": "2026-06-18T02:14:07Z",
-          "url": "https://github.com/asterinas/asterinas/commit/a110dfc73da00191d58ed62defaf6a5b3a12045e"
-        },
-        "date": 1786225362884,
-        "tool": "customSmallerIsBetter",
-        "title": "[Pipes] The cost of write+read (1B)",
-        "description": "lat_pipe",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average pipe latency on Linux",
-            "value": "2.1413",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average pipe latency on Asterinas",
-            "value": "3.0623",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
             "name": "Tate, Hongliang Tian",
             "username": "tatetian",
             "email": "tatetian@gmail.com"
@@ -26649,6 +26612,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average pipe latency on Asterinas",
             "value": "2.9531",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "le-monde-bleu",
+            "username": "le-monde-bleu",
+            "email": "2301110750@stu.pku.edu.cn"
+          },
+          "committer": {
+            "name": "Chengjun Chen",
+            "username": "cchanging",
+            "email": "344789491@qq.com"
+          },
+          "id": "586d02fb8fea5e5a78680e46e3cb6a4611c4f4b3",
+          "message": "Fix parent of dynamically created SysTree inodes",
+          "timestamp": "2026-10-14T09:26:36Z",
+          "url": "https://github.com/asterinas/asterinas/commit/586d02fb8fea5e5a78680e46e3cb6a4611c4f4b3"
+        },
+        "date": 1792451661774,
+        "tool": "customSmallerIsBetter",
+        "title": "[Pipes] The cost of write+read (1B)",
+        "description": "lat_pipe",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average pipe latency on Linux",
+            "value": "2.0083",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average pipe latency on Asterinas",
+            "value": "2.9131",
             "unit": "µs",
             "extra": "aster_result"
           }
