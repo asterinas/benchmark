@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1792451670337,
+  "lastUpdate": 1792451670642,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_seq_write_bw_no_iommu": [
@@ -4847,6 +4847,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average direct I/O file write bandwidth on Asterinas",
             "value": "1575.233965",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "le-monde-bleu",
+            "username": "le-monde-bleu",
+            "email": "2301110750@stu.pku.edu.cn"
+          },
+          "committer": {
+            "name": "Chengjun Chen",
+            "username": "cchanging",
+            "email": "344789491@qq.com"
+          },
+          "id": "586d02fb8fea5e5a78680e46e3cb6a4611c4f4b3",
+          "message": "Fix parent of dynamically created SysTree inodes",
+          "timestamp": "2026-10-14T09:26:36Z",
+          "url": "https://github.com/asterinas/asterinas/commit/586d02fb8fea5e5a78680e46e3cb6a4611c4f4b3"
+        },
+        "date": 1792451670640,
+        "tool": "customBiggerIsBetter",
+        "title": "[Ext2] The bandwidth of sequential writes (direct I/O, w/o IOMMU)",
+        "description": "fio -filename=/ext2/fio-test -size=1G -bs=1M -direct=1",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average direct I/O file write bandwidth on Linux",
+            "value": "1329.085534",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average direct I/O file write bandwidth on Asterinas",
+            "value": "1509.05213",
             "unit": "MB/s",
             "extra": "aster_result"
           }
