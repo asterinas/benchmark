@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1792453959708,
+  "lastUpdate": 1792453960048,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -37763,43 +37763,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "1d5dad707a0b6356923d6f08a95e372a42ac69d6",
-          "message": "Drop `not same fs` errors from `fs_impls`",
-          "timestamp": "2026-08-20T09:21:56Z",
-          "url": "https://github.com/asterinas/asterinas/commit/1d5dad707a0b6356923d6f08a95e372a42ac69d6"
-        },
-        "date": 1787260757134,
-        "tool": "customSmallerIsBetter",
-        "title": "[VFS] The cost of open+close",
-        "description": "lat_syscall open",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average open latency on Linux",
-            "value": "0.5413",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average open latency on Asterinas",
-            "value": "0.8373",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Ya0rk",
             "username": "Ya0rk",
             "email": "yoohoo1287@gmail.com"
@@ -39974,6 +39937,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average open latency on Asterinas",
             "value": "0.7914",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "le-monde-bleu",
+            "username": "le-monde-bleu",
+            "email": "2301110750@stu.pku.edu.cn"
+          },
+          "committer": {
+            "name": "Chengjun Chen",
+            "username": "cchanging",
+            "email": "344789491@qq.com"
+          },
+          "id": "586d02fb8fea5e5a78680e46e3cb6a4611c4f4b3",
+          "message": "Fix parent of dynamically created SysTree inodes",
+          "timestamp": "2026-10-14T09:26:36Z",
+          "url": "https://github.com/asterinas/asterinas/commit/586d02fb8fea5e5a78680e46e3cb6a4611c4f4b3"
+        },
+        "date": 1792453960034,
+        "tool": "customSmallerIsBetter",
+        "title": "[VFS] The cost of open+close",
+        "description": "lat_syscall open",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average open latency on Linux",
+            "value": "0.4859",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average open latency on Asterinas",
+            "value": "0.7877",
             "unit": "µs",
             "extra": "aster_result"
           }
