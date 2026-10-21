@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1792626481768,
+  "lastUpdate": 1792626482003,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_seq_write_bw": [
@@ -5328,6 +5328,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average direct I/O file write bandwidth on Asterinas",
             "value": "1591.603247",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Qingsong Chen",
+            "username": "cqs21",
+            "email": "changxian.cqs@antgroup.com"
+          },
+          "id": "f40d6222dc140cc278bd110757b52f3f0fb496aa",
+          "message": "Add missing `.PHONY`",
+          "timestamp": "2026-10-18T15:44:25Z",
+          "url": "https://github.com/asterinas/asterinas/commit/f40d6222dc140cc278bd110757b52f3f0fb496aa"
+        },
+        "date": 1792626482000,
+        "tool": "customBiggerIsBetter",
+        "title": "[Ext2] The bandwidth of sequential writes (direct I/O, w/t IOMMU)",
+        "description": "fio -filename=/ext2/fio-test -size=1G -bs=1M -direct=1",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average direct I/O file write bandwidth on Linux",
+            "value": "1591.817384",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average direct I/O file write bandwidth on Asterinas",
+            "value": "1647.566209",
             "unit": "MB/s",
             "extra": "aster_result"
           }
