@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1792710594999,
+  "lastUpdate": 1792710595320,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -88849,43 +88849,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Duck Ran",
-            "username": "laipuran",
-            "email": "puranlai@qq.com"
-          },
-          "committer": {
-            "name": "Junyang Zhang",
-            "username": "junyang-zh",
-            "email": "user@junyang.me"
-          },
-          "id": "76dac6f5524fe9477ce0df9535ba837cc853e32e",
-          "message": "Add ktest for kernel slab allocation counter\n\nVerify that allocating enough slots forces new slab pages and increases\nthe counter, that freeing them releases some slabs back, and that\ndropping the cache returns the counter to its original value.",
-          "timestamp": "2026-08-06T08:23:21Z",
-          "url": "https://github.com/asterinas/asterinas/commit/76dac6f5524fe9477ce0df9535ba837cc853e32e"
-        },
-        "date": 1786571316097,
-        "tool": "customSmallerIsBetter",
-        "title": "[VFS] The cost of record locking/unlocking via fcntl",
-        "description": "lat_fcntl",
-        "display": false,
-        "benches": [
-          {
-            "name": "Average file locking latency on Linux",
-            "value": "1.2880",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average file locking latency on Asterinas",
-            "value": "0.6547",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "le-monde-bleu",
             "username": "le-monde-bleu",
             "email": "2301110750@stu.pku.edu.cn"
@@ -91060,6 +91023,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average file locking latency on Asterinas",
             "value": "0.6230",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Tonyyang0606",
+            "username": "Tonyyang0606",
+            "email": "146299767+Tonyyang0606@users.noreply.github.com"
+          },
+          "committer": {
+            "name": "Jianfeng Jiang",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "id": "b6c7d55ce6552b4aa85d0b6d866f50cb9ce62600",
+          "message": "Fix `F_DUPFD` to check `RLIMIT_NOFILE`\n\n`fcntl(F_DUPFD)` and `fcntl(F_DUPFD_CLOEXEC)` accepted any minimum FD.\nThey returned descriptors above the soft `RLIMIT_NOFILE` limit, and a\nlarge minimum such as `INT_MAX` grew the FD table until the heap\nallocation failed and the kernel aborted. Linux rejects a minimum FD\nthat is not below the limit with `EINVAL`, as `do_dup3` already does.",
+          "timestamp": "2026-10-17T03:49:31Z",
+          "url": "https://github.com/asterinas/asterinas/commit/b6c7d55ce6552b4aa85d0b6d866f50cb9ce62600"
+        },
+        "date": 1792710595308,
+        "tool": "customSmallerIsBetter",
+        "title": "[VFS] The cost of record locking/unlocking via fcntl",
+        "description": "lat_fcntl",
+        "display": false,
+        "benches": [
+          {
+            "name": "Average file locking latency on Linux",
+            "value": "1.1733",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average file locking latency on Asterinas",
+            "value": "0.6261",
             "unit": "µs",
             "extra": "aster_result"
           }
