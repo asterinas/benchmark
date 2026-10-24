@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1792883744910,
+  "lastUpdate": 1792883745232,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -97730,43 +97730,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Fan Jie",
-            "username": "f-jye",
-            "email": "fanjie@uniontech.com"
-          },
-          "committer": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "3329907643@qq.com"
-          },
-          "id": "556d4e78375adcf0eb46a4c4f2ede2eca63eef64",
-          "message": "Fix xAPIC ID extraction",
-          "timestamp": "2026-08-26T07:18:51Z",
-          "url": "https://github.com/asterinas/asterinas/commit/556d4e78375adcf0eb46a4c4f2ede2eca63eef64"
-        },
-        "date": 1787782522345,
-        "tool": "customSmallerIsBetter",
-        "title": "[VFS] The cost of record locking/unlocking via fcntl",
-        "description": "lat_fcntl",
-        "display": false,
-        "benches": [
-          {
-            "name": "Average file locking latency on Linux",
-            "value": "1.2364",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average file locking latency on Asterinas",
-            "value": "0.6466",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Qingsong Chen",
             "username": "cqs21",
             "email": "changxian.cqs@antgroup.com"
@@ -99941,6 +99904,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average file locking latency on Asterinas",
             "value": "0.6253",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ray Lee",
+            "username": "hburaylee",
+            "email": "hburaylee@gmail.com"
+          },
+          "committer": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "3329907643@qq.com"
+          },
+          "id": "ceb65e3f850096d30283137845ac01ad51dfcdaf",
+          "message": "Fix PVH boot to parse VMM records without assuming alignment\n\nSigned-off-by: Ray Lee <hburaylee@gmail.com>",
+          "timestamp": "2026-10-21T02:06:53Z",
+          "url": "https://github.com/asterinas/asterinas/commit/ceb65e3f850096d30283137845ac01ad51dfcdaf"
+        },
+        "date": 1792883745215,
+        "tool": "customSmallerIsBetter",
+        "title": "[VFS] The cost of record locking/unlocking via fcntl",
+        "description": "lat_fcntl",
+        "display": false,
+        "benches": [
+          {
+            "name": "Average file locking latency on Linux",
+            "value": "1.1139",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average file locking latency on Asterinas",
+            "value": "0.6246",
             "unit": "µs",
             "extra": "aster_result"
           }
