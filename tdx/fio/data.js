@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1792969589306,
+  "lastUpdate": 1792969589535,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_seq_write_bw_no_iommu": [
@@ -2227,43 +2227,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "le-monde-bleu",
-            "username": "le-monde-bleu",
-            "email": "2301110750@stu.pku.edu.cn"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "b9cfb5ccf845feb40303627d23086de235534268",
-          "message": "Restrict visibility of internal `aster-core` items",
-          "timestamp": "2026-08-12T08:35:55Z",
-          "url": "https://github.com/asterinas/asterinas/commit/b9cfb5ccf845feb40303627d23086de235534268"
-        },
-        "date": 1786657579626,
-        "tool": "customBiggerIsBetter",
-        "title": "[Ext2] The bandwidth of sequential reads (IOMMU disabled on Asterinas)",
-        "description": "fio -filename=/ext2/fio-test -size=1G -bs=1M -direct=1",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average file read bandwidth on Linux",
-            "value": "1040",
-            "unit": "MB/s",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average file read bandwidth on Asterinas",
-            "value": "2510",
-            "unit": "MB/s",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Chen Chengjun",
             "username": "cchanging",
             "email": "chenchengjun.ccj@antgroup.com"
@@ -4438,6 +4401,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average buffered I/O file read bandwidth on Asterinas",
             "value": "9689.080893",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ray Lee",
+            "username": "hburaylee",
+            "email": "hburaylee@gmail.com"
+          },
+          "committer": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "3329907643@qq.com"
+          },
+          "id": "ceb65e3f850096d30283137845ac01ad51dfcdaf",
+          "message": "Fix PVH boot to parse VMM records without assuming alignment\n\nSigned-off-by: Ray Lee <hburaylee@gmail.com>",
+          "timestamp": "2026-10-21T02:06:53Z",
+          "url": "https://github.com/asterinas/asterinas/commit/ceb65e3f850096d30283137845ac01ad51dfcdaf"
+        },
+        "date": 1792969589533,
+        "tool": "customBiggerIsBetter",
+        "title": "[Ext2] The bandwidth of sequential reads (buffered I/O, w/o IOMMU)",
+        "description": "fio -filename=/ext2/fio-test -size=1G -bs=1M -direct=0",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average buffered I/O file read bandwidth on Linux",
+            "value": "9742.148794",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average buffered I/O file read bandwidth on Asterinas",
+            "value": "9717.004193",
             "unit": "MB/s",
             "extra": "aster_result"
           }
