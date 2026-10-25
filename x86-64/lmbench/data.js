@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1792972329393,
+  "lastUpdate": 1792972329692,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -37763,43 +37763,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Fan Jie",
-            "username": "f-jye",
-            "email": "fanjie@uniontech.com"
-          },
-          "committer": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "3329907643@qq.com"
-          },
-          "id": "556d4e78375adcf0eb46a4c4f2ede2eca63eef64",
-          "message": "Fix xAPIC ID extraction",
-          "timestamp": "2026-08-26T07:18:51Z",
-          "url": "https://github.com/asterinas/asterinas/commit/556d4e78375adcf0eb46a4c4f2ede2eca63eef64"
-        },
-        "date": 1787782521773,
-        "tool": "customSmallerIsBetter",
-        "title": "[VFS] The cost of open+close",
-        "description": "lat_syscall open",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average open latency on Linux",
-            "value": "0.5431",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average open latency on Asterinas",
-            "value": "0.8297",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Qingsong Chen",
             "username": "cqs21",
             "email": "changxian.cqs@antgroup.com"
@@ -39974,6 +39937,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average open latency on Asterinas",
             "value": "0.7814",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ray Lee",
+            "username": "hburaylee",
+            "email": "hburaylee@gmail.com"
+          },
+          "committer": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "3329907643@qq.com"
+          },
+          "id": "ceb65e3f850096d30283137845ac01ad51dfcdaf",
+          "message": "Fix PVH boot to parse VMM records without assuming alignment\n\nSigned-off-by: Ray Lee <hburaylee@gmail.com>",
+          "timestamp": "2026-10-21T02:06:53Z",
+          "url": "https://github.com/asterinas/asterinas/commit/ceb65e3f850096d30283137845ac01ad51dfcdaf"
+        },
+        "date": 1792972329679,
+        "tool": "customSmallerIsBetter",
+        "title": "[VFS] The cost of open+close",
+        "description": "lat_syscall open",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average open latency on Linux",
+            "value": "0.4851",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average open latency on Asterinas",
+            "value": "0.7806",
             "unit": "µs",
             "extra": "aster_result"
           }
