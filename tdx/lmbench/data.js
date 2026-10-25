@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1792969568332,
+  "lastUpdate": 1792969568669,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -46662,43 +46662,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2026-08-07T05:20:29Z",
           "url": "https://github.com/asterinas/asterinas/commit/437365615c653bb0ad3993fd3c4afc30d033af46"
         },
-        "date": 1786744517756,
-        "tool": "customSmallerIsBetter",
-        "title": "[VFS] The cost of fstat",
-        "description": "lat_syscall fstat",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average fstat latency on Linux",
-            "value": "0.1505",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average fstat latency on Asterinas",
-            "value": "0.1863",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Chen Chengjun",
-            "username": "cchanging",
-            "email": "chenchengjun.ccj@antgroup.com"
-          },
-          "committer": {
-            "name": "Junyang Zhang",
-            "username": "junyang-zh",
-            "email": "user@junyang.me"
-          },
-          "id": "437365615c653bb0ad3993fd3c4afc30d033af46",
-          "message": "Add some regression tests",
-          "timestamp": "2026-08-07T05:20:29Z",
-          "url": "https://github.com/asterinas/asterinas/commit/437365615c653bb0ad3993fd3c4afc30d033af46"
-        },
         "date": 1786830134973,
         "tool": "customSmallerIsBetter",
         "title": "[VFS] The cost of fstat",
@@ -48859,6 +48822,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average fstat latency on Asterinas",
             "value": "0.1749",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ray Lee",
+            "username": "hburaylee",
+            "email": "hburaylee@gmail.com"
+          },
+          "committer": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "3329907643@qq.com"
+          },
+          "id": "ceb65e3f850096d30283137845ac01ad51dfcdaf",
+          "message": "Fix PVH boot to parse VMM records without assuming alignment\n\nSigned-off-by: Ray Lee <hburaylee@gmail.com>",
+          "timestamp": "2026-10-21T02:06:53Z",
+          "url": "https://github.com/asterinas/asterinas/commit/ceb65e3f850096d30283137845ac01ad51dfcdaf"
+        },
+        "date": 1792969568657,
+        "tool": "customSmallerIsBetter",
+        "title": "[VFS] The cost of fstat",
+        "description": "lat_syscall fstat",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average fstat latency on Linux",
+            "value": "0.1409",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average fstat latency on Asterinas",
+            "value": "0.1758",
             "unit": "µs",
             "extra": "aster_result"
           }
