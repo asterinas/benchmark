@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793143802642,
+  "lastUpdate": 1793143803034,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -13333,43 +13333,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
-            "name": "Junyang Zhang",
-            "username": "junyang-zh",
-            "email": "user@junyang.me"
-          },
-          "id": "9503fbdb07ec6d5e8470de9956348c660261b487",
-          "message": "Clean up some visibility marks and comments",
-          "timestamp": "2026-08-16T11:23:59Z",
-          "url": "https://github.com/asterinas/asterinas/commit/9503fbdb07ec6d5e8470de9956348c660261b487"
-        },
-        "date": 1786916536180,
-        "tool": "customSmallerIsBetter",
-        "title": "[Process] The cost of fork+exec+exit",
-        "description": "lat_proc exec",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average exec latency on Linux",
-            "value": "984.1667",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average exec latency on Asterinas",
-            "value": "846.2857",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Endlia",
             "username": "EndlIa",
             "email": "endlia@qq.com"
@@ -15544,6 +15507,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average exec latency on Asterinas",
             "value": "815.2857",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Jianfeng Jiang",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "id": "5a55fa2264a589c115f39b1dafc402c49e26090a",
+          "message": "Correct `chown`/`chgrp`'s `impl` block",
+          "timestamp": "2026-10-27T05:31:12Z",
+          "url": "https://github.com/asterinas/asterinas/commit/5a55fa2264a589c115f39b1dafc402c49e26090a"
+        },
+        "date": 1793143803016,
+        "tool": "customSmallerIsBetter",
+        "title": "[Process] The cost of fork+exec+exit",
+        "description": "lat_proc exec",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average exec latency on Linux",
+            "value": "1005.6000",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average exec latency on Asterinas",
+            "value": "820.0000",
             "unit": "µs",
             "extra": "aster_result"
           }
