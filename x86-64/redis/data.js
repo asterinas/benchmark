@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793145729871,
+  "lastUpdate": 1793145730049,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ping_inline_100k_conc20_rps": [
@@ -4448,43 +4448,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Chen Chengjun",
-            "username": "cchanging",
-            "email": "chenchengjun.ccj@antgroup.com"
-          },
-          "committer": {
-            "name": "Jianfeng Jiang",
-            "username": "StevenJiang1110",
-            "email": "jiangjianfeng.jjf@antgroup.com"
-          },
-          "id": "0a9a110690e3faec02d496840c064c9a817e4ff1",
-          "message": "Simplify the implementation of the corresponding APIs in the filesystem layer",
-          "timestamp": "2026-08-21T08:38:57Z",
-          "url": "https://github.com/asterinas/asterinas/commit/0a9a110690e3faec02d496840c064c9a817e4ff1"
-        },
-        "date": 1787978270717,
-        "tool": "customBiggerIsBetter",
-        "title": "Redis GET performance (virtio-net, 20 concurrency, 100K requests)",
-        "description": "redis-benchmark -n 100000 -c 20 -t get",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average RPS of GET over virtio-net between Host Linux and Guest Linux",
-            "value": "159489.64",
-            "unit": "request per second",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average RPS of GET over virtio-net between Host Linux and Guest Asterinas",
-            "value": "166112.95",
-            "unit": "request per second",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Tate, Hongliang Tian",
             "username": "tatetian",
             "email": "tate.thl@antgroup.com"
@@ -6659,6 +6622,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average RPS of GET over virtio-net between Host Linux and Guest Asterinas",
             "value": "134952.77",
+            "unit": "request per second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Jianfeng Jiang",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "id": "5a55fa2264a589c115f39b1dafc402c49e26090a",
+          "message": "Correct `chown`/`chgrp`'s `impl` block",
+          "timestamp": "2026-10-27T05:31:12Z",
+          "url": "https://github.com/asterinas/asterinas/commit/5a55fa2264a589c115f39b1dafc402c49e26090a"
+        },
+        "date": 1793145730047,
+        "tool": "customBiggerIsBetter",
+        "title": "Redis GET performance (virtio-net, 20 concurrency, 100K requests)",
+        "description": "redis-benchmark -n 100000 -c 20 -t get",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average RPS of GET over virtio-net between Host Linux and Guest Linux",
+            "value": "133689.83",
+            "unit": "request per second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average RPS of GET over virtio-net between Host Linux and Guest Asterinas",
+            "value": "135318.00",
             "unit": "request per second",
             "extra": "aster_result"
           }
