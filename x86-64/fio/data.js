@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793233603608,
+  "lastUpdate": 1793233603784,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_seq_write_bw": [
@@ -13550,6 +13550,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average direct I/O file read bandwidth on Asterinas",
             "value": "2481.126205",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ray Lee",
+            "username": "hburaylee",
+            "email": "hburaylee@gmail.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "e0d8b839f95f608c8a7e9c8942e01614a3b3b260",
+          "message": "Fix vDSO realtime clock to keep sub-second offset\n\nSigned-off-by: Ray Lee <hburaylee@gmail.com>",
+          "timestamp": "2026-10-06T14:33:44Z",
+          "url": "https://github.com/asterinas/asterinas/commit/e0d8b839f95f608c8a7e9c8942e01614a3b3b260"
+        },
+        "date": 1793233603780,
+        "tool": "customBiggerIsBetter",
+        "title": "[Ext2] The bandwidth of sequential reads (direct I/O, w/o IOMMU)",
+        "description": "fio -filename=/ext2/fio-test -size=1G -bs=1M -direct=1",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average direct I/O file read bandwidth on Linux",
+            "value": "3211.861026",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average direct I/O file read bandwidth on Asterinas",
+            "value": "2357.227704",
             "unit": "MB/s",
             "extra": "aster_result"
           }
