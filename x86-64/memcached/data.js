@@ -1,45 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793318595959,
+  "lastUpdate": 1793318596313,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "t8_conc32_window10k": [
-      {
-        "commit": {
-          "author": {
-            "name": "Qingsong Chen",
-            "username": "cqs21",
-            "email": "changxian.cqs@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "083f98c3ccad0ae3b44ca1bbe3c861b4e59df560",
-          "message": "Fix user buffer validation for iovec entries\n\nValidate all iovec lengths before their buffer ranges, and add an\n`is_in_user_space` helper to check each original buffer range before\ntruncating the total length.",
-          "timestamp": "2026-08-27T07:27:13Z",
-          "url": "https://github.com/asterinas/asterinas/commit/083f98c3ccad0ae3b44ca1bbe3c861b4e59df560"
-        },
-        "date": 1787890297024,
-        "tool": "customBiggerIsBetter",
-        "title": "Memaslap 10% SET and 90% GET throughput (virtio-net, 8 client threads, 32 concurrency, 10k window)",
-        "description": "memaslap -t 30s -T 8 -c 32 -w 10k -S 1s",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average OPS of SET and GET over virtio-net between Host Linux and Guest Linux",
-            "value": "5014050",
-            "unit": "operations per second",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average OPS of SET and GET over virtio-net between Host Linux and Guest Asterinas",
-            "value": "4789512",
-            "unit": "operations per second",
-            "extra": "aster_result"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2217,6 +2180,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average OPS of SET and GET over virtio-net between Host Linux and Guest Asterinas",
             "value": "4327075",
+            "unit": "operations per second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "1sh1ro",
+            "username": "1sh1ro",
+            "email": "2855020996@qq.com"
+          },
+          "committer": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "3329907643@qq.com"
+          },
+          "id": "986c709158bfdc7bce535f0d03a5d93f7465dfe6",
+          "message": "Allow `CAP_SYS_ADMIN` to remove another user's semaphore set\n\n`semctl(IPC_RMID)` only accepts a caller whose effective UID matches the\nowner or the creator of the set, so a privileged process cannot remove a\nset that another user created. The call site marks the check as\nincomplete:\n\n    // TODO: Consider capabilities in addition to UIDs.\n\nMove the decision into `IpcNamespace` and also accept a caller holding\n`CAP_SYS_ADMIN` in the IPC namespace's owning user namespace. `EPERM` is\nstill returned when neither the UID nor the capability allows removal.\n\nAdd a regression test that a privileged process removes a set owned by\nanother user, and that a user which is neither the owner nor privileged\nstill gets `EPERM`. The test also requires that a child which keeps root's\nother capabilities but drops `CAP_SYS_ADMIN` is refused, so the capability\ncannot stand in for a UID-zero bypass, and that the unprivileged owner can\nstill remove its own set.\n\nSigned-off-by: 1sh1ro <2855020996@qq.com>",
+          "timestamp": "2026-10-26T09:26:10Z",
+          "url": "https://github.com/asterinas/asterinas/commit/986c709158bfdc7bce535f0d03a5d93f7465dfe6"
+        },
+        "date": 1793318596311,
+        "tool": "customBiggerIsBetter",
+        "title": "Memaslap 10% SET and 90% GET throughput (virtio-net, 8 client threads, 32 concurrency, 10k window)",
+        "description": "memaslap -t 30s -T 8 -c 32 -w 10k -S 1s",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average OPS of SET and GET over virtio-net between Host Linux and Guest Linux",
+            "value": "4593015",
+            "unit": "operations per second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average OPS of SET and GET over virtio-net between Host Linux and Guest Asterinas",
+            "value": "4264877",
             "unit": "operations per second",
             "extra": "aster_result"
           }
