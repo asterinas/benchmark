@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793491689373,
+  "lastUpdate": 1793491689823,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -68859,43 +68859,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "1d5dad707a0b6356923d6f08a95e372a42ac69d6",
-          "message": "Drop `not same fs` errors from `fs_impls`",
-          "timestamp": "2026-08-20T09:21:56Z",
-          "url": "https://github.com/asterinas/asterinas/commit/1d5dad707a0b6356923d6f08a95e372a42ac69d6"
-        },
-        "date": 1787262394135,
-        "tool": "customSmallerIsBetter",
-        "title": "[TCP sockets] The latency of write+read (loopback, 1B message)",
-        "description": "lat_tcp",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average TCP latency on Linux",
-            "value": "5.7681",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average TCP latency on Asterinas",
-            "value": "4.0357",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Ya0rk",
             "username": "Ya0rk",
             "email": "yoohoo1287@gmail.com"
@@ -71070,6 +71033,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average TCP latency on Asterinas",
             "value": "3.6819",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Chengjun Chen",
+            "username": "cchanging",
+            "email": "344789491@qq.com"
+          },
+          "id": "7861bff17133b941cf89329917033541d14813ab",
+          "message": "Fix some format issues in `time`",
+          "timestamp": "2026-10-30T03:55:32Z",
+          "url": "https://github.com/asterinas/asterinas/commit/7861bff17133b941cf89329917033541d14813ab"
+        },
+        "date": 1793491689800,
+        "tool": "customSmallerIsBetter",
+        "title": "[TCP sockets] The latency of write+read (loopback, 1B message)",
+        "description": "lat_tcp",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average TCP latency on Linux",
+            "value": "4.7325",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average TCP latency on Asterinas",
+            "value": "3.7040",
             "unit": "µs",
             "extra": "aster_result"
           }
