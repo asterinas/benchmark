@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793493141086,
+  "lastUpdate": 1793493141430,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "boot_lat": [
@@ -2236,43 +2236,6 @@ window.BENCHMARK_DATA = {
             "username": "StevenJiang1110",
             "email": "jiangjianfeng.jjf@antgroup.com"
           },
-          "id": "51c59734ee59da113ce5272b18761cb133d0470b",
-          "message": "Fix host/guest benchmark initramfs rebuild",
-          "timestamp": "2026-09-02T03:03:42Z",
-          "url": "https://github.com/asterinas/asterinas/commit/51c59734ee59da113ce5272b18761cb133d0470b"
-        },
-        "date": 1788338177847,
-        "tool": "customSmallerIsBetter",
-        "title": "[Boot] Boot latency (~100MB pad)",
-        "description": "Boot latency with a ~100MB-padded initramfs (measured via /proc/uptime)",
-        "display": true,
-        "benches": [
-          {
-            "name": "Boot latency (~100MB pad) on Linux",
-            "value": "0.77",
-            "unit": "sec",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Boot latency (~100MB pad) on Asterinas",
-            "value": "0.33",
-            "unit": "sec",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Qingsong Chen",
-            "username": "cqs21",
-            "email": "changxian.cqs@antgroup.com"
-          },
-          "committer": {
-            "name": "Jianfeng Jiang",
-            "username": "StevenJiang1110",
-            "email": "jiangjianfeng.jjf@antgroup.com"
-          },
           "id": "e60087be133ce30657ca648415fa48f7d8d0c310",
           "message": "Fix Redis cross-compilation on ARM64 builders",
           "timestamp": "2026-09-02T06:20:40Z",
@@ -4438,6 +4401,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Boot latency (~100MB pad) on Asterinas",
             "value": "0.35",
+            "unit": "sec",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Chengjun Chen",
+            "username": "cchanging",
+            "email": "344789491@qq.com"
+          },
+          "id": "7861bff17133b941cf89329917033541d14813ab",
+          "message": "Fix some format issues in `time`",
+          "timestamp": "2026-10-30T03:55:32Z",
+          "url": "https://github.com/asterinas/asterinas/commit/7861bff17133b941cf89329917033541d14813ab"
+        },
+        "date": 1793493141429,
+        "tool": "customSmallerIsBetter",
+        "title": "[Boot] Boot latency (~100MB pad)",
+        "description": "Boot latency with a ~100MB-padded initramfs (measured via /proc/uptime)",
+        "display": true,
+        "benches": [
+          {
+            "name": "Boot latency (~100MB pad) on Linux",
+            "value": "0.81",
+            "unit": "sec",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Boot latency (~100MB pad) on Asterinas",
+            "value": "0.34",
             "unit": "sec",
             "extra": "aster_result"
           }
