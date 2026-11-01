@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793577406737,
+  "lastUpdate": 1793577407017,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ramfs_benchmarks_vacuum": [
@@ -17788,43 +17788,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2026-08-08T01:53:59Z",
           "url": "https://github.com/asterinas/asterinas/commit/604948581512d83734377974d4c34adb4530f2d7"
         },
-        "date": 1787437748523,
-        "tool": "customSmallerIsBetter",
-        "title": "[Ramfs] The deletes-individual result of sqlite speedtest",
-        "description": "sqlite-speed-test: 50000 DELETEs of individual rows",
-        "display": false,
-        "benches": [
-          {
-            "name": "The speed of deletes-individual on Linux (Ramfs)",
-            "value": "2.091",
-            "unit": "second",
-            "extra": "linux_result"
-          },
-          {
-            "name": "The speed of deletes-individual on Asterinas (Ramfs)",
-            "value": "2.459",
-            "unit": "second",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Ya0rk",
-            "username": "Ya0rk",
-            "email": "yoohoo1287@gmail.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "604948581512d83734377974d4c34adb4530f2d7",
-          "message": "Add aster-code-review benchmark problem:500-508",
-          "timestamp": "2026-08-08T01:53:59Z",
-          "url": "https://github.com/asterinas/asterinas/commit/604948581512d83734377974d4c34adb4530f2d7"
-        },
         "date": 1787520715537,
         "tool": "customSmallerIsBetter",
         "title": "[Ramfs] The deletes-individual result of sqlite speedtest",
@@ -19985,6 +19948,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "The speed of deletes-individual on Asterinas (Ramfs)",
             "value": "2.690",
+            "unit": "second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Chengjun Chen",
+            "username": "cchanging",
+            "email": "344789491@qq.com"
+          },
+          "id": "7861bff17133b941cf89329917033541d14813ab",
+          "message": "Fix some format issues in `time`",
+          "timestamp": "2026-10-30T03:55:32Z",
+          "url": "https://github.com/asterinas/asterinas/commit/7861bff17133b941cf89329917033541d14813ab"
+        },
+        "date": 1793577407012,
+        "tool": "customSmallerIsBetter",
+        "title": "[Ramfs] The deletes-individual result of sqlite speedtest",
+        "description": "sqlite-speed-test: 50000 DELETEs of individual rows",
+        "display": false,
+        "benches": [
+          {
+            "name": "The speed of deletes-individual on Linux (Ramfs)",
+            "value": "2.452",
+            "unit": "second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "The speed of deletes-individual on Asterinas (Ramfs)",
+            "value": "2.657",
             "unit": "second",
             "extra": "aster_result"
           }
