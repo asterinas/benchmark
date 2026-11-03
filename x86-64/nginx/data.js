@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793748750966,
+  "lastUpdate": 1793748751219,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "http_file4KB_bw": [
@@ -2227,43 +2227,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Jianfeng Jiang",
-            "username": "StevenJiang1110",
-            "email": "jiangjianfeng.jjf@antgroup.com"
-          },
-          "committer": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "3329907643@qq.com"
-          },
-          "id": "2de6b07ee933a033081029f940f741bec678a3c2",
-          "message": "Clear IOPL in RFLAGS before returning to user space",
-          "timestamp": "2026-09-03T08:49:16Z",
-          "url": "https://github.com/asterinas/asterinas/commit/2de6b07ee933a033081029f940f741bec678a3c2"
-        },
-        "date": 1788557583229,
-        "tool": "customBiggerIsBetter",
-        "title": "Nginx HTTP request performance (virtio-net, 8KB file size)",
-        "description": "ab -n 10000 -c 1 http://10.0.2.15:8080/8192bytes.html",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average HTTP Bandwidth over virtio-net between Host Linux and Guest Linux",
-            "value": "15894.64",
-            "unit": "Requests per second",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average HTTP Bandwidth over virtio-net between Host Linux and Guest Asterinas",
-            "value": "9336.27",
-            "unit": "Requests per second",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Zhang Junyang",
             "username": "junyang-zh",
             "email": "junyang@stu.pku.edu.cn"
@@ -4438,6 +4401,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average HTTP Bandwidth over virtio-net between Host Linux and Guest Asterinas",
             "value": "6119.84",
+            "unit": "Requests per second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Jianfeng Jiang",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "2ea21cd392606e83760d470b5ed04ea136312f8d",
+          "message": "Free disk space before running OSDK tests\n\nMount and remove unused host SDK directories in both OSDK test containers, matching the cleanup used by the other x86 CI jobs. This provides more disk space for OSDK builds and tests on GitHub-hosted runners.",
+          "timestamp": "2026-11-02T07:29:39Z",
+          "url": "https://github.com/asterinas/asterinas/commit/2ea21cd392606e83760d470b5ed04ea136312f8d"
+        },
+        "date": 1793748751217,
+        "tool": "customBiggerIsBetter",
+        "title": "Nginx HTTP request performance (virtio-net, 8KB file size)",
+        "description": "ab -n 10000 -c 1 http://10.0.2.15:8080/8192bytes.html",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average HTTP Bandwidth over virtio-net between Host Linux and Guest Linux",
+            "value": "8073.98",
+            "unit": "Requests per second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average HTTP Bandwidth over virtio-net between Host Linux and Guest Asterinas",
+            "value": "6089.60",
             "unit": "Requests per second",
             "extra": "aster_result"
           }
