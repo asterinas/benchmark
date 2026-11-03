@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793747229997,
+  "lastUpdate": 1793747230319,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -57754,43 +57754,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Ya0rk",
-            "username": "Ya0rk",
-            "email": "yoohoo1287@gmail.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "604948581512d83734377974d4c34adb4530f2d7",
-          "message": "Add aster-code-review benchmark problem:500-508",
-          "timestamp": "2026-08-08T01:53:59Z",
-          "url": "https://github.com/asterinas/asterinas/commit/604948581512d83734377974d4c34adb4530f2d7"
-        },
-        "date": 1787520737425,
-        "tool": "customBiggerIsBetter",
-        "title": "[Ramfs] The throughput of creating/deleting small files (10KB)",
-        "description": "lat_fs -s 10K",
-        "display": true,
-        "benches": [
-          {
-            "name": "Number of created/deleted files on Linux",
-            "value": "1336",
-            "unit": "number",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Number of created/deleted files on Asterinas",
-            "value": "1596",
-            "unit": "number",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Cautreoxit",
             "username": "Cautreoxit",
             "email": "huk@stu.pku.edu.cn"
@@ -59965,6 +59928,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Number of created/deleted files on Asterinas",
             "value": "1252",
+            "unit": "number",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Jianfeng Jiang",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "2ea21cd392606e83760d470b5ed04ea136312f8d",
+          "message": "Free disk space before running OSDK tests\n\nMount and remove unused host SDK directories in both OSDK test containers, matching the cleanup used by the other x86 CI jobs. This provides more disk space for OSDK builds and tests on GitHub-hosted runners.",
+          "timestamp": "2026-11-02T07:29:39Z",
+          "url": "https://github.com/asterinas/asterinas/commit/2ea21cd392606e83760d470b5ed04ea136312f8d"
+        },
+        "date": 1793747230296,
+        "tool": "customBiggerIsBetter",
+        "title": "[Ramfs] The throughput of creating/deleting small files (10KB)",
+        "description": "lat_fs -s 10K",
+        "display": true,
+        "benches": [
+          {
+            "name": "Number of created/deleted files on Linux",
+            "value": "1331",
+            "unit": "number",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Number of created/deleted files on Asterinas",
+            "value": "1110",
             "unit": "number",
             "extra": "aster_result"
           }
