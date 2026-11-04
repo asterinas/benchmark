@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793836553357,
+  "lastUpdate": 1793836553593,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ping_inline_100k_conc20_rps": [
@@ -2241,43 +2241,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2026-09-04T13:41:56Z",
           "url": "https://github.com/asterinas/asterinas/commit/e60f6de4e991d3ad66fc61d0340a363a2096bd85"
         },
-        "date": 1788643430834,
-        "tool": "customBiggerIsBetter",
-        "title": "Redis PING MBULK performance (virtio-net, 20 concurrency, 100K requests)",
-        "description": "redis-benchmark -n 100000 -c 20 -t ping_mbulk",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average RPS of PING_MBULK over virtio-net between Host Linux and Guest Linux",
-            "value": "159744.41",
-            "unit": "request per second",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average RPS of PING_MBULK over virtio-net between Host Linux and Guest Asterinas",
-            "value": "164744.64",
-            "unit": "request per second",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Zhang Junyang",
-            "username": "junyang-zh",
-            "email": "junyang@stu.pku.edu.cn"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "e60f6de4e991d3ad66fc61d0340a363a2096bd85",
-          "message": "Revert the temporary fix since dev containers are updated",
-          "timestamp": "2026-09-04T13:41:56Z",
-          "url": "https://github.com/asterinas/asterinas/commit/e60f6de4e991d3ad66fc61d0340a363a2096bd85"
-        },
         "date": 1788730119805,
         "tool": "customBiggerIsBetter",
         "title": "Redis PING MBULK performance (virtio-net, 20 concurrency, 100K requests)",
@@ -4438,6 +4401,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average RPS of PING_MBULK over virtio-net between Host Linux and Guest Asterinas",
             "value": "104821.80",
+            "unit": "request per second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruowen Qin",
+            "username": "chinrw",
+            "email": "qinruowen@tlaic.ac.cn"
+          },
+          "committer": {
+            "name": "Qingsong Chen",
+            "username": "cqs21",
+            "email": "changxian.cqs@antgroup.com"
+          },
+          "id": "925f829a3e64bd91bd9b48435b81173dfbc2860c",
+          "message": "Fix the development cache workflow path filter\n\nWatch the workflow itself instead of the old push_cachix_pkgs.yml path.\n\nSigned-off-by: Ruowen Qin <qinruowen@tlaic.ac.cn>",
+          "timestamp": "2026-11-04T06:44:05Z",
+          "url": "https://github.com/asterinas/asterinas/commit/925f829a3e64bd91bd9b48435b81173dfbc2860c"
+        },
+        "date": 1793836553592,
+        "tool": "customBiggerIsBetter",
+        "title": "Redis PING MBULK performance (virtio-net, 20 concurrency, 100K requests)",
+        "description": "redis-benchmark -n 100000 -c 20 -t ping_mbulk",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average RPS of PING_MBULK over virtio-net between Host Linux and Guest Linux",
+            "value": "132626.00",
+            "unit": "request per second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average RPS of PING_MBULK over virtio-net between Host Linux and Guest Asterinas",
+            "value": "127388.53",
             "unit": "request per second",
             "extra": "aster_result"
           }
