@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793836552227,
+  "lastUpdate": 1793836552489,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "smp1_p50_rps": [
@@ -6683,43 +6683,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2026-09-04T13:41:56Z",
           "url": "https://github.com/asterinas/asterinas/commit/e60f6de4e991d3ad66fc61d0340a363a2096bd85"
         },
-        "date": 1788643429546,
-        "tool": "customBiggerIsBetter",
-        "title": "[Scheduler] P50 RPS while max-loading all CPUs (SMP=8)",
-        "description": "schbench -F 256 -n 5 -r 90",
-        "display": false,
-        "benches": [
-          {
-            "name": "P50 RPS of schbench on Linux",
-            "value": "0",
-            "unit": "requests per second",
-            "extra": "linux_result"
-          },
-          {
-            "name": "P50 RPS of schbench on Asterinas",
-            "value": "0",
-            "unit": "requests per second",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Zhang Junyang",
-            "username": "junyang-zh",
-            "email": "junyang@stu.pku.edu.cn"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "e60f6de4e991d3ad66fc61d0340a363a2096bd85",
-          "message": "Revert the temporary fix since dev containers are updated",
-          "timestamp": "2026-09-04T13:41:56Z",
-          "url": "https://github.com/asterinas/asterinas/commit/e60f6de4e991d3ad66fc61d0340a363a2096bd85"
-        },
         "date": 1788730118489,
         "tool": "customBiggerIsBetter",
         "title": "[Scheduler] P50 RPS while max-loading all CPUs (SMP=8)",
@@ -8866,6 +8829,43 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/asterinas/asterinas/commit/2ea21cd392606e83760d470b5ed04ea136312f8d"
         },
         "date": 1793748747419,
+        "tool": "customBiggerIsBetter",
+        "title": "[Scheduler] P50 RPS while max-loading all CPUs (SMP=8)",
+        "description": "schbench -F 256 -n 5 -r 90",
+        "display": false,
+        "benches": [
+          {
+            "name": "P50 RPS of schbench on Linux",
+            "value": "0",
+            "unit": "requests per second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "P50 RPS of schbench on Asterinas",
+            "value": "0",
+            "unit": "requests per second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruowen Qin",
+            "username": "chinrw",
+            "email": "qinruowen@tlaic.ac.cn"
+          },
+          "committer": {
+            "name": "Qingsong Chen",
+            "username": "cqs21",
+            "email": "changxian.cqs@antgroup.com"
+          },
+          "id": "925f829a3e64bd91bd9b48435b81173dfbc2860c",
+          "message": "Fix the development cache workflow path filter\n\nWatch the workflow itself instead of the old push_cachix_pkgs.yml path.\n\nSigned-off-by: Ruowen Qin <qinruowen@tlaic.ac.cn>",
+          "timestamp": "2026-11-04T06:44:05Z",
+          "url": "https://github.com/asterinas/asterinas/commit/925f829a3e64bd91bd9b48435b81173dfbc2860c"
+        },
+        "date": 1793836552486,
         "tool": "customBiggerIsBetter",
         "title": "[Scheduler] P50 RPS while max-loading all CPUs (SMP=8)",
         "description": "schbench -F 256 -n 5 -r 90",
