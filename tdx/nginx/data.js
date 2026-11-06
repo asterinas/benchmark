@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793923496659,
+  "lastUpdate": 1793923497052,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "http_file4KB_bw": [
@@ -13332,43 +13332,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "1d5dad707a0b6356923d6f08a95e372a42ac69d6",
-          "message": "Drop `not same fs` errors from `fs_impls`",
-          "timestamp": "2026-08-20T09:21:56Z",
-          "url": "https://github.com/asterinas/asterinas/commit/1d5dad707a0b6356923d6f08a95e372a42ac69d6"
-        },
-        "date": 1787262384498,
-        "tool": "customBiggerIsBetter",
-        "title": "Nginx HTTP request performance with 1 concurrency and 10000 requests in total",
-        "description": "ab -n 10000 -c 1 http://localhost:8080/index.html",
-        "display": false,
-        "benches": [
-          {
-            "name": "Average HTTP Bandwidth over virtio-net between Host Linux and Guest Linux",
-            "value": "7520.29",
-            "unit": "Kbytes/sec",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average HTTP Bandwidth over virtio-net between Host Linux and Guest Asterinas",
-            "value": "1378.33",
-            "unit": "Kbytes/sec",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Ya0rk",
             "username": "Ya0rk",
             "email": "yoohoo1287@gmail.com"
@@ -15543,6 +15506,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average HTTP Bandwidth over virtio-net between Host Linux and Guest Asterinas",
             "value": "4093.82",
+            "unit": "Kbytes/sec",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "1sh1ro",
+            "username": "1sh1ro",
+            "email": "2855020996@qq.com"
+          },
+          "committer": {
+            "name": "Chengjun Chen",
+            "username": "cchanging",
+            "email": "344789491@qq.com"
+          },
+          "id": "6ea3fd644298cd4827f2c9f9c3018138bf9c03fa",
+          "message": "Enforce the `noexec`, `nodev`, and `nosymfollow` mount flags\n\nThe three flags were parsed into `PerMountFlags` and reported to user\nspace through `Display` and `statfs`, but nothing consulted them:\n\n- `execve` of a file on a `noexec` mount succeeded, and so did an\n  executable `mmap` of it, a later `mprotect` that added the execute\n  permission, and an `X_OK` probe through the `access` family.\n- Opening a device special file on a `nodev` mount succeeded.\n- Path resolution followed symlinks on a `nosymfollow` mount.\n\nAdd the checks at the enforcement points: the executable open path, the\nnon-`O_PATH` device-node open funnel, the symlink following branch of the\npath resolver, the `X_OK` check of the `access` family, and the\nfile-backed `mmap` path.\n\nAn executable mapping of a file on a `noexec` mount is refused with\n`EPERM`. The other mappings do not get the execute permission, so a later\n`mprotect` cannot grant it either and fails with `EACCES`.\n\nPreserve `mmap` error precedence for `O_PATH` descriptors and update the\nexisting I/O tests to expect `EBADF`. Update the mount flag coverage in\nthe Linux Compatibility documentation.\n\nAdd a regression test that covers the three flags, including the mapping\nand access paths, and that removes its fixtures afterwards. Unblocklist\nthe gVisor tests that cover the `execve`, `mmap`, and `mprotect`\nbehavior.\n\nFixes #4062\n\nSigned-off-by: 1sh1ro <2855020996@qq.com>",
+          "timestamp": "2026-10-29T16:11:14Z",
+          "url": "https://github.com/asterinas/asterinas/commit/6ea3fd644298cd4827f2c9f9c3018138bf9c03fa"
+        },
+        "date": 1793923497050,
+        "tool": "customBiggerIsBetter",
+        "title": "Nginx HTTP request performance with 1 concurrency and 10000 requests in total",
+        "description": "ab -n 10000 -c 1 http://localhost:8080/index.html",
+        "display": false,
+        "benches": [
+          {
+            "name": "Average HTTP Bandwidth over virtio-net between Host Linux and Guest Linux",
+            "value": "7178.03",
+            "unit": "Kbytes/sec",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average HTTP Bandwidth over virtio-net between Host Linux and Guest Asterinas",
+            "value": "3925.58",
             "unit": "Kbytes/sec",
             "extra": "aster_result"
           }
