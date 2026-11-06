@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793836576918,
+  "lastUpdate": 1793929026592,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_seq_write_bw": [
@@ -17737,6 +17737,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average direct I/O file write bandwidth on Asterinas",
             "value": "1620.147498",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "1sh1ro",
+            "username": "1sh1ro",
+            "email": "2855020996@qq.com"
+          },
+          "committer": {
+            "name": "Chengjun Chen",
+            "username": "cchanging",
+            "email": "344789491@qq.com"
+          },
+          "id": "6ea3fd644298cd4827f2c9f9c3018138bf9c03fa",
+          "message": "Enforce the `noexec`, `nodev`, and `nosymfollow` mount flags\n\nThe three flags were parsed into `PerMountFlags` and reported to user\nspace through `Display` and `statfs`, but nothing consulted them:\n\n- `execve` of a file on a `noexec` mount succeeded, and so did an\n  executable `mmap` of it, a later `mprotect` that added the execute\n  permission, and an `X_OK` probe through the `access` family.\n- Opening a device special file on a `nodev` mount succeeded.\n- Path resolution followed symlinks on a `nosymfollow` mount.\n\nAdd the checks at the enforcement points: the executable open path, the\nnon-`O_PATH` device-node open funnel, the symlink following branch of the\npath resolver, the `X_OK` check of the `access` family, and the\nfile-backed `mmap` path.\n\nAn executable mapping of a file on a `noexec` mount is refused with\n`EPERM`. The other mappings do not get the execute permission, so a later\n`mprotect` cannot grant it either and fails with `EACCES`.\n\nPreserve `mmap` error precedence for `O_PATH` descriptors and update the\nexisting I/O tests to expect `EBADF`. Update the mount flag coverage in\nthe Linux Compatibility documentation.\n\nAdd a regression test that covers the three flags, including the mapping\nand access paths, and that removes its fixtures afterwards. Unblocklist\nthe gVisor tests that cover the `execve`, `mmap`, and `mprotect`\nbehavior.\n\nFixes #4062\n\nSigned-off-by: 1sh1ro <2855020996@qq.com>",
+          "timestamp": "2026-10-29T16:11:14Z",
+          "url": "https://github.com/asterinas/asterinas/commit/6ea3fd644298cd4827f2c9f9c3018138bf9c03fa"
+        },
+        "date": 1793929026590,
+        "tool": "customBiggerIsBetter",
+        "title": "[virtio-fs] The bandwidth of sequential writes (direct I/O, w/o IOMMU)",
+        "description": "fio -filename=/virtiofs/fio-test -size=1G -bs=1M -direct=1",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average direct I/O file write bandwidth on Linux",
+            "value": "2527.101578",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average direct I/O file write bandwidth on Asterinas",
+            "value": "1610.037023",
             "unit": "MB/s",
             "extra": "aster_result"
           }
