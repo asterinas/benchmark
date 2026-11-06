@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793928990413,
+  "lastUpdate": 1793928990770,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "smp1_p50_rps": [
@@ -8890,43 +8890,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Zhang Junyang",
-            "username": "junyang-zh",
-            "email": "junyang@stu.pku.edu.cn"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "e60f6de4e991d3ad66fc61d0340a363a2096bd85",
-          "message": "Revert the temporary fix since dev containers are updated",
-          "timestamp": "2026-09-04T13:41:56Z",
-          "url": "https://github.com/asterinas/asterinas/commit/e60f6de4e991d3ad66fc61d0340a363a2096bd85"
-        },
-        "date": 1788730118218,
-        "tool": "customSmallerIsBetter",
-        "title": "[Scheduler] P99 request latency while max-loading all CPUs (SMP=8)",
-        "description": "schbench -F 256 -n 5 -r 90",
-        "display": false,
-        "benches": [
-          {
-            "name": "P99 request latency of schbench on Linux",
-            "value": "2332",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "P99 request latency of schbench on Asterinas",
-            "value": "65472",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Mike Solar",
             "username": "Mike-Solar",
             "email": "iam@mikesolar.cn"
@@ -11095,6 +11058,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "P99 request latency of schbench on Linux",
             "value": "4744",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "P99 request latency of schbench on Asterinas",
+            "value": "120192",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "1sh1ro",
+            "username": "1sh1ro",
+            "email": "2855020996@qq.com"
+          },
+          "committer": {
+            "name": "Chengjun Chen",
+            "username": "cchanging",
+            "email": "344789491@qq.com"
+          },
+          "id": "6ea3fd644298cd4827f2c9f9c3018138bf9c03fa",
+          "message": "Enforce the `noexec`, `nodev`, and `nosymfollow` mount flags\n\nThe three flags were parsed into `PerMountFlags` and reported to user\nspace through `Display` and `statfs`, but nothing consulted them:\n\n- `execve` of a file on a `noexec` mount succeeded, and so did an\n  executable `mmap` of it, a later `mprotect` that added the execute\n  permission, and an `X_OK` probe through the `access` family.\n- Opening a device special file on a `nodev` mount succeeded.\n- Path resolution followed symlinks on a `nosymfollow` mount.\n\nAdd the checks at the enforcement points: the executable open path, the\nnon-`O_PATH` device-node open funnel, the symlink following branch of the\npath resolver, the `X_OK` check of the `access` family, and the\nfile-backed `mmap` path.\n\nAn executable mapping of a file on a `noexec` mount is refused with\n`EPERM`. The other mappings do not get the execute permission, so a later\n`mprotect` cannot grant it either and fails with `EACCES`.\n\nPreserve `mmap` error precedence for `O_PATH` descriptors and update the\nexisting I/O tests to expect `EBADF`. Update the mount flag coverage in\nthe Linux Compatibility documentation.\n\nAdd a regression test that covers the three flags, including the mapping\nand access paths, and that removes its fixtures afterwards. Unblocklist\nthe gVisor tests that cover the `execve`, `mmap`, and `mprotect`\nbehavior.\n\nFixes #4062\n\nSigned-off-by: 1sh1ro <2855020996@qq.com>",
+          "timestamp": "2026-10-29T16:11:14Z",
+          "url": "https://github.com/asterinas/asterinas/commit/6ea3fd644298cd4827f2c9f9c3018138bf9c03fa"
+        },
+        "date": 1793928990768,
+        "tool": "customSmallerIsBetter",
+        "title": "[Scheduler] P99 request latency while max-loading all CPUs (SMP=8)",
+        "description": "schbench -F 256 -n 5 -r 90",
+        "display": false,
+        "benches": [
+          {
+            "name": "P99 request latency of schbench on Linux",
+            "value": "4632",
             "unit": "µs",
             "extra": "linux_result"
           },
