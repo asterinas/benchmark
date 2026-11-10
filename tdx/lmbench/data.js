@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794354178266,
+  "lastUpdate": 1794354178665,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -104398,43 +104398,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Tao Su",
-            "username": "taosue",
-            "email": "st498824@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "09e169786f5f65bb3a126454216108fe1bdda7d0",
-          "message": "Add devtmpfs ktests",
-          "timestamp": "2026-08-22T13:03:13Z",
-          "url": "https://github.com/asterinas/asterinas/commit/09e169786f5f65bb3a126454216108fe1bdda7d0"
-        },
-        "date": 1787694293939,
-        "tool": "customBiggerIsBetter",
-        "title": "[Ext2] The throughput of creating/deleting small files (0KB)",
-        "description": "lat_fs -s 0k /ext2",
-        "display": false,
-        "benches": [
-          {
-            "name": "Number of created/deleted files on Linux",
-            "value": "43",
-            "unit": "number",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Number of created/deleted files on Asterinas",
-            "value": "379",
-            "unit": "number",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Fan Jie",
             "username": "f-jye",
             "email": "fanjie@uniontech.com"
@@ -106609,6 +106572,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Number of created/deleted files on Asterinas",
             "value": "413",
+            "unit": "number",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "harry",
+            "username": "Cosh-y",
+            "email": "ambition0316@126.com"
+          },
+          "committer": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "3329907643@qq.com"
+          },
+          "id": "6da091ce419013c8cb0a982c992de274e3e26132",
+          "message": "Make 'gpm_space.rs' architecture-agnostic",
+          "timestamp": "2026-11-03T09:56:45Z",
+          "url": "https://github.com/asterinas/asterinas/commit/6da091ce419013c8cb0a982c992de274e3e26132"
+        },
+        "date": 1794354178653,
+        "tool": "customBiggerIsBetter",
+        "title": "[Ext2] The throughput of creating/deleting small files (0KB)",
+        "description": "lat_fs -s 0k /ext2",
+        "display": false,
+        "benches": [
+          {
+            "name": "Number of created/deleted files on Linux",
+            "value": "74",
+            "unit": "number",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Number of created/deleted files on Asterinas",
+            "value": "408",
             "unit": "number",
             "extra": "aster_result"
           }
