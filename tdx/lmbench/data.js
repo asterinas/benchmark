@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794441352076,
+  "lastUpdate": 1794441352402,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -4449,43 +4449,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Fan Jie",
-            "username": "f-jye",
-            "email": "fanjie@uniontech.com"
-          },
-          "committer": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "3329907643@qq.com"
-          },
-          "id": "556d4e78375adcf0eb46a4c4f2ede2eca63eef64",
-          "message": "Fix xAPIC ID extraction",
-          "timestamp": "2026-08-26T07:18:51Z",
-          "url": "https://github.com/asterinas/asterinas/commit/556d4e78375adcf0eb46a4c4f2ede2eca63eef64"
-        },
-        "date": 1787782387284,
-        "tool": "customSmallerIsBetter",
-        "title": "[Memory] The cost of mmap+unmap",
-        "description": "lat_mmap",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average mmap latency on Linux",
-            "value": "30",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average mmap latency on Asterinas",
-            "value": "22",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Qingsong Chen",
             "username": "cqs21",
             "email": "changxian.cqs@antgroup.com"
@@ -6646,6 +6609,43 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/asterinas/asterinas/commit/6da091ce419013c8cb0a982c992de274e3e26132"
         },
         "date": 1794354176791,
+        "tool": "customSmallerIsBetter",
+        "title": "[Memory] The cost of mmap+unmap",
+        "description": "lat_mmap",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average mmap latency on Linux",
+            "value": "27",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average mmap latency on Asterinas",
+            "value": "21",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "dragon",
+            "username": "eternalcomet",
+            "email": "mydragonos@outlook.com"
+          },
+          "committer": {
+            "name": "Chengjun Chen",
+            "username": "cchanging",
+            "email": "344789491@qq.com"
+          },
+          "id": "37a5972d141a6799d80b23ceeaa8d2e6bcae883f",
+          "message": "Check visible mountpoints without holding the `children` lock\n\nChecking whether a mountpoint is under the resolver's root walks its\nancestor dentries. After a concurrent rename and rmdir, one of these\ntemporary references may be the last one, and dropping it may sleep while\nreclaiming the inode. Clone the child mounts first and check them after\nreleasing the spin lock.\n\nFixes #4181",
+          "timestamp": "2026-11-04T05:29:39Z",
+          "url": "https://github.com/asterinas/asterinas/commit/37a5972d141a6799d80b23ceeaa8d2e6bcae883f"
+        },
+        "date": 1794441352384,
         "tool": "customSmallerIsBetter",
         "title": "[Memory] The cost of mmap+unmap",
         "description": "lat_mmap",
