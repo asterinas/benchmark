@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794443680619,
+  "lastUpdate": 1794443680875,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "boot_lat": [
@@ -2227,43 +2227,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Mike Solar",
-            "username": "Mike-Solar",
-            "email": "iam@mikesolar.cn"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "1601bf53792fd81420a4f3c1da3119e84d5b36ef",
-          "message": "Improve doc comments for Either\n\nSigned-off-by: Mike Solar <iam@mikesolar.cn>",
-          "timestamp": "2026-09-07T11:26:29Z",
-          "url": "https://github.com/asterinas/asterinas/commit/1601bf53792fd81420a4f3c1da3119e84d5b36ef"
-        },
-        "date": 1788816314864,
-        "tool": "customSmallerIsBetter",
-        "title": "[Boot] Boot latency (~100MB pad)",
-        "description": "Boot latency with a ~100MB-padded initramfs (measured via /proc/uptime)",
-        "display": true,
-        "benches": [
-          {
-            "name": "Boot latency (~100MB pad) on Linux",
-            "value": "0.76",
-            "unit": "sec",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Boot latency (~100MB pad) on Asterinas",
-            "value": "0.32",
-            "unit": "sec",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Jia Qingtong",
             "email": "jiaqingtong@huawei.com"
           },
@@ -4438,6 +4401,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Boot latency (~100MB pad) on Asterinas",
             "value": "0.35",
+            "unit": "sec",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "dragon",
+            "username": "eternalcomet",
+            "email": "mydragonos@outlook.com"
+          },
+          "committer": {
+            "name": "Chengjun Chen",
+            "username": "cchanging",
+            "email": "344789491@qq.com"
+          },
+          "id": "37a5972d141a6799d80b23ceeaa8d2e6bcae883f",
+          "message": "Check visible mountpoints without holding the `children` lock\n\nChecking whether a mountpoint is under the resolver's root walks its\nancestor dentries. After a concurrent rename and rmdir, one of these\ntemporary references may be the last one, and dropping it may sleep while\nreclaiming the inode. Clone the child mounts first and check them after\nreleasing the spin lock.\n\nFixes #4181",
+          "timestamp": "2026-11-04T05:29:39Z",
+          "url": "https://github.com/asterinas/asterinas/commit/37a5972d141a6799d80b23ceeaa8d2e6bcae883f"
+        },
+        "date": 1794443680873,
+        "tool": "customSmallerIsBetter",
+        "title": "[Boot] Boot latency (~100MB pad)",
+        "description": "Boot latency with a ~100MB-padded initramfs (measured via /proc/uptime)",
+        "display": true,
+        "benches": [
+          {
+            "name": "Boot latency (~100MB pad) on Linux",
+            "value": "0.82",
+            "unit": "sec",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Boot latency (~100MB pad) on Asterinas",
+            "value": "0.36",
             "unit": "sec",
             "extra": "aster_result"
           }
