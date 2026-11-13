@@ -1,45 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794613119906,
+  "lastUpdate": 1794613120227,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
-      {
-        "commit": {
-          "author": {
-            "name": "li041",
-            "username": "li041",
-            "email": "lxh050013@outlook.com"
-          },
-          "committer": {
-            "name": "Jianfeng Jiang",
-            "username": "StevenJiang1110",
-            "email": "jiangjianfeng.jjf@antgroup.com"
-          },
-          "id": "414f27702dee7c2f25672295c7aa9b83f247877e",
-          "message": "Support virtiofs symbolic links",
-          "timestamp": "2026-09-08T03:20:37Z",
-          "url": "https://github.com/asterinas/asterinas/commit/414f27702dee7c2f25672295c7aa9b83f247877e"
-        },
-        "date": 1788989689478,
-        "tool": "customSmallerIsBetter",
-        "title": "[Memory] The cost of page fault handling",
-        "description": "lat_pagefault",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average page fault latency on Linux",
-            "value": "0.1383",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average page fault latency on Asterinas",
-            "value": "0.1065",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2218,6 +2181,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average page fault latency on Asterinas",
             "value": "0.1048",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Ruihan Li",
+            "username": "lrh2000",
+            "email": "lrh2000@pku.edu.cn"
+          },
+          "committer": {
+            "name": "Jianfeng Jiang",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "id": "a0de2258c56b03ba1a6aa417a05f10bdc0f54ff4",
+          "message": "Fix error checks in `set_priority`",
+          "timestamp": "2026-11-13T06:07:12Z",
+          "url": "https://github.com/asterinas/asterinas/commit/a0de2258c56b03ba1a6aa417a05f10bdc0f54ff4"
+        },
+        "date": 1794613120215,
+        "tool": "customSmallerIsBetter",
+        "title": "[Memory] The cost of page fault handling",
+        "description": "lat_pagefault",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average page fault latency on Linux",
+            "value": "0.1265",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average page fault latency on Asterinas",
+            "value": "0.1092",
             "unit": "µs",
             "extra": "aster_result"
           }
