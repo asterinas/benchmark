@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794959067361,
+  "lastUpdate": 1795046003221,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_seq_write_bw_no_iommu": [
@@ -8329,6 +8329,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average direct I/O write bandwidth on Asterinas",
             "value": "6233.459841",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Tao Su",
+            "username": "taosue",
+            "email": "st498824@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "019cad00b389553013a0bcb304608874bc3831a0",
+          "message": "Add device model regression tests",
+          "timestamp": "2026-10-15T09:00:17Z",
+          "url": "https://github.com/asterinas/asterinas/commit/019cad00b389553013a0bcb304608874bc3831a0"
+        },
+        "date": 1795046003219,
+        "tool": "customBiggerIsBetter",
+        "title": "[NVMe] The bandwidth of sequential writes (direct I/O, w/o IOMMU)",
+        "description": "fio -filename=/dev/nvme0n1 -size=1G -bs=1M -direct=1",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average direct I/O write bandwidth on Linux",
+            "value": "1505.757223",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average direct I/O write bandwidth on Asterinas",
+            "value": "7661.868213",
             "unit": "MB/s",
             "extra": "aster_result"
           }
