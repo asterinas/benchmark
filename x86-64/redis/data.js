@@ -1,45 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794961020289,
+  "lastUpdate": 1794961020500,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ping_inline_100k_conc20_rps": [
-      {
-        "commit": {
-          "author": {
-            "name": "Hsy-Intel",
-            "username": "Hsy-Intel",
-            "email": "siyuan.hui@intel.com"
-          },
-          "committer": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "3329907643@qq.com"
-          },
-          "id": "ab90d2941875c619a430fa6fa3b65df6d25e8bc7",
-          "message": "Fix TDX retry issue",
-          "timestamp": "2026-08-13T06:14:58Z",
-          "url": "https://github.com/asterinas/asterinas/commit/ab90d2941875c619a430fa6fa3b65df6d25e8bc7"
-        },
-        "date": 1789421095521,
-        "tool": "customBiggerIsBetter",
-        "title": "Redis PING INLINE performance (virtio-net, 20 concurrency, 100K requests)",
-        "description": "redis-benchmark -n 100000 -c 20 -t ping_inline",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average RPS of PING_INLINE over virtio-net between Host Linux and Guest Linux",
-            "value": "158227.84",
-            "unit": "request per second",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average RPS of PING_INLINE over virtio-net between Host Linux and Guest Asterinas",
-            "value": "164473.69",
-            "unit": "request per second",
-            "extra": "aster_result"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2218,6 +2181,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average RPS of PING_INLINE over virtio-net between Host Linux and Guest Asterinas",
             "value": "23674.24",
+            "unit": "request per second",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Lei Li",
+            "username": "hburaylee",
+            "email": "lilei@tlaic.ac.cn"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "e87d8425f987820431bd35068ef2d4489bdcc735",
+          "message": "Enable the gVisor `ProcFilesystems.OverflowID` test\n\nSigned-off-by: Lei Li <lilei@tlaic.ac.cn>",
+          "timestamp": "2026-11-16T03:29:23Z",
+          "url": "https://github.com/asterinas/asterinas/commit/e87d8425f987820431bd35068ef2d4489bdcc735"
+        },
+        "date": 1794961020498,
+        "tool": "customBiggerIsBetter",
+        "title": "Redis PING INLINE performance (virtio-net, 20 concurrency, 100K requests)",
+        "description": "redis-benchmark -n 100000 -c 20 -t ping_inline",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average RPS of PING_INLINE over virtio-net between Host Linux and Guest Linux",
+            "value": "138312.59",
+            "unit": "request per second",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average RPS of PING_INLINE over virtio-net between Host Linux and Guest Asterinas",
+            "value": "128865.98",
             "unit": "request per second",
             "extra": "aster_result"
           }
