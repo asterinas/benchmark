@@ -1,45 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1795131317863,
+  "lastUpdate": 1795131318081,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "boot_lat": [
-      {
-        "commit": {
-          "author": {
-            "name": "Chen Chengjun",
-            "username": "cchanging",
-            "email": "chenchengjun.ccj@antgroup.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "864b9138be22d5436ef30692c0b2e5d35dafaef4",
-          "message": "Adjust the symlink implementation for other file systems",
-          "timestamp": "2026-09-02T02:12:28Z",
-          "url": "https://github.com/asterinas/asterinas/commit/864b9138be22d5436ef30692c0b2e5d35dafaef4"
-        },
-        "date": 1788472833958,
-        "tool": "customSmallerIsBetter",
-        "title": "[Boot] Boot latency",
-        "description": "Boot latency with a minimal initramfs (measured via /proc/uptime)",
-        "display": true,
-        "benches": [
-          {
-            "name": "Boot latency on Linux",
-            "value": "5.24",
-            "unit": "sec",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Boot latency on Asterinas",
-            "value": "0.63",
-            "unit": "sec",
-            "extra": "aster_result"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2217,6 +2180,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Boot latency on Asterinas",
             "value": "0.47",
+            "unit": "sec",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tate.thl@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "7fecb4ffabc72d0767277a9ffb66168bc512034c",
+          "message": "Fix the futex requeue regression test timeout\n\nFUTEX_WAIT_BITSET uses an absolute CLOCK_MONOTONIC deadline unless\nFUTEX_CLOCK_REALTIME is set. Use the matching clock so the five-second\ntimeout lets pthread_join finish even when the worker is never woken.\n\nFixes: 0a6d18d8d (\"Match futex requeue semantics to Linux\")",
+          "timestamp": "2026-11-19T12:48:20Z",
+          "url": "https://github.com/asterinas/asterinas/commit/7fecb4ffabc72d0767277a9ffb66168bc512034c"
+        },
+        "date": 1795131318080,
+        "tool": "customSmallerIsBetter",
+        "title": "[Boot] Boot latency",
+        "description": "Boot latency with a minimal initramfs (measured via /proc/uptime)",
+        "display": true,
+        "benches": [
+          {
+            "name": "Boot latency on Linux",
+            "value": "5.13",
+            "unit": "sec",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Boot latency on Asterinas",
+            "value": "0.46",
             "unit": "sec",
             "extra": "aster_result"
           }
