@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1795047029672,
+  "lastUpdate": 1795047029995,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "http_file4KB_bw": [
@@ -11116,43 +11116,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "WX Chen",
-            "username": "zhenbaii",
-            "email": "wxchen0913@gmail.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "d4b407ca87de203f79c27c9a83ada1d8223fe280",
-          "message": "Fix `getcwd` panic after unmounting a parent with child mounts\n\nTreat a dead parent mount as unreachable instead of unwrapping it.",
-          "timestamp": "2026-09-12T08:28:59Z",
-          "url": "https://github.com/asterinas/asterinas/commit/d4b407ca87de203f79c27c9a83ada1d8223fe280"
-        },
-        "date": 1789507980186,
-        "tool": "customBiggerIsBetter",
-        "title": "Nginx HTTP request performance with 1 concurrency and 10000 requests in total",
-        "description": "ab -n 10000 -c 1 http://localhost:8080/index.html",
-        "display": false,
-        "benches": [
-          {
-            "name": "Average HTTP Bandwidth over virtio-net between Host Linux and Guest Linux",
-            "value": "17367.69",
-            "unit": "Kbytes/sec",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average HTTP Bandwidth over virtio-net between Host Linux and Guest Asterinas",
-            "value": "5946.13",
-            "unit": "Kbytes/sec",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Jianfeng Jiang",
             "username": "StevenJiang1110",
             "email": "jiangjianfeng.jjf@antgroup.com"
@@ -13328,6 +13291,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average HTTP Bandwidth over virtio-net between Host Linux and Guest Asterinas",
             "value": "4123.32",
+            "unit": "Kbytes/sec",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Tao Su",
+            "username": "taosue",
+            "email": "st498824@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "019cad00b389553013a0bcb304608874bc3831a0",
+          "message": "Add device model regression tests",
+          "timestamp": "2026-10-15T09:00:17Z",
+          "url": "https://github.com/asterinas/asterinas/commit/019cad00b389553013a0bcb304608874bc3831a0"
+        },
+        "date": 1795047029992,
+        "tool": "customBiggerIsBetter",
+        "title": "Nginx HTTP request performance with 1 concurrency and 10000 requests in total",
+        "description": "ab -n 10000 -c 1 http://localhost:8080/index.html",
+        "display": false,
+        "benches": [
+          {
+            "name": "Average HTTP Bandwidth over virtio-net between Host Linux and Guest Linux",
+            "value": "9675.81",
+            "unit": "Kbytes/sec",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average HTTP Bandwidth over virtio-net between Host Linux and Guest Asterinas",
+            "value": "3984.61",
             "unit": "Kbytes/sec",
             "extra": "aster_result"
           }
