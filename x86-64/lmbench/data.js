@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1795134096914,
+  "lastUpdate": 1795134097253,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -26670,43 +26670,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Hsy-Intel",
-            "username": "Hsy-Intel",
-            "email": "siyuan.hui@intel.com"
-          },
-          "committer": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "3329907643@qq.com"
-          },
-          "id": "ab90d2941875c619a430fa6fa3b65df6d25e8bc7",
-          "message": "Fix TDX retry issue",
-          "timestamp": "2026-08-13T06:14:58Z",
-          "url": "https://github.com/asterinas/asterinas/commit/ab90d2941875c619a430fa6fa3b65df6d25e8bc7"
-        },
-        "date": 1789421114283,
-        "tool": "customBiggerIsBetter",
-        "title": "[Pipes] The bandwidth",
-        "description": "bw_pipe",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average pipe bandwidth on Linux",
-            "value": "9296.34",
-            "unit": "MB/s",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average pipe bandwidth on Asterinas",
-            "value": "10173.69",
-            "unit": "MB/s",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "WX Chen",
             "username": "zhenbaii",
             "email": "wxchen0913@gmail.com"
@@ -28882,6 +28845,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average pipe bandwidth on Asterinas",
             "value": "10985.09",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tate.thl@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "7fecb4ffabc72d0767277a9ffb66168bc512034c",
+          "message": "Fix the futex requeue regression test timeout\n\nFUTEX_WAIT_BITSET uses an absolute CLOCK_MONOTONIC deadline unless\nFUTEX_CLOCK_REALTIME is set. Use the matching clock so the five-second\ntimeout lets pthread_join finish even when the worker is never woken.\n\nFixes: 0a6d18d8d (\"Match futex requeue semantics to Linux\")",
+          "timestamp": "2026-11-19T12:48:20Z",
+          "url": "https://github.com/asterinas/asterinas/commit/7fecb4ffabc72d0767277a9ffb66168bc512034c"
+        },
+        "date": 1795134097236,
+        "tool": "customBiggerIsBetter",
+        "title": "[Pipes] The bandwidth",
+        "description": "bw_pipe",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average pipe bandwidth on Linux",
+            "value": "10241.15",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average pipe bandwidth on Asterinas",
+            "value": "11164.25",
             "unit": "MB/s",
             "extra": "aster_result"
           }
