@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1795218266775,
+  "lastUpdate": 1795218267069,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -91075,43 +91075,6 @@ window.BENCHMARK_DATA = {
             "email": "changxian.cqs@antgroup.com"
           },
           "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "29b0f4bcf111efb590ee14768c624ecf1e81bbd7",
-          "message": "Bump Docker image version to 0.18.1-20260901",
-          "timestamp": "2026-09-01T07:37:38Z",
-          "url": "https://github.com/asterinas/asterinas/commit/29b0f4bcf111efb590ee14768c624ecf1e81bbd7"
-        },
-        "date": 1788301907469,
-        "tool": "customSmallerIsBetter",
-        "title": "[TCP sockets] The latency of connect (loopback)",
-        "description": "lat_connect",
-        "display": false,
-        "benches": [
-          {
-            "name": "Average TCP connection latency on Linux",
-            "value": "7823.2709",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average TCP connection latency on Asterinas",
-            "value": "7323.9792",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Qingsong Chen",
-            "username": "cqs21",
-            "email": "changxian.cqs@antgroup.com"
-          },
-          "committer": {
             "name": "Jianfeng Jiang",
             "username": "StevenJiang1110",
             "email": "jiangjianfeng.jjf@antgroup.com"
@@ -93281,6 +93244,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average TCP connection latency on Asterinas",
             "value": "9306.3684",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "zhuowei shao",
+            "username": "joey-shao",
+            "email": "zhuoweishao0@gmail.com"
+          },
+          "committer": {
+            "name": "Jianfeng Jiang",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "id": "12374d1337d21f2d0dbe39c5cab340b41c58e553",
+          "message": "Add x86-64 ptrace floating-point regset",
+          "timestamp": "2026-11-10T04:59:50Z",
+          "url": "https://github.com/asterinas/asterinas/commit/12374d1337d21f2d0dbe39c5cab340b41c58e553"
+        },
+        "date": 1795218267047,
+        "tool": "customSmallerIsBetter",
+        "title": "[TCP sockets] The latency of connect (loopback)",
+        "description": "lat_connect",
+        "display": false,
+        "benches": [
+          {
+            "name": "Average TCP connection latency on Linux",
+            "value": "2491.5763",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average TCP connection latency on Asterinas",
+            "value": "9155.2468",
             "unit": "µs",
             "extra": "aster_result"
           }
