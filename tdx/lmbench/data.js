@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1795218276663,
+  "lastUpdate": 1795218277032,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -59975,43 +59975,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Zhang Junyang",
-            "username": "junyang-zh",
-            "email": "junyang@stu.pku.edu.cn"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "e60f6de4e991d3ad66fc61d0340a363a2096bd85",
-          "message": "Revert the temporary fix since dev containers are updated",
-          "timestamp": "2026-09-04T13:41:56Z",
-          "url": "https://github.com/asterinas/asterinas/commit/e60f6de4e991d3ad66fc61d0340a363a2096bd85"
-        },
-        "date": 1788731352682,
-        "tool": "customBiggerIsBetter",
-        "title": "[Ext2] The bandwidth of copying data between files",
-        "description": "lmdd",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average file copy bandwidth on Linux",
-            "value": "1332.1793",
-            "unit": "MB/s",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average file copy bandwidth on Asterinas",
-            "value": "145.3714",
-            "unit": "MB/s",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Mike Solar",
             "username": "Mike-Solar",
             "email": "iam@mikesolar.cn"
@@ -62186,6 +62149,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average file copy bandwidth on Asterinas",
             "value": "98.0704",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "zhuowei shao",
+            "username": "joey-shao",
+            "email": "zhuoweishao0@gmail.com"
+          },
+          "committer": {
+            "name": "Jianfeng Jiang",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "id": "12374d1337d21f2d0dbe39c5cab340b41c58e553",
+          "message": "Add x86-64 ptrace floating-point regset",
+          "timestamp": "2026-11-10T04:59:50Z",
+          "url": "https://github.com/asterinas/asterinas/commit/12374d1337d21f2d0dbe39c5cab340b41c58e553"
+        },
+        "date": 1795218277012,
+        "tool": "customBiggerIsBetter",
+        "title": "[Ext2] The bandwidth of copying data between files",
+        "description": "lmdd",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average file copy bandwidth on Linux",
+            "value": "1261.2196",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average file copy bandwidth on Asterinas",
+            "value": "97.1319",
             "unit": "MB/s",
             "extra": "aster_result"
           }
