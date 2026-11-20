@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1795134086552,
+  "lastUpdate": 1795134086922,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -80012,43 +80012,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2026-08-28T10:52:18Z",
           "url": "https://github.com/asterinas/asterinas/commit/a5449e62b0a5a0affccb6087ea3543a2fdf66052"
         },
-        "date": 1789248860863,
-        "tool": "customBiggerIsBetter",
-        "title": "[TCP sockets] The bandwidth (virtio-net, 64KB message)",
-        "description": "bw_tcp -l",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average TCP bandwidth on Linux",
-            "value": "762.64",
-            "unit": "MB/sec",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average TCP bandwidth on Asterinas",
-            "value": "609.98",
-            "unit": "MB/sec",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "androidAppGuard",
-            "username": "androidAppGuard",
-            "email": "guohui.study@gmail.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "a5449e62b0a5a0affccb6087ea3543a2fdf66052",
-          "message": "Add seven problems for aster-code-review benchmark (400-406)",
-          "timestamp": "2026-08-28T10:52:18Z",
-          "url": "https://github.com/asterinas/asterinas/commit/a5449e62b0a5a0affccb6087ea3543a2fdf66052"
-        },
         "date": 1789334874245,
         "tool": "customBiggerIsBetter",
         "title": "[TCP sockets] The bandwidth (virtio-net, 64KB message)",
@@ -82210,6 +82173,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average TCP bandwidth on Asterinas",
             "value": "362.40",
+            "unit": "MB/sec",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tate.thl@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "7fecb4ffabc72d0767277a9ffb66168bc512034c",
+          "message": "Fix the futex requeue regression test timeout\n\nFUTEX_WAIT_BITSET uses an absolute CLOCK_MONOTONIC deadline unless\nFUTEX_CLOCK_REALTIME is set. Use the matching clock so the five-second\ntimeout lets pthread_join finish even when the worker is never woken.\n\nFixes: 0a6d18d8d (\"Match futex requeue semantics to Linux\")",
+          "timestamp": "2026-11-19T12:48:20Z",
+          "url": "https://github.com/asterinas/asterinas/commit/7fecb4ffabc72d0767277a9ffb66168bc512034c"
+        },
+        "date": 1795134086905,
+        "tool": "customBiggerIsBetter",
+        "title": "[TCP sockets] The bandwidth (virtio-net, 64KB message)",
+        "description": "bw_tcp -l",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average TCP bandwidth on Linux",
+            "value": "408.62",
+            "unit": "MB/sec",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average TCP bandwidth on Asterinas",
+            "value": "316.94",
             "unit": "MB/sec",
             "extra": "aster_result"
           }
