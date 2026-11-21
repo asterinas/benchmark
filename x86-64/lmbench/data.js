@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1795219463114,
+  "lastUpdate": 1795219463478,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -11116,43 +11116,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "WX Chen",
-            "username": "zhenbaii",
-            "email": "wxchen0913@gmail.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "d4b407ca87de203f79c27c9a83ada1d8223fe280",
-          "message": "Fix `getcwd` panic after unmounting a parent with child mounts\n\nTreat a dead parent mount as unreachable instead of unwrapping it.",
-          "timestamp": "2026-09-12T08:28:59Z",
-          "url": "https://github.com/asterinas/asterinas/commit/d4b407ca87de203f79c27c9a83ada1d8223fe280"
-        },
-        "date": 1789507991225,
-        "tool": "customSmallerIsBetter",
-        "title": "[Process] The cost of fork+exit",
-        "description": "lat_proc fork",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average Fork latency on Linux",
-            "value": "139.6111",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average Fork latency on Asterinas",
-            "value": "144.0278",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Jianfeng Jiang",
             "username": "StevenJiang1110",
             "email": "jiangjianfeng.jjf@antgroup.com"
@@ -13328,6 +13291,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average Fork latency on Asterinas",
             "value": "131.2857",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "zhuowei shao",
+            "username": "joey-shao",
+            "email": "zhuoweishao0@gmail.com"
+          },
+          "committer": {
+            "name": "Jianfeng Jiang",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "id": "12374d1337d21f2d0dbe39c5cab340b41c58e553",
+          "message": "Add x86-64 ptrace floating-point regset",
+          "timestamp": "2026-11-10T04:59:50Z",
+          "url": "https://github.com/asterinas/asterinas/commit/12374d1337d21f2d0dbe39c5cab340b41c58e553"
+        },
+        "date": 1795219463466,
+        "tool": "customSmallerIsBetter",
+        "title": "[Process] The cost of fork+exit",
+        "description": "lat_proc fork",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average Fork latency on Linux",
+            "value": "134.9024",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average Fork latency on Asterinas",
+            "value": "128.3023",
             "unit": "µs",
             "extra": "aster_result"
           }
