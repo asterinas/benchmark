@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1795389003866,
+  "lastUpdate": 1795389004200,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -71099,43 +71099,6 @@ window.BENCHMARK_DATA = {
           "timestamp": "2026-09-04T13:41:56Z",
           "url": "https://github.com/asterinas/asterinas/commit/e60f6de4e991d3ad66fc61d0340a363a2096bd85"
         },
-        "date": 1788645443028,
-        "tool": "customSmallerIsBetter",
-        "title": "[Network] The cost of select (TCP fds)",
-        "description": "lat_select",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average select TCP latency on Linux",
-            "value": "2.8298",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average select TCP latency on Asterinas",
-            "value": "1.7784",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "name": "Zhang Junyang",
-            "username": "junyang-zh",
-            "email": "junyang@stu.pku.edu.cn"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "e60f6de4e991d3ad66fc61d0340a363a2096bd85",
-          "message": "Revert the temporary fix since dev containers are updated",
-          "timestamp": "2026-09-04T13:41:56Z",
-          "url": "https://github.com/asterinas/asterinas/commit/e60f6de4e991d3ad66fc61d0340a363a2096bd85"
-        },
         "date": 1788731341065,
         "tool": "customSmallerIsBetter",
         "title": "[Network] The cost of select (TCP fds)",
@@ -73296,6 +73259,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average select TCP latency on Asterinas",
             "value": "1.6829",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "zhuowei shao",
+            "username": "joey-shao",
+            "email": "zhuoweishao0@gmail.com"
+          },
+          "committer": {
+            "name": "Jianfeng Jiang",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "id": "12374d1337d21f2d0dbe39c5cab340b41c58e553",
+          "message": "Add x86-64 ptrace floating-point regset",
+          "timestamp": "2026-11-10T04:59:50Z",
+          "url": "https://github.com/asterinas/asterinas/commit/12374d1337d21f2d0dbe39c5cab340b41c58e553"
+        },
+        "date": 1795389004179,
+        "tool": "customSmallerIsBetter",
+        "title": "[Network] The cost of select (TCP fds)",
+        "description": "lat_select",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average select TCP latency on Linux",
+            "value": "2.6336",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average select TCP latency on Asterinas",
+            "value": "1.7138",
             "unit": "µs",
             "extra": "aster_result"
           }
