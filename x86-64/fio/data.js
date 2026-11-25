@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1795565570659,
+  "lastUpdate": 1795565570998,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_seq_write_bw": [
@@ -18366,6 +18366,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average buffered I/O file write bandwidth on Asterinas",
             "value": "1522.983499",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Jianfeng Jiang",
+            "username": "StevenJiang1110",
+            "email": "jiangjianfeng.jjf@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "879e2c51cc3e8776b9b385645c6b0bbe45b7dbd5",
+          "message": "Bump Docker image version to 0.19.0-20261119",
+          "timestamp": "2026-11-17T03:15:14Z",
+          "url": "https://github.com/asterinas/asterinas/commit/879e2c51cc3e8776b9b385645c6b0bbe45b7dbd5"
+        },
+        "date": 1795565570995,
+        "tool": "customBiggerIsBetter",
+        "title": "[virtio-fs] The bandwidth of sequential writes (buffered I/O, w/o IOMMU)",
+        "description": "fio -filename=/virtiofs/fio-test -size=1G -bs=1M -direct=0",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average buffered I/O file write bandwidth on Linux",
+            "value": "1525.070768",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average buffered I/O file write bandwidth on Asterinas",
+            "value": "1171.814331",
             "unit": "MB/s",
             "extra": "aster_result"
           }
