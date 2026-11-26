@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1795652253492,
+  "lastUpdate": 1795652253786,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -28892,43 +28892,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Fan Jie",
-            "username": "f-jye",
-            "email": "fanjie@uniontech.com"
-          },
-          "committer": {
-            "name": "Tate, Hongliang Tian",
-            "username": "tatetian",
-            "email": "tatetian@gmail.com"
-          },
-          "id": "c3fc8a5409ce337b3e0d6666b66462f8a8021cdc",
-          "message": "Introduce `PartitionManager` to serialize partition updates",
-          "timestamp": "2026-09-08T08:45:56Z",
-          "url": "https://github.com/asterinas/asterinas/commit/c3fc8a5409ce337b3e0d6666b66462f8a8021cdc"
-        },
-        "date": 1790029625316,
-        "tool": "customSmallerIsBetter",
-        "title": "[FIFO] The cost of write+read (1B)",
-        "description": "lat_fifo",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average fifo latency on Linux",
-            "value": "2.1642",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average fifo latency on Asterinas",
-            "value": "2.8376",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "Bitter127",
             "username": "Bitter127",
             "email": "1571681846@qq.com"
@@ -31104,6 +31067,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average fifo latency on Asterinas",
             "value": "2.8347",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "lwz23",
+            "username": "lwz23",
+            "email": "160561672+lwz23@users.noreply.github.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "d34efb494a73ae12f45f4d962a6f35c43a4b3d3d",
+          "message": "Return an error for out-of-range offsets in VmIoOnce",
+          "timestamp": "2026-11-25T09:22:10Z",
+          "url": "https://github.com/asterinas/asterinas/commit/d34efb494a73ae12f45f4d962a6f35c43a4b3d3d"
+        },
+        "date": 1795652253768,
+        "tool": "customSmallerIsBetter",
+        "title": "[FIFO] The cost of write+read (1B)",
+        "description": "lat_fifo",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average fifo latency on Linux",
+            "value": "2.1844",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average fifo latency on Asterinas",
+            "value": "2.9375",
             "unit": "µs",
             "extra": "aster_result"
           }
