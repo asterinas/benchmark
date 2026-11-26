@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1795735979708,
+  "lastUpdate": 1795735980042,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -4450,43 +4450,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
-            "name": "Jianfeng Jiang",
-            "username": "StevenJiang1110",
-            "email": "jiangjianfeng.jjf@antgroup.com"
-          },
-          "id": "ee1e5d12aa4104d1d0a02dc42be56ee684935c14",
-          "message": "Fix various broadcast behavior",
-          "timestamp": "2026-08-11T01:34:07Z",
-          "url": "https://github.com/asterinas/asterinas/commit/ee1e5d12aa4104d1d0a02dc42be56ee684935c14"
-        },
-        "date": 1789077072829,
-        "tool": "customSmallerIsBetter",
-        "title": "[Memory] The cost of mmap+unmap",
-        "description": "lat_mmap",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average mmap latency on Linux",
-            "value": "30",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average mmap latency on Asterinas",
-            "value": "22",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "androidAppGuard",
             "username": "androidAppGuard",
             "email": "guohui.study@gmail.com"
@@ -6648,6 +6611,43 @@ window.BENCHMARK_DATA = {
           "url": "https://github.com/asterinas/asterinas/commit/d34efb494a73ae12f45f4d962a6f35c43a4b3d3d"
         },
         "date": 1795648537806,
+        "tool": "customSmallerIsBetter",
+        "title": "[Memory] The cost of mmap+unmap",
+        "description": "lat_mmap",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average mmap latency on Linux",
+            "value": "27",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average mmap latency on Asterinas",
+            "value": "21",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Chen Chengjun",
+            "username": "cchanging",
+            "email": "chenchengjun.ccj@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "493b2bc9c60c834f0f6127219707d7f5a89425a5",
+          "message": "Add regression tests for page-cache writeback failures",
+          "timestamp": "2026-11-23T12:09:57Z",
+          "url": "https://github.com/asterinas/asterinas/commit/493b2bc9c60c834f0f6127219707d7f5a89425a5"
+        },
+        "date": 1795735980011,
         "tool": "customSmallerIsBetter",
         "title": "[Memory] The cost of mmap+unmap",
         "description": "lat_mmap",
