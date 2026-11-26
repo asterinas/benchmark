@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1795735966634,
+  "lastUpdate": 1795735966966,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "mem_pagefault_lat": [
@@ -31114,43 +31114,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
-            "name": "Jianfeng Jiang",
-            "username": "StevenJiang1110",
-            "email": "jiangjianfeng.jjf@antgroup.com"
-          },
-          "id": "ee1e5d12aa4104d1d0a02dc42be56ee684935c14",
-          "message": "Fix various broadcast behavior",
-          "timestamp": "2026-08-11T01:34:07Z",
-          "url": "https://github.com/asterinas/asterinas/commit/ee1e5d12aa4104d1d0a02dc42be56ee684935c14"
-        },
-        "date": 1789077057654,
-        "tool": "customSmallerIsBetter",
-        "title": "[Unix sockets] The latency of write+read (1B message)",
-        "description": "lat_unix",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average unix latency on Linux",
-            "value": "3.4876",
-            "unit": "µs",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average unix latency on Asterinas",
-            "value": "3.5058",
-            "unit": "µs",
-            "extra": "aster_result"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "name": "androidAppGuard",
             "username": "androidAppGuard",
             "email": "guohui.study@gmail.com"
@@ -33326,6 +33289,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average unix latency on Asterinas",
             "value": "3.2717",
+            "unit": "µs",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Chen Chengjun",
+            "username": "cchanging",
+            "email": "chenchengjun.ccj@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "493b2bc9c60c834f0f6127219707d7f5a89425a5",
+          "message": "Add regression tests for page-cache writeback failures",
+          "timestamp": "2026-11-23T12:09:57Z",
+          "url": "https://github.com/asterinas/asterinas/commit/493b2bc9c60c834f0f6127219707d7f5a89425a5"
+        },
+        "date": 1795735966937,
+        "tool": "customSmallerIsBetter",
+        "title": "[Unix sockets] The latency of write+read (1B message)",
+        "description": "lat_unix",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average unix latency on Linux",
+            "value": "2.9926",
+            "unit": "µs",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average unix latency on Asterinas",
+            "value": "3.2217",
             "unit": "µs",
             "extra": "aster_result"
           }
