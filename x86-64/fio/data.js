@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1795652256544,
+  "lastUpdate": 1795652256813,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_seq_write_bw": [
@@ -23441,6 +23441,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average direct I/O file read bandwidth on Asterinas",
             "value": "2898.76985",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "lwz23",
+            "username": "lwz23",
+            "email": "160561672+lwz23@users.noreply.github.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "d34efb494a73ae12f45f4d962a6f35c43a4b3d3d",
+          "message": "Return an error for out-of-range offsets in VmIoOnce",
+          "timestamp": "2026-11-25T09:22:10Z",
+          "url": "https://github.com/asterinas/asterinas/commit/d34efb494a73ae12f45f4d962a6f35c43a4b3d3d"
+        },
+        "date": 1795652256808,
+        "tool": "customBiggerIsBetter",
+        "title": "[virtio-fs] The bandwidth of sequential reads (direct I/O, w/o IOMMU)",
+        "description": "fio -filename=/virtiofs/fio-test -size=1G -bs=1M -direct=1",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average direct I/O file read bandwidth on Linux",
+            "value": "7081.246031",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average direct I/O file read bandwidth on Asterinas",
+            "value": "2698.651121",
             "unit": "MB/s",
             "extra": "aster_result"
           }
