@@ -1,45 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1795735985022,
+  "lastUpdate": 1795735985194,
   "repoUrl": "https://github.com/asterinas/asterinas",
   "entries": {
     "ext2_seq_write_bw_no_iommu": [
-      {
-        "commit": {
-          "author": {
-            "name": "Ruihan Li",
-            "username": "lrh2000",
-            "email": "lrh2000@pku.edu.cn"
-          },
-          "committer": {
-            "name": "Jianfeng Jiang",
-            "username": "StevenJiang1110",
-            "email": "jiangjianfeng.jjf@antgroup.com"
-          },
-          "id": "ee1e5d12aa4104d1d0a02dc42be56ee684935c14",
-          "message": "Fix various broadcast behavior",
-          "timestamp": "2026-08-11T01:34:07Z",
-          "url": "https://github.com/asterinas/asterinas/commit/ee1e5d12aa4104d1d0a02dc42be56ee684935c14"
-        },
-        "date": 1789077078724,
-        "tool": "customBiggerIsBetter",
-        "title": "[Ext2] The bandwidth of sequential writes (IOMMU disabled on Asterinas)",
-        "description": "fio -filename=/ext2/fio-test -size=1G -bs=1M -direct=1",
-        "display": true,
-        "benches": [
-          {
-            "name": "Average file write bandwidth on Linux",
-            "value": "2352",
-            "unit": "MB/s",
-            "extra": "linux_result"
-          },
-          {
-            "name": "Average file write bandwidth on Asterinas",
-            "value": "2101",
-            "unit": "MB/s",
-            "extra": "aster_result"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2218,6 +2181,43 @@ window.BENCHMARK_DATA = {
           {
             "name": "Average buffered I/O file write bandwidth on Asterinas",
             "value": "5628.630073",
+            "unit": "MB/s",
+            "extra": "aster_result"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Chen Chengjun",
+            "username": "cchanging",
+            "email": "chenchengjun.ccj@antgroup.com"
+          },
+          "committer": {
+            "name": "Tate, Hongliang Tian",
+            "username": "tatetian",
+            "email": "tatetian@gmail.com"
+          },
+          "id": "493b2bc9c60c834f0f6127219707d7f5a89425a5",
+          "message": "Add regression tests for page-cache writeback failures",
+          "timestamp": "2026-11-23T12:09:57Z",
+          "url": "https://github.com/asterinas/asterinas/commit/493b2bc9c60c834f0f6127219707d7f5a89425a5"
+        },
+        "date": 1795735985191,
+        "tool": "customBiggerIsBetter",
+        "title": "[Ext2] The bandwidth of sequential writes (buffered I/O, w/o IOMMU)",
+        "description": "fio -filename=/ext2/fio-test -size=1G -bs=1M -direct=0",
+        "display": true,
+        "benches": [
+          {
+            "name": "Average buffered I/O file write bandwidth on Linux",
+            "value": "2195.166425",
+            "unit": "MB/s",
+            "extra": "linux_result"
+          },
+          {
+            "name": "Average buffered I/O file write bandwidth on Asterinas",
+            "value": "6063.065408",
             "unit": "MB/s",
             "extra": "aster_result"
           }
